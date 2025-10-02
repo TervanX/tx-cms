@@ -3,18 +3,28 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --navy-blue: #072C62;
-  --dark-text: #000000DE;
+  --navy-blue: #072c62;
+  --dark-text: #000000de;
+  --blue-text: #105bcc;
+  --yellow: #fecf40;
+  --bg-blue: #edf3fe;
+  --bg-lgblue: #DBE8FD;
+  --bg-footer:#CCC9C6;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-navy-blue: var(--navy-blue);
-  --color-dark-text: var(--dark-text);
+  --color-dark: var(--dark-text);
+  --color-blue: var(--blue-text);
+  --color-yellow: var(--yellow);
+  --color-bg-blue: var(--bg-blue);
+  --color-bg-lgblue: var(--bg-lgblue);
+  --color-bg-footer: var(--bg-footer);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-grotesk: var(--font-space-grotesk);
+  --font-grotesque: var(--font-bricolage-grotesque);
   --font-size-6xl: 64px;
 }
 
