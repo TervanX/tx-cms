@@ -90,7 +90,6 @@ const DeskTopNavbar = () => {
           type="button"
           onClick={() => {}}
           children={"Sign up for free"}
-          
         />
       </div>
     </div>

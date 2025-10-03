@@ -41,7 +41,7 @@ const people = [
     role: "Head of Sales Development",
     company: "Kinsta",
     avatar:
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop",
+      "https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fapollo-next.36e555e7.png&w=640&q=75",
     logoText: "kinsta",
     longCopy:
       "Nicole leads a global SDR organisation, specialising in outbound playbooks, enablement, and pipeline acceleration. She’s scaled teams across EMEA and North America, and mentors rising sales leaders on coaching frameworks and operational excellence.",
@@ -52,7 +52,7 @@ const people = [
     role: "Account Executive",
     company: "Arbolus",
     avatar:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop",
+      "https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fapollo-next.36e555e7.png&w=640&q=75",
     logoText: "arbolus",
     longCopy:
       "Diego closes complex multi-threaded deals in knowledge marketplaces, combining consultative discovery with crisp ROI storytelling. He’s passionate about comp structure design and running clean MEDDIC.",
@@ -63,7 +63,7 @@ const people = [
     role: "BDR Leader",
     company: "Cyera",
     avatar:
-      "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=800&auto=format&fit=crop",
+      "https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fapollo-next.36e555e7.png&w=640&q=75",
     logoText: "CYERA",
     longCopy:
       "Andrew runs high-velocity BDR motions for cybersecurity and data protection. He focuses on persona targeting, channel experimentation, and modern meeting quality metrics beyond simple set rate.",
@@ -95,25 +95,25 @@ const Card = ({ p, index }: { p: (typeof people)[number]; index: number }) => {
       animate="rest"
       className="group relative flex flex-col rounded-lg border p-6 "
     >
-      <div className="text-xs tracking-widest text-zinc-500 mb-6 font-semibold">
+      <div className="text-xs text-gray-500 mb-6 font-normal font-grotesk">
         {p.tag}
       </div>
 
-      <div className="h-44 w-44 rounded-2xl overflow-hidden mb-6">
+      <div className="h-44 w-44 rounded-xl overflow-hidden mb-6">
         <img
           src={p.avatar}
           alt={p.name}
-          className="h-full w-full object-cover"
+          className="w-[194px] h-auto rounded-md"
         />
       </div>
 
-      <h3 className="text-2xl font-semibold text-zinc-900 mb-1">{p.name}</h3>
-      <p className="text-zinc-600">{p.role}</p>
-      <p className="text-zinc-500">@ {p.company}</p>
+      <h3 className="text-2xl font-medium mb-1 font-grotesk">{p.name}</h3>
+      <p className="text-xs text-gray-500 font-normal font-grotesk">{p.role}</p>
+      <p className="text-xs text-gray-500 font-normal font-grotesk">
+        @ {p.company}
+      </p>
 
-      {/* <div className="mt-10 text-4xl font-black tracking-tight text-zinc-900/80 select-none">
-        {p.logoText}
-      </div> */}
+      {/* logo */}
       <motion.div
         variants={overlayVariants}
         className="pointer-events-none absolute inset-x-0 bottom-0 overflow-hidden rounded-3xl border-t border-zinc-200 bg-white/95 backdrop-blur-sm"
@@ -137,7 +137,7 @@ const Card = ({ p, index }: { p: (typeof people)[number]; index: number }) => {
 const PeopleShowcase = () => {
   return (
     <div className="min-h-screen w-full  py-12">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-6xl px-2">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {people.map((p, i) => (
             <Card key={p.name} p={p} index={i} />

@@ -4,6 +4,7 @@ import PricingPageHeader from "@/components/PricingComponents/PricingHeader";
 import PricingSection from "@/components/PricingComponents/PricingCards";
 import SalesPerform from "@/components/PricingComponents/SalesPerform";
 import ComparePlan from "@/components/PricingComponents/ComparePlans";
+import Footer from "@/components/reusable/Footer";
 const PricingPage: React.FC = () => {
   return (
     <div>
@@ -17,6 +18,7 @@ const PricingPage: React.FC = () => {
       </div>
 
       <ComparePlan />
+      <Footer />
     </div>
   );
 };
