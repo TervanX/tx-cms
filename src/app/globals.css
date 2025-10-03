@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import 'tailwind-scrollbar-hide/v4';
 
 :root {
   --primary-color:#0d07ed;
@@ -12,6 +13,7 @@
   --bg-blue: #edf3fe;
   --bg-lgblue: #DBE8FD;
   --bg-footer:#CCC9C6;
+  --bg-gray:"#f7f5f2"
 }
 
 @theme inline {
@@ -30,6 +32,7 @@
   --font-size-6xl: 64px;
   --color-primary: var(--primary-color);
   --color-sand: var(--sand);
+  --color-gray: var(--bg-gray);
 }
 
 /* @media (prefers-color-scheme: dark) {

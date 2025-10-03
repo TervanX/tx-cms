@@ -35,7 +35,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased ${grotesque.variable}`}
       >
         <Header />
-        <div className="w-full p-8">{children}</div>
+        <div className="w-full">{children}</div>
       </body>
     </html>
   );

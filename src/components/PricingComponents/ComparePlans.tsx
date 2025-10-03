@@ -5,17 +5,21 @@ import { FaArrowTrendUp } from "react-icons/fa6";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import Button from "../reusable/Button";
 import Busineses from "./Busineses";
+import PricingFAQAccordion from "./PricingFAQAccordion";
 const ComparePlan = () => {
   return (
     <div className="bg-white mt-8 rounded mb-8 px-8">
-      <h2 className="font-grotesk text-[20px] lg:text-[36px] font-normal  text-center lg:text-start px-8 pt-24 pb-4">
+      <h2 className="font-grotesque text-[20px] lg:text-[36px] font-normal  text-center lg:text-start px-8 pt-24 pb-4">
         Compare plans
       </h2>
-      <CollapsibleTable />
-      <CollapsibleTable />
-      <CollapsibleTable showButtonRow />
+      <div className="overflow-x-auto">
+        <CollapsibleTable />
+        <CollapsibleTable />
+        <CollapsibleTable showButtonRow />
+      </div>
 
       <Busineses />
+      <PricingFAQAccordion />
     </div>
   );
 };
@@ -25,6 +29,7 @@ export default ComparePlan;
 interface CollapsibleTableProps {
   showButtonRow?: boolean;
 }
+
 const CollapsibleTable: React.FC<CollapsibleTableProps> = ({
   showButtonRow,
 }) => {
@@ -41,7 +46,7 @@ const CollapsibleTable: React.FC<CollapsibleTableProps> = ({
   const rows = [
     {
       id: 1,
-      name: "AI Power Ups (Research Intelligence)",
+      name: "Email",
       free: "1 credit per run",
       basic: "1 credit per run",
       professioner: "1 credit per run",
@@ -101,11 +106,11 @@ const CollapsibleTable: React.FC<CollapsibleTableProps> = ({
   ];
 
   return (
-    <div className="overflow-x-auto p-6 font-grotesk ">
+    <div className="px-0 py-6 lg:px-6 font-grotesk">
       <table className="min-w-full">
         <thead>
           <tr>
-            <th className="border-t border-b py-4 text-left">
+            <th className="border-t border-b py-4 text-left min-w-[70vw] lg:min-w-[0]">
               <div className="flex items-center gap-2 px-4">
                 <span className="w-8 h-8 rounded-full flex items-center justify-center bg-[#c5ddff]">
                   <FaArrowTrendUp />
@@ -113,16 +118,16 @@ const CollapsibleTable: React.FC<CollapsibleTableProps> = ({
                 <h4 className="text-[22px] font-normal">Execution</h4>
               </div>
             </th>
-            <th className="border-t border-b text-center py-4 font-normal font-grotesk">
+            <th className="border-t border-b text-center py-4 font-normal font-grotesk min-w-[60vw] lg:min-w-[0]">
               FREE
             </th>
-            <th className="border-t border-b text-center py-4 font-normal font-grotesk">
+            <th className="border-t border-b text-center py-4 font-normal font-grotesk min-w-[60vw] lg:min-w-[0]">
               BASIC
             </th>
-            <th className="border-t border-b text-center py-4 font-normal font-grotesk">
+            <th className="border-t border-b text-center py-4 font-normal font-grotesk min-w-[60vw] lg:min-w-[0]">
               PROFESSIONER
             </th>
-            <th className="border-t border-b text-center py-4 font-normal font-grotesk">
+            <th className="border-t border-b text-center py-4 font-normal font-grotesk min-w-[60vw] lg:min-w-[0]">
               ORGANIZATION
             </th>
           </tr>
@@ -130,10 +135,10 @@ const CollapsibleTable: React.FC<CollapsibleTableProps> = ({
         <tbody>
           {rows.map((row, idx) => (
             <React.Fragment key={row.id}>
-              {/* Parent Row */}
+              {/* Main row */}
               <tr
                 className={`cursor-pointer ${
-                  idx % 2 === 0 ? "bg-[#ffffff]" : "bg-[#f7f5f2]"
+                  idx % 2 === 0 ? "bg-white" : "bg-[#e0e0e0]"
                 }`}
                 onClick={() => toggleRow(idx)}
               >
@@ -162,13 +167,13 @@ const CollapsibleTable: React.FC<CollapsibleTableProps> = ({
                 <td className="py-4 text-center">{row.organization}</td>
               </tr>
 
-              {/* Child Rows */}
+              {/* Collapsible details */}
               {openRows.includes(idx) &&
                 row.details.map((detail, detailIdx) => (
                   <tr
                     key={detailIdx}
                     className={`${
-                      detailIdx % 2 === 0 ? "bg-[#ffffff]" : "bg-[#f7f5f2]"
+                      detailIdx % 2 === 0 ? "bg-white" : "bg-[#e0e0e0]"
                     }`}
                   >
                     <td className="py-4 px-2 text-base font-normal text-[#1a1a1a] border-l-2 border-[#9c73ff]">
@@ -182,48 +187,30 @@ const CollapsibleTable: React.FC<CollapsibleTableProps> = ({
                 ))}
             </React.Fragment>
           ))}
+
+          {/* Button row */}
           {showButtonRow && (
-            <tr className={`cursor-pointer bg-[#ffffff]`}>
-              <td className={`py-4 px-4 text-lg font-normal text-[#1a1a1a] `}>
-                <div className="flex items-center gap-1"></div>
+            <tr className="bg-white">
+              <td className="py-4 px-4 text-lg font-normal text-[#1a1a1a]"></td>
+              <td className="py-4 text-center">
+                <Button size="lg" variant="primary" type="button">
+                  Get started
+                </Button>
               </td>
               <td className="py-4 text-center">
-                {" "}
-                <Button
-                  size="lg"
-                  variant="primary"
-                  type="button"
-                  onClick={() => {}}
-                  children={"Get started"}
-                />
+                <Button size="lg" variant="primary" type="button">
+                  Buy now
+                </Button>
               </td>
               <td className="py-4 text-center">
-                {" "}
-                <Button
-                  size="lg"
-                  variant="primary"
-                  type="button"
-                  onClick={() => {}}
-                  children={"Buy now"}
-                />
+                <Button size="lg" variant="primary" type="button">
+                  Buy now
+                </Button>
               </td>
               <td className="py-4 text-center">
-                <Button
-                  size="lg"
-                  variant="primary"
-                  type="button"
-                  onClick={() => {}}
-                  children={"Buy now"}
-                />
-              </td>
-              <td className="py-4 text-center">
-                <Button
-                  size="lg"
-                  variant="primary"
-                  type="button"
-                  onClick={() => {}}
-                  children={"Buy now"}
-                />
+                <Button size="lg" variant="primary" type="button">
+                  Buy now
+                </Button>
               </td>
             </tr>
           )}
