@@ -1,24 +1,33 @@
 @import "tailwindcss";
-@import './node_modules/ktui/styles.css';
 
 :root {
-  --background: #ffffff;
+  --primary-color:#0d07ed;
+  --background: rgb(204 201 198);
+  --sand:rgb(115 111 108);
   --foreground: #171717;
+  --navy-blue: #072C62;
+  --dark-text: #000000DE;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-navy-blue: var(--navy-blue);
+  --color-dark-text: var(--dark-text);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-grotesk: var(--font-space-grotesk);
+  --font-size-6xl: 64px;
+  --color-primary: var(--primary-color);
+  --color-sand: var(--sand);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);

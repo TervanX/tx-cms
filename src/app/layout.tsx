@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Schibsted_Grotesk } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
+import Header from "./NavBar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -9,6 +11,11 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const grotesk = Schibsted_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
 });
 
@@ -24,17 +31,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-      />
-      <link href="my_project_root/css/styles.css" rel="stylesheet" />
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased ${grotesk.variable} lg:px-8`}
       >
-        {children}
+        <Header />
+        <div className="w-full">{children}</div>
       </body>
-      <script src="./node_modules/@keenthemes/ktui/dist/ktui.min.js"></script>
     </html>
   );
 }
