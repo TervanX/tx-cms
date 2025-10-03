@@ -3,7 +3,7 @@ import SubcriptionSwitch from "./SubscriptionSwitch";
 const PricingPageHeader = () => {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
-      <h1 className="font-grotesk text-[32px] lg:text-[48px] font-semibold  text-center lg:text-start">
+      <h1 className="font-grotesk text-[28px] lg:text-[48px] font-medium  text-center lg:text-start">
         Everything you need to grow your business
       </h1>
       <div>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Schibsted_Grotesk } from "next/font/google";
+import { Geist, Geist_Mono, Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import Header from "./NavBar";
@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const grotesk = Schibsted_Grotesk({
-  variable: "--font-space-grotesk",
+const grotesque = Bricolage_Grotesque({
+  variable: "--font-bricolage-grotesque",
   subsets: ["latin"],
 });
 
@@ -32,10 +32,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased ${grotesk.variable} lg:px-8`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased ${grotesque.variable}`}
       >
         <Header />
-        <div className="w-full">{children}</div>
+        <div className="w-full p-8">{children}</div>
       </body>
     </html>
   );

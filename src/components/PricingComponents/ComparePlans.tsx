@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { FaArrowTrendUp } from "react-icons/fa6";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import Button from "../reusable/Button";
-
+import Busineses from "./Busineses";
 const ComparePlan = () => {
   return (
     <div className="bg-white mt-8 rounded mb-8 px-8">
@@ -14,6 +14,8 @@ const ComparePlan = () => {
       <CollapsibleTable />
       <CollapsibleTable />
       <CollapsibleTable showButtonRow />
+
+      <Busineses />
     </div>
   );
 };
