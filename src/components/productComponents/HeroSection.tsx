@@ -8,11 +8,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 z-0">
         <img
           src="/assets/bg.5.svg"
-<<<<<<< HEAD
-          alt="Abstract wave pattern background with blue gradient"
-=======
           alt="Abstract wave pattern background with navy-blue gradient"
->>>>>>> b6b75880300d241a4baa190a057d9113f28f712b
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
       </div>
@@ -23,11 +19,7 @@ export default function HeroSection() {
           <div className="text-center space-y-6 sm:space-y-8">
             {/* Tag */}
             <div className="inline-block">
-<<<<<<< HEAD
-              <h6 className="sm:text-xl text-lg font-bold text-blue racking-wider">
-=======
               <h6 className="sm:text-xl text-lg font-medium text-navy-blue racking-wider">
->>>>>>> b6b75880300d241a4baa190a057d9113f28f712b
                 CONTACT & ACCOUNT SEARCH
               </h6>
             </div>
@@ -38,14 +30,9 @@ export default function HeroSection() {
             </h1>
 
             {/* Subheading */}
-<<<<<<< HEAD
-            <h6 className="text-base sm:text-lg md:text-xl text-white/90 max-w-3xl mx-auto px-4 leading-relaxed">
+            <h6 className="text-lg md:text-xl text-dark max-w-3xl mx-auto px-4 leading-relaxed">
               With the world's largest living data network and AI
               recommendations, your best leads are just a search away.
-=======
-            <h6 className="text-lg md:text-xl text-dark max-w-3xl mx-auto px-4 leading-relaxed">
-              With the world's largest living data network and AI recommendations, your best leads are just a search away.
->>>>>>> b6b75880300d241a4baa190a057d9113f28f712b
             </h6>
 
             {/* CTA Buttons */}
@@ -72,14 +59,9 @@ export default function HeroSection() {
                   />
                 ))}
               </div> */}
-<<<<<<< HEAD
-              <p className="text-sm text-white/90">
-                <span className="font-bold">4.7</span>/5 based on 9,015 reviews{" "}
-=======
               <p className="text-sm text-dark">
-                <span className="font-medium">4.7</span>/5 based on 9,015 reviews{' '}
->>>>>>> b6b75880300d241a4baa190a057d9113f28f712b
-                <span className="hidden sm:inline">|</span>
+                <span className="font-medium">4.7</span>/5 based on 9,015
+                reviews <span className="hidden sm:inline">|</span>
                 <span className="hidden sm:inline sm:ml-1 mt-1 sm:mt-0">
                   GDPR Compliant
                 </span>
