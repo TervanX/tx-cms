@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Button from "@/components/reusable/Button";
@@ -42,8 +42,25 @@ const navItems = [
 ];
 
 const Header = () => {
+   const [isScrolled, setIsScrolled] = useState(false);
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        setIsScrolled(scrollTop > 0);
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+      
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+
   return (
-    <header className="fixed top-0 left-0 w-full z-20 bg-background px-6">
+    <header className={`fixed top-0 left-0 w-full z-20 px-6 ${
+            isScrolled ? 'bg-white' : ''
+          }`}>
       <DeskTopNavbar />
       <MobileNav />
     </header>

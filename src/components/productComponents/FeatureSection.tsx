@@ -110,7 +110,6 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({ data, index }) => {
   );
 };
 
-// Main component that maps through the data
 interface FeatureSectionsProps {
   features: FeatureItem[];
 }
@@ -131,7 +130,6 @@ const FeatureSections: React.FC<FeatureSectionsProps> = ({ features }) => {
 
 export default FeatureSections;
 
-// data/featuresData.ts
 export const featuresData: FeatureItem[] = [
   {
     id: 1,

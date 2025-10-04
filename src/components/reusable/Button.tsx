@@ -18,10 +18,10 @@ const Button: React.FC<ButtonProps> = ({
     "inline-flex items-center text-sm justify-center font-medium cursor-pointer rounded-lg disabled:opacity-50 disabled:cursor-not-allowed ";
   const variantStyles = {
     primary:
-      "kt-btn kt-btn-primary bg-primary hover:bg-primary-400  transition-all  px-4 bg-sunbeam-60 text-white disabled:bg-sand-40 disabled:text-black  active:bg-sunbeam-70 active:text-black focus:text-black text-nowrap",
+      "bg-dark transition-all  px-4 bg-sunbeam-60 text-white disabled:bg-sand-40 disabled:text-black  active:bg-sunbeam-70 active:text-black focus:text-black text-nowrap",
     secondary: "bg-gray-600 text-white hover:bg-gray-700 focus:ring-gray-500",
     outline:
-      "border border-black hover:bg-white text-gray-700 focus:ring-gray-500 ",
+      "border border-dark hover:bg-white text-dark focus:ring-gray-500 ",
     ghost: "bg-transparent text-black hover:text-gray-500 focus:ring-gray-500",
     danger: "bg-red-600 text-white focus:ring-red-500",
   };
