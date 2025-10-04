@@ -3,7 +3,6 @@ import React from "react";
 const StreamlineSection = () => {
   return (
     <div>
-      {" "}
       <div className="relative  overflow-hidden font-grotesque">
         <div className="absolute inset-0 z-0">
           <img
@@ -12,7 +11,7 @@ const StreamlineSection = () => {
             className="absolute inset-0 h-full w-full object-cover text-transparent -z-10"
           />
         </div>
-        <div className="relative z-10 flex items-center justify-center  sm:px-6 lg:px-8 py-12">
+        <div className="relative z-10 flex items-center justify-center  sm:px-6 lg:px-8 py-8 lg:py-18">
           <div className="max-w-6xl w-full">
             <div className="text-center space-y-6 sm:space-y-8">
               <h1 className="text-5xl lg:text-7xl font-grotesque font-semibold text-dark md:leading-[80px] px-4 mb-0 text-center lg:w-[80%] lg:mx-auto">

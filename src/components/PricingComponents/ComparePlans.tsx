@@ -17,7 +17,6 @@ const ComparePlan = () => {
         <CollapsibleTable />
         <CollapsibleTable showButtonRow />
       </div>
-
       <Busineses />
       <PricingFAQAccordion />
     </div>

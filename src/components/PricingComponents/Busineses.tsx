@@ -47,7 +47,6 @@ const Header: React.FC = () => {
   );
 };
 
-/** Data */
 const people: Person[] = [
   {
     tag: "SALES  LEADERS",
