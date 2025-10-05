@@ -1,25 +1,7 @@
 import React from 'react';
 import Button from '../reusable/Button';
+import { CardItem, CardGridProps } from '@/app/types/startups.types';
 
-interface CardItem {
-    id: string;
-    title: string;
-    image: {
-        src: string;
-        sizes: string;
-        alt: string;
-    };
-    button: {
-        text: string;
-        href: string;
-        target?: '_blank' | '_self';
-    };
-}
-
-interface CardGridProps {
-    cards: CardItem[];
-    className?: string;
-}
 
 const Resources: React.FC = () => {
     const cards: CardItem[] = [
@@ -99,7 +81,7 @@ const ArrowIcon: React.FC = () => (
 
 const Card: React.FC<{ card: CardItem }> = ({ card }) => {
     return (
-        <div className="flex h-full flex-col gap-6 rounded-xl p-6 text-black md:p-8 lg:p-10 bg-[#F7F5F2]">
+        <div className="flex h-full flex-col gap-6 rounded-xl p-6 text-dark md:p-8 lg:p-10 bg-[#F7F5F2]">
             {/* Image */}
             <div className="relative h-auto w-full aspect-[2]">
                 <img

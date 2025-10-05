@@ -1,26 +1,6 @@
 import React from "react";
+import { FeatureSectionProps , FeatureItem} from "@/app/types/product.types";
 
-interface FeatureItem {
-  id: number;
-  tag: string;
-  title: string;
-  description: React.ReactNode;
-  ctaText?: string;
-  ctaLink?: string;
-  ctaTarget?: string;
-  imgbg?: string;
-  image: {
-    src: string;
-    alt: string;
-    width?: number | string;
-    height?: number | string;
-  };
-}
-
-interface FeatureSectionProps {
-  data: FeatureItem;
-  index: number;
-}
 
 const FeatureSection: React.FC<FeatureSectionProps> = ({ data, index }) => {
   const isEven = index % 2 === 0;

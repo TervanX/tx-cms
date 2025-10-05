@@ -55,7 +55,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ mostPopular }) => {
             <h5 className="text-center text-3xl lg:text-[62px] font-grotesque my-8">
               $0
             </h5>
-            <p className="text-xs text-black  text-center font-grotesque">
+            <p className="text-xs text-dark  text-center font-grotesque">
               Explore the Apollo platform to find leads, manage pipeline & close
               deals.
             </p>
@@ -79,7 +79,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ mostPopular }) => {
           <div className="w-full flex flex-col mt-8">
             <div className="flex items-center justify-start w-full gap-1 font-grotesque">
               <Check size={16} />
-              <p className="text-xs text-black   text-center">2 Sequences</p>
+              <p className="text-xs text-dark   text-center">2 Sequences</p>
             </div>
           </div>
         </div>

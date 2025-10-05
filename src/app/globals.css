@@ -11,7 +11,6 @@
   --dark-text: #000000de;
   --blue-text: #105bcc;
   --purple-text: #8B6AF9;
-  --yellow: #fecf40;
   --yellow1: #ebf212;
   --bg-blue: #edf3fe;
   --bg-lgblue: #DBE8FD;
@@ -25,7 +24,6 @@
   --color-navy-blue: var(--navy-blue);
   --color-dark: var(--dark-text);
   --color-blue: var(--blue-text);
-  --color-yellow: var(--yellow);
   --color-yellow1: var(--yellow1);
   --color-bg-blue: var(--bg-blue);
   --color-bg-lgblue: var(--bg-lgblue);

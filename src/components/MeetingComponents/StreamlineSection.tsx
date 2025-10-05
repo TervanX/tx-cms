@@ -1,5 +1,5 @@
 import React from "react";
-
+import Button from "../reusable/Button";
 const StreamlineSection = () => {
   return (
     <div>
@@ -19,14 +19,14 @@ const StreamlineSection = () => {
               </h1>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4 pt-4 mb-0">
                 <a href="/sign-up" className="w-full sm:w-auto">
-                  <button className="w-full sm:w-auto bg-black hover:bg-gray-900 text-white font-medium px-8 py-3.5 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl min-w-[200px] text-base sm:text-lg">
+                  <Button className="w-full sm:w-auto bg-black hover:bg-gray-900 text-white font-medium px-8 py-3.5 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl min-w-[200px] text-base sm:text-lg">
                     Sign up for free
-                  </button>
+                  </Button>
                 </a>
                 <a href="/demo" className="w-full sm:w-auto">
-                  <button className="w-full sm:w-auto bg-transparent hover:bg-white/10 text-dark font-medium px-8 py-3.5 rounded-lg border-2 border-dark transition-all duration-200 min-w-[200px] text-base sm:text-lg">
+                  <Button className="w-full sm:w-auto bg-transparent hover:bg-white/10 text-dark font-medium px-8 py-3.5 rounded-lg border-2 border-dark transition-all duration-200 min-w-[200px] text-base sm:text-lg">
                     Get Meeting
-                  </button>
+                  </Button>
                 </a>
               </div>
             </div>

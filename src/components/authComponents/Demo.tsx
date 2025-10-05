@@ -1,6 +1,7 @@
 "use client"
 import { useState } from 'react';
 import Image from 'next/image';
+import Button from '../reusable/Button';
 
 export default function Demo() {
     const [email, setEmail] = useState('');
@@ -70,10 +71,10 @@ export default function Demo() {
                         )}
                     </div>
 
-                    <button
+                    <Button
                         type="button"
                         onClick={handleSubmit}
-                        className="group rounded-lg transition-all h-12 px-5 bg-black text-white hover:bg-gray-800 active:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black w-full disabled:bg-gray-300 disabled:cursor-not-allowed"
+                        className="group rounded-lg transition-all h-12 px-5 bg-dark text-white hover:bg-gray-800 active:bg-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-dark w-full disabled:bg-gray-300 disabled:cursor-not-allowed"
                     >
                         <div className="flex items-center justify-center gap-2">
                             <span className="text-base">Get a demo</span>
@@ -83,7 +84,7 @@ export default function Demo() {
                                 </svg>
                             </span>
                         </div>
-                    </button>
+                    </Button>
                 </div>
 
                 {/* Privacy Notice */}
@@ -101,7 +102,7 @@ export default function Demo() {
                     <div className="flex gap-1">
                         {[...Array(5)].map((_, i) => (
                             <svg key={i} width="16" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14.642 3.28712C15.4532 2.31792 17.12 2.47945 17.6459 3.77173L20.6283 11.1003L28.5457 11.5684C30.17 11.6645 30.8225 13.7115 29.5532 14.7298L23.4602 19.6181L25.4607 27.0904C25.7628 28.2186 24.9509 29.1935 23.9595 29.3201C23.713 29.3516 23.4553 29.3306 23.2009 29.2464C23.0687 29.2027 22.9375 29.1419 22.8091 29.0626L15.9993 24.8558L9.18943 29.0626C7.82031 29.9084 6.12161 28.645 6.5378 27.0904L8.53834 19.6181L2.44533 14.7298C1.17609 13.7115 1.8285 11.6645 3.45289 11.5684L11.3702 11.1003L14.3526 3.77172C14.4278 3.58711 14.5262 3.42558 14.642 3.28712Z" fill="black"></path>
+                                <path d="M14.642 3.28712C15.4532 2.31792 17.12 2.47945 17.6459 3.77173L20.6283 11.1003L28.5457 11.5684C30.17 11.6645 30.8225 13.7115 29.5532 14.7298L23.4602 19.6181L25.4607 27.0904C25.7628 28.2186 24.9509 29.1935 23.9595 29.3201C23.713 29.3516 23.4553 29.3306 23.2009 29.2464C23.0687 29.2027 22.9375 29.1419 22.8091 29.0626L15.9993 24.8558L9.18943 29.0626C7.82031 29.9084 6.12161 28.645 6.5378 27.0904L8.53834 19.6181L2.44533 14.7298C1.17609 13.7115 1.8285 11.6645 3.45289 11.5684L11.3702 11.1003L14.3526 3.77172C14.4278 3.58711 14.5262 3.42558 14.642 3.28712Z" fill="dark"></path>
                             </svg>
                         ))}
                     </div>

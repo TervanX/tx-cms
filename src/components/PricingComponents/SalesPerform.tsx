@@ -3,11 +3,11 @@ const SalesPerform = () => {
   return (
     <div className="flex flex-col lg:flex-row gap-8">
       <div>
-        <p className="text-[24px] font-medium text-black font-grotesk text-center lg:text-start">
+        <p className="text-[24px] font-medium text-dark font-grotesk text-center lg:text-start">
           The most loved sales platform on the planet
         </p>
         <Ratings />
-        <p className="text-xs text-black font-grotesk mt-2  text-center lg:text-start">
+        <p className="text-xs text-dark font-grotesk mt-2  text-center lg:text-start">
           4.7/5 based on 9,015 reviews | GDPR Compliant
         </p>
       </div>

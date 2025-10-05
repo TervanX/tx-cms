@@ -1,6 +1,6 @@
 "use client"
 import { useState } from 'react';
-
+import Button from '../reusable/Button';
 export default function SignUp() {
   const [email, setEmail] = useState('');
 
@@ -67,7 +67,7 @@ export default function SignUp() {
                       />
                     </div>
                   </div>
-                  <button
+                  <Button
                     type="button"
                     onClick={handleEmailSubmit}
                     className="group rounded-lg transition-all h-12 px-5 bg-black text-white disabled:bg-gray-200 hover:bg-gray-700 active:bg-black focus:bg-black focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-black w-full whitespace-nowrap lg:w-auto"
@@ -75,7 +75,7 @@ export default function SignUp() {
                     <div className="flex items-center justify-center gap-2">
                       <p className="text-[16px] leading-[130%]">Sign up for free</p>
                     </div>
-                  </button>
+                  </Button>
                 </div>
 
                 {/* Divider */}
@@ -94,10 +94,10 @@ export default function SignUp() {
 
                 {/* OAuth Buttons */}
                 <div className="flex flex-col gap-4">
-                  <button
+                  <Button
                     type="button"
                     onClick={handleGoogleSignUp}
-                    className="group rounded-lg transition-all h-12 px-5 bg-transparent border border-black text-black disabled:bg-transparent disabled:border-gray-400 disabled:text-gray-400 hover:bg-gray-200 hover:border-black hover:text-black active:bg-gray-300 active:border-black active:text-black focus:border-black focus:text-black grow whitespace-nowrap"
+                    className="group rounded-lg transition-all h-12 px-5 bg-transparent border border-black text-dark disabled:bg-transparent disabled:border-gray-400 disabled:text-gray-400 hover:bg-gray-200 hover:border-black hover:text-dark active:bg-gray-300 active:border-black active:text-dark focus:border-black focus:text-dark grow whitespace-nowrap"
                   >
                     <div className="flex items-center justify-center gap-2">
                       <span>
@@ -110,12 +110,12 @@ export default function SignUp() {
                       </span>
                       <p className="text-[16px] leading-[130%]">Sign up with Google</p>
                     </div>
-                  </button>
+                  </Button>
 
-                  <button
+                  <Button
                     type="button"
                     onClick={handleMicrosoftSignUp}
-                    className="group rounded-lg transition-all h-12 px-5 bg-transparent border border-black text-black disabled:bg-transparent disabled:border-gray-400 disabled:text-gray-400 hover:bg-gray-200 hover:border-black hover:text-black active:bg-gray-300 active:border-black active:text-black focus:border-black focus:text-black grow whitespace-nowrap"
+                    className="group rounded-lg transition-all h-12 px-5 bg-transparent border border-black text-dark disabled:bg-transparent disabled:border-gray-400 disabled:text-gray-400 hover:bg-gray-200 hover:border-black hover:text-dark active:bg-gray-300 active:border-black active:text-dark focus:border-black focus:text-dark grow whitespace-nowrap"
                   >
                     <div className="flex items-center justify-center gap-2">
                       <span>
@@ -128,7 +128,7 @@ export default function SignUp() {
                       </span>
                       <p className="text-[16px] leading-[130%]">Sign up with Microsoft</p>
                     </div>
-                  </button>
+                  </Button>
                 </div>
               </div>
             </div>

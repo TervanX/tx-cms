@@ -20,7 +20,6 @@ const OurStoryPage: React.FC = () => {
         <OurValue />
       </div>
       <PositionSection />
-      <Footer />
     </div>
   );
 };

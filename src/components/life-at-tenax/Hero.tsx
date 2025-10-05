@@ -1,28 +1,41 @@
 "use client";
 import { motion } from "framer-motion";
 import Button from "../reusable/Button";
-import { IoArrowBackSharp, IoArrowForwardSharp } from "react-icons/io5";
 import { useEffect, useRef, useState } from "react";
 
-const OurValue = () => {
+const LifeAtTenaxHero = () => {
   return (
     <div>
-      <div className="w-full md:w-1/2 mx-auto mt-0 md:mt-15">
-        <h4 className="text-2xl md:text-4xl lg:text-5xl text-center font-medium text-dark">
-          Our values
-        </h4>
-        <p className="text-base text-dark font-normal text-center my-2">
-          Our values aren’t just words on a page. They guide how we work, how we
-          make decisions, and how we show up for each other and our customers
-          every day.
-        </p>
+      {" "}
+      <div className="py-4 flex flex-col gap-8">
+        <div className="w-full md:w-2/3 lg:w-2/4 mx-auto flex flex-col gap-3">
+          <h1 className="font-grotesque text-4xl lg:text-5xl font-medium text-center">
+            Life at Apollo{" "}
+          </h1>
+          <p className="font-grotesque text-base   text-center">
+            What's it like to work at a fast-paced, AI-first company? Here's a
+            peek at how we work, grow, and support our people every step of the
+            way.
+          </p>
+          <div className="flex items-center justify-center mb-8 mt-2">
+            <Button className="w-full sm:w-auto bg-black text-white hover:bg-gray-900  font-medium px-8 py-3.5 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl min-w-[200px] text-base sm:text-lg">
+              See all open positions
+            </Button>
+          </div>
+        </div>
+        <div className="">
+          <img
+            src="https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-image.39c4fd2b.jpg&w=750&q=75"
+            className="w-full h-auto rounded-2xl"
+          />
+        </div>
       </div>
       <CardShowcase />
     </div>
   );
 };
 
-export default OurValue;
+export default LifeAtTenaxHero;
 
 interface CardProps {
   id: string;
@@ -32,105 +45,6 @@ interface CardProps {
 }
 
 const cards: CardProps[] = [
-  {
-    id: "1",
-    logo: (
-      <>
-        <svg
-          width="32"
-          viewBox="0 0 18 18"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M16.9422 16.1161L13.9362 13.1101C13.6635 13.4259 13.368 13.7213 13.0522 13.994L16.0583 17L16.9422 16.1161Z"
-            fill="#1A1A1A"
-          ></path>
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M9.23024 7.06141C9.40177 6.76638 9.5 6.42347 9.5 6.05762C9.5 4.95305 8.60457 4.05762 7.5 4.05762C6.39543 4.05762 5.5 4.95305 5.5 6.05762C5.5 6.42347 5.59823 6.76638 5.76976 7.06141C4.95588 7.35922 4.375 8.14058 4.375 9.05762V10.0576H5.625V9.05762C5.625 8.57437 6.01675 8.18262 6.5 8.18262H8.5C8.98325 8.18262 9.375 8.57437 9.375 9.05762V10.0576H10.625V9.05762C10.625 8.14058 10.0441 7.35922 9.23024 7.06141ZM7.5 6.80762C7.91421 6.80762 8.25 6.47183 8.25 6.05762C8.25 5.6434 7.91421 5.30762 7.5 5.30762C7.08579 5.30762 6.75 5.6434 6.75 6.05762C6.75 6.47183 7.08579 6.80762 7.5 6.80762Z"
-            fill="#1A1A1A"
-          ></path>
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M14 7.55762C14 11.1475 11.0899 14.0576 7.5 14.0576C3.91015 14.0576 1 11.1475 1 7.55762C1 3.96777 3.91015 1.05762 7.5 1.05762C11.0899 1.05762 14 3.96777 14 7.55762ZM12.75 7.55762C12.75 10.4571 10.3995 12.8076 7.5 12.8076C4.60051 12.8076 2.25 10.4571 2.25 7.55762C2.25 4.65812 4.60051 2.30762 7.5 2.30762C10.3995 2.30762 12.75 4.65812 12.75 7.55762Z"
-            fill="#1A1A1A"
-          ></path>
-        </svg>
-      </>
-    ),
-    title: "Be customer obsessed",
-    description:
-      "We earn trust by understanding our customers deeply and putting their success at the center of everything we do.",
-  },
-  {
-    id: "1",
-    logo: (
-      <>
-        <svg
-          width="32"
-          viewBox="0 0 18 18"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M16.9422 16.1161L13.9362 13.1101C13.6635 13.4259 13.368 13.7213 13.0522 13.994L16.0583 17L16.9422 16.1161Z"
-            fill="#1A1A1A"
-          ></path>
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M9.23024 7.06141C9.40177 6.76638 9.5 6.42347 9.5 6.05762C9.5 4.95305 8.60457 4.05762 7.5 4.05762C6.39543 4.05762 5.5 4.95305 5.5 6.05762C5.5 6.42347 5.59823 6.76638 5.76976 7.06141C4.95588 7.35922 4.375 8.14058 4.375 9.05762V10.0576H5.625V9.05762C5.625 8.57437 6.01675 8.18262 6.5 8.18262H8.5C8.98325 8.18262 9.375 8.57437 9.375 9.05762V10.0576H10.625V9.05762C10.625 8.14058 10.0441 7.35922 9.23024 7.06141ZM7.5 6.80762C7.91421 6.80762 8.25 6.47183 8.25 6.05762C8.25 5.6434 7.91421 5.30762 7.5 5.30762C7.08579 5.30762 6.75 5.6434 6.75 6.05762C6.75 6.47183 7.08579 6.80762 7.5 6.80762Z"
-            fill="#1A1A1A"
-          ></path>
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M14 7.55762C14 11.1475 11.0899 14.0576 7.5 14.0576C3.91015 14.0576 1 11.1475 1 7.55762C1 3.96777 3.91015 1.05762 7.5 1.05762C11.0899 1.05762 14 3.96777 14 7.55762ZM12.75 7.55762C12.75 10.4571 10.3995 12.8076 7.5 12.8076C4.60051 12.8076 2.25 10.4571 2.25 7.55762C2.25 4.65812 4.60051 2.30762 7.5 2.30762C10.3995 2.30762 12.75 4.65812 12.75 7.55762Z"
-            fill="#1A1A1A"
-          ></path>
-        </svg>
-      </>
-    ),
-    title: "Be customer obsessed",
-    description:
-      "We earn trust by understanding our customers deeply and putting their success at the center of everything we do.",
-  },
-  {
-    id: "1",
-    logo: (
-      <>
-        <svg
-          width="32"
-          viewBox="0 0 18 18"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M16.9422 16.1161L13.9362 13.1101C13.6635 13.4259 13.368 13.7213 13.0522 13.994L16.0583 17L16.9422 16.1161Z"
-            fill="#1A1A1A"
-          ></path>
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M9.23024 7.06141C9.40177 6.76638 9.5 6.42347 9.5 6.05762C9.5 4.95305 8.60457 4.05762 7.5 4.05762C6.39543 4.05762 5.5 4.95305 5.5 6.05762C5.5 6.42347 5.59823 6.76638 5.76976 7.06141C4.95588 7.35922 4.375 8.14058 4.375 9.05762V10.0576H5.625V9.05762C5.625 8.57437 6.01675 8.18262 6.5 8.18262H8.5C8.98325 8.18262 9.375 8.57437 9.375 9.05762V10.0576H10.625V9.05762C10.625 8.14058 10.0441 7.35922 9.23024 7.06141ZM7.5 6.80762C7.91421 6.80762 8.25 6.47183 8.25 6.05762C8.25 5.6434 7.91421 5.30762 7.5 5.30762C7.08579 5.30762 6.75 5.6434 6.75 6.05762C6.75 6.47183 7.08579 6.80762 7.5 6.80762Z"
-            fill="#1A1A1A"
-          ></path>
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M14 7.55762C14 11.1475 11.0899 14.0576 7.5 14.0576C3.91015 14.0576 1 11.1475 1 7.55762C1 3.96777 3.91015 1.05762 7.5 1.05762C11.0899 1.05762 14 3.96777 14 7.55762ZM12.75 7.55762C12.75 10.4571 10.3995 12.8076 7.5 12.8076C4.60051 12.8076 2.25 10.4571 2.25 7.55762C2.25 4.65812 4.60051 2.30762 7.5 2.30762C10.3995 2.30762 12.75 4.65812 12.75 7.55762Z"
-            fill="#1A1A1A"
-          ></path>
-        </svg>
-      </>
-    ),
-    title: "Be customer obsessed",
-    description:
-      "We earn trust by understanding our customers deeply and putting their success at the center of everything we do.",
-  },
   {
     id: "1",
     logo: (
@@ -275,13 +189,6 @@ const CardShowcase: React.FC = () => {
     }
   };
 
-  const scrollByOne = (dir: 1 | -1) => {
-    const el = scrollRef.current;
-    if (!el) return;
-    const amount = dir * (cardW + gapPx);
-    el.scrollBy({ left: amount, behavior: "smooth" });
-  };
-
   const updateArrows = () => {
     const el = scrollRef.current;
     if (!el) return;
@@ -294,7 +201,7 @@ const CardShowcase: React.FC = () => {
   const onScroll: React.UIEventHandler<HTMLDivElement> = () => updateArrows();
 
   return (
-    <div className="relative py-2 lg:py-12">
+    <div className="relative py-12 lg:py-14">
       <div className="mx-auto max-w-6xl lg:px-2">
         <div className="relative">
           <div

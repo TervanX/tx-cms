@@ -42,6 +42,7 @@ const navItems = [
 ];
 
 const Header = () => {
+  const [showSideBar, setShowSideBar] = useState(false);
    const [isScrolled, setIsScrolled] = useState(false);
   
     useEffect(() => {
@@ -57,13 +58,10 @@ const Header = () => {
       };
     }, []);
 
-  const [showSideBar, setShowSideBar] = useState(false);
   return (
-    <header
-      className={`fixed top-0 left-0 w-full z-20 px-6 ${
-        isScrolled ? "bg-white" : ""
-      }`}
-    >
+    <header className={`fixed top-0 left-0 w-full z-20 px-6 ${
+            isScrolled ? 'bg-white' : ''
+          }`}>
       <DeskTopNavbar />
       <MobileNav
         isOpen={showSideBar}
@@ -111,7 +109,7 @@ const DeskTopNavbar = () => {
         />
         <Button
           size="md"
-          variant="primary"
+          variant="secondary"
           type="button"
           onClick={() => {}}
           children={"Sign up for free"}
@@ -129,7 +127,7 @@ interface MobileNavProps {
 }
 const MobileNav: React.FC<MobileNavProps> = ({ toggle, isOpen }) => {
   return (
-    <header className="lg:px-8 py-3 flex items-center justify-between lg:hidden fixed top-0 left-0 w-screen z-50 px-6 ">
+    <header className="lg:px-8 py-3 flex items-center justify-between lg:hidden fixed top-0 left-0 w-screen z-50 px-6 bg-background">
       <div className="flex gap-10 items-center justify-start">
         <div className="flex items-center gap-2 font-bold text-lg">
           <img src="/assets/logo.svg" className="h-6 w-6" />
@@ -139,7 +137,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ toggle, isOpen }) => {
       <div className="flex items-center gap-4 justify-end">
         <Button
           size="md"
-          variant="primary"
+          variant="secondary"
           type="button"
           onClick={() => {}}
           children={"Sign up for free"}

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Button from "../reusable/Button";
 import { IoArrowBackSharp, IoArrowForwardSharp } from "react-icons/io5";
 import { useEffect, useRef, useState } from "react";
+import { CardProps } from "@/app/types/story.type";
 
 const OurStory = () => {
   return (
@@ -17,12 +18,7 @@ const OurStory = () => {
 
 export default OurStory;
 
-interface CardProps {
-  id: string;
-  logo: string;
-  year: string;
-  description: string;
-}
+
 
 const cards: CardProps[] = [
   {
@@ -188,7 +184,7 @@ const Card: React.FC<{ item: CardProps; index: number }> = ({ item }) => {
         <img src={item.logo} alt={item.description} height={136} width={136} />
       </div>
       <h3 className="text-sm font-light mb-1">{item.year}</h3>
-      <p className="text-base text-black font-normal">{item.description}</p>
+      <p className="text-base text-dark font-normal">{item.description}</p>
     </motion.article>
   );
 };

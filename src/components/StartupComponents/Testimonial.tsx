@@ -1,15 +1,5 @@
 import Button from "../reusable/Button";
-interface TestimonialProps {
-    id: number;
-    company: string;
-    logo: string;
-    title: string;
-    quote: string;
-    author: string;
-    authorRole: string;
-    authorImage: string;
-    link: string;
-}
+import { TestimonialProps } from "@/app/types/startups.types";
 
 const TestimonialCard: React.FC<TestimonialProps> = ({
     company,
@@ -29,7 +19,7 @@ const TestimonialCard: React.FC<TestimonialProps> = ({
                 <img src={logo} className="relative flex h-14 items-center rounded w-14" />
             </div>
             <div className="flex h-full flex-col gap-4">
-                <p className="font-founders-grotesk text-[24px] leading-none text-black md:text-[24px] lg:text-[24px] xl:text-[32px]">
+                <p className="font-founders-grotesk text-[24px] leading-none text-dark md:text-[24px] lg:text-[24px] xl:text-[32px]">
                     {title}
                 </p>
                 <p className="font-abc-diatype text-[16px] leading-[130%] text-gray-700">
@@ -99,7 +89,7 @@ const Testimonial: React.FC = () => {
     return (<section className="px-6 md:px-12 lg:px-16 xl:px-20 2xl:px-24 my-20">
           <div className="container mx-auto px-4">
         <div className="flex flex-col items-center gap-4 text-center md:gap-6">
-            <h4 className="max-w-6xl text-balance font-founders-grotesk text-[36px] leading-none tracking-[-0.72px] text-black md:text-[48px] md:tracking-[-0.96px]">
+            <h4 className="max-w-6xl text-balance font-founders-grotesk text-[36px] leading-none tracking-[-0.72px] text-dark md:text-[48px] md:tracking-[-0.96px]">
                 See why startups love Apollo
             </h4>
             <div className="max-w-2xl text-balance font-abc-diatype text-[16px] leading-[130%] text-gray-700">

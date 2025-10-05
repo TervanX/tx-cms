@@ -1,19 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FooterLink, FooterSection } from '@/app/types/reusable.type';
 
-interface FooterLink {
-    label: string;
-    href: string;
-    external?: boolean;
-}
-
-interface FooterSection {
-    title: string;
-    links: FooterLink[];
-    socialTitle?: string;
-    socialLinks?: FooterLink[];
-}
 
 const footerData: FooterSection[] = [
     {
