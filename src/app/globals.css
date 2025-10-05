@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import 'tailwind-scrollbar-hide/v4';
 
 :root {
   --primary-color:#0d07ed;
@@ -9,10 +10,13 @@
   --navy-blue: #072c62;
   --dark-text: #000000de;
   --blue-text: #105bcc;
+  --purple-text: #8B6AF9;
   --yellow: #fecf40;
+  --yellow1: #ebf212;
   --bg-blue: #edf3fe;
   --bg-lgblue: #DBE8FD;
   --bg-footer:#CCC9C6;
+  --bg-gray:"#f7f5f2"
 }
 
 @theme inline {
@@ -22,6 +26,7 @@
   --color-dark: var(--dark-text);
   --color-blue: var(--blue-text);
   --color-yellow: var(--yellow);
+  --color-yellow1: var(--yellow1);
   --color-bg-blue: var(--bg-blue);
   --color-bg-lgblue: var(--bg-lgblue);
   --color-bg-footer: var(--bg-footer);
@@ -33,6 +38,8 @@
   --font-size-6xl: 64px;
   --color-primary: var(--primary-color);
   --color-sand: var(--sand);
+  --color-gray: var(--bg-gray);
+  --color-purple: var(--purple-text);
 }
 
 /* @media (prefers-color-scheme: dark) {

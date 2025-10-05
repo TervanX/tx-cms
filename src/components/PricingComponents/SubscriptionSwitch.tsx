@@ -8,7 +8,7 @@ const SubcriptionSwitch = () => {
             active ? "bg-black text-white" : "bg-transparent text-gray-700"
           }`}
         >
-          Monthly billing
+          Annual billing
           <span className="absolute left-[50%] translate-x-[-50%] top-10 bg-primary text-white text-xs font-grotesk font-semibold w-[70px] py-1  rounded-lg">
             SAVE 20%
           </span>

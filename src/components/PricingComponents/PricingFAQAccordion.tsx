@@ -24,22 +24,17 @@ const ChevronDownIcon: React.FC<{ className?: string }> = ({ className }) => (
 
 const faqData: FAQItem[] = [
   {
-    question: "Which is the best B2B database?",
+    question: "What is included in my trial plans?",
     answer: (
       <>
-        The best B2B database in 2025 is{" "}
-        <Link href="/" className=" hover:underline">
-          Apollo.io
-        </Link>
-        , offering over 210 million verified contacts and 35 million companies
-        globally. What sets Apollo apart is not just scale but accuracy-every
-        contact includes validated email addresses, phone numbers, job titles,
-        company info, and even tech stack and hiring signals. Combined with{" "}
-        <Link href="/product/enrich" className=" hover:underline">
-          real-time enrichment
-        </Link>
-        , Apollo helps teams find and convert high-intent leads faster than
-        ever.
+        Trial plans include 100 credits, and almost all of the features of the
+        plan you selected.
+        <p className="mt-2">
+          The ability to link a non-Gmail/Microsoft account to send email
+          campaigns is not included. You must be on a paid plan or a direct
+          trial setup by one our sales representatives in order to link a
+          non-Gmail/Microsoft email account.
+        </p>
       </>
     ),
   },
@@ -151,13 +146,13 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
   onToggle,
 }) => {
   return (
-    <div className="border-b border-gray-200">
+    <div className="border-b border-gray-200 font-grotesque">
       <button
         onClick={onToggle}
-        className="w-full flex items-start justify-between py-5 px-6 text-left"
+        className="w-full flex items-start justify-between py-5 lg:px-6 text-left"
         aria-expanded={isOpen}
       >
-        <h6 className="text-xl sm:text-3xl font-semibold text-dark pr-8">
+        <h6 className="text-xl  lg:2xl font-medium text-dark pr-8">
           {item.question}
         </h6>
         <div
@@ -174,7 +169,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="px-6 pb-5 text-dark text-base sm:text-lg leading-relaxed">
+        <div className="px-6 pb-5 text-dark text-sm lg:text-base leading-relaxed">
           {item.answer}
         </div>
       </div>
@@ -182,7 +177,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
   );
 };
 
-const FAQAccordion: React.FC = () => {
+const PricingFAQAccordion: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const handleToggle = (index: number) => {
@@ -190,9 +185,9 @@ const FAQAccordion: React.FC = () => {
   };
 
   return (
-    <div className="w-full max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:px-8 font-grotesque">
+    <div className="w-full max-w-5xl mx-auto py-12  sm:px-6 lg:px-8 font-grotesk">
       <div className="mb-8">
-        <h4 className="text-3xl sm:text-4xl text-center font-bold text-dark">
+        <h4 className=" text-2xl lg:text-3xl sm:text-4xl text-start font-semibold text-dark ">
           Frequently asked questions
         </h4>
       </div>
@@ -211,4 +206,4 @@ const FAQAccordion: React.FC = () => {
   );
 };
 
-export default FAQAccordion;
+export default PricingFAQAccordion;

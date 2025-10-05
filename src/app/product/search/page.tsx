@@ -37,8 +37,6 @@ const ProductPage: React.FC = () => {
             <FAQAccordion />
             <CtaSection />
         </div>
+    )}
 
-    )
-}
-
-export default ProductPage
+export default ProductPage;
