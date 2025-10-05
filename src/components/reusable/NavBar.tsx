@@ -43,28 +43,25 @@ const navItems = [
 
 const Header = () => {
   const [showSideBar, setShowSideBar] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
-      setIsScrolled(scrollTop > 0);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+   const [isScrolled, setIsScrolled] = useState(false);
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        setIsScrolled(scrollTop > 0);
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+      
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
 
   return (
-    <header
-      className={`fixed top-0 left-0 w-full z-20 px-6 ${
-        isScrolled ? "bg-white" : ""
-      }`}
-    >
+    <header className={`fixed top-0 left-0 w-full z-20 px-6 ${
+            isScrolled ? 'bg-white' : ''
+          }`}>
       <DeskTopNavbar />
       <MobileNav
         isOpen={showSideBar}

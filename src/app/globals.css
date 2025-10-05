@@ -5,6 +5,7 @@
   --primary-color:#0d07ed;
   --background: rgb(204 201 198);
   --sand:rgb(115 111 108);
+  --sandy:#F7F5F2;
   --foreground: #171717;
   --navy-blue: #072c62;
   --dark-text: #000000de;
@@ -29,6 +30,7 @@
   --color-bg-blue: var(--bg-blue);
   --color-bg-lgblue: var(--bg-lgblue);
   --color-bg-footer: var(--bg-footer);
+  --color-sandy: var(--sandy)
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-grotesque: var(--font-bricolage-grotesque);
@@ -47,7 +49,7 @@
 } */
 
 body {
-  background: var(--background);
+  /* background: var(--background); */
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }

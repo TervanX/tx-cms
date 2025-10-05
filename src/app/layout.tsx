@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
-import Header from "./NavBar";
+// import Header from "./NavBar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,7 +34,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased ${grotesque.variable}`}
       >
-        <Header />
+        {/* <Header /> */}
         <div className="w-full">{children}</div>
       </body>
     </html>

@@ -18,7 +18,6 @@ const OurStoryPage: React.FC = () => {
         <PerksAndBenefits />
       </div>
       <PositionSection />
-      <Footer />
     </div>
   );
 };

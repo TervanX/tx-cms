@@ -15,7 +15,6 @@ const PricingPage: React.FC = () => {
         <SalesPerform />
       </div>
       <ComparePlan />
-      <Footer />
     </div>
   );
 };
