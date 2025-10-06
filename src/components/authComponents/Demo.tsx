@@ -27,7 +27,7 @@ export default function Demo() {
         <div className="relative flex min-h-screen flex-col items-center overflow-hidden bg-white rounded-md pt-12">
             {/* Background Pattern */}
  <Image
-      src="/assets/bg.8.svg"
+      src="/assets/bg.1.svg"
       alt="demo"
       fill
       priority

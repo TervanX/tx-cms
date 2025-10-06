@@ -134,6 +134,7 @@ interface LogoGridProps {
   maxLogosPerRow?: number;
   backgroundColor?: string;
   svgColor?: string;
+  w?:string;
 }
 
 const LogoGrid: React.FC<LogoGridProps> = ({
@@ -144,6 +145,7 @@ const LogoGrid: React.FC<LogoGridProps> = ({
   maxLogosPerRow = 6,
   backgroundColor = '#6CA4F9',
   svgColor = 'black',
+  w=''
 }) => {
   return (
     <div 
@@ -152,7 +154,7 @@ const LogoGrid: React.FC<LogoGridProps> = ({
     >
       <div className={`flex flex-wrap ${justify} ${gap}`}>
         {logos.slice(0, maxLogosPerRow).map((logo) => (
-          <div key={logo.id} className="flex justify-center">
+          <div key={logo.id} className={`flex justify-center ${w}`}>
             {logo.svg(svgColor)}
           </div>
         ))}
