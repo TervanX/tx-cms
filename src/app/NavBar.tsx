@@ -209,7 +209,7 @@ const NavItem: React.FC<NavItemProps> = ({ navName }) => {
                 <div className="flex flex-col items-start gap-3">
                   <div className="flex flex-col items-start gap-3">
                     <Image 
-                      src="https://downloads.intercomcdn.com/i/o/dyws6i9m/660849/970a84bb581c3b460c00fb367a68/4f4de1669475646edd26e2729182f8f9.png"
+                      src={"https://downloads.intercomcdn.com/i/o/dyws6i9m/660849/970a84bb581c3b460c00fb367a68/4f4de1669475646edd26e2729182f8f9.png"}
                       className="h-6 w-6" 
                       width={24} 
                       height={24} 
