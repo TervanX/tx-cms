@@ -11,12 +11,12 @@
   --dark-text: #000000de;
   --blue-text: #105bcc;
   --purple-text: #8B6AF9;
-  --yellow: #fecf40;
   --yellow1: #ebf212;
   --bg-blue: #edf3fe;
   --bg-lgblue: #DBE8FD;
   --bg-footer:#CCC9C6;
-  --bg-gray:"#f7f5f2"
+  --bg-gray:"#f7f5f2";
+  --bg-white-transparent:rgba(255,255,255,0.1);
 }
 
 @theme inline {
@@ -25,11 +25,11 @@
   --color-navy-blue: var(--navy-blue);
   --color-dark: var(--dark-text);
   --color-blue: var(--blue-text);
-  --color-yellow: var(--yellow);
   --color-yellow1: var(--yellow1);
   --color-bg-blue: var(--bg-blue);
   --color-bg-lgblue: var(--bg-lgblue);
   --color-bg-footer: var(--bg-footer);
+  --color-sand: var(--sand)
   --color-sandy: var(--sandy)
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
@@ -39,6 +39,7 @@
   --color-sand: var(--sand);
   --color-gray: var(--bg-gray);
   --color-purple: var(--purple-text);
+  --color-white-transparent: var(--bg-white-transparent);
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -53,3 +54,4 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+

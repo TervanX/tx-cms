@@ -16,6 +16,7 @@ export const ButtonTypeSchema = z.enum(["button", "submit", "reset"]);
 export const IconPositionSchema = z.enum(["left", "right"]);
 
 export const ButtonPropsSchema = z.object({
+  href:z.string().optional(),
   children: z.custom<React.ReactNode>(),
   type: ButtonTypeSchema.optional(),
   variant: ButtonVariantSchema.optional(),
@@ -29,6 +30,7 @@ export const ButtonPropsSchema = z.object({
     .custom<React.MouseEventHandler<HTMLButtonElement>>()
     .optional(),
   className: z.string().optional(),
+   target: z.enum(['_blank', '_self']).optional(),
 });
 
 export const SocialAuthButtonVariantSchema = z.enum([
@@ -63,7 +65,20 @@ export const InputPropsSchema = z.object({
 
 export const PasswordInputPropsSchema = InputPropsSchema;
 
-// Type inference
+export const FooterLinkSchema = z.object({
+    label: z.string(),
+    href: z.string(),
+    external: z.boolean().optional()
+})
+
+export const FooterSectionSchema = z.object({
+    title: z.string(),
+    links: z.array(FooterLinkSchema),
+    socialTitle: z.string().optional(),
+    socialLinks: z.array(FooterLinkSchema).optional()
+});
+export type FooterLink = z.infer<typeof FooterLinkSchema>
+export type FooterSection = z.infer<typeof FooterSectionSchema>
 export type ButtonVariant = z.infer<typeof ButtonVariantSchema>;
 export type ButtonSize = z.infer<typeof ButtonSizeSchema>;
 export type ButtonType = z.infer<typeof ButtonTypeSchema>;

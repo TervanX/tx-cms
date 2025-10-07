@@ -11,7 +11,7 @@ const OurValue = () => {
         <h4 className="text-2xl md:text-4xl lg:text-5xl text-center font-medium text-dark">
           Our values
         </h4>
-        <p className="text-base text-black font-normal text-center my-2">
+        <p className="text-base text-dark font-normal text-center my-2">
           Our values aren’t just words on a page. They guide how we work, how we
           make decisions, and how we show up for each other and our customers
           every day.
@@ -328,7 +328,7 @@ const Card: React.FC<{ item: CardProps; index: number }> = ({ item }) => {
       <div className="flex flex-col items-center gap-3">
         <div className="flex items-center justify-center">{item.logo}</div>
         <h3 className="text-2xl font-medium text-center">{item.title}</h3>
-        <p className="text-base font-light text-black text-center">
+        <p className="text-base font-light text-dark text-center">
           {item.description}
         </p>
       </div>

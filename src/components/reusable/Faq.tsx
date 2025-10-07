@@ -1,11 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-
-interface FAQItem {
-  question: string;
-  answer: React.ReactNode;
-}
+import { FAQItem, AccordionItemProps } from "@/app/types/pricing.types";
 
 const ChevronDownIcon: React.FC<{ className?: string }> = ({ className }) => (
   <svg
@@ -138,12 +134,6 @@ const faqData: FAQItem[] = [
     ),
   },
 ];
-
-interface AccordionItemProps {
-  item: FAQItem;
-  isOpen: boolean;
-  onToggle: () => void;
-}
 
 const AccordionItem: React.FC<AccordionItemProps> = ({
   item,

@@ -42,23 +42,22 @@ const navItems = [
 ];
 
 const Header = () => {
+   const [isScrolled, setIsScrolled] = useState(false);
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        setIsScrolled(scrollTop > 0);
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+      
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+
   const [showSideBar, setShowSideBar] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
-      setIsScrolled(scrollTop > 0);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <header
       className={`fixed top-0 left-0 w-full z-70 px-6 ${
@@ -130,7 +129,7 @@ interface MobileNavProps {
 }
 const MobileNav: React.FC<MobileNavProps> = ({ toggle, isOpen }) => {
   return (
-    <header className="lg:px-8 py-3 flex items-center justify-between lg:hidden fixed top-0 left-0 w-screen z-50 px-6 bg-background">
+    <header className="lg:px-8 py-3 flex items-center justify-between lg:hidden fixed top-0 left-0 w-screen z-50 px-6 ">
       <div className="flex gap-10 items-center justify-start">
         <div className="flex items-center gap-2 font-bold text-lg">
           <img src="/assets/logo.svg" className="h-6 w-6" />
@@ -169,7 +168,7 @@ const NavItem: React.FC<NavItemProps> = ({ navName }) => {
       onMouseLeave={() => setHovered(null)}
       className="relative"
     >
-      <button className="text-black font-grotesque text-sm font-medium transition">
+      <button className="text-dark font-grotesque text-sm font-medium transition">
         {navName}
       </button>
 
@@ -211,13 +210,13 @@ const NavItem: React.FC<NavItemProps> = ({ navName }) => {
                   <p className="text-xs text-sand font-grotesque ">
                     Apollo Platform{" "}
                   </p>
-                  <a className="text-xs text-black  font-grotesque ">
+                  <a className="text-xs text-dark  font-grotesque ">
                     B2B Prospecting Data
                   </a>
-                  <a className="text-xs text-black  font-grotesque ">
+                  <a className="text-xs text-dark  font-grotesque ">
                     B2B Prospecting Data
                   </a>
-                  <a className="text-xs text-black  font-grotesque ">
+                  <a className="text-xs text-dark  font-grotesque ">
                     B2B Prospecting Data
                   </a>
                 </div>
@@ -233,13 +232,13 @@ const NavItem: React.FC<NavItemProps> = ({ navName }) => {
                   <p className="text-xs text-sand font-grotesque ">
                     Apollo Platform{" "}
                   </p>
-                  <a className="text-xs text-black  font-grotesque ">
+                  <a className="text-xs text-dark  font-grotesque ">
                     B2B Prospecting Data
                   </a>
-                  <a className="text-xs text-black  font-grotesque ">
+                  <a className="text-xs text-dark  font-grotesque ">
                     B2B Prospecting Data
                   </a>
-                  <a className="text-xs text-black  font-grotesque ">
+                  <a className="text-xs text-dark  font-grotesque ">
                     B2B Prospecting Data
                   </a>
                 </div>
@@ -365,13 +364,13 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
                 </div>
               </div>
               <div className="mt-6 flex flex-col gap-2">
-                <a className="text-xs text-black  font-grotesque ">
+                <a className="text-xs text-dark  font-grotesque ">
                   B2B Prospecting Data
                 </a>
-                <a className="text-xs text-black  font-grotesque ">
+                <a className="text-xs text-dark  font-grotesque ">
                   B2B Prospecting Data
                 </a>
-                <a className="text-xs text-black  font-grotesque ">
+                <a className="text-xs text-dark  font-grotesque ">
                   B2B Prospecting Data
                 </a>
               </div>
@@ -387,13 +386,13 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
                 <p className="text-xs text-sand font-grotesque ">
                   Apollo Platform{" "}
                 </p>
-                <a className="text-xs text-black  font-grotesque ">
+                <a className="text-xs text-dark  font-grotesque ">
                   B2B Prospecting Data
                 </a>
-                <a className="text-xs text-black  font-grotesque ">
+                <a className="text-xs text-dark  font-grotesque ">
                   B2B Prospecting Data
                 </a>
-                <a className="text-xs text-black  font-grotesque ">
+                <a className="text-xs text-dark  font-grotesque ">
                   B2B Prospecting Data
                 </a>
               </div>

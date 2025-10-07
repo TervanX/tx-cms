@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Button from "../reusable/Button";
 import { useEffect, useRef, useState } from "react";
 
 const LifeAtTenaxHero = () => {
@@ -17,9 +18,9 @@ const LifeAtTenaxHero = () => {
             way.
           </p>
           <div className="flex items-center justify-center mb-8 mt-2">
-            <button className="w-full sm:w-auto bg-black text-white hover:bg-gray-900  font-medium px-8 py-3.5 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl min-w-[200px] text-base sm:text-lg">
+            <Button className="w-full sm:w-auto bg-black text-white hover:bg-gray-900  font-medium px-8 py-3.5 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl min-w-[200px] text-base sm:text-lg">
               See all open positions
-            </button>
+            </Button>
           </div>
         </div>
         <div className="">
@@ -234,7 +235,7 @@ const Card: React.FC<{ item: CardProps; index: number }> = ({ item }) => {
       <div className="flex flex-col items-center gap-3">
         <div className="flex items-center justify-center">{item.logo}</div>
         <h3 className="text-2xl font-medium text-center">{item.title}</h3>
-        <p className="text-base font-light text-black text-center">
+        <p className="text-base font-light text-dark text-center">
           {item.description}
         </p>
       </div>

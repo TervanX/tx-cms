@@ -11,7 +11,7 @@ const PerksAndBenefits = () => {
         <h4 className="text-3xl md:text-4xl lg:text-5xl text-center font-medium text-dark font-grotesque">
           Perks and benefits
         </h4>
-        <p className="text-base text-black font-normal text-center my-2 font-grotesque">
+        <p className="text-base text-dark font-normal text-center my-2 font-grotesque">
           We know one size doesn't fit all, so our offerings evolve with our
           team and scale with our mission. No ping pong tables here, just real
           support wherever you work.
@@ -20,7 +20,7 @@ const PerksAndBenefits = () => {
       <CardShowcase />
 
       <div className="w-full md:w-1/2 mx-auto">
-        <p className="text-base text-black font-normal text-center my-2 font-grotesque">
+        <p className="text-base text-dark font-normal text-center my-2 font-grotesque">
           *Due to compliance requirements there are a small number of countries
           where we cannot allow remote work (whether temporarily or
           permanently). Remote jobs that are eligible for visa sponsorship or
@@ -238,7 +238,7 @@ const Card: React.FC<{ item: CardProps; index: number }> = ({ item }) => {
       <div className="flex flex-col items-center gap-3">
         <div className="flex items-center justify-center">{item.logo}</div>
         <h3 className="text-2xl font-medium text-center">{item.title}</h3>
-        <p className="text-base font-light text-black text-center">
+        <p className="text-base font-light text-dark text-center">
           {item.description}
         </p>
       </div>

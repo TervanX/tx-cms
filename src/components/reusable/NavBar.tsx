@@ -527,7 +527,7 @@ const DeskTopNavbar = () => {
         />
         <Button
           size="md"
-          variant="primary"
+          variant="secondary"
           type="button"
           onClick={() => {}}
           children={"Sign up for free"}
@@ -555,7 +555,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ toggle, isOpen }) => {
       <div className="flex items-center gap-4 justify-end">
         <Button
           size="md"
-          variant="primary"
+          variant="secondary"
           type="button"
           onClick={() => {}}
           children={"Sign up for free"}

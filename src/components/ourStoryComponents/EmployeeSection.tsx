@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-
+import Button from "../reusable/Button";
 const people = [
   {
     name: "Vince Heaton",
@@ -104,7 +104,7 @@ const people = [
 const Employees = () => {
   return (
     <div>
-      <p className="text-[10px] text-black font-normal text-center  mt-20 mb-8">
+      <p className="text-[10px] text-dark font-normal text-center  mt-20 mb-8">
         OUR EMPLOYEES
       </p>
       <h4 className=" text-2xl  md:text-4xl lg:text-5xl text-center font-medium text-dark">
@@ -124,7 +124,7 @@ const Staffs = () => {
     <section className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 font-grotesque">
       <div className="flex flex-wrap items-center justify-center gap-6 mb-10">
         {people.map((p, idx) => (
-          <button
+          <Button
             key={idx}
             onMouseEnter={() => setActive(idx)}
             onFocus={() => setActive(idx)}
@@ -141,7 +141,7 @@ const Staffs = () => {
               whileFocus={{ scale: 1.06 }}
               transition={{ type: "spring", stiffness: 320, damping: 20 }}
             />
-          </button>
+          </Button>
         ))}
       </div>
 

@@ -1,14 +1,8 @@
 "use client";
 import React, { JSX, useEffect, useRef, useState } from "react";
 import { FiX } from "react-icons/fi";
-
-export interface VideoHeroProps {
-  thumbnailSrc: string;
-  videoSrc: string;
-  title?: string;
-  className?: string;
-  poster?: string;
-}
+import Button from "../reusable/Button";
+import { VideoHeroProps } from "@/app/types/product.types";
 
 export default function VideoHero({
   thumbnailSrc = "/assets/videoimage.webp",
@@ -83,8 +77,8 @@ export default function VideoHero({
 
   return (
     <div className={`w-full ${className}`}>
-      <button
-        ref={openBtnRef}
+      <Button
+        // ref={openBtnRef}
         type="button"
         onClick={handleOpen}
         aria-label={title}
@@ -95,7 +89,7 @@ export default function VideoHero({
           alt="Video thumbnail"
           className="h-full object-cover  max-w-[90%] lg:max-w-[80%] mx-auto"
         />
-      </button>
+      </Button>
 
       {open && (
         <div
@@ -113,14 +107,14 @@ export default function VideoHero({
             onMouseDown={(e) => e.stopPropagation()} // prevent accidental close inside
           >
             <div className="relative overflow-hidden rounded-2xl bg-black ring-1 ring-white/10">
-              <button
+              <Button
                 type="button"
                 onClick={handleClose}
-                className="absolute right-3 top-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-black  hover:bg-white focus:outline-none focus-visible:ring focus-visible:ring-indigo-500"
+                className="absolute right-3 top-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-dark  hover:bg-white focus:outline-none focus-visible:ring focus-visible:ring-indigo-500"
                 aria-label="Close video"
               >
                 <FiX className="h-6 w-6" />
-              </button>
+              </Button>
 
               <div className="relative w-full">
                 <div className="aspect-video w-full bg-black">

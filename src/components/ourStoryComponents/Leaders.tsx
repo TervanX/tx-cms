@@ -8,13 +8,13 @@ const LeadersSection = () => {
   return (
     <div>
       <div className="w-full md:w-2/3 mx-auto">
-        <p className="text-[10px] text-black font-normal text-center mt-12 mb-6">
+        <p className="text-[10px] text-dark font-normal text-center mt-12 mb-6">
           OUR LEADERS
         </p>
         <h4 className="text-2xl md:text-4xl lg:text-5xl text-center font-medium text-dark">
           ... and the leaders guiding our way
         </h4>
-        <p className="text-sm text-black font-normal text-center my-6">
+        <p className="text-sm text-dark font-normal text-center my-6">
           Our leadership team brings deep GTM experience, bold vision, and a
           hands-on mindset to everything we do — driving a culture of continuous
           growth.
@@ -219,7 +219,7 @@ const Card: React.FC<{ item: CardProps; index: number }> = ({ item }) => {
         <div className="flex w-full items-center justify-between">
           <div>
             <h3 className="text-base font-medium mb-1">{item.year}</h3>
-            <p className="text-xs font-light text-black ">{item.description}</p>
+            <p className="text-xs font-light text-dark ">{item.description}</p>
           </div>
           <a className="rotate-315">
             <svg

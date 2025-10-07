@@ -1,23 +1,8 @@
-// components/Marquee.tsx
+
 'use client';
 
 import { motion } from 'framer-motion';
-
-export interface MarqueeItem {
-    id: string;
-    alt: string;
-    src: string;
-    width: number;
-    height: number;
-}
-
-interface MarqueeProps {
-    items?: MarqueeItem[];
-    speed?: number;
-    pauseOnHover?: boolean;
-    direction?: 'left' | 'right';
-    className?: string;
-}
+import { MarqueeProps, MarqueeItem } from '@/app/types/startups.types';
 
 export const Marquee: React.FC<MarqueeProps> = ({
     items,

@@ -192,22 +192,22 @@ const CollapsibleTable: React.FC<CollapsibleTableProps> = ({
             <tr className="bg-white">
               <td className="py-4 px-4 text-lg font-normal text-[#1a1a1a]"></td>
               <td className="py-4 text-center">
-                <Button size="lg" variant="primary" type="button">
+                <Button size="lg" variant="secondary" type="button">
                   Get started
                 </Button>
               </td>
               <td className="py-4 text-center">
-                <Button size="lg" variant="primary" type="button">
+                <Button size="lg" variant="secondary" type="button">
                   Buy now
                 </Button>
               </td>
               <td className="py-4 text-center">
-                <Button size="lg" variant="primary" type="button">
+                <Button size="lg" variant="secondary" type="button">
                   Buy now
                 </Button>
               </td>
               <td className="py-4 text-center">
-                <Button size="lg" variant="primary" type="button">
+                <Button size="lg" variant="secondary" type="button">
                   Buy now
                 </Button>
               </td>

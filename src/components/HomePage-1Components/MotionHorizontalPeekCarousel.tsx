@@ -440,7 +440,7 @@ const MotionHorizontalPeekCarousel: React.FC = () => {
   return (
     <div
       ref={containerRef}
-      className="w-full h-screen overflow-hidden bg-white relative border-solid border-primary border-[10px] overscroll-contain"
+      className="w-full h-screen overflow-hidden bg-white relative  overscroll-contain"
       style={{ overscrollBehavior: "contain" }}
     >
       <TabsNav

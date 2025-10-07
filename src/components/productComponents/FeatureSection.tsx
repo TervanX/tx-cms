@@ -1,28 +1,9 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
+import { FeatureSectionProp, FeatureItemDetailed } from '@/app/types/product.types';
 
-interface FeatureItem {
-  id: number;
-  tag: string;
-  title: string;
-  description: React.ReactNode;
-  ctaText: string;
-  ctaLink: string;
-  ctaTarget?: string;
-  image: {
-    src: string;
-    alt: string;
-    width: number;
-    height: number;
-  };
-}
 
-interface FeatureSectionProps {
-  data: FeatureItem;
-  index: number;
-}
-
-const FeatureSection: React.FC<FeatureSectionProps> = ({ data, index }) => {
+const FeatureSection: React.FC<FeatureSectionProp> = ({ data, index }) => {
   const isEven = index % 2 === 0;
 
   return (
@@ -119,7 +100,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({ data, index }) => {
 };
 
 interface FeatureSectionsProps {
-  features: FeatureItem[];
+  features: FeatureItemDetailed[];
 }
 
 const FeatureSections: React.FC<FeatureSectionsProps> = ({ features }) => {
@@ -134,7 +115,7 @@ const FeatureSections: React.FC<FeatureSectionsProps> = ({ features }) => {
 
 export default FeatureSections;
 
-export const featuresData: FeatureItem[] = [
+export const featuresData: FeatureItemDetailed[] = [
   {
     id: 1,
     tag: "SEARCH",

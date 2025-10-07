@@ -1,29 +1,6 @@
 import React from "react";
-
-interface ButtonConfig {
-  text: string;
-  href: string;
-}
-
-interface RatingConfig {
-  score: string;
-  reviewCount: string;
-  badge?: string;
-}
-
-interface HeroProps {
-  backgroundImage?: string;
-  backgroundAlt?: string;
-  tag?: string;
-  heading?: string;
-  subheading?: string;
-  primaryButton?: ButtonConfig;
-  secondaryButton?: ButtonConfig;
-  rating?: RatingConfig;
-  showRating?: boolean;
-  className?: string;
-}
-
+import Button from "../reusable/Button";
+import { HeroProps } from "@/app/types/product.types";
 // Reusable Hero Section Component
 export function HeroSection({
   backgroundImage = "/assets/bg.5.svg",
@@ -49,8 +26,6 @@ export function HeroSection({
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
       </div>
-      <div className="h-20" />
-
       {/* Content Container */}
       <div className="relative z-10 flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8 py-12">
         <div className="max-w-6xl w-full">
@@ -83,16 +58,16 @@ export function HeroSection({
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4 pt-4">
                 {primaryButton && (
                   <a href={primaryButton.href} className="w-full sm:w-auto">
-                    <button className="w-full sm:w-auto bg-black hover:bg-gray-900 text-white font-medium px-8 py-3.5 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl min-w-[200px] text-base sm:text-lg">
+                    <Button className="w-full sm:w-auto bg-black hover:bg-gray-900 text-white font-medium px-8 py-3.5 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl min-w-[200px] text-base sm:text-lg">
                       {primaryButton.text}
-                    </button>
+                    </Button>
                   </a>
                 )}
                 {secondaryButton && (
                   <a href={secondaryButton.href} className="w-full sm:w-auto">
-                    <button className="w-full sm:w-auto bg-transparent hover:bg-white/10 text-dark font-medium px-8 py-3.5 rounded-lg border-2 border-dark transition-all duration-200 min-w-[200px] text-base sm:text-lg">
+                    <Button  className="w-full sm:w-auto bg-transparent hover:bg-white/10 text-black font-medium px-8 py-3.5 rounded-lg border-2 border-dark transition-all duration-200 min-w-[200px] text-base sm:text-lg" variant="outline">
                       {secondaryButton.text}
-                    </button>
+                    </Button>
                   </a>
                 )}
               </div>

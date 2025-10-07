@@ -226,149 +226,151 @@ const StackedAnimation: React.FC = () => {
     "block w-[260px] md:w-[360px] lg:w-[320px] transform-gpu rounded-xl select-none pointer-events-none";
 
   return (
-    <div className="pt-12 md:pt-16">
-      {/* Fixed overlay labels */}
-      <div className="fixed inset-0 z-[9999] pointer-events-none">
-        {items.map((item, n) => (
-          <div
-            key={`label-${n}`}
-            ref={(el) => {
-              if (el) labelEls.current[n] = el;
-            }}
-            className="absolute whitespace-nowrap pointer-events-none"
-            style={{
-              transform: "translateZ(0)",
-              opacity: 0,
-              visibility: "hidden",
-            }}
-          >
-            <div className="relative">
-              <div className="pl-30 flex flex-col items-start h-full mt-4">
-                <h6 className="ml-6 text-xs text-dark px-4 leading-relaxed mb-0 font-grotesque flex items-center rounded">
-                  {item.title}
-                </h6>
-                <p className="ml-6 w-40 mt-2 text-xs text-dark px-4 leading-relaxed mb-0 font-grotesque flex items-center rounded">
-                  {item.description.replace(/\d+$/, "")}
-                </p>
+    <div>
+      <div className="pt-12 md:pt-16">
+        {/* Fixed overlay labels */}
+        <div className="fixed inset-0 z-[9999] pointer-events-none">
+          {items.map((item, n) => (
+            <div
+              key={`label-${n}`}
+              ref={(el) => {
+                if (el) labelEls.current[n] = el;
+              }}
+              className="absolute whitespace-nowrap pointer-events-none"
+              style={{
+                transform: "translateZ(0)",
+                opacity: 0,
+                visibility: "hidden",
+              }}
+            >
+              <div className="relative">
+                <div className="pl-30 flex flex-col items-start h-full mt-4">
+                  <h6 className="ml-6 text-xs text-dark px-4 leading-relaxed mb-0 font-grotesque flex items-center rounded">
+                    {item.title}
+                  </h6>
+                  <p className="ml-6 w-40 mt-2 text-xs text-dark px-4 leading-relaxed mb-0 font-grotesque flex items-center rounded">
+                    {item.description.replace(/\d+$/, "")}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <section
+          ref={sectionRef}
+          className="flex flex-col lg:flex-row min-h-screen items-center justify-center relative z-30"
+        >
+          {/* LEFT TEXT CONTENT (no background) */}
+          <div className="relative w-full z-40 lg:w-[35%] pr-0 md:pr-10 lg:pr-16 flex items-center justify-center h-full">
+            <div className="w-full max-w-md  px-0 lg:p-5 md:p-6">
+              <h1 className="text-3xl md:text-5xl font-medium text-dark md:leading-[60px] lg:px-4 mb-0 text-start font-grotesque">
+                Apollo,
+              </h1>
+              <h1 className="text-3xl md:text-5xl font-medium text-dark md:leading-[60px] lg:px-4 mb-0 text-start font-grotesque">
+                The AI Sales
+              </h1>
+              <h1 className="text-3xl md:text-5xl font-medium text-dark md:leading-[60px] lg:px-4 mb-0 text-start font-grotesque">
+                Platform
+              </h1>
+              <h6 className="text-sm md:text-base text-dark max-w-3xl mx-auto lg:px-4 leading-relaxed mb-0 py-2 font-grotesque">
+                Apollo is an end-to-end AI sales platform with all the features,
+                integrations, and training you need to grow your business.
+              </h6>
+
+              <div className="w-full flex flex-col gap-2 lg:px-4 mt-6">
+                {[0, 1, 2, 3].map((i) => (
+                  <div
+                    key={i}
+                    className="flex justify-between items-center border-solid border-sand border-b py-2"
+                  >
+                    <p className="text-sand hover:text-black text-xs">
+                      Pipeline Builder
+                    </p>
+                    <a>
+                      <svg
+                        width="20"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.0421 3.52704L16.0644 7.54927C17.5693 9.05275 16.5033 11.6252 14.3757 11.6252L2.5 11.6208V12.3673L14.3787 12.3718C16.5048 12.3718 17.5708 14.9443 16.0659 16.4477L12.0406 20.473L12.5692 21L21.5692 12L12.5692 3L12.0406 3.52704H12.0421Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
-        ))}
-      </div>
 
-      <section
-        ref={sectionRef}
-        className="flex flex-col lg:flex-row min-h-screen items-center justify-center relative z-30"
-      >
-        {/* LEFT TEXT CONTENT (no background) */}
-        <div className="relative w-full z-40 lg:w-[35%] pr-0 md:pr-10 lg:pr-16 flex items-center justify-center h-full">
-          <div className="w-full max-w-md  px-0 lg:p-5 md:p-6">
-            <h1 className="text-3xl md:text-5xl font-medium text-dark md:leading-[60px] lg:px-4 mb-0 text-start font-grotesque">
-              Apollo,
-            </h1>
-            <h1 className="text-3xl md:text-5xl font-medium text-dark md:leading-[60px] lg:px-4 mb-0 text-start font-grotesque">
-              The AI Sales
-            </h1>
-            <h1 className="text-3xl md:text-5xl font-medium text-dark md:leading-[60px] lg:px-4 mb-0 text-start font-grotesque">
-              Platform
-            </h1>
-            <h6 className="text-sm md:text-base text-dark max-w-3xl mx-auto lg:px-4 leading-relaxed mb-0 py-2 font-grotesque">
-              Apollo is an end-to-end AI sales platform with all the features,
-              integrations, and training you need to grow your business.
-            </h6>
+          {/* RIGHT 3D STACK */}
+          <div
+            ref={containerRef}
+            className="relative z-10 flex-1 w-[65%] h-full flex items-center justify-center overflow-hidden scrollbar-hide "
+            style={{ isolation: "isolate" }}
+          >
+            {/* Top overlay */}
+            <div
+              ref={topRef}
+              className="absolute inset-0 z-30 flex items-center justify-center scrollbar-hide"
+              style={{ transformStyle: "flat" }}
+            >
+              <img
+                src={TOP_URL}
+                alt="Top"
+                className={imgClass}
+                draggable={false}
+              />
+            </div>
 
-            <div className="w-full flex flex-col gap-2 lg:px-4 mt-6">
-              {[0, 1, 2, 3].map((i) => (
+            {/* Middle stack (3D) */}
+            <div
+              className="absolute top-20 inset-0 z-20 flex items-center justify-center scrollbar-hide"
+              style={{ transformStyle: "preserve-3d" }}
+            >
+              {items.map((item, n) => (
                 <div
-                  key={i}
-                  className="flex justify-between items-center border-solid border-sand border-b py-2"
+                  key={n}
+                  className="stack-layer absolute flex items-center justify-center"
+                  style={{ transformStyle: "preserve-3d" }}
+                  ref={(el) => {
+                    if (el) layerEls.current[n] = el;
+                  }}
                 >
-                  <p className="text-sand hover:text-black text-xs">
-                    Pipeline Builder
-                  </p>
-                  <a>
-                    <svg
-                      width="20"
-                      viewBox="0 0 25 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12.0421 3.52704L16.0644 7.54927C17.5693 9.05275 16.5033 11.6252 14.3757 11.6252L2.5 11.6208V12.3673L14.3787 12.3718C16.5048 12.3718 17.5708 14.9443 16.0659 16.4477L12.0406 20.473L12.5692 21L21.5692 12L12.5692 3L12.0406 3.52704H12.0421Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </a>
+                  <img
+                    src={item.stackUrl}
+                    data-scroll-src={item.scrollUrl}
+                    data-stack-src={item.stackUrl}
+                    alt={`Layer ${n + 1}`}
+                    className="block w-[260px] md:w-[360px] lg:w-[320px] transform-gpu rounded-xl select-none pointer-events-none"
+                    draggable={false}
+                    decoding="async"
+                  />
                 </div>
               ))}
             </div>
-          </div>
-        </div>
 
-        {/* RIGHT 3D STACK */}
-        <div
-          ref={containerRef}
-          className="relative z-10 flex-1 w-[65%] h-full flex items-center justify-center overflow-hidden scrollbar-hide bg-white"
-          style={{ isolation: "isolate" }}
-        >
-          {/* Top overlay */}
-          <div
-            ref={topRef}
-            className="absolute inset-0 z-30 flex items-center justify-center scrollbar-hide"
-            style={{ transformStyle: "flat" }}
-          >
-            <img
-              src={TOP_URL}
-              alt="Top"
-              className={imgClass}
-              draggable={false}
-            />
+            {/* Bottom overlay */}
+            <div
+              ref={bottomRef}
+              className="absolute inset-0 z-10 flex items-center justify-center"
+              style={{ transformStyle: "flat" }}
+            >
+              <img
+                src={BOTTOM_URL}
+                alt="Bottom"
+                className={imgClass}
+                draggable={false}
+              />
+            </div>
           </div>
 
-          {/* Middle stack (3D) */}
-          <div
-            className="absolute top-20 inset-0 z-20 flex items-center justify-center scrollbar-hide"
-            style={{ transformStyle: "preserve-3d" }}
-          >
-            {items.map((item, n) => (
-              <div
-                key={n}
-                className="stack-layer absolute flex items-center justify-center"
-                style={{ transformStyle: "preserve-3d" }}
-                ref={(el) => {
-                  if (el) layerEls.current[n] = el;
-                }}
-              >
-                <img
-                  src={item.stackUrl}
-                  data-scroll-src={item.scrollUrl}
-                  data-stack-src={item.stackUrl}
-                  alt={`Layer ${n + 1}`}
-                  className="block w-[260px] md:w-[360px] lg:w-[320px] transform-gpu rounded-xl select-none pointer-events-none"
-                  draggable={false}
-                  decoding="async"
-                />
-              </div>
-            ))}
-          </div>
-
-          {/* Bottom overlay */}
-          <div
-            ref={bottomRef}
-            className="absolute inset-0 z-10 flex items-center justify-center"
-            style={{ transformStyle: "flat" }}
-          >
-            <img
-              src={BOTTOM_URL}
-              alt="Bottom"
-              className={imgClass}
-              draggable={false}
-            />
-          </div>
-        </div>
-
-        <div className="lg:w-[35%] pr-6 md:pr-10 lg:pr-16 flex items-center justify-center h-full" />
-      </section>
+          <div className="lg:w-[35%] pr-6 md:pr-10 lg:pr-16 flex items-center justify-center h-full" />
+        </section>
+      </div>
     </div>
   );
 };

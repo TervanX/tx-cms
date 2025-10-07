@@ -13,16 +13,16 @@ const HowWeMakeItWork = () => {
         </h4>
         <div className="flex flex-col items-center gap-2 mt-4">
           {" "}
-          <p className="text-base text-black font-normal text-center my-2 font-grotesque">
+          <p className="text-base text-dark font-normal text-center my-2 font-grotesque">
             We're remote-first where it makes sense and in-person where it
             matters.
           </p>
-          <p className="text-base text-black font-normal text-center my-2 font-grotesque">
+          <p className="text-base text-dark font-normal text-center my-2 font-grotesque">
             With clear expectations around communication and collaboration, and
             tools built for global teams, we make it easy to stay connected from
             anywhere.
           </p>
-          <p className="text-base text-black font-normal text-center my-2 font-grotesque">
+          <p className="text-base text-dark font-normal text-center my-2 font-grotesque">
             Here's a look at how (and where) we work today.
           </p>
         </div>
@@ -102,7 +102,7 @@ const Card: React.FC<{ item: CardProps; index: number }> = ({ item }) => {
           <img src={item.img} alt={item.title} className="rounded-lg" />
         </div>
         <h3 className="text-2xl font-medium text-start">{item.title}</h3>
-        <p className="text-base font-light text-black text-start">
+        <p className="text-base font-light text-dark text-start">
           {item.description}
         </p>
       </div>

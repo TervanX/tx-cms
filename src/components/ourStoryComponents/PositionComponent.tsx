@@ -1,3 +1,4 @@
+import Button from "../reusable/Button";
 const PositionSection = () => {
   return (
     <div className="bg-yellow1 lg:h-screen rounded-lg flex flex-col lg:flex-row justify-between gap-8 py-8 px-6 lg:p-14 my-8">
@@ -10,9 +11,9 @@ const PositionSection = () => {
             We’re just getting started. Apply today and join the team shaping
             the future of go-to-market.
           </p>
-          <button className="w-full sm:w-auto bg-black text-white hover:bg-gray-900  font-medium px-8 py-3.5 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl min-w-[200px] text-base sm:text-lg mt-8 ">
+          <Button className="w-full sm:w-auto bg-black text-white hover:bg-gray-900  font-medium px-8 py-3.5 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl min-w-[200px] text-base sm:text-lg mt-8 ">
             See all open positions
-          </button>
+          </Button>
         </div>
       </div>
       <div className="w-full lg:w-2/6 flex items-center">

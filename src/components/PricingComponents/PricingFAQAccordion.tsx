@@ -1,11 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-
-interface FAQItem {
-  question: string;
-  answer: React.ReactNode;
-}
+import Button from "../reusable/Button";
+import { FAQItem, AccordionItemProps } from "@/app/types/pricing.types";
 
 const ChevronDownIcon: React.FC<{ className?: string }> = ({ className }) => (
   <svg
@@ -134,11 +131,7 @@ const faqData: FAQItem[] = [
   },
 ];
 
-interface AccordionItemProps {
-  item: FAQItem;
-  isOpen: boolean;
-  onToggle: () => void;
-}
+
 
 const AccordionItem: React.FC<AccordionItemProps> = ({
   item,
@@ -147,7 +140,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
 }) => {
   return (
     <div className="border-b border-gray-200 font-grotesque">
-      <button
+      <Button
         onClick={onToggle}
         className="w-full flex items-start justify-between py-5 lg:px-6 text-left"
         aria-expanded={isOpen}
@@ -162,7 +155,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
         >
           <ChevronDownIcon />
         </div>
-      </button>
+      </Button>
 
       <div
         className={`overflow-hidden transition-all duration-300 ease-in-out ${

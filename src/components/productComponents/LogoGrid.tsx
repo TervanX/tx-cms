@@ -1,6 +1,5 @@
-import React from "react";
+import React from 'react';
 
-// Define the logo data in a structured way
 const logos = [
   {
     id: 1,
@@ -32,12 +31,7 @@ const logos = [
         </g>
         <defs>
           <clipPath id="clip0_8937_19534">
-            <rect
-              width="70"
-              height="20"
-              fill="white"
-              transform="translate(0.619141)"
-            ></rect>
+            <rect width="70" height="20" fill="white" transform="translate(0.619141)"></rect>
           </clipPath>
         </defs>
       </svg>
@@ -49,19 +43,8 @@ const logos = [
     svg: (fillColor: string) => (
       <svg xmlns="http://www.w3.org/2000/svg" width="194" viewBox="0 0 194 38" fill="none">
         <g clipPath="url(#clip0_9457_94)">
-          <mask
-            id="mask0_9457_94"
-            style={{ maskType: "luminance" }}
-            maskUnits="userSpaceOnUse"
-            x="0"
-            y="1"
-            width="194"
-            height="36"
-          >
-            <path
-              d="M193.102 1.07758H0.101685V36.8459H193.102V1.07758Z"
-              fill="white"
-            ></path>
+          <mask id="mask0_9457_94" style={{ maskType: 'luminance' }} maskUnits="userSpaceOnUse" x="0" y="1" width="194" height="36">
+            <path d="M193.102 1.07758H0.101685V36.8459H193.102V1.07758Z" fill="white"></path>
           </mask>
           <g mask="url(#mask0_9457_94)">
             <path d="M52.7426 9.78241C54.8899 9.78241 57.0635 10.2865 58.6157 11.1437V14.6737C57.0887 13.6148 55.0446 13.0852 53.0261 13.1104C51.0599 13.1357 50.0765 13.6648 50.0765 14.7494C50.0765 17.8004 59.9874 16.6658 59.9874 22.9439C59.9874 26.9026 56.7273 28.138 52.9231 28.138C50.4133 28.138 48.0844 27.5582 46.2219 26.5495V22.9439C48.2916 24.2804 50.5686 24.8097 52.6388 24.8097C54.7346 24.8097 56.0286 24.3805 56.0286 23.1206C56.0286 19.8175 46.1177 21.053 46.1177 14.7998C46.1183 11.3961 49.1717 9.78241 52.7426 9.78241Z" fill={fillColor}></path>
@@ -82,12 +65,7 @@ const logos = [
         </g>
         <defs>
           <clipPath id="clip0_9457_94">
-            <rect
-              width="193"
-              height="36.5135"
-              fill="white"
-              transform="translate(0.101685 0.743225)"
-            ></rect>
+            <rect width="193" height="36.5135" fill="white" transform="translate(0.101685 0.743225)"></rect>
           </clipPath>
         </defs>
       </svg>
@@ -151,21 +129,23 @@ const logos = [
 interface LogoGridProps {
   className?: string;
   gap?: string;
-  justify?: "start" | "end" | "center" | "between" | "around" | "evenly";
+  justify?: 'start' | 'end' | 'center' | 'between' | 'around' | 'evenly';
   py?: string;
   maxLogosPerRow?: number;
   backgroundColor?: string;
   svgColor?: string;
+  w?:string;
 }
 
 const LogoGrid: React.FC<LogoGridProps> = ({
-  className = "",
-  gap = "gap-12",
-  justify = "justify-around",
-  py = "py-8",
+  className = '',
+  gap = 'gap-12',
+  justify = 'justify-around',
+  py = 'py-8',
   maxLogosPerRow = 6,
   backgroundColor = '#6CA4F9',
   svgColor = 'black',
+  w=''
 }) => {
   return (
     <div 
@@ -174,7 +154,7 @@ const LogoGrid: React.FC<LogoGridProps> = ({
     >
       <div className={`flex flex-wrap ${justify} ${gap}`}>
         {logos.slice(0, maxLogosPerRow).map((logo) => (
-          <div key={logo.id} className="flex justify-center">
+          <div key={logo.id} className={`flex justify-center ${w}`}>
             {logo.svg(svgColor)}
           </div>
         ))}

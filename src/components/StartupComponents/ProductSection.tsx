@@ -1,11 +1,5 @@
 import React from "react";
-interface ProductSectionProps {
-  title: string;
-  description: string;
-  image: string;
-  imagePosition: 'left' | 'right';
-}
-
+import { ProductSectionProps } from "@/app/types/startups.types";
 const ProductSection: React.FC<ProductSectionProps> = ({ 
   title, 
   description, 

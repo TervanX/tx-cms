@@ -2,17 +2,8 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import { motion, Variants } from "framer-motion";
 import Button from "../reusable/Button";
 import { IoArrowBackSharp, IoArrowForwardSharp } from "react-icons/io5";
+import { Person } from "@/app/types/pricing.types";
 
-/** Types */
-interface Person {
-  tag: string;
-  name: string;
-  role: string;
-  company: string;
-  avatar: string;
-  logoText: string;
-  longCopy: string;
-}
 
 const Busineses: React.FC = () => {
   return (
@@ -33,7 +24,7 @@ const Header: React.FC = () => {
           <h1 className="font-grotesque text-2xl lg:text-4xl font-medium text-left  leading-9 pr-6">
             The fastest growing businesses use Apollo
           </h1>
-          <p className="font-grotesque text-sm text-black mt-2 text-left  w-[90%]">
+          <p className="font-grotesque text-sm text-dark mt-2 text-left  w-[90%]">
             Over 500,000 companies use Apollo to stay ahead of the competition.
           </p>
         </div>
@@ -160,7 +151,7 @@ const Card: React.FC<{ p: Person; index: number }> = ({ p, index }) => {
           <h4 className="text-xs text-gray-500 mb-6 font-normal font-grotesk">
             ABOUT
           </h4>
-          <p className="text-base text-black mb-6 font-medium font-grotesque">
+          <p className="text-base text-dark mb-6 font-medium font-grotesque">
             {p.longCopy}
           </p>
 

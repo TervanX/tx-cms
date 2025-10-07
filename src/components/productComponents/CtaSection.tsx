@@ -1,5 +1,5 @@
 import Link from 'next/link';
-
+import Button from "../reusable/Button";
 export default function CtaSection() {
     return (
         <div style={{backgroundImage: 'url(/assets/bottom.svg)', backgroundRepeat:"no-repeat", backgroundPosition:"center", backgroundSize:"cover"} } className="py-20 px-6 font-grotesque">
@@ -9,11 +9,11 @@ export default function CtaSection() {
                 </h1>
                 <div>
                     <Link href="/sign-up">
-                        <button className="bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors">
+                        <Button className="bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors">
                             <div className="pointer-events-none">
                                 <span>Sign up for free</span>
                             </div>
-                        </button>
+                        </Button>
                     </Link>
                 </div>
             </div>

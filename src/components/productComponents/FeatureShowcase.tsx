@@ -1,27 +1,10 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
-
-// Types
-interface FeatureItem {
-  id: string;
-  title: string;
-  description: string;
-  icon: JSX.Element;
-  color: string;
-  learnMoreLink?: string;
-  image: {
-    src: string;
-    alt: string;
-  };
-}
-
-interface FeatureCategory {
-  id: string;
-  title: string;
-  features: FeatureItem[];
-  color: string;
-}
+import {
+  FeatureCategory,
+  FeatureItemWithIcon,
+} from "@/app/types/product.types";
 
 const FEATURE_CATEGORIES: FeatureCategory[] = [
   {
@@ -356,7 +339,7 @@ const FeatureCard = ({
   isActive,
   onClick,
 }: {
-  feature: FeatureItem;
+  feature: FeatureItemWithIcon;
   isActive: boolean;
   onClick: () => void;
 }) => (
@@ -390,7 +373,7 @@ const FeatureCategorySection = ({
     <p className={`text-sm font-semibold mb-2 ${category.color}`}>
       {category.title}
     </p>
-    <div className="">
+    <div className="space-y-1">
       {category.features.map((feature) => (
         <FeatureCard
           key={feature.id}
@@ -438,6 +421,11 @@ const FeaturesShowcase = () => {
     allFeatures.find((feature) => feature.id === activeFeature) ||
     allFeatures[0];
 
+  // Get the current category for background color
+  const currentCategory = FEATURE_CATEGORIES.find((category) =>
+    category.features.some((feature) => feature.id === activeFeature)
+  );
+
   // Auto-scroll to active feature
   useEffect(() => {
     if (featureContainerRef.current) {
@@ -456,28 +444,71 @@ const FeaturesShowcase = () => {
             Everything you need to exceed revenue goals.
           </h4>
         </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Left Sidebar - Feature Navigation */}
-          <div className="lg:col-span-4">
-            <div className="sticky top-8">
-              {FEATURE_CATEGORIES.map((category) => (
-                <FeatureCategorySection
-                  key={category.id}
-                  category={category}
-                  activeFeature={activeFeature}
-                  onFeatureClick={setActiveFeature}
-                />
-              ))}
-              <ScrollIndicator />
+          <div className="lg:col-span-3">
+            <div className="lg:sticky lg:top-8">
+              {/* Mobile - Horizontal Scroll */}
+              <div className="lg:hidden overflow-x-auto pb-4 mb-6">
+                <div className="flex space-x-4 min-w-max">
+                  {FEATURE_CATEGORIES.map((category) => (
+                    <div key={category.id} className="flex-shrink-0">
+                      <p
+                        className={`text-sm font-semibold mb-2 ${category.color}`}
+                      >
+                        {category.title}
+                      </p>
+                      <div className="flex flex-col space-y-2">
+                        {category.features.map((feature) => (
+                          <div
+                            key={feature.id}
+                            className={`
+                                                            flex items-center gap-2 p-2 rounded-lg cursor-pointer transition-all duration-200 min-w-max
+                                                            ${
+                                                              activeFeature ===
+                                                              feature.id
+                                                                ? "bg-blue-50 border border-blue-200"
+                                                                : "hover:bg-gray-50 border border-transparent"
+                                                            }
+                                                        `}
+                            onClick={() => setActiveFeature(feature.id)}
+                          >
+                            <div className={`flex-shrink-0 ${feature.color}`}>
+                              {feature.icon}
+                            </div>
+                            <span className="text-sm font-medium text-gray-700 whitespace-nowrap">
+                              {feature.title}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Desktop - Vertical Stack */}
+              <div className="hidden lg:block">
+                {FEATURE_CATEGORIES.map((category) => (
+                  <FeatureCategorySection
+                    key={category.id}
+                    category={category}
+                    activeFeature={activeFeature}
+                    onFeatureClick={setActiveFeature}
+                  />
+                ))}
+                <ScrollIndicator />
+              </div>
             </div>
           </div>
 
           {/* Right Content - Feature Details & Preview */}
           <div className="lg:col-span-8">
-            <div ref={featureContainerRef} className="space-y-2">
+            <div ref={featureContainerRef} className="space-y-6">
               {/* Feature Header */}
-              <div className="flex justify-between">
-                <div className="flex items-center gap-4 mb-6">
+              <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-4">
+                <div className="flex items-center gap-4">
                   <div className={`${currentFeature.color}`}>
                     {currentFeature.icon}
                   </div>
@@ -487,14 +518,14 @@ const FeaturesShowcase = () => {
                 </div>
 
                 {/* Feature Description */}
-                <div className="mb-8">
-                  <p className="text-gray-600">
+                <div className="lg:text-right">
+                  <p className="text-gray-600 max-w-lg">
                     {currentFeature.description}
                     {currentFeature.learnMoreLink && (
                       <span className="ml-1">
                         <a
                           href={currentFeature.learnMoreLink}
-                          className="text-blue-600 hover:text-blue-800 "
+                          className="text-blue-600 hover:text-blue-800 font-medium"
                         >
                           Learn more.
                         </a>
@@ -503,18 +534,83 @@ const FeaturesShowcase = () => {
                   </p>
                 </div>
               </div>
-              {/* Feature Image Preview */}
               <div className="relative rounded-lg overflow-hidden border border-gray-200">
-                <Image
-                  src={currentFeature.image.src}
-                  alt={currentFeature.image.alt}
-                  width={1808}
-                  height={1092}
-                  className="w-full h-auto"
-                  sizes="(max-width: 1024px) 100vw, 70vw"
-                  priority
-                />
+                {/* Image */}
+                <div className="relative z-10">
+                  <Image
+                    src={currentFeature.image.src}
+                    alt={currentFeature.image.alt}
+                    width={1808}
+                    height={1092}
+                    className="w-full h-auto"
+                    sizes="(max-width: 1024px) 100vw, 70vw"
+                    priority
+                  />
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* Left Sidebar - Feature Navigation */}
+        <div className="lg:col-span-4">
+          <div className="sticky top-8">
+            {FEATURE_CATEGORIES.map((category) => (
+              <FeatureCategorySection
+                key={category.id}
+                category={category}
+                activeFeature={activeFeature}
+                onFeatureClick={setActiveFeature}
+              />
+            ))}
+            <ScrollIndicator />
+          </div>
+        </div>
+
+        {/* Right Content - Feature Details & Preview */}
+        <div className="lg:col-span-8">
+          <div ref={featureContainerRef} className="space-y-2">
+            {/* Feature Header */}
+            <div className="flex justify-between">
+              <div className="flex items-center gap-4 mb-6">
+                <div className={`${currentFeature.color}`}>
+                  {currentFeature.icon}
+                </div>
+                <h2 className="text-2xl font-semibold text-gray-900">
+                  {currentFeature.title}
+                </h2>
+              </div>
+
+              {/* Feature Description */}
+              <div className="mb-8">
+                <p className="text-gray-600">
+                  {currentFeature.description}
+                  {currentFeature.learnMoreLink && (
+                    <span className="ml-1">
+                      <a
+                        href={currentFeature.learnMoreLink}
+                        className="text-blue-600 hover:text-blue-800 "
+                      >
+                        Learn more.
+                      </a>
+                    </span>
+                  )}
+                </p>
+              </div>
+            </div>
+            {/* Feature Image Preview */}
+            <div className="relative rounded-lg overflow-hidden border border-gray-200">
+              <Image
+                src={currentFeature.image.src}
+                alt={currentFeature.image.alt}
+                width={1808}
+                height={1092}
+                className="w-full h-auto"
+                sizes="(max-width: 1024px) 100vw, 70vw"
+                priority
+              />
             </div>
           </div>
         </div>

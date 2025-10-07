@@ -11,7 +11,7 @@ const TipsForSuccess = () => {
         <h4 className="text-3xl md:text-4xl lg:text-5xl text-center font-medium text-dark font-grotesque">
           Tips for success{" "}
         </h4>
-        <p className="text-base text-black font-normal text-center my-2 font-grotesque">
+        <p className="text-base text-dark font-normal text-center my-2 font-grotesque">
           A few ways to feel confident, prepared, and ready to shine in your
           interviews.
         </p>
@@ -19,9 +19,9 @@ const TipsForSuccess = () => {
       <CardShowcase />
 
       <div className="flex items-center justify-center mb-8 mt-2">
-        <button className=" sm:w-auto bg-black text-white hover:bg-gray-900  font-medium px-8 py-3.5 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl min-w-[200px] text-base sm:text-lg">
+        <Button className=" sm:w-auto bg-black text-white hover:bg-gray-900  font-medium px-8 py-3.5 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl min-w-[200px] text-base sm:text-lg">
           See all open positions
-        </button>
+        </Button>
       </div>
     </div>
   );
@@ -234,7 +234,7 @@ const Card: React.FC<{ item: CardProps; index: number }> = ({ item }) => {
       <div className="flex flex-col items-center gap-3">
         <div className="flex items-center justify-center">{item.logo}</div>
         <h3 className="text-2xl font-medium text-center">{item.title}</h3>
-        <p className="text-base font-light text-black text-center">
+        <p className="text-base font-light text-dark text-center">
           {item.description}
         </p>
       </div>
