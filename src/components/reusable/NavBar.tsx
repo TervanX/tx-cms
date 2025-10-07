@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { IoIosArrowForward, IoIosArrowDown, IoMdClose } from "react-icons/io";
@@ -501,8 +501,14 @@ const DeskTopNavbar = () => {
     <div className=" py-4 hidden lg:flex items-center justify-between">
       <div className="flex gap-16 items-center justify-start">
         <div className="flex items-center gap-2 font-bold text-lg">
-          <img src="/assets/logo.svg" className="h-6 w-6" />
-          <span className="font-medium font-grotesque "></span>
+          <Image 
+            src="/assets/logo.svg" 
+            className="h-6 w-6" 
+            width={24} 
+            height={24} 
+            alt="logo"
+          />
+          <span className="font-medium font-grotesque">Company Name</span>
         </div>
         <nav className="hidden lg:flex gap-10 relative">
           {navItems.map((item, index) => (
@@ -510,28 +516,31 @@ const DeskTopNavbar = () => {
           ))}
         </nav>
       </div>
-      <div className="flex  items-center gap-3">
+      <div className="flex items-center gap-3">
         <Button
           size="md"
           variant="ghost"
           type="button"
           onClick={() => {}}
-          children={"Log in"}
-        />
+        >
+          Log in
+        </Button>
         <Button
           size="md"
           variant="outline"
           type="button"
           onClick={() => {}}
-          children={"Get a demo"}
-        />
+        >
+          Get a demo
+        </Button>
         <Button
           size="md"
-          variant="secondary"
+          variant="primary"
           type="button"
           onClick={() => {}}
-          children={"Sign up for free"}
-        />
+        >
+          Sign up for free
+        </Button>
       </div>
     </div>
   );
@@ -543,23 +552,31 @@ interface MobileNavProps {
   toggle: () => void;
   isOpen: boolean;
 }
+
 const MobileNav: React.FC<MobileNavProps> = ({ toggle, isOpen }) => {
   return (
-    <header className="lg:px-8 py-3 flex items-center justify-between lg:hidden fixed top-0 left-0 w-screen z-50 px-6 bg-background">
+    <header className="lg:px-8 py-3 flex items-center justify-between lg:hidden fixed top-0 left-0 w-screen z-50 px-6 bg-white">
       <div className="flex gap-10 items-center justify-start">
         <div className="flex items-center gap-2 font-bold text-lg">
-          <img src="/assets/logo.svg" className="h-6 w-6" />
-          <span className="font-medium font-grotesque "></span>
+          <Image 
+            src="/assets/logo.svg" 
+            className="h-6 w-6" 
+            width={24} 
+            height={24} 
+            alt="logo"
+          />
+          <span className="font-medium font-grotesque">Company Name</span>
         </div>
       </div>
       <div className="flex items-center gap-4 justify-end">
         <Button
           size="md"
-          variant="secondary"
+          variant="primary"
           type="button"
           onClick={() => {}}
-          children={"Sign up for free"}
-        />
+        >
+          Sign up for free
+        </Button>
 
         <button onClick={toggle}>
           {isOpen ? <IoMdClose size={18} /> : <Menu size={18} />}
@@ -673,13 +690,14 @@ interface SideBarProps {
 
 const SideBar: React.FC<SideBarProps> = ({ isOpen, onClose }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  
   const handleToggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
     <motion.div
-      className="fixed w-screen h-screen top-16 pb-10 pt-4 right-0 overflow-y-auto bg-white flex flex-col justify-between items-start lg:hidden z-30 "
+      className="fixed w-screen h-screen top-16 pb-10 pt-4 right-0 overflow-y-auto bg-white flex flex-col justify-between items-start lg:hidden z-30"
       initial={{ x: "100%" }}
       animate={{ x: 0 }}
       exit={{ x: "100%" }}
@@ -701,7 +719,7 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, onClose }) => {
           size="md"
           variant="outline"
           type="button"
-          onClick={() => {}}
+          onClick={onClose}
           className="flex-1"
         >
           Log in
@@ -710,7 +728,7 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, onClose }) => {
           size="md"
           variant="outline"
           type="button"
-          onClick={() => {}}
+          onClick={onClose}
           className="flex-1"
         >
           Get a demo
@@ -745,7 +763,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
       </button>
 
       <div
-        className={`overflow-y-scroll  transition-all duration-300 ease-in-out px-6 ${
+        className={`overflow-y-scroll transition-all duration-300 ease-in-out px-6 ${
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >

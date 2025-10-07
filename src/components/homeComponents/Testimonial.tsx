@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 interface Testimonial {
   id: number;
   category: string;
@@ -143,10 +143,12 @@ export default function ApolloTestimonials() {
                     {testimonial.category}
                   </p>
                   
-                  <img
+                  <Image
                     alt={testimonial.name}
                     src={testimonial.image}
                     className="mt-8 w-[140px] h-[140px] rounded-lg object-cover"
+                    width={140}
+                    height={140}
                   />
                   
                   <p className="text-[20px] md:text-[24px] xl:text-[28px] leading-[110%] font-medium text-gray-900 mt-4">

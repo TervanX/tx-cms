@@ -1,6 +1,4 @@
 import React from "react";
-import Footer from "@/components/reusable/Footer";
-
 import LifeAtTenaxHero from "@/components/life-at-tenax/Hero";
 import OurHiringProcess from "@/components/life-at-tenax/OurHiringProcess";
 import TipsForSuccess from "@/components/life-at-tenax/TipsForSuccess";

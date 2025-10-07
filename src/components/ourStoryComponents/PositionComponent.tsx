@@ -20,6 +20,7 @@ const PositionSection = () => {
         <img
           src="https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fclosing-cta.519d5144.jpg&w=1920&q=75"
           className="w-full h-auto rounded-lg"
+          alt=""
         />
       </div>
     </div>

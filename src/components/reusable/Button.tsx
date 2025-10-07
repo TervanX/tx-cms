@@ -10,9 +10,13 @@ const Button: React.FC<ButtonProps> = ({
   disabled = false,
   loading = false,
   icon,
-  iconPosition = "left", // "left" | "right"
+  iconPosition = "left",
   onClick,
+  onMouseEnter,
+  onFocus,
   className = "flex justify-center grow",
+  "aria-label": ariaLabel,
+  ...rest
 }) => {
   const baseStyles =
     "inline-flex items-center text-sm justify-center font-medium cursor-pointer rounded-lg disabled:opacity-50 disabled:cursor-not-allowed ";
@@ -40,8 +44,12 @@ const Button: React.FC<ButtonProps> = ({
     <button
       type={type}
       onClick={onClick}
+      onMouseEnter={onMouseEnter}
+      onFocus={onFocus}
       disabled={disabled || loading}
       className={buttonClasses}
+      aria-label={ariaLabel}
+      {...rest}
     >
       {loading && <h2 className="w-4 h-4 animate-spin">⏳Loading...</h2>}
       {!loading && icon && iconPosition === "left" && (
@@ -56,36 +64,3 @@ const Button: React.FC<ButtonProps> = ({
 };
 
 export default Button;
-
-export const SocialAuthButton: React.FC<SocialAuthButtonProps> = ({
-  provider = "Google",
-  onClick,
-  icon,
-  className = "kt-btn kt-btn-outline justify-center",
-  disabled = false,
-}) => {
-  const baseStyles =
-    "inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-md transition-all duration-200";
-  const disabledStyles = "opacity-50 cursor-not-allowed";
-  const buttonClasses = `${baseStyles} ${disabled ? disabledStyles : ""
-    } ${className}`;
-
-  return (
-    <button
-      onClick={onClick}
-      className={buttonClasses}
-      aria-disabled={disabled}
-    >
-      {icon && (
-        <span className="size-3.5 shrink-0 flex items-center justify-center">
-          {typeof icon === "string" ? (
-            <img src={icon} alt="provider logo" />
-          ) : (
-            icon
-          )}
-        </span>
-      )}
-      <span>Use {provider}</span>
-    </button>
-  );
-};

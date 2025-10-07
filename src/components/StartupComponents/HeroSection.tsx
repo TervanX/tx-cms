@@ -17,7 +17,7 @@ const HeroSection: React.FC = () => {
           </div>
         </div>
         <div className="flex items-center justify-center">
-          <img src="/assets/image5.webp" className="relative aspect-square w-full rounded-xl" />
+          <img src="/assets/image5.webp" className="relative aspect-square w-full rounded-xl"alt="join apollo" />
         </div>
       </div>
       <div className="h-10" />

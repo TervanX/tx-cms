@@ -21,13 +21,18 @@ const SubSection: React.FC<SectionProps> = ({
               : "justify-center w-full md:w-[50%] mx-auto"
           } flex flex-col gap-5`}
         >
-          <div
-            className={`w-full  flex border-solid border-primary ${
-              alignLeft ? "justify-start" : "justify-center"
-            }  flex-col gap-8`}
-          >
-            <span className=""> {tag}</span>
-          </div>
+          {tag && (
+            <div
+              className={`flex ${
+                alignLeft ? "justify-start" : "justify-center"
+              }  mb-4`}
+            >
+              <div className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">
+                {tag}
+              </div>
+            </div>
+          )}
+
           <h1
             className={`font-grotesque text-xl lg:text-3xl font-medium ${
               alignLeft ? "text-left" : "text-center"

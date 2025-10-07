@@ -15,6 +15,7 @@ const SolutionSection = () => {
             <img
               src="https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjens.bd3f190a.png&w=256&q=75"
               className="w-[80px] lg:w-[105px] h-auto rounded-full"
+              alt=""
             />
             <div>
               <h5 className="text-xl font-bold">Jens Stockel</h5>

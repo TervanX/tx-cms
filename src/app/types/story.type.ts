@@ -1,5 +1,4 @@
 import { z } from 'zod';
-import React from 'react';
 
 export const CardPropsSchema = z.object({
   id: z.string(),
