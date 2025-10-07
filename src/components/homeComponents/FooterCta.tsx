@@ -38,7 +38,7 @@ export default function FooterCTA() {
                       {/* Description and CTA Buttons */}
                       <div className="flex flex-col gap-8 md:max-w-[273px] lg:max-w-[368px] xl:max-w-[413px]">
                         <p className="text-[16px] leading-[130%] 2xl:text-[18px] text-gray-700">
-                          You don't have to spend a fortune to run a world-class revenue-generating machine. Replace ZoomInfo, Outreach, Salesloft, Gong, Chili Piper, and more with Apollo to cut costs and get better results.
+                          You don&apos;t have to spend a fortune to run a world-class revenue-generating machine. Replace ZoomInfo, Outreach, Salesloft, Gong, Chili Piper, and more with Apollo to cut costs and get better results.
                         </p>
 
                         <div className="flex flex-col gap-4 md:flex-row">

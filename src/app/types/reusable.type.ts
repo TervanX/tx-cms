@@ -16,7 +16,7 @@ export const ButtonTypeSchema = z.enum(["button", "submit", "reset"]);
 export const IconPositionSchema = z.enum(["left", "right"]);
 
 export const ButtonPropsSchema = z.object({
-  href:z.string().optional(),
+  href: z.string().optional(),
   children: z.custom<React.ReactNode>(),
   type: ButtonTypeSchema.optional(),
   variant: ButtonVariantSchema.optional(),
@@ -29,8 +29,15 @@ export const ButtonPropsSchema = z.object({
   onClick: z
     .custom<React.MouseEventHandler<HTMLButtonElement>>()
     .optional(),
+  onMouseEnter: z
+    .custom<React.MouseEventHandler<HTMLButtonElement>>()
+    .optional(),
+  onFocus: z
+    .custom<React.FocusEventHandler<HTMLButtonElement>>()
+    .optional(),
   className: z.string().optional(),
-   target: z.enum(['_blank', '_self']).optional(),
+  "aria-label": z.string().optional(),
+  target: z.enum(['_blank', '_self']).optional(),
 });
 
 export const SocialAuthButtonVariantSchema = z.enum([

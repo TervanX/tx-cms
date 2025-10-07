@@ -1,7 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
 import Button from "../reusable/Button";
-import { IoArrowBackSharp, IoArrowForwardSharp } from "react-icons/io5";
 import { useEffect, useRef, useState } from "react";
 
 const TipsForSuccess = () => {

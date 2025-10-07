@@ -1,5 +1,5 @@
 "use client"
-import { useState } from 'react';
+import { ChangeEvent, useState } from 'react';
 import Image from 'next/image';
 import Button from '../reusable/Button';
 
@@ -18,7 +18,7 @@ export default function Demo() {
         alert('Thank you! We\'ll be in touch soon.');
     };
 
-    const handleEmailChange = (e:any) => {
+    const handleEmailChange = (e:ChangeEvent<HTMLInputElement>) => {
         setEmail(e.target.value);
         if (error) setError(false);
     };
@@ -42,7 +42,7 @@ export default function Demo() {
                         See Apollo in action
                     </h1>
                     <p className="text-base md:text-lg text-gray-600">
-                        We'd love to show how Apollo can help you sell better.
+                        We&apos;d love to show how Apollo can help you sell better.
                     </p>
                 </div>
 

@@ -41,7 +41,7 @@ export default function SignUp() {
                 {/* Terms Notice */}
                 <div className="rounded-lg border border-blue-100 bg-blue-50 px-4 py-2">
                   <p className="text-[12px] leading-[130%] text-gray-700 antialiased">
-                    By signing up, I agree to Apollo's{' '}
+                    By signing up, I agree to Apollo&apos;s{' '}
                     <a className="underline" target="_blank" href="/terms" rel="noopener noreferrer">
                       Terms of Service
                     </a>{' '}

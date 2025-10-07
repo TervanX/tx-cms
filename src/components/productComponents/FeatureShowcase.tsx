@@ -292,10 +292,7 @@ const FeaturesShowcase = () => {
     const allFeatures = FEATURE_CATEGORIES.flatMap(category => category.features);
     const currentFeature = allFeatures.find(feature => feature.id === activeFeature) || allFeatures[0];
     
-    // Get the current category for background color
-    const currentCategory = FEATURE_CATEGORIES.find(category => 
-        category.features.some(feature => feature.id === activeFeature)
-    );
+   
 
     // Auto-scroll to active feature
     useEffect(() => {

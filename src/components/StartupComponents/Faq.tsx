@@ -3,11 +3,11 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { AccordionItemProps, FAQItem } from '@/app/types/pricing.types';
 
-const ChevronDownIcon: React.FC<{ className?: string }> = ({ className }) => (
+const ChevronDownIcon: React.FC<{ className?: string }> = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 18 18" fill="none"><path d="M8.375 9.62517V16H9.625V9.62517H16V8.37517H9.625V2H8.375V8.37517H2V9.62517H8.375Z" fill="#47423D"></path></svg>
 );
 
-const ChevronUpIcon: React.FC<{ className?: string }> = ({ className }) => (
+const ChevronUpIcon: React.FC<{ className?: string }> = () => (
     <svg width="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 8.375H2V9.625H16V8.375Z" fill="#47423D"></path></svg>
 );
 

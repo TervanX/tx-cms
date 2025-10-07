@@ -1,184 +1,201 @@
-"use client"
-import { useState } from "react";
-import Image from "next/image";
-import Button from "../reusable/Button";
-export default function HeroSection() {
-  const [email, setEmail] = useState('');
+'use client';
 
-  const handleSignUp = () => {
-    console.log('Sign up with email:', email);
-  };
+import React, { useRef } from 'react';
+import Image from 'next/image';
+import { motion, useScroll, useTransform, useInView, animate } from 'framer-motion';
 
-  const handleGoogleSignUp = () => {
-    console.log('Sign up with Google');
-  };
+const HeroSection = () => {
+  const companies = [
+    'Anthropic', 'Clay', 'Lightspeed', 'Marshmallow', 'Amplitude', 'Moneybox',
+    'Shutterstock', 'Synthesia', 'Lovable', 'Monday.com', 'Consensys', 'LaunchDarkly',
+    'Culture Amp', 'Coda', 'Aspire', 'Perplexity', 'Carvana', 'Pfizer', 'Spendesk',
+    'Microsoft', 'Chess.com', 'Xero', 'Envoy', 'Topstep', 'Mangopay', 'Tripadvisor',
+    'Nuuly', 'Webex Events', 'Outschool', 'Zilch', 'Vanta', 'WHOOP', 'Personio', 'Miro'
+  ];
 
-  const handleMicrosoftSignUp = () => {
-    console.log('Sign up with Microsoft');
-  };
+  const headerRef = useRef<HTMLDivElement>(null);
+  const descriptionRef = useRef<HTMLParagraphElement>(null);
+  const isInView = useInView(headerRef, { once: false, margin: "-50% 0px" });
 
-     return (
-    <div className="relative flex items-center justify-center overflow-hidden rounded-xl bg-white md:rounded-xl lg:h-[calc(100dvh-94px)] lg:min-h-[600px]">
-      {/* Background Image */}
-      <div className="h-full overflow-hidden">
-        <picture>
-          {/* <source media="(min-width: 1920px)" srcSet={lgXlImg.src} />
-          <source media="(min-width: 1440px)" srcSet={lgImg.src} />
-          <source media="(min-width: 1024px)" srcSet={lgSImg.src} />
-          <source media="(min-width: 768px)" srcSet={mdImg.src} /> */}
-          <Image
-            alt="background image"
-            src="/assets/image28.webp"
-            fill
-            priority
-            className="object-cover"
-            sizes="100vw"
-          />
-        </picture>
-      </div>
+  const { scrollY } = useScroll();
+  
 
-      {/* Content */}
-      <div className="relative flex h-full w-full flex-col items-center justify-center">
-        <div className="h-full w-full py-16 lg:py-20">
-          <div className="flex h-full flex-col gap-8 md:w-full md:px-5 md:px-7 md:gap-10 lg:flex-row lg:items-center lg:gap-16 lg:px-9 lg:gap-20 lg:px-[73px] xl:px-[72px]">
-            {/* Left Column - Text Content */}
-            <div className="basis-[50%]">
-              <div>
-                <div className="flex w-full flex-col items-center gap-6 lg:items-start l:gap-8">
-                  <h1 className="text-center text-[44px] leading-none tracking-[-0.88px]  antialiased font-founders-grotesk lg:text-left md:text-[56px] md:tracking-[-1.12px] lg:text-[64px] lg:leading-[90%] lg:tracking-[-1.28px] lg:text-[72px] lg:tracking-[-1.44px] xl:text-[80px] xl:tracking-[-1.6px]">
-                    Meet your AI <br className="hidden lg-s:block" />
-                    outbound engine
-                  </h1>
-                  <div className="max-w-[100%] text-center text-[16px] leading-[130%] text-body antialiased font-abc-diatype md:max-w-[272px] lg:max-w-[368px] lg:text-left lg:max-w-[520px] xl:max-w-[706px] xl:text-[18px]">
-                    Find and research leads, personalize messaging, and launch
-                    campaigns in minutes — not hours. All in Apollo.
-                  </div>
+  const headerOpacity = useTransform(scrollY, [0, 100], [1, 0]);
+  const headerBlur = useTransform(scrollY, [0, 100], [0, 20]);
+  
+  const descriptionOpacity = useTransform(scrollY, [50, 150], [1, 0]);
+  const descriptionBlur = useTransform(scrollY, [50, 150], [0, 20]);
 
-                  {/* Sign Up Form */}
-                  <div className="flex w-full justify-center lg:justify-start">
-                    <div>
-                      <div className="flex w-full max-w-xl flex-col gap-6">
-                        <div className="flex items-center gap-4 lg:flex-row flex-col">
-                          <div className="relative flex w-full max-w-none flex-col">
-                            <div className="flex h-[48px] items-center rounded-lg border border-sand-50 bg-white px-3 hover:border-sand-70 focus-within:border-black hover:focus-within:border-black">
-                              <input
-                                placeholder="Enter email"
-                                className="w-full bg-transparent text-[16px] leading-none leading-[130%] text-text-body placeholder-sand-60 focus:outline-none font-abc-diatype"
-                                type="text"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                              />
-                            </div>
-                          </div>
-                          <Button
-                            type="button"
-                            onClick={handleSignUp}
-                            variant='secondary'
-                            className="group h-12 w-full rounded-lg bg-sunbeam-60 px-5 text-nowrap text-black transition-all hover:bg-sunbeam-20 hover:text-black active:bg-sunbeam-70 active:text-black active:ring-0 active:ring-offset-0 focus:bg-sunbeam-60 focus:text-black focus:outline-none focus:ring-1 focus:ring-black focus:ring-offset-2 disabled:bg-sand-40 disabled:text-black lg:w-auto"
-                          >
-                            <div className="flex items-center justify-center gap-2">
-                              <p className="text-[16px] leading-[130%] text-inherit font-abc-diatype">
-                                Sign up for free
-                              </p>
-                            </div>
-                          </Button>
-                        </div>
+  
+  const buttonsTranslateY = useTransform(scrollY, [50, 150], [0, -120]); 
 
-                        {/* Divider */}
-                        <div className="flex w-full items-center gap-4">
-                          <div className="w-full border-b border-sand-30"></div>
-                          <p className="text-center text-[16px] leading-[130%] text-sand-60 antialiased font-abc-diatype xl:text-[18px]">
-                            or
-                          </p>
-                          <div className="w-full border-b border-sand-30"></div>
-                        </div>
+  const duplicatedCompanies = [...companies, ...companies];
 
-                        {/* OAuth Buttons */}
-                        <div className="flex flex-col gap-4 lg:flex-row">
-                          <button
-                            id="google-oauth-button"
-                            type="button"
-                            onClick={handleGoogleSignUp}
-                            className="group h-12 grow whitespace-nowrap rounded-lg border border-black bg-transparent px-5 text-black transition-all hover:border-black hover:bg-sand-30 hover:text-black active:border-black active:bg-sand-40 active:text-black focus:border-black focus:text-black disabled:border-sand-60 disabled:bg-transparent disabled:text-sand-60"
-                          >
-                            <div className="flex items-center justify-center gap-2">
-                              <span>
-                                {/* <Image
-                                  alt="Google logo"
-                                  src={}
-                                  width={20}
-                                  height={20}
-                                  className="shrink-0"
-                                /> */}
-                              </span>
-                              <p className="text-[16px] leading-[130%] text-inherit font-abc-diatype">
-                                Sign up with Google
-                              </p>
-                            </div>
-                          </button>
-                          <button
-                            id="microsoft-oauth-button"
-                            type="button"
-                            onClick={handleMicrosoftSignUp}
-                            className="group h-12 grow whitespace-nowrap rounded-lg border border-black bg-transparent px-5 text-black transition-all hover:border-black hover:bg-sand-30 hover:text-black active:border-black active:bg-sand-40 active:text-black focus:border-black focus:text-black disabled:border-sand-60 disabled:bg-transparent disabled:text-sand-60"
-                          >
-                            <div className="flex items-center justify-center gap-2">
-                              <span>
-                                {/* <Image
-                                  alt="Microsoft logo"
-                                  src={}
-                                  width={20}
-                                  height={20}
-                                  className="min-w-5 shrink-0"
-                                /> */}
-                              </span>
-                              <p className="text-[16px] leading-[130%] text-inherit font-abc-diatype">
-                                Sign up with Microsoft
-                              </p>
-                            </div>
-                          </button>
-                        </div>
-                      </div>
+  return (
+    <div className="mx-auto rounded-t-md overflow-clip rounded-b-md">
+      <div className="-z-[1000]"></div>
+      
+      <div className="relative h-full w-full [body:has(.top-banner)_&]:pt-10">
+        <div className="absolute inset-0 origin-top overflow-hidden bg-radial from-[#2d5d8b] to-[#0b1d2f] brightness-80 transition-transform duration-500 ease-out-quart lg:brightness-90 after:absolute after:inset-[60%_0_0] after:bg-gradient-to-t after:from-black/20 after:to-transparent">
+          <div className="absolute inset-0 transition-[transform,filter] duration-700 ease-out-quart will-change-[transform,filter]">
+            <div className="overflow-hidden bg-cover absolute inset-0 size-full">
+              <Image
+                alt="Suite"
+                src="/assets/hero-bg.webp"
+                fill
+                className="object-cover object-center"
+                priority
+              />
+            </div>
+          </div>
+        </div>
+        
+      <div 
+  className="absolute inset-0 z-20"
+  style={{
+    backgroundImage: `
+      repeating-linear-gradient(90deg, #ffffff08 0 1px, #0000 1px 25px),
+      repeating-linear-gradient(#ffffff08 0 1px, #0000 1px 25px),
+      repeating-linear-gradient(90deg, #ffffff0f 0 1px, #0000 1px 100px),
+      repeating-linear-gradient(#ffffff0f 0 1px, #0000 1px 100px)
+    `,
+    backgroundPosition: `
+      calc(50% + 12.5px) calc(50% + 12.5px),
+      calc(50% + 12.5px) calc(50% + 12.5px),
+      calc(50% + 50px) calc(50% + 50px),
+      calc(50% + 50px) calc(50% + 50px)
+    `,
+    backgroundSize: `
+      25px 25px,
+      25px 25px,
+      100px 100px,
+      100px 100px
+    `
+  }}
+></div>
 
-                      {/* Terms Text */}
-                      <p className="mt-4 text-[14px] leading-[130%] tracking-normal text-sand-60 antialiased font-abc-diatype xl:text-[16px]">
-                        By signing up, I agree to Apollo's{' '}
-                        <a className="underline" target="_blank" href="/terms">
-                          <span>Terms of Service</span>
-                        </a>{' '}
-                        and{' '}
-                        <a
-                          className="underline"
-                          target="_blank"
-                          href="/privacy-policy"
-                        >
-                          <span>Privacy Policy</span>
-                        </a>
-                        .
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        {/* Content */}
+        <div className="relative top-0 z-30 px-4 pt-20 text-white md:sticky">
+          <div className="relative z-20 mx-auto w-full max-w-[1230px]">
+            
+            {/* Headline */}
+            <div ref={headerRef}>
+              <h1 
+                className="relative z-20 text-[2.5rem] leading-[95%] font-semibold tracking-[-0.1rem] lg:text-6xl xl:text-[5rem] xl:tracking-[-0.25rem] [&_span]:block"
+              >
+                <motion.div 
+                  className="transition-opacity duration-500 ease-out-quart"
+                  initial={{ opacity: 0, filter: "blur(10px)" }}
+                  animate={{ opacity: 1, filter: "blur(0px)" }}
+                  transition={{ duration: 1, ease: "easeOut" }}
+                  style={{
+                    opacity: headerOpacity,
+                    filter: useTransform(headerBlur, (blur) => `blur(${blur}px)`)
+                  }}
+                >
+                  <span>The #1 AI Agent.</span>
+                  <span>The next generation Helpdesk.</span>
+                </motion.div>
+                <span>
+                  One seamless service suite.
+                </span>
+              </h1>
             </div>
 
-            {/* Right Column - Workflow Image */}
-            <div className="relative h-full basis-[50%]">
-              <div className="relative flex h-full w-full items-center justify-center max-lg:aspect-[1/1]">
-                <Image
-                  alt="An example of an outbound workflow in Apollo"
-                  src="/assets/image27.webp"
-                  width={2160}
-                  height={2160}
-                  priority
-                  className="aspect-[1/1] h-full object-contain"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
+            {/* Description & CTA */}
+            <div className="mt-6 flex flex-col gap-4 border-t border-white/60 pt-4 md:mt-8 md:flex-row lg:mt-10 xl:mt-11">
+              <p className="w-full text-sm leading-[100%] tracking-[0.7px] uppercase lg:w-7/12">
+                Fin AI Agent + Helpdesk
+              </p>
+              
+              <div className="w-full lg:w-5/12">
+                <motion.p 
+                  ref={descriptionRef}
+                  className="mb-8 text-lg leading-[120%] transition-all duration-300 ease-out-quart 2xl:text-xl"
+                  style={{
+                    opacity: descriptionOpacity,
+                    filter: useTransform(descriptionBlur, (blur) => `blur(${blur}px)`)
+                  }}
+                  initial={{ opacity: 0, filter: "blur(10px)" }}
+                  animate={{ opacity: 1, filter: "blur(0px)" }}
+                  transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
+                >
+                  The Intercom Customer Service Suite combines the #1 AI Agent for customer service with a next-gen Helpdesk—built on a single platform that maximizes team efficiency and delivers superior service.
+                </motion.p>
+                
+                <motion.div 
+                  className="flex gap-2 transition-transform duration-300 ease-out-quart will-change-transform"
+                  style={{
+                    y: buttonsTranslateY
+                  }}
+                  initial={{ y: -118 }}
+                  animate={{ y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
+                >
+                  <motion.a 
+                    className="btn group relative isolate inline-block cursor-pointer rounded-md transition-[background,color] duration-400 ease-out-quart text-center font-semibold tracking-tight whitespace-nowrap first-line:z-1 lg:text-base/none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-outline disabled:pointer-events-none disabled:opacity-50 bg-transparent text-white hover:bg-white hover:text-black px-3 py-2.5 text-base/none lg:px-4"
+                    href="https://www.intercom.com/view-demos"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <span className="group-focus absolute inset-0 -z-1 block w-full rounded-md transition-[background,color] duration-400 ease-out-quart border-1 border-white"></span>
+                    View demo
+                  </motion.a>
+                  
+                  <motion.a 
+                    href="https://app.intercom.com/admins/sign_up?solution_id=29&amp;utm_referrer=https%3A%2F%2Fwww.intercom.com%2Fsuite"
+                    className="btn group relative isolate inline-block cursor-pointer rounded-md transition-[background,color] duration-400 ease-out-quart text-center font-semibold tracking-tight whitespace-nowrap first-line:z-1 lg:text-base/none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-outline disabled:pointer-events-none disabled:opacity-50 text-black px-3 py-2.5 text-base/none lg:px-4"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <span className="group-focus absolute inset-0 -z-1 block w-full rounded-md transition-[background,color] duration-400 ease-out-quart bg-white group-hover:bg-white/80"></span>
+                    Start free trial
+                  </motion.a>
+                </motion.div>
               </div>
+            </div>
+          </div>
+
+          {/* Trusted Companies */}
+          <div className="mx-auto pb-8 lg:pb-12">
+            <div className="mx-auto w-full max-w-[1000px] px-3 md:px-4 mb-4 flex flex-col overflow-hidden lg:mb-10 lg:max-w-[1262px]">
+              <span className="font-sans text-current pt-4 text-base leading-[135%] font-semibold tracking-[-0.16px] md:text-xl md:leading-[110%] md:tracking-[-0.6px]">
+                Trusted by over 30,000 customer service leaders
+              </span>
+            </div>
+            
+            <div className="relative mx-auto my-6 overflow-hidden [mask-image:linear-gradient(to_right,transparent_0%,black_20%,black_80%,transparent_100%)]">
+              <motion.div 
+                className="flex w-max gap-10"
+                animate={{ 
+                  x: [0, -window?.innerWidth || -1440] 
+                }}
+                transition={{
+                  x: {
+                    repeat: Infinity,
+                    repeatType: "loop",
+                    duration: 30,
+                    ease: "linear",
+                  }
+                }}
+              >
+                {duplicatedCompanies.map((company, index) => (
+                  <motion.span 
+                    key={`${company}-${index}`}
+                    className="flex gap-10 font-semibold whitespace-nowrap text-lg lg:text-[32px]"
+                    whileHover={{ scale: 1.1, color: "#60a5fa" }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                  >
+                    {company}
+                  </motion.span>
+                ))}
+              </motion.div>
             </div>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default HeroSection;

@@ -21,7 +21,7 @@ export default function CompaniesSection() {
               <div className="flex flex-col gap-6 lg:flex-row lg:items-end">
                 <div className="flex-[2_2_0%]">
                   <h3 className="text-4xl font-medium leading-tight tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
-                    "Apollo supports people who want to be innovative — to do something new."
+                    &quot;Apollo supports people who want to be innovative — to do something new.&quot;
                   </h3>
                 </div>
                 <div className="flex-1">

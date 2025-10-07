@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion, Variants } from "framer-motion";
 import Button from "../reusable/Button";
 import { IoArrowBackSharp, IoArrowForwardSharp } from "react-icons/io5";

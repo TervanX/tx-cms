@@ -6,7 +6,7 @@ import FeatureSections, {
 import StreamlineSection from "@/components/MeetingComponents/StreamlineSection";
 import SolutionSection from "@/components/MeetingComponents/SolutionSection";
 import CompetitorsSection from "@/components/MeetingComponents/CompetitorsSection";
-import PricingFAQAccordion from "@/components/pricingComponents/PricingFAQAccordion";
+import PricingFAQAccordion from "@/components/PricingComponents/PricingFAQAccordion";
 
 const PricingPage: React.FC = () => {
   return (

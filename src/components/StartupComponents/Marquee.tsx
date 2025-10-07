@@ -2,7 +2,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { MarqueeProps, MarqueeItem } from '@/app/types/startups.types';
+import { MarqueeProps } from '@/app/types/startups.types';
 
 export const Marquee: React.FC<MarqueeProps> = ({
     items,

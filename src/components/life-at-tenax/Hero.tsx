@@ -1,5 +1,4 @@
 "use client";
-import { motion } from "framer-motion";
 import Button from "../reusable/Button";
 import { useEffect, useRef, useState } from "react";
 
@@ -13,7 +12,7 @@ const LifeAtTenaxHero = () => {
             Life at Apollo{" "}
           </h1>
           <p className="font-grotesque text-base   text-center">
-            What's it like to work at a fast-paced, AI-first company? Here's a
+            What&apos;s it like to work at a fast-paced, AI-first company? Here&apos;s a
             peek at how we work, grow, and support our people every step of the
             way.
           </p>
@@ -27,6 +26,7 @@ const LifeAtTenaxHero = () => {
           <img
             src="https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-image.39c4fd2b.jpg&w=750&q=75"
             className="w-full h-auto rounded-2xl"
+            alt=""
           />
         </div>
       </div>
