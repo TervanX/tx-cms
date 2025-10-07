@@ -24,7 +24,6 @@ interface FeatureSectionProps {
 
 const FeatureSection: React.FC<FeatureSectionProps> = ({ data, index }) => {
   const isEven = index % 2 === 0;
-  console.log(isEven, index);
   return (
     <div
       className={`scroll-mt-20 font-grotesque lg:h-screen ${

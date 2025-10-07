@@ -61,7 +61,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-20 px-6 ${
+      className={`fixed top-0 left-0 w-full z-70 px-6 ${
         isScrolled ? "bg-white" : ""
       }`}
     >
