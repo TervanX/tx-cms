@@ -51,6 +51,8 @@ const StackedAnimation: React.FC = () => {
   // Refs for the stack items and their overlay labels
   const layerEls = useRef<HTMLElement[]>([]);
   const labelEls = useRef<HTMLDivElement[]>([]);
+  const titleEls = useRef<HTMLDivElement[]>([]);
+  const descEls = useRef<HTMLParagraphElement[]>([]);
 
   useLayoutEffect(() => {
     if (!sectionRef.current || !containerRef.current) return;
@@ -146,26 +148,58 @@ const StackedAnimation: React.FC = () => {
 
             layerEls.current.forEach((el, i) => {
               const label = labelEls.current[i];
-              if (!label) return;
+              const title = titleEls.current[i];
+              const desc = descEls.current[i];
+              
+              if (!label || !title || !desc) return;
 
-              const rect = el.getBoundingClientRect();
-              const offset = 8;
+              if (stackPhaseOver) {
+                // Stack phase is over - hide everything including titles
+                gsap.set(label, { autoAlpha: 0 });
+              } else {
+                // During stack phase
+                const rect = el.getBoundingClientRect();
+                const offset = 8;
 
-              gsap.set(label, {
-                x: Math.round(rect.left + rect.width + offset),
-                y: Math.round(rect.top + rect.height / 2),
-                yPercent: -50,
-              });
+                // Calculate vertical position for column layout
+                const baseY = window.innerHeight / 2 - (layers.length * 40) / 2;
+                const columnY = baseY + i * 80;
 
-              let alpha = 0;
-              if (!stackPhaseOver) {
+                // Show title once layer has appeared (when i <= incoming)
+                const titleAlpha = i <= incoming ? 1 : 0;
+                
+                // Show description only for active layer
                 const d = Math.abs(x - (i + 0.5));
-                alpha = clamp01(1 - d / FADE_WIDTH);
-              }
+                const descAlpha = clamp01(1 - d / FADE_WIDTH);
 
-              gsap.set(label, {
-                autoAlpha: alpha,
-              });
+                // Always show the label container for titles that have appeared
+                const labelAlpha = i <= incoming ? 1 : 0;
+
+                // Position in column or follow card
+                if (i <= incoming) {
+                  // Arrange in column
+                  gsap.set(label, {
+                    x: Math.round(rect.left + rect.width + offset),
+                    y: columnY,
+                    yPercent: 0,
+                    autoAlpha: labelAlpha,
+                  });
+                } else {
+                  // Follow card position (hidden until it appears)
+                  gsap.set(label, {
+                    x: Math.round(rect.left + rect.width + offset),
+                    y: Math.round(rect.top + rect.height / 2),
+                    yPercent: -50,
+                    autoAlpha: 0,
+                  });
+                }
+
+                // Control title and description visibility separately
+                // Title stays visible once the layer appears
+                gsap.set(title, { autoAlpha: titleAlpha });
+                // Description only shows for active layer
+                gsap.set(desc, { autoAlpha: descAlpha });
+              }
             });
           },
         },
@@ -226,7 +260,7 @@ const StackedAnimation: React.FC = () => {
     "block w-[260px] md:w-[360px] lg:w-[320px] transform-gpu rounded-xl select-none pointer-events-none";
 
   return (
-    <div>
+    <div className="relative -z-10">
       <div className="pt-12 md:pt-16">
         {/* Fixed overlay labels */}
         <div className="fixed inset-0 z-[9999] pointer-events-none">
@@ -245,10 +279,20 @@ const StackedAnimation: React.FC = () => {
             >
               <div className="relative">
                 <div className="pl-30 flex flex-col items-start h-full mt-4">
-                  <h6 className="ml-6 text-xs text-dark px-4 leading-relaxed mb-0 font-grotesque flex items-center rounded">
+                  <h6 
+                    ref={(el) => {
+                      if (el) titleEls.current[n] = el;
+                    }}
+                    className="label-title ml-6 text-xs text-dark px-4 leading-relaxed mb-0 font-grotesque flex items-center rounded"
+                  >
                     {item.title}
                   </h6>
-                  <p className="ml-6 w-40 mt-2 text-xs text-dark px-4 leading-relaxed mb-0 font-grotesque flex items-center rounded">
+                  <p 
+                    ref={(el) => {
+                      if (el) descEls.current[n] = el;
+                    }}
+                    className="label-description ml-6 w-40 mt-2 text-xs text-dark px-4 leading-relaxed mb-0 font-grotesque flex items-center rounded"
+                  >
                     {item.description.replace(/\d+$/, "")}
                   </p>
                 </div>
