@@ -1,8 +1,14 @@
 import LogoGrid from "../productComponents/LogoGrid";
 import Image from "next/image";
+import { motion } from "framer-motion";
 export default function CompaniesSection() {
   return (
-    <div className="overflow-hidden rounded-xl mt-10">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+     className="relative  overflow-hidden rounded-xl mt-10">
       <div className="bg-[#F7F5F2]">
         <div className="px-5 md:px-7 lg:px-9 xl:px-16">
           <div className="flex flex-col gap-16 pt-12 md:gap-20 md:pt-16 lg:gap-24 lg:pt-20">
@@ -99,6 +105,6 @@ export default function CompaniesSection() {
             />
           </picture>
         </div>
-    </div>
+    </motion.div>
   );
 }
