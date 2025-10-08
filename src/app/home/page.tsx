@@ -6,6 +6,9 @@ import HeroSection from "@/components/homeComponents/HeroSection";
 import CompaniesSection from "@/components/homeComponents/CompanySection";
 import ApolloTestimonials from "@/components/homeComponents/Testimonial";
 import FooterCTA from "@/components/homeComponents/FooterCta";
+import StackedAnimation from "@/components/HomePage-1Components/StackedAnimation";
+import CardShowcase from "@/components/HomePage-1Components/EveryThingYouNeed";
+import MotionHorizontalPeekCarousel from "@/components/HomePage-1Components/MotionHorizontalPeekCarousel";
 
 // Register GSAP plugins
 gsap.registerPlugin(ScrollTrigger);
@@ -51,6 +54,21 @@ const Page = () => {
       </div>
       <div ref={companiesRef} className="relative z-20">
         <CompaniesSection />
+      </div>
+      <div className="mx-8 bg-white rounded-xl">
+        <div className="px-8 ">
+          <StackedAnimation />
+          <CardShowcase />
+          {/* <img
+            src={
+              "https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flines-desktop.58476511.png&w=3840&q=75"
+            }
+            className="w-full h-100vh absolute z-20 top-0 left-0"
+          /> */}
+          <MotionHorizontalPeekCarousel />
+          <ApolloTestimonials />
+          <FooterCTA />
+        </div>
       </div>
       <ApolloTestimonials />
       <FooterCTA />
