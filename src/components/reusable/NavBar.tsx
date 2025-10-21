@@ -27,7 +27,7 @@ interface NavItemInterface {
 
 const navItems: NavItemInterface[] = [
   {
-    title: "Platform",
+    title: "Products",
     solutions: [
       {
         logo: (
