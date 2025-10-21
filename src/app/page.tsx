@@ -1,15 +1,12 @@
-import NavBar from "./NavBar";
-import BannerCTA from "@/components/homeComponents/Banner";
-import TestimonialCarousel from "@/components/homeComponents/TestimonialCarousel";
-import EngageCustomersSection from "@/components/homeComponents/EngageCustomer";
-export default function Home() {
+import Header from "@/components/landingComponents/Header";
+import HeroSection from "@/components/landingComponents/HeroSection";
+import Footer from "@/components/landingComponents/Footer";
+export default function Homepage() {
   return (
-    <div className="">
-      <NavBar />
-      <EngageCustomersSection/>
-      
-      <TestimonialCarousel/>
-      <BannerCTA/>
+    <div className="grid min-h-screen content-between bg-black text-white">
+      <Header />
+      <HeroSection />
+      <Footer />
     </div>
   );
 }
