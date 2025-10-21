@@ -68,10 +68,10 @@ const footerData: FooterSection[] = [
 ];
 
 const legalLinks: FooterLink[] = [
-    { label: 'Privacy Policy', href: '/privacy-policy' },
-    { label: 'Terms of Service', href: '/terms' },
-    { label: "Don't Sell My Info", href: '/privacy-policy/remove' },
-    { label: 'About Tervanax', href: '/about' },
+    { label: 'Privacy Policy', href: '#' },
+    { label: 'Terms of Service', href: '#' },
+    { label: "Don't Sell My Info", href: '#' },
+    { label: 'About Tervanax', href: '#' },
 ];
 
 
@@ -79,17 +79,21 @@ const FooterButton: React.FC<{
     href: string;
     external?: boolean;
     children: React.ReactNode;
-    variant?: 'default' | 'muted';
-}> = ({ href, external, children, variant = 'default' }) => {
-    const baseClasses = "group rounded-lg transition-all bg-transparent border-none text-left";
-    const variantClasses = variant === 'muted'
-        ? "text-neutral-500 hover:text-dark disabled:text-neutral-300 active:text-neutral-600"
-        : "text-dark hover:text-neutral-600 disabled:text-neutral-300 active:text-neutral-600";
+    variant?: "default" | "muted";
+}> = ({ href, external, children, variant = "default" }) => {
+    const baseClasses =
+        "group rounded-lg transition-all bg-transparent border-none text-left";
+    const variantClasses =
+        variant === "muted"
+            ? "text-neutral-500 hover:text-dark disabled:text-neutral-300 active:text-neutral-600"
+            : "text-dark hover:text-neutral-600 disabled:text-neutral-300 active:text-neutral-600";
 
     const content = (
         <button type="button" className={`${baseClasses} ${variantClasses}`}>
             <div className="flex items-center justify-center gap-2">
-                <p className="text-sm leading-[130%] font-sans text-inherit">{children}</p>
+                <p className="text-sm leading-[130%] font-sans text-inherit">
+                    {children}
+                </p>
             </div>
         </button>
     );
@@ -128,7 +132,7 @@ const Footer: React.FC = () => {
                             {/* Legal Links */}
                             <div className="flex flex-col gap-4">
                                 <p className="text-sm lg:text-base leading-[130%] font-sans font-bold text-neutral-900">
-                                    Apollo © 2025
+                                    Tervanx © 2025
                                 </p>
                                 {legalLinks.map((link) => (
                                     <FooterButton key={link.href} href={link.href} variant="muted">
@@ -184,7 +188,7 @@ const Footer: React.FC = () => {
                                     Prospect anywhere
                                 </p>
                                 <p className="text-sm lg:text-base leading-[130%] font-sans text-neutral-900">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus nemo eum tempora? Corporis, nesciunt dolore.
+                                    Get verified emails and phone numbers and instantly reach out while working in your favorite tools.
                                 </p>
                                 <Link
                                     target="_blank"
@@ -205,9 +209,8 @@ const Footer: React.FC = () => {
                             </div>
                         </div>
                     </div>
-
-                    <div className="h-10" />
                 </div>
+                <div className="h-10" />
             </div>
         </footer>
     );

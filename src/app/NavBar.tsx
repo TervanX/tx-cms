@@ -16,7 +16,7 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   {
-    label: "Platform",
+    label: "Products",
     dropdown: [
       { label: "Overview", href: "#" },
       { label: "Features", href: "#" },
@@ -55,14 +55,15 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
       setIsScrolled(scrollTop > 0);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    
+    window.addEventListener("scroll", handleScroll);
+
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -93,11 +94,11 @@ const DeskTopNavbar = () => {
     <div className="py-4 hidden lg:flex items-center justify-between">
       <div className="flex gap-10 items-center justify-start">
         <div className="flex items-center gap-2 font-bold text-lg">
-          <Image 
-            src="/assets/logo.svg" 
-            className="h-6 w-6" 
-            width={24} 
-            height={24} 
+          <Image
+            src="/assets/logo.svg"
+            className="h-6 w-6"
+            width={24}
+            height={24}
             alt="logo"
           />
           <span className="font-medium font-grotesque">Company Name</span>
@@ -109,28 +110,14 @@ const DeskTopNavbar = () => {
         </nav>
       </div>
       <div className="flex items-center gap-3">
-        <Button
-          size="md"
-          variant="ghost"
-          type="button"
-          onClick={() => {}}
-        >
+        <Button size="md" variant="ghost" type="button" onClick={() => {}}>
           Log in
         </Button>
-        <Button
-          size="md"
-          variant="outline"
-          type="button"
-          onClick={() => {}}
-        >
-          Get a demo
-        </Button>
-        <Button
-          size="md"
-          variant="primary"
-          type="button"
-          onClick={() => {}}
-        >
+        <button className="relative inline-block cursor-pointer rounded-md font-semibold tracking-tight whitespace-nowrap text-black text-base px-4 py-2.5 leading-none overflow-hidden">
+          <span className="absolute inset-0 block w-full rounded-md transition-all duration-400 bg-[#0d07ed] group-hover:bg-white/80"></span>
+          <span className="relative z-10 text-[#f0f0f2]">Get Started</span>
+        </button>
+        <Button size="md" variant="primary" type="button" onClick={() => {}}>
           Sign up for free
         </Button>
       </div>
@@ -150,23 +137,18 @@ const MobileNav: React.FC<MobileNavProps> = ({ toggle, isOpen }) => {
     <header className="lg:px-8 py-3 flex items-center justify-between lg:hidden fixed top-0 left-0 w-screen z-50 px-6 bg-white">
       <div className="flex gap-10 items-center justify-start">
         <div className="flex items-center gap-2 font-bold text-lg">
-          <Image 
-            src="/assets/logo.svg" 
-            className="h-6 w-6" 
-            width={24} 
-            height={24} 
+          <Image
+            src="/assets/logo.svg"
+            className="h-6 w-6"
+            width={24}
+            height={24}
             alt="logo"
           />
           <span className="font-medium font-grotesque">Company Name</span>
         </div>
       </div>
       <div className="flex items-center gap-4 justify-end">
-        <Button
-          size="md"
-          variant="primary"
-          type="button"
-          onClick={() => {}}
-        >
+        <Button size="md" variant="primary" type="button" onClick={() => {}}>
           Sign up for free
         </Button>
 
@@ -208,11 +190,13 @@ const NavItem: React.FC<NavItemProps> = ({ navName }) => {
               <div className="flex flex-col basis-[18%] flex-grow min-w-[135px] max-w-[400px]">
                 <div className="flex flex-col items-start gap-3">
                   <div className="flex flex-col items-start gap-3">
-                    <Image 
-                      src={"https://downloads.intercomcdn.com/i/o/dyws6i9m/660849/970a84bb581c3b460c00fb367a68/4f4de1669475646edd26e2729182f8f9.png"}
-                      className="h-6 w-6" 
-                      width={24} 
-                      height={24} 
+                    <Image
+                      src={
+                        "https://downloads.intercomcdn.com/i/o/dyws6i9m/660849/970a84bb581c3b460c00fb367a68/4f4de1669475646edd26e2729182f8f9.png"
+                      }
+                      className="h-6 w-6"
+                      width={24}
+                      height={24}
                       alt="Pipeline Builder"
                     />
                     <p className="font-grotesque font-medium text-lg lg:leading-[110%] leading-[110%]">
@@ -247,11 +231,11 @@ const NavItem: React.FC<NavItemProps> = ({ navName }) => {
                 </div>
               </div>
               <div className="flex flex-col basis-[18%] flex-grow min-w-[135px] max-w-[400px]">
-                <Image 
+                <Image
                   src="https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fapollo-next.36e555e7.png&w=640&q=75"
-                  className="w-[194px] h-auto rounded-lg" 
-                  width={194} 
-                  height={24} 
+                  className="w-[194px] h-auto rounded-lg"
+                  width={194}
+                  height={24}
                   alt="Apollo Platform"
                 />
                 <div className="mt-4 flex flex-col gap-2">
@@ -284,7 +268,7 @@ interface SideBarProps {
 
 const SideBar: React.FC<SideBarProps> = ({ isOpen, onClose }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-  
+
   const handleToggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
@@ -367,11 +351,11 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
               <div className="flex justify-between items-start gap-3">
                 <div className="flex flex-col w-[60%] items-start justify-between">
                   <div className="flex items-center gap-3">
-                    <Image 
+                    <Image
                       src="https://downloads.intercomcdn.com/i/o/dyws6i9m/660849/970a84bb581c3b460c00fb367a68/4f4de1669475646edd26e2729182f8f9.png"
-                      className="h-6 w-6" 
-                      width={24} 
-                      height={24} 
+                      className="h-6 w-6"
+                      width={24}
+                      height={24}
                       alt="Pipeline Builder"
                     />
                     <p className="font-grotesque font-medium text-lg lg:leading-[110%] leading-[110%]">
@@ -397,9 +381,9 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
               </div>
               <div className="mt-6 flex flex-col gap-2">
                 {item.dropdown.map((dropdownItem, index) => (
-                  <a 
+                  <a
                     key={index}
-                    href={dropdownItem.href} 
+                    href={dropdownItem.href}
                     className="text-xs text-dark font-grotesque"
                     onClick={onToggle}
                   >
@@ -409,11 +393,11 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
               </div>
             </div>
             <div className="flex flex-col basis-[18%] flex-grow min-w-[135px] max-w-[400px]">
-              <Image 
+              <Image
                 src="https://downloads.intercomcdn.com/i/o/dyws6i9m/660849/970a84bb581c3b460c00fb367a68/4f4de1669475646edd26e2729182f8f9.png"
-                className="h-6 w-6" 
-                width={24} 
-                height={24} 
+                className="h-6 w-6"
+                width={24}
+                height={24}
                 alt="Platform"
               />
               <div className="mt-4 flex flex-col gap-2">
@@ -421,9 +405,9 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
                   {item.label} Platform
                 </p>
                 {item.dropdown.map((dropdownItem, index) => (
-                  <a 
+                  <a
                     key={index}
-                    href={dropdownItem.href} 
+                    href={dropdownItem.href}
                     className="text-xs text-dark font-grotesque"
                     onClick={onToggle}
                   >
