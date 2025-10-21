@@ -1,7 +1,15 @@
+import NavBar from "./NavBar";
+import BannerCTA from "@/components/homeComponents/Banner";
+import TestimonialCarousel from "@/components/homeComponents/TestimonialCarousel";
+import EngageCustomersSection from "@/components/homeComponents/EngageCustomer";
 export default function Home() {
   return (
     <div className="">
-      <h1> Tx- Frontend</h1>
+      <NavBar />
+      <EngageCustomersSection/>
+      
+      <TestimonialCarousel/>
+      <BannerCTA/>
     </div>
   );
 }

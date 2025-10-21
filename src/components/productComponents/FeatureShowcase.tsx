@@ -1,0 +1,620 @@
+"use client";
+import React, { useState, useRef, useEffect } from "react";
+import Image from "next/image";
+import {
+  FeatureCategory,
+  FeatureItemWithIcon,
+} from "@/app/types/product.types";
+
+const FEATURE_CATEGORIES: FeatureCategory[] = [
+  {
+    id: "build-pipeline",
+    title: "BUILD PIPELINE",
+    color: "text-[#105BCC]",
+    features: [
+      {
+        id: "contact-account-search",
+        title: "Contact & Account Search",
+        description: "Find the right leads and companies.",
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M21.7192 20.3109L18.0114 16.6309C19.4506 14.8353 20.1476 12.5562 19.959 10.2622C19.7705 7.9682 18.7106 5.83368 16.9975 4.29754C15.2844 2.76141 13.0481 1.94041 10.7486 2.00337C8.44911 2.06633 6.26109 3.00846 4.63448 4.63604C3.00786 6.26362 2.06629 8.45294 2.00337 10.7538C1.94045 13.0547 2.76095 15.2923 4.29618 17.0064C5.83141 18.7206 7.96466 19.781 10.2573 19.9697C12.5499 20.1584 14.8277 19.461 16.6222 18.0209L20.3 21.7009C20.3929 21.7946 20.5035 21.869 20.6253 21.9198C20.747 21.9706 20.8777 21.9967 21.0096 21.9967C21.1415 21.9967 21.2722 21.9706 21.3939 21.9198C21.5157 21.869 21.6263 21.7946 21.7192 21.7009C21.8993 21.5144 22 21.2652 22 21.0059C22 20.7466 21.8993 20.4974 21.7192 20.3109ZM11.0155 18.0209C9.63189 18.0209 8.27932 17.6104 7.12886 16.8412C5.9784 16.072 5.08172 14.9788 4.55223 13.6997C4.02273 12.4206 3.88419 11.0131 4.15412 9.65527C4.42406 8.2974 5.09035 7.05012 6.06873 6.07115C7.04712 5.09219 8.29366 4.4255 9.65072 4.1554C11.0078 3.88531 12.4144 4.02393 13.6927 4.55374C14.9711 5.08356 16.0637 5.98076 16.8324 7.13191C17.6011 8.28305 18.0114 9.63643 18.0114 11.0209C18.0114 12.8774 17.2743 14.6579 15.9623 15.9706C14.6504 17.2834 12.871 18.0209 11.0155 18.0209Z"
+              fill="currentColor"
+            />
+          </svg>
+        ),
+        color: "text-[#105BCC]",
+        learnMoreLink: "/product/search",
+        image: {
+          src: "/assets/contact.webp",
+          alt: "Screenshot showing Contact & Account Search",
+        },
+      },
+      {
+        id: "scores-signals",
+        title: "Scores & Signals",
+        description:
+          "Prioritize leads with intelligent scoring and real-time signals.",
+        icon: (
+          <svg
+            width="25"
+            viewBox="0 0 25 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M9.5 5.5C9.5 3.567 11.067 2 13 2C14.933 2 16.5 3.567 16.5 5.5C16.5 5.63798 16.492 5.77409 16.4765 5.9079L20.2867 9.5064C20.3572 9.50215 20.4284 9.5 20.5 9.5C22.433 9.5 24 11.067 24 13C24 14.933 22.433 16.5 20.5 16.5C20.1179 16.5 19.7501 16.4388 19.4059 16.3256L16.2805 19.2773C16.4224 19.6579 16.5 20.0699 16.5 20.5C16.5 22.433 14.933 24 13 24C11.067 24 9.5 22.433 9.5 20.5C9.5 20.0699 9.57758 19.6579 9.71951 19.2773L6.59416 16.3256C6.24993 16.4388 5.88212 16.5 5.5 16.5C3.567 16.5 2 14.933 2 13C2 11.067 3.567 9.5 5.5 9.5C5.57164 9.5 5.64278 9.50215 5.71336 9.5064L9.52352 5.90791C9.50798 5.7741 9.5 5.63798 9.5 5.5ZM13 4C12.1716 4 11.5 4.67157 11.5 5.5C11.5 6.32843 12.1716 7 13 7C13.8284 7 14.5 6.32843 14.5 5.5C14.5 4.67157 13.8284 4 13 4ZM10.3942 7.83662L7.75836 10.326C8.51778 10.968 9 11.9277 9 13C9 13.8105 8.72452 14.5566 8.2621 15.1499L10.9347 17.674C11.5136 17.2502 12.2276 17 13 17C13.7724 17 14.4864 17.2502 15.0653 17.674L17.7379 15.1499C17.2755 14.5566 17 13.8105 17 13C17 11.9277 17.4822 10.968 18.2417 10.326L15.6059 7.83661C14.9651 8.55075 14.035 9 13 9C11.965 9 11.0349 8.55075 10.3942 7.83662ZM5.5 11.5C4.67157 11.5 4 12.1716 4 13C4 13.8284 4.67157 14.5 5.5 14.5C6.32843 14.5 7 13.8284 7 13C7 12.1716 6.32843 11.5 5.5 11.5ZM19 13C19 12.1716 19.6716 11.5 20.5 11.5C21.3284 11.5 22 12.1716 22 13C22 13.8284 21.3284 14.5 20.5 14.5C19.6716 14.5 19 13.8284 19 13ZM13 19C12.1716 19 11.5 19.6716 11.5 20.5C11.5 21.3284 12.1716 22 13 22C13.8284 22 14.5 21.3284 14.5 20.5C14.5 19.6716 13.8284 19 13 19Z"
+              fill="currentColor"
+            />
+          </svg>
+        ),
+        color: "text-[#105BCC]",
+        learnMoreLink: "/product/search",
+        image: {
+          src: "/assets/scores.webp",
+          alt: "Screenshot showing Scores & Signals",
+        },
+      },
+      {
+        id: "inbound-optimization",
+        title: "Inbound Optimization",
+        description: "Optimize your inbound lead flow and conversion rates.",
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M2 12.1886C2 11.6363 2.44772 11.1886 3 11.1886H10C10.5523 11.1886 11 11.6363 11 12.1886C11 12.7409 10.5523 13.1886 10 13.1886H3C2.44772 13.1886 2 12.7409 2 12.1886Z"
+              fill="currentColor"
+            />
+            <path
+              d="M2 7.1886C2 6.63631 2.44772 6.1886 3 6.1886H21C21.5523 6.1886 22 6.63631 22 7.1886C22 7.74088 21.5523 8.1886 21 8.1886H3C2.44772 8.1886 2 7.74088 2 7.1886Z"
+              fill="currentColor"
+            />
+            <path
+              d="M2 17.1886C2 16.6363 2.44772 16.1886 3 16.1886H10C10.5523 16.1886 11 16.6363 11 17.1886C11 17.7409 10.5523 18.1886 10 18.1886H3C2.44772 18.1886 2 17.7409 2 17.1886Z"
+              fill="currentColor"
+            />
+            <path
+              d="M21.0429 10.5224C20.8012 10.5298 20.5723 10.6421 20.4034 10.8343C18.9311 12.4721 17.5872 14.0777 16.1737 15.6805L14.5119 14.2013C14.3193 14.0299 14.0734 13.9506 13.8281 13.9808C13.5822 14.0111 13.3582 14.1482 13.2037 14.3627C13.0499 14.5765 12.9784 14.8495 13.0057 15.1218C13.0329 15.3948 13.1565 15.6435 13.3491 15.815L15.6747 17.8804C16.0465 18.2085 16.5807 18.1742 16.915 17.7997C18.5877 15.9388 20.0866 14.1105 21.7212 12.2919C21.9943 11.9941 22.0755 11.5409 21.9259 11.1503C21.7757 10.759 21.4256 10.5103 21.0429 10.5224Z"
+              fill="currentColor"
+            />
+          </svg>
+        ),
+        color: "text-[#105BCC]",
+        learnMoreLink: "/product/search",
+        image: {
+          src: "/assets/inbound.webp",
+          alt: "Screenshot showing Inbound Optimization",
+        },
+      },
+      {
+        id: "sales-engagement",
+        title: "Sales Engagement",
+        description: "Engage with prospects through multi-channel outreach.",
+        icon: (
+          <svg
+            width="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19.5905 9.52061L6.16016 2.80174C5.63014 2.5378 5.03168 2.44377 4.44638 2.53249C3.86108 2.62121 3.31742 2.88835 2.88954 3.29749C2.46165 3.70664 2.17035 4.23787 2.05536 4.81877C1.94037 5.39966 2.00729 6.00195 2.24698 6.54351L4.54989 11.6967C4.60214 11.8213 4.62906 11.9551 4.62908 12.0902C4.6291 12.2253 4.60222 12.359 4.55 12.4836L2.24854 17.6361C2.05359 18.0744 1.97121 18.5544 2.0089 19.0326C2.04659 19.5109 2.20315 19.9721 2.46435 20.3745C2.72555 20.7769 3.08311 21.1076 3.50454 21.3366C3.92596 21.5656 4.39789 21.6857 4.87743 21.6859C5.32658 21.6815 5.76902 21.5766 6.17236 21.379L19.6008 14.6639C20.0771 14.4243 20.4775 14.0569 20.7572 13.6029C21.0369 13.1488 21.185 12.6259 21.1849 12.0925C21.1849 11.5591 21.0366 11.0361 20.7568 10.582C20.4769 10.1279 20.0765 9.76039 19.6001 9.52061L19.5905 9.52061ZM18.7373 12.9462L5.3088 19.6613C5.13247 19.7459 4.93446 19.7746 4.74132 19.7435C4.54817 19.7125 4.36913 19.623 4.22821 19.4873C4.08728 19.3515 3.9912 19.1759 3.95285 18.984C3.9145 18.7921 3.93572 18.5931 4.01365 18.4136L6.30552 13.2611C6.33519 13.1923 6.3608 13.1218 6.38223 13.05L12.9914 13.0509C13.2458 13.0509 13.4898 12.9499 13.6697 12.7699C13.8495 12.59 13.9505 12.346 13.9505 12.0915C13.9505 11.837 13.8494 11.5929 13.6695 11.4129C13.4895 11.2329 13.2455 11.1318 12.9911 11.1318L6.38196 11.1308C6.36051 11.059 6.33488 10.9885 6.30519 10.9197L4.01188 5.76651C3.93389 5.58702 3.91262 5.38799 3.95092 5.1961C3.98921 5.00421 4.08524 5.82864 4.22613 5.69292C4.36702 5.55721 4.54603 5.46784 4.73917 5.4368C4.9323 5.40575 5.13032 5.43453 5.30668 5.51925L18.737 11.2381C18.8941 11.3187 19.026 11.441 19.1181 11.5917C19.2102 11.7424 19.259 11.9156 19.259 12.0922C19.259 12.2688 19.2103 12.442 19.1183 12.5927C19.0262 12.7433 18.8944 12.8657 18.7373 12.9462Z"
+              fill="currentColor"
+            />
+          </svg>
+        ),
+        color: "text-[#105BCC]",
+        learnMoreLink: "/product/search",
+        image: {
+          src: "/assets/sales.webp",
+          alt: "Screenshot showing Sales Engagement",
+        },
+      },
+    ],
+  },
+  {
+    id: "close-deals",
+    title: "CLOSE DEALS",
+    color: "text-[#7456DA]",
+    features: [
+      {
+        id: "meetings",
+        title: "Meetings",
+        description:
+          "Schedule and manage meetings efficiently with automated coordination.",
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M19 4H17V3C17 2.73478 16.8946 2.48043 16.7071 2.29289C16.5196 2.10536 16.2652 2 16 2C15.7348 2 15.4804 2.10536 15.2929 2.29289C15.1054 2.48043 15 2.73478 15 3V4H9V3C9 2.73478 8.89464 2.48043 8.70711 2.29289C8.51957 2.10536 8.26522 2 8 2C7.73478 2 7.48043 2.10536 7.29289 2.29289C7.10536 2.48043 7 2.73478 7 3V4H5C4.20435 4 3.44129 4.31607 2.87868 4.87868C2.31607 5.44129 2 6.20435 2 7V19C2 19.7956 2.31607 20.5587 2.87868 21.1213C3.44129 21.6839 4.20435 22 5 22H19C19.7956 22 20.5587 21.6839 21.1213 21.1213C21.6839 20.5587 22 19.7956 22 19V7C22 6.20435 21.6839 5.44129 21.1213 4.87868C20.5587 4.31607 19.7956 4 19 4ZM20 19C20 19.2652 19.8946 19.5196 19.7071 19.7071C19.5196 19.8946 19.2652 20 19 20H5C4.73478 20 4.48043 19.8946 4.29289 19.7071C4.10536 19.5196 4 19.2652 4 19V12H20V19ZM20 10H4V7C4 6.73478 4.10536 6.48043 4.29289 6.29289C4.48043 6.10536 4.73478 6 5 6H7V7C7 7.26522 7.10536 7.51957 7.29289 7.70711C7.48043 7.89464 7.73478 8 8 8C8.26522 8 8.51957 7.89464 8.70711 7.70711C8.89464 7.51957 9 7.26522 9 7V6H15V7C15 7.26522 15.1054 7.51957 15.2929 7.70711C15.4804 7.89464 15.7348 8 16 8C16.2652 8 16.5196 7.89464 16.7071 7.70711C16.8946 7.51957 17 7.26522 17 7V6H19C19.2652 6 19.5196 6.10536 19.7071 6.29289C19.8946 6.48043 20 6.73478 20 7V10Z"
+              fill="currentColor"
+            />
+          </svg>
+        ),
+        color: "text-[#7456DA]",
+        learnMoreLink: "/product/search",
+        image: {
+          src: "/assets/meetings.webp",
+          alt: "Screenshot showing Meetings",
+        },
+      },
+      {
+        id: "deal-management",
+        title: "Deal Management",
+        description:
+          "Track and manage your sales pipeline with comprehensive deal management.",
+        icon: (
+          <svg
+            width="25"
+            viewBox="0 0 25 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.5833 11.4583H13.5417V7.29158H15.625C15.9013 7.29158 16.1662 7.40133 16.3616 7.59668C16.5569 7.79203 16.6667 8.05698 16.6667 8.33325C16.6667 8.60952 16.7764 8.87447 16.9718 9.06982C17.1671 9.26517 17.4321 9.37492 17.7083 9.37492C17.9846 9.37492 18.2496 9.26517 18.4449 9.06982C18.6403 8.87447 18.75 8.60952 18.75 8.33325C18.75 7.50445 18.4208 6.70959 17.8347 6.12354C17.2487 5.53749 16.4538 5.20825 15.625 5.20825H13.5417V3.12492C13.5417 2.84865 13.4319 2.5837 13.2366 2.38835C13.0412 2.193 12.7763 2.08325 12.5 2.08325C12.2237 2.08325 11.9588 2.193 11.7634 2.38835C11.5681 2.5837 11.4583 2.84865 11.4583 3.12492V5.20825H10.4167C9.3116 5.20825 8.25179 5.64724 7.47039 6.42864C6.68899 7.21004 6.25 8.26985 6.25 9.37492C6.25 10.48 6.68899 11.5398 7.47039 12.3212C8.25179 13.1026 9.3116 13.5416 10.4167 13.5416H11.4583V17.7083H9.375C9.09873 17.7083 8.83378 17.5985 8.63843 17.4032C8.44308 17.2078 8.33333 16.9429 8.33333 16.6666C8.33333 16.3903 8.22359 16.1254 8.02824 15.93C7.83289 15.7347 7.56793 15.6249 7.29167 15.6249C7.0154 15.6249 6.75045 15.7347 6.5551 15.93C6.35975 16.1254 6.25 16.3903 6.25 16.6666C6.25 17.4954 6.57924 18.2902 7.16529 18.8763C7.75134 19.4623 8.5462 19.7916 9.375 19.7916H11.4583V21.8749C11.4583 22.1512 11.5681 22.4161 11.7634 22.6115C11.9588 22.8068 12.2237 22.9166 12.5 22.9166C12.7763 22.9166 13.0412 22.8068 13.2366 22.6115C13.4319 22.4161 13.5417 22.1512 13.5417 21.8749V19.7916H14.5833C15.6884 19.7916 16.7482 19.3526 17.5296 18.5712C18.311 17.7898 18.75 16.73 18.75 15.6249C18.75 14.5198 18.311 13.46 17.5296 12.6786C16.7482 11.8972 15.6884 11.4583 14.5833 11.4583ZM11.4583 11.4583H10.4167C9.86413 11.4583 9.33423 11.2388 8.94353 10.8481C8.55283 10.4574 8.33333 9.92745 8.33333 9.37492C8.33333 8.82238 8.55283 8.29248 8.94353 7.90178C9.33423 7.51108 9.86413 7.29158 10.4167 7.29158H11.4583V11.4583ZM14.5833 17.7083H13.5417V13.5416H14.5833C15.1359 13.5416 15.6658 13.7611 16.0565 14.1518C16.4472 14.5425 16.6667 15.0724 16.6667 15.6249C16.6667 16.1775 16.4472 16.7074 16.0565 17.0981C15.6658 17.4888 15.1359 17.7083 14.5833 17.7083Z"
+              fill="currentColor"
+            />
+          </svg>
+        ),
+        color: "text-[#7456DA]",
+        learnMoreLink: "/product/search",
+        image: {
+          src: "/assets/deal.webp",
+          alt: "Screenshot showing Deal Management",
+        },
+      },
+      {
+        id: "conversation-intelligence",
+        title: "Conversation Intelligence",
+        description:
+          "Gain insights from customer conversations to improve sales strategies.",
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            viewBox="0 0 24 25"
+            fill="none"
+          >
+            <path
+              d="M12.0282 2.18848C10.715 2.18848 9.41461 2.44713 8.20135 2.94968C6.9881 3.45223 5.8857 4.18882 4.95712 5.11741C3.08175 6.99277 2.02819 9.53631 2.02819 12.1885C2.01944 14.4976 2.81898 16.737 4.28819 18.5185L2.28819 20.5185C2.14943 20.6591 2.05543 20.8377 2.01806 21.0317C1.98068 21.2257 2.00161 21.4264 2.07819 21.6085C2.16124 21.7884 2.29589 21.9396 2.46503 22.0429C2.63418 22.1461 2.83019 22.1968 3.02819 22.1885H12.0282C14.6804 22.1885 17.2239 21.1349 19.0993 19.2595C20.9746 17.3842 22.0282 14.8406 22.0282 12.1885C22.0282 9.53631 20.9746 6.99277 19.0993 5.11741C17.2239 3.24204 14.6804 2.18848 12.0282 2.18848ZM12.0282 20.1885H5.43819L6.36819 19.2585C6.55444 19.0711 6.65898 18.8177 6.65898 18.5535C6.65898 18.2893 6.55444 18.0358 6.36819 17.8485C5.05877 16.5405 4.24336 14.819 4.06088 12.9773C3.87839 11.1355 4.34013 9.28748 5.36741 7.748C6.3947 6.20852 7.92398 5.07284 9.6947 4.53445C11.4654 3.99606 13.368 4.08828 15.0784 4.79539C16.7888 5.5025 18.201 6.78075 19.0746 8.41237C19.9482 10.044 20.2291 11.928 19.8693 13.7435C19.5096 15.5589 18.5315 17.1935 17.1017 18.3687C15.672 19.5439 13.8789 20.187 12.0282 20.1885Z"
+              fill="currentColor"
+            />
+          </svg>
+        ),
+        color: "text-[#7456DA]",
+        learnMoreLink: "/product/search",
+        image: {
+          src: "/assets/conversation.webp",
+          alt: "Screenshot showing Conversation Intelligence",
+        },
+      },
+    ],
+  },
+  {
+    id: "improve-performance",
+    title: "IMPROVE PERFORMANCE",
+    color: "text-[#17B94E]",
+    features: [
+      {
+        id: "analytics",
+        title: "Analytics",
+        description:
+          "Comprehensive analytics to track performance and identify opportunities.",
+        icon: (
+          <svg
+            width="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21 20H20V5C20 4.73478 19.8946 4.48043 19.7071 4.29289C19.5196 4.10536 19.2652 4 19 4C18.7348 4 18.4804 4.10536 18.2929 4.29289C18.1054 4.48043 18 4.73478 18 5V20H16V13C16 12.7348 15.8946 12.4804 15.7071 12.2929C15.5196 12.1054 15.2652 12 15 12C14.7348 12 14.4804 12.1054 14.2929 12.2929C14.1054 12.4804 14 12.7348 14 13V20H12V9C12 8.73478 11.8946 8.48043 11.7071 8.29289C11.5196 8.10536 11.2652 8 11 8C10.7348 8 10.4804 8.10536 10.2929 8.29289C10.1054 8.48043 10 8.73478 10 9V20H8V17C8 16.7348 7.89464 16.4804 7.70711 16.2929C7.51957 16.1054 7.26522 16 7 16C6.73478 16 6.48043 16.1054 6.29289 16.2929C6.10536 16.4804 6 16.7348 6 17V20H4V3C4 2.73478 3.89464 2.48043 3.70711 2.29289C3.51957 2.10536 3.26522 2 3 2C2.73478 2 2.48043 2.10536 2.29289 2.29289C2.10536 2.48043 2 2.73478 2 3V21C2 21.2652 2.10536 21.5196 2.29289 21.7071C2.48043 21.8946 2.73478 22 3 22H21C21.2652 22 21.5196 21.8946 21.7071 21.7071C21.8946 21.5196 22 21.2652 22 21C22 20.7348 21.8946 20.4804 21.7071 20.2929C21.5196 20.1054 21.2652 20 21 20Z"
+              fill="currentColor"
+            />
+          </svg>
+        ),
+        color: "text-[#17B94E]",
+        learnMoreLink: "/product/search",
+        image: {
+          src: "/assets/analytics.webp",
+          alt: "Screenshot showing Analytics",
+        },
+      },
+      {
+        id: "coaching",
+        title: "Coaching",
+        description:
+          "Personalized coaching tools to develop your sales team skills.",
+        icon: (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M18.0955 10.3334H19.2727C20.7793 10.3334 22 9.21437 22 7.83335V5.33334C22 5.11199 21.9041 4.9004 21.7337 4.74415C21.5632 4.5879 21.3324 4.50001 21.0909 4.50001H18.3636V2.83334C18.3636 2.61198 18.2678 2.4004 18.0973 2.24415C17.9268 2.0879 17.696 2 17.4545 2H6.54545C6.04298 2 5.63636 2.37273 5.63636 2.83334V4.50001H2.90909C2.40661 4.50001 2 4.87274 2 5.33334V7.83335C2 9.21437 3.2207 10.3334 4.72727 10.3334H5.90448C6.25248 11.3986 6.92543 12.3508 7.8443 13.0775C8.76405 13.8043 9.88975 14.2746 11.0909 14.4333V17H9.2727C7.76614 17 6.54543 18.119 6.54543 19.5V21.1667C6.54543 21.388 6.64131 21.5996 6.81177 21.7559C6.98223 21.9121 7.21305 22 7.45452 22H16.5454C16.7869 22 17.0177 21.9121 17.1882 21.7559C17.3586 21.5996 17.4545 21.388 17.4545 21.1667V19.5C17.4545 18.119 16.2338 17 14.7273 17H12.9091V14.4333C14.1103 14.2746 15.2359 13.8043 16.1557 13.0775C17.0745 12.3508 17.7475 11.3986 18.0955 10.3334H18.0955ZM14.7273 18.6667C14.9688 18.6667 15.1996 18.7546 15.3701 18.9108C15.5405 19.0671 15.6364 19.2787 15.6364 19.5V20.3334H8.3637V19.5C8.3637 19.0394 8.77032 18.6667 9.2728 18.6667H14.7273ZM20.1819 6.16668V7.83335C20.1819 8.0547 20.086 8.26628 19.9155 8.42253C19.7451 8.57878 19.5143 8.66668 19.2728 8.66668H18.3637V6.16668H20.1819ZM4.72734 8.66668C4.22486 8.66668 3.81825 8.29395 3.81825 7.83335V6.16668H5.63643V8.66668H4.72734ZM7.45461 8.66668V3.66667H16.5455V8.66668C16.5455 10.1551 15.679 11.5304 14.2728 12.275C12.8665 13.0196 11.1337 13.0196 9.72734 12.275C8.32109 11.5304 7.45461 10.155 7.45461 8.66668Z"
+              fill="currentColor"
+            />
+          </svg>
+        ),
+        color: "text-[#17B94E]",
+        learnMoreLink: "/product/search",
+        image: {
+          src: "/assets/coaching.webp",
+          alt: "Screenshot showing Coaching",
+        },
+      },
+    ],
+  },
+  {
+    id: "streamline-operations",
+    title: "STREAMLINE OPERATIONS",
+    color: "text-[#D26719]",
+    features: [
+      {
+        id: "workflow-engine",
+        title: "Workflow Engine",
+        description:
+          "Automate and optimize your sales processes with powerful workflows.",
+        icon: (
+          <svg
+            width="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.7101 9.28697L17.7101 5.28979C17.6169 5.19662 17.5062 5.12271 17.3844 5.07229C17.2626 5.02186 17.132 4.99591 17.0001 4.99591C16.7338 4.99591 16.4784 5.10162 16.2901 5.28979C16.1018 5.47797 15.996 5.73318 15.996 5.99929C15.996 6.26541 16.1018 6.52062 16.2901 6.70879L18.5901 8.99718H7.00014C6.73492 8.99718 6.48057 9.10246 6.29303 9.28986C6.1055 9.47727 6.00014 9.73144 6.00014 9.99647C6.00014 10.2615 6.1055 10.5157 6.29303 10.7031C6.48057 10.8905 6.73492 10.9958 7.00014 10.9958H21.0001C21.1976 10.9948 21.3903 10.9354 21.554 10.8252C21.7177 10.7149 21.8451 10.5587 21.9201 10.3762C21.9967 10.1942 22.0176 9.99365 21.9803 9.7998C21.9429 9.60594 21.8489 9.4275 21.7101 9.28697ZM17.0001 12.9944H3.00014C2.80271 12.9953 2.61 13.0547 2.44628 13.165C2.28256 13.2752 2.15516 13.4314 2.08014 13.6139C2.00356 13.7959 1.98264 13.9965 2.02001 14.1903C2.05739 14.3842 2.15138 14.5626 2.29014 14.7031L6.29014 18.7003C6.3831 18.794 6.4937 18.8683 6.61556 18.9191C6.73742 18.9698 6.86813 18.9959 7.00014 18.9959C7.13215 18.9959 7.26286 18.9698 7.38472 18.9191C7.50658 18.8683 7.61718 18.794 7.71014 18.7003C7.80387 18.6074 7.87826 18.4969 7.92903 18.3751C7.9798 18.2534 8.00594 18.1227 8.00594 17.9908C8.00594 17.8589 7.9798 17.7283 7.92903 17.6065C7.87826 17.4847 7.80387 17.3742 7.71014 17.2813L5.41014 14.9929H17.0001C17.2654 14.9929 17.5197 14.8877 17.7072 14.7003C17.8948 14.5129 18.0001 14.2587 18.0001 13.9936C18.0001 13.7286 17.8948 13.4744 17.7072 13.287C17.5197 13.0996 17.2654 12.9944 17.0001 12.9944Z"
+              fill="currentColor"
+            />
+          </svg>
+        ),
+        color: "text-[#D26719]",
+        learnMoreLink: "/product/search",
+        image: {
+          src: "/assets/workflow.webp",
+          alt: "Screenshot showing Workflow Engine",
+        },
+      },
+      {
+        id: "enrich-cleanse",
+        title: "Enrich & Cleanse",
+        description:
+          "Keep your data accurate and enriched with automated cleansing tools.",
+        icon: (
+          <svg
+            width="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15.38 15.5119H19.91C20.1668 15.5208 20.4103 15.6282 20.59 15.8118C20.683 15.9008 20.7568 16.0079 20.8066 16.1266C20.8565 16.2453 20.8815 16.3729 20.88 16.5016V21.0003C20.88 21.2654 20.7746 21.5197 20.5871 21.7072C20.3996 21.8947 20.1452 22 19.88 22C19.6148 22 19.3604 21.8947 19.1729 21.7072C18.9854 21.5197 18.88 21.2654 18.88 21.0003V19.2308C17.4628 20.574 15.6833 21.4729 13.761 21.8167C11.8387 22.1605 9.85782 21.9341 8.06274 21.1655C6.26767 20.3968 4.73699 19.1196 3.6596 17.4913C2.58222 15.8631 2.00529 13.9551 2 12.0029C2 11.7378 2.10536 11.4835 2.29289 11.296C2.48043 11.1085 2.73478 11.0032 3 11.0032C3.26522 11.0032 3.51957 11.1085 3.70711 11.296C3.89464 11.4835 4 11.7378 4 12.0029C4.00418 13.5979 4.48531 15.1552 5.38159 16.4748C6.27787 17.7943 7.54834 18.8158 9.02978 19.408C10.5112 20.0002 12.1359 20.136 13.6952 19.798C15.2544 19.4601 16.6769 18.6637 17.78 17.5113H15.38C15.2487 17.5113 15.1186 17.4854 14.9973 17.4352C14.876 17.385 14.7658 17.3113 14.6729 17.2185C14.58 17.1257 14.5064 17.0155 14.4561 16.8942C14.4059 16.7729 14.38 16.6429 14.38 16.5116C14.38 16.3803 14.4059 16.2503 14.4561 16.129C14.5064 16.0077 14.58 15.8975 14.6729 15.8047C14.7658 15.7119 14.876 15.6382 14.9973 15.588C15.1186 15.5377 15.2487 15.5119 15.38 15.5119Z"
+              fill="currentColor"
+            />
+            <path
+              d="M5.12 4.77501C6.97349 3.00444 9.43639 2.01312 12 2.00581C13.3139 2.00761 14.6149 2.26569 15.83 2.76559C18.2792 3.78021 20.2251 5.72556 21.24 8.17402C21.7401 9.38874 21.9982 10.6893 22 12.0029C22 12.268 21.8946 12.5223 21.7071 12.7098C21.5196 12.8973 21.2652 13.0026 21 13.0026C20.7348 13.0026 20.4804 12.8973 20.2929 12.7098C20.1054 12.5223 20 12.268 20 12.0029C19.9938 10.4088 19.5113 8.85282 18.6142 7.53481C17.7172 6.2168 16.4466 5.19687 14.9656 4.60592C13.4846 4.01498 11.8607 3.87999 10.3024 4.21828C8.74409 4.55657 7.32247 5.35271 6.22 6.50451H8.62C8.88522 6.50451 9.13957 6.60983 9.32711 6.79731C9.51464 6.9848 9.62 7.23908 9.62 7.50422C9.62 7.76935 9.51464 8.02363 9.32711 8.21112C9.13957 8.3986 8.88522 8.50392 8.62 8.50392H4.12C3.85478 8.50392 3.60043 8.3986 3.41289 8.21112C3.22536 8.02363 3.12 7.76935 3.12 7.50422V3.00552C3.11924 2.87395 3.14446 2.74353 3.19423 2.62173C3.24399 2.49993 3.31732 2.38914 3.41 2.29573C3.54987 2.15474 3.72857 2.05859 3.92332 2.01953C4.11807 1.98047 4.32004 2.00028 4.50348 2.07642C4.68693 2.15257 4.84353 2.2816 4.95333 2.44707C5.06313 2.61254 5.12116 2.80696 5.12 3.00552V4.77501Z"
+              fill="currentColor"
+            />
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M14.25 10.5033C14.5422 10.949 14.6986 11.47 14.7 12.0029C14.7 12.7188 14.4156 13.4053 13.9092 13.9115C13.4029 14.4177 12.7161 14.7021 12 14.7021C11.467 14.7007 10.9458 14.5444 10.5 14.2522C10.059 13.9508 9.71538 13.5274 9.51115 13.0338C9.30692 12.5402 9.25093 11.9979 9.35001 11.4731C9.45557 10.9504 9.71303 10.4706 10.0901 10.0936C10.4673 9.71658 10.9472 9.4592 11.47 9.35367C11.995 9.25462 12.5375 9.3106 13.0312 9.51476C13.5249 9.71893 13.9484 10.0625 14.25 10.5033ZM11.2505 11.5006C11.1504 11.6489 11.0979 11.8241 11.1 12.0029C11.0987 12.1214 11.121 12.239 11.1658 12.3488C11.2105 12.4586 11.2768 12.5583 11.3606 12.6421C11.4445 12.7259 11.5442 12.7921 11.654 12.8369C11.7638 12.8816 11.8815 12.904 12 12.9026C12.1789 12.9047 12.3541 12.8523 12.5024 12.7522C12.6507 12.6522 12.765 12.5094 12.83 12.3428C12.9015 12.1792 12.919 11.9971 12.88 11.823C12.8483 11.649 12.7643 11.4888 12.6393 11.3638C12.5142 11.2388 12.354 11.1548 12.18 11.1232C12.0058 11.0841 11.8236 11.1017 11.66 11.1731C11.4934 11.2382 11.3505 11.3524 11.2505 11.5006Z"
+              fill="currentColor"
+            />
+          </svg>
+        ),
+        color: "text-[#D26719]",
+        learnMoreLink: "/product/search",
+        image: {
+          src: "/assets/enrich.webp",
+          alt: "Screenshot showing Enrich & Cleanse",
+        },
+      },
+    ],
+  },
+];
+
+// Individual Feature Component
+const FeatureCard = ({
+  feature,
+  isActive,
+  onClick,
+}: {
+  feature: FeatureItemWithIcon;
+  isActive: boolean;
+  onClick: () => void;
+}) => (
+  <div
+    className={`
+      flex items-center gap-2 p-2 rounded-lg cursor-pointer transition-all duration-200
+      ${
+        isActive
+          ? "bg-blue-50 border border-blue-200"
+          : "hover:bg-gray-50 border border-transparent"
+      }
+    `}
+    onClick={onClick}
+  >
+    <div className={`flex-shrink-0 ${feature.color}`}>{feature.icon}</div>
+    <span className="text-sm font-medium text-gray-700">{feature.title}</span>
+  </div>
+);
+
+// Feature Category Component
+const FeatureCategorySection = ({
+  category,
+  activeFeature,
+  onFeatureClick,
+}: {
+  category: FeatureCategory;
+  activeFeature: string;
+  onFeatureClick: (featureId: string) => void;
+}) => (
+  <div className="mb-4">
+    <p className={`text-sm font-semibold mb-2 ${category.color}`}>
+      {category.title}
+    </p>
+    <div className="space-y-1">
+      {category.features.map((feature) => (
+        <FeatureCard
+          key={feature.id}
+          feature={feature}
+          isActive={activeFeature === feature.id}
+          onClick={() => onFeatureClick(feature.id)}
+        />
+      ))}
+    </div>
+  </div>
+);
+
+// Scroll Indicator Component
+const ScrollIndicator = () => (
+  <div className="flex items-center justify-center gap-2 mt-8 text-gray-500">
+    <div className="rotate-90">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="22"
+        viewBox="0 0 22 22"
+        fill="none"
+      >
+        <path
+          d="M10.3492 10.505C10.4344 10.5909 10.5358 10.6591 10.6475 10.7056C10.7592 10.7522 10.879 10.7761 11 10.7761C11.121 10.7761 11.2408 10.7522 11.3525 10.7056C11.4642 10.6591 11.5656 10.5909 11.6508 10.505L14.4008 7.75498C14.4887 7.66951 14.5589 7.56757 14.6074 7.45498C14.6558 7.34239 14.6817 7.22135 14.6834 7.09878C14.6851 6.97621 14.6626 6.8545 14.6173 6.7406C14.572 6.62671 14.5046 6.52286 14.4192 6.43498C14.3337 6.34711 14.2318 6.27692 14.1192 6.22844C14.0066 6.17996 13.8855 6.15414 13.763 6.15243C13.6404 6.15073 13.5187 6.17319 13.4048 6.21852C13.2909 6.26386 13.187 6.33118 13.0992 6.41665L11 8.56165L8.90083 6.41665C8.72336 6.24404 8.48458 6.149 8.23704 6.15243C7.98949 6.15587 7.75344 6.25751 7.58083 6.43498C7.40822 6.61246 7.31318 6.85123 7.31662 7.09878C7.32006 7.34633 7.42169 7.58237 7.59917 7.75498L10.3492 10.505ZM13.0992 11.495L11 13.6033L8.90083 11.495C8.72336 11.3224 8.48458 11.2273 8.23704 11.2308C7.98949 11.2342 7.75344 11.3358 7.58083 11.5133C7.40822 11.6908 7.31318 11.9296 7.31662 12.1771C7.32006 12.4247 7.42169 12.6607 7.59917 12.8333L10.3492 15.5833C10.4344 15.6692 10.5358 15.7374 10.6475 15.784C10.7592 15.8305 10.879 15.8545 11 15.8545C11.121 15.8545 11.2408 15.8305 11.3525 15.784C11.4642 15.7374 11.5656 15.6692 11.6508 15.5833L14.4008 12.8333C14.5734 12.6607 14.6704 12.4266 14.6704 12.1825C14.6704 11.9384 14.5734 11.7043 14.4008 11.5316C14.2282 11.359 13.9941 11.2621 13.75 11.2621C13.5059 11.2621 13.2718 11.359 13.0992 11.5316V11.495Z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+    <p className="text-sm">Scroll</p>
+  </div>
+);
+
+// Main Component
+const FeaturesShowcase = () => {
+  const [activeFeature, setActiveFeature] = useState(
+    FEATURE_CATEGORIES[0]?.features[0]?.id || ""
+  );
+  const featureContainerRef = useRef<HTMLDivElement>(null);
+
+    // Get all features flattened for easy access
+    const allFeatures = FEATURE_CATEGORIES.flatMap(category => category.features);
+    const currentFeature = allFeatures.find(feature => feature.id === activeFeature) || allFeatures[0];
+    
+   
+
+  // Get the current category for background color
+  const currentCategory = FEATURE_CATEGORIES.find((category) =>
+    category.features.some((feature) => feature.id === activeFeature)
+  );
+
+  // Auto-scroll to active feature
+  useEffect(() => {
+    if (featureContainerRef.current) {
+      featureContainerRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+      });
+    }
+  }, [activeFeature]);
+
+  return (
+    <div className="min-h-screen bg-white font-grotesque px-6 md:px-12 lg:px-16 xl:px-20 2xl:px-24 py-6 lg:py-18">
+      <div className="container mx-auto px-4 py-8">
+        <div className="mb-12 lg:mb-18">
+          <h4 className="text-4xl md:text-6xl text-center font-bold text-dark">
+            Everything you need to exceed revenue goals.
+          </h4>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          {/* Left Sidebar - Feature Navigation */}
+          <div className="lg:col-span-3">
+            <div className="lg:sticky lg:top-8">
+              {/* Mobile - Horizontal Scroll */}
+              <div className="lg:hidden overflow-x-auto pb-4 mb-6">
+                <div className="flex space-x-4 min-w-max">
+                  {FEATURE_CATEGORIES.map((category) => (
+                    <div key={category.id} className="flex-shrink-0">
+                      <p
+                        className={`text-sm font-semibold mb-2 ${category.color}`}
+                      >
+                        {category.title}
+                      </p>
+                      <div className="flex flex-col space-y-2">
+                        {category.features.map((feature) => (
+                          <div
+                            key={feature.id}
+                            className={`
+                                                            flex items-center gap-2 p-2 rounded-lg cursor-pointer transition-all duration-200 min-w-max
+                                                            ${
+                                                              activeFeature ===
+                                                              feature.id
+                                                                ? "bg-blue-50 border border-blue-200"
+                                                                : "hover:bg-gray-50 border border-transparent"
+                                                            }
+                                                        `}
+                            onClick={() => setActiveFeature(feature.id)}
+                          >
+                            <div className={`flex-shrink-0 ${feature.color}`}>
+                              {feature.icon}
+                            </div>
+                            <span className="text-sm font-medium text-gray-700 whitespace-nowrap">
+                              {feature.title}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Desktop - Vertical Stack */}
+              <div className="hidden lg:block">
+                {FEATURE_CATEGORIES.map((category) => (
+                  <FeatureCategorySection
+                    key={category.id}
+                    category={category}
+                    activeFeature={activeFeature}
+                    onFeatureClick={setActiveFeature}
+                  />
+                ))}
+                <ScrollIndicator />
+              </div>
+            </div>
+          </div>
+
+          {/* Right Content - Feature Details & Preview */}
+          <div className="lg:col-span-8">
+            <div ref={featureContainerRef} className="space-y-6">
+              {/* Feature Header */}
+              <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-4">
+                <div className="flex items-center gap-4">
+                  <div className={`${currentFeature.color}`}>
+                    {currentFeature.icon}
+                  </div>
+                  <h2 className="text-2xl font-semibold text-gray-900">
+                    {currentFeature.title}
+                  </h2>
+                </div>
+
+                {/* Feature Description */}
+                <div className="lg:text-right">
+                  <p className="text-gray-600 max-w-lg">
+                    {currentFeature.description}
+                    {currentFeature.learnMoreLink && (
+                      <span className="ml-1">
+                        <a
+                          href={currentFeature.learnMoreLink}
+                          className="text-blue-600 hover:text-blue-800 font-medium"
+                        >
+                          Learn more.
+                        </a>
+                      </span>
+                    )}
+                  </p>
+                </div>
+              </div>
+              <div className="relative rounded-lg overflow-hidden border border-gray-200">
+                {/* Image */}
+                <div className="relative z-10">
+                  <Image
+                    src={currentFeature.image.src}
+                    alt={currentFeature.image.alt}
+                    width={1808}
+                    height={1092}
+                    className="w-full h-auto"
+                    sizes="(max-width: 1024px) 100vw, 70vw"
+                    priority
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* Left Sidebar - Feature Navigation */}
+        <div className="lg:col-span-4">
+          <div className="sticky top-8">
+            {FEATURE_CATEGORIES.map((category) => (
+              <FeatureCategorySection
+                key={category.id}
+                category={category}
+                activeFeature={activeFeature}
+                onFeatureClick={setActiveFeature}
+              />
+            ))}
+            <ScrollIndicator />
+          </div>
+        </div>
+
+        {/* Right Content - Feature Details & Preview */}
+        <div className="lg:col-span-8">
+          <div ref={featureContainerRef} className="space-y-2">
+            {/* Feature Header */}
+            <div className="flex justify-between">
+              <div className="flex items-center gap-4 mb-6">
+                <div className={`${currentFeature.color}`}>
+                  {currentFeature.icon}
+                </div>
+                <h2 className="text-2xl font-semibold text-gray-900">
+                  {currentFeature.title}
+                </h2>
+              </div>
+
+              {/* Feature Description */}
+              <div className="mb-8">
+                <p className="text-gray-600">
+                  {currentFeature.description}
+                  {currentFeature.learnMoreLink && (
+                    <span className="ml-1">
+                      <a
+                        href={currentFeature.learnMoreLink}
+                        className="text-blue-600 hover:text-blue-800 "
+                      >
+                        Learn more.
+                      </a>
+                    </span>
+                  )}
+                </p>
+              </div>
+            </div>
+            {/* Feature Image Preview */}
+            <div className="relative rounded-lg overflow-hidden border border-gray-200">
+              <Image
+                src={currentFeature.image.src}
+                alt={currentFeature.image.alt}
+                width={1808}
+                height={1092}
+                className="w-full h-auto"
+                sizes="(max-width: 1024px) 100vw, 70vw"
+                priority
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default FeaturesShowcase;
