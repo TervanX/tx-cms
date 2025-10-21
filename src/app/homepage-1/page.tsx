@@ -62,7 +62,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <div className="mx-8 rounded-xl">
+      <div className="lg:mx-8 rounded-xl">
         <motion.div
           className="relative"
           variants={containerVariants}
@@ -91,9 +91,10 @@ const HomePage = () => {
       </div>
 
       {/* ✅ Rest of page */}
-      <div className="mx-8 bg-white rounded-xl relative top-20">
+      <div className="mx-8 bg-white rounded-xl relative top-20 bordder-solid border-primary" >
         {/* ✅ Image positioned dynamically using card bottom */}
         <img
+        className="z-50"
           src={
             "https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flines-desktop.58476511.png&w=3840&q=75"
           }
