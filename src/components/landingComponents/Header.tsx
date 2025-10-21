@@ -1,3 +1,5 @@
+
+import Link from "next/link";
 export default function Header() {
   return (
     <header className="fixed top-0 right-0 left-0 z-50">
@@ -15,28 +17,27 @@ export default function Header() {
             <p>Tervan X</p>
           </li>
         </ul>
-
         <ul className="ml-auto flex items-center space-x-2 md:flex md:items-center md:space-x-4 md:py-2.5">
           <li className="group relative hidden md:block">
-            <a
+            <Link
               className="text-base leading-none font-semibold tracking-tight cursor-pointer rounded-md border border-transparent px-2 py-2 transition-all duration-300 text-white hover:text-white/80"
-              href="#"
+              href="/contact-sales"
             >
               Contact sales
-            </a>
+            </Link>
           </li>
           <li className="group relative hidden md:block">
-            <a
+            <Link
               className="text-base leading-none font-semibold tracking-tight cursor-pointer rounded-md border border-transparent px-2 py-2 transition-all duration-300 text-white hover:text-white/80"
               href="#"
             >
               Sign in
-            </a>
+            </Link>
           </li>
           {/* <li className="group relative">
-            <a className="text-base leading-none font-semibold tracking-tight cursor-pointer rounded-md border border-transparent px-2 py-2 transition-all duration-300 text-white hover:text-white/80" href="#">
+            <Link className="text-base leading-none font-semibold tracking-tight cursor-pointer rounded-md border border-transparent px-2 py-2 transition-all duration-300 text-white hover:text-white/80" href="#">
               View demo
-            </a>
+            </Link>
           </li> */}
           <li className="group relative">
             <button className="relative inline-block cursor-pointer rounded-md font-semibold tracking-tight whitespace-nowrap text-black text-base px-4 py-2.5 leading-none overflow-hidden">

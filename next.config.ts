@@ -1,8 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-    images: {
-        remotePatterns: [
+  images: {
+    domains: ['images.ctfassets.net'],
+    remotePatterns: [
       {
         protocol: 'https',
         hostname: 'downloads.intercomcdn.com',

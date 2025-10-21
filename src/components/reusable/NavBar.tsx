@@ -62,13 +62,17 @@ const navItems: NavItemInterface[] = [
             </g>
           </svg>
         ),
-        title: "Pipeline Builder",
-        description: "Find the right people and book quality meetings",
-        linkTitle: "Sales Leaders",
+        title: "Products",
+        description:
+          "All TervanX’s core infrastructure and modules — fiat, crypto, and plugin systems.",
         links: [
-          { href: "#", text: "B2B Prospecting Data" },
-          { href: "#", text: "Multichannel Outreach" },
-          { href: "#", text: "AI Assistants" },
+          { href: "#", text: "Crypto Payments" },
+          { href: "#", text: "Fiat Payments" },
+          { href: "#", text: "Checkout " },
+          { href: "#", text: "Payment Links " },
+          { href: "#", text: "POS / Terminal  " },
+          { href: "#", text: "Payouts API  " },
+          { href: "#", text: "Payment Methods " },
         ],
       },
       {
@@ -87,14 +91,14 @@ const navItems: NavItemInterface[] = [
             ></path>
           </svg>
         ),
-        title: "Call Assistant",
-        description: "Turn conversations into deals with AI assistance",
-        linkTitle: "Sales Leaders",
+        title: "Asset Infrastructure ",
+        description: "",
+        linkTitle: "",
         links: [
-          { href: "#", text: "Meeting Scheduler" },
-          { href: "#", text: "Pre-Meeting Insights" },
-          { href: "#", text: "Call Recorder & Insights" },
-          { href: "#", text: "Automated Meeting Follow-up" },
+          { href: "#", text: "Wallets API" },
+          { href: "#", text: "Vault" },
+          { href: "#", text: "Exchange Engine" },
+          { href: "#", text: "Liquidity Hub" },
         ],
       },
       {
@@ -130,13 +134,14 @@ const navItems: NavItemInterface[] = [
             </g>
           </svg>
         ),
-        title: "Pipeline Builder",
-        description: "Find the right people and book quality meetings",
-        linkTitle: "Sales Leaders",
+        title: "Automation & Intelligence",
+        description: "",
+        linkTitle: "",
         links: [
-          { href: "#", text: "B2B Prospecting Data" },
-          { href: "#", text: "Multichannel Outreach" },
-          { href: "#", text: "AI Assistants" },
+          { href: "#", text: "Tx SmartFlow" },
+          { href: "#", text: "Tx Automate" },
+          { href: "#", text: "Revenue Recognition" },
+          { href: "#", text: "Risk & Compliance AI " },
         ],
       },
       {
@@ -172,19 +177,149 @@ const navItems: NavItemInterface[] = [
             </g>
           </svg>
         ),
-        title: "Pipeline Builder",
+        title: "Finance & Treasury ",
+        description: "",
+        linkTitle: "",
+        links: [
+          { href: "#", text: "Tx Accounts " },
+          { href: "#", text: "Tx Capital" },
+          { href: "#", text: "Tx Issuing" },
+          { href: "#", text: "Global Payouts" },
+        ],
+      },
+      {
+        logo: (
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 18 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="Vector">
+              <path
+                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+                fill="black"
+              ></path>
+              <path
+                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+                fill="black"
+              ></path>
+              <path
+                d="M11.8502 3.02548C13.0375 3.02548 13.996 3.98391 13.996 5.17121V16H17.0143V6.44434C17.0143 2.88958 14.1319 0 10.57 0H0.985687V3.01833H11.8431L11.8502 3.02548Z"
+                fill="black"
+              ></path>
+              <path
+                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+                fill="black"
+              ></path>
+              <path
+                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+                fill="black"
+              ></path>
+            </g>
+          </svg>
+        ),
+        title: "Plugins & Extensions ",
+        description: "",
+        linkTitle: "",
+        links: [
+          { href: "#", text: "Auto Trade Plugin" },
+          { href: "#", text: "Treasury Plugin" },
+          { href: "#", text: "HR Plugin" },
+          { href: "#", text: "Health Plugin" },
+          { href: "#", text: "Logistics Plugin –" },
+        ],
+      },
+      {
+        logo: (
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 18 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="Vector">
+              <path
+                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+                fill="black"
+              ></path>
+              <path
+                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+                fill="black"
+              ></path>
+              <path
+                d="M11.8502 3.02548C13.0375 3.02548 13.996 3.98391 13.996 5.17121V16H17.0143V6.44434C17.0143 2.88958 14.1319 0 10.57 0H0.985687V3.01833H11.8431L11.8502 3.02548Z"
+                fill="black"
+              ></path>
+              <path
+                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+                fill="black"
+              ></path>
+              <path
+                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+                fill="black"
+              ></path>
+            </g>
+          </svg>
+        ),
+        title: "Security & Optimization",
         description: "Find the right people and book quality meetings",
         linkTitle: "Sales Leaders",
         links: [
-          { href: "#", text: "B2B Prospecting Data" },
-          { href: "#", text: "Multichannel Outreach" },
-          { href: "#", text: "AI Assistants" },
+          { href: "#", text: "Tx Shield" },
+          { href: "#", text: "Authorization Optimizer " },
+          { href: "#", text: "Tx ID " },
+          { href: "#", text: "Tx Link  " },
+        ],
+      },
+      {
+        logo: (
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 18 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="Vector">
+              <path
+                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+                fill="black"
+              ></path>
+              <path
+                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+                fill="black"
+              ></path>
+              <path
+                d="M11.8502 3.02548C13.0375 3.02548 13.996 3.98391 13.996 5.17121V16H17.0143V6.44434C17.0143 2.88958 14.1319 0 10.57 0H0.985687V3.01833H11.8431L11.8502 3.02548Z"
+                fill="black"
+              ></path>
+              <path
+                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+                fill="black"
+              ></path>
+              <path
+                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+                fill="black"
+              ></path>
+            </g>
+          </svg>
+        ),
+        title: "Data & Reporting",
+        description: "Find the right people and book quality meetings",
+        linkTitle: "Sales Leaders",
+        links: [
+          { href: "#", text: "Tx Sigma" },
+          { href: "#", text: "Tx Pipeline" },
+          { href: "#", text: "Tx Analytics" },
         ],
       },
     ],
     platforms: [
       {
-        logo: "https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fapollo-next.36e555e7.png&w=640&q=75",
+        logo: "https://www.apollo.io/_next/image?url=https%3A%2F%2Fcdn.buttercms.com%2FTsUeYa4kTLiTza8ExEGQ&w=1080&q=75",
         tag: "Apollo Platform",
         descriptions: "",
         links: [
@@ -233,31 +368,132 @@ const navItems: NavItemInterface[] = [
             </g>
           </svg>
         ),
-        title: "Pipeline Builder",
-        description: "Find the right people and book quality meetings",
-        linkTitle: "Sales Leaders",
+        title: "Solutions",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quibusdam ",
+        linkTitle: "lorem",
         links: [
-          { href: "#", text: "B2B Prospecting Data" },
-          { href: "#", text: "Multichannel Outreach" },
-          { href: "#", text: "AI Assistants" },
+          { href: "#", text: "Startups" },
+          { href: "#", text: "Enterprises" },
+          { href: "#", text: "Developers" },
+        ],
+      },
+      {
+        logo: (
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 18 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="Vector">
+              <path
+                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+                fill="black"
+              ></path>
+              <path
+                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+                fill="black"
+              ></path>
+              <path
+                d="M11.8502 3.02548C13.0375 3.02548 13.996 3.98391 13.996 5.17121V16H17.0143V6.44434C17.0143 2.88958 14.1319 0 10.57 0H0.985687V3.01833H11.8431L11.8502 3.02548Z"
+                fill="black"
+              ></path>
+              <path
+                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+                fill="black"
+              ></path>
+              <path
+                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+                fill="black"
+              ></path>
+            </g>
+          </svg>
+        ),
+        title: "By Use Case ",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quibusdam ",
+        linkTitle: "lorem",
+        links: [
+          { href: "#", text: "Fintech Platforms" },
+          { href: "#", text: "Crypto Exchanges" },
+          { href: "#", text: "Crypto Exchanges" },
+          { href: "#", text: "Embedded Finance" },
+          { href: "#", text: "DeFi Apps " },
+          { href: "#", text: "Remittance" },
+          { href: "#", text: "Gaming & Metaverse" },
+        ],
+      },
+      {
+        logo: (
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 18 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="Vector">
+              <path
+                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+                fill="black"
+              ></path>
+              <path
+                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+                fill="black"
+              ></path>
+              <path
+                d="M11.8502 3.02548C13.0375 3.02548 13.996 3.98391 13.996 5.17121V16H17.0143V6.44434C17.0143 2.88958 14.1319 0 10.57 0H0.985687V3.01833H11.8431L11.8502 3.02548Z"
+                fill="black"
+              ></path>
+              <path
+                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+                fill="black"
+              ></path>
+              <path
+                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+                fill="black"
+              ></path>
+            </g>
+          </svg>
+        ),
+        title: "By Industry ",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quibusdam ",
+        linkTitle: "lorem",
+        links: [
+          { href: "#", text: "Finance & Banking" },
+          { href: "#", text: "E-Commerce " },
+          { href: "#", text: "Healthcare" },
+          { href: "#", text: "Transportation & Logistics " },
+          { href: "#", text: "Energy & Utilities" },
+          { href: "#", text: "Education " },
+          { href: "#", text: "Hospitality & Real Estate " },
+          { href: "#", text: "Creator Economy & Media" },
         ],
       },
     ],
     platforms: [
       {
-        logo: "https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fapollo-next.36e555e7.png&w=640&q=75",
-        tag: "Apollo Platform",
-        descriptions: "",
+        logo: "https://www.apollo.io/_next/image?url=https%3A%2F%2Fcdn.buttercms.com%2FTsUeYa4kTLiTza8ExEGQ&w=1080&q=75",
+        tag: "By Industry ",
+        descriptions:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quibusdam voluptate dolores exercitationem.",
         links: [
-          { text: "Living Data Network", href: "" },
-          { text: "Apollo AI", href: "" },
-          { text: "Integrations", href: "" },
-          { text: "Chrome Extension", href: "" },
-          { text: "Workflow Automation", href: "" },
+          { text: "Finance & Banking ", href: "" },
+          { text: "E-Commerce", href: "" },
+          { text: "Healthcare", href: "" },
+          { text: "Transportation & Logistics ", href: "" },
+          { text: "Energy & Utilities ", href: "" },
+          { text: "Education", href: "" },
+          { text: "Hospitality & Real Estate", href: "" },
+          { text: "Creator Economy & Media ", href: "" },
         ],
       },
     ],
   },
+
   {
     title: "Resources",
     solutions: [
@@ -294,13 +530,51 @@ const navItems: NavItemInterface[] = [
             </g>
           </svg>
         ),
-        title: "Pipeline Builder",
+        title: "Resources",
+        description: "Everything for learning, support, and partnerships. ",
+        linkTitle: "",
+        links: [{ href: "#", text: "santus santus" }],
+      },
+      {
+        logo: (
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 18 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="Vector">
+              <path
+                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+                fill="black"
+              ></path>
+              <path
+                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+                fill="black"
+              ></path>
+              <path
+                d="M11.8502 3.02548C13.0375 3.02548 13.996 3.98391 13.996 5.17121V16H17.0143V6.44434C17.0143 2.88958 14.1319 0 10.57 0H0.985687V3.01833H11.8431L11.8502 3.02548Z"
+                fill="black"
+              ></path>
+              <path
+                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+                fill="black"
+              ></path>
+              <path
+                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+                fill="black"
+              ></path>
+            </g>
+          </svg>
+        ),
+        title: "Support",
         description: "Find the right people and book quality meetings",
         linkTitle: "Sales Leaders",
         links: [
-          { href: "#", text: "B2B Prospecting Data" },
-          { href: "#", text: "Multichannel Outreach" },
-          { href: "#", text: "AI Assistants" },
+          { href: "#", text: "Support Center " },
+          { href: "#", text: "Managed Support Plans" },
+          { href: "#", text: "Contact Support" },
         ],
       },
       {
@@ -336,13 +610,15 @@ const navItems: NavItemInterface[] = [
             </g>
           </svg>
         ),
-        title: "Pipeline Builder",
+        title: "Learn",
         description: "Find the right people and book quality meetings",
         linkTitle: "Sales Leaders",
         links: [
-          { href: "#", text: "B2B Prospecting Data" },
-          { href: "#", text: "Multichannel Outreach" },
-          { href: "#", text: "AI Assistants" },
+          { href: "#", text: "Guides" },
+          { href: "#", text: "Documentation" },
+          { href: "#", text: "Case Studies (Startups built on TervanX)" },
+          { href: "#", text: "Blog" },
+          { href: "#", text: "TervanX Sessions (Annual Dev Summit)" },
         ],
       },
       {
@@ -378,61 +654,22 @@ const navItems: NavItemInterface[] = [
             </g>
           </svg>
         ),
-        title: "Pipeline Builder",
+        title: "Company & Partners ",
         description: "Find the right people and book quality meetings",
         linkTitle: "Sales Leaders",
         links: [
-          { href: "#", text: "B2B Prospecting Data" },
-          { href: "#", text: "Multichannel Outreach" },
-          { href: "#", text: "AI Assistants" },
-        ],
-      },
-      {
-        logo: (
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 18 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g id="Vector">
-              <path
-                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
-                fill="black"
-              ></path>
-              <path
-                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
-                fill="black"
-              ></path>
-              <path
-                d="M11.8502 3.02548C13.0375 3.02548 13.996 3.98391 13.996 5.17121V16H17.0143V6.44434C17.0143 2.88958 14.1319 0 10.57 0H0.985687V3.01833H11.8431L11.8502 3.02548Z"
-                fill="black"
-              ></path>
-              <path
-                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
-                fill="black"
-              ></path>
-              <path
-                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
-                fill="black"
-              ></path>
-            </g>
-          </svg>
-        ),
-        title: "Pipeline Builder",
-        description: "Find the right people and book quality meetings",
-        linkTitle: "Sales Leaders",
-        links: [
-          { href: "#", text: "B2B Prospecting Data" },
-          { href: "#", text: "Multichannel Outreach" },
-          { href: "#", text: "AI Assistants" },
+          { href: "#", text: "Contact Sales" },
+          { href: "#", text: "Become a Partner" },
+          { href: "#", text: "Professional Services (Integration Assistance)" },
+          { href: "#", text: "Partner Program" },
+          { href: "#", text: "Jobs" },
+          { href: "#", text: "Newsroom" },
         ],
       },
     ],
     platforms: [
       {
-        logo: "https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fapollo-next.36e555e7.png&w=640&q=75",
+        logo: "https://www.apollo.io/_next/image?url=https%3A%2F%2Fcdn.buttercms.com%2FTsUeYa4kTLiTza8ExEGQ&w=1080&q=75",
         tag: "Apollo Platform",
         descriptions: "",
         links: [
@@ -444,7 +681,7 @@ const navItems: NavItemInterface[] = [
         ],
       },
       {
-        logo: "https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fapollo-next.36e555e7.png&w=640&q=75",
+        logo: "https://www.apollo.io/_next/image?url=https%3A%2F%2Fcdn.buttercms.com%2FTsUeYa4kTLiTza8ExEGQ&w=1080&q=75",
         tag: "Apollo Platform",
         descriptions: "",
         links: [
@@ -458,8 +695,307 @@ const navItems: NavItemInterface[] = [
     ],
   },
   {
+    title: "Developers",
+    solutions: [
+      {
+        logo: (
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 18 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="Vector">
+              <path
+                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+                fill="black"
+              ></path>
+              <path
+                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+                fill="black"
+              ></path>
+              <path
+                d="M11.8502 3.02548C13.0375 3.02548 13.996 3.98391 13.996 5.17121V16H17.0143V6.44434C17.0143 2.88958 14.1319 0 10.57 0H0.985687V3.01833H11.8431L11.8502 3.02548Z"
+                fill="black"
+              ></path>
+              <path
+                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+                fill="black"
+              ></path>
+              <path
+                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+                fill="black"
+              ></path>
+            </g>
+          </svg>
+        ),
+        title: "Developers",
+        description: "Full technical resources and integration docs. ",
+        linkTitle: "lorewm raser",
+        links: [
+          { href: "#", text: "Tx Marketplace " },
+          { href: "#", text: "Partner Network " },
+          { href: "#", text: "Tx Studio  " },
+          { href: "#", text: "Tx Ventures" },
+          { href: "#", text: "Partner Network " },
+        ],
+      },
+      {
+        logo: (
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 18 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="Vector">
+              <path
+                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+                fill="black"
+              ></path>
+              <path
+                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+                fill="black"
+              ></path>
+              <path
+                d="M11.8502 3.02548C13.0375 3.02548 13.996 3.98391 13.996 5.17121V16H17.0143V6.44434C17.0143 2.88958 14.1319 0 10.57 0H0.985687V3.01833H11.8431L11.8502 3.02548Z"
+                fill="black"
+              ></path>
+              <path
+                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+                fill="black"
+              ></path>
+              <path
+                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+                fill="black"
+              ></path>
+            </g>
+          </svg>
+        ),
+        title: "Documentation",
+        description: "Find the right people and book quality meetings",
+        linkTitle: "Sales Leaders",
+        links: [
+          { href: "#", text: "Get Started" },
+          { href: "#", text: "Prebuilt Components" },
+          { href: "#", text: "Libraries & SDKs" },
+          { href: "#", text: "API Reference" },
+          { href: "#", text: "Webhook Reference" },
+        ],
+      },
+      {
+        logo: (
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 18 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="Vector">
+              <path
+                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+                fill="black"
+              ></path>
+              <path
+                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+                fill="black"
+              ></path>
+              <path
+                d="M11.8502 3.02548C13.0375 3.02548 13.996 3.98391 13.996 5.17121V16H17.0143V6.44434C17.0143 2.88958 14.1319 0 10.57 0H0.985687V3.01833H11.8431L11.8502 3.02548Z"
+                fill="black"
+              ></path>
+              <path
+                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+                fill="black"
+              ></path>
+              <path
+                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+                fill="black"
+              ></path>
+            </g>
+          </svg>
+        ),
+        title: "App & Plugin Integrations",
+        description: "Find the right people and book quality meetings",
+        linkTitle: "Sales Leaders",
+        links: [
+          { href: "#", text: "CMS Plugins " },
+          { href: "#", text: "ERP Integrations" },
+          { href: "#", text: "API Sandbox" },
+        ],
+      },
+      {
+        logo: (
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 18 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="Vector">
+              <path
+                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+                fill="black"
+              ></path>
+              <path
+                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+                fill="black"
+              ></path>
+              <path
+                d="M11.8502 3.02548C13.0375 3.02548 13.996 3.98391 13.996 5.17121V16H17.0143V6.44434C17.0143 2.88958 14.1319 0 10.57 0H0.985687V3.01833H11.8431L11.8502 3.02548Z"
+                fill="black"
+              ></path>
+              <path
+                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+                fill="black"
+              ></path>
+              <path
+                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+                fill="black"
+              ></path>
+            </g>
+          </svg>
+        ),
+        title: "Developer Tools ",
+        description: "Find the right people and book quality meetings",
+        linkTitle: "Sales Leaders",
+        links: [
+          { href: "#", text: "Tx Console" },
+          { href: "#", text: "API Changelog" },
+          { href: "#", text: "System Status" },
+        ],
+      },
+    ],
+    platforms: [
+      {
+        logo: "https://www.apollo.io/_next/image?url=https%3A%2F%2Fcdn.buttercms.com%2FTsUeYa4kTLiTza8ExEGQ&w=1080&q=75",
+        tag: "Guides",
+        descriptions: "",
+        links: [
+          { text: "Accept Online Payments", href: "" },
+          { text: "Manage Digital Wallets", href: "" },
+          { text: "Automate Treasury Workflows", href: "" },
+          { text: "Send Cross-Border Payments ", href: "" },
+          { text: "Launch an Exchange ", href: "" },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Ecosystem",
+    solutions: [
+      {
+        logo: (
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 18 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="Vector">
+              <path
+                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+                fill="black"
+              ></path>
+              <path
+                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+                fill="black"
+              ></path>
+              <path
+                d="M11.8502 3.02548C13.0375 3.02548 13.996 3.98391 13.996 5.17121V16H17.0143V6.44434C17.0143 2.88958 14.1319 0 10.57 0H0.985687V3.01833H11.8431L11.8502 3.02548Z"
+                fill="black"
+              ></path>
+              <path
+                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+                fill="black"
+              ></path>
+              <path
+                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+                fill="black"
+              ></path>
+            </g>
+          </svg>
+        ),
+        title: "Ecosystem",
+        description: "Explore the broader TervanX universe. ",
+        linkTitle: "lorewm raser",
+        links: [
+          { href: "#", text: "Tx Marketplace " },
+          { href: "#", text: "Partner Network " },
+          { href: "#", text: "Tx Studio  " },
+          { href: "#", text: "Tx Ventures" },
+          { href: "#", text: "Partner Network " },
+        ],
+      },
+    ],
+    platforms: [
+      {
+        logo: "https://www.apollo.io/_next/image?url=https%3A%2F%2Fcdn.buttercms.com%2FTsUeYa4kTLiTza8ExEGQ&w=1080&q=75",
+        tag: "Guides",
+        descriptions: "",
+        links: [
+          { text: "Accept Online Payments", href: "" },
+          { text: "Manage Digital Wallets", href: "" },
+          { text: "Automate Treasury Workflows", href: "" },
+          { text: "Send Cross-Border Payments ", href: "" },
+          { text: "Launch an Exchange ", href: "" },
+        ],
+      },
+    ],
+  },
+  {
     title: "Pricing",
-    href: "/pricing",
+    // href: "/pricing",
+    solutions: [
+      {
+        logo: (
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 18 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="Vector">
+              <path
+                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+                fill="black"
+              ></path>
+              <path
+                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+                fill="black"
+              ></path>
+              <path
+                d="M11.8502 3.02548C13.0375 3.02548 13.996 3.98391 13.996 5.17121V16H17.0143V6.44434C17.0143 2.88958 14.1319 0 10.57 0H0.985687V3.01833H11.8431L11.8502 3.02548Z"
+                fill="black"
+              ></path>
+              <path
+                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+                fill="black"
+              ></path>
+              <path
+                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+                fill="black"
+              ></path>
+            </g>
+          </svg>
+        ),
+        title: "Pricing",
+        description: "Transparent, modular pricing for APIs and plugins. ",
+        linkTitle: "Sales Leaders",
+        links: [
+          { href: "#", text: "Core API Pricing" },
+          { href: "#", text: "Enterprise Plans" },
+          { href: "#", text: "Plugin Pricing " },
+          { href: "#", text: "Capital & Treasury Fees" },
+        ],
+      },
+    ],
   },
 ];
 
@@ -501,14 +1037,14 @@ const DeskTopNavbar = () => {
     <div className=" py-4 hidden lg:flex items-center justify-between">
       <div className="flex gap-16 items-center justify-start">
         <div className="flex items-center gap-2 font-bold text-lg">
-          <Image 
-            src="/assets/logo.svg" 
-            className="h-6 w-6" 
-            width={24} 
-            height={24} 
+          <Image
+            src="/assets/logo.svg"
+            className="h-6 w-6"
+            width={24}
+            height={24}
             alt="logo"
           />
-          <span className="font-medium font-grotesque">Company Name</span>
+          <span className="font-medium font-grotesque">TervanX</span>
         </div>
         <nav className="hidden lg:flex gap-10 relative">
           {navItems.map((item, index) => (
@@ -517,28 +1053,14 @@ const DeskTopNavbar = () => {
         </nav>
       </div>
       <div className="flex items-center gap-3">
-        <Button
-          size="md"
-          variant="ghost"
-          type="button"
-          onClick={() => {}}
-        >
+        <Button size="md" variant="ghost" type="button" onClick={() => {}}>
           Log in
         </Button>
-        <Button
-          size="md"
-          variant="outline"
-          type="button"
-          onClick={() => {}}
-        >
-          Get a demo
-        </Button>
-        <Button
-          size="md"
-          variant="primary"
-          type="button"
-          onClick={() => {}}
-        >
+        <button className="relative inline-block cursor-pointer rounded-md font-semibold tracking-tight whitespace-nowrap text-black text-base px-4 py-2.5 leading-none overflow-hidden">
+          <span className="absolute inset-0 block w-full rounded-md transition-all duration-400 bg-[#0d07ed] group-hover:bg-white/80"></span>
+          <span className="relative z-10 text-[#f0f0f2]">Get Started</span>
+        </button>
+        <Button size="md" variant="primary" type="button" onClick={() => {}}>
           Sign up for free
         </Button>
       </div>
@@ -558,23 +1080,18 @@ const MobileNav: React.FC<MobileNavProps> = ({ toggle, isOpen }) => {
     <header className="lg:px-8 py-3 flex items-center justify-between lg:hidden fixed top-0 left-0 w-screen z-50 px-6 bg-white">
       <div className="flex gap-10 items-center justify-start">
         <div className="flex items-center gap-2 font-bold text-lg">
-          <Image 
-            src="/assets/logo.svg" 
-            className="h-6 w-6" 
-            width={24} 
-            height={24} 
+          <Image
+            src="/assets/logo.svg"
+            className="h-6 w-6"
+            width={24}
+            height={24}
             alt="logo"
           />
           <span className="font-medium font-grotesque">Company Name</span>
         </div>
       </div>
       <div className="flex items-center gap-4 justify-end">
-        <Button
-          size="md"
-          variant="primary"
-          type="button"
-          onClick={() => {}}
-        >
+        <Button size="md" variant="primary" type="button" onClick={() => {}}>
           Sign up for free
         </Button>
 
@@ -615,7 +1132,7 @@ const NavItem: React.FC<navItemProps> = ({ nav }) => {
               animate={{ opacity: 1, y: 2 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2 }}
-              className="fixed left-6 top-16 rounded-xl bg-white drop-shadow-md z-50 max-w-[78%]"
+              className="fixed left-6 top-16 rounded-xl bg-white drop-shadow-md z-50 max-w-[90%]"
             >
               <div className="flex flex-col lg:flex-row gap-6 p-8">
                 {nav.solutions &&
@@ -690,7 +1207,7 @@ interface SideBarProps {
 
 const SideBar: React.FC<SideBarProps> = ({ isOpen, onClose }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-  
+
   const handleToggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
