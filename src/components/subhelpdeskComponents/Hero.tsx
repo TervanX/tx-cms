@@ -5,7 +5,12 @@ import { motion, useTransform, useScroll } from 'framer-motion'
 import { useRef } from 'react'
 import { ArrowUpRight } from 'lucide-react'
 
-export default function Hero() {
+interface HeroProps {
+    title: string;
+    description: string;
+}
+
+export default function Hero({ title, description }: HeroProps) {
     const containerRef = useRef(null)
 
     // Feature links data
@@ -158,12 +163,11 @@ export default function Hero() {
                     }}
                 >
                     <h1 className="text-[2.5rem] leading-[95%] font-semibold tracking-[-0.1rem] text-balance md:flex md:flex-col lg:text-6xl xl:text-[4.5rem] xl:tracking-[-0.25rem] w-full">
-                        The next-gen Helpdesk{' '}
-                        <span className="lg:inline-block lg:mt-[0.15em] lg:ml-[36.75%]">designed for efficiency</span>
+                        {title}
                     </h1>
 
                     <p className="my-8 w-full max-w-[500px] text-lg leading-[120%] 2xl:max-w-[600px] 2xl:text-xl">
-                        Helpdesk is a modern, AI-powered platform with the tools, workflows and insights agents need to work faster and deliver the highest quality customer service.
+                        {description}
                     </p>
 
                     {/* CTA Buttons */}
@@ -217,7 +221,7 @@ export default function Hero() {
                             className="transition-opacity duration-300 ease-out-quad size-full object-center opacity-100 object-contain"
                             style={{ position: 'absolute', height: '100%', width: '100%', left: 0, top: 0, right: 0, bottom: 0 }}
                             sizes="100vw"
-                            src="assets/download.png"
+                            src="/assets/download.png"
                         />
                     </div>
                 </motion.div>
