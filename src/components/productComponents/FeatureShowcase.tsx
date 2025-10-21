@@ -346,10 +346,9 @@ const FeatureCard = ({
   <div
     className={`
       flex items-center gap-2 p-2 rounded-lg cursor-pointer transition-all duration-200
-      ${
-        isActive
-          ? "bg-blue-50 border border-blue-200"
-          : "hover:bg-gray-50 border border-transparent"
+      ${isActive
+        ? "bg-blue-50 border border-blue-200"
+        : "hover:bg-gray-50 border border-transparent"
       }
     `}
     onClick={onClick}
@@ -413,11 +412,11 @@ const FeaturesShowcase = () => {
   );
   const featureContainerRef = useRef<HTMLDivElement>(null);
 
-    // Get all features flattened for easy access
-    const allFeatures = FEATURE_CATEGORIES.flatMap(category => category.features);
-    const currentFeature = allFeatures.find(feature => feature.id === activeFeature) || allFeatures[0];
-    
-   
+  // Get all features flattened for easy access
+  const allFeatures = FEATURE_CATEGORIES.flatMap(category => category.features);
+  const currentFeature = allFeatures.find(feature => feature.id === activeFeature) || allFeatures[0];
+
+
 
   // Get the current category for background color
   const currentCategory = FEATURE_CATEGORIES.find((category) =>
@@ -463,12 +462,11 @@ const FeaturesShowcase = () => {
                             key={feature.id}
                             className={`
                                                             flex items-center gap-2 p-2 rounded-lg cursor-pointer transition-all duration-200 min-w-max
-                                                            ${
-                                                              activeFeature ===
-                                                              feature.id
-                                                                ? "bg-blue-50 border border-blue-200"
-                                                                : "hover:bg-gray-50 border border-transparent"
-                                                            }
+                                                            ${activeFeature ===
+                                feature.id
+                                ? "bg-blue-50 border border-blue-200"
+                                : "hover:bg-gray-50 border border-transparent"
+                              }
                                                         `}
                             onClick={() => setActiveFeature(feature.id)}
                           >
@@ -546,69 +544,6 @@ const FeaturesShowcase = () => {
                   />
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-        {/* Left Sidebar - Feature Navigation */}
-        <div className="lg:col-span-4">
-          <div className="sticky top-8">
-            {FEATURE_CATEGORIES.map((category) => (
-              <FeatureCategorySection
-                key={category.id}
-                category={category}
-                activeFeature={activeFeature}
-                onFeatureClick={setActiveFeature}
-              />
-            ))}
-            <ScrollIndicator />
-          </div>
-        </div>
-
-        {/* Right Content - Feature Details & Preview */}
-        <div className="lg:col-span-8">
-          <div ref={featureContainerRef} className="space-y-2">
-            {/* Feature Header */}
-            <div className="flex justify-between">
-              <div className="flex items-center gap-4 mb-6">
-                <div className={`${currentFeature.color}`}>
-                  {currentFeature.icon}
-                </div>
-                <h2 className="text-2xl font-semibold text-gray-900">
-                  {currentFeature.title}
-                </h2>
-              </div>
-
-              {/* Feature Description */}
-              <div className="mb-8">
-                <p className="text-gray-600">
-                  {currentFeature.description}
-                  {currentFeature.learnMoreLink && (
-                    <span className="ml-1">
-                      <a
-                        href={currentFeature.learnMoreLink}
-                        className="text-blue-600 hover:text-blue-800 "
-                      >
-                        Learn more.
-                      </a>
-                    </span>
-                  )}
-                </p>
-              </div>
-            </div>
-            {/* Feature Image Preview */}
-            <div className="relative rounded-lg overflow-hidden border border-gray-200">
-              <Image
-                src={currentFeature.image.src}
-                alt={currentFeature.image.alt}
-                width={1808}
-                height={1092}
-                className="w-full h-auto"
-                sizes="(max-width: 1024px) 100vw, 70vw"
-                priority
-              />
             </div>
           </div>
         </div>

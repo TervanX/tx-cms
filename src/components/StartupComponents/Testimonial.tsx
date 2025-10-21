@@ -62,7 +62,7 @@ const Testimonial: React.FC = () => {
             authorImage: "/assets/image11.webp",
             link: ""
         },
-         {
+        {
             id: 2,
             company: "Huntr",
             logo: "/assets/huntr.svg",
@@ -73,7 +73,7 @@ const Testimonial: React.FC = () => {
             authorImage: "/assets/image12.webp",
             link: ""
         },
-         {
+        {
             id: 3,
             company: "lfdm",
             logo: "/assets/lfdm.svg",
@@ -85,22 +85,22 @@ const Testimonial: React.FC = () => {
             link: ""
         }
     ]
-    return (<section className="px-6 md:px-12 lg:px-16 xl:px-20 2xl:px-24 my-20">
-          <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center gap-4 text-center md:gap-6">
-            <h4 className="max-w-6xl text-balance font-founders-grotesk text-[36px] leading-none tracking-[-0.72px] text-dark md:text-[48px] md:tracking-[-0.96px]">
-                See why startups love Apollo
-            </h4>
-            <div className="max-w-2xl text-balance font-abc-diatype text-[16px] leading-[130%] text-gray-700">
-                Check out how other teams save time & money with the easiest all-in-one sales platform.
+    return (<section className="px-6 md:px-12 lg:px-16 xl:px-20 2xl:px-24 my-28">
+        <div className="container mx-auto px-4">
+            <div className="flex flex-col items-center gap-4 text-center md:gap-6">
+                <h4 className="max-w-6xl text-balance font-founders-grotesk text-[36px] leading-none tracking-[-0.72px] text-dark md:text-[48px] md:tracking-[-0.96px]">
+                    See why startups love Apollo
+                </h4>
+                <div className="max-w-2xl text-balance font-abc-diatype text-[16px] leading-[130%] text-gray-700">
+                    Check out how other teams save time & money with the easiest all-in-one sales platform.
+                </div>
             </div>
-        </div>
-        <div className="h-10" />
-        <div className="grid gap-x-6 gap-y-10 lg:grid-cols-3">
-            {testimonials.map((testimonial, index) => (
-                <TestimonialCard key={index} {...testimonial} />
-            ))}
-        </div>
+            <div className="h-10" />
+            <div className="grid gap-x-22 gap-y-10 lg:grid-cols-3">
+                {testimonials.map((testimonial, index) => (
+                    <TestimonialCard key={index} {...testimonial} />
+                ))}
+            </div>
         </div>
     </section>
     )

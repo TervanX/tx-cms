@@ -33,7 +33,7 @@ const Resources: React.FC = () => {
                 target: '_blank'
             }
         },
-         {
+        {
             id: 'explore-marketplace',
             title: 'Explore Apollos deal marketplace for exclusive discounts on SaaS tools.',
             image: {
@@ -47,7 +47,7 @@ const Resources: React.FC = () => {
                 target: '_blank'
             }
         },
-         {
+        {
             id: 'outbound-sales',
             title: 'Read Outbound Sales to learn a multi-channel approach to growing your startup.',
             image: {
@@ -133,10 +133,10 @@ const Card: React.FC<{ card: CardItem }> = ({ card }) => {
 
 export const CardGrid: React.FC<CardGridProps> = ({ cards }) => {
     return (
-        <div className="px-6 md:px-12 lg:px-16 xl:px-20 2xl:px-24 my-20">
+        <div className="px-6 md:px-12 lg:px-16 xl:px-20 2xl:px-24 my-28">
             <div className="container mx-auto px-4">
                 <div className="flex flex-col items-center gap-4 text-center md:gap-6">
-                    <h4 className="max-w-6xl text-balance font-founders-grotesk text-[36px] leading-none tracking-[-0.72px] text-dark md:text-[48px] md:tracking-[-0.96px] lg:text-[48px] lg:tracking-[-0.96px] xl:text-[56px] xl:tracking-[-1.12px] lg:mb-12 mb-6">
+                    <h4 className="max-w-6xl text-balance font-founders-grotesk text-[36px] leading-none tracking-[-0.72px] text-dark md:text-[48px] md:tracking-[-0.96px] lg:text-[48px] lg:tracking-[-0.96px]  lg:mb-12 mb-6">
                         Resources for Startups
                     </h4>
                 </div>

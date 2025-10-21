@@ -44,21 +44,21 @@ const FeaturesSection: React.FC = () => {
   ];
 
   return (
-  <div className="flex justify-center px-6 md:px-12 lg:px-16 xl:px-20 2xl:px-24 my-20">
-        <div className="container mx-auto px-4">
-      <div className="flex flex-col items-center gap-4 text-center md:gap-6">
-        <h4 className="max-w-6xl text-balance font-founders-grotesk text-[36px] leading-none tracking-[-0.72px] text-dark md:text-[48px] md:tracking-[-0.96px] lg:text-[48px] lg:tracking-[-0.96px] xl:text-[56px] xl:tracking-[-1.12px] lg:mb-12 mb-6">
-          Why join Apollo for Startups?
-        </h4>
+    <div className="flex justify-center px-6 md:px-12 lg:px-16 xl:px-20 2xl:px-24 my-28">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col items-center gap-4 text-center md:gap-6">
+          <h4 className="max-w-6xl text-balance font-founders-grotesk text-[36px] leading-none tracking-[-0.72px] text-dark md:text-[48px] md:tracking-[-0.96px] lg:text-[48px] lg:tracking-[-0.96px] xl:text-[56px] xl:tracking-[-1.12px] lg:mb-12 mb-6">
+            Why join Apollo for Startups?
+          </h4>
+        </div>
+        <div className="h-10" />
+        <div className="grid gap-x-6 gap-y-6 md:grid-cols-2 xl:grid-cols-4">
+          {features.map((feature, index) => (
+            <FeatureCard key={index} {...feature} />
+          ))}
+        </div>
+        <div className="h-10" />
       </div>
-      <div className="h-10" />
-      <div className="grid gap-x-6 gap-y-6 md:grid-cols-2 xl:grid-cols-4">
-        {features.map((feature, index) => (
-          <FeatureCard key={index} {...feature} />
-        ))}
-      </div>
-      <div className="h-10" />
-    </div>
     </div>
   );
 };
