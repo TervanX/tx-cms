@@ -59,26 +59,66 @@ export default function ContactSalesPage() {
 
     const validateStep1 = () => {
         const newErrors: Record<string, string> = {};
-        if (!formData.fullName.trim()) newErrors.fullName = "This field is required.";
-        if (!formData.workEmail.trim()) newErrors.workEmail = "This field is required.";
-        else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.workEmail)) newErrors.workEmail = "Please enter a valid email";
-        if (!formData.companyName.trim()) newErrors.companyName = "This field is required.";
+        if (!formData.fullName.trim()) {
+            newErrors.fullName = "This field is required.";
+        }
+        if (!formData.workEmail.trim()) {
+            newErrors.workEmail = "This field is required.";
+        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.workEmail)) {
+            newErrors.workEmail = "Please enter a valid email address.";
+        } else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(formData.workEmail)) {
+            newErrors.workEmail = "Please enter a valid work email address.";
+        }
+        if (!formData.companyName.trim()) {
+            newErrors.companyName = "This field is required.";
+        }
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
     };
 
     const validateStep2 = () => {
         const newErrors: Record<string, string> = {};
-        if (!formData.country) newErrors.country = "This field is required.";
-        if (!formData.businessType) newErrors.businessType = "This field is required.";
+        if (!formData.country) {
+            newErrors.country = "This field is required.";
+        }
+        if (formData.phoneNumber.trim()) {
+            const cleanedPhone = formData.phoneNumber.replace(/\s/g, '');
+            if (!/^\+?[\d\s-()]{10,20}$/.test(cleanedPhone)) {
+                newErrors.phoneNumber = "Please enter a valid phone number (10-20 digits).";
+            }
+        }
+        if (formData.companyWebsite.trim()) {
+            try {
+                const url = new URL(formData.companyWebsite);
+                if (!['http:', 'https:'].includes(url.protocol)) {
+                    newErrors.companyWebsite = "Website must start with http:// or https://";
+                }
+            } catch {
+                newErrors.companyWebsite = "Please enter a valid website URL (e.g., https://example.com).";
+            }
+        }
+        if (!formData.businessType) {
+            newErrors.businessType = "This field is required.";
+        }
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
     };
 
     const validateStep3 = () => {
         const newErrors: Record<string, string> = {};
-        if (formData.helpNeeded.length === 0) newErrors.helpNeeded = "Please select at least one option";
-        if (!formData.message.trim()) newErrors.message = "This field is required.";
+        if (formData.helpNeeded.length === 0) {
+            newErrors.helpNeeded = "Please select at least one option.";
+        } else if (formData.helpNeeded.length > 5) {
+            newErrors.helpNeeded = "Please select no more than 5 options.";
+        }
+
+        if (!formData.message.trim()) {
+            newErrors.message = "This field is required.";
+        } else if (formData.message.trim().length < 10) {
+            newErrors.message = "Please provide more details (minimum 10 characters).";
+        } else if (formData.message.trim().length > 2000) {
+            newErrors.message = "Message must be less than 2000 characters.";
+        }
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
     };

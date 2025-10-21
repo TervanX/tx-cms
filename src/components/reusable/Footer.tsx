@@ -1,102 +1,79 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FooterLink, FooterSection } from '@/app/types/reusable.type';
 
 
 const footerData: FooterSection[] = [
     {
-        title: 'Get started',
+        title: 'Products',
         links: [
-            { label: 'Sign up for free', href: '/sign-up' },
-            { label: 'Pricing', href: '/pricing' },
-            { label: 'Request a demo', href: '/demo' },
+            { label: 'Payments API', href: '#' },
+            { label: 'Wallet API', href: '#' },
+            { label: 'Exchange Engine', href: '#' },
+            { label: 'Auto Trade Plugin', href: '#' },
+            { label: 'Treasury Plugin', href: '#' },
+            { label: 'Compliance Layer', href: '#' },
+            { label: 'Tx Shield', href: '#' },
+            { label: 'Tx Analytics', href: '#' },
         ],
     },
     {
-        title: 'Product',
+        title: 'Developers',
         links: [
-            { label: 'Pipeline Builder', href: '/sales-pipeline' },
-            { label: 'Call Assistant', href: '/ai-call-assistant' },
-            { label: 'Data Enrichment', href: '/data-enrichment' },
-            { label: 'Go-To-Market Platform', href: '/go-to-market' },
-        ],
-    },
-    {
-        title: 'Platform',
-        links: [
-            { label: 'Living Data Network', href: '/product/living-data-network' },
-            { label: 'Apollo AI', href: '/ai' },
-            { label: 'Integrations', href: '/product/integrations' },
-            { label: 'Chrome Extension', href: '/product/chrome-extension' },
-            { label: 'Workflow Automation', href: '/product/workflow-engine' },
-            { label: 'Security', href: '/product/security' },
-        ],
-    },
-    {
-        title: 'Roles',
-        links: [
-            { label: 'Sales Leaders', href: '/personas/sales-leaders' },
-            { label: 'Account Executives', href: '/personas/account-executives' },
-            { label: 'Sales Development', href: '/personas/sales-development' },
-            { label: 'Founders', href: '/personas/founders' },
-            { label: 'Marketing', href: '/personas/marketers' },
-            { label: 'Revenue Operations', href: '/personas/revops' },
-        ],
-    },
-    {
-        title: 'Use Cases',
-        links: [
-            { label: 'B2B Database', href: '/product/search' },
-            { label: 'Lead Scoring', href: '/product/scores' },
-            { label: 'Inbound Lead Router', href: '/product/inbound-optimization' },
-            { label: 'Sales Engagement', href: '/product/sales-engagement' },
-            { label: 'Meetings Scheduler', href: '/product/meetings' },
-            { label: 'Deal Management', href: '/product/deal-management' },
-            { label: 'Conversation Intelligence', href: '/product/conversations' },
-            { label: 'Sales Analytics', href: '/product/analytics' },
-            { label: 'Sales Coaching', href: '/product/coaching' },
+            { label: 'Documentation', href: '#' },
+            { label: 'API Reference', href: '#' },
+            { label: 'System Status', href: '#' },
+            { label: 'Changelog', href: '#' },
+            { label: 'Tx SDKs', href: '#' },
         ],
     },
     {
         title: 'Resources',
         links: [
-            { label: 'Apollo Academy', href: '/academy' },
-            { label: 'Magazine', href: '/magazine' },
-            { label: 'Insights', href: '/insights' },
-            { label: 'Partners', href: '/partners' },
-            { label: 'Knowledge Base ↗', href: 'https://knowledge.apollo.io', external: true },
-            { label: 'Webinars', href: '/academy/webinars' },
-            { label: 'Success Stories', href: '/magazine/articles/customer-stories' },
-            { label: 'Privacy Center', href: '/company/privacy-center' },
-            { label: 'API Docs ↗', href: 'https://docs.apollo.io', external: true },
-            { label: 'Join Our Community', href: '/community' },
+            { label: 'Blog', href: '#' },
+            { label: 'Case Studies', href: '#' },
+            { label: 'Events', href: '#' },
+            { label: 'Learning Hub', href: '#' },
         ],
     },
     {
         title: 'Company',
         links: [
-            { label: 'Careers', href: '/company/careers' },
-            { label: 'Customer Reviews', href: '/wall-of-love' },
-            { label: 'Contact Us & Sales', href: '/contact-us' },
-            { label: 'Hey AI, learn about us', href: '/llm-info' },
+            { label: 'About', href: '#' },
+            { label: 'Careers', href: '#' },
+            { label: 'Newsroom', href: '#' },
+            { label: 'Legal & Compliance', href: '#' },
+            { label: 'Privacy & Terms', href: '#' },
+            { label: 'Cookie Settings', href: '#' },
         ],
-        socialTitle: 'Find us on social',
-        socialLinks: [
-            { label: 'YouTube', href: 'https://www.youtube.com/c/apolloio', external: true },
-            { label: 'Instagram', href: 'https://www.instagram.com/useapollo.io/', external: true },
-            { label: 'TikTok', href: 'https://www.tiktok.com/@useapollo.io', external: true },
-            { label: 'X', href: 'https://x.com/useapolloio', external: true },
-            { label: 'Facebook', href: 'https://www.facebook.com/MeetApollo', external: true },
+    },
+    {
+        title: 'Support',
+        links: [
+            { label: 'Help Center', href: '#' },
+            { label: 'Managed Plans', href: '#' },
+            { label: 'Contact Sales', href: '#' },
+        ],
+    },
+    {
+        title: 'Miscellaneous',
+        links: [
+            { label: 'Sitemap', href: '#' },
+            { label: 'Sign In', href: '#' },
+            { label: 'Dashboard', href: '#' },
+            { label: 'Get Started', href: '#' },
         ],
     },
 ];
 
 const legalLinks: FooterLink[] = [
     { label: 'Privacy Policy', href: '/privacy-policy' },
-    { label: 'Terms', href: '/terms' },
+    { label: 'Terms of Service', href: '/terms' },
     { label: "Don't Sell My Info", href: '/privacy-policy/remove' },
-    { label: 'About Apollo', href: '/we-are-apollo' },
+    { label: 'About Tervanax', href: '/about' },
 ];
+
 
 const FooterButton: React.FC<{
     href: string;
@@ -140,7 +117,12 @@ const Footer: React.FC = () => {
                         <div className="flex flex-col gap-12 order-2 md:order-1 md:flex-row md:gap-20 lg:flex-col lg:gap-14 lg:min-w-[303px] ">
                             {/* Logo */}
                             <div className="relative w-[162px] h-[162px] md:w-[188px] md:h-[188px] lg:w-[254px] lg:h-[254px] xl:w-[303px] xl:h-[303px] 2xl:w-[303px] 2xl:h-[303px]">
-                                <img src="/assets/footerlogo.svg" alt="" />
+                                <Image
+                                    src="/assets/logo.svg"
+                                    alt="logo"
+                                    layout="fill"
+                                    objectFit="contain"
+                                />
                             </div>
 
                             {/* Legal Links */}
@@ -202,26 +184,24 @@ const Footer: React.FC = () => {
                                     Prospect anywhere
                                 </p>
                                 <p className="text-sm lg:text-base leading-[130%] font-sans text-neutral-900">
-                                    Get verified emails and phone numbers and instantly reach out while working in your favorite tools.
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus nemo eum tempora? Corporis, nesciunt dolore.
                                 </p>
-                                <div className="w-full">
-                                    <a
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        href="https://chrome.google.com/webstore/detail/apolloio-email-finder-and/alhgpfoeiimagjlnfekdhkjlkiomcapa"
+                                <Link
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="#"
+                                >
+                                    <button
+                                        type="button"
+                                        className="group rounded-lg transition-all h-10 px-4 bg-transparent border border-dark text-dark hover:bg-neutral-200 hover:border-dark hover:text-dark active:bg-neutral-300 active:border-dark active:text-dark focus:border-dark focus:text-dark disabled:bg-transparent disabled:border-neutral-400 disabled:text-neutral-400 whitespace-nowrap w-full"
                                     >
-                                        <button
-                                            type="button"
-                                            className="group rounded-lg transition-all h-10 px-4 bg-transparent border border-dark text-dark hover:bg-neutral-200 hover:border-dark hover:text-dark active:bg-neutral-300 active:border-dark active:text-dark focus:border-dark focus:text-dark disabled:bg-transparent disabled:border-neutral-400 disabled:text-neutral-400 whitespace-nowrap"
-                                        >
-                                            <div className="flex items-center justify-center gap-2">
-                                                <p className="text-sm leading-[130%] font-sans text-inherit">
-                                                    Apollo Chrome Extension
-                                                </p>
-                                            </div>
-                                        </button>
-                                    </a>
-                                </div>
+                                        <div className="flex items-center justify-center gap-2">
+                                            <p className="text-sm leading-[130%] font-sans text-inherit">
+                                                Get Started
+                                            </p>
+                                        </div>
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
