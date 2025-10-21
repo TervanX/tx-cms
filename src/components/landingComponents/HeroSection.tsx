@@ -209,7 +209,7 @@ function HeroCard({
             src={bgImageSrc}
             fill
             className="transition-opacity duration-300 ease-out size-full opacity-100 object-cover object-bottom origin-center"
-            // sizes="(max-width: 768px) 100vw, 55vw"
+            sizes="(max-width: 768px) 100vw, 55vw"
             priority
           />
         </div>
@@ -238,7 +238,7 @@ export default function HeroSection() {
           description="TX helps people use, send, and receive digital assets effortlessly.
 It’s like having a Stripe + Wallet + Exchange in one, giving users access to crypto payments, wallets, and real-time asset management."
           buttonText="Explore TX Personal"
-          imageSrc="/assets/mobbs.png"
+          imageSrc="/assets/mobile-Individual.png"
           bgImageSrc="/assets/fin-card-bg.webp"
           videoSrc="/videos/fin-prototype.mp4"
         />
@@ -251,7 +251,7 @@ It’s like having a Stripe + Wallet + Exchange in one, giving users access to c
           description="TX offers institutional-grade digital asset custody and wallet infrastructure.
 It enables businesses, developers, and financial institutions to build crypto apps, manage millions of wallets, and automate operations securely."
           buttonText="Explore TX Business"
-          imageSrc="/assets/desck.png"
+          imageSrc="/assets/desktop-business.png"
           bgImageSrc="/assets/suite-card-bg.webp"
           videoSrc="/videos/suite-prototype.mp4"
         />
