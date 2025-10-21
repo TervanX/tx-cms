@@ -15,7 +15,6 @@ export default function Header() {
             <p>Tervan X</p>
           </li>
         </ul>
-
         <ul className="ml-auto flex items-center space-x-2 md:flex md:items-center md:space-x-4 md:py-2.5">
           <li className="group relative hidden md:block">
             <a

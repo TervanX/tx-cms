@@ -6,10 +6,10 @@ export default function Home() {
   return (
     <div className="">
       <NavBar />
-      <EngageCustomersSection/>
-      
-      <TestimonialCarousel/>
-      <BannerCTA/>
+      <EngageCustomersSection />
+
+      <TestimonialCarousel />
+      <BannerCTA />
     </div>
   );
 }
