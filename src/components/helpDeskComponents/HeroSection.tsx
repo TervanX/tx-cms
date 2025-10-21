@@ -121,11 +121,11 @@ export function HeroSection({
             <p className="font-grotesque text-xs lg:text-sm  text-left text-white lg:pr-8">
               Trusted by more than 25,000 leading brands:
             </p>
-            <AutoScrollLogos
+            {/* <AutoScrollLogos
               speedSec={40}
               direction="left"
               className="bg-transparent"
-            />
+            /> */}
           </div>
         </div>
       </div>

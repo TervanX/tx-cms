@@ -48,11 +48,8 @@ const StackedAnimation: React.FC = () => {
   const topRef = useRef<HTMLDivElement | null>(null);
   const bottomRef = useRef<HTMLDivElement | null>(null);
 
-  // Refs for the stack items and their overlay labels
   const layerEls = useRef<HTMLElement[]>([]);
   const labelEls = useRef<HTMLDivElement[]>([]);
-  const titleEls = useRef<HTMLDivElement[]>([]);
-  const descEls = useRef<HTMLParagraphElement[]>([]);
 
   useLayoutEffect(() => {
     if (!sectionRef.current || !containerRef.current) return;
@@ -126,6 +123,7 @@ const StackedAnimation: React.FC = () => {
             const raw = self.scroll();
             const start = self.start;
             const endStack = start + stackPhaseLength;
+            const endAll = self.end;
 
             const p =
               raw <= start
@@ -134,72 +132,74 @@ const StackedAnimation: React.FC = () => {
                 ? 1
                 : (raw - start) / (endStack - start);
 
-            const incoming = Math.min(
-              layers.length - 1,
-              Math.floor((p + LEAD) * layers.length)
-            );
+            const total = layers.length;
 
-            const x = p * layers.length;
-            const FADE_WIDTH = 0.7;
-            const clamp01 = gsap.utils.clamp(0, 1);
+            // Controls how long (in scroll %) the arrow+desc fade lasts after stopping
+            const fadeFactor = 0.6;
+            const fadeWindow = (1 / total) * fadeFactor;
+            const afterAllProgress = gsap.utils.clamp(
+              0,
+              1
+            )((raw - endStack) / closePhaseLength);
+            const allStacked = raw >= endStack;
 
-            placeMiddles(incoming);
-            const stackPhaseOver = raw >= endStack;
+            placeMiddles(Math.min(total - 1, Math.floor(p * total)));
 
             layerEls.current.forEach((el, i) => {
               const label = labelEls.current[i];
-              const title = titleEls.current[i];
-              const desc = descEls.current[i];
-              
-              if (!label || !title || !desc) return;
+              if (!label) return;
 
-              if (stackPhaseOver) {
-                // Stack phase is over - hide everything including titles
-                gsap.set(label, { autoAlpha: 0 });
-              } else {
-                // During stack phase
-                const rect = el.getBoundingClientRect();
-                const offset = 8;
+              const rect = el.getBoundingClientRect();
+              const offset = 8;
+              gsap.set(label, {
+                x: Math.round(rect.left + rect.width + offset),
+                y: Math.round(rect.top + rect.height / 2),
+                yPercent: -50,
+              });
 
-                // Calculate vertical position for column layout
-                const baseY = window.innerHeight / 2 - (layers.length * 40) / 2;
-                const columnY = baseY + i * 80;
+              const arrow = label.querySelector("img");
+              const title = label.querySelector("h6");
+              const desc = label.querySelector("p");
 
-                // Show title once layer has appeared (when i <= incoming)
-                const titleAlpha = i <= incoming ? 1 : 0;
-                
-                // Show description only for active layer
-                const d = Math.abs(x - (i + 0.5));
-                const descAlpha = clamp01(1 - d / FADE_WIDTH);
+              // local normalized range for each item
+              const localStart = i / total;
+              const localEnd = (i + 1) / total;
 
-                // Always show the label container for titles that have appeared
-                const labelAlpha = i <= incoming ? 1 : 0;
+              // For the last item, give it extra fade room (since it ends near p=1)
+              const localFadeWindow =
+                i === total - 1 ? fadeWindow * 1.8 : fadeWindow;
 
-                // Position in column or follow card
-                if (i <= incoming) {
-                  // Arrange in column
-                  gsap.set(label, {
-                    x: Math.round(rect.left + rect.width + offset),
-                    y: columnY,
-                    yPercent: 0,
-                    autoAlpha: labelAlpha,
-                  });
+              const localP = gsap.utils.clamp(
+                0,
+                1
+              )((p - localStart) / (localEnd - localStart));
+
+              if (!allStacked) {
+                if (localP > 0 && localP < 1) {
+                  // ✅ Item is moving — show all
+                  gsap.set([arrow, desc, title], { opacity: 1 });
+                } else if (localP >= 1) {
+                  // ✅ Item has stopped — start fading img + p based on scroll
+                  const afterStop = gsap.utils.clamp(
+                    0,
+                    1,
+                    (p - localEnd) / localFadeWindow
+                  );
+                  const arrowDescOpacity = 1 - afterStop;
+
+                  gsap.set([arrow, desc], { opacity: arrowDescOpacity });
+                  gsap.set(title, { opacity: 1 });
                 } else {
-                  // Follow card position (hidden until it appears)
-                  gsap.set(label, {
-                    x: Math.round(rect.left + rect.width + offset),
-                    y: Math.round(rect.top + rect.height / 2),
-                    yPercent: -50,
-                    autoAlpha: 0,
-                  });
+                  // Not yet started
+                  gsap.set([arrow, desc, title], { opacity: 0 });
                 }
-
-                // Control title and description visibility separately
-                // Title stays visible once the layer appears
-                gsap.set(title, { autoAlpha: titleAlpha });
-                // Description only shows for active layer
-                gsap.set(desc, { autoAlpha: descAlpha });
+              } else {
+                // ✅ After all stacked — fade out the entire label (including title)
+                gsap.set([arrow, desc], { opacity: 0 });
+                gsap.set(title, { opacity: 1 - afterAllProgress });
               }
+
+              gsap.set(label, { autoAlpha: 1 });
             });
           },
         },
@@ -260,10 +260,10 @@ const StackedAnimation: React.FC = () => {
     "block w-[260px] md:w-[360px] lg:w-[320px] transform-gpu rounded-xl select-none pointer-events-none";
 
   return (
-    <div className="relative -z-10">
+    <div>
       <div className="pt-12 md:pt-16">
         {/* Fixed overlay labels */}
-        <div className="fixed inset-0 z-[9999] pointer-events-none">
+        <div className="fixed inset-0 z-30 pointer-events-none ">
           {items.map((item, n) => (
             <div
               key={`label-${n}`}
@@ -273,28 +273,27 @@ const StackedAnimation: React.FC = () => {
               className="absolute whitespace-nowrap pointer-events-none"
               style={{
                 transform: "translateZ(0)",
-                opacity: 0,
+                opacity: 1,
                 visibility: "hidden",
               }}
             >
-              <div className="relative">
-                <div className="pl-30 flex flex-col items-start h-full mt-4">
-                  <h6 
-                    ref={(el) => {
-                      if (el) titleEls.current[n] = el;
-                    }}
-                    className="label-title ml-6 text-xs text-dark px-4 leading-relaxed mb-0 font-grotesque flex items-center rounded"
-                  >
-                    {item.title}
-                  </h6>
-                  <p 
-                    ref={(el) => {
-                      if (el) descEls.current[n] = el;
-                    }}
-                    className="label-description ml-6 w-40 mt-2 text-xs text-dark px-4 leading-relaxed mb-0 font-grotesque flex items-center rounded"
-                  >
-                    {item.description.replace(/\d+$/, "")}
-                  </p>
+              <div className="relative h-20">
+                <div className="flex items-center h-full mt-4">
+                  <div className="">
+                    <img
+                      src="https://www.apollo.io/_next/static/media/arrow.f3418417.svg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div className="h-full w-32 overflow-hidden">
+                    <h6 className="text-xs text-dark px-2 mb-0 font-grotesque leading-tight break-all whitespace-normal">
+                      {item.title}
+                    </h6>
+                    <p className="mt-1 text-xs text-dark px-2 mb-0 font-grotesque leading-tight break-all whitespace-normal">
+                      {item.description.replace(/\d+$/, "")}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
