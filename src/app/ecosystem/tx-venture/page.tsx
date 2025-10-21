@@ -1,3 +1,4 @@
+// src/app/ecosystem/tx-ventures/page.tsx
 import React from 'react';
 import HeroSection from '@/components/StartupComponents/HeroSection';
 import FeaturesSection from '@/components/StartupComponents/FeaturesSection';
@@ -9,23 +10,21 @@ import FAQAccordion from '@/components/StartupComponents/Faq';
 import { Marquee } from '@/components/StartupComponents/Marquee';
 import Resources from '@/components/StartupComponents/Resources';
 
-
-
-export default function Startups() {
-  return (
-    <div>
-      <HeroSection
-        title="Power up your startup with Apollo"
-        description="Unlock world-class go-to-market resources and exclusive perks when you join the Apollo for Startups community."
-      />
-      <FeaturesSection />
-      <ProductSection />
-      <Banner />
-      <Testimonial />
-      <Marquee />
-      <Resources />
-      <CtaBanner />
-      <FAQAccordion />
-    </div>
-  );
+export default function TxVentures() {
+    return (
+        <div>
+            <HeroSection
+                title="Tx Ventures"
+                description="Accelerator and ecosystem funding"
+            />
+            <FeaturesSection />
+            <ProductSection />
+            <Banner />
+            <Testimonial />
+            <Marquee />
+            <Resources />
+            <CtaBanner />
+            <FAQAccordion />
+        </div>
+    );
 }
