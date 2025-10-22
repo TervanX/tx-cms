@@ -67,7 +67,7 @@ const navItems: NavItemInterface[] = [
           "All TervanX’s core infrastructure and modules — fiat, crypto, and plugin systems.",
         links: [
           { href: "/product/payments-infrastructure/crypto-payments", text: "Crypto Payments" },
-          { href: "/product/payments-infrastructure/fiat-payments", text: "Fiat Payments" },
+          { href: "/product/payments-infrastructure/Fiat-payments", text: "Fiat Payments" },
           { href: "/product/payments-infrastructure/checkout", text: "Checkout " },
           { href: "/product/payments-infrastructure/payment-links", text: "Payment Links " },
           { href: "/product/payments-infrastructure/pos-terminal", text: "POS / Terminal  " },
