@@ -247,9 +247,9 @@ const StackedAnimation: React.FC = () => {
 
   return (
     <div>
-      <div className="pt-12 md:pt-16">
+      <div className="pt-12 md:pt-16 p-4 mx-auto">
         {/* Fixed overlay labels */}
-        <div className="fixed inset-0 z-30 pointer-events-none ">
+        <div className="fixed inset-0 z-30 pointer-events-none hidden lg:block ">
           {items.map((item, n) => (
             <div
               key={`label-${n}`}
@@ -308,29 +308,36 @@ const StackedAnimation: React.FC = () => {
                 {items.map((item, index) => (
                   <div
                     key={index}
-                    className={`flex justify-between items-center border-solid border-sand border-b py-2 transition-colors duration-300 ${activeItem === index ? 'px-2' : ''
+                    className={`flex flex-col gap-1 border-solid border-b py-2 transition-colors duration-300 ${activeItem === index ? 'px-2' : ''
                       }`}
                   >
-                    <p className={`text-xs transition-colors duration-300 ${activeItem === index
-                      ? 'text-black font-semibold'
-                      : 'text-sand hover:text-black'
-                      }`}>
-                      {item.title}
-                    </p>
-                    <a>
-                      <svg
-                        width="20"
-                        viewBox="0 0 25 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.0421 3.52704L16.0644 7.54927C17.5693 9.05275 16.5033 11.6252 14.3757 11.6252L2.5 11.6208V12.3673L14.3787 12.3718C16.5048 12.3718 17.5708 14.9443 16.0659 16.4477L12.0406 20.473L12.5692 21L21.5692 12L12.5692 3L12.0406 3.52704H12.0421Z"
-                          fill={activeItem === index ? "black" : "currentColor"}
-                        />
-                      </svg>
-                    </a>
+                    <div className="flex justify-between items-center w-full">
+                      <p className={`text-xs transition-colors duration-300 ${activeItem === index
+                        ? 'text-black font-semibold'
+                        : 'text-sand hover:text-black'
+                        }`}>
+                        {item.title}
+                      </p>
+                      <a>
+                        <svg
+                          width="20"
+                          viewBox="0 0 25 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M12.0421 3.52704L16.0644 7.54927C17.5693 9.05275 16.5033 11.6252 14.3757 11.6252L2.5 11.6208V12.3673L14.3787 12.3718C16.5048 12.3718 17.5708 14.9443 16.0659 16.4477L12.0406 20.473L12.5692 21L21.5692 12L12.5692 3L12.0406 3.52704H12.0421Z"
+                            fill={activeItem === index ? "black" : "currentColor"}
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    {activeItem === index && (
+                      <p className="mt-1 text-xs text-dark mb-0 font-grotesque leading-tight break-all whitespace-normal lg:hidden block">
+                        {item.description}
+                      </p>)}
                   </div>
+
                 ))}
               </div>
             </div>
@@ -339,13 +346,13 @@ const StackedAnimation: React.FC = () => {
           {/* RIGHT 3D STACK */}
           <div
             ref={containerRef}
-            className="relative z-10 flex-1 w-[65%] h-full flex items-center justify-center overflow-hidden scrollbar-hide "
+            className="relative z-10 lg:flex-1 lg:left-30 top-12 lg:w-[65%] w-full h-full  flex items-center justify-center overflow-hidden scrollbar-hide "
             style={{ isolation: "isolate" }}
           >
             {/* Top overlay */}
             <div
               ref={topRef}
-              className="absolute inset-0 z-30 flex items-center justify-center scrollbar-hide"
+              className="absolute inset-0 z-30 flex items-center justify-center "
               style={{ transformStyle: "flat" }}
             >
               <img
@@ -398,7 +405,7 @@ const StackedAnimation: React.FC = () => {
             </div>
           </div>
 
-          <div className="lg:w-[35%] pr-6 md:pr-10 lg:pr-16 flex items-center justify-center h-full" />
+          <div className="lg:w-[35%] pr-6 md:pr-10 lg:pr-16 flex items-center justify-center lg:h-full" />
         </section>
       </div>
     </div>
