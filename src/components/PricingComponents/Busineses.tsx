@@ -78,7 +78,7 @@ const people: Person[] = [
     role: "Account Executive",
     company: "Arbolus",
     avatar:
-      "https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fapollo-next.36e555e7.png&w=640&q=75",
+      "https://www.apollo.io/_next/image?url=%2F_next%2Fstat doic%2Fmedia%2Fapollo-next.36e555e7.png&w=640&q=75",
     logoText: "arbolus",
     longCopy:
       "As Kinsta's first Head of Sales Development, Nicole Coetzer was tasked with building outbound sales from scratch. Using Apollo to find the right leads in less time, her growing team hit a consistent 36% connection rate, helping them exceed quota every single month.",
@@ -251,9 +251,8 @@ const PeopleShowcase: React.FC = () => {
               type="button"
               onClick={() => scrollByOne(-1)}
               disabled={!canLeft}
-              className={`w-10 ${
-                !canLeft ? "opacity-50 cursor-not-allowed" : ""
-              }`}
+              className={`w-10 ${!canLeft ? "opacity-50 cursor-not-allowed" : ""
+                }`}
             >
               <IoArrowBackSharp />
             </Button>
@@ -263,9 +262,8 @@ const PeopleShowcase: React.FC = () => {
               type="button"
               onClick={() => scrollByOne(1)}
               disabled={!canRight}
-              className={`w-10 ${
-                !canRight ? "opacity-50 cursor-not-allowed" : ""
-              }`}
+              className={`w-10 ${!canRight ? "opacity-50 cursor-not-allowed" : ""
+                }`}
             >
               <IoArrowForwardSharp />
             </Button>

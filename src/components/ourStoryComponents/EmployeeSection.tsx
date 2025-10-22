@@ -7,97 +7,97 @@ const people = [
     name: "Vince Heaton",
     company: "Apollo Labs",
     quote: `I love working at Apollo because of the people; everyone’s not only talented but also kind and great to work with. I’ve had the chance to build things from the ground up, which has been exciting, challenging, and fulfilling. I also really appreciate the flexibility of working remotely while still getting to connect with colleagues in person at offsites.`,
-    img: "https://i.pravatar.cc/140?img=66",
+    img: "/assets/140.jpg",
   },
   {
     name: "Sarah Ahmed",
     company: "Zen Studio",
     quote: `I love working at Apollo because of the people; everyone’s not only talented but also kind and great to work with. I’ve had the chance to build things from the ground up, which has been exciting, challenging, and fulfilling. I also really appreciate the flexibility of working remotely while still getting to connect with colleagues in person at offsites.`,
-    img: "https://i.pravatar.cc/140?img=47",
+    img: "/assets/140.jpg",
   },
   {
     name: "Sarah Ahmed",
     company: "Zen Studio",
     quote: `I love working at Apollo because of the people; everyone’s not only talented but also kind and great to work with. I’ve had the chance to build things from the ground up, which has been exciting, challenging, and fulfilling. I also really appreciate the flexibility of working remotely while still getting to connect with colleagues in person at offsites.`,
-    img: "https://i.pravatar.cc/140?img=47",
+    img: "/assets/140.jpg",
   },
   {
     name: "Sarah Ahmed",
     company: "Zen Studio",
     quote: `I love working at Apollo because of the people; everyone’s not only talented but also kind and great to work with. I’ve had the chance to build things from the ground up, which has been exciting, challenging, and fulfilling. I also really appreciate the flexibility of working remotely while still getting to connect with colleagues in person at offsites.`,
-    img: "https://i.pravatar.cc/140?img=47",
+    img: "/assets/140.jpg",
   },
   {
     name: "Sarah Ahmed",
     company: "Zen Studio",
     quote: `I love working at Apollo because of the people; everyone’s not only talented but also kind and great to work with. I’ve had the chance to build things from the ground up, which has been exciting, challenging, and fulfilling. I also really appreciate the flexibility of working remotely while still getting to connect with colleagues in person at offsites.`,
-    img: "https://i.pravatar.cc/140?img=47",
+    img: "/assets/140.jpg",
   },
   {
     name: "Sarah Ahmed",
     company: "Zen Studio",
     quote: `I love working at Apollo because of the people; everyone’s not only talented but also kind and great to work with. I’ve had the chance to build things from the ground up, which has been exciting, challenging, and fulfilling. I also really appreciate the flexibility of working remotely while still getting to connect with colleagues in person at offsites.`,
-    img: "https://i.pravatar.cc/140?img=47",
+    img: "/assets/140.jpg",
   },
   {
     name: "Sarah Ahmed",
     company: "Zen Studio",
     quote: `I love working at Apollo because of the people; everyone’s not only talented but also kind and great to work with. I’ve had the chance to build things from the ground up, which has been exciting, challenging, and fulfilling. I also really appreciate the flexibility of working remotely while still getting to connect with colleagues in person at offsites.`,
-    img: "https://i.pravatar.cc/140?img=47",
+    img: "/assets/140.jpg",
   },
   {
     name: "Sarah Ahmed",
     company: "Zen Studio",
     quote: `I love working at Apollo because of the people; everyone’s not only talented but also kind and great to work with. I’ve had the chance to build things from the ground up, which has been exciting, challenging, and fulfilling. I also really appreciate the flexibility of working remotely while still getting to connect with colleagues in person at offsites.`,
-    img: "https://i.pravatar.cc/140?img=47",
+    img: "/assets/140.jpg",
   },
   {
     name: "Sarah Ahmed",
     company: "Zen Studio",
     quote: `I love working at Apollo because of the people; everyone’s not only talented but also kind and great to work with. I’ve had the chance to build things from the ground up, which has been exciting, challenging, and fulfilling. I also really appreciate the flexibility of working remotely while still getting to connect with colleagues in person at offsites.`,
-    img: "https://i.pravatar.cc/140?img=47",
+    img: "/assets/140.jpg",
   },
   {
     name: "Sarah Ahmed",
     company: "Zen Studio",
     quote: `I love working at Apollo because of the people; everyone’s not only talented but also kind and great to work with. I’ve had the chance to build things from the ground up, which has been exciting, challenging, and fulfilling. I also really appreciate the flexibility of working remotely while still getting to connect with colleagues in person at offsites.`,
-    img: "https://i.pravatar.cc/140?img=47",
+    img: "/assets/140.jpg",
   },
   {
     name: "Sarah Ahmed",
     company: "Zen Studio",
     quote: `I love working at Apollo because of the people; everyone’s not only talented but also kind and great to work with. I’ve had the chance to build things from the ground up, which has been exciting, challenging, and fulfilling. I also really appreciate the flexibility of working remotely while still getting to connect with colleagues in person at offsites.`,
-    img: "https://i.pravatar.cc/140?img=47",
+    img: "/assets/140.jpg",
   },
   {
     name: "Sarah Ahmed",
     company: "Zen Studio",
     quote: `I love working at Apollo because of the people; everyone’s not only talented but also kind and great to work with. I’ve had the chance to build things from the ground up, which has been exciting, challenging, and fulfilling. I also really appreciate the flexibility of working remotely while still getting to connect with colleagues in person at offsites.`,
-    img: "https://i.pravatar.cc/140?img=47",
+    img: "/assets/140.jpg",
   },
   {
     name: "Sarah Ahmed",
     company: "Zen Studio",
     quote: `I love working at Apollo because of the people; everyone’s not only talented but also kind and great to work with. I’ve had the chance to build things from the ground up, which has been exciting, challenging, and fulfilling. I also really appreciate the flexibility of working remotely while still getting to connect with colleagues in person at offsites.`,
-    img: "https://i.pravatar.cc/140?img=47",
+    img: "/assets/140.jpg",
   },
   {
     name: "Sarah Ahmed",
     company: "Zen Studio",
     quote: `I love working at Apollo because of the people; everyone’s not only talented but also kind and great to work with. I’ve had the chance to build things from the ground up, which has been exciting, challenging, and fulfilling. I also really appreciate the flexibility of working remotely while still getting to connect with colleagues in person at offsites.`,
-    img: "https://i.pravatar.cc/140?img=47",
+    img: "/assets/140.jpg",
   },
   {
     name: "Sarah Ahmed",
     company: "Zen Studio",
     quote: `I love working at Apollo because of the people; everyone’s not only talented but also kind and great to work with. I’ve had the chance to build things from the ground up, which has been exciting, challenging, and fulfilling. I also really appreciate the flexibility of working remotely while still getting to connect with colleagues in person at offsites.`,
-    img: "https://i.pravatar.cc/140?img=47",
+    img: "/assets/140.jpg",
   },
   {
     name: "Sarah Ahmed",
     company: "Zen Studio",
     quote: `I love working at Apollo because of the people; everyone’s not only talented but also kind and great to work with. I’ve had the chance to build things from the ground up, which has been exciting, challenging, and fulfilling. I also really appreciate the flexibility of working remotely while still getting to connect with colleagues in person at offsites.`,
-    img: "https://i.pravatar.cc/140?img=47",
+    img: "/assets/140.jpg",
   },
 ];
 
@@ -135,9 +135,8 @@ const Staffs = () => {
             <motion.img
               src={p.img}
               alt={p.name}
-              className={`h-14 w-14  md:h-26 md:w-26 rounded-full object-cover  ${
-                active === idx ? "opacity-100" : "opacity-60 hover:opacity-100"
-              }`}
+              className={`h-14 w-14  md:h-26 md:w-26 rounded-full object-cover  ${active === idx ? "opacity-100" : "opacity-60 hover:opacity-100"
+                }`}
               whileFocus={{ scale: 1.06 }}
               transition={{ type: "spring", stiffness: 320, damping: 20 }}
             />

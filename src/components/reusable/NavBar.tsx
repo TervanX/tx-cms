@@ -320,7 +320,7 @@ const navItems: NavItemInterface[] = [
     ],
     platforms: [
       {
-        logo: "https://www.apollo.io/_next/image?url=https%3A%2F%2Fcdn.buttercms.com%2FTsUeYa4kTLiTza8ExEGQ&w=1080&q=75",
+        logo: "/assets/just.webp",
         tag: "Apollo Platform",
         descriptions: "",
         links: [
@@ -509,7 +509,7 @@ const navItems: NavItemInterface[] = [
     ],
     platforms: [
       {
-        logo: "https://www.apollo.io/_next/image?url=https%3A%2F%2Fcdn.buttercms.com%2FTsUeYa4kTLiTza8ExEGQ&w=1080&q=75",
+        logo: "/assets/just.webp",
         tag: "By Industry ",
         descriptions:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quibusdam voluptate dolores exercitationem.",
@@ -665,7 +665,7 @@ const navItems: NavItemInterface[] = [
     ],
     platforms: [
       {
-        logo: "https://www.apollo.io/_next/image?url=https%3A%2F%2Fcdn.buttercms.com%2FTsUeYa4kTLiTza8ExEGQ&w=1080&q=75",
+        logo: "/assets/just.webp",
         tag: "Apollo Platform",
         descriptions: "",
         links: [
@@ -677,7 +677,7 @@ const navItems: NavItemInterface[] = [
         ],
       },
       {
-        logo: "https://www.apollo.io/_next/image?url=https%3A%2F%2Fcdn.buttercms.com%2FTsUeYa4kTLiTza8ExEGQ&w=1080&q=75",
+        logo: "/assets/just.webp",
         tag: "Apollo Platform",
         descriptions: "",
         links: [
@@ -898,7 +898,7 @@ const navItems: NavItemInterface[] = [
     ],
     platforms: [
       {
-        logo: "https://www.apollo.io/_next/image?url=https%3A%2F%2Fcdn.buttercms.com%2FTsUeYa4kTLiTza8ExEGQ&w=1080&q=75",
+        logo: "/assets/just.webp",
         tag: "Guides",
         descriptions: "",
         links: [

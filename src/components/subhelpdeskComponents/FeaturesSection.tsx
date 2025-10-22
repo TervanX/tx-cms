@@ -17,63 +17,63 @@ export default function FeaturesSection() {
             name: 'Inbox',
             href: '/suite/helpdesk/inbox',
             description: 'Support for customers, before they need it',
-            image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=400&fit=crop'
+            image: '/assets/photo-1552664730-d307ca884978.jpg'
         },
         {
             id: 'copilot',
             name: 'Copilot',
             href: '/suite/helpdesk/copilot',
             description: 'AI-powered assistance for your team',
-            image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=400&fit=crop'
+            image: '/assets/photo-1677442136019-21780ecad995.jpg'
         },
         {
             id: 'tickets',
             name: 'Tickets',
             href: '/suite/helpdesk/tickets',
             description: 'Efficient ticket management system',
-            image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=400&fit=crop'
+            image: '/assets/photo-1552664730-d307ca884978.jpg'
         },
         {
             id: 'omnichannel',
             name: 'Omnichannel',
             href: '/suite/helpdesk/omnichannel',
             description: 'Unified customer experience across channels',
-            image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=400&fit=crop'
+            image: '/assets/photo-1677442136019-21780ecad995.jpg'
         },
         {
             id: 'help-center',
             name: 'Help Center',
             href: '/suite/helpdesk/help-center',
             description: 'Self-service support for your customers',
-            image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=400&fit=crop'
+            image: '/assets/photo-1552664730-d307ca884978.jpg'
         },
         {
             id: 'apps-integrations',
             name: 'Apps & Integrations',
             href: '/app-store',
             description: 'Extend functionality with integrations',
-            image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=400&fit=crop'
+            image: '/assets/photo-1677442136019-21780ecad995.jpg'
         },
         {
             id: 'reporting',
             name: 'Reporting',
             href: '/suite/helpdesk/reporting',
             description: 'Data-driven insights and analytics',
-            image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=400&fit=crop'
+            image: '/assets/photo-1552664730-d307ca884978.jpg'
         },
         {
             id: 'knowledge-hub',
             name: 'Knowledge Hub',
             href: '/suite/helpdesk/knowledge-hub',
             description: 'Centralized knowledge management',
-            image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=400&fit=crop'
+            image: '/assets/photo-1677442136019-21780ecad995.jpg'
         },
         {
             id: 'outbound',
             name: 'Outbound',
             href: '/suite/helpdesk/outbound',
             description: 'Proactive customer outreach',
-            image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=400&fit=crop'
+            image: '/assets/photo-1552664730-d307ca884978.jpg'
         }
     ]
 

@@ -11,28 +11,28 @@ interface CardProps {
 const cards: CardProps[] = [
   {
     id: "1",
-    logo: "https://www.apollo.io/_next/static/media/pipeline_builder_icon.e6b3fd21.svg",
+    logo: "/assets/pipeline_builder_icon.e6b3fd21.svg",
     title: "Pipeline Builder",
     description:
       "Build pipeline faster with better data, smarter AI, and easier automation.",
   },
   {
     id: "2",
-    logo: "https://www.apollo.io/_next/static/media/pipeline_builder_icon.e6b3fd21.svg",
+    logo: "/assets/pipeline_builder_icon.e6b3fd21.svg",
     title: "Sales Engagement",
     description:
       "Engage prospects across multiple channels efficiently and intelligently.",
   },
   {
     id: "3",
-    logo: "https://www.apollo.io/_next/static/media/pipeline_builder_icon.e6b3fd21.svg",
+    logo: "/assets/pipeline_builder_icon.e6b3fd21.svg",
     title: "Analytics Suite",
     description:
       "Track every deal and optimize your strategy with in-depth analytics.",
   },
   {
     id: "4",
-    logo: "https://www.apollo.io/_next/static/media/pipeline_builder_icon.e6b3fd21.svg",
+    logo: "/assets/pipeline_builder_icon.e6b3fd21.svg",
     title: "Automation Engine",
     description:
       "Automate your workflows from lead to close with minimal effort.",

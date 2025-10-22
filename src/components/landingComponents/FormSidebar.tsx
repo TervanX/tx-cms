@@ -14,7 +14,7 @@ export default function FormSidebar() {
             <div className="hidden md:block absolute inset-0 overflow-hidden">
                 <Image
                     alt="background"
-                    src="https://images.ctfassets.net/xny2w179f4ki/P1BF7GAtUCb3Jni87L2Uk/cf9538726b24f531da6144957a1acd08/b117dbac815c7c71ea073f7a30999c33.jpeg?&q=90"
+                    src="/assets/b117dbac815c7c71ea073f7a30999c33.jpeg?&q=90"
                     fill
                     className="object-cover scale-105"
                     priority

@@ -39,28 +39,28 @@ interface CardProps {
 const cards: CardProps[] = [
   {
     tag: "Stage 1",
-    bg: "https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fstage-1.083401ec.jpg&w=750&q=75",
+    bg: "/assets/hiring.webp",
     stage: "Skill assessment",
     description:
       "You'll meet with 2-4 team members in a series of 1:1 conversations. These help us get a well-rounded sense of your skills, working style, and culture fit.",
   },
   {
     tag: "Stage 2",
-    bg: "https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fstage-1.083401ec.jpg&w=750&q=75",
+    bg: "/assets/hiring.webp",
     stage: "Culture fit",
     description:
       "We’ll assess alignment with our mission, values, and approach to collaboration.",
   },
   {
     tag: "Stage 3",
-    bg: "https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fstage-1.083401ec.jpg&w=750&q=75",
+    bg: "/assets/hiring.webp",
     stage: "Technical challenge",
     description:
       "You’ll complete a brief task relevant to your role to show us how you approach real-world problems.",
   },
   {
     tag: "Stage 4",
-    bg: "https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fstage-1.083401ec.jpg&w=750&q=75",
+    bg: "/assets/hiring.webp",
     stage: "Final interview",
     description:
       "You’ll meet with leadership to discuss your growth, impact, and fit within the team.",
