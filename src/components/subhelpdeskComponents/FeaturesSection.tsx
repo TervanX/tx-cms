@@ -1,4 +1,3 @@
-// src/app/components/ContentLayout/sections/FeaturesSection.tsx
 'use client'
 
 import { motion, AnimatePresence } from 'framer-motion'
@@ -78,7 +77,6 @@ export default function FeaturesSection() {
         }
     ]
 
-    // Get the currently active feature data
     const activeFeatureData = features.find(feature => feature.id === activeFeature) || features[0]
 
     const handleImageError = (imageSrc: string) => {
@@ -131,8 +129,6 @@ export default function FeaturesSection() {
                 </h2>
 
                 <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-start gap-12 px-4 md:gap-16 md:px-8 lg:grid-cols-[2fr_3fr] lg:px-12 2xl:gap-20">
-
-                    {/* Sticky Image Column */}
                     <div className="sticky top-25 hidden lg:block">
                         <div className="space-y-4">
                             <ImageDisplay className="w-full" />

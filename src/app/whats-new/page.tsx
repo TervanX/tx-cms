@@ -1,22 +1,20 @@
 "use client";
-
 import Button from "@/components/reusable/Button";
 import FilterBy from "@/components/whatsnewComponents/FilterBy";
 import MobileFilter from "@/components/whatsnewComponents/MobileFilter";
-
-// import { Button } from "@tervanx/tx-ui-core-v2";
+import { X, MessageSquare } from "lucide-react";
 
 const WhatsNewPage = () => {
   return (
-    <div>
+    <div className="container mx-auto pt-[var(--header-height)]">
       <h3 className="font-bold text-4xl lg:mb-8">What's new in Play Tervanx</h3>
 
       <div className="flex flex-col lg:flex-row lg:gap-10 pt-10">
         <div className="hidden lg:block lg:w-[400px] ">
           <div
-            className="sticky"
+            className="sticky w-[300px]"
             style={{
-              top: "5rem",
+              top: "14rem",
             }}
           >
             <FilterBy />
@@ -71,7 +69,7 @@ const Card = () => {
   return (
     <div className="mt-6 flex flex-col gap-6 mb-6">
       <div>
-        <span className="primary rounded-lg py-1 px-3 bg-blue-600 text-white text-sm">
+        <span className="rounded-lg py-1 px-3 bg-blue-600 text-white text-sm">
           Update
         </span>
       </div>
@@ -93,77 +91,26 @@ const Card = () => {
   );
 };
 
-// const FilterBy = () => {
-//   return (
-//     <div className="border-gray-300 border rounded-xl py-1">
-//       <p className="font-medium p-4 border-gray-300 border-b">Filter by</p>
-//       <div className="flex-flex-col gap-2">
-//         <button className="px-4 py-2 flex items-center justify-between w-full hover:bg-gray-300 cursor-pointer hover:bg-gray-100">
-//           <span className="flex items-center justify-start gap-4">
-//             <GoRocket />
-//             Test and release
-//           </span>
-//           <LiaTimesSolid />
-//         </button>
-//         <button className="px-4 py-2 flex items-center justify-between w-full hover:bg-gray-100">
-//           <span className="flex items-center justify-start gap-4">
-//             <GoRocket />
-//             Monitor and improve
-//           </span>
-//           <LiaTimesSolid />
-//         </button>
-//         <button className="px-4 py-2 flex items-center justify-between w-full hover:bg-gray-100">
-//           <span className="flex items-center justify-start gap-4">
-//             <GoRocket />
-//             Grow users{" "}
-//           </span>
-//           <LiaTimesSolid />
-//         </button>
-//         <button className="px-4 py-2 flex items-center justify-between w-full hover:bg-gray-100">
-//           <span className="flex items-center justify-start gap-4">
-//             <GoRocket />
-//             Monetize with Play{" "}
-//           </span>
-//           <LiaTimesSolid />
-//         </button>
-//       </div>
-//     </div>
-//   );
-// };
-
 export default WhatsNewPage;
 
 const Suggesstion = () => {
   return (
     <div className="flex items-center justify-center gap-4 p-16">
-      <button
-        className="kt-btn kt-btn-primary rounded-full bg-blue-600 hover:bg-blue-700"
-        data-kt-drawer-toggle="#drawer_4"
-      >
+      <button className="rounded-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 font-medium transition-colors duration-200 flex items-center gap-2">
+        <MessageSquare size={20} />
         Suggesstion
       </button>
 
-      <div
-        className="hidden kt-drawer kt-drawer-end card flex-col max-w-[90%] w-[450px] top-5 bottom-5 end-5 rounded-xl border border-border "
-        data-kt-drawer="true"
-        id="drawer_4"
-        data-kt-drawer-container="body"
-      >
-        <div
-          className="flex items-center justify-between gap-2.5 text-lg text-mono font-semibold px-5 py-2.5 border-b border-b-border"
-          id="notifications_header"
-        >
+      <div className="hidden fixed right-5 top-5 bottom-5 w-[450px] max-w-[90%] bg-white rounded-xl border border-gray-300 shadow-lg flex-col">
+        <div className="flex items-center justify-between gap-2.5 text-lg font-semibold px-5 py-2.5 border-b border-gray-300">
           Suggessted Update
-          <button
-            className="kt-btn  kt-btn-sm kt-btn-icon kt-btn-dim shrink-0"
-            data-kt-drawer-dismiss="true"
-          >
-            <i className="ki-filled ki-cross"></i>
+          <button className="p-1 rounded hover:bg-gray-100 transition-colors duration-200 shrink-0">
+            <X size={20} />
           </button>
         </div>
-        <div className="kt-drawer-content kt-scrollable">
+        <div className="flex-1 overflow-y-auto p-4">
           <textarea
-            className="kt-textarea"
+            className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             placeholder="Text input"
             rows={4}
           ></textarea>

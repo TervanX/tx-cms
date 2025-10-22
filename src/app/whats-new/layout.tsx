@@ -1,6 +1,7 @@
 "use client";
-import MobileHeader from "@/shared/ui/components/dashLayoutComponent/MobileHeader";
 import React from "react";
+import { Menu } from "lucide-react";
+import Footer from "@/components/landingComponents/Footer";
 
 interface DashBoardLayoutProps {
   children: React.ReactNode;
@@ -8,17 +9,13 @@ interface DashBoardLayoutProps {
 
 export default function WhatIsNewLayout({ children }: DashBoardLayoutProps) {
   return (
-    <div className="flex flex-col lg:flex-row grow pt-(--header-height) lg:pt-0">
-      <div className="flex flex-col grow items-stretch rounded-xl bg-background border border-input  mt-0 lg:mt-[15px] m-[15px]">
-        <div
-          className="flex flex-col grow kt-scrollable-y-auto  pt-5"
-          id="scrollable_content"
-        >
+    <div className="flex flex-col lg:flex-row grow pt-[60px] lg:pt-12">
+      <div className="flex flex-col grow items-stretch rounded-xl  mt-0 lg:mt-[15px] m-[15px]">
+        <div className="flex flex-col grow overflow-y-auto pt-5">
           <Header />
-          <div className="kt-container-fixed pt-(--header-height)">
-            {children}
-          </div>
+          <div className="container mx-auto pt-[60px]">{children}</div>
         </div>
+        <Footer />
       </div>
     </div>
   );
@@ -27,29 +24,20 @@ export default function WhatIsNewLayout({ children }: DashBoardLayoutProps) {
 const Header = () => {
   return (
     <header
-      className="flex  items-center fixed z-10 top-0 start-0 end-0 shrink-0 bg-muted h-[60px]"
+      className="flex items-center fixed z-10 top-0 start-0 end-0 shrink-0 bg-white h-[60px]"
       id="header"
     >
-      <div className="kt-container-fixed flex items-center justify-between flex-wrap gap-3">
+      <div className="container mx-auto flex items-center justify-between flex-wrap gap-3 px-4">
         <a href="/dashboard">
           <img
-            className="dark:hidden min-h-[30px]"
+            className="min-h-[30px]"
             style={{ height: "30px" }}
-            src="/assets/app-icon/logo.png"
+            src="/assets/logo.svg"
             alt="Logo"
           />
-          <img
-            className="hidden dark:block min-h-[30px]"
-            src="/assets/app-icon/logo.png"
-            style={{ height: "30px" }}
-            alt="Logo Dark"
-          />
         </a>
-        <button
-          className="kt-btn kt-btn-icon kt-btn-ghost -me-2"
-          data-kt-drawer-toggle="#sidebar"
-        >
-          <i className="ki-filled ki-menu" />
+        <button className="p-2 hover:bg-gray-200 rounded-lg transition-colors duration-200 -me-2">
+          <Menu size={20} />
         </button>
       </div>
     </header>

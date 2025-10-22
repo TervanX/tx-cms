@@ -1,5 +1,5 @@
 import React from 'react'
-import Demo from '@/components/authComponents/Demo'
+import Demo from '@/components/authComponents/contact-sales'
 const DemoPage = () => {
     return (
         <div className='lg:p-6 pt-6'>

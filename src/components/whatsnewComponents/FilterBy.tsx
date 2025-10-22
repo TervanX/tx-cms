@@ -35,11 +35,11 @@ const FilterBy = () => {
       <p className="font-semibold p-4 border-gray-300 border-b block lg:hidden">
         Filter
       </p>
-      <div className="flex-flex-col gap-2">
+      <div className="flex-flex-col gap-3">
         {filterOptions.map((option) => (
           <button
             key={option.id}
-            className="px-4 py-2 flex items-center justify-between w-full hover:bg-gray-100 cursor-pointer"
+            className="px-4 py-4 flex items-center justify-between w-full hover:bg-gray-100 cursor-pointer"
           >
             <span className="flex items-center justify-start gap-4">
               {option.icon}
