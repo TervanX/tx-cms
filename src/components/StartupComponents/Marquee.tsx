@@ -91,11 +91,11 @@ export const Marquee: React.FC<MarqueeProps> = ({
         },
     ];
 
-    
+
     const duplicatedItems = [...marqueeItems, ...marqueeItems];
 
     return (
-        <div className="flex justify-center px-6 md:px-12 lg:px-16 xl:px-20 2xl:px-24 my-20">
+        <div className="flex justify-center px-6 md:px-12 lg:px-16 xl:px-20 2xl:px-24 my-28">
             <div className="container mx-auto px-4">
                 <div
                     className={`
@@ -124,8 +124,8 @@ export const Marquee: React.FC<MarqueeProps> = ({
                         whileHover={pauseOnHover ? { animationPlayState: 'paused' } : undefined}
                     >
                         {duplicatedItems.map((item, index) => (
-                            <div 
-                                key={`${item.id}-${index}`} 
+                            <div
+                                key={`${item.id}-${index}`}
                                 className="flex-shrink-0 px-4"
                             >
                                 <img

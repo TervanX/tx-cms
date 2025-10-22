@@ -20,13 +20,12 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <div className="h-14 tablet:h-16 lg:h-[72px]">
+    <div className="h-14 tablet:h-16 lg:h-[72px] p-8">
       <nav className="fixed left-0 top-0 z-[999] flex w-full transform-gpu tablet:transform-none tablet:translate-y-0">
         <div className="relative w-full ">
           <div
-            className={`flex h-14 w-full justify-center px-5 transition-colors tablet:h-16 tablet:px-6 desktop-s:h-[72px] ${
-              isScrolled ? "bg-white" : ""
-            }`}
+            className={`flex h-14 w-full justify-center p-10 transition-colors tablet:h-16 tablet:px-6 desktop-s:h-[72px] ${isScrolled ? "bg-white" : ""
+              }`}
           >
             <div className="flex w-full max-w-[1872px] justify-between">
               <div className="flex items-center">
@@ -132,8 +131,8 @@ const Header: React.FC = () => {
                   </svg>
                 </div>
               </div>
-              <div className="flex items-center gap-4 leading-[0]">
-                <div className="flex w-full items-center justify-end gap-4">
+              <div className="flex items-center gap-4 ">
+                <div className="flex w-full items-center gap-4">
                   <Button variant="primary" size="md">
                     Apply now
                   </Button>

@@ -42,7 +42,7 @@ const cards: CardProps[] = [
 const CardShowcase: React.FC = () => {
   return (
     <div className="relative py-2 lg:py-12 z-40 bg-white">
-      <div className="bg-white my-20">
+      <div className="bg-white my-28">
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-medium text-dark text-center font-grotesque">
           Everything you need
         </h1>

@@ -74,7 +74,7 @@ export default function TestimonialCarousel() {
     <div>
       <DottedLine />
 
-      <div className="mx-auto px-3 max-w-[1000px] lg:w-[80%] lg:max-w-[1492px]  w-full flex flex-col justify-center items-center gap-4 md:gap-6 my-20 font-grotesque">
+      <div className="mx-auto px-3 max-w-[1000px] lg:w-[80%] lg:max-w-[1492px]  w-full flex flex-col justify-center items-center gap-4 md:gap-6 my-28 font-grotesque">
         <h2
           className="scroll-mt-6 text-4xl md:text-5xl font-medium text-center"
           id="effortless-omnichannel-support"
@@ -90,11 +90,10 @@ export default function TestimonialCarousel() {
                 <button
                   key={index}
                   onClick={() => handleButtonClick(index)}
-                  className={`relative px-4 py-2 text-sm md:text-base font-medium transition-all whitespace-nowrap ${
-                    activeIndex === index
-                      ? "text-black"
-                      : "text-gray-500 hover:text-gray-700"
-                  }`}
+                  className={`relative px-4 py-2 text-sm md:text-base font-medium transition-all whitespace-nowrap ${activeIndex === index
+                    ? "text-black"
+                    : "text-gray-500 hover:text-gray-700"
+                    }`}
                 >
                   <span>{testimonial.company}</span>
                   {activeIndex === index && (
@@ -119,11 +118,10 @@ export default function TestimonialCarousel() {
                 return (
                   <div
                     key={originalIndex}
-                    className={`absolute left-0 right-0 transition-all duration-500 ease-out ${
-                      stackPosition < 3
-                        ? "opacity-100"
-                        : "opacity-0 pointer-events-none"
-                    }`}
+                    className={`absolute left-0 right-0 transition-all duration-500 ease-out ${stackPosition < 3
+                      ? "opacity-100"
+                      : "opacity-0 pointer-events-none"
+                      }`}
                     style={{
                       bottom: `${stackPosition * 20}px`,
                       zIndex: 20 - stackPosition,

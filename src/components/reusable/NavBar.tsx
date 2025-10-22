@@ -368,14 +368,20 @@ const navItems: NavItemInterface[] = [
             </g>
           </svg>
         ),
-        title: "Solutions",
+        title: "By Business Stage",
         description:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quibusdam ",
         linkTitle: "lorem",
         links: [
-          { href: "#", text: "Startups" },
-          { href: "#", text: "Enterprises" },
-          { href: "#", text: "Developers" },
+          { href: "/solutions/by-business-stage/startups", text: "Startups" },
+          {
+            href: "/solutions/by-business-stage/enterprises",
+            text: "Enterprises",
+          },
+          {
+            href: "/solutions/by-business-stage/developers",
+            text: "Developers",
+          },
         ],
       },
       {
@@ -416,13 +422,24 @@ const navItems: NavItemInterface[] = [
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quibusdam ",
         linkTitle: "lorem",
         links: [
-          { href: "#", text: "Fintech Platforms" },
-          { href: "#", text: "Crypto Exchanges" },
-          { href: "#", text: "Crypto Exchanges" },
-          { href: "#", text: "Embedded Finance" },
-          { href: "#", text: "DeFi Apps " },
-          { href: "#", text: "Remittance" },
-          { href: "#", text: "Gaming & Metaverse" },
+          {
+            href: "/solutions/by-use-case/fintech-platforms",
+            text: "Fintech Platforms",
+          },
+          {
+            href: "/solutions/by-use-case/crypto-exchanges",
+            text: "Crypto Exchanges",
+          },
+          {
+            href: "/solutions/by-use-case/embedded-finance",
+            text: "Embedded Finance",
+          },
+          { href: "/solutions/by-use-case/defi-apps", text: "DeFi Apps " },
+          { href: "/solutions/by-use-case/remittance", text: "Remittance" },
+          {
+            href: "/solutions/by-use-case/gaming-and-metaverse",
+            text: "Gaming & Metaverse",
+          },
         ],
       },
       {
@@ -463,14 +480,29 @@ const navItems: NavItemInterface[] = [
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quibusdam ",
         linkTitle: "lorem",
         links: [
-          { href: "#", text: "Finance & Banking" },
-          { href: "#", text: "E-Commerce " },
-          { href: "#", text: "Healthcare" },
-          { href: "#", text: "Transportation & Logistics " },
-          { href: "#", text: "Energy & Utilities" },
-          { href: "#", text: "Education " },
-          { href: "#", text: "Hospitality & Real Estate " },
-          { href: "#", text: "Creator Economy & Media" },
+          {
+            href: "/solutions/by-industry/finance-and-banking",
+            text: "Finance & Banking",
+          },
+          { href: "/solutions/by-industry/e-ecommerce", text: "E-Commerce " },
+          { href: "/solutions/by-industry/healthcare", text: "Healthcare" },
+          {
+            href: "/solutions/by-industry/transportation-and-logistics",
+            text: "Transportation & Logistics ",
+          },
+          {
+            href: "/solutions/by-industry/energy-and-utilities",
+            text: "Energy & Utilities",
+          },
+          { href: "/solutions/by-/education", text: "Education " },
+          {
+            href: "/solutions/by-industry/hospitality-real-state",
+            text: "Hospitality & Real Estate ",
+          },
+          {
+            href: "/solutions/by-industry/creator-economy-and-media",
+            text: "Creator Economy & Media",
+          },
         ],
       },
     ],
@@ -778,11 +810,21 @@ const navItems: NavItemInterface[] = [
         description: "Find the right people and book quality meetings",
         linkTitle: "Sales Leaders",
         links: [
-          { href: "#", text: "Get Started" },
-          { href: "#", text: "Prebuilt Components" },
-          { href: "#", text: "Libraries & SDKs" },
-          { href: "#", text: "API Reference" },
-          { href: "#", text: "Webhook Reference" },
+          { href: "/developers/documentation/get-started", text: "Get Started" },
+          { href: "/developers/documentation", text: "Prebuilt Components" },
+          {
+            href: "/developers/documentation/libraries-and-SDKs",
+            text: "Libraries & SDKs",
+          },
+          { href: "/developers/api-and-reference", text: "API Reference" },
+          {
+            href: "/developers/documentation/webhook-reference",
+            text: "Webhook Reference",
+          },
+          {
+            href: "/developers/documentation/guides",
+            text: "Guides",
+          },
         ],
       },
       {
@@ -822,9 +864,18 @@ const navItems: NavItemInterface[] = [
         description: "Find the right people and book quality meetings",
         linkTitle: "Sales Leaders",
         links: [
-          { href: "#", text: "CMS Plugins " },
-          { href: "#", text: "ERP Integrations" },
-          { href: "#", text: "API Sandbox" },
+          {
+            href: "/developers/api-and-reference/api-and-reference",
+            text: "CMS Plugins ",
+          },
+          {
+            href: "/developers/api-and-reference/erp-integrations",
+            text: "ERP Integrations",
+          },
+          {
+            href: "/developers/api-and-reference/api-sandbox",
+            text: "API Sandbox",
+          },
         ],
       },
       {
@@ -864,9 +915,19 @@ const navItems: NavItemInterface[] = [
         description: "Find the right people and book quality meetings",
         linkTitle: "Sales Leaders",
         links: [
-          { href: "#", text: "Tx Console" },
-          { href: "#", text: "API Changelog" },
-          { href: "#", text: "System Status" },
+          { href: "/developers/developer-tools/x-console", text: "Tx Console" },
+          {
+            href: "/developers/developer-tools/api-changelog",
+            text: "API Changelog",
+          },
+          {
+            href: "/developers/developer-tools/tx-apps-SDK",
+            text: "TX Apps SDK",
+          },
+          {
+            href: "/developers/developer-tools/system-status",
+            text: "System Status",
+          },
         ],
       },
     ],
@@ -1163,7 +1224,10 @@ const NavItem: React.FC<navItemProps> = ({ nav }) => {
                         </p>
                         {solution?.links &&
                           solution.links.map((link, index) => (
-                            <a className="text-xs text-black  font-grotesque ">
+                            <a
+                              href={link.href}
+                              className="text-xs text-black  font-grotesque cursor-pointer"
+                            >
                               {link.text}
                             </a>
                           ))}

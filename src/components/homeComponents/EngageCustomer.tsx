@@ -47,7 +47,7 @@ const EngageCustomersSection = ({
     <div className="">
     
       <div
-        className="flex flex-col gap-4 items-center justify-center px-3 md:px-4 my-20 w-full lg:max-w-[80%] mx-auto"
+        className="flex flex-col gap-4 items-center justify-center px-3 md:px-4 my-28 w-full lg:max-w-[80%] mx-auto"
         id="engage-customers-on-the-apps-they-use-everyday"
       >
         <div className="w-full max-w-6xl">
