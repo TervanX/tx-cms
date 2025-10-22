@@ -10,18 +10,22 @@ const WhatsNewPage = () => {
       <h3 className="font-bold text-4xl lg:mb-8">What's new in Play Tervanx</h3>
 
       <div className="flex flex-col lg:flex-row lg:gap-10 pt-10">
-        <div className="hidden lg:block lg:w-[400px] ">
+        <div className="hidden lg:block lg:w-[400px]">
           <div
             className="sticky w-[300px]"
             style={{
               top: "14rem",
+              height: "fit-content",
+              maxHeight: "calc(100vh - 14rem)",
+              overflowY: "auto",
             }}
           >
             <FilterBy />
           </div>
         </div>
-        <MobileFilter />
-        <div className="w-full">
+
+        {/* Right content container with relative positioning */}
+        <div className="w-full relative">
           <div>
             <p className="font-medium pb-4 border-gray-300 border-b">
               June 2024

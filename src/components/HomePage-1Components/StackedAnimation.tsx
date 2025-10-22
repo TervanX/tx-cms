@@ -100,8 +100,7 @@ const StackedAnimation: React.FC = () => {
       const totalLength = stackPhaseLength + closePhaseLength;
 
       const TRI_BASE = 0.15;
-      const FADE_DUR = 0.7;
-
+      const FADE_DUR = 1;
       const tl = gsap.timeline({
         defaults: { ease: "power3.out" },
         scrollTrigger: {
@@ -134,7 +133,6 @@ const StackedAnimation: React.FC = () => {
             const allStacked = raw >= endStack;
 
             placeMiddles(Math.min(total - 1, Math.floor(p * total)));
-
             layerEls.current.forEach((el, i) => {
               const label = labelEls.current[i];
               if (!label) return;
