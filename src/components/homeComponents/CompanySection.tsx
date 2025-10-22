@@ -21,7 +21,7 @@ export default function CompaniesSection() {
                 </p>
 
                 {/* Company Logos Grid */}
-                <LogoGrid w="w-20" backgroundColor="#F7F5F2" />
+                <LogoGrid w="w-20" backgroundColor="#fffff" />
               </div>
 
               {/* Testimonial Quote Section */}
@@ -118,7 +118,7 @@ export default function CompaniesSection() {
             <source media="(min-width: 1440px)" srcSet="/_next/static/media/spacer-desktop.46124fc4.svg" />
             <source media="(min-width: 1024px)" srcSet="/_next/static/media/spacer-desktop-s.b410a2d8.svg" />
             <source media="(min-width: 768px)" srcSet="/_next/static/media/spacer-tablet.19f89b54.svg" /> */}
-          <img
+          {/* <img
             alt=""
             loading="lazy"
             width="375"
@@ -126,7 +126,7 @@ export default function CompaniesSection() {
             decoding="async"
             className="w-full"
             src="/assets/spacer-desktop.svg"
-          />
+          /> */}
         </picture>
       </div>
     </motion.div>

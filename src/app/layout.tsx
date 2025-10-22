@@ -47,10 +47,8 @@ export const metadata: Metadata = {
         url: "/assets/logo.svg",
         type: "image/svg",
       },
-
     ],
     shortcut: "/assets/logo.svg",
-
   },
   alternates: {
     canonical: "https://tervanx.com",
