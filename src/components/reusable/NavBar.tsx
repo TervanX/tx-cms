@@ -838,7 +838,7 @@ const navItems: NavItemInterface[] = [
         links: [
           { href: "/developers/developer-tools/x-console", text: "Tx Console" },
           {
-            href: "/developers/developer-tools/api-changelog",
+            href: "/api-changelog",
             text: "API Changelog",
           },
           {

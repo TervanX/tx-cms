@@ -12,12 +12,7 @@ const WhatsNewPage = () => {
 
       <div className="flex flex-col lg:flex-row lg:gap-10 pt-10">
         <div className="hidden lg:block lg:w-[400px] ">
-          <div
-            className="fixed w-[300px]"
-            style={{
-              top: "14rem",
-            }}
-          >
+          <div className="fixed top-[calc(var(--header-height)+2rem)] w-[300px]">
             <FilterBy />
           </div>
         </div>
