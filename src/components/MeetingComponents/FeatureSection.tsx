@@ -1,20 +1,18 @@
 import React from "react";
-import { FeatureSectionProps , FeatureItem} from "@/app/types/product.types";
+import { FeatureSectionProps, FeatureItem } from "@/app/types/product.types";
 
 
 const FeatureSection: React.FC<FeatureSectionProps> = ({ data, index }) => {
   const isEven = index % 2 === 0;
   return (
     <div
-      className={`scroll-mt-20 font-grotesque lg:h-screen ${
-        isEven ? "bg-white" : "bg-bg-blue"
-      }`}
+      className={`scroll-mt-20 font-grotesque lg:h-screen ${isEven ? "bg-white" : "bg-bg-blue"
+        }`}
     >
       <div className="container">
         <div
-          className={`flex flex-col-reverse w-full ${
-            isEven ? " lg:flex-row-reverse" : "lg:flex-row"
-          } items-stretch`}
+          className={`flex flex-col-reverse w-full ${isEven ? " lg:flex-row-reverse" : "lg:flex-row"
+            } items-stretch`}
         >
           {/* Text Content */}
           <div className="lg:w-1/2 pl-4 pr-4 lg:pl-20 lg:gap-12 py-6 lg:py-18 px-4 lg:pr-32   lg:h-screen">
@@ -54,9 +52,8 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({ data, index }) => {
               width={data.image.width}
               height={data.image.height}
               decoding="async"
-              className={`w-full ${
-                data.image.height ? data.image.height : "h-auto lg:h-screen"
-              } `}
+              className={`w-full ${data.image.height ? data.image.height : "h-auto lg:h-screen"
+                } `}
               srcSet={`
                 ${data.image.src}?w=1200&q=75 1x,
                 ${data.image.src}?w=3840&q=75 2x
@@ -104,7 +101,7 @@ export const featuresData: FeatureItem[] = [
     ctaText: "Sign up for free",
     ctaLink: "/sign-up",
     image: {
-      src: "https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage.b2c41a50.png&w=1920&q=75",
+      src: "/assets/submitted.webp",
       alt: "Illustration for Find and Close the Right Buyers with Apollo's B2B Database",
     },
   },
@@ -123,7 +120,7 @@ export const featuresData: FeatureItem[] = [
 
     imgbg: "#DCD2FD",
     image: {
-      src: "https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage.f659859f.png&w=3840&q=75",
+      src: "/assets/host.webp",
       alt: "Illustration for Use Apollo's B2B Database Wherever You Work",
       height: "h-[320px]",
     },
@@ -143,7 +140,7 @@ export const featuresData: FeatureItem[] = [
     ctaText: "Sign up for free",
     ctaLink: "/sign-up",
     image: {
-      src: "https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage.26acbc26.png&w=1920&q=75",
+      src: "/assets/insights.webp",
       alt: "Illustration for bigger deals Apollo's B2B Database ",
     },
   },
@@ -162,7 +159,7 @@ export const featuresData: FeatureItem[] = [
     ),
     imgbg: "#A288FA",
     image: {
-      src: "https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage.4ec41bcc.png&w=1920&q=75",
+      src: "/assets/filled.webp",
       alt: "Illustration for bigger deals Apollo's B2B Database ",
     },
   },

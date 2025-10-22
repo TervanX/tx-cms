@@ -35,12 +35,12 @@ export default function Header() {
           </li>
           {/* <li className="group relative">
             <Link className="text-base leading-none font-semibold tracking-tight cursor-pointer rounded-md border border-transparent px-2 py-2 transition-all duration-300 text-white hover:text-white/80" href="#">
-              View demo
+              Login
             </Link>
           </li> */}
           <li className="group relative">
             <button className="relative inline-block cursor-pointer rounded-md font-semibold tracking-tight whitespace-nowrap text-black text-base px-4 py-2.5 leading-none overflow-hidden">
-              <span className="absolute inset-0 block w-full rounded-md transition-all duration-400 bg-[#0d07ed] group-hover:bg-white/80"></span>
+              <span className="absolute inset-0 block w-full rounded-md transition-all duration-400 bg-primary group-hover:bg-primary/80"></span>
               <span className="relative z-10 text-[#f0f0f2]">Get Started</span>
             </button>
           </li>

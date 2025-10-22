@@ -10,20 +10,20 @@ const LiveChat = () => {
       title: "Fully customizable",
       description:
         "Customize the Messenger to match your brand, wherever your customers are within your product, app, or website.",
-      img: "https://images.ctfassets.net/xny2w179f4ki/1Q8PUvFnuhUmnatXRiiGrh/6f391b62fa3d568945a0a9fd689f39ae/I2Y2_-_Product_page_asset_-_Omnichannel_-_Feature_highlight_-_01.webp?&q=90&w=2560",
+      img: "/assets/highlight.webp",
     },
     {
       title: "Self-serve enabled",
       description:
         "Tailor the Messenger with self-serve apps that empower your customers to find help articles, read product updates, and more—without having to start a conversation.",
-      img: "https://images.ctfassets.net/xny2w179f4ki/1Q8PUvFnuhUmnatXRiiGrh/6f391b62fa3d568945a0a9fd689f39ae/I2Y2_-_Product_page_asset_-_Omnichannel_-_Feature_highlight_-_01.webp?&q=90&w=2560",
+      img: "/assets/highlight.webp",
     },
 
     {
       title: "Multi-brand & multilingual",
       description:
         "Support multiple brands, resolve queries in 45 languages and deliver exceptional experiences within the Messenger—anytime, anywhere.",
-      img: "https://images.ctfassets.net/xny2w179f4ki/1Q8PUvFnuhUmnatXRiiGrh/6f391b62fa3d568945a0a9fd689f39ae/I2Y2_-_Product_page_asset_-_Omnichannel_-_Feature_highlight_-_01.webp?&q=90&w=2560",
+      img: "/assets/highlight.webp",
     },
   ];
   return (

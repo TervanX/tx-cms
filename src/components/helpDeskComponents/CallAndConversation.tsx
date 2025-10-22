@@ -17,7 +17,7 @@ const CallAndConversation = () => {
               alignLeft
               title="Calls and conversations in one place"
               tag="Phone"
-              description="Use phone calls, video calls, and screen sharing to troubleshoot customer issues faster with modern, native phone support. Route, assign and automate calls with fully customizable, no-code IVR trees that shorten wait times and increase team productivity."
+              description="Use phone calls, video calls, and screen sharing to troubleshootcustomer issues faster with modern, native phone support. Route, assign and automate calls with fully customizable, no-code IVR trees that shorten wait times and increase team productivity."
             />
           </div>
           <div className="flex flex-col lg:flex-row gap-6   flex-1 ">
@@ -31,7 +31,7 @@ const CallAndConversation = () => {
                 />
               </div>
               <img
-                src="https://images.ctfassets.net/xny2w179f4ki/2v9i8vjuSOjVktQV0oIeLp/e9b3bbdf6b61476bb06f12e67b4bde90/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560"
+                src="/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560"
                 className="relative z-10"
               />
             </div>

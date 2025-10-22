@@ -3,7 +3,7 @@ import Footer from "@/components/reusable/Footer";
 import Header from "@/components/reusable/NavBar";
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="bg-bg-footer lg:p-8 lg:pt-20 pt-12">
+    <div className="bg-white lg:p-8 lg:pt-18 pt-12">
       <Header />
       {children}
       <Footer />

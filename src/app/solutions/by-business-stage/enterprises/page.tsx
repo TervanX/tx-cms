@@ -25,12 +25,12 @@ const Page = () => {
         subheading=" Scale your digital asset ecosystem globally."
         tag="TX channel"
         primaryButton={{
-          text: "View demo",
+          text: "Login",
           href: "/sign-up",
         }}
         secondaryButton={{
-          text: "Start free trial",
-          href: "/demo",
+          text: "Contact Sales",
+          href: "/contact-sales",
         }}
       />
       <div className="w-[95%] mx-auto">

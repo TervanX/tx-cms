@@ -18,7 +18,7 @@ const PositionSection = () => {
       </div>
       <div className="w-full lg:w-2/6 flex items-center">
         <img
-          src="https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fclosing-cta.519d5144.jpg&w=1920&q=75"
+          src="/assets/closing.webp"
           className="w-full h-auto rounded-lg"
           alt=""
         />

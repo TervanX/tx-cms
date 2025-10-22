@@ -10,20 +10,20 @@ const GlobalWhatsapp = () => {
       title: "Integrate all your accounts",
       description:
         "Connect and manage all of your WhatsApp business accounts in a single workspace, to ensure you never miss a message.",
-      img: "https://images.ctfassets.net/xny2w179f4ki/2v9i8vjuSOjVktQV0oIeLp/e9b3bbdf6b61476bb06f12e67b4bde90/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+      img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
     },
     {
       title: "Deliver context-rich support",
       description:
         "Send and receive images, attachments and more directly from the Inbox, so your support agents have all the context they need to resolve issues faster.",
-      img: "https://images.ctfassets.net/xny2w179f4ki/2v9i8vjuSOjVktQV0oIeLp/e9b3bbdf6b61476bb06f12e67b4bde90/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+      img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
     },
 
     {
       title: "Capture CSAT on WhatsApp",
       description:
         "Monitor how satisfied customers are with the support provided, and how it compares to your other channels.",
-      img: "https://images.ctfassets.net/xny2w179f4ki/2v9i8vjuSOjVktQV0oIeLp/e9b3bbdf6b61476bb06f12e67b4bde90/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+      img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
     },
   ];
   return (
@@ -60,7 +60,7 @@ const GlobalWhatsapp = () => {
                 />
               </div>
               <img
-                src="https://images.ctfassets.net/xny2w179f4ki/2v9i8vjuSOjVktQV0oIeLp/e9b3bbdf6b61476bb06f12e67b4bde90/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560"
+                src="/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560"
                 className="relative z-10"
               />
             </div>

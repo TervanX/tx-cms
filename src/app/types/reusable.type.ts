@@ -7,6 +7,7 @@ export const ButtonVariantSchema = z.enum([
   "outline",
   "ghost",
   "danger",
+  "blue"
 ]);
 
 export const ButtonSizeSchema = z.enum(["sm", "md", "lg"]);
@@ -73,16 +74,16 @@ export const InputPropsSchema = z.object({
 export const PasswordInputPropsSchema = InputPropsSchema;
 
 export const FooterLinkSchema = z.object({
-    label: z.string(),
-    href: z.string(),
-    external: z.boolean().optional()
+  label: z.string(),
+  href: z.string(),
+  external: z.boolean().optional()
 })
 
 export const FooterSectionSchema = z.object({
-    title: z.string(),
-    links: z.array(FooterLinkSchema),
-    socialTitle: z.string().optional(),
-    socialLinks: z.array(FooterLinkSchema).optional()
+  title: z.string(),
+  links: z.array(FooterLinkSchema),
+  socialTitle: z.string().optional(),
+  socialLinks: z.array(FooterLinkSchema).optional()
 });
 export type FooterLink = z.infer<typeof FooterLinkSchema>
 export type FooterSection = z.infer<typeof FooterSectionSchema>

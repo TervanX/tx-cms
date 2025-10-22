@@ -23,7 +23,7 @@ const StreamlineSection = () => {
                     Sign up for free
                   </Button>
                 </a>
-                <a href="/demo" className="w-full sm:w-auto">
+                <a href="/contact-sales" className="w-full sm:w-auto">
                   <Button className="w-full sm:w-auto bg-transparent hover:bg-white/10 text-dark font-medium px-8 py-3.5 rounded-lg border-2 border-dark transition-all duration-200 min-w-[200px] text-base sm:text-lg">
                     Get Meeting
                   </Button>

@@ -5,7 +5,7 @@ const CompetitorsSection = () => {
         Brief competitor comparison table
       </h4>
       <div className="w-3/4 mx-auto mt-20">
-        <img src="https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage.45211116.png&w=3840&q=75"  alt=""/>
+        <img src="/assets/table.webp" alt="" />
       </div>
     </div>
   );

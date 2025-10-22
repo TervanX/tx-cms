@@ -44,28 +44,28 @@ interface CardProps {
 const cards: CardProps[] = [
   {
     id: "1",
-    img: "https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fremote.c60b2119.jpg&w=384&q=75",
+    img: "/assets/work.webp",
     title: "Remote (global)",
     description:
       "Our team spans 22 countries, so you can work where your feet are.",
   },
   {
     id: "1",
-    img: "https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fremote.c60b2119.jpg&w=384&q=75",
+    img: "/assets/work.webp",
     title: "Remote (global)",
     description:
       "Our team spans 22 countries, so you can work where your feet are.",
   },
   {
     id: "1",
-    img: "https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fremote.c60b2119.jpg&w=384&q=75",
+    img: "/assets/work.webp",
     title: "Remote (global)",
     description:
       "Our team spans 22 countries, so you can work where your feet are.",
   },
   {
     id: "1",
-    img: "https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fremote.c60b2119.jpg&w=384&q=75",
+    img: "/assets/work.webp",
     title: "Remote (global)",
     description:
       "Our team spans 22 countries, so you can work where your feet are.",

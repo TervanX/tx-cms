@@ -17,15 +17,15 @@ const Page = () => {
   return (
     <div className="relative z-10">
       <div>
-      <div ref={heroRef} className="sticky top-0 z-10 min-h-screen">
-        <HeroSection />
-      </div>
-      <div className="relative z-20">
-        <CompaniesSection />
-      </div>
+        <div ref={heroRef} className="sticky top-0 z-10 min-h-screen">
+          <HeroSection />
+        </div>
+        <div className="relative z-20">
+          <CompaniesSection />
+        </div>
       </div>
       <StackedAnimation />
-      <CardShowcase />
+      {/* <CardShowcase /> */}
       <ApolloTestimonials />
       <FooterCTA />
     </div>

@@ -116,7 +116,7 @@ export function HeroSection({
       </div>
       <div className="relative ">
         <img
-          src="https://images.ctfassets.net/xny2w179f4ki/2v9a9L8A50cMnG0trtCdLD/188790ba767ce9d6f512e333cbc4cd42/Omnichannel_foreground.webp?&q=90&w=2560"
+          src="/assets/Omnichannel_foreground.webp?&q=90&w=2560"
           className="w-[80%] mx-auto"
         />
         <div className="flex items-center w-[80%] mx-auto py-16">

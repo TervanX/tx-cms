@@ -24,7 +24,7 @@ const LifeAtTenaxHero = () => {
         </div>
         <div className="">
           <img
-            src="https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-image.39c4fd2b.jpg&w=750&q=75"
+            src="/assets/image.webp"
             className="w-full h-auto rounded-2xl"
             alt=""
           />

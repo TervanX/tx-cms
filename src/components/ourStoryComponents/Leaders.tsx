@@ -37,31 +37,31 @@ interface CardProps {
 const cards: CardProps[] = [
   {
     id: "1",
-    logo: "https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmatt-curl.b9b2901f.png&w=640&q=75",
+    logo: "/assets/leaders.webp",
     year: "2015",
     description: "Company is founded",
   },
   {
     id: "2",
-    logo: "https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmatt-curl.b9b2901f.png&w=640&q=75",
+    logo: "/assets/leaders.webp",
     year: "2016",
     description: "Team expands globally",
   },
   {
     id: "3",
-    logo: "https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmatt-curl.b9b2901f.png&w=640&q=75",
+    logo: "/assets/leaders.webp",
     year: "2018",
     description: "Launch of core product",
   },
   {
     id: "4",
-    logo: "https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmatt-curl.b9b2901f.png&w=640&q=75",
+    logo: "://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmatt-curl.b9b2901f.png&w=640&q=75",
     year: "2020",
     description: "Reached 1M users",
   },
   {
     id: "5",
-    logo: "https://www.apollo.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmatt-curl.b9b2901f.png&w=640&q=75",
+    logo: "/assets/leaders.webp",
     year: "2023",
     description: "Expanded into new markets",
   },
@@ -139,9 +139,8 @@ const CardShowcase: React.FC = () => {
               type="button"
               onClick={() => scrollByOne(-1)}
               disabled={!canLeft}
-              className={`w-10 ${
-                !canLeft ? "opacity-50 cursor-not-allowed" : ""
-              }`}
+              className={`w-10 ${!canLeft ? "opacity-50 cursor-not-allowed" : ""
+                }`}
             >
               <IoArrowBackSharp />
             </Button>
@@ -151,9 +150,8 @@ const CardShowcase: React.FC = () => {
               type="button"
               onClick={() => scrollByOne(1)}
               disabled={!canRight}
-              className={`w-10 ${
-                !canRight ? "opacity-50 cursor-not-allowed" : ""
-              }`}
+              className={`w-10 ${!canRight ? "opacity-50 cursor-not-allowed" : ""
+                }`}
             >
               <IoArrowForwardSharp />
             </Button>
@@ -202,7 +200,7 @@ const Card: React.FC<{ item: CardProps; index: number }> = ({ item }) => {
         className="absolute inset-0 z-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://www.apollo.io/_next/static/media/hover-2.9fd5a57b.png')",
+            "url('/assets/hover-2.9fd5a57b.png')",
         }}
       />
 

@@ -8,20 +8,20 @@ const BrandEmailSupport = () => {
       title: "Ensure every email is on-brand",
       description:
         "Support multiple email domains, assign logos and create custom signatures to ensure every customer email reflects your unique brand identity.",
-      img: "https://images.ctfassets.net/xny2w179f4ki/1Q8PUvFnuhUmnatXRiiGrh/6f391b62fa3d568945a0a9fd689f39ae/I2Y2_-_Product_page_asset_-_Omnichannel_-_Feature_highlight_-_01.webp?&q=90&w=2560",
+      img: "/assets/highlight.webp",
     },
     {
       title: "Continue the conversation",
       description:
         "Move the conversation from live chat to email, and let customers pick up when it’s most convenient to them.",
-      img: "https://images.ctfassets.net/xny2w179f4ki/1Q8PUvFnuhUmnatXRiiGrh/6f391b62fa3d568945a0a9fd689f39ae/I2Y2_-_Product_page_asset_-_Omnichannel_-_Feature_highlight_-_01.webp?&q=90&w=2560",
+      img: "/assets/highlight.webp",
     },
 
     {
       title: "Track email performance",
       description:
         "Monitor performance metrics and customer satisfaction to maintain high CSAT for your email support.",
-      img: "https://images.ctfassets.net/xny2w179f4ki/1Q8PUvFnuhUmnatXRiiGrh/6f391b62fa3d568945a0a9fd689f39ae/I2Y2_-_Product_page_asset_-_Omnichannel_-_Feature_highlight_-_01.webp?&q=90&w=2560",
+      img: "/assets/highlight.webp",
     },
   ];
   return (
