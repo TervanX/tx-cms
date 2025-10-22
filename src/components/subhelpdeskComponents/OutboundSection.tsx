@@ -1,9 +1,8 @@
 // src/app/components/ContentLayout/sections/OutboundSection.tsx
 'use client'
 
-import { motion } from 'framer-motion'
-import { useInView } from 'framer-motion'
-import { useRef } from 'react'
+import { motion, useMotionValue, useTransform, animate, useInView } from 'framer-motion'
+import { useRef, useEffect } from 'react'
 import { ArrowUpRight } from 'lucide-react'
 
 export default function OutboundSection() {
@@ -145,23 +144,12 @@ export default function OutboundSection() {
 
                             <ul className="isolate my-3 flex gap-3 lg:gap-5 2xl:gap-12 @3xl:col-start-2 @3xl:mx-auto @3xl:my-0 @3xl:self-center">
                                 {g2Comparison.map((item, index) => (
-                                    <li key={item.name}>
-                                        <div className="flex flex-col items-center gap-4 text-center xl:gap-5">
-                                            <span className={`relative z-10 flex [height:clamp(80px,calc(80px_+_20_*_((100vw_-_330px)_/_50)),100px)] [width:clamp(80px,calc(80px_+_20_*_((100vw_-_330px)_/_50)),100px)] items-center justify-center rounded-full font-serif text-5xl font-light tracking-[-2.88px] lg:size-[150px] lg:text-[4.5rem] xl:size-[190px] xl:text-[5.25rem] ${item.color}`}>
-                                                <span>{item.value}</span>
-                                                <span
-                                                    className="absolute inset-0 -z-10 rounded-full after:absolute after:inset-[2px] after:rounded-full after:bg-[var(--bento-bg)] after:transition-colors after:duration-500 border-2"
-                                                    style={{
-                                                        border: `conic-gradient(black ${(item.value / 100) * 360}deg,  rgba(0, 0, 0, 0.2) ${(item.value / 100) * 360}deg 360deg)`
-                                                    }}
-                                                />
-                                            </span>
-                                            <span className={`leading-[125%] tracking-[-0.16px] ${item.value > 0 ? 'font-semibold' : ''}`}>
-                                                {item.name}
-                                            </span>
-                                        </div>
-
-                                    </li>
+                                    <G2ComparisonItem
+                                        key={item.name}
+                                        item={item}
+                                        index={index}
+                                        isInView={isInView}
+                                    />
                                 ))}
                             </ul>
 
@@ -185,5 +173,54 @@ export default function OutboundSection() {
                 </div>
             </div>
         </section>
+    )
+}
+
+interface G2ComparisonItemProps {
+    item: {
+        name: string;
+        value: number;
+        color: string;
+    };
+    index: number;
+    isInView: boolean;
+}
+
+function G2ComparisonItem({ item, index, isInView }: G2ComparisonItemProps) {
+    const count = useMotionValue(0)
+    const rounded = useTransform(count, latest => Math.round(latest))
+    const borderProgress = useTransform(count, [0, 100], [0, 360])
+
+    useEffect(() => {
+        if (isInView && item.value > 0) {
+            const controls = animate(count, item.value, {
+                duration: 2,
+                delay: 0.8 + (index * 0.3),
+                ease: "easeOut"
+            })
+
+            return controls.stop
+        }
+    }, [isInView, item.value, count, index])
+
+    return (
+        <li>
+            <div className="flex flex-col items-center gap-4 text-center xl:gap-5">
+                <span className={`relative z-10 flex [height:clamp(80px,calc(80px_+_20_*_((100vw_-_330px)_/_50)),100px)] [width:clamp(80px,calc(80px_+_20_*_((100vw_-_330px)_/_50)),100px)] items-center justify-center rounded-full font-serif text-5xl font-light tracking-[-2.88px] lg:size-[150px] lg:text-[4.5rem] xl:size-[190px] xl:text-[5.25rem] ${item.color}`}>
+                    <motion.span>{rounded}</motion.span>
+                    <motion.span
+                        className="absolute inset-0 -z-10 rounded-full after:absolute after:inset-[2px] after:rounded-full after:bg-[var(--bento-bg)] after:transition-colors after:duration-500 border-2"
+                        style={{
+                            background: `conic-gradient(black ${borderProgress}deg, transparent ${borderProgress}deg 360deg)`,
+                            mask: 'linear-gradient(white, white) padding-box, linear-gradient(white, white)',
+                            maskComposite: 'exclude'
+                        }}
+                    />
+                </span>
+                <span className={`leading-[125%] tracking-[-0.16px] ${item.value > 0 ? 'font-semibold' : ''}`}>
+                    {item.name}
+                </span>
+            </div>
+        </li>
     )
 }
