@@ -67,13 +67,34 @@ const navItems: NavItemInterface[] = [
         description:
           "All TervanX’s core infrastructure and modules — fiat, crypto, and plugin systems.",
         links: [
-          { href: "/product/payments-infrastructure/crypto-payments", text: "Crypto Payments" },
-          { href: "/product/payments-infrastructure/fiat-payments", text: "Fiat Payments" },
-          { href: "/product/payments-infrastructure/checkout", text: "Checkout " },
-          { href: "/product/payments-infrastructure/payment-links", text: "Payment Links " },
-          { href: "/product/payments-infrastructure/pos-terminal", text: "POS / Terminal  " },
-          { href: "/product/payments-infrastructure/payout-api", text: "Payouts API  " },
-          { href: "/product/payments-infrastructure/payment-method", text: "Payment Methods " }
+          {
+            href: "/product/payments-infrastructure/crypto-payments",
+            text: "Crypto Payments",
+          },
+          {
+            href: "/product/payments-infrastructure/fiat-payments",
+            text: "Fiat Payments",
+          },
+          {
+            href: "/product/payments-infrastructure/checkout",
+            text: "Checkout ",
+          },
+          {
+            href: "/product/payments-infrastructure/payment-links",
+            text: "Payment Links ",
+          },
+          {
+            href: "/product/payments-infrastructure/pos-terminal",
+            text: "POS / Terminal  ",
+          },
+          {
+            href: "/product/payments-infrastructure/payout-api",
+            text: "Payouts API  ",
+          },
+          {
+            href: "/product/payments-infrastructure/payment-method",
+            text: "Payment Methods ",
+          },
         ],
       },
       {
@@ -96,10 +117,19 @@ const navItems: NavItemInterface[] = [
         description: "",
         linkTitle: "",
         links: [
-          { href: "/product/asset-infrastructure/wallet-api", text: "Wallets API" },
+          {
+            href: "/product/asset-infrastructure/wallet-api",
+            text: "Wallets API",
+          },
           { href: "/product/asset-infrastructure/vault", text: "Vault" },
-          { href: "/product/asset-infrastructure/exchange-engine", text: "Exchange Engine" },
-          { href: "/product/asset-infrastructure/liquidity-hub", text: "Liquidity Hub" },
+          {
+            href: "/product/asset-infrastructure/exchange-engine",
+            text: "Exchange Engine",
+          },
+          {
+            href: "/product/asset-infrastructure/liquidity-hub",
+            text: "Liquidity Hub",
+          },
         ],
       },
       {
@@ -139,10 +169,22 @@ const navItems: NavItemInterface[] = [
         description: "",
         linkTitle: "",
         links: [
-          { href: "/product/automation-intelligence/tx-smartflow", text: "Tx SmartFlow" },
-          { href: "/product/automation-intelligence/tx-automate", text: "Tx Automate" },
-          { href: "/product/automation-intelligence/revenue-recognition", text: "Revenue Recognition" },
-          { href: "/product/automation-intelligence/risk-compliance-ai", text: "Risk & Compliance AI " },
+          {
+            href: "/product/automation-intelligence/tx-smartflow",
+            text: "Tx SmartFlow",
+          },
+          {
+            href: "/product/automation-intelligence/tx-automate",
+            text: "Tx Automate",
+          },
+          {
+            href: "/product/automation-intelligence/revenue-recognition",
+            text: "Revenue Recognition",
+          },
+          {
+            href: "/product/automation-intelligence/risk-compliance-ai",
+            text: "Risk & Compliance AI ",
+          },
         ],
       },
       {
@@ -182,10 +224,16 @@ const navItems: NavItemInterface[] = [
         description: "",
         linkTitle: "",
         links: [
-          { href: "/product/finance-treasury/tx-accounts", text: "Tx Accounts " },
+          {
+            href: "/product/finance-treasury/tx-accounts",
+            text: "Tx Accounts ",
+          },
           { href: "/product/finance-treasury/tx-capital", text: "Tx Capital" },
           { href: "/product/finance-treasury/tx-issuing", text: "Tx Issuing" },
-          { href: "/product/finance-treasury/global-payouts", text: "Global Payouts" },
+          {
+            href: "/product/finance-treasury/global-payouts",
+            text: "Global Payouts",
+          },
         ],
       },
       {
@@ -225,11 +273,23 @@ const navItems: NavItemInterface[] = [
         description: "",
         linkTitle: "",
         links: [
-          { href: "/product/plugins-extension/auto-trade-plugin", text: "Auto Trade Plugin" },
-          { href: "/product/plugins-extension/treasury-plugin", text: "Treasury Plugin" },
+          {
+            href: "/product/plugins-extension/auto-trade-plugin",
+            text: "Auto Trade Plugin",
+          },
+          {
+            href: "/product/plugins-extension/treasury-plugin",
+            text: "Treasury Plugin",
+          },
           { href: "/product/plugins-extension/hr-plugin", text: "HR Plugin" },
-          { href: "/product/plugins-extension/health-plugin", text: "Health Plugin" },
-          { href: "/product/plugins-extension/logistics-plugin", text: "Logistics Plugin –" },
+          {
+            href: "/product/plugins-extension/health-plugin",
+            text: "Health Plugin",
+          },
+          {
+            href: "/product/plugins-extension/logistics-plugin",
+            text: "Logistics Plugin –",
+          },
         ],
       },
       {
@@ -269,8 +329,14 @@ const navItems: NavItemInterface[] = [
         description: "Find the right people and book quality meetings",
         linkTitle: "Sales Leaders",
         links: [
-          { href: "/product/security-optimization/tx-shield", text: "Tx Shield" },
-          { href: "/product/security-optimization/authorization-optimizer", text: "Authorization Optimizer " },
+          {
+            href: "/product/security-optimization/tx-shield",
+            text: "Tx Shield",
+          },
+          {
+            href: "/product/security-optimization/authorization-optimizer",
+            text: "Authorization Optimizer ",
+          },
           { href: "/product/security-optimization/tx-id", text: "Tx ID " },
           { href: "/product/security-optimization/tx-link", text: "Tx Link  " },
         ],
@@ -314,7 +380,10 @@ const navItems: NavItemInterface[] = [
         links: [
           { href: "/product/data-reporting/tx-sigma", text: "Tx Sigma" },
           { href: "/product/data-reporting/tx-pipeline", text: "Tx Pipeline" },
-          { href: "/product/data-reporting/tx-analytics", text: "Tx Analytics" },
+          {
+            href: "/product/data-reporting/tx-analytics",
+            text: "Tx Analytics",
+          },
         ],
       },
     ],
@@ -567,9 +636,18 @@ const navItems: NavItemInterface[] = [
         description: "Find the right people and book quality meetings",
         linkTitle: "Sales Leaders",
         links: [
-          { href: "/resources/support/support-center", text: "Support Center " },
-          { href: "/resources/support/managed-support-plans", text: "Managed Support Plans" },
-          { href: "/resources/support/contact-support", text: "Contact Support" },
+          {
+            href: "/resources/support/support-center",
+            text: "Support Center ",
+          },
+          {
+            href: "/resources/support/managed-support-plans",
+            text: "Managed Support Plans",
+          },
+          {
+            href: "/resources/support/contact-support",
+            text: "Contact Support",
+          },
           { href: "/contact-sales", text: "Contact-sales" },
         ],
       },
@@ -610,12 +688,14 @@ const navItems: NavItemInterface[] = [
         description: "Find the right people and book quality meetings",
         linkTitle: "Sales Leaders",
         links: [
-
           { href: "/resources/learn/blog", text: "Blog " },
           { href: "/resources/learn/case-studies", text: "Case Studies " },
           { href: "/resources/learn/documentation", text: "Documentation " },
           { href: "/resources/learn/guides", text: "Guides " },
-          { href: "/resources/learn/tervanx-sessions", text: "Tervanx Sessions (Annual Dev Summit) " },
+          {
+            href: "/resources/learn/tervanx-sessions",
+            text: "Tervanx Sessions (Annual Dev Summit) ",
+          },
         ],
       },
       {
@@ -655,9 +735,18 @@ const navItems: NavItemInterface[] = [
         description: "Find the right people and book quality meetings",
         linkTitle: "Sales Leaders",
         links: [
-          { href: "/resources/company_partners/become-a-partner", text: "Become a Partner" },
-          { href: "/resources/company_partners/professional-services", text: "Professional Services (Integration Assistance)" },
-          { href: "/resources/company_partners/partner-program", text: "Partner Program " },
+          {
+            href: "/resources/company_partners/become-a-partner",
+            text: "Become a Partner",
+          },
+          {
+            href: "/resources/company_partners/professional-services",
+            text: "Professional Services (Integration Assistance)",
+          },
+          {
+            href: "/resources/company_partners/partner-program",
+            text: "Partner Program ",
+          },
           { href: "/resources/company_partners/jobs", text: "Jobs " },
           { href: "/resources/company_partners/newsroom", text: "Newsroom" },
         ],
@@ -693,7 +782,6 @@ const navItems: NavItemInterface[] = [
   {
     title: "Developers",
     solutions: [
-
       {
         logo: (
           <svg
@@ -731,7 +819,10 @@ const navItems: NavItemInterface[] = [
         description: "Find the right people and book quality meetings",
         linkTitle: "Sales Leaders",
         links: [
-          { href: "/developers/documentation/get-started", text: "Get Started" },
+          {
+            href: "/developers/documentation/get-started",
+            text: "Get Started",
+          },
           { href: "/developers/documentation", text: "Prebuilt Components" },
           {
             href: "/developers/documentation/libraries-and-SDKs",
@@ -836,7 +927,10 @@ const navItems: NavItemInterface[] = [
         description: "Find the right people and book quality meetings",
         linkTitle: "Sales Leaders",
         links: [
-          { href: "/developers/developer-tools/x-console", text: "Tx Console" },
+          {
+            href: "/developers/developer-tools/tx-console",
+            text: "Tx Console",
+          },
           {
             href: "/api-changelog",
             text: "API Changelog",
@@ -888,11 +982,20 @@ const navItems: NavItemInterface[] = [
         description: "Full technical resources and integration docs. ",
         linkTitle: "lorewm raser",
         links: [
-          { href: "/developers/ecosystem/tx-marketplace", text: "Tx Marketplace " },
-          { href: "/developers/ecosystem/partner-network", text: "Partner Network " },
+          {
+            href: "/developers/ecosystem/tx-marketplace",
+            text: "Tx Marketplace ",
+          },
+          {
+            href: "/developers/ecosystem/partner-network",
+            text: "Partner Network ",
+          },
           { href: "/developers/ecosystem/tx-studio", text: "Tx Studio  " },
           { href: "/developers/ecosystem/tx-ventures", text: "Tx Ventures" },
-          { href: "/developers/ecosystem/partner-network", text: "Partner Network " },
+          {
+            href: "/developers/ecosystem/partner-network",
+            text: "Partner Network ",
+          },
         ],
       },
     ],
@@ -1014,7 +1117,7 @@ const DeskTopNavbar = () => {
   return (
     <div className=" py-4 hidden lg:flex items-center justify-between">
       <div className="flex gap-16 items-center justify-start">
-        <div className="flex items-center gap-2 font-bold text-lg">
+        <Link href="/home" className="flex items-center gap-2 font-bold text-lg">
           <Image
             src="/assets/logo.svg"
             className="h-6 w-6"
@@ -1023,7 +1126,7 @@ const DeskTopNavbar = () => {
             alt="logo"
           />
           <span className="font-medium font-grotesque">TervanX</span>
-        </div>
+        </Link>
         <nav className="hidden lg:flex gap-10 relative">
           {navItems.map((item, index) => (
             <NavItem nav={item} key={index} />
@@ -1038,9 +1141,7 @@ const DeskTopNavbar = () => {
           Get Started
         </Button>
         <Button size="md" variant="primary" type="button">
-          <Link href="/contact-sales">
-            Contact Sales
-          </Link>
+          <Link href="/contact-sales">Contact Sales</Link>
         </Button>
       </div>
     </div>
@@ -1195,12 +1296,14 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, onClose }) => {
         >
           Log in
         </Button>
-        <Button size="md"
+        <Button
+          size="md"
           onClick={onClose}
-          className="flex-1" variant="primary" type="button">
-          <Link href="/contact-sales">
-            Contact Sales
-          </Link>
+          className="flex-1"
+          variant="primary"
+          type="button"
+        >
+          <Link href="/contact-sales">Contact Sales</Link>
         </Button>
       </div>
     </motion.div>

@@ -1,5 +1,4 @@
 "use client";
-
 import Button from "@/components/reusable/Button";
 import FilterBy from "@/components/whatsnewComponents/FilterBy";
 import MobileFilter from "@/components/whatsnewComponents/MobileFilter";
@@ -11,13 +10,27 @@ const WhatsNewPage = () => {
       <h3 className="font-bold text-4xl lg:mb-8">What's new in Play Tervanx</h3>
 
       <div className="flex flex-col lg:flex-row lg:gap-10 pt-10">
+<<<<<<< HEAD:src/app/api-changelog/page.tsx
         <div className="hidden lg:block lg:w-[400px] ">
           <div className="fixed top-[calc(var(--header-height)+2rem)] w-[300px]">
+=======
+        <div className="hidden lg:block lg:w-[400px]">
+          <div
+            className="sticky w-[300px]"
+            style={{
+              top: "14rem",
+              height: "fit-content",
+              maxHeight: "calc(100vh - 14rem)",
+              overflowY: "auto",
+            }}
+          >
+>>>>>>> 521f090f3442ed9b46773abe726ac622beacac4e:src/app/whats-new/page.tsx
             <FilterBy />
           </div>
         </div>
-        <MobileFilter />
-        <div className="w-full">
+
+        {/* Right content container with relative positioning */}
+        <div className="w-full relative">
           <div>
             <p className="font-medium pb-4 border-gray-300 border-b">
               June 2024
@@ -120,42 +133,3 @@ const Suggesstion = () => {
     </div>
   );
 };
-
-
-// const FilterBy = () => {
-//   return (
-//     <div className="border-gray-300 border rounded-xl py-1">
-//       <p className="font-medium p-4 border-gray-300 border-b">Filter by</p>
-//       <div className="flex-flex-col gap-2">
-//         <button className="px-4 py-2 flex items-center justify-between w-full hover:bg-gray-300 cursor-pointer hover:bg-gray-100">
-//           <span className="flex items-center justify-start gap-4">
-//             <GoRocket />
-//             Test and release
-//           </span>
-//           <LiaTimesSolid />
-//         </button>
-//         <button className="px-4 py-2 flex items-center justify-between w-full hover:bg-gray-100">
-//           <span className="flex items-center justify-start gap-4">
-//             <GoRocket />
-//             Monitor and improve
-//           </span>
-//           <LiaTimesSolid />
-//         </button>
-//         <button className="px-4 py-2 flex items-center justify-between w-full hover:bg-gray-100">
-//           <span className="flex items-center justify-start gap-4">
-//             <GoRocket />
-//             Grow users{" "}
-//           </span>
-//           <LiaTimesSolid />
-//         </button>
-//         <button className="px-4 py-2 flex items-center justify-between w-full hover:bg-gray-100">
-//           <span className="flex items-center justify-start gap-4">
-//             <GoRocket />
-//             Monetize with Play{" "}
-//           </span>
-//           <LiaTimesSolid />
-//         </button>
-//       </div>
-//     </div>
-//   );
-// };

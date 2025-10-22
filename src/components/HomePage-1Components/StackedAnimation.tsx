@@ -1,42 +1,37 @@
 "use client";
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const TOP_URL = "https://www.apollo.io/_next/static/media/top.a774887c.svg";
-const BOTTOM_URL =
-  "https://www.apollo.io/_next/static/media/bottom.6a696895.svg";
+const TOP_URL = "/assets/top.svg";
+const BOTTOM_URL = "/assets/bottom.svg";
 
 const items = [
   {
     title: "DATA",
-    description: "Access our B2B database of over 200 million contacts1",
-    scrollUrl: "/assets/data-inactive.7f01f44e.svg",
-    stackUrl: "/assets/data-inactive.7f01f44e.svg",
+    description: "Access our B2B database of over 200 million contacts",
+    scrollUrl: "/assets/1.svg",
+    stackUrl: "/assets/1.svg",
   },
   {
     title: "INTEGRATIONS",
-    description: "Access our B2B database of over 200 million contacts2",
-    scrollUrl:
-      "https://www.apollo.io/_next/static/media/integrations.e586a2d8.svg",
-    stackUrl:
-      "https://www.apollo.io/_next/static/media/integrations-inactive.2d9e7729.svg",
+    description: "Connect with your favorite tools and platforms",
+    scrollUrl: "/assets/2.svg",
+    stackUrl: "/assets/3.svg",
   },
   {
     title: "ACTIONS",
-    description: "Access our B2B database of over 200 million contacts3",
-    scrollUrl: "https://www.apollo.io/_next/static/media/actions.2272ba1f.svg",
-    stackUrl:
-      "https://www.apollo.io/_next/static/media/actions-inactive.f57a5102.svg",
+    description: "Automate your sales workflow with powerful actions",
+    scrollUrl: "/assets/4.svg",
+    stackUrl: "/assets/5.svg",
   },
   {
     title: "AI",
-    description: "Access our B2B database of over 200 million contacts4",
-    scrollUrl: "https://www.apollo.io/_next/static/media/ai.a20eacb2.svg",
-    stackUrl:
-      "https://www.apollo.io/_next/static/media/ai-inactive.220ca6d6.svg",
+    description: "Leverage AI to optimize your sales process",
+    scrollUrl: "/assets/6.svg",
+    stackUrl: "/assets/7.svg",
   },
 ];
 
@@ -45,6 +40,7 @@ const StackedAnimation: React.FC = () => {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const topRef = useRef<HTMLDivElement | null>(null);
   const bottomRef = useRef<HTMLDivElement | null>(null);
+  const [activeItem, setActiveItem] = useState<number>(0);
 
   const layerEls = useRef<HTMLElement[]>([]);
   const labelEls = useRef<HTMLDivElement[]>([]);
@@ -105,8 +101,7 @@ const StackedAnimation: React.FC = () => {
       const totalLength = stackPhaseLength + closePhaseLength;
 
       const TRI_BASE = 0.15;
-      const FADE_DUR = 0.7;
-
+      const FADE_DUR = 1;
       const tl = gsap.timeline({
         defaults: { ease: "power3.out" },
         scrollTrigger: {
@@ -126,8 +121,8 @@ const StackedAnimation: React.FC = () => {
               raw <= start
                 ? 0
                 : raw >= endStack
-                ? 1
-                : (raw - start) / (endStack - start);
+                  ? 1
+                  : (raw - start) / (endStack - start);
 
             const total = layers.length;
             const fadeFactor = 0.6;
@@ -138,7 +133,9 @@ const StackedAnimation: React.FC = () => {
             )((raw - endStack) / closePhaseLength);
             const allStacked = raw >= endStack;
 
-            placeMiddles(Math.min(total - 1, Math.floor(p * total)));
+            const activeIndex = Math.min(total - 1, Math.floor(p * total));
+            placeMiddles(activeIndex);
+            setActiveItem(activeIndex);
 
             layerEls.current.forEach((el, i) => {
               const label = labelEls.current[i];
@@ -169,10 +166,8 @@ const StackedAnimation: React.FC = () => {
 
               if (!allStacked) {
                 if (localP > 0 && localP < 1) {
-                  // ✅ Item is moving — show all
                   gsap.set([arrow, desc, title], { opacity: 1 });
                 } else if (localP >= 1) {
-                  // ✅ Item has stopped — start fading img + p based on scroll
                   const afterStop = gsap.utils.clamp(
                     0,
                     1,
@@ -183,11 +178,9 @@ const StackedAnimation: React.FC = () => {
                   gsap.set([arrow, desc], { opacity: arrowDescOpacity });
                   gsap.set(title, { opacity: 1 });
                 } else {
-                  // Not yet started
                   gsap.set([arrow, desc, title], { opacity: 0 });
                 }
               } else {
-                // ✅ After all stacked — fade out the entire label (including title)
                 gsap.set([arrow, desc], { opacity: 0 });
                 gsap.set(title, { opacity: 1 - afterAllProgress });
               }
@@ -273,10 +266,7 @@ const StackedAnimation: React.FC = () => {
               <div className="relative h-20">
                 <div className="flex items-center h-full mt-4">
                   <div className="">
-                    <img
-                      src="https://www.apollo.io/_next/static/media/arrow.f3418417.svg"
-                      alt=""
-                    />
+                    <img src="/assets/right-arrow.svg" alt="" />
                   </div>
 
                   <div className="h-full w-32 overflow-hidden">
@@ -284,7 +274,7 @@ const StackedAnimation: React.FC = () => {
                       {item.title}
                     </h6>
                     <p className="mt-1 text-xs text-dark px-2 mb-0 font-grotesque leading-tight break-all whitespace-normal">
-                      {item.description.replace(/\d+$/, "")}
+                      {item.description}
                     </p>
                   </div>
                 </div>
@@ -315,13 +305,17 @@ const StackedAnimation: React.FC = () => {
               </h6>
 
               <div className="w-full flex flex-col gap-2 lg:px-4 mt-6">
-                {[0, 1, 2, 3].map((i) => (
+                {items.map((item, index) => (
                   <div
-                    key={i}
-                    className="flex justify-between items-center border-solid border-sand border-b py-2"
+                    key={index}
+                    className={`flex justify-between items-center border-solid border-sand border-b py-2 transition-colors duration-300 ${activeItem === index ? 'px-2' : ''
+                      }`}
                   >
-                    <p className="text-sand hover:text-black text-xs">
-                      Pipeline Builder
+                    <p className={`text-xs transition-colors duration-300 ${activeItem === index
+                      ? 'text-black font-semibold'
+                      : 'text-sand hover:text-black'
+                      }`}>
+                      {item.title}
                     </p>
                     <a>
                       <svg
@@ -332,7 +326,7 @@ const StackedAnimation: React.FC = () => {
                       >
                         <path
                           d="M12.0421 3.52704L16.0644 7.54927C17.5693 9.05275 16.5033 11.6252 14.3757 11.6252L2.5 11.6208V12.3673L14.3787 12.3718C16.5048 12.3718 17.5708 14.9443 16.0659 16.4477L12.0406 20.473L12.5692 21L21.5692 12L12.5692 3L12.0406 3.52704H12.0421Z"
-                          fill="black"
+                          fill={activeItem === index ? "black" : "currentColor"}
                         />
                       </svg>
                     </a>
