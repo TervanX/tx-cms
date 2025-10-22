@@ -10,7 +10,7 @@ export default function FeaturesSection() {
     const ref = useRef(null)
     const isInView = useInView(ref, { once: true, margin: '-100px' })
     const [activeFeature, setActiveFeature] = useState('omnichannel')
-    const [loadedImages, setLoadedImages] = useState<Set<string>>(new Set())
+    const [imageErrors, setImageErrors] = useState<Set<string>>(new Set())
 
     const features = [
         {
@@ -18,110 +18,104 @@ export default function FeaturesSection() {
             name: 'Inbox',
             href: '/suite/helpdesk/inbox',
             description: 'Support for customers, before they need it',
-            image: '/assets/inbox.webp'
+            image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=400&fit=crop'
         },
         {
             id: 'copilot',
             name: 'Copilot',
             href: '/suite/helpdesk/copilot',
             description: 'AI-powered assistance for your team',
-            image: '/assets/copilot.webp'
+            image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=400&fit=crop'
         },
         {
             id: 'tickets',
             name: 'Tickets',
             href: '/suite/helpdesk/tickets',
             description: 'Efficient ticket management system',
-            image: '/assets/tickets.webp'
+            image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=400&fit=crop'
         },
         {
             id: 'omnichannel',
             name: 'Omnichannel',
             href: '/suite/helpdesk/omnichannel',
             description: 'Unified customer experience across channels',
-            image: '/assets/omnichanel.webp'
+            image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=400&fit=crop'
         },
         {
             id: 'help-center',
             name: 'Help Center',
             href: '/suite/helpdesk/help-center',
             description: 'Self-service support for your customers',
-            image: '/assets/helpcenter.webp'
+            image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=400&fit=crop'
         },
         {
             id: 'apps-integrations',
             name: 'Apps & Integrations',
             href: '/app-store',
             description: 'Extend functionality with integrations',
-            image: '/assets/apps.webp'
+            image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=400&fit=crop'
         },
         {
             id: 'reporting',
             name: 'Reporting',
             href: '/suite/helpdesk/reporting',
             description: 'Data-driven insights and analytics',
-            image: '/assets/reporting.webp'
+            image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=400&fit=crop'
         },
         {
             id: 'knowledge-hub',
             name: 'Knowledge Hub',
             href: '/suite/helpdesk/knowledge-hub',
             description: 'Centralized knowledge management',
-            image: '/assets/knowledge.webp'
+            image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=400&fit=crop'
         },
         {
             id: 'outbound',
             name: 'Outbound',
             href: '/suite/helpdesk/outbound',
             description: 'Proactive customer outreach',
-            image: '/assets/outbound.webp'
+            image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=400&fit=crop'
         }
     ]
 
     // Get the currently active feature data
     const activeFeatureData = features.find(feature => feature.id === activeFeature) || features[0]
 
-    // Preload images
-    useEffect(() => {
-        features.forEach(feature => {
-            const img = new Image()
-            img.src = feature.image
-            img.onload = () => {
-                setLoadedImages(prev => new Set(prev).add(feature.image))
-            }
-            img.onerror = () => {
-                console.warn(`Failed to load image: ${feature.image}`)
-            }
-        })
-    }, [])
+    const handleImageError = (imageSrc: string) => {
+        console.error(`Failed to load image: ${imageSrc}`)
+        setImageErrors(prev => new Set(prev).add(imageSrc))
+    }
 
-    const ImageDisplay = ({ className = "" }) => (
-        <div className={`relative aspect-square bg-gray-100 rounded-lg ${className}`}>
-            <AnimatePresence mode="wait">
-                <motion.div
-                    key={activeFeature} // Use activeFeature as key to trigger animation
+    const ImageDisplay = ({ className = "" }) => {
+        const isImageError = imageErrors.has(activeFeatureData.image)
 
-                    transition={{ duration: 0.3 }}
-                    className="absolute inset-0 overflow-hidden rounded-lg"
-                >
-                    <img
-                        alt={activeFeatureData.name}
-                        src={activeFeatureData.image} // Use the active feature's image directly
-                        className="w-full h-full object-cover"
-                        onError={(e) => {
-                            console.error(`Failed to load image: ${activeFeatureData.image}`)
-                            e.currentTarget.style.display = 'none'
-                        }}
-                    />
-                    {!loadedImages.has(activeFeatureData.image) && (
-                        <div className="absolute inset-0 flex items-center justify-center bg-gray-200">
-                            <div className="text-gray-500">Loading {activeFeatureData.name}...</div>
-                        </div>
-                    )}
-                </motion.div>
-            </AnimatePresence>
-        </div>
-    )
+        return (
+            <div className={`relative aspect-square bg-gray-100 rounded-lg ${className}`}>
+                <AnimatePresence mode="wait">
+                    <motion.div
+                        key={activeFeature}
+                        className="absolute inset-0 overflow-hidden rounded-lg"
+                    >
+                        {!isImageError ? (
+                            <img
+                                alt={activeFeatureData.name}
+                                src={activeFeatureData.image}
+                                className="w-full h-full object-cover"
+                                onError={() => handleImageError(activeFeatureData.image)}
+                                onLoad={() => console.log(`✅ Loaded: ${activeFeatureData.name} - ${activeFeatureData.image}`)}
+                            />
+                        ) : (
+                            <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-200 text-gray-500 p-4">
+                                <div className="text-sm font-medium">Image not available</div>
+                                <div className="text-xs mt-2 text-center">{activeFeatureData.name}</div>
+                                <div className="text-xs mt-1 opacity-70">{activeFeatureData.image}</div>
+                            </div>
+                        )}
+                    </motion.div>
+                </AnimatePresence>
+            </div>
+        )
+    }
 
     return (
         <section
@@ -184,21 +178,6 @@ export default function FeaturesSection() {
                         {/* Mobile Image */}
                         <div className="sticky bottom-3 z-10 mt-9 lg:hidden">
                             <ImageDisplay className="w-full max-w-[240px]" />
-
-                            {/* Mobile Description and Link */}
-                            <div className="mt-4 space-y-2">
-                                <p className="text-base leading-[135%] text-black/60">
-                                    {activeFeatureData.description}
-                                </p>
-                                <a
-                                    className="font-sans relative cursor-pointer bg-gradient-to-r from-current to-current bg-no-repeat bg-[size:100%_0.05em] bg-[position:0%_100%] [transition:background-size_0.2s_ease-out] hover:bg-[size:0%_0.05em] hover:bg-[position:100%_100%] inline-block pb-1 leading-[95%] font-semibold tracking-[-0.16px] text-black text-sm"
-                                    href={activeFeatureData.href}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Find out more
-                                </a>
-                            </div>
                         </div>
                     </div>
                 </div>

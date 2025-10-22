@@ -1,6 +1,7 @@
 import { SectionProps } from "@/app/types/helpdesk.types";
 import React from "react";
 import Button from "../reusable/Button";
+import Tag from "./Tag";
 
 const SubSection: React.FC<SectionProps> = ({
   title,
@@ -12,7 +13,7 @@ const SubSection: React.FC<SectionProps> = ({
   primaryButton,
 }) => {
   return (
-    <div className="my-10 font-grotesque ">
+    <div className="my-10 font-grotesque">
       <div className="">
         <div
           className={`w-full ${
@@ -22,19 +23,13 @@ const SubSection: React.FC<SectionProps> = ({
           } flex flex-col gap-5`}
         >
           {tag && (
-            <div
-              className={`flex ${
-                alignLeft ? "justify-start" : "justify-center"
-              }  mb-4`}
-            >
-              <div className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">
-                {tag}
-              </div>
+            <div className={`${alignLeft ? "text-left" : "text-center"}`}>
+              <Tag tag={tag} />
             </div>
           )}
 
           <h1
-            className={`font-grotesque text-xl lg:text-3xl font-medium ${
+            className={`font-grotesque text-2xl lg:text-4xl ${
               alignLeft ? "text-left" : "text-center"
             }`}
           >
@@ -48,13 +43,14 @@ const SubSection: React.FC<SectionProps> = ({
             {description}
           </p>
           {ctaButton}
-
           <div className="flex flex-col sm:flex-row gap-4 justify-start items-center pt-4">
             {primaryButton && (
-              <a href={primaryButton.href} className="w-full sm:w-auto">
-                <Button className="w-full sm:w-auto bg-black hover:bg-gray-900 text-white font-medium px-8 py-3.5 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl min-w-[200px] text-base sm:text-lg">
-                  {primaryButton.text}
-                </Button>
+              <a
+                href={primaryButton.href}
+                className="relative inline-block cursor-pointer text-sm rounded-md font-semibold tracking-tight whitespace-nowrap bg-black text-white  px-4 py-2.5 leading-none overflow-hidden hover:text-black"
+              >
+                <span className="absolute inset-0 block w-full rounded-md transition-all duration-400 "></span>
+                <span className="relative z-10 "> {primaryButton.text}</span>
               </a>
             )}
           </div>

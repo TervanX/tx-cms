@@ -2,6 +2,8 @@ import React from "react";
 import Button from "../reusable/Button";
 import { HeroProps } from "@/app/types/product.types";
 import AutoScrollLogos from "./AutoScroll";
+import DottedLine from "./DottedBg";
+import Tag from "./Tag";
 export function HeroSection({
   backgroundImage = "/assets/image30.webp",
   backgroundAlt = "Abstract wave pattern background",
@@ -16,7 +18,7 @@ export function HeroSection({
 }: HeroProps) {
   return (
     <div
-      className={`relative min-h-screen overflow-hidden font-grotesque bg-white-transparent ${className}`}
+      className={`relative min-h-screen overflow-hidden font-grotesque bg-white-transparent ${className} pt-10 lg:pt-0`}
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 z-0">
@@ -27,50 +29,51 @@ export function HeroSection({
         />
       </div>
       {/* Content Container */}
-      <div className="relative  z-10 flex items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8 py-12">
-        <div className="max-w-6xl w-full">
-          <div className="text-center space-y-6 sm:space-y-8">
+      <div className="relative  z-10 flex items-center justify-center  px-4 sm:px-6 lg:px-8 py-8">
+        <div className="lg:max-w-3xl w-full">
+          <div className="text-center space-y-6 sm:space-y-6">
             {/* Tag */}
             {tag && (
-              <div className="inline-block">
-                <h6 className="sm:text-xl text-lg font-medium text-white tracking-wider">
-                  {tag}
-                </h6>
-              </div>
+              // <div className="inline-block bg-[#e8e4dc]">
+              //   <h6 className="sm:text-xl text-lg font-medium text-white tracking-wider">
+              //     {tag}
+              //   </h6>
+              // </div>
+              <Tag tag={tag} />
             )}
 
             {/* Main Heading */}
             {heading && (
-              <h1 className="text-white text-5xl md:text-7xl font-bold  md:leading-[77px] px-4">
+              <h1 className="text-white font-founders-grotesk text-4xl md:text-7xl font-normal  md:leading-[77px] lg:px-4">
                 {heading}
               </h1>
             )}
-
+            <DottedLine />
             {/* Subheading */}
             {subheading && (
-              <h6 className="text-white text-lg md:text-xl max-w-3xl mx-auto px-4 leading-relaxed">
+              <h6 className="text-white text-sm md:text-base max-w-3xl mx-auto lg:px-4 leading-relaxed">
                 {subheading}
               </h6>
             )}
 
             {/* CTA Buttons */}
             {(primaryButton || secondaryButton) && (
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4 pt-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4 mb-3 w-full">
                 {primaryButton && (
-                  <a href={primaryButton.href} className="w-full sm:w-auto">
-                    <Button className="w-full sm:w-auto bg-black hover:bg-gray-900 text-white font-medium px-8 py-3.5 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl min-w-[200px] text-base sm:text-lg">
-                      {primaryButton.text}
-                    </Button>
+                  <a className="w-full lg:w-auto relative block lg:inline-block cursor-pointer text-sm rounded-md font-semibold tracking-tight whitespace-nowrap text-white  px-4 py-2.5 leading-none overflow-hidden border-solid border-1 border-white hover:bg-white hover:text-black">
+                    <span className="absolute inset-0 block w-full rounded-md transition-all duration-400 "></span>
+                    <span className="relative z-10 ">{primaryButton.text}</span>
                   </a>
                 )}
                 {secondaryButton && (
-                  <a href={secondaryButton.href} className="w-full sm:w-auto">
-                    <Button
-                      className="w-full sm:w-auto bg-transparent hover:bg-white/10 text-black font-medium px-8 py-3.5 rounded-lg border-2 border-dark transition-all duration-200 min-w-[200px] text-base sm:text-lg"
-                      variant="outline"
-                    >
-                      {secondaryButton.text}
-                    </Button>
+                  <a
+                    href={secondaryButton.href}
+                    className="w-full lg:w-auto relative block lg:inline-block cursor-pointer text-sm rounded-md font-semibold tracking-tight whitespace-nowrap text-black  px-4 py-2.5 leading-none overflow-hidden border-solid border-1 border-white bg-white hover:bg-gray-50"
+                  >
+                    <span className="absolute  inset-0 block w-full rounded-md transition-all duration-400 "></span>
+                    <span className="relative z-10 ">
+                      {secondaryButton.text}{" "}
+                    </span>
                   </a>
                 )}
               </div>
@@ -116,16 +119,16 @@ export function HeroSection({
           src="https://images.ctfassets.net/xny2w179f4ki/2v9a9L8A50cMnG0trtCdLD/188790ba767ce9d6f512e333cbc4cd42/Omnichannel_foreground.webp?&q=90&w=2560"
           className="w-[80%] mx-auto"
         />
-        <div className="flex items-center w-[80%] mx-auto mt-12 pb-12">
-          <div className="flex items-center w-full  border-gray-50 border-solid border-t-[.3px] border-b-[.3px] ">
-            <p className="font-grotesque text-xs lg:text-sm  text-left text-white lg:pr-8">
+        <div className="flex items-center w-[80%] mx-auto py-16">
+          <div className="flex items-center w-full  border-[rgba(255,255,255,.1)] border-solid border-t-[.3px] border-b-[.3px] ">
+            <p className="font-grotesque text-xs lg:text-base  text-left text-white max-w-[12rem]">
               Trusted by more than 25,000 leading brands:
             </p>
-            {/* <AutoScrollLogos
+            <AutoScrollLogos
               speedSec={40}
               direction="left"
               className="bg-transparent"
-            /> */}
+            />
           </div>
         </div>
       </div>

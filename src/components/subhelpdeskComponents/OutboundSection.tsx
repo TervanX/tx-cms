@@ -209,7 +209,7 @@ function G2ComparisonItem({ item, index, isInView }: G2ComparisonItemProps) {
                 <span className={`relative z-10 flex [height:clamp(80px,calc(80px_+_20_*_((100vw_-_330px)_/_50)),100px)] [width:clamp(80px,calc(80px_+_20_*_((100vw_-_330px)_/_50)),100px)] items-center justify-center rounded-full font-serif text-5xl font-light tracking-[-2.88px] lg:size-[150px] lg:text-[4.5rem] xl:size-[190px] xl:text-[5.25rem] ${item.color}`}>
                     <motion.span>{rounded}</motion.span>
                     <motion.span
-                        className="absolute inset-0 -z-10 rounded-full after:absolute after:inset-[2px] after:rounded-full after:bg-[var(--bento-bg)] after:transition-colors after:duration-500 border-2"
+                        className="absolute inset-0 -z-10 rounded-full after:absolute after:inset-[2px] after:rounded-full after:bg-[var(--bento-bg)] after:transition-colors after:duration-500 border-2 "
                         style={{
                             background: `conic-gradient(black ${borderProgress}deg, transparent ${borderProgress}deg 360deg)`,
                             mask: 'linear-gradient(white, white) padding-box, linear-gradient(white, white)',

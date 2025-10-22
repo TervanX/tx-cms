@@ -66,13 +66,13 @@ const navItems: NavItemInterface[] = [
         description:
           "All TervanX’s core infrastructure and modules — fiat, crypto, and plugin systems.",
         links: [
-          { href: "#", text: "Crypto Payments" },
-          { href: "#", text: "Fiat Payments" },
-          { href: "#", text: "Checkout " },
-          { href: "#", text: "Payment Links " },
-          { href: "#", text: "POS / Terminal  " },
-          { href: "#", text: "Payouts API  " },
-          { href: "#", text: "Payment Methods " },
+          { href: "/product/payments-infrastructure/crypto-payments", text: "Crypto Payments" },
+          { href: "/product/payments-infrastructure/fiat-payments", text: "Fiat Payments" },
+          { href: "/product/payments-infrastructure/checkout", text: "Checkout " },
+          { href: "/product/payments-infrastructure/payment-links", text: "Payment Links " },
+          { href: "/product/payments-infrastructure/pos-terminal", text: "POS / Terminal  " },
+          { href: "/product/payments-infrastructure/payout-api", text: "Payouts API  " },
+          { href: "/product/payments-infrastructure/payment-method", text: "Payment Methods " },
         ],
       },
       {
@@ -95,10 +95,10 @@ const navItems: NavItemInterface[] = [
         description: "",
         linkTitle: "",
         links: [
-          { href: "#", text: "Wallets API" },
-          { href: "#", text: "Vault" },
-          { href: "#", text: "Exchange Engine" },
-          { href: "#", text: "Liquidity Hub" },
+          { href: "/product/asset-infrastructure/wallet-api", text: "Wallets API" },
+          { href: "/product/asset-infrastructure/vault", text: "Vault" },
+          { href: "/product/asset-infrastructure/exchange-engine", text: "Exchange Engine" },
+          { href: "/product/asset-infrastructure/liquidity-hub", text: "Liquidity Hub" },
         ],
       },
       {
@@ -138,10 +138,10 @@ const navItems: NavItemInterface[] = [
         description: "",
         linkTitle: "",
         links: [
-          { href: "#", text: "Tx SmartFlow" },
-          { href: "#", text: "Tx Automate" },
-          { href: "#", text: "Revenue Recognition" },
-          { href: "#", text: "Risk & Compliance AI " },
+          { href: "/product/automation-intelligence/tx-smartflow", text: "Tx SmartFlow" },
+          { href: "/product/automation-intelligence/tx-automate", text: "Tx Automate" },
+          { href: "/product/automation-intelligence/revenue-recognition", text: "Revenue Recognition" },
+          { href: "/product/automation-intelligence/risk-compliance-ai", text: "Risk & Compliance AI " },
         ],
       },
       {
@@ -181,10 +181,10 @@ const navItems: NavItemInterface[] = [
         description: "",
         linkTitle: "",
         links: [
-          { href: "#", text: "Tx Accounts " },
-          { href: "#", text: "Tx Capital" },
-          { href: "#", text: "Tx Issuing" },
-          { href: "#", text: "Global Payouts" },
+          { href: "/product/finance-treasury/tx-accounts", text: "Tx Accounts " },
+          { href: "/product/finance-treasury/tx-capital", text: "Tx Capital" },
+          { href: "/product/finance-treasury/tx-issuing", text: "Tx Issuing" },
+          { href: "/product/finance-treasury/global-payouts", text: "Global Payouts" },
         ],
       },
       {
@@ -224,11 +224,11 @@ const navItems: NavItemInterface[] = [
         description: "",
         linkTitle: "",
         links: [
-          { href: "#", text: "Auto Trade Plugin" },
-          { href: "#", text: "Treasury Plugin" },
-          { href: "#", text: "HR Plugin" },
-          { href: "#", text: "Health Plugin" },
-          { href: "#", text: "Logistics Plugin –" },
+          { href: "/product/plugins-extension/auto-trade-plugin", text: "Auto Trade Plugin" },
+          { href: "/product/plugins-extension/treasury-plugin", text: "Treasury Plugin" },
+          { href: "/product/plugins-extension/hr-plugin", text: "HR Plugin" },
+          { href: "/product/plugins-extension/health-plugin", text: "Health Plugin" },
+          { href: "/product/plugins-extension/logistics-plugin", text: "Logistics Plugin –" },
         ],
       },
       {
@@ -268,10 +268,10 @@ const navItems: NavItemInterface[] = [
         description: "Find the right people and book quality meetings",
         linkTitle: "Sales Leaders",
         links: [
-          { href: "#", text: "Tx Shield" },
-          { href: "#", text: "Authorization Optimizer " },
-          { href: "#", text: "Tx ID " },
-          { href: "#", text: "Tx Link  " },
+          { href: "/product/security-optimization/tx-shield", text: "Tx Shield" },
+          { href: "/product/security-optimization/authorization-optimizer", text: "Authorization Optimizer " },
+          { href: "/product/security-optimization/tx-id", text: "Tx ID " },
+          { href: "/product/security-optimization/tx-link", text: "Tx Link  " },
         ],
       },
       {
@@ -311,9 +311,9 @@ const navItems: NavItemInterface[] = [
         description: "Find the right people and book quality meetings",
         linkTitle: "Sales Leaders",
         links: [
-          { href: "#", text: "Tx Sigma" },
-          { href: "#", text: "Tx Pipeline" },
-          { href: "#", text: "Tx Analytics" },
+          { href: "/product/data-reporting/tx-sigma", text: "Tx Sigma" },
+          { href: "/product/data-reporting/tx-pipeline", text: "Tx Pipeline" },
+          { href: "/product/data-reporting/tx-analytics", text: "Tx Analytics" },
         ],
       },
     ],
@@ -333,7 +333,7 @@ const navItems: NavItemInterface[] = [
     ],
   },
   {
-    title: "Roles",
+    title: "Solutions",
     solutions: [
       {
         logo: (
@@ -368,14 +368,20 @@ const navItems: NavItemInterface[] = [
             </g>
           </svg>
         ),
-        title: "Solutions",
+        title: "By Business Stage",
         description:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quibusdam ",
         linkTitle: "lorem",
         links: [
-          { href: "#", text: "Startups" },
-          { href: "#", text: "Enterprises" },
-          { href: "#", text: "Developers" },
+          { href: "/solutions/by-business-stage/startups", text: "Startups" },
+          {
+            href: "/solutions/by-business-stage/enterprises",
+            text: "Enterprises",
+          },
+          {
+            href: "/solutions/by-business-stage/developers",
+            text: "Developers",
+          },
         ],
       },
       {
@@ -416,13 +422,24 @@ const navItems: NavItemInterface[] = [
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quibusdam ",
         linkTitle: "lorem",
         links: [
-          { href: "#", text: "Fintech Platforms" },
-          { href: "#", text: "Crypto Exchanges" },
-          { href: "#", text: "Crypto Exchanges" },
-          { href: "#", text: "Embedded Finance" },
-          { href: "#", text: "DeFi Apps " },
-          { href: "#", text: "Remittance" },
-          { href: "#", text: "Gaming & Metaverse" },
+          {
+            href: "/solutions/by-use-case/fintech-platforms",
+            text: "Fintech Platforms",
+          },
+          {
+            href: "/solutions/by-use-case/crypto-exchanges",
+            text: "Crypto Exchanges",
+          },
+          {
+            href: "/solutions/by-use-case/embedded-finance",
+            text: "Embedded Finance",
+          },
+          { href: "/solutions/by-use-case/defi-apps", text: "DeFi Apps " },
+          { href: "/solutions/by-use-case/remittance", text: "Remittance" },
+          {
+            href: "/solutions/by-use-case/gaming-and-metaverse",
+            text: "Gaming & Metaverse",
+          },
         ],
       },
       {
@@ -463,14 +480,29 @@ const navItems: NavItemInterface[] = [
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quibusdam ",
         linkTitle: "lorem",
         links: [
-          { href: "#", text: "Finance & Banking" },
-          { href: "#", text: "E-Commerce " },
-          { href: "#", text: "Healthcare" },
-          { href: "#", text: "Transportation & Logistics " },
-          { href: "#", text: "Energy & Utilities" },
-          { href: "#", text: "Education " },
-          { href: "#", text: "Hospitality & Real Estate " },
-          { href: "#", text: "Creator Economy & Media" },
+          {
+            href: "/solutions/by-industry/finance-and-banking",
+            text: "Finance & Banking",
+          },
+          { href: "/solutions/by-industry/e-ecommerce", text: "E-Commerce " },
+          { href: "/solutions/by-industry/healthcare", text: "Healthcare" },
+          {
+            href: "/solutions/by-industry/transportation-and-logistics",
+            text: "Transportation & Logistics ",
+          },
+          {
+            href: "/solutions/by-industry/energy-and-utilities",
+            text: "Energy & Utilities",
+          },
+          { href: "/solutions/by-/education", text: "Education " },
+          {
+            href: "/solutions/by-industry/hospitality-real-state",
+            text: "Hospitality & Real Estate ",
+          },
+          {
+            href: "/solutions/by-industry/creator-economy-and-media",
+            text: "Creator Economy & Media",
+          },
         ],
       },
     ],
@@ -533,7 +565,9 @@ const navItems: NavItemInterface[] = [
         title: "Resources",
         description: "Everything for learning, support, and partnerships. ",
         linkTitle: "",
-        links: [{ href: "#", text: "santus santus" }],
+        links: [
+          { href: "#", text: "lorem santata" },
+        ],
       },
       {
         logo: (
@@ -572,9 +606,10 @@ const navItems: NavItemInterface[] = [
         description: "Find the right people and book quality meetings",
         linkTitle: "Sales Leaders",
         links: [
-          { href: "#", text: "Support Center " },
-          { href: "#", text: "Managed Support Plans" },
-          { href: "#", text: "Contact Support" },
+          { href: "/resources/support/support-center", text: "Support Center " },
+          { href: "/resources/support/managed-support-plans", text: "Managed Support Plans" },
+          { href: "/resources/support/contact-support", text: "Contact Support" },
+          { href: "/contact-sales", text: "Contact-sales" },
         ],
       },
       {
@@ -614,11 +649,12 @@ const navItems: NavItemInterface[] = [
         description: "Find the right people and book quality meetings",
         linkTitle: "Sales Leaders",
         links: [
-          { href: "#", text: "Guides" },
-          { href: "#", text: "Documentation" },
-          { href: "#", text: "Case Studies (Startups built on TervanX)" },
-          { href: "#", text: "Blog" },
-          { href: "#", text: "TervanX Sessions (Annual Dev Summit)" },
+
+          { href: "/resources/learn/blog", text: "Blog " },
+          { href: "/resources/learn/case-studies", text: "Case Studies " },
+          { href: "/resources/learn/documentation", text: "Documentation " },
+          { href: "/resources/learn/guides", text: "Guides " },
+          { href: "/resources/learn/tervanx-sessions", text: "Tervanx Sessions (Annual Dev Summit) " },
         ],
       },
       {
@@ -658,12 +694,11 @@ const navItems: NavItemInterface[] = [
         description: "Find the right people and book quality meetings",
         linkTitle: "Sales Leaders",
         links: [
-          { href: "#", text: "Contact Sales" },
-          { href: "#", text: "Become a Partner" },
-          { href: "#", text: "Professional Services (Integration Assistance)" },
-          { href: "#", text: "Partner Program" },
-          { href: "#", text: "Jobs" },
-          { href: "#", text: "Newsroom" },
+          { href: "/resources/company_partners/become-a-partner", text: "Become a Partner" },
+          { href: "/resources/company_partners/professional-services", text: "Professional Services (Integration Assistance)" },
+          { href: "/resources/company_partners/partner-program", text: "Partner Program " },
+          { href: "/resources/company_partners/jobs", text: "Jobs " },
+          { href: "/resources/company_partners/newsroom", text: "Newsroom" },
         ],
       },
     ],
@@ -778,11 +813,21 @@ const navItems: NavItemInterface[] = [
         description: "Find the right people and book quality meetings",
         linkTitle: "Sales Leaders",
         links: [
-          { href: "#", text: "Get Started" },
-          { href: "#", text: "Prebuilt Components" },
-          { href: "#", text: "Libraries & SDKs" },
-          { href: "#", text: "API Reference" },
-          { href: "#", text: "Webhook Reference" },
+          { href: "/developers/documentation/get-started", text: "Get Started" },
+          { href: "/developers/documentation", text: "Prebuilt Components" },
+          {
+            href: "/developers/documentation/libraries-and-SDKs",
+            text: "Libraries & SDKs",
+          },
+          { href: "/developers/api-and-reference", text: "API Reference" },
+          {
+            href: "/developers/documentation/webhook-reference",
+            text: "Webhook Reference",
+          },
+          {
+            href: "/developers/documentation/guides",
+            text: "Guides",
+          },
         ],
       },
       {
@@ -822,9 +867,18 @@ const navItems: NavItemInterface[] = [
         description: "Find the right people and book quality meetings",
         linkTitle: "Sales Leaders",
         links: [
-          { href: "#", text: "CMS Plugins " },
-          { href: "#", text: "ERP Integrations" },
-          { href: "#", text: "API Sandbox" },
+          {
+            href: "/developers/api-and-reference/api-and-reference",
+            text: "CMS Plugins ",
+          },
+          {
+            href: "/developers/api-and-reference/erp-integrations",
+            text: "ERP Integrations",
+          },
+          {
+            href: "/developers/api-and-reference/api-sandbox",
+            text: "API Sandbox",
+          },
         ],
       },
       {
@@ -864,9 +918,19 @@ const navItems: NavItemInterface[] = [
         description: "Find the right people and book quality meetings",
         linkTitle: "Sales Leaders",
         links: [
-          { href: "#", text: "Tx Console" },
-          { href: "#", text: "API Changelog" },
-          { href: "#", text: "System Status" },
+          { href: "/developers/developer-tools/x-console", text: "Tx Console" },
+          {
+            href: "/developers/developer-tools/api-changelog",
+            text: "API Changelog",
+          },
+          {
+            href: "/developers/developer-tools/tx-apps-SDK",
+            text: "TX Apps SDK",
+          },
+          {
+            href: "/developers/developer-tools/system-status",
+            text: "System Status",
+          },
         ],
       },
     ],
@@ -923,13 +987,13 @@ const navItems: NavItemInterface[] = [
         ),
         title: "Ecosystem",
         description: "Explore the broader TervanX universe. ",
-        linkTitle: "lorewm raser",
+        linkTitle: "lorem ipsum",
         links: [
-          { href: "#", text: "Tx Marketplace " },
-          { href: "#", text: "Partner Network " },
-          { href: "#", text: "Tx Studio  " },
-          { href: "#", text: "Tx Ventures" },
-          { href: "#", text: "Partner Network " },
+          { href: "/ecosystem/tx-marketplace", text: "Tx Marketplace " },
+          { href: "/ecosystem/partner-network", text: "Partner Network " },
+          { href: "/ecosystem/tx-studio", text: "Tx Studio  " },
+          { href: "/ecosystem/tx-ventures", text: "Tx Ventures" },
+          { href: "/ecosystem/partner-network", text: "Partner Network " },
         ],
       },
     ],
@@ -1053,14 +1117,14 @@ const DeskTopNavbar = () => {
         </nav>
       </div>
       <div className="flex items-center gap-3">
-        <Button size="md" variant="ghost" type="button" onClick={() => {}}>
+        <Button size="md" variant="ghost" type="button" onClick={() => { }}>
           Log in
         </Button>
         <button className="relative inline-block cursor-pointer rounded-md font-semibold tracking-tight whitespace-nowrap text-black text-base px-4 py-2.5 leading-none overflow-hidden">
           <span className="absolute inset-0 block w-full rounded-md transition-all duration-400 bg-[#0d07ed] group-hover:bg-white/80"></span>
           <span className="relative z-10 text-[#f0f0f2]">Get Started</span>
         </button>
-        <Button size="md" variant="primary" type="button" onClick={() => {}}>
+        <Button size="md" variant="primary" type="button" onClick={() => { }}>
           Sign up for free
         </Button>
       </div>
@@ -1091,7 +1155,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ toggle, isOpen }) => {
         </div>
       </div>
       <div className="flex items-center gap-4 justify-end">
-        <Button size="md" variant="primary" type="button" onClick={() => {}}>
+        <Button size="md" variant="primary" type="button" onClick={() => { }}>
           Sign up for free
         </Button>
 
@@ -1152,7 +1216,7 @@ const NavItem: React.FC<navItemProps> = ({ nav }) => {
                           size="sm"
                           variant="outline"
                           type="button"
-                          onClick={() => {}}
+                          onClick={() => { }}
                           children={"Learn more"}
                         />
                       </div>
@@ -1163,7 +1227,10 @@ const NavItem: React.FC<navItemProps> = ({ nav }) => {
                         </p>
                         {solution?.links &&
                           solution.links.map((link, index) => (
-                            <a className="text-xs text-black  font-grotesque ">
+                            <a
+                              href={link.href}
+                              className="text-xs text-black  font-grotesque cursor-pointer"
+                            >
                               {link.text}
                             </a>
                           ))}
@@ -1280,9 +1347,8 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
       </button>
 
       <div
-        className={`overflow-y-scroll transition-all duration-300 ease-in-out px-6 ${
-          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-        }`}
+        className={`overflow-y-scroll transition-all duration-300 ease-in-out px-6 ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          }`}
       >
         <div className="pb-5 text-dark text-sm lg:text-base leading-relaxed  border-gray-200 border-t-[1.5px] pt-4">
           <div className="flex flex-col lg:flex-row gap-6 ">
@@ -1308,7 +1374,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
                           size="sm"
                           variant="outline"
                           type="button"
-                          onClick={() => {}}
+                          onClick={() => { }}
                           children={"Learn more"}
                         />
                       </div>

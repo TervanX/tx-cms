@@ -74,7 +74,7 @@ export default function FadingLogoScroller({
   // Static fallback for reduced motion
   if (prefersReducedMotion) {
     return (
-      <div className={`relative w-full overflow-hidden py-6 ${className}`}>
+      <div className={`relative w-full overflow-hidden py-8 ${className}`}>
         <div className="flex flex-wrap justify-center gap-x-10 gap-y-4">
           {items.map((node, i) => (
             <div key={i} className="shrink-0">
