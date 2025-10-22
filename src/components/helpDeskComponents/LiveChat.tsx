@@ -1,10 +1,33 @@
+import { useState } from "react";
 import BorderTopCard from "./BorderTopCard";
 import DottedLine from "./DottedBg";
 import SubSection from "./Subsection";
 
 const LiveChat = () => {
+  const [active, setActive] = useState(0);
+  const cards = [
+    {
+      title: "Fully customizable",
+      description:
+        "Customize the Messenger to match your brand, wherever your customers are within your product, app, or website.",
+      img: "https://images.ctfassets.net/xny2w179f4ki/1Q8PUvFnuhUmnatXRiiGrh/6f391b62fa3d568945a0a9fd689f39ae/I2Y2_-_Product_page_asset_-_Omnichannel_-_Feature_highlight_-_01.webp?&q=90&w=2560",
+    },
+    {
+      title: "Self-serve enabled",
+      description:
+        "Tailor the Messenger with self-serve apps that empower your customers to find help articles, read product updates, and more—without having to start a conversation.",
+      img: "https://images.ctfassets.net/xny2w179f4ki/1Q8PUvFnuhUmnatXRiiGrh/6f391b62fa3d568945a0a9fd689f39ae/I2Y2_-_Product_page_asset_-_Omnichannel_-_Feature_highlight_-_01.webp?&q=90&w=2560",
+    },
+
+    {
+      title: "Multi-brand & multilingual",
+      description:
+        "Support multiple brands, resolve queries in 45 languages and deliver exceptional experiences within the Messenger—anytime, anywhere.",
+      img: "https://images.ctfassets.net/xny2w179f4ki/1Q8PUvFnuhUmnatXRiiGrh/6f391b62fa3d568945a0a9fd689f39ae/I2Y2_-_Product_page_asset_-_Omnichannel_-_Feature_highlight_-_01.webp?&q=90&w=2560",
+    },
+  ];
   return (
-    <div className="mt-8 lg:mt-14">
+    <div className="">
       <DottedLine />
       <div className="relative  w-[80%] mx-auto ">
         <div className="">
@@ -15,10 +38,16 @@ const LiveChat = () => {
           />
         </div>
         <div className="flex flex-col lg:flex-row-reverse lg:gap-14">
-          <div className="flex-1 flex flex-col gap-2">
-            <BorderTopCard />
-            <BorderTopCard />
-            <BorderTopCard />
+          <div className="flex-1 flex flex-col gap-4">
+            {cards.map((item, index) => (
+              <BorderTopCard
+                active={index === active ? true : false}
+                {...item}
+                onClick={() => {
+                  setActive(index);
+                }}
+              />
+            ))}
           </div>
           <div className="flex flex-col lg:flex-row gap-6   flex-1 ">
             <div className="w-full mx-auto relative bg-white-transparent">
@@ -30,10 +59,7 @@ const LiveChat = () => {
                   className="absolute inset-0 w-full h-full object-cover z-0"
                 />
               </div>
-              <img
-                src="https://images.ctfassets.net/xny2w179f4ki/2v9i8vjuSOjVktQV0oIeLp/e9b3bbdf6b61476bb06f12e67b4bde90/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560"
-                className="relative z-10"
-              />
+              <img src={cards[active]?.img} className="relative z-10" />
             </div>
           </div>
         </div>

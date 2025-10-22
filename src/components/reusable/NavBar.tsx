@@ -333,7 +333,7 @@ const navItems: NavItemInterface[] = [
     ],
   },
   {
-    title: "Roles",
+    title: "Solutions",
     solutions: [
       {
         logo: (
