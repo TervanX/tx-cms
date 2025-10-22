@@ -1,4 +1,3 @@
-// src/app/components/Hero/Hero.tsx
 'use client'
 
 import { motion, useTransform, useScroll } from 'framer-motion'
@@ -8,12 +7,12 @@ import { ArrowUpRight } from 'lucide-react'
 interface HeroProps {
     title: string;
     description: string;
+    span?: string;
 }
 
-export default function Hero({ title, description }: HeroProps) {
+export default function Hero({ title, description, span }: HeroProps) {
     const containerRef = useRef(null)
 
-    // Feature links data
     const featureLinks = [
         {
             name: 'Inbox',
@@ -107,7 +106,6 @@ export default function Hero({ title, description }: HeroProps) {
         }
     ]
 
-    // Efficiency cards data
     const efficiencyCards = [
         {
             category: 'Productivity',
@@ -125,10 +123,8 @@ export default function Hero({ title, description }: HeroProps) {
 
     const { scrollY } = useScroll();
 
-    // Fixed: Start blur after scrolling 200px, complete by 400px
     const headerOpacity = useTransform(scrollY, [0, 200, 400], [1, 0.8, 0]);
 
-    // Image scale transformation - scales down as user scrolls
     const imageScale = useTransform(scrollY, [0, 200, 400], [1, 1.05, 1.1]);
 
     return (
@@ -136,7 +132,6 @@ export default function Hero({ title, description }: HeroProps) {
             ref={containerRef}
             className="mx-auto w-full max-w-[1920px] px-3 md:px-4 relative overflow-clip bg-black pt-[112px] pb-12 text-white md:pb-16 xl:pt-[151px] xl:pb-40 3xl:rounded-b-md"
         >
-            {/* Background image */}
             <div className="overflow-hidden bg-cover absolute inset-0 size-full">
                 <img
                     alt="Helpdesk illustration"
@@ -145,14 +140,8 @@ export default function Hero({ title, description }: HeroProps) {
                     style={{ position: 'absolute', height: '100%', width: '100%', left: 0, top: 0, right: 0, bottom: 0 }}
                 />
             </div>
-
-            {/* Dot pattern overlay */}
             <div className="absolute inset-[0_0_50%] z-30 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.4)_1px,transparent_1px)] [background-size:34px_34px] [mask:radial-gradient(black,transparent)]" />
-
-            {/* Main content */}
             <div className="relative z-40 mx-auto w-full max-w-[1230px] [body:has(.top-banner)_&]:pt-10">
-
-                {/* Text content */}
                 <motion.div
                     className="transition-opacity duration-500 ease-out-quart relative"
                     initial={{ opacity: 0, filter: "blur(10px)" }}
@@ -164,13 +153,12 @@ export default function Hero({ title, description }: HeroProps) {
                 >
                     <h1 className="text-[2.5rem] leading-[95%] font-semibold tracking-[-0.1rem] text-balance md:flex md:flex-col lg:text-6xl xl:text-[4.5rem] xl:tracking-[-0.25rem] w-full">
                         {title}
+                        <span className="lg:inline-block lg:mt-[0.15em] lg:ml-[36.75%]">{span}</span>
                     </h1>
 
                     <p className="my-8 w-full max-w-[500px] text-lg leading-[120%] 2xl:max-w-[600px] 2xl:text-xl">
                         {description}
                     </p>
-
-                    {/* CTA Buttons */}
                     <motion.div
                         className="flex gap-2 transition-transform duration-300 ease-out-quart will-change-transform"
                         initial={{ opacity: 0, y: 20 }}

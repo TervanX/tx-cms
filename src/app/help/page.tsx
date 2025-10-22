@@ -9,7 +9,8 @@ export default function Home() {
 
         <main>
             <Hero
-                title="The next-gen Helpdesk designed for efficiency"
+                title="The next-gen Helpdesk"
+                span='designed for efficiency'
                 description="Helpdesk is a modern, AI-powered platform with the tools, workflows and insights agents need to work faster and deliver the highest quality customer service."
             />
             <ContentLayout />

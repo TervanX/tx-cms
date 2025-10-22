@@ -769,11 +769,11 @@ const navItems: NavItemInterface[] = [
         description: "Full technical resources and integration docs. ",
         linkTitle: "lorewm raser",
         links: [
-          { href: "#", text: "Tx Marketplace " },
-          { href: "#", text: "Partner Network " },
-          { href: "#", text: "Tx Studio  " },
-          { href: "#", text: "Tx Ventures" },
-          { href: "#", text: "Partner Network " },
+          { href: "/developers/developers/tx-marketplace", text: "Tx Marketplace " },
+          { href: "/developers/developers/partner-network", text: "Partner Network " },
+          { href: "/developers/developers/tx-studio", text: "Tx Studio  " },
+          { href: "/developers/developers/tx-ventures", text: "Tx Ventures" },
+          { href: "/developers/developers/partner-network", text: "Partner Network " },
         ],
       },
       {
@@ -949,72 +949,10 @@ const navItems: NavItemInterface[] = [
       },
     ],
   },
-  {
-    title: "Ecosystem",
-    solutions: [
-      {
-        logo: (
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 18 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g id="Vector">
-              <path
-                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
-                fill="black"
-              ></path>
-              <path
-                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
-                fill="black"
-              ></path>
-              <path
-                d="M11.8502 3.02548C13.0375 3.02548 13.996 3.98391 13.996 5.17121V16H17.0143V6.44434C17.0143 2.88958 14.1319 0 10.57 0H0.985687V3.01833H11.8431L11.8502 3.02548Z"
-                fill="black"
-              ></path>
-              <path
-                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
-                fill="black"
-              ></path>
-              <path
-                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
-                fill="black"
-              ></path>
-            </g>
-          </svg>
-        ),
-        title: "Ecosystem",
-        description: "Explore the broader TervanX universe. ",
-        linkTitle: "lorem ipsum",
-        links: [
-          { href: "/ecosystem/tx-marketplace", text: "Tx Marketplace " },
-          { href: "/ecosystem/partner-network", text: "Partner Network " },
-          { href: "/ecosystem/tx-studio", text: "Tx Studio  " },
-          { href: "/ecosystem/tx-ventures", text: "Tx Ventures" },
-          { href: "/ecosystem/partner-network", text: "Partner Network " },
-        ],
-      },
-    ],
-    platforms: [
-      {
-        logo: "https://www.apollo.io/_next/image?url=https%3A%2F%2Fcdn.buttercms.com%2FTsUeYa4kTLiTza8ExEGQ&w=1080&q=75",
-        tag: "Guides",
-        descriptions: "",
-        links: [
-          { text: "Accept Online Payments", href: "" },
-          { text: "Manage Digital Wallets", href: "" },
-          { text: "Automate Treasury Workflows", href: "" },
-          { text: "Send Cross-Border Payments ", href: "" },
-          { text: "Launch an Exchange ", href: "" },
-        ],
-      },
-    ],
-  },
+
   {
     title: "Pricing",
-    // href: "/pricing",
+    href: "#",
     solutions: [
       {
         logo: (
