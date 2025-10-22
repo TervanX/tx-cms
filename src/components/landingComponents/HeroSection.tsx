@@ -124,7 +124,7 @@ function HeroCard({
 
       <div className="pointer-events-none absolute inset-0 z-20 block bg-gradient-to-b from-black/75 via-black/25 to-transparent opacity-100 transition-opacity duration-[350ms] ease-out group-hover/card:opacity-100 lg:block lg:h-[275px] lg:from-black lg:via-black/50 lg:opacity-75" />
 
-      <div className="pointer-events-none bottom-auto z-30 p-4 lg:absolute lg:inset-4 lg:p-0">
+      <div className="pointer-events-none bottom-auto z-30 p-4 lg:absolute lg:inset-4 lg:p-0 lg:flex flex-col items-start gap-4">
         <div className="mb-1.5">
           <h2 className="font-sans leading-none text-current mb-1.5 text-[28px] leading-[1.025] tracking-[-0.64px] font-semibold md:text-[30px] md:leading-[1.025] lg:text-[34px] lg:leading-[1.025]">
             {title}
@@ -149,7 +149,7 @@ function HeroCard({
       </div>
 
       <div
-        className="inset-0 z-10 hidden h-full !w-full !opacity-100 lg:block relative aspect-[10/12] w-full opacity-100 md:aspect-[12/10.5] lg:aspect-[10/10.5] lg:w-1/2 lg:transition-opacity lg:duration-[1500ms] lg:ease-out lg:group-has-[:hover]:opacity-50 lg:hover:!opacity-100 xl:aspect-[11.5/10.5]"
+        className="inset-0 z-10 hidden h-full !w-full !opacity-100 lg:block relative aspect-[10/12] w-full opacity-100 md:aspect-[12/10.5] lg:aspect-[10/10.5] lg:w-1/2 lg:transition-opacity lg:duration-[1500ms] lg:ease-out lg:group-has-[:hover]:opacity-50 lg:hover:!opacity-100 xl:aspect-[11.5/10.5] mt-8"
         style={{
           maskImage:
             "linear-gradient(to bottom, transparent, transparent 10%, black 35%)",
@@ -157,11 +157,10 @@ function HeroCard({
       >
         <div className="absolute inset-0 z-10 flex size-full items-end overflow-hidden">
           <div
-            className={`pointer-events-none absolute inset-0 z-10 items-end transition-opacity duration-500 ${
-              isHovering && videoSrc
-                ? "opacity-0 lg:flex"
-                : "opacity-100 lg:flex"
-            }`}
+            className={`pointer-events-none absolute inset-0 z-10 items-end transition-opacity duration-500 ${isHovering && videoSrc
+              ? "opacity-0 lg:flex"
+              : "opacity-100 lg:flex"
+              }`}
           >
             <div className="mx-auto !aspect-auto w-full pr-10 pl-10 lg:pr-0 lg:pl-0">
               <div className="overflow-hidden bg-cover relative block">
@@ -180,9 +179,8 @@ function HeroCard({
           <div className="mx-auto size-full relative z-20">
             <canvas
               ref={canvasRef}
-              className={`w-full h-full transition-opacity duration-500 ${
-                isHovering && videoSrc ? "opacity-100" : "opacity-0"
-              }`}
+              className={`w-full h-full transition-opacity duration-500 ${isHovering && videoSrc ? "opacity-100" : "opacity-0"
+                }`}
               style={{ verticalAlign: "top" }}
             />
           </div>
@@ -231,7 +229,7 @@ export default function HeroSection() {
 
       <main className="group relative flex flex-wrap gap-4 lg:flex-1 lg:flex-nowrap">
         <HeroCard
-          href="https://fin.ai"
+          href="/home"
           id="hero-card-fin"
           title="For Individual"
           subtitle="Digital Assets Payment Company"
@@ -244,7 +242,7 @@ It’s like having a Stripe + Wallet + Exchange in one, giving users access to c
         />
 
         <HeroCard
-          href="https://intercom.com/suite"
+          href="/home"
           id="hero-card-suite"
           title="For Businesses & Institutions"
           subtitle="Digital Assets Infrastructure Company"

@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -67,12 +68,12 @@ const navItems: NavItemInterface[] = [
           "All TervanX’s core infrastructure and modules — fiat, crypto, and plugin systems.",
         links: [
           { href: "/product/payments-infrastructure/crypto-payments", text: "Crypto Payments" },
-          { href: "/product/payments-infrastructure/Fiat-payments", text: "Fiat Payments" },
+          { href: "/product/payments-infrastructure/fiat-payments", text: "Fiat Payments" },
           { href: "/product/payments-infrastructure/checkout", text: "Checkout " },
           { href: "/product/payments-infrastructure/payment-links", text: "Payment Links " },
           { href: "/product/payments-infrastructure/pos-terminal", text: "POS / Terminal  " },
           { href: "/product/payments-infrastructure/payout-api", text: "Payouts API  " },
-          { href: "/product/payments-infrastructure/payment-method", text: "Payment Methods " },
+          { href: "/product/payments-infrastructure/payment-method", text: "Payment Methods " }
         ],
       },
       {
@@ -562,46 +563,6 @@ const navItems: NavItemInterface[] = [
             </g>
           </svg>
         ),
-        title: "Resources",
-        description: "Everything for learning, support, and partnerships. ",
-        linkTitle: "",
-        links: [
-          { href: "#", text: "lorem santata" },
-        ],
-      },
-      {
-        logo: (
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 18 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g id="Vector">
-              <path
-                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
-                fill="black"
-              ></path>
-              <path
-                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
-                fill="black"
-              ></path>
-              <path
-                d="M11.8502 3.02548C13.0375 3.02548 13.996 3.98391 13.996 5.17121V16H17.0143V6.44434C17.0143 2.88958 14.1319 0 10.57 0H0.985687V3.01833H11.8431L11.8502 3.02548Z"
-                fill="black"
-              ></path>
-              <path
-                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
-                fill="black"
-              ></path>
-              <path
-                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
-                fill="black"
-              ></path>
-            </g>
-          </svg>
-        ),
         title: "Support",
         description: "Find the right people and book quality meetings",
         linkTitle: "Sales Leaders",
@@ -732,50 +693,7 @@ const navItems: NavItemInterface[] = [
   {
     title: "Developers",
     solutions: [
-      {
-        logo: (
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 18 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g id="Vector">
-              <path
-                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
-                fill="black"
-              ></path>
-              <path
-                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
-                fill="black"
-              ></path>
-              <path
-                d="M11.8502 3.02548C13.0375 3.02548 13.996 3.98391 13.996 5.17121V16H17.0143V6.44434C17.0143 2.88958 14.1319 0 10.57 0H0.985687V3.01833H11.8431L11.8502 3.02548Z"
-                fill="black"
-              ></path>
-              <path
-                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
-                fill="black"
-              ></path>
-              <path
-                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
-                fill="black"
-              ></path>
-            </g>
-          </svg>
-        ),
-        title: "Developers",
-        description: "Full technical resources and integration docs. ",
-        linkTitle: "lorewm raser",
-        links: [
-          { href: "/developers/developers/tx-marketplace", text: "Tx Marketplace " },
-          { href: "/developers/developers/partner-network", text: "Partner Network " },
-          { href: "/developers/developers/tx-studio", text: "Tx Studio  " },
-          { href: "/developers/developers/tx-ventures", text: "Tx Ventures" },
-          { href: "/developers/developers/partner-network", text: "Partner Network " },
-        ],
-      },
+
       {
         logo: (
           <svg
@@ -933,27 +851,6 @@ const navItems: NavItemInterface[] = [
           },
         ],
       },
-    ],
-    platforms: [
-      {
-        logo: "https://www.apollo.io/_next/image?url=https%3A%2F%2Fcdn.buttercms.com%2FTsUeYa4kTLiTza8ExEGQ&w=1080&q=75",
-        tag: "Guides",
-        descriptions: "",
-        links: [
-          { text: "Accept Online Payments", href: "" },
-          { text: "Manage Digital Wallets", href: "" },
-          { text: "Automate Treasury Workflows", href: "" },
-          { text: "Send Cross-Border Payments ", href: "" },
-          { text: "Launch an Exchange ", href: "" },
-        ],
-      },
-    ],
-  },
-
-  {
-    title: "Pricing",
-    href: "#",
-    solutions: [
       {
         logo: (
           <svg
@@ -987,21 +884,94 @@ const navItems: NavItemInterface[] = [
             </g>
           </svg>
         ),
-        title: "Pricing",
-        description: "Transparent, modular pricing for APIs and plugins. ",
-        linkTitle: "Sales Leaders",
+        title: "Ecosystem",
+        description: "Full technical resources and integration docs. ",
+        linkTitle: "lorewm raser",
         links: [
-          { href: "#", text: "Core API Pricing" },
-          { href: "#", text: "Enterprise Plans" },
-          { href: "#", text: "Plugin Pricing " },
-          { href: "#", text: "Capital & Treasury Fees" },
+          { href: "/developers/ecosystem/tx-marketplace", text: "Tx Marketplace " },
+          { href: "/developers/ecosystem/partner-network", text: "Partner Network " },
+          { href: "/developers/ecosystem/tx-studio", text: "Tx Studio  " },
+          { href: "/developers/ecosystem/tx-ventures", text: "Tx Ventures" },
+          { href: "/developers/ecosystem/partner-network", text: "Partner Network " },
+        ],
+      },
+    ],
+    platforms: [
+      {
+        logo: "https://www.apollo.io/_next/image?url=https%3A%2F%2Fcdn.buttercms.com%2FTsUeYa4kTLiTza8ExEGQ&w=1080&q=75",
+        tag: "Guides",
+        descriptions: "",
+        links: [
+          { text: "Accept Online Payments", href: "" },
+          { text: "Manage Digital Wallets", href: "" },
+          { text: "Automate Treasury Workflows", href: "" },
+          { text: "Send Cross-Border Payments ", href: "" },
+          { text: "Launch an Exchange ", href: "" },
         ],
       },
     ],
   },
+
+  {
+    title: "Pricing",
+    href: "#",
+    // solutions: [
+    //   {
+    //     logo: (
+    //       <svg
+    //         width="20"
+    //         height="20"
+    //         viewBox="0 0 18 16"
+    //         fill="none"
+    //         xmlns="http://www.w3.org/2000/svg"
+    //       >
+    //         <g id="Vector">
+    //           <path
+    //             d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+    //             fill="black"
+    //           ></path>
+    //           <path
+    //             d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+    //             fill="black"
+    //           ></path>
+    //           <path
+    //             d="M11.8502 3.02548C13.0375 3.02548 13.996 3.98391 13.996 5.17121V16H17.0143V6.44434C17.0143 2.88958 14.1319 0 10.57 0H0.985687V3.01833H11.8431L11.8502 3.02548Z"
+    //             fill="black"
+    //           ></path>
+    //           <path
+    //             d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+    //             fill="black"
+    //           ></path>
+    //           <path
+    //             d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+    //             fill="black"
+    //           ></path>
+    //         </g>
+    //       </svg>
+    //     ),
+    //     title: "Pricing",
+    //     description: "Transparent, modular pricing for APIs and plugins. ",
+    //     linkTitle: "Sales Leaders",
+    //     links: [
+    //       { href: "#", text: "Core API Pricing" },
+    //       { href: "#", text: "Enterprise Plans" },
+    //       { href: "#", text: "Plugin Pricing " },
+    //       { href: "#", text: "Capital & Treasury Fees" },
+    //     ],
+    //   },
+    // ],
+  },
 ];
 
-const Header = () => {
+interface HeaderProps {
+  bg?: string;
+}
+
+interface HeaderProps {
+  bg?: string;
+}
+
+const Header = ({ bg }: HeaderProps) => {
   const pathname = usePathname();
   const [showSideBar, setShowSideBar] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -1014,10 +984,16 @@ const Header = () => {
 
   const isHomePage = pathname === "/homepage-1";
 
+  const getBackgroundClass = () => {
+    if (isScrolled && !isHomePage) return "bg-white";
+    if (bg) return bg;
+    return "bg-background";
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 px-6 transition-colors duration-300 
-        ${isScrolled && !isHomePage ? "bg-white" : "bg-background"}
+        ${getBackgroundClass()}
       `}
     >
       <DeskTopNavbar />
@@ -1055,15 +1031,16 @@ const DeskTopNavbar = () => {
         </nav>
       </div>
       <div className="flex items-center gap-3">
-        <Button size="md" variant="ghost" type="button" onClick={() => { }}>
+        <Button size="md" variant="ghost" type="button">
           Log in
         </Button>
-        <button className="relative inline-block cursor-pointer rounded-md font-semibold tracking-tight whitespace-nowrap text-black text-base px-4 py-2.5 leading-none overflow-hidden">
-          <span className="absolute inset-0 block w-full rounded-md transition-all duration-400 bg-[#0d07ed] group-hover:bg-white/80"></span>
-          <span className="relative z-10 text-[#f0f0f2]">Get Started</span>
-        </button>
-        <Button size="md" variant="primary" type="button" onClick={() => { }}>
-          Sign up for free
+        <Button size="md" variant="blue" type="button">
+          Get Started
+        </Button>
+        <Button size="md" variant="primary" type="button">
+          <Link href="/contact-sales">
+            Contact Sales
+          </Link>
         </Button>
       </div>
     </div>
@@ -1089,7 +1066,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ toggle, isOpen }) => {
             height={24}
             alt="logo"
           />
-          <span className="font-medium font-grotesque">Company Name</span>
+          <span className="font-medium font-grotesque">TervanX</span>
         </div>
       </div>
       <div className="flex items-center gap-4 justify-end">
@@ -1150,13 +1127,6 @@ const NavItem: React.FC<navItemProps> = ({ nav }) => {
                             {solution.description}{" "}
                           </p>
                         </div>
-                        <Button
-                          size="sm"
-                          variant="outline"
-                          type="button"
-                          onClick={() => { }}
-                          children={"Learn more"}
-                        />
                       </div>
 
                       <div className="mt-6 flex flex-col gap-2">
@@ -1167,30 +1137,9 @@ const NavItem: React.FC<navItemProps> = ({ nav }) => {
                           solution.links.map((link, index) => (
                             <a
                               href={link.href}
-                              className="text-xs text-black  font-grotesque cursor-pointer"
+                              className="text-xs text-black  font-grotesque cursor-pointer font-semibold"
                             >
                               {link.text}
-                            </a>
-                          ))}
-                      </div>
-                    </div>
-                  ))}
-
-                {nav?.platforms &&
-                  nav?.platforms.map((platform, platformIndex) => (
-                    <div className="flex flex-col basis-[18%] flex-grow min-w-[135px] max-w-[400px]">
-                      <img
-                        className="w-[194px] h-auto rounded-lg"
-                        src={platform.logo}
-                      />
-                      <div className="mt-4 flex flex-col gap-2">
-                        <p className="text-xs text-sand font-grotesque ">
-                          {platform.tag}
-                        </p>
-                        {platform?.links &&
-                          platform.links.map((platformLinks) => (
-                            <a className="text-xs text-black  font-grotesque ">
-                              {platformLinks.text}
                             </a>
                           ))}
                       </div>
@@ -1246,14 +1195,12 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, onClose }) => {
         >
           Log in
         </Button>
-        <Button
-          size="md"
-          variant="outline"
-          type="button"
+        <Button size="md"
           onClick={onClose}
-          className="flex-1"
-        >
-          Get a demo
+          className="flex-1" variant="primary" type="button">
+          <Link href="/contact-sales">
+            Contact Sales
+          </Link>
         </Button>
       </div>
     </motion.div>
@@ -1306,17 +1253,6 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
                         {solution.description}{" "}
                       </p>
                     </div>
-                    <div className="w-[40%] flex items-center justify-end">
-                      <div>
-                        <Button
-                          size="sm"
-                          variant="outline"
-                          type="button"
-                          onClick={() => { }}
-                          children={"Learn more"}
-                        />
-                      </div>
-                    </div>
                   </div>
                   <div className="mt-6 flex flex-col gap-2">
                     <p className="text-xs text-sand font-grotesque ">
@@ -1324,30 +1260,8 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
                     </p>
                     {solution?.links &&
                       solution.links.map((link, index) => (
-                        <a className="text-xs text-black  font-grotesque ">
+                        <a className="text-xs text-black  font-grotesque font-semibold">
                           {link.text}
-                        </a>
-                      ))}
-                  </div>
-                </div>
-              ))}
-
-            {nav?.platforms &&
-              nav?.platforms.map((platform, platformIndex) => (
-                <div className="flex flex-col basis-[18%] flex-grow min-w-[135px] max-w-[400px]">
-                  <img
-                    className="w-[194px] h-auto rounded-lg"
-                    src={platform.logo}
-                  />
-                  <div className="mt-4 flex flex-col gap-2">
-                    <p className="text-xs text-sand font-grotesque ">
-                      {platform.tag}
-                    </p>
-
-                    {platform?.links &&
-                      platform.links.map((platformLinks) => (
-                        <a className="text-xs text-black  font-grotesque ">
-                          {platformLinks.text}
                         </a>
                       ))}
                   </div>

@@ -25,12 +25,12 @@ const Page = () => {
         subheading="Manage all your support channels and customer conversations—from email and live chat, to phone, SMS, and social—in one omnichannel platform."
         tag="TX channel"
         primaryButton={{
-          text: "View demo",
+          text: "Login",
           href: "/sign-up",
         }}
         secondaryButton={{
-          text: "Start free trial",
-          href: "/demo",
+          text: "Contact Sales",
+          href: "/contact-sales",
         }}
       />
       <div className="w-[95%] mx-auto">

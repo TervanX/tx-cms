@@ -185,15 +185,13 @@ const Footer: React.FC = () => {
                             {/* Chrome Extension CTA */}
                             <div className="flex w-fit flex-col gap-4 lg:col-span-2 xl:col-span-1">
                                 <p className="text-sm lg:text-base leading-[130%] font-sans font-bold text-neutral-900">
-                                    Prospect anywhere
+                                    Contact Sales
                                 </p>
                                 <p className="text-sm lg:text-base leading-[130%] font-sans text-neutral-900">
-                                    Get verified emails and phone numbers and instantly reach out while working in your favorite tools.
+                                    Get answers about features, pricing, and implementation from our team.
                                 </p>
                                 <Link
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="#"
+                                    href="/contact-sales"
                                 >
                                     <button
                                         type="button"
@@ -201,7 +199,7 @@ const Footer: React.FC = () => {
                                     >
                                         <div className="flex items-center justify-center gap-2">
                                             <p className="text-sm leading-[130%] font-sans text-inherit">
-                                                Get Started
+                                                Contact Sales
                                             </p>
                                         </div>
                                     </button>

@@ -170,15 +170,15 @@ export default function Hero({ title, description, span }: HeroProps) {
                             href="https://www.intercom.com/view-demos"
                         >
                             <span className="group-focus absolute inset-0 -z-1 block w-full rounded-md transition-[background,color] duration-400 ease-out-quart border border-white" />
-                            View demo
+                            Login
                         </a>
 
                         <a
-                            href="https://app.intercom.com/admins/sign_up?solution_id=29&utm_referrer=https%3A%2F%2Fwww.intercom.com%2Fhelpdesk"
+                            href="/contact-sales"
                             className="btn group relative isolate inline-block cursor-pointer rounded-md transition-[background,color] duration-400 ease-out-quart text-center font-semibold tracking-tight whitespace-nowrap first-line:z-1 lg:text-base/none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-outline disabled:pointer-events-none disabled:opacity-50 text-black px-3 py-2.5 text-base/none lg:px-4"
                         >
                             <span className="group-focus absolute inset-0 -z-1 block w-full rounded-md transition-[background,color] duration-400 ease-out-quart bg-white group-hover:bg-white/80" />
-                            Start free trial
+                            Contact Sales
                         </a>
                     </motion.div>
                 </motion.div>
