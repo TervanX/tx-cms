@@ -10,21 +10,8 @@ const WhatsNewPage = () => {
       <h3 className="font-bold text-4xl lg:mb-8">What's new in Play Tervanx</h3>
 
       <div className="flex flex-col lg:flex-row lg:gap-10 pt-10">
-<<<<<<< HEAD:src/app/api-changelog/page.tsx
         <div className="hidden lg:block lg:w-[400px] ">
           <div className="fixed top-[calc(var(--header-height)+2rem)] w-[300px]">
-=======
-        <div className="hidden lg:block lg:w-[400px]">
-          <div
-            className="sticky w-[300px]"
-            style={{
-              top: "14rem",
-              height: "fit-content",
-              maxHeight: "calc(100vh - 14rem)",
-              overflowY: "auto",
-            }}
-          >
->>>>>>> 521f090f3442ed9b46773abe726ac622beacac4e:src/app/whats-new/page.tsx
             <FilterBy />
           </div>
         </div>
