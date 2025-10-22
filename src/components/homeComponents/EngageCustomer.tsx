@@ -1,3 +1,4 @@
+import Tag from "../helpDeskComponents/Tag";
 import DottedLine from "./DottedLine";
 interface ColumnItem {
   title: string;
@@ -43,18 +44,18 @@ const EngageCustomersSection = ({
   ],
 }: EngageCustomersProps) => {
   return (
-    <div>
-      <DottedLine />
+    <div className="">
+    
       <div
-        className="flex flex-col gap-4 items-center justify-center px-3 md:px-4 my-20 w-full lg:max-w-[80%] mx-auto"
+        className="flex flex-col gap-4 items-center justify-center px-3 md:px-4 my-28 w-full lg:max-w-[80%] mx-auto"
         id="engage-customers-on-the-apps-they-use-everyday"
       >
         <div className="w-full max-w-6xl">
           {/* Header Section */}
           <div className="scroll-mt-6 text-center mb-8">
             <div className="flex justify-center mb-4">
-              <div className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">
-                {badgeText}
+              <div className="  px-3 py-1 rounded-full text-sm font-medium">
+                <Tag tag={badgeText} />
               </div>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-gray-900 max-w-2xl w-full mx-auto">

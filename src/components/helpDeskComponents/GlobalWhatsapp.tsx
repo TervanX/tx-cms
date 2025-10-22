@@ -1,8 +1,31 @@
+import { useState } from "react";
 import BorderTopCard from "./BorderTopCard";
 import DottedLine from "./DottedBg";
 import SubSection from "./Subsection";
 
 const GlobalWhatsapp = () => {
+  const [active, setActive] = useState(0);
+  const cards = [
+    {
+      title: "Integrate all your accounts",
+      description:
+        "Connect and manage all of your WhatsApp business accounts in a single workspace, to ensure you never miss a message.",
+      img: "https://images.ctfassets.net/xny2w179f4ki/2v9i8vjuSOjVktQV0oIeLp/e9b3bbdf6b61476bb06f12e67b4bde90/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+    },
+    {
+      title: "Deliver context-rich support",
+      description:
+        "Send and receive images, attachments and more directly from the Inbox, so your support agents have all the context they need to resolve issues faster.",
+      img: "https://images.ctfassets.net/xny2w179f4ki/2v9i8vjuSOjVktQV0oIeLp/e9b3bbdf6b61476bb06f12e67b4bde90/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+    },
+
+    {
+      title: "Capture CSAT on WhatsApp",
+      description:
+        "Monitor how satisfied customers are with the support provided, and how it compares to your other channels.",
+      img: "https://images.ctfassets.net/xny2w179f4ki/2v9i8vjuSOjVktQV0oIeLp/e9b3bbdf6b61476bb06f12e67b4bde90/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+    },
+  ];
   return (
     <div className="mt-8 lg:mt-14">
       <DottedLine />
@@ -15,10 +38,16 @@ const GlobalWhatsapp = () => {
           />
         </div>
         <div className="flex flex-col lg:flex-row lg:gap-14">
-          <div className="flex-1 flex flex-col gap-2">
-            <BorderTopCard />
-            <BorderTopCard />
-            <BorderTopCard />
+          <div className="flex-1 flex flex-col gap-4">
+            {cards.map((item, index) => (
+              <BorderTopCard
+                active={index === active ? true : false}
+                {...item}
+                onClick={() => {
+                  setActive(index);
+                }}
+              />
+            ))}
           </div>
           <div className="flex flex-col lg:flex-row gap-6   flex-1 ">
             <div className="w-full mx-auto relative bg-white-transparent">

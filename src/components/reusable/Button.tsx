@@ -22,7 +22,7 @@ const Button: React.FC<ButtonProps> = ({
     "inline-flex items-center text-sm justify-center font-medium cursor-pointer rounded-lg disabled:opacity-50 disabled:cursor-not-allowed ";
   const variantStyles = {
     primary:
-      "hover:bg-gray-900 text-white transition-all  px-4 disabled:bg-sand-40 disabled:text-dark active:text-dark focus:text-dark text-nowrap",
+      "hover:bg-gray-900 text-white transition-all  px-4 disabled:bg-sand-40 disabled:text-dark active:text-dark focus:text-dark text-nowrap bg-dark",
     secondary: "bg-yellow1 text-dark ",
     outline:
       "border border-dark hover:bg-white text-dark focus:ring-gray-500 ",

@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import DottedLine from "./DottedLine";
+import DottedLine from "../helpDeskComponents/DottedBg";
 interface Testimonial {
   company: string;
   quote: string;
@@ -20,7 +20,7 @@ export default function TestimonialCarousel() {
         "The biggest benefit of Intercom is that it has everything you need to create a great experience for your customers and your support team. Literally, anything you need, you can find in the platform. My advice to anyone considering Intercom is to just do it. You won't regret it.",
       author: "Milan Jovancevic",
       title: "Director of Operations",
-      bgColor: "bg-pink-100",
+      bgColor: "bg-[#ff7ad5] ",
       fontStyle: "font-serif text-4xl",
     },
     {
@@ -29,7 +29,7 @@ export default function TestimonialCarousel() {
         "Intercom has enhanced our communications tech stack and opened up more channels that we can use to communicate with our customers, like chat, SMS, and email. The benefit of using Intercom side by side with other point solutions is that it gives you both live insight, when customers are on our website, and offline insight, when they leave and we need to re-engage them at a later stage.",
       author: "Geronimo Chala",
       title: "Chief Consumer Officer",
-      bgColor: "bg-orange-200",
+      bgColor: "bg-[#ffa77a]",
       fontStyle: "font-mono text-2xl",
     },
     {
@@ -38,7 +38,7 @@ export default function TestimonialCarousel() {
         "To continue to win awards for our customer service, we need to have a system that helps us offer our customers the fastest possible response times. With Intercom, we have almost all of our support channels integrated into one system, making it easy for us to manage our support, as well as conduct analysis so we can take a data-driven approach to continuously improving our service.",
       author: "Oda Wilhelmsen",
       title: "Nordic Customer Service Manager",
-      bgColor: "bg-teal-200",
+      bgColor: "bg-[#00edc8]",
       fontStyle: "font-serif text-3xl",
     },
   ];
@@ -74,7 +74,7 @@ export default function TestimonialCarousel() {
     <div>
       <DottedLine />
 
-      <div className="mx-auto px-3 max-w-[1000px] lg:w-[80%] lg:max-w-[1492px]  w-full flex flex-col justify-center items-center gap-4 md:gap-6 my-20 font-grotesque">
+      <div className="mx-auto px-3 max-w-[1000px] lg:w-[80%] lg:max-w-[1492px]  w-full flex flex-col justify-center items-center gap-4 md:gap-6 my-28 font-grotesque">
         <h2
           className="scroll-mt-6 text-4xl md:text-5xl font-medium text-center"
           id="effortless-omnichannel-support"
@@ -90,11 +90,10 @@ export default function TestimonialCarousel() {
                 <button
                   key={index}
                   onClick={() => handleButtonClick(index)}
-                  className={`relative px-4 py-2 text-sm md:text-base font-medium transition-all whitespace-nowrap ${
-                    activeIndex === index
-                      ? "text-black"
-                      : "text-gray-500 hover:text-gray-700"
-                  }`}
+                  className={`relative px-4 py-2 text-sm md:text-base font-medium transition-all whitespace-nowrap ${activeIndex === index
+                    ? "text-black"
+                    : "text-gray-500 hover:text-gray-700"
+                    }`}
                 >
                   <span>{testimonial.company}</span>
                   {activeIndex === index && (
@@ -119,11 +118,10 @@ export default function TestimonialCarousel() {
                 return (
                   <div
                     key={originalIndex}
-                    className={`absolute left-0 right-0 transition-all duration-500 ease-out ${
-                      stackPosition < 3
-                        ? "opacity-100"
-                        : "opacity-0 pointer-events-none"
-                    }`}
+                    className={`absolute left-0 right-0 transition-all duration-500 ease-out ${stackPosition < 3
+                      ? "opacity-100"
+                      : "opacity-0 pointer-events-none"
+                      }`}
                     style={{
                       bottom: `${stackPosition * 20}px`,
                       zIndex: 20 - stackPosition,
@@ -143,7 +141,7 @@ export default function TestimonialCarousel() {
                           {testimonial.quote}
                         </p>
 
-                        <div className="border-t border-dotted border-gray-400 pt-4" />
+                        <DottedLine fill="#4a5565" />
                       </div>
 
                       <div className="flex flex-col mt-4">

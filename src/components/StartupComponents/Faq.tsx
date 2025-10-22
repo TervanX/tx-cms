@@ -72,7 +72,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ item, isOpen, onToggle })
                     {item.question}
                 </h6>
                 <div className={`flex-shrink-0 transition-transform duration-200 `}>
-                    {isOpen ? <ChevronDownIcon /> : <ChevronUpIcon />}
+                    {isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
                 </div>
             </button>
 
@@ -96,7 +96,7 @@ const FAQAccordion: React.FC = () => {
     };
 
     return (
-        <div className="w-full mx-auto px-6 md:px-12 lg:px-16 xl:px-20 2xl:px-24 font-founders-grotesk my-20 ">
+        <div className="w-full mx-auto px-6 md:px-12 lg:px-16 xl:px-20 2xl:px-24 font-founders-grotesk my-28 ">
             <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-8">
                 <div >
                     <h4 className="text-3xl lg:text-5xl max-w-xl text-dark mb-4">
