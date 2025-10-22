@@ -5,38 +5,33 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const TOP_URL = "https://www.apollo.io/_next/static/media/top.a774887c.svg";
-const BOTTOM_URL =
-  "https://www.apollo.io/_next/static/media/bottom.6a696895.svg";
+const TOP_URL = "/assets/top.svg";
+const BOTTOM_URL = "/assets/bottom.svg";
 
 const items = [
   {
     title: "DATA",
     description: "Access our B2B database of over 200 million contacts1",
-    scrollUrl: "/assets/data-inactive.7f01f44e.svg",
-    stackUrl: "/assets/data-inactive.7f01f44e.svg",
+    scrollUrl: "/assets/1.svg",
+    stackUrl: "/assets/1.svg",
   },
   {
     title: "INTEGRATIONS",
     description: "Access our B2B database of over 200 million contacts2",
-    scrollUrl:
-      "https://www.apollo.io/_next/static/media/integrations.e586a2d8.svg",
-    stackUrl:
-      "https://www.apollo.io/_next/static/media/integrations-inactive.2d9e7729.svg",
+    scrollUrl: "/assets/2.svg",
+    stackUrl: "/assets/3.svg",
   },
   {
     title: "ACTIONS",
     description: "Access our B2B database of over 200 million contacts3",
-    scrollUrl: "https://www.apollo.io/_next/static/media/actions.2272ba1f.svg",
-    stackUrl:
-      "https://www.apollo.io/_next/static/media/actions-inactive.f57a5102.svg",
+    scrollUrl: "/assets/4.svg",
+    stackUrl: "/assets/5.svg",
   },
   {
     title: "AI",
     description: "Access our B2B database of over 200 million contacts4",
-    scrollUrl: "https://www.apollo.io/_next/static/media/ai.a20eacb2.svg",
-    stackUrl:
-      "https://www.apollo.io/_next/static/media/ai-inactive.220ca6d6.svg",
+    scrollUrl: "/assets/6.svg",
+    stackUrl: "/assets/7.svg",
   },
 ];
 
@@ -169,10 +164,8 @@ const StackedAnimation: React.FC = () => {
 
               if (!allStacked) {
                 if (localP > 0 && localP < 1) {
-                  // ✅ Item is moving — show all
                   gsap.set([arrow, desc, title], { opacity: 1 });
                 } else if (localP >= 1) {
-                  // ✅ Item has stopped — start fading img + p based on scroll
                   const afterStop = gsap.utils.clamp(
                     0,
                     1,
@@ -183,11 +176,9 @@ const StackedAnimation: React.FC = () => {
                   gsap.set([arrow, desc], { opacity: arrowDescOpacity });
                   gsap.set(title, { opacity: 1 });
                 } else {
-                  // Not yet started
                   gsap.set([arrow, desc, title], { opacity: 0 });
                 }
               } else {
-                // ✅ After all stacked — fade out the entire label (including title)
                 gsap.set([arrow, desc], { opacity: 0 });
                 gsap.set(title, { opacity: 1 - afterAllProgress });
               }
@@ -273,10 +264,7 @@ const StackedAnimation: React.FC = () => {
               <div className="relative h-20">
                 <div className="flex items-center h-full mt-4">
                   <div className="">
-                    <img
-                      src="https://www.apollo.io/_next/static/media/arrow.f3418417.svg"
-                      alt=""
-                    />
+                    <img src="/assets/right-arrow.svg" alt="" />
                   </div>
 
                   <div className="h-full w-32 overflow-hidden">
