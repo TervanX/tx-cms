@@ -24,8 +24,7 @@ const Button: React.FC<ButtonProps> = ({
     primary:
       "hover:bg-gray-900 text-white transition-all  px-4 disabled:bg-sand-40 disabled:text-dark active:text-dark focus:text-dark text-nowrap bg-dark",
     secondary: "bg-yellow1 text-dark ",
-    outline:
-      "border border-dark hover:bg-white text-dark focus:ring-gray-500 ",
+    outline: "border border-dark hover:bg-white text-dark focus:ring-gray-500 ",
     ghost: "bg-transparent text-dark hover:text-gray-500 focus:ring-gray-500",
     danger: "bg-red-600 text-white focus:ring-red-500",
   };

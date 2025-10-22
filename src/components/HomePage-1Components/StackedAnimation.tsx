@@ -13,10 +13,8 @@ const items = [
   {
     title: "DATA",
     description: "Access our B2B database of over 200 million contacts1",
-    scrollUrl:
-      "https://www.apollo.io/_next/static/media/data-inactive.7f01f44e.svg",
-    stackUrl:
-      "https://www.apollo.io/_next/static/media/data-inactive.7f01f44e.svg",
+    scrollUrl: "/assets/data-inactive.7f01f44e.svg",
+    stackUrl: "/assets/data-inactive.7f01f44e.svg",
   },
   {
     title: "INTEGRATIONS",
@@ -61,7 +59,6 @@ const StackedAnimation: React.FC = () => {
       const PERSPECTIVE = 1000;
       const FRONT = 500;
       const STEP = 120;
-      const LEAD = 0.06;
 
       gsap.set(containerRef.current, {
         perspective: PERSPECTIVE,
@@ -133,8 +130,6 @@ const StackedAnimation: React.FC = () => {
                 : (raw - start) / (endStack - start);
 
             const total = layers.length;
-
-            // Controls how long (in scroll %) the arrow+desc fade lasts after stopping
             const fadeFactor = 0.6;
             const fadeWindow = (1 / total) * fadeFactor;
             const afterAllProgress = gsap.utils.clamp(
@@ -161,11 +156,9 @@ const StackedAnimation: React.FC = () => {
               const title = label.querySelector("h6");
               const desc = label.querySelector("p");
 
-              // local normalized range for each item
               const localStart = i / total;
               const localEnd = (i + 1) / total;
 
-              // For the last item, give it extra fade room (since it ends near p=1)
               const localFadeWindow =
                 i === total - 1 ? fadeWindow * 1.8 : fadeWindow;
 
