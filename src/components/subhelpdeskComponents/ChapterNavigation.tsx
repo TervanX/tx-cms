@@ -27,7 +27,7 @@ export default function ChapterNavigation({
     navigationItems = [
         { id: "productivity", label: "productivity" },
         { id: "usability", label: "usability" },
-        { id: "outbound", label: "Data & Insights" },
+        { id: "outbound", label: "outbound" },
         { id: "features", label: "features" },
     ],
     className = "",
