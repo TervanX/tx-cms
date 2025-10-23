@@ -131,13 +131,11 @@ export default function UsabilitySection({
                   {feature.list.items.map((item) => (
                     <li key={item}>{item}</li>
                   ))}
-                             
                 </ul>
               </motion.div>
             ))}
           </div>
         </div>
-
         {/* Additional Features */}
         <div className="px-3 md:p-0 flex flex-col gap-12 @2xl:flex-row @2xl:justify-between @2xl:gap-8">
           {additionalFeatures.map((feature, index) => (
@@ -166,7 +164,6 @@ export default function UsabilitySection({
                   {feature.list.items.map((item) => (
                     <li key={item}>{item}</li>
                   ))}
-                             
                 </ul>
               </div>
             </motion.div>

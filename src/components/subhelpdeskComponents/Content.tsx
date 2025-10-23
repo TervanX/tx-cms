@@ -1,13 +1,9 @@
 // src/app/components/ContentLayout/ContentLayout.tsx
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { useScroll, useTransform } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import ChapterNavigation from "./ChapterNavigation";
-import ProductivitySection from "./ProductivitySection";
-import UsabilitySection from "./UsabilitySection";
-import FeaturesSection from "./FeaturesSection";
-import OutboundSection from "./DataSection";
 
 // Define section component types
 export type SectionComponent = React.ComponentType<any>;

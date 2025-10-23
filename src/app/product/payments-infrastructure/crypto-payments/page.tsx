@@ -6,7 +6,6 @@ import ProductivitySection from "@/components/subhelpdeskComponents/Productivity
 import UsabilitySection from "@/components/subhelpdeskComponents/UsabilitySection";
 import FeaturesSection from "@/components/subhelpdeskComponents/FeaturesSection";
 import OutboundSection from "@/components/subhelpdeskComponents/DataSection";
-// import SecuritySection from "@/components/subhelpdeskComponents/SecuritySection"; // Optional section
 import {
   featuresProps,
   outboundProps,
