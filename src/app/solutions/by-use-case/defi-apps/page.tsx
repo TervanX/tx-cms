@@ -19,7 +19,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Page = () => {
   return (
-    <div className="relative z-10 bg-[#f4f3ec]">
+    <div className="relative z-10 ">
       <HeroSection
         heading="DeFi Apps"
         subheading="Deploy smart contracts and liquidity tools"

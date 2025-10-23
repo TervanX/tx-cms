@@ -1,7 +1,10 @@
 import DottedLine from "./DottedBg";
 import SubSection from "./Subsection";
-
-const CallAndConversation = () => {
+interface CallProps {
+  image?: string;
+  backgroundImage?: string;
+}
+const CallAndConversation: React.FC<CallProps> = ({ backgroundImage = "/assets/image30.webp", image = "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560" }) => {
   return (
     <div>
       <DottedLine />
@@ -25,13 +28,13 @@ const CallAndConversation = () => {
               {/* Background Pattern */}
               <div className="absolute inset-0 z-0">
                 <img
-                  src="/assets/image30.webp"
+                  src={backgroundImage}
                   alt={"Brand support"}
                   className="absolute inset-0 w-full h-full object-cover z-0"
                 />
               </div>
               <img
-                src="/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560"
+                src={image}
                 className="relative z-10"
               />
             </div>

@@ -17,20 +17,21 @@ interface BannerProps {
     altText?: string;
 }
 
-export default function Banner({
-    title = "Empower your business with instant, intelligent crypto transactions",
-    primaryButton = {
-        text: "Get Started",
-        href: "https://www.intercom.com/view-demos"
-    },
-    secondaryButton = {
-        text: "Contact Sales",
-        href: "/contact/contact-sales"
-    },
-    backgroundImage = "/assets/helpdesk-ctabanner.webp",
-    backgroundImageLQIP = "/assets/helpdesk-ctabanner-lqip.webp",
-    altText = "CTA Banner"
-}: BannerProps) {
+export default function Banner(
+    {
+        title = "Empower your business with instant, intelligent crypto transactions",
+        primaryButton = {
+            text: "Get Started",
+            href: "https://www.intercom.com/view-demos"
+        },
+        secondaryButton = {
+            text: "Contact Sales",
+            href: "/contact/contact-sales"
+        },
+        backgroundImage = "/assets/helpdesk-ctabanner.webp",
+        backgroundImageLQIP = "/assets/helpdesk-ctabanner-lqip.webp",
+        altText = "CTA Banner"
+    }: BannerProps) {
     return (
         <div className="relative mx-auto max-w-[1568px] overflow-hidden 2xl:rounded-t-md bg-cover bg-no-repeat mt-4 bg-right-top md:bg-right-bottom">
             <div className="-z-[1000]"></div>

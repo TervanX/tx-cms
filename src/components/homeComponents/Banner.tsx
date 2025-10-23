@@ -2,7 +2,26 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const BannerCTA = () => {
+
+interface BannerProps {
+  title?: string;
+  primaryButton?: {
+    text: string;
+    href: string;
+  };
+  secondaryButton?: {
+    text: string;
+    href: string;
+  };
+  backgroundImage?: string;
+  backgroundImageLQIP?: string;
+  altText?: string;
+}
+
+const BannerCTA: React.FC<BannerProps> = ({
+  title = "Start delivering omnichannel support today",
+  backgroundImage = "/assets/Mountains.webp",
+}) => {
   return (
     <div className="bg-black">
       <article className="relative w-full max-h-screen mx-auto grid overflow-hidden">
@@ -11,7 +30,7 @@ const BannerCTA = () => {
           <div className="relative w-full h-full overflow-hidden transform translate-z-0 backface-hidden">
             <Image
               alt="background"
-              src="/assets/Mountains.webp"
+              src={backgroundImage}
               fill
               sizes="(min-width: 1920px) 1920px, 100vw"
               className="object-cover object-center opacity-100 transition-opacity duration-[800ms]"
@@ -26,7 +45,7 @@ const BannerCTA = () => {
         <div className="row-start-1 col-start-1 z-10 w-full max-w-[1920px] mx-auto px-3 md:px-4 py-8 md:py-16 grid place-items-center">
           <div className="flex flex-col items-center gap-6 text-white text-center">
             <h2 className="text-[clamp(40px,5vw,47px)] leading-none tracking-[-0.05em] font-bold lg:max-w-[600px] md:text-[clamp(39px,5vw,47px)]">
-              Start delivering omnichannel support today
+              {title}
             </h2>
 
             <div className="flex flex-col w-full gap-2 sm:flex-row sm:w-auto">

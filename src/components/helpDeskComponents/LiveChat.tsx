@@ -3,29 +3,40 @@ import BorderTopCard from "./BorderTopCard";
 import DottedLine from "./DottedBg";
 import SubSection from "./Subsection";
 
-const LiveChat = () => {
-  const [active, setActive] = useState(0);
-  const cards = [
-    {
-      title: "Fully customizable",
-      description:
-        "Customize the Messenger to match your brand, wherever your customers are within your product, app, or website.",
-      img: "/assets/highlight.webp",
-    },
-    {
-      title: "Self-serve enabled",
-      description:
-        "Tailor the Messenger with self-serve apps that empower your customers to find help articles, read product updates, and more—without having to start a conversation.",
-      img: "/assets/highlight.webp",
-    },
+interface CardItem {
+  title: string;
+  description: string;
+  img: string;
+}
 
-    {
-      title: "Multi-brand & multilingual",
-      description:
-        "Support multiple brands, resolve queries in 45 languages and deliver exceptional experiences within the Messenger—anytime, anywhere.",
-      img: "/assets/highlight.webp",
-    },
-  ];
+interface LiveChatProps {
+  cards?: CardItem[];
+  backgroundImage?: string;
+}
+
+const LiveChat: React.FC<LiveChatProps> = ({ cards = [
+  {
+    title: "Fully customizable",
+    description:
+      "Customize the Messenger to match your brand, wherever your customers are within your product, app, or website.",
+    img: "/assets/highlight.webp",
+  },
+  {
+    title: "Self-serve enabled",
+    description:
+      "Tailor the Messenger with self-serve apps that empower your customers to find help articles, read product updates, and more—without having to start a conversation.",
+    img: "/assets/highlight.webp",
+  },
+
+  {
+    title: "Multi-brand & multilingual",
+    description:
+      "Support multiple brands, resolve queries in 45 languages and deliver exceptional experiences within the Messenger—anytime, anywhere.",
+    img: "/assets/highlight.webp",
+  },
+], backgroundImage = "/assets/image30.webp" }) => {
+  const [active, setActive] = useState(0);
+
   return (
     <div className="">
       <DottedLine />
@@ -54,7 +65,7 @@ const LiveChat = () => {
               {/* Background Pattern */}
               <div className="absolute inset-0 z-0">
                 <img
-                  src="/assets/image30.webp"
+                  src={backgroundImage}
                   alt={"Brand support"}
                   className="absolute inset-0 w-full h-full object-cover z-0"
                 />
