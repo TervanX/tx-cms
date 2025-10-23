@@ -1,6 +1,7 @@
 // components/PrivacyPolicy.tsx
 'use client';
 
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 export default function PrivacyPolicy() {
@@ -40,24 +41,45 @@ export default function PrivacyPolicy() {
         { id: 'contact', label: 'Contact' },
     ];
 
+    const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+        const sectionId = event.target.value;
+        scrollToSection(sectionId);
+    };
+
     return (
-        <div className="min-h-screen bg-gray-50">
+        <div className="min-h-screen bg-gray-50 font-sans">
             {/* Main Content */}
-            <div className="container mx-auto my-12 px-4 pt-16 py-8">
+            <div className="container mx-auto my-24 px-4 pt-16 py-8">
+                <h1 className="text-4xl font-bold text-gray-800 mb-8">Terms & Policies</h1>
                 <div className="flex flex-col lg:flex-row gap-8">
                     {/* Navigation Sidebar */}
                     <div className="lg:w-64 flex-shrink-0">
                         <div className="bg-white rounded-lg shadow-sm lg:sticky lg:top-24 p-6">
-                            <h3 className="font-semibold text-gray-800 mb-4 text-lg">Contents</h3>
-                            <nav className="flex lg:flex-col overflow-x-auto pb-2 lg:pb-0">
+                            <div className='mb-4'>
+                                <Link href="/security/terms" className="text-lg font-semibold text-gray-800  ">Terms of Service</Link>
+                            </div>
+                            <div className="lg:hidden mb-4">
+                                <select
+                                    value={activeSection}
+                                    onChange={handleSelectChange}
+                                    className="w-full p-3 border border-gray-300 rounded-lg focus:border-black bg-white text-gray-700"
+                                >
+                                    {navigationItems.map((item) => (
+                                        <option key={item.id} value={item.id}>
+                                            {item.label}
+                                        </option>
+                                    ))}
+                                </select>
+                            </div>
+                            <nav className="hidden lg:flex lg:flex-col overflow-x-hidden pb-2 lg:pb-0">
                                 <div className="flex lg:flex-col space-x-2 lg:space-x-0 lg:space-y-1 min-w-max lg:min-w-0">
                                     {navigationItems.map((item) => (
                                         <button
                                             key={item.id}
                                             onClick={() => scrollToSection(item.id)}
-                                            className={`text-left px-3 py-2 transition-all duration-200 whitespace-nowrap ${activeSection === item.id
-                                                ? 'text-blue-600 font-medium border-b-2 lg:border-b-0 lg:border-l-2 border-blue-600'
-                                                : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
+                                            className={`text-left px-3 py-2 transition-all duration-200 w-full text-black text-sm ${activeSection === item.id
+                                                ? 'font-medium border-b-2 lg:border-b-0 text-black lg:border-l-2 border-primary'
+                                                : 'text-gray-600 '
                                                 }`}
                                         >
                                             {item.label}

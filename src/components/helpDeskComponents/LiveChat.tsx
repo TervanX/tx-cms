@@ -2,39 +2,35 @@ import { useState } from "react";
 import BorderTopCard from "./BorderTopCard";
 import DottedLine from "./DottedBg";
 import SubSection from "./Subsection";
+import { LiveChatProps } from "@/app/types/solution.type";
 
-interface CardItem {
-  title: string;
-  description: string;
-  img: string;
-}
+const LiveChat: React.FC<LiveChatProps> = ({
+  title = "Live chat with a best-in-class Messenger",
+  tag = "Messenger",
+  description = "Deliver live chat support that’s personalized, contextual, and on-brand across your product, app, and website.",
+  cards = [
+    {
+      title: "Fully customizable",
+      description:
+        "Customize the Messenger to match your brand, wherever your customers are within your product, app, or website.",
+      img: "/assets/highlight.webp",
+    },
+    {
+      title: "Self-serve enabled",
+      description:
+        "Tailor the Messenger with self-serve apps that empower your customers to find help articles, read product updates, and more—without having to start a conversation.",
+      img: "/assets/highlight.webp",
+    },
 
-interface LiveChatProps {
-  cards?: CardItem[];
-  backgroundImage?: string;
-}
-
-const LiveChat: React.FC<LiveChatProps> = ({ cards = [
-  {
-    title: "Fully customizable",
-    description:
-      "Customize the Messenger to match your brand, wherever your customers are within your product, app, or website.",
-    img: "/assets/highlight.webp",
-  },
-  {
-    title: "Self-serve enabled",
-    description:
-      "Tailor the Messenger with self-serve apps that empower your customers to find help articles, read product updates, and more—without having to start a conversation.",
-    img: "/assets/highlight.webp",
-  },
-
-  {
-    title: "Multi-brand & multilingual",
-    description:
-      "Support multiple brands, resolve queries in 45 languages and deliver exceptional experiences within the Messenger—anytime, anywhere.",
-    img: "/assets/highlight.webp",
-  },
-], backgroundImage = "/assets/image30.webp" }) => {
+    {
+      title: "Multi-brand & multilingual",
+      description:
+        "Support multiple brands, resolve queries in 45 languages and deliver exceptional experiences within the Messenger—anytime, anywhere.",
+      img: "/assets/highlight.webp",
+    },
+  ],
+  backgroundImage = "/assets/image30.webp",
+}) => {
   const [active, setActive] = useState(0);
 
   return (
@@ -42,11 +38,7 @@ const LiveChat: React.FC<LiveChatProps> = ({ cards = [
       <DottedLine />
       <div className="relative  w-[80%] mx-auto ">
         <div className="">
-          <SubSection
-            title="Live chat with a best-in-class Messenger"
-            tag="Messenger"
-            description="Deliver live chat support that’s personalized, contextual, and on-brand across your product, app, and website."
-          />
+          <SubSection title={title} tag={tag} description={description} />
         </div>
         <div className="flex flex-col lg:flex-row-reverse lg:gap-14">
           <div className="flex-1 flex flex-col gap-4">

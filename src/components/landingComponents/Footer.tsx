@@ -11,15 +11,15 @@ export default function Footer() {
         <Link className="font-sans text-base font-semibold lg:hidden block" href="#">
           Sign in
         </Link>
-        <a className="font-sans relative cursor-pointer text-base font-normal text-white/60 transition-colors hover:text-white lg:mr-6 lg:py-3 mt-10 lg:mt-0" href="#">
+        <Link className="font-sans relative cursor-pointer text-base font-normal text-white/60 transition-colors hover:text-white lg:mr-6 lg:py-3 mt-10 lg:mt-0" href="/security/terms">
           Terms
-        </a>
-        <a className="font-sans relative cursor-pointer text-base font-normal text-white/60 transition-colors hover:text-white lg:mr-6 lg:py-3" href="#">
+        </Link>
+        <Link className="font-sans relative cursor-pointer text-base font-normal text-white/60 transition-colors hover:text-white lg:mr-6 lg:py-3" href="/security/policy">
           Privacy
-        </a>
-        <a className="font-sans relative cursor-pointer text-base font-normal text-white/60 transition-colors hover:text-white lg:mr-6 lg:py-3" href="#">
+        </Link>
+        <Link className="font-sans relative cursor-pointer text-base font-normal text-white/60 transition-colors hover:text-white lg:mr-6 lg:py-3" href="/security">
           Security
-        </a>
+        </Link>
         <div className="flex items-center lg:pl-3">
           <button className="font-sans leading-none border-none bg-transparent px-2 py-3 text-base text-white/60 hover:text-white">
             Your Privacy Choices
