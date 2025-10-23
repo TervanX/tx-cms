@@ -1117,7 +1117,10 @@ const DeskTopNavbar = () => {
   return (
     <div className=" py-4 hidden lg:flex items-center justify-between">
       <div className="flex gap-16 items-center justify-start">
-        <Link href="/home" className="flex items-center gap-2 font-bold text-lg">
+        <Link
+          href="/home"
+          className="flex items-center gap-2 font-bold text-lg"
+        >
           <Image
             src="/assets/logo.svg"
             className="h-6 w-6"
@@ -1171,7 +1174,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ toggle, isOpen }) => {
         </div>
       </div>
       <div className="flex items-center gap-4 justify-end">
-        <Button size="md" variant="primary" type="button" onClick={() => { }}>
+        <Button size="md" variant="primary" type="button" onClick={() => {}}>
           Sign up for free
         </Button>
 
@@ -1335,8 +1338,9 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
       </button>
 
       <div
-        className={`overflow-y-scroll transition-all duration-300 ease-in-out px-6 ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-          }`}
+        className={`overflow-y-scroll transition-all duration-300 ease-in-out px-6 ${
+          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        }`}
       >
         <div className="pb-5 text-dark text-sm lg:text-base leading-relaxed  border-gray-200 border-t-[1.5px] pt-4">
           <div className="flex flex-col lg:flex-row gap-6 ">
@@ -1363,7 +1367,10 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
                     </p>
                     {solution?.links &&
                       solution.links.map((link, index) => (
-                        <a className="text-xs text-black  font-grotesque font-semibold">
+                        <a
+                          className="text-xs text-black  font-grotesque font-semibold"
+                          href={link?.href}
+                        >
                           {link.text}
                         </a>
                       ))}
