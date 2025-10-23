@@ -640,10 +640,10 @@ const navItems: NavItemInterface[] = [
             href: "/resources/support/support-center",
             text: "Support Center ",
           },
-          {
-            href: "/resources/support/managed-support-plans",
-            text: "Managed Support Plans",
-          },
+          // {
+          //   href: "/resources/support/managed-support-plans",
+          //   text: "Managed Support Plans",
+          // },
           {
             href: "/resources/support/contact-support",
             text: "Contact Support",

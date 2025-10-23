@@ -13,7 +13,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Page = () => {
   const heroRef = useRef<HTMLDivElement>(null);
-
   return (
     <div className="relative z-10">
       <div className="px-8">
