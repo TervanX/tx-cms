@@ -105,7 +105,7 @@ export const usabilityProps = {
     ],
     additionalFeatures: [
         {
-            src: { image: "/assets/usability-2-desktop.webp" },
+            image: { src: "/assets/usability-2-desktop.webp" },
             title: 'Unified payment flows',
             description: 'Centralize collections and settlements across multiple chains with one dashboard.',
             list: {
@@ -117,7 +117,7 @@ export const usabilityProps = {
             }
         },
         {
-            src: { image: "/assets/usability-3-desktop.webp" },
+            image: { src: "/assets/usability-3-desktop.webp" },
             title: 'Integrate with your existing tools',
             description: 'Easily connect to ERP, accounting, or compliance systems with SDKs and APIs.',
             list: {
