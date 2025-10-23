@@ -3,29 +3,40 @@ import BorderTopCard from "./BorderTopCard";
 import DottedLine from "./DottedBg";
 import SubSection from "./Subsection";
 
-const GlobalWhatsapp = () => {
-  const [active, setActive] = useState(0);
-  const cards = [
-    {
-      title: "Integrate all your accounts",
-      description:
-        "Connect and manage all of your WhatsApp business accounts in a single workspace, to ensure you never miss a message.",
-      img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
-    },
-    {
-      title: "Deliver context-rich support",
-      description:
-        "Send and receive images, attachments and more directly from the Inbox, so your support agents have all the context they need to resolve issues faster.",
-      img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
-    },
+interface CardItem {
+  title: string;
+  description: string;
+  img: string;
+}
 
-    {
-      title: "Capture CSAT on WhatsApp",
-      description:
-        "Monitor how satisfied customers are with the support provided, and how it compares to your other channels.",
-      img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
-    },
-  ];
+interface GlobalWhatsappProps {
+  cards?: CardItem[];
+  backgroundImage?: string;
+}
+
+const GlobalWhatsapp: React.FC<GlobalWhatsappProps> = ({ cards = [
+  {
+    title: "Integrate all your accounts",
+    description:
+      "Connect and manage all of your WhatsApp business accounts in a single workspace, to ensure you never miss a message.",
+    img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+  },
+  {
+    title: "Deliver context-rich support",
+    description:
+      "Send and receive images, attachments and more directly from the Inbox, so your support agents have all the context they need to resolve issues faster.",
+    img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+  },
+
+  {
+    title: "Capture CSAT on WhatsApp",
+    description:
+      "Monitor how satisfied customers are with the support provided, and how it compares to your other channels.",
+    img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+  },
+], backgroundImage = "/assets/image30.webp" }) => {
+  const [active, setActive] = useState(0);
+
   return (
     <div className="mt-8 lg:mt-14">
       <DottedLine />
@@ -54,7 +65,7 @@ const GlobalWhatsapp = () => {
               {/* Background Pattern */}
               <div className="absolute inset-0 z-0">
                 <img
-                  src="/assets/image30.webp"
+                  src={backgroundImage}
                   alt={"Brand support"}
                   className="absolute inset-0 w-full h-full object-cover z-0"
                 />

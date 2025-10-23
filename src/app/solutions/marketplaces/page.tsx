@@ -19,7 +19,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Page = () => {
   return (
-    <div className="relative z-10 bg-[#f4f3ec]">
+    <div className="relative z-10 ">
       <HeroSection
         heading="Marketplaces"
         subheading="Enable crypto and fiat payments for buyers and sellers"

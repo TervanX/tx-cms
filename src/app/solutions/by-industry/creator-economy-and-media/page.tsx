@@ -19,7 +19,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Page = () => {
   return (
-    <div className="relative z-10 bg-[#f4f3ec]">
+    <div className="relative z-10 ">
       <HeroSection
         heading="Creator Economy & Media"
         subheading="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quidem alias porro voluptates harum ipsam optio?"
