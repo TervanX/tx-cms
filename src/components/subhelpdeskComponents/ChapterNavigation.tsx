@@ -1,4 +1,4 @@
-// src/app/components/ContentLayout/ChapterNavigation.tsx
+
 'use client'
 
 import { motion } from 'framer-motion'
@@ -8,7 +8,7 @@ interface ChapterNavigationProps {
     sectionProgress?: {
         productivity: any
         usability: any
-        outbound: any
+        data: any
         features: any
     }
 }
@@ -17,7 +17,7 @@ export default function ChapterNavigation({ activeSection, sectionProgress }: Ch
     const navigationItems = [
         { id: 'productivity', label: 'productivity' },
         { id: 'usability', label: 'usability' },
-        { id: 'outbound', label: 'outbound' },
+        { id: 'data', label: 'Data & Insights' },
         { id: 'features', label: 'features' },
     ]
 
@@ -29,8 +29,8 @@ export default function ChapterNavigation({ activeSection, sectionProgress }: Ch
                 return sectionProgress.productivity
             case 'usability':
                 return sectionProgress.usability
-            case 'outbound':
-                return sectionProgress.outbound
+            case 'data':
+                return sectionProgress.data
             case 'features':
                 return sectionProgress.features
             default:
@@ -53,7 +53,7 @@ export default function ChapterNavigation({ activeSection, sectionProgress }: Ch
                         return (
                             <li key={item.id} className="flex-1">
                                 <a
-                                    className={`flex w-full justify-center px-3 py-[0.875rem] font-sans text-xs/none tracking-[1.2px] whitespace-nowrap uppercase hover:text-black md:justify-start md:px-0 md:whitespace-normal dark:hover:text-white ${isActive ? 'text-black' : 'text-dark/40'
+                                    className={`flex w-full justify-center px-2 md:px-3 py-[0.875rem] font-sans text-xs/none tracking-[1.2px] whitespace-nowrap uppercase hover:text-black md:justify-start md:px-0 md:whitespace-normal ${isActive ? 'text-black' : 'text-dark/40'
                                         }`}
                                     href={`#${item.id}`}
                                     aria-current={isActive ? 'location' : undefined}

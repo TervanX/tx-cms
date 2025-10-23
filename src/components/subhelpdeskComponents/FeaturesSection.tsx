@@ -13,66 +13,94 @@ export default function FeaturesSection() {
 
     const features = [
         {
-            id: 'inbox',
-            name: 'Inbox',
+            id: 'cross-chain-settlement',
+            name: 'Automated Cross-Chain Settlement',
             href: '/suite/helpdesk/inbox',
-            description: 'Support for customers, before they need it',
+            description: 'Seamlessly settle transactions across multiple blockchains without manual processes.',
             image: '/assets/photo-1552664730-d307ca884978.jpg'
         },
         {
-            id: 'copilot',
-            name: 'Copilot',
+            id: 'smart-gas-routing',
+            name: 'Smart Gas & Fee Routing',
             href: '/suite/helpdesk/copilot',
-            description: 'AI-powered assistance for your team',
+            description: 'Optimize costs with intelligent gas routing that automatically finds the most efficient fee paths.',
             image: '/assets/photo-1677442136019-21780ecad995.jpg'
         },
         {
-            id: 'tickets',
-            name: 'Tickets',
+            id: 'instant-reconciliation',
+            name: 'Instant Reconciliation',
             href: '/suite/helpdesk/tickets',
-            description: 'Efficient ticket management system',
+            description: 'Reconcile transactions instantly with real-time sync between wallets, ledgers, and treasury systems.',
             image: '/assets/photo-1552664730-d307ca884978.jpg'
         },
         {
-            id: 'omnichannel',
-            name: 'Omnichannel',
+            id: 'unified-treasury',
+            name: 'Unified Treasury Dashboard',
             href: '/suite/helpdesk/omnichannel',
-            description: 'Unified customer experience across channels',
+            description: 'Gain complete visibility and control of all your assets across blockchains and accounts in one interface.',
             image: '/assets/photo-1677442136019-21780ecad995.jpg'
         },
         {
-            id: 'help-center',
-            name: 'Help Center',
+            id: 'multi-asset-wallet',
+            name: 'Multi-Asset Wallet Integration',
             href: '/suite/helpdesk/help-center',
-            description: 'Self-service support for your customers',
+            description: 'Manage and transact across hundreds of blockchains and tokens from a single dashboard.',
             image: '/assets/photo-1552664730-d307ca884978.jpg'
         },
         {
-            id: 'apps-integrations',
-            name: 'Apps & Integrations',
+            id: 'dynamic-liquidity',
+            name: 'Dynamic Liquidity Allocation',
             href: '/app-store',
-            description: 'Extend functionality with integrations',
+            description: 'Automatically rebalance and distribute liquidity across wallets, exchanges, and chains.',
             image: '/assets/photo-1677442136019-21780ecad995.jpg'
         },
         {
-            id: 'reporting',
-            name: 'Reporting',
+            id: 'institutional-security',
+            name: 'Institutional-Grade Security',
             href: '/suite/helpdesk/reporting',
-            description: 'Data-driven insights and analytics',
+            description: 'Protect every transaction with MPC technology, encryption, and continuous monitoring.',
             image: '/assets/photo-1552664730-d307ca884978.jpg'
         },
         {
-            id: 'knowledge-hub',
-            name: 'Knowledge Hub',
+            id: 'regulatory-compliance',
+            name: 'Regulatory Compliance Layer',
             href: '/suite/helpdesk/knowledge-hub',
-            description: 'Centralized knowledge management',
+            description: 'Stay compliant with integrated KYC, KYT, and AML analytics for every asset movement.',
             image: '/assets/photo-1677442136019-21780ecad995.jpg'
         },
         {
-            id: 'outbound',
-            name: 'Outbound',
+            id: 'access-controls',
+            name: 'Access Controls & Role Management',
             href: '/suite/helpdesk/outbound',
-            description: 'Proactive customer outreach',
+            description: 'Define user roles and granular permissions to manage secure team and enterprise operations.',
+            image: '/assets/photo-1552664730-d307ca884978.jpg'
+        },
+        {
+            id: 'ai-settlement',
+            name: 'AI-Driven Settlement Optimization',
+            href: '/suite/helpdesk/inbox',
+            description: 'Leverage AI to predict the fastest and most cost-efficient settlement routes across chains.',
+            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+        },
+        {
+            id: 'error-recovery',
+            name: 'Automated Error Recovery',
+            href: '/suite/helpdesk/copilot',
+            description: 'Detect failed transactions and automatically retry or reroute them for guaranteed delivery.',
+            image: '/assets/photo-1552664730-d307ca884978.jpg'
+        },
+        {
+            id: 'predictive-insights',
+            name: 'Predictive Treasury Insights',
+            href: '/suite/helpdesk/tickets',
+            description: 'Anticipate liquidity needs, network fee trends, and volume patterns using intelligent forecasting.',
+            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+        },
+        {
+            id: 'transaction-analytics',
+            name: 'Real-Time Transaction Analytics',
+            href: '/suite/helpdesk/omnichannel',
+            description: 'Monitor, visualize, and analyze all transactions in real time across every integrated blockchain.',
             image: '/assets/photo-1552664730-d307ca884978.jpg'
         }
     ]

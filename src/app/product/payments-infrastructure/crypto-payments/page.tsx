@@ -9,6 +9,8 @@ export default function CryptoPayments() {
             <Hero
                 title="Crypto Payments"
                 description="Accept BTC, ETH, USDT, and more"
+                subtitle="Real-time intelligence. Scalable infrastructure for the future of finance
+"
             />
             <ContentLayout />
             <Banner />

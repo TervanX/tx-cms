@@ -7,7 +7,7 @@ export default function Banner() {
 
             <div className="flex flex-col items-center justify-center gap-6 text-center text-white md:h-screen md:max-h-[800px] py-27">
                 <h2 className="font-sans text-current max-w-[18ch] mx-9 text-[2.5rem] leading-[95%] font-semibold tracking-[-1.6px] md:mx-0 md:text-[5rem] md:leading-[100%] md:tracking-[-4px]">
-                    Experience the next-gen Helpdesk today
+                    Empower your business with instant, intelligent crypto transactions
                 </h2>
 
                 <div className="mx-auto flex w-[calc(100vw-3rem)] max-w-[28rem] flex-col items-center md:max-w-[48rem]">
@@ -17,7 +17,7 @@ export default function Banner() {
                             href="https://www.intercom.com/view-demos"
                         >
                             <span className="group-focus absolute inset-0 -z-1 block w-full rounded-md transition-[background,color] duration-400 ease-out-quart bg-white/20 hover:bg-white/30 border-1 border-white"></span>
-                            Login
+                            Get Started
                         </a>
 
                         <a

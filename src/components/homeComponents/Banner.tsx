@@ -38,7 +38,7 @@ const BannerCTA = () => {
               </Link>
 
               <Link
-                href="/contact-sales"
+                href="/contact/contact-sales"
                 className="relative inline-block cursor-pointer rounded-md font-semibold tracking-tight whitespace-nowrap text-black text-base px-4 py-2.5 leading-none overflow-hidden">
                 <span className="absolute inset-0 block w-full rounded-md transition-all duration-400 bg-white group-hover:bg-white/80"></span>
                 <span className="relative z-10">Contact Sales</span>

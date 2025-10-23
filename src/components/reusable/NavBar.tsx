@@ -288,7 +288,7 @@ const navItems: NavItemInterface[] = [
           },
           {
             href: "/product/plugins-extension/logistics-plugin",
-            text: "Logistics Plugin –",
+            text: "Logistics Plugin",
           },
         ],
       },
@@ -641,14 +641,10 @@ const navItems: NavItemInterface[] = [
             text: "Support Center ",
           },
           {
-            href: "/resources/support/managed-support-plans",
-            text: "Managed Support Plans",
-          },
-          {
             href: "/resources/support/contact-support",
             text: "Contact Support",
           },
-          { href: "/contact-sales", text: "Contact-sales" },
+          { href: "/contact/contact-sales", text: "Contact sales" },
         ],
       },
       {
@@ -1141,7 +1137,7 @@ const DeskTopNavbar = () => {
           Get Started
         </Button>
         <Button size="md" variant="primary" type="button">
-          <Link href="/contact-sales">Contact Sales</Link>
+          <Link href="/contact/contact-sales">Contact Sales</Link>
         </Button>
       </div>
     </div>
@@ -1303,7 +1299,7 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, onClose }) => {
           variant="primary"
           type="button"
         >
-          <Link href="/contact-sales">Contact Sales</Link>
+          <Link href="/contact/contact-sales">Contact Sales</Link>
         </Button>
       </div>
     </motion.div>

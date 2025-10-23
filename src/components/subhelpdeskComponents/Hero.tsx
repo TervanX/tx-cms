@@ -8,9 +8,10 @@ interface HeroProps {
     title: string;
     description: string;
     span?: string;
+    subtitle?: string;
 }
 
-export default function Hero({ title, description, span }: HeroProps) {
+export default function Hero({ title, description, span, subtitle }: HeroProps) {
     const containerRef = useRef(null)
 
     const featureLinks = [
@@ -109,15 +110,15 @@ export default function Hero({ title, description, span }: HeroProps) {
     const efficiencyCards = [
         {
             category: 'Productivity',
-            title: 'AI tools that maximize productivity'
+            title: 'AI tools that maximize productivity and Optimise gas fee'
         },
         {
             category: 'Usability',
-            title: 'Modern software that\'s fast and friction-free'
+            title: 'Unified dashboards, real-time blockchain monitoring, and API-first design make operations seamless for teams of any size'
         },
         {
-            category: 'Data',
-            title: 'Actionable insights that drive better decisions'
+            category: 'Data & Insights',
+            title: 'Actionable intelligence that drives better decisions'
         }
     ]
 
@@ -156,8 +157,11 @@ export default function Hero({ title, description, span }: HeroProps) {
                         <span className="lg:inline-block lg:mt-[0.15em] lg:ml-[36.75%]">{span}</span>
                     </h1>
 
-                    <p className="my-8 w-full max-w-[500px] text-lg leading-[120%] 2xl:max-w-[600px] 2xl:text-xl">
+                    <p className="mt-8 mb-1 w-full max-w-[500px] text-lg leading-[120%] 2xl:max-w-[600px] 2xl:text-xl">
                         {description}
+                    </p>
+                    <p className="mb-8 w-full max-w-[600px] text-lg leading-[120%] 2xl:max-w-[700px] 2xl:text-xl">
+                        {subtitle}
                     </p>
                     <motion.div
                         className="flex gap-2 transition-transform duration-300 ease-out-quart will-change-transform"
@@ -174,7 +178,7 @@ export default function Hero({ title, description, span }: HeroProps) {
                         </a>
 
                         <a
-                            href="/contact-sales"
+                            href="/contact/contact-sales"
                             className="btn group relative isolate inline-block cursor-pointer rounded-md transition-[background,color] duration-400 ease-out-quart text-center font-semibold tracking-tight whitespace-nowrap first-line:z-1 lg:text-base/none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-outline disabled:pointer-events-none disabled:opacity-50 text-black px-3 py-2.5 text-base/none lg:px-4"
                         >
                             <span className="group-focus absolute inset-0 -z-1 block w-full rounded-md transition-[background,color] duration-400 ease-out-quart bg-white group-hover:bg-white/80" />
@@ -215,7 +219,7 @@ export default function Hero({ title, description, span }: HeroProps) {
                 </motion.div>
 
                 {/* Feature links */}
-                <motion.div
+                {/* <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.7 }}
@@ -244,7 +248,7 @@ export default function Hero({ title, description, span }: HeroProps) {
                             </motion.li>
                         ))}
                     </ul>
-                </motion.div>
+                </motion.div> */}
 
                 {/* Efficiency section */}
                 <motion.div
@@ -252,8 +256,8 @@ export default function Hero({ title, description, span }: HeroProps) {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 1 }}
                 >
-                    <h2 className="mb-6 text-center text-[2rem] leading-[115%] font-semibold tracking-[-0.96px] xl:mb-12 xl:text-[3rem] xl:tracking-[-1.44px]">
-                        How Helpdesk drives efficiency
+                    <h2 className="mt-12 mb-6 text-center text-[2rem] leading-[115%] font-semibold tracking-[-0.96px] xl:mb-12 xl:text-[3rem] xl:tracking-[-1.44px]">
+                        How Crypto Payments Drives Financial Efficiency
                     </h2>
 
                     <div className="flex flex-col gap-6 rounded-md border border-white/20 bg-white/10 p-6 backdrop-blur-[10px] md:flex-row xl:gap-8 xl:p-8">

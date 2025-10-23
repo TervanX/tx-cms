@@ -12,20 +12,40 @@ export default function UsabilitySection() {
     const usabilityFeatures = [
         {
             title: 'Instant insight with pre-built reporting',
-            description: 'Monitor, analyze and optimize your support with powerful, customizable reports and real-time performance metrics.'
+            description: 'Monitor and optimize performance with AI-curated reports and dashboards.',
+            list: {
+                items: [
+                    'Real-time transaction tracking',
+                    'Pre-built analytics templates',
+                    'Fee and settlement optimization'
+                ]
+            }
         }
     ]
 
     const additionalFeatures = [
         {
             image: "/assets/usability-2-desktop.webp",
-            title: 'Ticketing designed for teamwork',
-            description: 'Resolve complex issues more efficiently with Tickets designed to streamline collaboration and keep the conversation going—no switching tools or lost context.'
+            title: 'Unified payment flows',
+            description: 'Centralize collections and settlements across multiple chains with one dashboard.',
+            list: {
+                items: [
+                    'Multi-wallet management',
+                    'Shared audit trails',
+                    'Role-based access for teams'
+                ]
+            }
         },
         {
             image: "/assets/usability-3-desktop.webp",
             title: 'Integrate with your existing tools',
-            description: 'Connect apps like Slack, Jira, and Salesforce directly in the Helpdesk, so your agents can take action and access customer information in one place.'
+            description: 'Easily connect to ERP, accounting, or compliance systems with SDKs and APIs.',
+            list: {
+                items: [
+                    'REST, GraphQL, and Webhook support',
+                    'Real-time sync with reporting systems',
+                ]
+            }
         }
     ]
 
@@ -49,7 +69,7 @@ export default function UsabilitySection() {
                                 transition={{ duration: 0.8 }}
                                 className="max-w-[300px] pt-12 text-[2.5rem] leading-[95%] font-semibold tracking-[-0.1rem] text-balance md:max-w-[480px] md:pt-0 lg:flex lg:max-w-none lg:flex-col lg:text-6xl xl:text-[5rem] xl:tracking-[-0.25rem] xl:text-nowrap"
                             >
-                                Modern software that's <span className="lg:mx-auto xl:block 2xl:whitespace-nowrap">fast and friction-free</span>
+                                Fast and friction-free <span className="lg:mx-auto xl:block 2xl:whitespace-nowrap"></span>
                             </motion.h2>
 
                             <motion.p
@@ -58,7 +78,7 @@ export default function UsabilitySection() {
                                 transition={{ duration: 0.8, delay: 0.2 }}
                                 className="mr-auto max-w-[480px] text-lg leading-[135%] text-black/80"
                             >
-                                Helpdesk is fast to set up and easy to use. Pre-built reports, built-in ticketing, and native integrations with tools like Slack and Jira help teams work seamlessly and stay aligned.
+                                Crypto Payments is simple to set up, powerful to scale, and intuitive to use. Unified dashboards, multi-chain visibility, and an API-first experience make it effortless for teams and developers alike.
                             </motion.p>
                         </div>
 
@@ -122,6 +142,11 @@ export default function UsabilitySection() {
                                 <p className="leading-[135%] text-black/60">
                                     {feature.description}
                                 </p>
+                                <ul className="mt-3 list-disc pl-5 text-black/60">
+                                    {feature.list.items.map((item) => (
+                                        <li key={item}>{item}</li>
+                                    ))}
+                                </ul>
                             </motion.div>
                         ))}
                     </div>
@@ -151,6 +176,11 @@ export default function UsabilitySection() {
                                 <p className="leading-[135%] text-black/60">
                                     {feature.description}
                                 </p>
+                                <ul className="mt-3 list-disc pl-5 text-black/60">
+                                    {feature.list.items.map((item) => (
+                                        <li key={item}>{item}</li>
+                                    ))}
+                                </ul>
                             </div>
                         </motion.div>
                     ))}

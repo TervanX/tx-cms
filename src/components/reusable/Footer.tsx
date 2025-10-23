@@ -191,7 +191,7 @@ const Footer: React.FC = () => {
                   Get answers about features, pricing, and implementation from
                   our team.
                 </p>
-                <Link href="/contact-sales">
+                <Link href="/contact/contact-sales">
                   <button
                     type="button"
                     className="group rounded-lg transition-all h-10 px-4 bg-transparent border border-dark text-dark hover:bg-neutral-200 hover:border-dark hover:text-dark active:bg-neutral-300 active:border-dark active:text-dark focus:border-dark focus:text-dark disabled:bg-transparent disabled:border-neutral-400 disabled:text-neutral-400 whitespace-nowrap w-full"

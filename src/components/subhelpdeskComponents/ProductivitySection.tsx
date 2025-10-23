@@ -1,4 +1,4 @@
-// src/app/components/ContentLayout/sections/ProductivitySection.tsx
+
 'use client'
 
 import { motion } from 'framer-motion'
@@ -11,16 +11,16 @@ export default function ProductivitySection() {
 
     const features = [
         {
-            title: 'An AI assistant for every agent',
-            description: 'Copilot provides expert training, troubleshooting, and guidance so agents can find answers faster and get more done for customers.'
+            title: 'Automated cross-chain settlement',
+            description: ' Instantly bridge and settle payments across multiple blockchains without manual intervention. TervanX identifies the most efficient settlement path, executes transfers autonomously, and ensures every transaction reaches its final destination in real time.'
         },
         {
-            title: 'Automate repetitive tasks',
-            description: 'No-code workflows handle repetitive tasks, so agents can focus on helping customers, not managing processes.'
+            title: 'Smart gas and fee routing',
+            description: 'The AI engine continuously monitors network congestion and fee volatility, dynamically routing transactions through the cheapest and fastest paths — ensuring maximum cost efficiency while maintaining speed and reliability.'
         },
         {
-            title: 'Support every customer, in every language',
-            description: 'Helpdesk unifies messages from every channel and uses AI to translate 45+ languages in real time—so agents can respond faster, without switching tools.'
+            title: 'Instant reconciliation with treasury dashboards',
+            description: ' All payments, settlements, and transfers automatically reconcile in your treasury dashboard. Finance teams can track real-time balances, generate statements, and sync records across wallets, chains, and ledgers without human input.'
         }
     ]
 
@@ -33,8 +33,6 @@ export default function ProductivitySection() {
             data-slugify="id"
         >
             <div className="flex flex-col gap-12">
-
-                {/* Header Section */}
                 <div>
                     <div className="relative z-[1] w-full px-3 md:px-0 xl:flex xl:items-end xl:justify-between">
                         <div className="flex w-full flex-col gap-6">
@@ -53,7 +51,7 @@ export default function ProductivitySection() {
                                 transition={{ duration: 0.8, delay: 0.2 }}
                                 className="mr-auto max-w-[480px] text-lg leading-[135%] text-black/80"
                             >
-                                Agents can resolve complex queries more efficiently in any language with instant assistance from Copilot, no-code workflows, and AI Inbox Translation.
+                                TervanX automates settlements, reconciliation, and compliance — all powered by on-chain intelligence.
                             </motion.p>
                         </div>
 
@@ -87,7 +85,6 @@ export default function ProductivitySection() {
                     </motion.div>
                 </div>
 
-                {/* Main Content */}
                 <div className="px-3 md:p-0">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
@@ -122,7 +119,6 @@ export default function ProductivitySection() {
                     </div>
                 </div>
 
-                {/* Testimonial Section */}
                 <div className="px-3 md:p-0">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
@@ -130,40 +126,28 @@ export default function ProductivitySection() {
                         transition={{ duration: 0.8, delay: 0.8 }}
                         className="w-full rounded-md border border-black/20 px-4 py-6 md:p-6 xl:p-12 bg-transparent"
                     >
-                        <div className="@container grid w-full grid-cols-[80px_auto] gap-x-3 gap-y-6 [grid-template-areas:'quote_quote'_'image_author'] @2xl:grid-cols-[clamp(0px,33.333%,300px)_1fr] @2xl:gap-8 @2xl:[grid-template-areas:'image_quote'_'image_author'] @3xl:grid-cols-[1fr_2fr]">
+                        <div className=" w-full flex flex-col gap-6  lg:gap-y-12 items-center justify-center">
 
                             {/* Quote */}
                             <div className="flex flex-col gap-4 text-current [grid-area:quote]">
-                                <span className="text-[var(--text-color)] before:bg-[var(--dot-color)] inline-flex h-fit max-w-max flex-none items-center gap-1.5 font-sans text-base leading-none font-bold whitespace-nowrap before:h-3 before:w-3 before:rounded-full xl:text-lg xl:before:h-3.5 xl:before:w-3.5 2xl:before:h-4 2xl:before:w-4 bg-transparent before:hidden">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="102" height="25" fill="none">
-                                        {/* Lightspeed logo SVG */}
-                                        <g clipPath="url(#lightspeed_svg__a)">
-                                            <mask id="lightspeed_svg__b" width="102" height="25" x="0" y="0" maskUnits="userSpaceOnUse" style={{ maskType: 'luminance' }}>
-                                                <path fill="#fff" d="M102 .9H0v23.926h102z" />
-                                            </mask>
-                                            <g fill="#191513" mask="url(#lightspeed_svg__b)">
-                                                {/* Logo paths would go here */}
-                                            </g>
-                                        </g>
-                                    </svg>
-                                </span>
-                                <span className="indent-[-0.45em] font-serif text-[26px] leading-[120%] tracking-[-1.2px] md:tracking-[-1.8px]  @2xl:text-[36px]">
-                                    "Our agents are dramatically more efficient when using Copilot. In testing, agents using Copilot were able to close 31% more customer conversations daily, compared to agents not using Copilot."
+
+                                <span className=" font-serif text-[26px] leading-[120%] tracking-[-1.2px] md:tracking-[-1.8px]  @2xl:text-[36px] w-full text-center">
+                                    "Since adopting TervanX Crypto Payments, we’ve achieved 80% faster reconciliation and reduced transaction errors to near zero"
                                 </span>
                             </div>
 
                             {/* Author */}
-                            <div className="mt-auto flex flex-col [grid-area:author]">
+                            <div className="mt-auto flex flex-col [grid-area:author] items-center">
                                 <span className="font-sans text-base font-bold text-current leading-[123%] tracking-[-0.16px]">
-                                    Angelo Livanos
+                                    Maya Okoro
                                 </span>
                                 <span className="font-sans text-base text-current/60 leading-[135%]">
-                                    Vice President, Global Support
+                                    VP of Digital Finance
                                 </span>
                             </div>
 
                             {/* Image */}
-                            <div className="relative aspect-[315/420] h-full w-full overflow-hidden [grid-area:image]">
+                            {/* <div className="relative aspect-[315/420] h-full w-full overflow-hidden [grid-area:image]">
                                 <div className="overflow-hidden bg-cover absolute inset-0 size-full">
                                     <img
                                         alt="Angelo Livanos"
@@ -171,7 +155,7 @@ export default function ProductivitySection() {
                                         className="transition-opacity duration-300 ease-out-quad size-full object-cover object-center opacity-100"
                                     />
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </motion.div>
                 </div>
