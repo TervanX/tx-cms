@@ -9,12 +9,36 @@ interface HeroProps {
     description: string;
     span?: string;
     subtitle?: string;
+    backgroundImage?: string;
+    productImage?: string;
+    featureLinks?: Array<{
+        name: string;
+        href: string;
+        icon: React.ReactNode;
+    }>;
+    efficiencyCards?: Array<{
+        category: string;
+        title: string;
+    }>;
+    primaryButton?: {
+        text: string;
+        href: string;
+    };
+    secondaryButton?: {
+        text: string;
+        href: string;
+    };
+    efficiencyTitle?: string;
 }
 
-export default function Hero({ title, description, span, subtitle }: HeroProps) {
-    const containerRef = useRef(null)
-
-    const featureLinks = [
+export default function Hero({
+    title,
+    description,
+    span,
+    subtitle,
+    backgroundImage = "/assets/hero.webp",
+    productImage = "/assets/download.png",
+    featureLinks = [
         {
             name: 'Inbox',
             href: '/suite/helpdesk/inbox',
@@ -105,9 +129,8 @@ export default function Hero({ title, description, span, subtitle }: HeroProps) 
                 </svg>
             )
         }
-    ]
-
-    const efficiencyCards = [
+    ],
+    efficiencyCards = [
         {
             category: 'Productivity',
             title: 'AI tools that maximize productivity and Optimise gas fee'
@@ -120,12 +143,20 @@ export default function Hero({ title, description, span, subtitle }: HeroProps) 
             category: 'Data & Insights',
             title: 'Actionable intelligence that drives better decisions'
         }
-    ]
-
+    ],
+    primaryButton = {
+        text: 'Login',
+        href: 'https://www.intercom.com/view-demos'
+    },
+    secondaryButton = {
+        text: 'Contact Sales',
+        href: '/contact/contact-sales'
+    },
+    efficiencyTitle = 'How Crypto Payments Drives Financial Efficiency'
+}: HeroProps) {
+    const containerRef = useRef(null)
     const { scrollY } = useScroll();
-
     const headerOpacity = useTransform(scrollY, [0, 200, 400], [1, 0.8, 0]);
-
     const imageScale = useTransform(scrollY, [0, 200, 400], [1, 1.05, 1.1]);
 
     return (
@@ -136,7 +167,7 @@ export default function Hero({ title, description, span, subtitle }: HeroProps) 
             <div className="overflow-hidden bg-cover absolute inset-0 size-full">
                 <img
                     alt="Helpdesk illustration"
-                    src="/assets/hero.webp"
+                    src={backgroundImage}
                     className="transition-opacity duration-300 ease-out-quad size-full object-cover object-center opacity-100"
                     style={{ position: 'absolute', height: '100%', width: '100%', left: 0, top: 0, right: 0, bottom: 0 }}
                 />
@@ -171,18 +202,18 @@ export default function Hero({ title, description, span, subtitle }: HeroProps) 
                     >
                         <a
                             className="btn group relative isolate inline-block cursor-pointer rounded-md transition-[background,color] duration-400 ease-out-quart text-center font-semibold tracking-tight whitespace-nowrap first-line:z-1 lg:text-base/none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-outline disabled:pointer-events-none disabled:opacity-50 bg-transparent text-white hover:bg-white hover:text-black px-3 py-2.5 text-base/none lg:px-4"
-                            href="https://www.intercom.com/view-demos"
+                            href={primaryButton.href}
                         >
                             <span className="group-focus absolute inset-0 -z-1 block w-full rounded-md transition-[background,color] duration-400 ease-out-quart border border-white" />
-                            Login
+                            {primaryButton.text}
                         </a>
 
                         <a
-                            href="/contact/contact-sales"
+                            href={secondaryButton.href}
                             className="btn group relative isolate inline-block cursor-pointer rounded-md transition-[background,color] duration-400 ease-out-quart text-center font-semibold tracking-tight whitespace-nowrap first-line:z-1 lg:text-base/none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-outline disabled:pointer-events-none disabled:opacity-50 text-black px-3 py-2.5 text-base/none lg:px-4"
                         >
                             <span className="group-focus absolute inset-0 -z-1 block w-full rounded-md transition-[background,color] duration-400 ease-out-quart bg-white group-hover:bg-white/80" />
-                            Contact Sales
+                            {secondaryButton.text}
                         </a>
                     </motion.div>
                 </motion.div>
@@ -213,7 +244,7 @@ export default function Hero({ title, description, span, subtitle }: HeroProps) 
                             className="transition-opacity duration-300 ease-out-quad size-full object-center opacity-100 object-contain"
                             style={{ position: 'absolute', height: '100%', width: '100%', left: 0, top: 0, right: 0, bottom: 0 }}
                             sizes="100vw"
-                            src="/assets/download.png"
+                            src={productImage}
                         />
                     </div>
                 </motion.div>
@@ -249,25 +280,21 @@ export default function Hero({ title, description, span, subtitle }: HeroProps) 
                         ))}
                     </ul>
                 </motion.div> */}
-
-                {/* Efficiency section */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 1 }}
                 >
                     <h2 className="mt-12 mb-6 text-center text-[2rem] leading-[115%] font-semibold tracking-[-0.96px] xl:mb-12 xl:text-[3rem] xl:tracking-[-1.44px]">
-                        How Crypto Payments Drives Financial Efficiency
+                        {efficiencyTitle}
                     </h2>
 
                     <div className="flex flex-col gap-6 rounded-md border border-white/20 bg-white/10 p-6 backdrop-blur-[10px] md:flex-row xl:gap-8 xl:p-8">
                         {efficiencyCards.map((card, index) => (
                             <div key={card.category} className="md:flex-1 relative">
-                                {/* Add border separators for middle items */}
                                 {index > 0 && (
                                     <div className="absolute left-0 top-0 bottom-0 w-px bg-white/20 hidden md:block" />
                                 )}
-
 
                                 <motion.div
                                     initial={{ opacity: 0, y: 20 }}
@@ -282,8 +309,6 @@ export default function Hero({ title, description, span, subtitle }: HeroProps) 
                                         {card.title}
                                     </p>
                                 </motion.div>
-
-                                {/* Mobile separator */}
                                 {index < efficiencyCards.length - 1 && (
                                     <span className="block h-px w-full bg-white/20 mt-6 md:hidden" />
                                 )}
