@@ -126,6 +126,13 @@ export default function UsabilitySection({
                 <p className="leading-[135%] text-black/60">
                   {feature.description}
                 </p>
+
+                <ul className="mt-3 list-disc pl-5 text-black/60">
+                  {feature.list.items.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                             
+                </ul>
               </motion.div>
             ))}
           </div>
@@ -155,6 +162,12 @@ export default function UsabilitySection({
                 <p className="leading-[135%] text-black/60">
                   {feature.description}
                 </p>
+                <ul className="mt-3 list-disc pl-5 text-black/60">
+                  {feature.list.items.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                             
+                </ul>
               </div>
             </motion.div>
           ))}

@@ -6,8 +6,8 @@ import { useRef, useState, useEffect } from "react";
 import ChapterNavigation from "./ChapterNavigation";
 import ProductivitySection from "./ProductivitySection";
 import UsabilitySection from "./UsabilitySection";
-import OutboundSection from "./OutboundSection";
 import FeaturesSection from "./FeaturesSection";
+import OutboundSection from "./DataSection";
 
 interface ContentLayoutProps {
   featuresProps: any;

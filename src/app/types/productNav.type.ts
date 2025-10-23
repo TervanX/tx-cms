@@ -50,6 +50,10 @@ interface UsabilityFeature {
     src: string;
     alt: string;
   };
+  list: {
+    items: string[
+    ]
+  }
 }
 
 export interface UsabilitySectionProps {
@@ -84,18 +88,18 @@ export interface UsabilitySectionProps {
 
 
 
-interface OutboundFeature {
+export interface OutboundFeature {
   title: string;
   description: string;
 }
 
-interface G2ComparisonItem {
+export interface G2ComparisonItemIn {
   name: string;
-  value: number;
+  value: string;
   color: string;
 }
 
-export interface OutboundSectionProps {
+export interface DataSectionProps {
   heading: {
     main: string;
     highlighted: string;
@@ -119,12 +123,12 @@ export interface OutboundSectionProps {
   g2Comparison: {
     title: string;
     description: string;
-    link: {
+    link?: {
       text: string;
       href: string;
       target?: string;
     };
-    items: G2ComparisonItem[];
+    items: G2ComparisonItemIn[];
   };
   animationConfig?: {
     margin?: any;
@@ -135,26 +139,26 @@ export interface OutboundSectionProps {
 }
 
 interface Feature {
-    id: string;
-    name: string;
-    href: string;
-    description: string;
-    image: string;
+  id: string;
+  name: string;
+  href: string;
+  description: string;
+  image: string;
 }
 
 export interface FeaturesSectionProps {
-    title?: string;
-    features: Feature[];
-    defaultActiveFeature?: string;
-    sectionStyle?: {
-        backgroundColor?: string;
-    };
-    linkStyle?: {
-        text?: string;
-    };
-    animationConfig?: {
-        margin?: any;
-    };
+  title?: string;
+  features: Feature[];
+  defaultActiveFeature?: string;
+  sectionStyle?: {
+    backgroundColor?: string;
+  };
+  linkStyle?: {
+    text?: string;
+  };
+  animationConfig?: {
+    margin?: any;
+  };
 }
 
 

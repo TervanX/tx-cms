@@ -30,7 +30,7 @@ const Page = () => {
         }}
         secondaryButton={{
           text: "Contact Sales",
-          href: "/contact-sales",
+          href: "/contact/contact-sales",
         }}
       />
       <div className="w-[95%] mx-auto">

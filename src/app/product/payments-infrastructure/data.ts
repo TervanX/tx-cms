@@ -98,6 +98,13 @@ export const usabilityProps = {
             title: "Instant insight with pre-built reporting",
             description:
                 "Monitor, analyze and optimize your support with powerful, customizable reports and real-time performance metrics.",
+            list: {
+                items: [
+                    'Real-time transaction tracking',
+                    'Pre-built analytics templates',
+                    'Fee and settlement optimization'
+                ]
+            }
         },
     ],
     additionalFeatures: [
@@ -109,6 +116,13 @@ export const usabilityProps = {
             title: "Ticketing designed for teamwork",
             description:
                 "Resolve complex issues more efficiently with Tickets designed to streamline collaboration and keep the conversation going—no switching tools or lost context.",
+            list: {
+                items: [
+                    'Multi-wallet management',
+                    'Shared audit trails',
+                    'Role-based access for teams'
+                ]
+            }
         },
         {
             image: {
@@ -118,6 +132,12 @@ export const usabilityProps = {
             title: "Integrate with your existing tools",
             description:
                 "Connect apps like Slack, Jira, and Salesforce directly in the Helpdesk, so your agents can take action and access customer information in one place.",
+            list: {
+                items: [
+                    'REST, GraphQL, and Webhook support',
+                    'Real-time sync with reporting systems',
+                ]
+            }
         },
     ],
     sectionStyle: {
@@ -167,11 +187,6 @@ export const outboundProps = {
         title: "Ranked #1 on G2 in 97 categories",
         description:
             "Intercom is rated highest on G2's most recent User Satisfaction Ratings for CS.",
-        link: {
-            text: "Read the report",
-            href: "https://www.g2.com/compare_reports/intercom-zendesk-support-suite-and-salesforce-service-cloud",
-            target: "_self",
-        },
         items: [
             { name: "Intercom", value: 97, color: "text-black" },
             { name: "Salesforce", value: 0, color: "text-black/40" },
@@ -258,3 +273,5 @@ export const featuresProps = {
         text: "Find out more",
     },
 };
+
+

@@ -131,9 +131,9 @@ const Footer: React.FC = () => {
                 <p className="text-sm lg:text-base leading-[130%] font-sans font-bold text-white">
                   Tervanx © 2025
                 </p>
-                {legalLinks.map((link) => (
+                {legalLinks.map((link, index) => (
                   <FooterButton
-                    key={link.href}
+                    key={`legal-${index}-${link.label}`}
                     href={link.href}
                     variant="muted"
                   >
@@ -145,18 +145,19 @@ const Footer: React.FC = () => {
 
             {/* Right Column - Footer Navigation Grid */}
             <div className="grid grid-cols-1 gap-12 order-1 md:order-2 md:grid-cols-3 md:gap-12 md:gap-y-[86px] lg:grid-cols-3 lg:gap-16 xl:grid-cols-4 xl:gap-8 2xl:gap-16">
-              {footerData.map((section, idx) => (
+              {footerData.map((section, sectionIndex) => (
                 <div
-                  key={section.title}
-                  className={`flex flex-col gap-4 ${idx >= 6 ? "md:col-span-2 lg:col-span-1" : ""
-                    } ${idx === 6 ? "lg:col-span-2 xl:col-span-1" : ""}`}
+                  key={`section-${sectionIndex}-${section.title}`}
+                  className={`flex flex-col gap-4 ${
+                    sectionIndex >= 6 ? "md:col-span-2 lg:col-span-1" : ""
+                  } ${sectionIndex === 6 ? "lg:col-span-2 xl:col-span-1" : ""}`}
                 >
                   <p className="text-sm lg:text-base leading-[130%] font-sans font-bold text-white">
                     {section.title}
                   </p>
-                  {section.links.map((link) => (
+                  {section.links.map((link, linkIndex) => (
                     <FooterButton
-                      key={link.href}
+                      key={`link-${sectionIndex}-${linkIndex}-${link.label}`}
                       href={link.href}
                       external={link.external}
                     >
@@ -168,9 +169,9 @@ const Footer: React.FC = () => {
                       <p className="mt-4 text-sm lg:text-base leading-[130%] font-sans font-bold text-white">
                         {section.socialTitle}
                       </p>
-                      {section.socialLinks.map((link) => (
+                      {section.socialLinks.map((link, socialIndex) => (
                         <FooterButton
-                          key={link.href}
+                          key={`social-${sectionIndex}-${socialIndex}-${link.label}`}
                           href={link.href}
                           external={link.external}
                         >
@@ -191,7 +192,7 @@ const Footer: React.FC = () => {
                   Get answers about features, pricing, and implementation from
                   our team.
                 </p>
-                <Link href="/contact-sales">
+                <Link href="/contact/contact-sales">
                   <button
                     type="button"
                     className="group rounded-lg transition-all h-10 px-4 bg-transparent border border-dark text-dark hover:bg-neutral-200 hover:border-dark hover:text-dark active:bg-neutral-300 active:border-dark active:text-dark focus:border-dark focus:text-dark disabled:bg-transparent disabled:border-neutral-400 disabled:text-neutral-400 whitespace-nowrap w-full"

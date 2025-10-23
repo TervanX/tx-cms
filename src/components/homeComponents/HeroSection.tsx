@@ -156,7 +156,7 @@ const HeroSection = () => {
                   </motion.a>
 
                   <motion.a
-                    href="/contact-sales"
+                    href="/contact/contact-sales"
                     className="btn group relative isolate inline-block cursor-pointer rounded-md transition-[background,color] duration-400 ease-out-quart text-center font-semibold tracking-tight whitespace-nowrap first-line:z-1 lg:text-base/none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-outline disabled:pointer-events-none disabled:opacity-50 text-black px-3 py-2.5 text-base/none lg:px-4"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}

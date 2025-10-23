@@ -22,7 +22,7 @@ const ProductPage: React.FC = () => {
         }}
         secondaryButton={{
           text: "Get a demo",
-          href: "/contact-sales",
+          href: "/contact/contact-sales",
         }}
         rating={{
           score: "4.7",
