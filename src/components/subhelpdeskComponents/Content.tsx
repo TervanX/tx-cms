@@ -9,46 +9,51 @@ import UsabilitySection from "./UsabilitySection";
 import FeaturesSection from "./FeaturesSection";
 import OutboundSection from "./DataSection";
 
-interface ContentLayoutProps {
-  featuresProps: any;
-  outboundProps: any;
-  productivityProps: any;
-  usabilityProps: any;
+// Define section component types
+export type SectionComponent = React.ComponentType<any>;
+
+export interface SectionConfig {
+  id: string;
+  label: string;
+  component: SectionComponent;
+  props?: any;
+}
+
+export interface ContentLayoutProps {
+  sections: SectionConfig[];
+  className?: string;
+  defaultActiveSection?: string;
 }
 
 const ContentLayout: React.FC<ContentLayoutProps> = ({
-  featuresProps,
-  outboundProps,
-  productivityProps,
-  usabilityProps,
+  sections,
+  className = "",
+  defaultActiveSection,
 }) => {
   const containerRef = useRef(null);
-  const [activeSection, setActiveSection] = useState("productivity");
-  // Create refs for each section
-  const section1Ref = useRef<HTMLDivElement>(null);
-  const section2Ref = useRef<HTMLDivElement>(null);
-  const section3Ref = useRef<HTMLDivElement>(null);
-  const section4Ref = useRef<HTMLDivElement>(null);
+  const [activeSection, setActiveSection] = useState(
+    defaultActiveSection || sections[0]?.id || ""
+  );
+
+  // Create refs for each section dynamically
+  const sectionRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"],
   });
 
-  // Track individual section progress for the underline animation
-  const section1Progress = useTransform(scrollYProgress, [0, 0.25], [0, 1]);
-  const section2Progress = useTransform(scrollYProgress, [0.25, 0.5], [0, 1]);
-  const section3Progress = useTransform(scrollYProgress, [0.5, 0.75], [0, 1]);
-  const section4Progress = useTransform(scrollYProgress, [0.75, 1], [0, 1]);
+  // Create progress transforms for each section
+  const sectionProgress = sections.reduce((acc, section, index) => {
+    const start = index / sections.length;
+    const end = (index + 1) / sections.length;
+    acc[section.id] = useTransform(scrollYProgress, [start, end], [0, 1]);
+    return acc;
+  }, {} as { [key: string]: any });
 
   // Improved section tracking using Intersection Observer
   useEffect(() => {
-    const sections = [
-      { id: "productivity", ref: section1Ref },
-      { id: "usability", ref: section2Ref },
-      { id: "outbound", ref: section3Ref },
-      { id: "features", ref: section4Ref },
-    ];
+    if (sections.length === 0) return;
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -74,39 +79,35 @@ const ContentLayout: React.FC<ContentLayoutProps> = ({
       }
     );
 
-    sections.forEach(({ ref }) => {
-      if (ref.current) {
-        observer.observe(ref.current);
+    sections.forEach((section) => {
+      const ref = sectionRefs.current[section.id];
+      if (ref) {
+        observer.observe(ref);
       }
     });
 
     return () => {
       observer.disconnect();
     };
-  }, [activeSection]);
+  }, [activeSection, sections]);
 
   // Alternative: Use scroll event listener as fallback
   useEffect(() => {
-    const handleScroll = () => {
-      const sections = [
-        { id: "productivity", ref: section1Ref },
-        { id: "usability", ref: section2Ref },
-        { id: "outbound", ref: section3Ref },
-        { id: "features", ref: section4Ref },
-      ];
+    if (sections.length === 0) return;
 
+    const handleScroll = () => {
       const scrollPosition = window.scrollY + window.innerHeight / 2;
 
-      for (const { id, ref } of sections) {
-        if (ref.current) {
-          const element = ref.current;
-          const rect = element.getBoundingClientRect();
+      for (const section of sections) {
+        const ref = sectionRefs.current[section.id];
+        if (ref) {
+          const rect = ref.getBoundingClientRect();
           const elementTop = rect.top + window.scrollY;
           const elementBottom = elementTop + rect.height;
 
           if (scrollPosition >= elementTop && scrollPosition < elementBottom) {
-            if (activeSection !== id) {
-              setActiveSection(id);
+            if (activeSection !== section.id) {
+              setActiveSection(section.id);
             }
             break;
           }
@@ -114,30 +115,23 @@ const ContentLayout: React.FC<ContentLayoutProps> = ({
       }
     };
 
-    // Add scroll listener as fallback
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [activeSection]);
+  }, [activeSection, sections]);
 
   // Handle hash link clicks
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash.replace("#", "");
-      if (
-        hash &&
-        ["productivity", "usability", "outbound", "features"].includes(hash)
-      ) {
+      if (hash && sections.some((section) => section.id === hash)) {
         setActiveSection(hash);
       }
     };
 
-    // Handle initial hash
     handleHashChange();
-
-    // Handle hash changes
     window.addEventListener("hashchange", handleHashChange);
     return () => window.removeEventListener("hashchange", handleHashChange);
-  }, []);
+  }, [sections]);
 
   // Update URL hash when active section changes
   useEffect(() => {
@@ -146,8 +140,15 @@ const ContentLayout: React.FC<ContentLayoutProps> = ({
     }
   }, [activeSection]);
 
+  if (sections.length === 0) {
+    return <div>No sections configured</div>;
+  }
+
   return (
-    <div className="relative pb-12 md:pt-24 2xl:pt-30" ref={containerRef}>
+    <div
+      className={`relative pb-12 md:pt-24 2xl:pt-30 ${className}`}
+      ref={containerRef}
+    >
       <div
         className="mx-auto w-full max-w-[1600px] px-0 md:px-4"
         data-main-content="true"
@@ -160,29 +161,28 @@ const ContentLayout: React.FC<ContentLayoutProps> = ({
           <div className="z-40">
             <ChapterNavigation
               activeSection={activeSection}
-              sectionProgress={{
-                productivity: section1Progress,
-                usability: section2Progress,
-                outbound: section3Progress,
-                features: section4Progress,
-              }}
+              sectionProgress={sectionProgress}
+              navigationItems={sections.map((section) => ({
+                id: section.id,
+                label: section.label,
+                href: `#${section.id}`,
+              }))}
             />
           </div>
 
           {/* Main Content */}
           <div className="">
-            <div ref={section1Ref} id="productivity">
-              <ProductivitySection {...productivityProps} />
-            </div>
-            <div ref={section2Ref} id="usability">
-              <UsabilitySection {...usabilityProps} />
-            </div>
-            <div ref={section3Ref} id="outbound">
-              <OutboundSection {...outboundProps} />{" "}
-            </div>
-            <div ref={section4Ref} id="features">
-              <FeaturesSection {...featuresProps} />{" "}
-            </div>
+            {sections.map((section) => (
+              <div
+                key={section.id}
+                ref={(el) => {
+                  sectionRefs.current[section.id] = el;
+                }}
+                id={section.id}
+              >
+                <section.component {...section.props} />
+              </div>
+            ))}
           </div>
         </div>
       </div>

@@ -105,7 +105,7 @@ export const usabilityProps = {
     ],
     additionalFeatures: [
         {
-            image: "/assets/usability-2-desktop.webp",
+            src: { image: "/assets/usability-2-desktop.webp" },
             title: 'Unified payment flows',
             description: 'Centralize collections and settlements across multiple chains with one dashboard.',
             list: {
@@ -117,7 +117,7 @@ export const usabilityProps = {
             }
         },
         {
-            image: "/assets/usability-3-desktop.webp",
+            src: { image: "/assets/usability-3-desktop.webp" },
             title: 'Integrate with your existing tools',
             description: 'Easily connect to ERP, accounting, or compliance systems with SDKs and APIs.',
             list: {
@@ -135,8 +135,8 @@ export const usabilityProps = {
 
 export const outboundProps = {
     heading: {
-        main: "Data & Insights",
-        highlighted: "Actionable intelligence that drives better decisions",
+        main: "Actionable intelligence",
+        highlighted: "that drives better decisions",
     },
     description:
         "Turn blockchain activity into financial intelligence. TervanX transforms millions of on-chain data points into real-time analytics, predictive insights, and AI-powered optimization, helping teams make smarter, faster financial decisions.",
