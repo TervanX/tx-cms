@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 import DottedLine from "./DottedBg";
@@ -14,23 +14,26 @@ interface InsightCardsProps {
 }
 
 const InsightCards: React.FC<InsightCardsProps> = ({
-  data = [
+  data=  [
     {
       step: "01",
       title: "Get complete oversight",
-      description: "Manage all your channels in a single workspace for total visibility into every conversation and touchpoint.",
+      description:
+        "Manage all your channels in a single workspace for total visibility into every conversation and touchpoint.",
     },
     {
       step: "02",
       title: "Real-time analytics",
-      description: "Monitor all transactions and blockchain activity with live data feeds and comprehensive dashboards.",
+      description:
+        "Monitor all transactions and blockchain activity with live data feeds and comprehensive dashboards.",
     },
     {
       step: "03",
       title: "AI-powered insights",
-      description: "Leverage machine learning to predict trends and optimize your crypto operations automatically.",
+      description:
+        "Leverage machine learning to predict trends and optimize your crypto operations automatically.",
     },
-  ]
+  ],
 }) => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 items-center justify-between gap-6">

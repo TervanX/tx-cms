@@ -83,10 +83,10 @@ const navItems: NavItemInterface[] = [
             href: "/product/payments-infrastructure/payment-links",
             text: "Payment Links ",
           },
-          {
-            href: "/product/payments-infrastructure/pos-terminal",
-            text: "POS / Terminal  ",
-          },
+          // {
+          //   href: "/product/payments-infrastructure/pos-terminal",
+          //   text: "POS / Terminal  ",
+          // },
           {
             href: "/product/payments-infrastructure/payout-api",
             text: "Payouts API  ",
@@ -564,7 +564,7 @@ const navItems: NavItemInterface[] = [
             href: "/solutions/by-industry/energy-and-utilities",
             text: "Energy & Utilities",
           },
-          { href: "/solutions/by-/education", text: "Education " },
+          { href: "/solutions/by-industry/education", text: "Education " },
           {
             href: "/solutions/by-industry/hospitality-real-state",
             text: "Hospitality & Real Estate ",

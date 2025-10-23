@@ -1,10 +1,11 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
-
-interface BannerProps {
-  title?: string;
+export interface BannerProps {
+  backgroundImage?: string;
+  backgroundImageLQIP?: string;
+  altText?: string;
   primaryButton?: {
     text: string;
     href: string;
@@ -13,14 +14,22 @@ interface BannerProps {
     text: string;
     href: string;
   };
-  backgroundImage?: string;
-  backgroundImageLQIP?: string;
-  altText?: string;
+  title?: string;
 }
 
 const BannerCTA: React.FC<BannerProps> = ({
-  title = "Start delivering omnichannel support today",
   backgroundImage = "/assets/Mountains.webp",
+  backgroundImageLQIP,
+  altText = "background",
+  primaryButton = {
+    text: "Contact Sales",
+    href: "/contact/contact-sales",
+  },
+  secondaryButton = {
+    text: "Login",
+    href: "https://www.intercom.com/view-demos",
+  },
+  title = "Start delivering omnichannel support today",
 }) => {
   return (
     <div className="bg-black">
@@ -29,12 +38,14 @@ const BannerCTA: React.FC<BannerProps> = ({
         <div className="row-start-1 col-start-1 z-0 w-full max-w-full mx-auto overflow-hidden aspect-square md:aspect-[5/3]">
           <div className="relative w-full h-full overflow-hidden transform translate-z-0 backface-hidden">
             <Image
-              alt="background"
+              alt={altText}
               src={backgroundImage}
               fill
               sizes="(min-width: 1920px) 1920px, 100vw"
               className="object-cover object-center opacity-100 transition-opacity duration-[800ms]"
               loading="lazy"
+              placeholder={backgroundImageLQIP ? "blur" : "empty"}
+              blurDataURL={backgroundImageLQIP}
             />
             {/* 20% overlay */}
             <div className="absolute inset-0 bg-black/20" />
@@ -49,19 +60,24 @@ const BannerCTA: React.FC<BannerProps> = ({
             </h2>
 
             <div className="flex flex-col w-full gap-2 sm:flex-row sm:w-auto">
-              <Link
-                href="https://www.intercom.com/view-demos"
-                className="text-base leading-none font-semibold tracking-tight cursor-pointer rounded-md border border-white px-2 py-2 transition-all duration-300 text-white hover:text-white/80"
-              >
-                <span>Login</span>
-              </Link>
+              {secondaryButton && (
+                <Link
+                  href={secondaryButton.href}
+                  className="text-base leading-none font-semibold tracking-tight cursor-pointer rounded-md border border-white px-2 py-2 transition-all duration-300 text-white hover:text-white/80"
+                >
+                  <span>{secondaryButton.text}</span>
+                </Link>
+              )}
 
-              <Link
-                href="/contact/contact-sales"
-                className="relative inline-block cursor-pointer rounded-md font-semibold tracking-tight whitespace-nowrap text-black text-base px-4 py-2.5 leading-none overflow-hidden">
-                <span className="absolute inset-0 block w-full rounded-md transition-all duration-400 bg-white group-hover:bg-white/80"></span>
-                <span className="relative z-10">Contact Sales</span>
-              </Link>
+              {primaryButton && (
+                <Link
+                  href={primaryButton.href}
+                  className="relative inline-block cursor-pointer rounded-md font-semibold tracking-tight whitespace-nowrap text-black text-base px-4 py-2.5 leading-none overflow-hidden"
+                >
+                  <span className="absolute inset-0 block w-full rounded-md transition-all duration-400 bg-white group-hover:bg-white/80"></span>
+                  <span className="relative z-10">{primaryButton.text}</span>
+                </Link>
+              )}
             </div>
           </div>
         </div>

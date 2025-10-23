@@ -1,38 +1,32 @@
-'use client'
+"use client";
 
 import { useState } from "react";
 import BorderTopCard from "./BorderTopCard";
-
-interface CardItem {
-  title: string;
-  description: string;
-  img: string;
-}
-
-interface BrandEmailSupportProps {
-  cards?: CardItem[];
-  backgroundImage?: string;
-}
+import { BrandEmailSupportProps } from "@/app/types/solution.type";
 
 const BrandEmailSupport: React.FC<BrandEmailSupportProps> = ({
   cards = [
     {
       title: "Ensure every email is on-brand",
-      description: "Support multiple email domains, assign logos and create custom signatures to ensure every customer email reflects your unique brand identity.",
+      description:
+        "Support multiple email domains, assign logos and create custom signatures to ensure every customer email reflects your unique brand identity.",
       img: "/assets/highlight.webp",
     },
     {
       title: "Continue the conversation",
-      description: "Move the conversation from live chat to email, and let customers pick up when it's most convenient to them.",
+      description:
+        "Move the conversation from live chat to email, and let customers pick up when it's most convenient to them.",
       img: "/assets/highlight.webp",
     },
     {
       title: "Track email performance",
-      description: "Monitor performance metrics and customer satisfaction to maintain high CSAT for your email support.",
+      description:
+        "Monitor performance metrics and customer satisfaction to maintain high CSAT for your email support.",
       img: "/assets/highlight.webp",
     },
   ],
-  backgroundImage = "/assets/image30.webp"
+  backgroundImage = "/assets/image30.webp",
+  backgroundAlt = "Brand support",
 }) => {
   const [active, setActive] = useState(0);
 
@@ -43,7 +37,7 @@ const BrandEmailSupport: React.FC<BrandEmailSupportProps> = ({
         <div className="absolute inset-0 z-0">
           <img
             src={backgroundImage}
-            alt={"Brand support"}
+            alt={backgroundAlt}
             className="absolute inset-0 w-full h-full object-cover z-0"
           />
         </div>
