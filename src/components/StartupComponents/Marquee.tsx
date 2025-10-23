@@ -11,6 +11,7 @@ export const Marquee: React.FC<MarqueeProps> = ({
     direction = 'left',
     className = '',
 }) => {
+
     const marqueeItems = items || [
         {
             id: '1',

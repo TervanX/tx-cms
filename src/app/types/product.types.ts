@@ -12,7 +12,7 @@ export const FeatureItemSchema = z.object({
   id: z.number(),
   tag: z.string(),
   title: z.string(),
-  description: z.any(), 
+  description: z.any(),
   ctaText: z.string().optional(),
   ctaLink: z.string().optional(),
   ctaTarget: z.string().optional(),
@@ -99,11 +99,27 @@ export const FeatureSectionPropSchema = z.object({
   index: z.number(),
 });
 
-export const  FeatureCardPropsSchema = z.object( {
+export const FeatureCardPropsSchema = z.object({
   icon: z.any(),
   title: z.string(),
   description: z.string()
 })
+
+export const ProductSchema = z.object({
+  title: z.string().optional(),
+  description: z.string().optional(),
+  image: z.string().optional(),
+  imagePosition: z.enum(["left", "right"]).default("left").optional
+});
+
+export const ProductSectionPropsSchema = z.object({
+  products: z.array(ProductSchema).optional().default([]),
+  title: z.string().optional()
+});
+
+// Infer the TypeScript types from the Zod schemas
+export type Product = z.infer<typeof ProductSchema>;
+export type ProductSectionProps = z.infer<typeof ProductSectionPropsSchema>;
 
 export type FeatureCardProps = z.infer<typeof FeatureCardPropsSchema>;
 export type ButtonConfig = z.infer<typeof ButtonConfigSchema>;

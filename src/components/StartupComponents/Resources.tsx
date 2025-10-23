@@ -63,7 +63,7 @@ const Resources: React.FC = () => {
         }
     ];
 
-    return <CardGrid cards={cards} />;
+    return <CardGrid cards={cards} title="Resources for Startups" />;
 };
 
 export default Resources;
@@ -131,13 +131,13 @@ const Card: React.FC<{ card: CardItem }> = ({ card }) => {
     );
 };
 
-export const CardGrid: React.FC<CardGridProps> = ({ cards }) => {
+export const CardGrid: React.FC<CardGridProps> = ({ cards, title }) => {
     return (
         <div className="px-6 md:px-12 lg:px-16 xl:px-20 2xl:px-24 my-28">
             <div className="container mx-auto px-4">
                 <div className="flex flex-col items-center gap-4 text-center md:gap-6">
                     <h4 className="max-w-6xl text-balance font-founders-grotesk text-[36px] leading-none tracking-[-0.72px] text-dark md:text-[48px] md:tracking-[-0.96px] lg:text-[48px] lg:tracking-[-0.96px]  lg:mb-12 mb-6">
-                        Resources for Startups
+                        {title}
                     </h4>
                 </div>
                 <div className="h-10" />

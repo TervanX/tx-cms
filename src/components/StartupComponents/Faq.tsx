@@ -88,7 +88,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ item, isOpen, onToggle })
     );
 };
 
-const FAQAccordion: React.FC = () => {
+const FAQAccordion: React.FC<{ title?: string }> = ({ title = " Frequently asked questions" }) => {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
 
     const handleToggle = (index: number) => {
@@ -100,7 +100,7 @@ const FAQAccordion: React.FC = () => {
             <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-8">
                 <div >
                     <h4 className="text-3xl lg:text-5xl max-w-xl text-dark mb-4">
-                        Frequently asked questions
+                        {title}
                     </h4>
                 </div>
 

@@ -1,11 +1,5 @@
 import Button from "../reusable/Button";
-
-interface HeroSectionProps {
-  title: string;
-  description: string;
-  imageUrl?: string;
-}
-
+import { HeroSectionProps } from "@/app/types/startups.types";
 const HeroSection: React.FC<HeroSectionProps> = ({
   title,
   description,

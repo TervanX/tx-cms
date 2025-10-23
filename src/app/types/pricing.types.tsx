@@ -12,7 +12,7 @@ export const PersonSchema = z.object({
 
 export const FAQItemSchema = z.object({
   question: z.string(),
-  answer: z.any(), 
+  answer: z.any(),
 });
 
 

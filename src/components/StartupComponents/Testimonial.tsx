@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Button from "../reusable/Button";
-import { TestimonialProps } from "@/app/types/startups.types";
+import { TestimonialProps, TestimonialSectionProps } from "@/app/types/startups.types";
 
 const TestimonialCard: React.FC<TestimonialProps> = ({
     logo,
@@ -9,6 +9,7 @@ const TestimonialCard: React.FC<TestimonialProps> = ({
     author,
     authorRole,
     authorImage,
+    buttonText = "Read customer story"
 }) => {
 
     return (
@@ -41,7 +42,7 @@ const TestimonialCard: React.FC<TestimonialProps> = ({
                 </div>
                 <div className="flex  flex-col lg:items-center gap-5 items-start">
                     <Button variant="outline" size="md"  >
-                        Read customer story →
+                        {buttonText}
                     </Button>
                 </div>
             </div>
@@ -49,8 +50,8 @@ const TestimonialCard: React.FC<TestimonialProps> = ({
     );
 };
 
-const Testimonial: React.FC = () => {
-    const testimonials: TestimonialProps[] = [
+const Testimonial: React.FC<TestimonialSectionProps> = (
+    { testimonials = [
         {
             id: 1,
             company: "Paraform",
@@ -84,15 +85,15 @@ const Testimonial: React.FC = () => {
             authorImage: "/assets/image13.webp",
             link: ""
         }
-    ]
+    ], title = "See why startups love Apollo", description = "Check out how other teams save time & money with the easiest all-in-one sales platform." }) => {
     return (<section className="px-6 md:px-12 lg:px-16 xl:px-20 2xl:px-24 my-28">
         <div className="container mx-auto px-4">
             <div className="flex flex-col items-center gap-4 text-center md:gap-6">
                 <h4 className="max-w-6xl text-balance font-founders-grotesk text-[36px] leading-none tracking-[-0.72px] text-dark md:text-[48px] md:tracking-[-0.96px]">
-                    See why startups love Apollo
+                    {title}
                 </h4>
                 <div className="max-w-2xl text-balance font-abc-diatype text-[16px] leading-[130%] text-gray-700">
-                    Check out how other teams save time & money with the easiest all-in-one sales platform.
+                    {description}
                 </div>
             </div>
             <div className="h-10" />
