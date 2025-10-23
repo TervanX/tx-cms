@@ -13,10 +13,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Page = () => {
   const heroRef = useRef<HTMLDivElement>(null);
-
   return (
     <div className="relative z-10">
-      <div>
+      <div className="px-8">
         <div ref={heroRef} className="sticky top-0 z-10 lg:min-h-screen">
           <HeroSection />
         </div>
