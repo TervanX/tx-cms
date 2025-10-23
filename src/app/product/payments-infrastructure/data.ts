@@ -4,7 +4,7 @@ export const productivityProps = {
         highlighted: "maximize productivity",
     },
     description:
-        "Agents can resolve complex queries more efficiently in any language with instant assistance from Copilot, no-code workflows, and AI Inbox Translation.",
+        "TervanX automates settlements, reconciliation, and compliance — all powered by on-chain intelligence.",
     images: {
         mobile: {
             src: "//assetsproductivity-hero-mobile.webp",
@@ -21,26 +21,23 @@ export const productivityProps = {
     },
     features: [
         {
-            title: "An AI assistant for every agent",
-            description:
-                "Copilot provides expert training, troubleshooting, and guidance so agents can find answers faster and get more done for customers.",
+            title: 'Automated cross-chain settlement',
+            description: ' Instantly bridge and settle payments across multiple blockchains without manual intervention. TervanX identifies the most efficient settlement path, executes transfers autonomously, and ensures every transaction reaches its final destination in real time.'
         },
         {
-            title: "Automate repetitive tasks",
-            description:
-                "No-code workflows handle repetitive tasks, so agents can focus on helping customers, not managing processes.",
+            title: 'Smart gas and fee routing',
+            description: 'The AI engine continuously monitors network congestion and fee volatility, dynamically routing transactions through the cheapest and fastest paths — ensuring maximum cost efficiency while maintaining speed and reliability.'
         },
         {
-            title: "Support every customer, in every language",
-            description:
-                "Helpdesk unifies messages from every channel and uses AI to translate 45+ languages in real time—so agents can respond faster, without switching tools.",
-        },
+            title: 'Instant reconciliation with treasury dashboards',
+            description: ' All payments, settlements, and transfers automatically reconcile in your treasury dashboard. Finance teams can track real-time balances, generate statements, and sync records across wallets, chains, and ledgers without human input.'
+        }
     ],
     testimonial: {
         quote:
-            "Our agents are dramatically more efficient when using Copilot. In testing, agents using Copilot were able to close 31% more customer conversations daily, compared to agents not using Copilot.",
-        author: "Angelo Livanos",
-        role: "Vice President, Global Support",
+            "Since adopting TervanX Crypto Payments, we’ve achieved 80% faster reconciliation and reduced transaction errors to near zero",
+        author: "Maya Okoro",
+        role: "VP of Digital Finance",
         companyLogo: ` <svg
         xmlns="http://www.w3.org/2000/svg"
         width="102"
@@ -74,11 +71,11 @@ export const productivityProps = {
 
 export const usabilityProps = {
     heading: {
-        main: "Modern software that's",
-        highlighted: "fast and friction-free",
+        main: "Fast and friction-free",
+        highlighted: "",
     },
     description:
-        "Helpdesk is fast to set up and easy to use. Pre-built reports, built-in ticketing, and native integrations with tools like Slack and Jira help teams work seamlessly and stay aligned.",
+        "Crypto Payments is simple to set up, powerful to scale, and intuitive to use. Unified dashboards, multi-chain visibility, and an API-first experience make it effortless for teams and developers alike.",
     images: {
         mobile: {
             src: "/assets/usability-hero-mobile.webp",
@@ -95,9 +92,8 @@ export const usabilityProps = {
     },
     usabilityFeatures: [
         {
-            title: "Instant insight with pre-built reporting",
-            description:
-                "Monitor, analyze and optimize your support with powerful, customizable reports and real-time performance metrics.",
+            title: 'Instant insight with pre-built reporting',
+            description: 'Monitor and optimize performance with AI-curated reports and dashboards.',
             list: {
                 items: [
                     'Real-time transaction tracking',
@@ -105,17 +101,13 @@ export const usabilityProps = {
                     'Fee and settlement optimization'
                 ]
             }
-        },
+        }
     ],
     additionalFeatures: [
         {
-            image: {
-                src: "/assets/usability-2-desktop.webp",
-                alt: "Ticketing system interface showing collaboration features",
-            },
-            title: "Ticketing designed for teamwork",
-            description:
-                "Resolve complex issues more efficiently with Tickets designed to streamline collaboration and keep the conversation going—no switching tools or lost context.",
+            image: "/assets/usability-2-desktop.webp",
+            title: 'Unified payment flows',
+            description: 'Centralize collections and settlements across multiple chains with one dashboard.',
             list: {
                 items: [
                     'Multi-wallet management',
@@ -125,20 +117,16 @@ export const usabilityProps = {
             }
         },
         {
-            image: {
-                src: "/assets/usability-3-desktop.webp",
-                alt: "Integration dashboard showing connected apps",
-            },
-            title: "Integrate with your existing tools",
-            description:
-                "Connect apps like Slack, Jira, and Salesforce directly in the Helpdesk, so your agents can take action and access customer information in one place.",
+            image: "/assets/usability-3-desktop.webp",
+            title: 'Integrate with your existing tools',
+            description: 'Easily connect to ERP, accounting, or compliance systems with SDKs and APIs.',
             list: {
                 items: [
                     'REST, GraphQL, and Webhook support',
                     'Real-time sync with reporting systems',
                 ]
             }
-        },
+        }
     ],
     sectionStyle: {
         backgroundColor: "var(--color-cream)",
@@ -147,11 +135,11 @@ export const usabilityProps = {
 
 export const outboundProps = {
     heading: {
-        main: "Outbound messaging",
-        highlighted: "that reduces support volume",
+        main: "Data & Insights",
+        highlighted: "Actionable intelligence that drives better decisions",
     },
     description:
-        "Onboard, educate, and notify your customers with in-context, automated messages that reduce support volume and improve your customer experience.",
+        "Turn blockchain activity into financial intelligence. TervanX transforms millions of on-chain data points into real-time analytics, predictive insights, and AI-powered optimization, helping teams make smarter, faster financial decisions.",
     images: {
         mobile: {
             src: "/assets/outbound-hero-mobile.webp",
@@ -168,29 +156,27 @@ export const outboundProps = {
     },
     outboundFeatures: [
         {
-            title: "Onboard customers faster",
-            description:
-                "Onboard users with interactive guides, personalized tasks, and in-app highlights that help them get started successfully.",
+            title: 'Gain full visibility across 300+ blockchains',
+            description: `Monitor every transaction, network, and wallet in one unified dashboard.Get a complete picture of your financial ecosystem — from payment inflow to settlement — with precise, traceable data across all blockchains and assets.`
         },
         {
-            title: "Stay ahead of known issues",
-            description:
-                "Send timely messages about bugs, outages, or changes, so your customers stay informed and your team stays in control.",
+            title: 'Predict performance with AI-driven insights',
+            description: 'Leverage autonomous data models that learn from transaction behavior and market trends. The system forecasts settlement times, fee changes, and liquidity needs, so you can plan and execute with confidence.'
         },
         {
-            title: "Answer common questions in advance",
-            description:
-                "Highlight tips, surface support content, and announce new features in-product so customers get answers before they reach out.",
-        },
+            title: 'Optimize operations in real time',
+            description: 'AI continuously analyzes gas costs, transaction velocity, and user behavior, providing actionable recommendations to improve cost efficiency and network performance. Reduce overhead and unlock new opportunities with intelligent automation built into your analytics engine.'
+        }
+
     ],
     g2Comparison: {
-        title: "Ranked #1 on G2 in 97 categories",
+        title: " TervanX ensures enterprise-grade reliability and multi-chain confidence",
         description:
-            "Intercom is rated highest on G2's most recent User Satisfaction Ratings for CS.",
+            "",
         items: [
-            { name: "Intercom", value: 97, color: "text-black" },
-            { name: "Salesforce", value: 0, color: "text-black/40" },
-            { name: "Zendesk", value: 0, color: "text-black/40" },
+            { name: 'supported blockchains', value: '300+', color: 'text-black' },
+            { name: 'uptime SLA', value: '99.99%', color: 'text-black/40' },
+            { name: 'transaction detection latency', value: '<1s', color: 'text-black/40' }
         ],
     },
     sectionStyle: {
@@ -202,68 +188,96 @@ export const featuresProps = {
     title: "Features",
     features: [
         {
-            id: "inbox",
-            name: "Inbox",
-            href: "/suite/helpdesk/inbox",
-            description: "Support for customers, before they need it",
-            image: "/assets/photo-1552664730-d307ca884978.jpg",
+            id: 'cross-chain-settlement',
+            name: 'Automated Cross-Chain Settlement',
+            href: '/suite/helpdesk/inbox',
+            description: 'Seamlessly settle transactions across multiple blockchains without manual processes.',
+            image: '/assets/photo-1552664730-d307ca884978.jpg'
         },
         {
-            id: "copilot",
-            name: "Copilot",
-            href: "/suite/helpdesk/copilot",
-            description: "AI-powered assistance for your team",
-            image: "/assets/photo-1677442136019-21780ecad995.jpg",
+            id: 'smart-gas-routing',
+            name: 'Smart Gas & Fee Routing',
+            href: '/suite/helpdesk/copilot',
+            description: 'Optimize costs with intelligent gas routing that automatically finds the most efficient fee paths.',
+            image: '/assets/photo-1677442136019-21780ecad995.jpg'
         },
         {
-            id: "tickets",
-            name: "Tickets",
-            href: "/suite/helpdesk/tickets",
-            description: "Efficient ticket management system",
-            image: "/assets/photo-1552664730-d307ca884978.jpg",
+            id: 'instant-reconciliation',
+            name: 'Instant Reconciliation',
+            href: '/suite/helpdesk/tickets',
+            description: 'Reconcile transactions instantly with real-time sync between wallets, ledgers, and treasury systems.',
+            image: '/assets/photo-1552664730-d307ca884978.jpg'
         },
         {
-            id: "omnichannel",
-            name: "Omnichannel",
-            href: "/suite/helpdesk/omnichannel",
-            description: "Unified customer experience across channels",
-            image: "/assets/photo-1677442136019-21780ecad995.jpg",
+            id: 'unified-treasury',
+            name: 'Unified Treasury Dashboard',
+            href: '/suite/helpdesk/omnichannel',
+            description: 'Gain complete visibility and control of all your assets across blockchains and accounts in one interface.',
+            image: '/assets/photo-1677442136019-21780ecad995.jpg'
         },
         {
-            id: "help-center",
-            name: "Help Center",
-            href: "/suite/helpdesk/help-center",
-            description: "Self-service support for your customers",
-            image: "/assets/photo-1552664730-d307ca884978.jpg",
+            id: 'multi-asset-wallet',
+            name: 'Multi-Asset Wallet Integration',
+            href: '/suite/helpdesk/help-center',
+            description: 'Manage and transact across hundreds of blockchains and tokens from a single dashboard.',
+            image: '/assets/photo-1552664730-d307ca884978.jpg'
         },
         {
-            id: "apps-integrations",
-            name: "Apps & Integrations",
-            href: "/app-store",
-            description: "Extend functionality with integrations",
-            image: "/assets/photo-1677442136019-21780ecad995.jpg",
+            id: 'dynamic-liquidity',
+            name: 'Dynamic Liquidity Allocation',
+            href: '/app-store',
+            description: 'Automatically rebalance and distribute liquidity across wallets, exchanges, and chains.',
+            image: '/assets/photo-1677442136019-21780ecad995.jpg'
         },
         {
-            id: "reporting",
-            name: "Reporting",
-            href: "/suite/helpdesk/reporting",
-            description: "Data-driven insights and analytics",
-            image: "/assets/photo-1552664730-d307ca884978.jpg",
+            id: 'institutional-security',
+            name: 'Institutional-Grade Security',
+            href: '/suite/helpdesk/reporting',
+            description: 'Protect every transaction with MPC technology, encryption, and continuous monitoring.',
+            image: '/assets/photo-1552664730-d307ca884978.jpg'
         },
         {
-            id: "knowledge-hub",
-            name: "Knowledge Hub",
-            href: "/suite/helpdesk/knowledge-hub",
-            description: "Centralized knowledge management",
-            image: "/assets/photo-1677442136019-21780ecad995.jpg",
+            id: 'regulatory-compliance',
+            name: 'Regulatory Compliance Layer',
+            href: '/suite/helpdesk/knowledge-hub',
+            description: 'Stay compliant with integrated KYC, KYT, and AML analytics for every asset movement.',
+            image: '/assets/photo-1677442136019-21780ecad995.jpg'
         },
         {
-            id: "outbound",
-            name: "Outbound",
-            href: "/suite/helpdesk/outbound",
-            description: "Proactive customer outreach",
-            image: "/assets/photo-1552664730-d307ca884978.jpg",
+            id: 'access-controls',
+            name: 'Access Controls & Role Management',
+            href: '/suite/helpdesk/outbound',
+            description: 'Define user roles and granular permissions to manage secure team and enterprise operations.',
+            image: '/assets/photo-1552664730-d307ca884978.jpg'
         },
+        {
+            id: 'ai-settlement',
+            name: 'AI-Driven Settlement Optimization',
+            href: '/suite/helpdesk/inbox',
+            description: 'Leverage AI to predict the fastest and most cost-efficient settlement routes across chains.',
+            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+        },
+        {
+            id: 'error-recovery',
+            name: 'Automated Error Recovery',
+            href: '/suite/helpdesk/copilot',
+            description: 'Detect failed transactions and automatically retry or reroute them for guaranteed delivery.',
+            image: '/assets/photo-1552664730-d307ca884978.jpg'
+        },
+        {
+            id: 'predictive-insights',
+            name: 'Predictive Treasury Insights',
+            href: '/suite/helpdesk/tickets',
+            description: 'Anticipate liquidity needs, network fee trends, and volume patterns using intelligent forecasting.',
+            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+        },
+        {
+            id: 'transaction-analytics',
+            name: 'Real-Time Transaction Analytics',
+            href: '/suite/helpdesk/omnichannel',
+            description: 'Monitor, visualize, and analyze all transactions in real time across every integrated blockchain.',
+            image: '/assets/photo-1552664730-d307ca884978.jpg'
+        }
     ],
     defaultActiveFeature: "omnichannel",
     sectionStyle: {
