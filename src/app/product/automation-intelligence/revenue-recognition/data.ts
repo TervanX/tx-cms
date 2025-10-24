@@ -1,10 +1,10 @@
 export const productivityProps = {
     heading: {
-        main: "Autonomous financial workflows",
-        highlighted: "that never sleep",
+        main: "Autonomous revenue accounting",
+        highlighted: "that ensures compliance",
     },
     description:
-        "TX SmartFlow automates the most complex multi-chain financial operations—from treasury management to DeFi strategies—executing with precision and intelligence 24/7.",
+        "Revenue Recognition automates the most complex aspects of financial compliance—from multi-jurisdiction reporting to real-time revenue categorization—saving thousands of hours in manual accounting work.",
     images: {
         mobile: {
             src: "//assetsproductivity-hero-mobile.webp",
@@ -21,23 +21,23 @@ export const productivityProps = {
     },
     features: [
         {
-            title: 'AI-Optimized Workflow Orchestration',
-            description: 'Our intelligent engine doesn\'t just execute tasks—it optimizes them in real-time. The system dynamically adjusts execution paths, gas strategies, and timing based on network conditions, market data, and cost efficiency, ensuring every workflow runs at peak performance.'
+            title: 'AI-Powered Revenue Categorization',
+            description: 'Our system automatically classifies revenue streams according to ASC 606, IFRS 15, and other global standards. The AI learns your business model and applies appropriate recognition rules across subscription, usage-based, and token-based revenue models.'
         },
         {
-            title: 'Smart Cross-Chain Execution',
-            description: 'Seamlessly coordinate actions across multiple blockchains in single, atomic workflows. Automate complex operations like cross-chain rebalancing, multi-protocol yield farming, and interconnected treasury management without manual intervention or bridge complexity.'
+            title: 'Automated Deferred Revenue Management',
+            description: 'Intelligently track and recognize deferred revenue across multiple periods and currencies. The system automatically calculates recognition schedules, handles contract modifications, and ensures compliance with evolving accounting standards.'
         },
         {
-            title: 'Predictive Trigger System',
-            description: ' Move beyond basic time-based automation. Set triggers based on market conditions, portfolio metrics, protocol APY changes, or custom AI-generated signals. Execute workflows when conditions are optimal, not just when scheduled.'
+            title: 'Multi-Jurisdiction Tax Compliance',
+            description: 'Automatically apply tax rules across different jurisdictions and revenue types. The system handles VAT, GST, sales tax, and crypto-specific tax treatments while generating compliant reports for each regulatory body.'
         }
     ],
     testimonial: {
         quote:
-            "TX SmartFlow reduced our daily treasury operations from 4 hours of manual work to fully automated execution. We're managing 3x the volume with zero additional headcount",
-        author: "Rebecca Torres",
-        role: "Head of Operations at Digital Wealth Partners",
+            "Revenue Recognition cut our monthly close process from 5 days to 6 hours while providing the audit trails our international regulators require. It's transformed how we manage global compliance",
+        author: "Jennifer Martinez",
+        role: "Global Controller at Web3 Innovations",
         companyLogo: ` <svg
         xmlns="http://www.w3.org/2000/svg"
         width="102"
@@ -71,11 +71,11 @@ export const productivityProps = {
 
 export const usabilityProps = {
     heading: {
-        main: "Visual automation for ",
-        highlighted: "complex financial operations",
+        main: "Enterprise-grade compliance ",
+        highlighted: " made simple",
     },
     description:
-        "Build sophisticated cross-chain workflows through an intuitive visual interface or powerful API—no deep blockchain expertise required.",
+        "An intuitive interface for managing complex revenue accounting across multiple currencies, business models, and regulatory requirements.",
     images: {
         mobile: {
             src: "/assets/usability-hero-mobile.webp",
@@ -92,18 +92,18 @@ export const usabilityProps = {
     },
     usabilityFeatures: [
         {
-            title: 'Drag-and-Drop Workflow Builder',
-            description: 'Create complex automations visually with our no-code interface. Connect pre-built modules for swaps, transfers, staking, and monitoring to build enterprise-grade financial operations in minutes.',
+            title: 'Unified Revenue Dashboard',
+            description: 'Monitor all revenue streams—crypto, fiat, subscription, and transaction-based—from a single interface. Track recognized revenue, deferred balances, and compliance status in real-time across all business units.',
         }
     ],
     additionalFeatures: [
         {
             image: { src: "/assets/usability-2-desktop.webp" },
             title: 'Pre-Built Automation Templates',
-            description: 'Accelerate deployment with customizable templates for common use cases:',
+            description: 'Accelerate deployment with customizable templates for common use scenarios:',
             list: {
                 items: [
-                    'Daily Treasury Sweeps & risk management',
+                    'Automated Treasury Management & risk controls',
                     'Multi-Chain Portfolio Rebalancing',
                     'DeFi Yield Strategy Automation',
                     'Cross-Chain Payment Processing'
@@ -113,18 +113,18 @@ export const usabilityProps = {
         {
             image: { src: "/assets/usability-3-desktop.webp" },
             title: 'Unified Automation API',
-            description: 'Programmatically create, manage, and monitor workflows through our comprehensive REST and WebSocket APIs. Integrate TX SmartFlow directly into your existing applications and systems.',
+            description: 'Programmatically create, manage, and monitor workflows through comprehensive REST and WebSocket APIs. Integrate TX Automate directly into your existing applications and systems.',
         },
         {
             image: { src: "/assets/usability-2-desktop.webp" },
             title: 'Real-Time Workflow Monitoring',
-            description: 'Accelerate deployment with Monitor all active automations through a unified dashboard with:',
+            description: 'Monitor all active automations through a unified dashboard featuring:',
             list: {
                 items: [
                     'Live Execution Status across all chains',
                     'Performance Analytics & cost tracking',
-                    'Error Alerting & automatic recovery status',
-                    'Audit Trail for every workflow execution',
+                    'Smart Alerting & automatic recovery status',
+                    'Complete Audit Trail for every execution',
                 ]
             }
         },
@@ -157,7 +157,7 @@ export const outboundProps = {
     },
     outboundFeatures: [
         {
-            title: 'Real-Time Workflow Performance Analytics',
+            title: 'Real-Time Performance Analytics',
             description: `Monitor execution success rates, gas efficiency, and cost performance across all active automations. Identify bottlenecks, optimize timing, and reduce operational costs with detailed performance metrics.`
         },
         {
@@ -180,9 +180,9 @@ export const outboundProps = {
             "",
         items: [
             { name: 'supported blockchains for workflow execution', value: '300+', color: 'text-black' },
-            { name: 'workflow success rate SLA', value: '99.99%', color: 'text-black/40' },
-            { name: 'average trigger-to-execution latency', value: '<30s', color: 'text-black/40' },
-            { name: 'average gas cost reduction through AI optimization', value: '70%', color: 'text-black/40' }
+            { name: 'workflow success rate SLA', value: '99.95%', color: 'text-black/40' },
+            { name: 'average trigger-to-execution latency', value: '<25s', color: 'text-black/40' },
+            { name: 'average gas cost reduction through AI optimization', value: '65%', color: 'text-black/40' }
         ],
     },
     sectionStyle: {

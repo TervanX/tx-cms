@@ -1,10 +1,10 @@
 export const productivityProps = {
     heading: {
-        main: "Autonomous financial workflows",
-        highlighted: "that never sleep",
+        main: "Autonomous financial operations",
+        highlighted: "that work 24/7",
     },
     description:
-        "TX SmartFlow automates the most complex multi-chain financial operations—from treasury management to DeFi strategies—executing with precision and intelligence 24/7.",
+        "TX Automate handles the most complex multi-chain financial workflows—from treasury management to cross-chain settlements—executing with precision and intelligence around the clock.",
     images: {
         mobile: {
             src: "//assetsproductivity-hero-mobile.webp",
@@ -21,23 +21,23 @@ export const productivityProps = {
     },
     features: [
         {
-            title: 'AI-Optimized Workflow Orchestration',
-            description: 'Our intelligent engine doesn\'t just execute tasks—it optimizes them in real-time. The system dynamically adjusts execution paths, gas strategies, and timing based on network conditions, market data, and cost efficiency, ensuring every workflow runs at peak performance.'
+            title: 'AI-Optimized Execution Engine',
+            description: 'Our system doesn\'t just run tasks—it continuously optimizes them. The AI dynamically adjusts timing, gas strategies, and execution paths based on real-time network conditions, market data, and cost efficiency metrics.'
         },
         {
-            title: 'Smart Cross-Chain Execution',
-            description: 'Seamlessly coordinate actions across multiple blockchains in single, atomic workflows. Automate complex operations like cross-chain rebalancing, multi-protocol yield farming, and interconnected treasury management without manual intervention or bridge complexity.'
+            title: 'Smart Cross-Chain Orchestration',
+            description: 'Coordinate seamless operations across multiple blockchains within single workflows. Execute complex tasks like automated rebalancing, multi-protocol yield strategies, and interconnected financial operations without manual intervention.'
         },
         {
             title: 'Predictive Trigger System',
-            description: ' Move beyond basic time-based automation. Set triggers based on market conditions, portfolio metrics, protocol APY changes, or custom AI-generated signals. Execute workflows when conditions are optimal, not just when scheduled.'
+            description: 'Move beyond basic time-based automation. Deploy intelligent triggers based on market conditions, portfolio metrics, protocol APY changes, or custom AI-generated signals to execute when conditions are optimal.'
         }
     ],
     testimonial: {
         quote:
-            "TX SmartFlow reduced our daily treasury operations from 4 hours of manual work to fully automated execution. We're managing 3x the volume with zero additional headcount",
-        author: "Rebecca Torres",
-        role: "Head of Operations at Digital Wealth Partners",
+            "TX Automate reduced our daily operational workload by 85% while eliminating human error. We now manage 5x the transaction volume with the same team size",
+        author: "Alex Chen",
+        role: "CFO of Quantum Digital Assets",
         companyLogo: ` <svg
         xmlns="http://www.w3.org/2000/svg"
         width="102"
@@ -72,10 +72,10 @@ export const productivityProps = {
 export const usabilityProps = {
     heading: {
         main: "Visual automation for ",
-        highlighted: "complex financial operations",
+        highlighted: "sophisticated financial operations",
     },
     description:
-        "Build sophisticated cross-chain workflows through an intuitive visual interface or powerful API—no deep blockchain expertise required.",
+        "Build complex cross-chain workflows through an intuitive interface or powerful API—making enterprise-grade automation accessible to teams of all technical levels.",
     images: {
         mobile: {
             src: "/assets/usability-hero-mobile.webp",
@@ -93,17 +93,17 @@ export const usabilityProps = {
     usabilityFeatures: [
         {
             title: 'Drag-and-Drop Workflow Builder',
-            description: 'Create complex automations visually with our no-code interface. Connect pre-built modules for swaps, transfers, staking, and monitoring to build enterprise-grade financial operations in minutes.',
+            description: 'Create sophisticated automations visually with our no-code interface. Connect pre-built modules for swaps, transfers, staking, and monitoring to build financial operations in minutes, not months.',
         }
     ],
     additionalFeatures: [
         {
             image: { src: "/assets/usability-2-desktop.webp" },
             title: 'Pre-Built Automation Templates',
-            description: 'Accelerate deployment with customizable templates for common use cases:',
+            description: 'Accelerate deployment with customizable templates for common use scenarios:',
             list: {
                 items: [
-                    'Daily Treasury Sweeps & risk management',
+                    'Automated Treasury Management & risk controls',
                     'Multi-Chain Portfolio Rebalancing',
                     'DeFi Yield Strategy Automation',
                     'Cross-Chain Payment Processing'
@@ -113,18 +113,18 @@ export const usabilityProps = {
         {
             image: { src: "/assets/usability-3-desktop.webp" },
             title: 'Unified Automation API',
-            description: 'Programmatically create, manage, and monitor workflows through our comprehensive REST and WebSocket APIs. Integrate TX SmartFlow directly into your existing applications and systems.',
+            description: 'Programmatically create, manage, and monitor workflows through comprehensive REST and WebSocket APIs. Integrate TX Automate directly into your existing applications and systems.',
         },
         {
             image: { src: "/assets/usability-2-desktop.webp" },
             title: 'Real-Time Workflow Monitoring',
-            description: 'Accelerate deployment with Monitor all active automations through a unified dashboard with:',
+            description: 'Monitor all active automations through a unified dashboard featuring:',
             list: {
                 items: [
                     'Live Execution Status across all chains',
                     'Performance Analytics & cost tracking',
-                    'Error Alerting & automatic recovery status',
-                    'Audit Trail for every workflow execution',
+                    'Smart Alerting & automatic recovery status',
+                    'Complete Audit Trail for every execution',
                 ]
             }
         },
@@ -157,7 +157,7 @@ export const outboundProps = {
     },
     outboundFeatures: [
         {
-            title: 'Real-Time Workflow Performance Analytics',
+            title: 'Real-Time Performance Analytics',
             description: `Monitor execution success rates, gas efficiency, and cost performance across all active automations. Identify bottlenecks, optimize timing, and reduce operational costs with detailed performance metrics.`
         },
         {
@@ -180,9 +180,9 @@ export const outboundProps = {
             "",
         items: [
             { name: 'supported blockchains for workflow execution', value: '300+', color: 'text-black' },
-            { name: 'workflow success rate SLA', value: '99.99%', color: 'text-black/40' },
-            { name: 'average trigger-to-execution latency', value: '<30s', color: 'text-black/40' },
-            { name: 'average gas cost reduction through AI optimization', value: '70%', color: 'text-black/40' }
+            { name: 'workflow success rate SLA', value: '99.95%', color: 'text-black/40' },
+            { name: 'average trigger-to-execution latency', value: '<25s', color: 'text-black/40' },
+            { name: 'average gas cost reduction through AI optimization', value: '65%', color: 'text-black/40' }
         ],
     },
     sectionStyle: {

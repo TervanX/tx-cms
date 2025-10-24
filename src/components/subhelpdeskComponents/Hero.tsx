@@ -185,7 +185,7 @@ export default function Hero({
                 >
                     <h1 className="text-[2.5rem] leading-[95%] font-semibold tracking-[-0.1rem] text-balance md:flex md:flex-col lg:text-6xl xl:text-[4.5rem] xl:tracking-[-0.25rem] w-full">
                         {title}
-                        <span className="lg:inline-block lg:mt-[0.15em] lg:ml-[36.75%] w-full">{span}</span>
+                        <span className="lg:inline-block lg:mt-[0.15em] lg:ml-[36.75%] ">{span}</span>
                     </h1>
 
                     <p className="mt-8 mb-1 w-full max-w-[500px] text-lg leading-[120%] 2xl:max-w-[600px] 2xl:text-xl">
