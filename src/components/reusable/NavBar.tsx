@@ -1162,7 +1162,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ toggle, isOpen }) => {
   return (
     <header className="lg:px-8 py-3 flex items-center justify-between lg:hidden fixed top-0 left-0 w-screen z-50 px-6 bg-white">
       <div className="flex gap-10 items-center justify-start">
-        <div className="flex items-center gap-2 font-bold text-lg">
+        <Link href="/" className="flex items-center gap-2 font-bold text-lg">
           <Image
             src="/assets/logo.svg"
             className="h-6 w-6"
@@ -1171,7 +1171,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ toggle, isOpen }) => {
             alt="logo"
           />
           <span className="font-medium font-grotesque">TervanX</span>
-        </div>
+        </Link>
       </div>
       <div className="flex items-center gap-4 justify-end">
         <Button size="md" variant="primary" type="button" onClick={() => { }}>

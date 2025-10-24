@@ -71,8 +71,8 @@ fill="none"
 
 export const usabilityProps = {
     heading: {
-        main: "Enterprise-grade authorization ",
-        highlighted: "made simple",
+        main: "Enterprise-grade  ",
+        highlighted: "authorization made simple",
     },
     description:
         "An intuitive platform for managing complex permission structures across multiple systems, chains, and business units with full visibility and control.",
@@ -142,8 +142,8 @@ export const usabilityProps = {
 
 export const outboundProps = {
     heading: {
-        main: "Intelligent authorization analytics ",
-        highlighted: "that prevent breaches",
+        main: "Intelligent authorization",
+        highlighted: "analytics that prevent breaches",
     },
     description:
         "Move beyond basic access reporting to predictive insights that identify and mitigate access risks before they lead to security incidents.",

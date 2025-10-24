@@ -253,7 +253,7 @@ const embeddedFinancePageData = {
 
   bannerCTA: {
     title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-    backgroundImage: "/assets/custom-bg.webp",
+    backgroundImage: "/assets/image30.webp",
     primaryButton: {
       text: "Get Started",
       href: "/get-started",
