@@ -57,6 +57,9 @@ const Page = () => {
         <DottedLine fill="gray" />
       </div>
       <EngageCustomersSection {...fintechPlatformsPageData.engageCustomers} />
+      <EngageCustomersSection {...fintechPlatformsPageData.engageCustomers2} />
+      <EngageCustomersSection {...fintechPlatformsPageData.engageCustomers3} />
+      <EngageCustomersSection {...fintechPlatformsPageData.engageCustomers4} />
       <TestimonialCarousel {...fintechPlatformsPageData.testimonial} />
       <BannerCTA {...fintechPlatformsPageData.bannerCTA} />
     </div>
@@ -68,8 +71,8 @@ export default Page;
 const fintechPlatformsPageData = {
   heroSection: {
     heading: "Fintech Platforms",
-    subheading: "Build banks, wallets, or payment apps",
-    tag: "TX channel",
+    subheading: "Next-generation financial infrastructure for modern fintech platforms",
+    tag: "TX Channel",
     primaryButton: {
       text: "Login",
       href: "/sign-up",
@@ -80,63 +83,64 @@ const fintechPlatformsPageData = {
     },
   },
   subsection1: {
-    title: "Centralize all your fintech channels in one connected platform",
+    title: "Power your fintech platform with unified financial infrastructure",
   },
 
   insightCards: [
     {
       step: "01",
-      title: "Complete fintech platform oversight",
+      title: "Unified financial data & operations",
       description:
-        "Manage all your banking services, wallet integrations, and payment channels in a single platform for complete visibility across your fintech ecosystem.",
+        "Aggregate traditional banking, digital assets, and alternative financial data through a single API. Provide seamless user experiences across all financial touchpoints.",
     },
     {
       step: "02",
-      title: "Real-time financial analytics",
+      title: "Real-time payment orchestration",
       description:
-        "Track transaction volumes, user activity, and platform performance with live data feeds and comprehensive fintech dashboards.",
+        "Process instant settlements across fiat, crypto, and cross-border payments with intelligent routing and guaranteed delivery.",
     },
     {
       step: "03",
-      title: "AI-powered financial insights",
+      title: "Regulatory compliance automation",
       description:
-        "Leverage machine learning to optimize payment flows, predict user behavior, and automate financial operations for enhanced platform performance.",
+        "Maintain global compliance with built-in KYC/AML, transaction monitoring, and reporting across 100+ jurisdictions.",
     },
   ],
 
   subsection2: {
-    title: "Professional email support for fintech platforms",
+    title: "Core Banking & Payments",
     description:
-      "Manage user inquiries, payment support, and security communications with professional email handling that reflects your fintech brand standards.",
-    tag: "Email",
+      "Modernize your payment infrastructure.",
+    tag: "",
   },
 
   brandEmailSupport: {
     cards: [
       {
-        title: "Maintain fintech brand consistency",
+        title: "Unified payments API",
         description:
-          "Support multiple financial products, assign platform logos and create professional signatures that reinforce your fintech identity in every user communication.",
+          "Process ACH, wire transfers, card payments, and crypto transactions through a single integration.",
         img: "/assets/highlight.webp",
-        imageAlt: "Maintain fintech brand consistency",
+        imageAlt: "Unified payments API",
+
       },
       {
-        title: "Seamless user conversations",
+        title: "Real-time settlement engine",
         description:
-          "Move user conversations from banking apps to email, allowing customers to continue financial discussions and support inquiries at their convenience.",
+          "Enable instant fund movements between accounts, institutions, and blockchain networks with sub-second finality.",
         img: "/assets/highlight.webp",
-        imageAlt: "Seamless user conversations",
+        imageAlt: "Real-time settlement engine",
       },
       {
-        title: "Track platform service performance",
+        title: "Cross-border optimization",
         description:
-          "Monitor response times, transaction resolution rates, and user satisfaction to maintain high fintech service standards and regulatory compliance.",
+          "Leverage crypto rails and traditional networks to reduce international transfer costs by up to 80% while improving speed.",
         img: "/assets/highlight.webp",
-        imageAlt: "Track platform service performance",
+        imageAlt: "Cross-border optimization",
       },
     ],
     backgroundImage: "/assets/image30.webp",
-    backgroundAlt: "DataSectionProps",
+    backgroundAlt: "Core Banking & Payments",
   },
 
   callAndConversation: {
@@ -148,34 +152,54 @@ const fintechPlatformsPageData = {
       href: "/learn-more",
     },
     alignLeft: true,
-    title: "Fintech Platform Communication Platform",
-    tag: "Platform Services",
+    title: "Digital Asset Integration",
+    tag: "",
     description:
-      "Discover features designed specifically for fintech platforms to enhance user support, streamline financial operations, and enable secure banking and payment services.",
+      "Seamlessly embed crypto capabilities",
+    cards: [
+      {
+        title: "Multi-chain wallet infrastructure",
+        description:
+          "Provide secure, non-custodial and custodial wallet solutions supporting 300+ blockchains and thousands of assets.",
+        img: "/assets/highlight.webp",
+      },
+      {
+        title: "Institutional-grade trading",
+        description:
+          "Embed swap functionality, liquidity access, and advanced trading features with best-execution guarantees.",
+        img: "/assets/highlight.webp",
+      },
+      {
+        title: " Yield & earning products",
+        description:
+          "Launch savings accounts, staking services, and yield-generating products with automated risk management.",
+        img: "/assets/highlight.webp",
+      },
+    ]
   },
 
   liveChat: {
-    title: "Live chat with fintech-focused Messenger",
-    tag: "Messenger",
+    title: "Data & Analytics",
+    tag: "",
     description:
-      "Deliver instant financial support that's personalized, contextual, and on-brand across your banking apps, wallet interfaces, and payment platforms.",
+      "Transform financial data into insights",
     cards: [
       {
-        title: "Fintech-branded experience",
+        title: "Unified financial dashboard",
         description:
-          "Customize the Messenger to match your fintech platform's branding, creating a seamless user experience from account opening to advanced financial services.",
+          "Give users complete visibility into their net worth across bank accounts, investment portfolios, and digital assets.",
         img: "/assets/highlight.webp",
       },
       {
-        title: "Self-serve for common inquiries",
+        title: "AI-powered financial insights",
         description:
-          "Empower users with self-serve options for transaction history, account management, payment features, and FAQs—reducing support load during peak transaction periods.",
+          "Provide personalized recommendations, spending analysis, and wealth management insights using machine learning.",
         img: "/assets/highlight.webp",
       },
       {
-        title: "Multi-service & multilingual support",
+        title: "Real-time risk monitoring",
         description:
-          "Manage multiple financial products, resolve user queries in 45 languages and provide consistent support experiences across different banking services.",
+          "Monitor transaction patterns, market exposure, and compliance status with proactive alerting and reporting.",
         img: "/assets/highlight.webp",
       },
     ],
@@ -186,74 +210,241 @@ const fintechPlatformsPageData = {
     cards: [
       {
         backgroundImage: "/assets/image30.webp",
-        title: "Connect with international users",
+        title: "Automated regulatory compliance",
         description:
-          "Manage all your WhatsApp fintech accounts and user interactions in one workspace, ensuring you never miss important transaction alerts or user inquiries.",
+          "Built-in KYC, KYB, AML, and travel rule compliance with automated reporting for global operations.",
         img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
       },
       {
         backgroundImage: "/assets/image30.webp",
-        title: "Rich financial communications",
+        title: "Advanced fraud detection",
         description:
-          "Send and receive transaction confirmations, account updates, and security alerts directly from the Inbox, providing comprehensive support for fintech users.",
+          "AI-powered anomaly detection identifies suspicious patterns across fiat and crypto transactions in real-time.",
         img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
       },
       {
         backgroundImage: "/assets/image30.webp",
-        title: "Measure user satisfaction",
+        title: "Institutional security protocols",
         description:
-          "Track how satisfied users are with your fintech services and platform experience, and compare performance across different communication channels.",
+          "MPC technology, SOC 2 compliance, and insurance coverage for digital assets up to $500M.",
         img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
       },
     ],
-    title: "Global fintech support through WhatsApp",
-    tag: "WhatsApp",
+    title: "Compliance & Security",
+    tag: "",
     backgroundImage: "/assets/image30.webp",
     description:
-      "Expand your fintech reach and provide instant support to international users on the world's most popular messaging app for financial communications.",
+      "Enterprise-grade security for financial services with automated compliance, fraud detection, and institutional protocols.",
   },
 
   engageCustomers: {
-    badgeText: "Fintech platforms and messaging",
-    title: "Engage users on their preferred platforms",
+    badgeText: "",
+    title: "Key Integration Features",
     columns: [
       {
-        title: "Banking Apps",
+        title: "Real-time webhooks",
         description:
-          "Respond to user inquiries, transaction questions, and account management requests directly from your fintech dashboard, enhancing the banking experience.",
+          "Instant notifications for transaction events, balance changes, and compliance alerts.",
         imageSrc:
           "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01.webp?&q=90",
-        imageAlt: "Banking Apps",
+        imageAlt: "Real-time webhooks",
       },
       {
-        title: "Financial Social Platforms",
+        title: "Comprehensive reporting",
         description:
-          "Route messages from financial forums, investment communities, and banking networks to a unified Inbox, making it easy to manage user communications.",
+          "Automated regulatory reporting, tax documentation, and custom business intelligence.",
         imageSrc:
           "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02.webp?&q=90",
-        imageAlt: "Financial Social Platforms",
+        imageAlt: "Comprehensive reporting",
       },
       {
-        title: "SMS Transaction Alerts",
+        title: "White-label solutions",
         description:
-          "Send and receive payment notifications, security alerts, and account updates in 45 languages, enabling real-time communication with fintech users.",
+          "Fully customizable UI components, branding, and user experiences.",
         imageSrc:
           "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
-        imageAlt: "SMS Transaction Alerts",
+        imageAlt: "White-label solutions",
+      },
+      {
+        title: "Global currency support",
+        description:
+          "150+ fiat currencies and 5,000+ digital assets with real-time conversion rates.",
+        imageSrc:
+          "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
+        imageAlt: "global-currrency-support",
+      },
+    ],
+  },
+  engageCustomers2: {
+    badgeText: "",
+    title: "Use Cases",
+    columns: [
+      {
+        title: "Neo-banks & Digital Banks",
+        description: "",
+        imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01.webp?&q=90",
+        imageAlt: "Neo-banks & Digital Banks",
+        list: {
+          items: [
+            'Multi-currency accounts with crypto integration',
+            'Real-time global payments',
+            'AI-powered financial management',
+            'Embedded investment products',
+          ]
+        }
+      },
+      {
+        title: "Investment Platforms",
+        description: "",
+        imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02.webp?&q=90",
+        imageAlt: "Investment Platforms",
+        list: {
+          items: [
+            'Unified traditional and digital asset trading',
+            'Portfolio management across all asset classes',
+            'Automated tax optimization and reporting',
+            'Institutional-grade security and compliance',
+          ]
+        }
+      },
+      {
+        title: "Payment Processors",
+        description: "",
+        imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
+        imageAlt: "Payment Processors",
+        list: {
+          items: [
+            'Cross-border payment optimization',
+            'Crypto payment acceptance and settlement',
+            'Fraud prevention and risk management',
+            'Multi-currency treasury management',
+          ]
+        }
+      },
+      {
+        title: "Wealth Management",
+        description: "",
+        imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
+        imageAlt: "Wealth Management",
+        list: {
+          items: [
+            'Digital asset portfolio management',
+            'Automated rebalancing and tax harvesting',
+            'Family office and institutional reporting',
+            'Compliance and audit trail generation',
+          ]
+        }
+      },
+    ],
+  },
+  engageCustomers3: {
+    badgeText: "Technical Excellence",
+    title: "Enterprise-Grade Infrastructure",
+    columns: [
+      {
+        title: "⚡Performance & Reliability",
+        description: "",
+        imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01.webp?&q=90",
+        imageAlt: "Performance & Reliability",
+        list: {
+          items: [
+            '99.99% uptime SLA',
+            '<100ms API response times',
+            '10,000+ transactions per second',
+            'Global edge network with 50+ locations',
+          ]
+        }
+      },
+      {
+        title: "Security & Compliance",
+        description: "",
+        imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02.webp?&q=90",
+        imageAlt: "Security & Compliance",
+        list: {
+          items: [
+            'SOC 2 Type II certified',
+            'ISO 27001 compliant',
+            'GDPR and CCPA ready',
+            'Regular third-party security audits',
+          ]
+        }
+      },
+      {
+        title: "Developer Experience",
+        description: "",
+        imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
+        imageAlt: "Developer Experience",
+        list: {
+          items: [
+            'Comprehensive REST and GraphQL APIs',
+            'SDKs in 8 programming languages',
+            'Detailed documentation and tutorials',
+            'Dedicated technical support',
+          ]
+        }
+      },
+    ],
+  },
+  engageCustomers4: {
+    badgeText: "",
+    title: "Enterprise-Grade Features",
+    columns: [
+      {
+        title: "Dedicated Infrastructure",
+        description: "",
+        imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01.webp?&q=90",
+        imageAlt: "Dedicated Infrastructure",
+        list: {
+          items: [
+            'Isolated processing environments',
+            'Custom deployment options',
+            'Dedicated node clusters',
+            'Private blockchain connectivity',
+          ]
+        }
+      },
+      {
+        title: "Custom Workflows",
+        description: "",
+        imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02.webp?&q=90",
+        imageAlt: "Custom Workflows",
+        list: {
+          items: [
+            'Tailored compliance rules',
+            'Custom settlement logic',
+            'Branded user experiences',
+            'Proprietary integration patterns',
+          ]
+        }
+      },
+      {
+        title: "Premium Support",
+        description: "",
+        imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
+        imageAlt: "Premium Support",
+        list: {
+          items: [
+            '24/7 dedicated engineering support',
+            'Account management and strategic guidance',
+            'Custom feature development',
+            'Training and certification programs',
+          ]
+        }
       },
     ],
   },
 
+
   testimonial: {
-    title: "Transformative fintech integration",
+    title: "What Fintech Leaders Say",
     quote:
-      "Since implementing TervanX fintech solutions, our platform improved user communication efficiency by 85%, reduced payment support time by 70%, and enhanced user satisfaction with instant, secure financial support across multiple services",
-    role: "Fintech Platform Director",
-    name: "Daniel Park",
+      "TervanX enabled us to launch crypto trading features in 30 days instead of 12 months. Their unified API eliminated the complexity of managing multiple blockchain integrations.",
+    role: "CTO of Neo-bank Platform",
+    name: "Maria Rodriguez",
   },
 
   bannerCTA: {
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    title: "Ready to transform your fintech platform?",
     backgroundImage: "/assets/image30.webp",
     primaryButton: {
       text: "Get Started",

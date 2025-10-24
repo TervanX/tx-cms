@@ -53,7 +53,9 @@ const Page = () => {
       <div className="py-12 mt-8">
         <DottedLine fill="gray" />
       </div>
-      <EngageCustomersSection {...enterprisePageData.engageCustomers} />
+      {enterprisePageData?.engageCustomers?.badgeText && (
+        <EngageCustomersSection {...enterprisePageData.engageCustomers} />
+      )}{" "}
       <TestimonialCarousel {...enterprisePageData.testimonial} />
       <BannerCTA {...enterprisePageData.bannerCTA} />
     </div>
