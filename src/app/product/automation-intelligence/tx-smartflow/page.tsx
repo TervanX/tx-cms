@@ -10,7 +10,7 @@ import {
   outboundProps,
   productivityProps,
   usabilityProps,
-} from "@/app/product/data";
+} from "./data";
 import ContentLayout, {
   SectionConfig,
 } from "@/components/subhelpdeskComponents/Content";
@@ -46,7 +46,23 @@ export default function TxSmartFlow() {
     <main>
       <Hero
         title="Tx SmartFlow"
-        description="Automate business logic and payments"
+        description="Build, deploy, and scale automated financial workflows across 300+ blockchains with AI-powered execution."
+        span="Financial Automation Engine"
+        efficiencyTitle='How TX SmartFlow Automates Complex Financial Operations'
+        efficiencyCards={[
+          {
+            category: 'Productivity',
+            title: 'AI-orchestrated workflows and autonomous task execution eliminate manual processes while maximizing operational efficiency'
+          },
+          {
+            category: 'Usability',
+            title: 'Visual workflow builder and unified API make creating and managing cross-chain automations accessible to every team'
+          },
+          {
+            category: 'Data & Insights',
+            title: 'Real-time monitoring and predictive analytics transform automation from reactive scripts to intelligent financial operations'
+          }
+        ]}
       />
       <ContentLayout
         sections={sections}

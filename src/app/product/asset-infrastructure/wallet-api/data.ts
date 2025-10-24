@@ -138,11 +138,11 @@ export const usabilityProps = {
 
 export const outboundProps = {
     heading: {
-        main: "Actionable intelligence",
-        highlighted: "that drives better decisions",
+        main: "Transform wallet activity into",
+        highlighted: " actionable intelligence",
     },
     description:
-        "Turn blockchain activity into financial intelligence. TervanX transforms millions of on-chain data points into real-time analytics, predictive insights, and AI-powered optimization, helping teams make smarter, faster financial decisions.",
+        "Move beyond simple balances. TervanX provides a deep, AI-powered understanding of how wallets are used, enabling you to optimize products and drive engagement.",
     images: {
         mobile: {
             src: "/assets/outbound-hero-mobile.webp",
@@ -159,21 +159,23 @@ export const outboundProps = {
     },
     outboundFeatures: [
         {
-            title: 'Gain full visibility across 300+ blockchains',
-            description: `Monitor every transaction, network, and wallet in one unified dashboard.Get a complete picture of your financial ecosystem — from payment inflow to settlement — with precise, traceable data across all blockchains and assets.`
+            title: '360-Degree Wallet Portfolio View',
+            description:
+                "See the complete picture of your users' cross-chain portfolios. Track assets, NFTs, staking positions, and DeFi interactions across all 300+ integrated networks from a single data layer. "
         },
         {
-            title: 'Predict performance with AI-driven insights',
-            description: 'Leverage autonomous data models that learn from transaction behavior and market trends. The system forecasts settlement times, fee changes, and liquidity needs, so you can plan and execute with confidence.'
+            title: 'Predictive User Behavior Analytics',
+            description:
+                "Our AI models analyze transaction patterns to forecast user intent—such as readiness to trade, stake, or churn. Proactively engage users with personalized prompts or offers"
         },
         {
-            title: 'Optimize operations in real time',
-            description: 'AI continuously analyzes gas costs, transaction velocity, and user behavior, providing actionable recommendations to improve cost efficiency and network performance. Reduce overhead and unlock new opportunities with intelligent automation built into your analytics engine.'
+            title: 'Real-Time Security & Risk Scoring',
+            description: 'Every transaction is evaluated in real-time against AI-driven risk models. Detect anomalous behavior, flag potentially malicious interactions, and protect user assets before a transaction is even signed.'
         }
 
     ],
     g2Comparison: {
-        title: " TervanX ensures enterprise-grade reliability and multi-chain confidence",
+        title: " TervanX WaaS ensures enterprise-grade performance and security from day one.",
         description:
             "",
         items: [
