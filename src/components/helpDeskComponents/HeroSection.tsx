@@ -119,7 +119,7 @@ export function HeroSection({
           src="/assets/Omnichannel_foreground.webp?&q=90&w=2560"
           className="w-[80%] mx-auto"
         />
-        <div className="flex items-center w-[80%] mx-auto py-16">
+        {/* <div className="flex items-center w-[80%] mx-auto py-16">
           <div className="flex items-center w-full  border-[rgba(255,255,255,.1)] border-solid border-t-[.3px] border-b-[.3px] ">
             <p className="font-grotesque text-xs lg:text-base  text-left text-white max-w-[12rem]">
               Trusted by more than 25,000 leading brands:
@@ -130,7 +130,7 @@ export function HeroSection({
               className="bg-transparent"
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
