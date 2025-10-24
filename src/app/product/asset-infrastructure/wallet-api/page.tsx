@@ -46,9 +46,9 @@ export default function WalletsAPI() {
   return (
     <main>
       <Hero
-        title="Wallet As"
-        span="A Service"
-        description="Embed powerful, programmable wallets Seamlessly integrate secure, non-custodial and custodial wallets into any application. Launch in days, not months."
+        title="Wallet As A Service"
+        span="Embed powerful, programmable wallets"
+        description="Seamlessly integrate secure, non-custodial and custodial wallets into any application. Launch in days, not months."
         efficiencyTitle="How Wallet As A Service Accelerates Your Product Launch"
         efficiencyCards={[
           {
