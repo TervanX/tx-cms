@@ -1,12 +1,12 @@
 export const productivityProps = {
     heading: {
-        main: "AI tools that",
+        main: "AI-driven infrastructure that",
         highlighted:
-            "maximize productivity",
+            "maximizes efficiency"
     },
     description:
-        "TervanX automates settlements, reconciliation, and compliance — all powered by on-chain intelligence.",
-    images: {
+        `TervanX automates the most complex aspects of wallet management—from key security to transaction orchestration—so your developers can focus on building your core product.
+`, images: {
         mobile: {
             src: "//assetsproductivity-hero-mobile.webp",
             alt: "Illustration of productive bees in a grassy meadow",
@@ -22,24 +22,28 @@ export const productivityProps = {
     },
     features: [
         {
-            title: 'Automated cross-chain settlement',
-            description: ' Instantly bridge and settle payments across multiple blockchains without manual intervention. TervanX identifies the most efficient settlement path, executes transfers autonomously, and ensures every transaction reaches its final destination in real time.'
+            title:
+                `Intelligent Key Management & Recovery
+`, description:
+                `Leverage MPC-TSS technology to decentralize private key ownership. Our AI-powered social recovery and multi-factor authentication schemes ensure user assets are secure without the single point of failure, drastically reducing support tickets and user lockouts.
+`        },
+        {
+            title:
+                `Automated Gas Abstraction`,
+            description:
+                `Eliminate the complexity of gas fees for your users. Our system sponsors transactions or allows fee payment in any ERC-20 token. The AI engine dynamically selects the most cost-effective method, ensuring a seamless user experience across all chains`
         },
         {
-            title: 'Smart gas and fee routing',
-            description: 'The AI engine continuously monitors network congestion and fee volatility, dynamically routing transactions through the cheapest and fastest paths — ensuring maximum cost efficiency while maintaining speed and reliability.'
-        },
-        {
-            title: 'Instant reconciliation with treasury dashboards',
-            description: ' All payments, settlements, and transfers automatically reconcile in your treasury dashboard. Finance teams can track real-time balances, generate statements, and sync records across wallets, chains, and ledgers without human input.'
+            title:
+                "Smart Wallet Automation",
+            description:
+                `Programmable transaction batching and automated treasury sweeps. Set rules for automatic asset rebalancing, fee payments, and cross-chain transfers, reducing daily operational overhead by up to 90%.`
         }
     ],
     testimonial: {
         quote:
-            "Since adopting TervanX Crypto Payments, we’ve achieved 80% faster reconciliation and reduced transaction errors to near zero",
-        author: "Maya Okoro",
-        role: "VP of Digital Finance",
-        companyLogo: ` <svg
+            `With TervanX WaaS, we reduced our wallet integration timeline from 9 months to just 3 weeks, accelerating our entire product roadmap.`, author: "Ben Carter,", role:
+            `Head of Blockchain Product`, companyLogo: `<svg
         xmlns="http://www.w3.org/2000/svg"
         width="102"
         height="25"
@@ -63,6 +67,7 @@ export const productivityProps = {
           </g>
         </g>
       </svg>`,
+
         image: {
             src: "/assets/lightspeed-headshot-min.png",
             alt: "Angelo Livanos",
@@ -72,43 +77,39 @@ export const productivityProps = {
 
 export const usabilityProps = {
     heading: {
-        main: "Fast and friction-free",
-        highlighted: "",
+        main: "Fast to integrate,",
+        highlighted: "effortless to scale",
     },
     description:
-        "Crypto Payments is simple to set up, powerful to scale, and intuitive to use. Unified dashboards, multi-chain visibility, and an API-first experience make it effortless for teams and developers alike.",
-    images: {
-        mobile: {
-            src: "/assets/usability-hero-mobile.webp",
-            alt: "Illustration of people walking down a flowery path",
+        "A developer-first experience with comprehensive SDKs, pre-built UI kits, and a unified dashboard for managing all wallet instances across your entire user base.", images: {
+            mobile: {
+                src: "/assets/usability-hero-mobile.webp",
+                alt: "Illustration of people walking down a flowery path",
+            },
+            desktop: {
+                src: "/assets/usability-hero-desktop.webp",
+                alt: "Illustration of people walking down a flowery path",
+            },
+            mainFeature: {
+                src: "/assets/usability-1-desktop.webp",
+                alt: "Helpdesk usability instant insight product visual",
+            },
         },
-        desktop: {
-            src: "/assets/usability-hero-desktop.webp",
-            alt: "Illustration of people walking down a flowery path",
-        },
-        mainFeature: {
-            src: "/assets/usability-1-desktop.webp",
-            alt: "Helpdesk usability instant insight product visual",
-        },
-    },
     usabilityFeatures: [
         {
-            title: 'Instant insight with pre-built reporting',
-            description: 'Monitor and optimize performance with AI-curated reports and dashboards.',
-            list: {
-                items: [
-                    'Real-time transaction tracking',
-                    'Pre-built analytics templates',
-                    'Fee and settlement optimization'
-                ]
-            }
+            title:
+                "Pre-Built & Customizable UI Kits", description:
+                "Accelerate your go-to-market with our embeddable, brandable wallet components. Provide a native-feeling wallet experience for your users without building a single UI from scratch.", list: {
+                    items: [
+                    ]
+                }
         }
     ],
     additionalFeatures: [
         {
             image: { src: "/assets/usability-2-desktop.webp" },
-            title: 'Unified payment flows',
-            description: 'Centralize collections and settlements across multiple chains with one dashboard.',
+            title: 'Centralized Wallet Instance Management',
+            description: 'Monitor the health, activity, and security of every wallet created through your service from one powerful dashboard. Implement batch operations, updates, and security policies globally.',
             list: {
                 items: [
                     'Multi-wallet management',
@@ -119,12 +120,13 @@ export const usabilityProps = {
         },
         {
             image: { src: "/assets/usability-3-desktop.webp" },
-            title: 'Integrate with your existing tools',
-            description: 'Easily connect to ERP, accounting, or compliance systems with SDKs and APIs.',
+            title: 'Seamless Third-Party Integrations',
+            description: 'Connect your wallet infrastructure to your existing stack with ease.',
             list: {
                 items: [
-                    'REST, GraphQL, and Webhook support',
-                    'Real-time sync with reporting systems',
+                    'Webhooks & Event Streaming for real-time wallet activity.',
+                    'REST & GraphQL APIs for total control.',
+                    'Compliance & Analytics SDKs to embed reporting directly into your tools.',
                 ]
             }
         }
