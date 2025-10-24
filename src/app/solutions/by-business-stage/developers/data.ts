@@ -84,58 +84,104 @@ export const developerPageData = {
             href: "/learn-more",
         },
         alignLeft: true,
-        title: "Embed powerful, programmable wallets",
-        tag: "Wallet Infrastructure",
+        title: "Integration Examples",
+        tag: "",
         description:
-            "Launch secure, non-custodial or custodial wallets directly in your app. Go live in days, not months, with TervanX's Wallet-as-a-Service.",
+            "",
         cards: [
             {
-                title: "Unified API for 300+ blockchains",
+                title: "DeFi Protocol Integration",
                 description:
-                    "Integrate once and support every major blockchain and token—future-proofing your startup's product roadmap.",
+                    "Build lending protocols, DEXs, and yield optimizers with our comprehensive DeFi APIs.",
                 img: "/assets/highlight.webp",
+                language: "java",
+                code: `// Get best swap route across all DEXs
+const route = await tervanx.defi.getBestRoute({
+  fromToken: "ETH",
+  toToken: "USDC",
+  amount: "1.0"
+});
+`
             },
             {
-                title: "Pre-built & customizable UI kits",
+                title: "NFT Marketplace",
                 description:
-                    "Accelerate time-to-market with embeddable, brandable wallet components. Deliver a native wallet experience without building UI from scratch.",
+                    "Create NFT marketplaces with built-in royalty enforcement and cross-chain support.",
                 img: "/assets/highlight.webp",
+                language: "python",
+
+                code: `# List NFT for sale
+listing = await tervanx.nfts.list({
+  nft_id: "0x123...456/1",
+  price: "0.1",
+  currency: "ETH"
+})
+;`
             },
             {
-                title: "AI-driven key management",
+                title: "Enterprise Applications",
                 description:
-                    "Leverage MPC technology and social recovery options to keep user assets secure—without the risk of a single point of failure.",
+                    "Integrate with existing enterprise systems and traditional finance infrastructure.",
                 img: "/assets/highlight.webp",
+                language: "java",
+                code: `
+// Sync with accounting system
+TervanxClient.syncToERP(
+  transactionHistory,
+  AccountingSystem.NETSUITE
+);
+`
             },
         ]
     },
 
     liveChat: {
-        title: "Automate treasury operations and maximize yields",
-        tag: "Treasury & Capital Management",
+        title: "Developer Tools & Features",
+        tag: "",
         description:
-            "Manage startup finances across bank accounts, crypto wallets, and DeFi protocols—all from one intelligent dashboard.",
+            "",
         cards: [
             {
-                title: "AI cash forecasting & liquidity management",
-                description:
-                    "Predict cash flow, automate sweeps, and optimize working capital—so you never miss a growth opportunity.",
+                title: "🛠️ Sandbox Environment",
+                description: "",
                 img: "/assets/highlight.webp",
+                imageAlt: "Sandbox Environment",
+                lists: [
+                    "Testnet access across all supported chains",
+                    "Fake money for testing transactions",
+                    "Mock webhooks and event streams",
+                    "Performance testing tools"
+                ]
             },
             {
-                title: "Automated cross-chain settlements",
-                description:
-                    "Move assets seamlessly between blockchains and traditional systems. TervanX handles bridging, wrapping, and routing behind the scenes.",
+                title: "🔧 CLI & Local Development",
+                description: "",
                 img: "/assets/highlight.webp",
+                imageAlt: "CLI & Local Development",
+                lists: [
+                    "Local development server",
+                    "One-command deployment",
+                    "Environment management",
+                    "Secret management and rotation"
+                ]
             },
             {
-                title: "Smart yield optimization",
-                description:
-                    "Automatically deploy idle cash into vetted yield opportunities—turning your treasury into a profit center.",
+                title: "📊 Monitoring & Analytics",
+                description: "",
                 img: "/assets/highlight.webp",
-            },
+                imageAlt: "Monitoring & Analytics",
+                lists: [
+                    "Real-time request logging",
+                    "Performance metrics and latency tracking",
+                    "Error rate monitoring and alerting",
+                    "Usage analytics and cost optimization"
+                ]
+            }
         ],
         backgroundImage: "/assets/image30.webp",
+        backgroundAlt: "DataSectionProps",
+
+
     },
 
     globalWhatsapp: {
@@ -162,6 +208,55 @@ export const developerPageData = {
                 img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
         ],
+        title: "Pricing & Getting Started",
+        tag: "",
+        backgroundImage: "/assets/image30.webp",
+        description:
+            "",
+    },
+    globalWhatsapp2: {
+        cards: [
+            {
+                backgroundImage: "/assets/image30.webp",
+                title: "Free Tier",
+                description: "",
+                img: "/assets/highlight.webp",
+                imageAlt: "Free Tier",
+                lists: [
+                    "10,000 API requests/month",
+                    "Testnet access only",
+                    "Community support",
+                    "Perfect for prototyping"
+                ]
+            },
+            {
+                backgroundImage: "/assets/image30.webp",
+                title: "Growth Tier",
+                description: "",
+                img: "/assets/highlight.webp",
+                imageAlt: "Growth Tier",
+                lists: [
+                    "$99/month for 100K requests",
+                    "Mainnet access",
+                    "Priority support",
+                    "Advanced features"
+                ]
+            },
+            {
+                backgroundImage: "/assets/image30.webp",
+                title: "Enterprise Tier",
+                description: "",
+                img: "/assets/highlight.webp",
+                imageAlt: "Enterprise Tier",
+                lists: [
+                    "Custom pricing and limits",
+                    "Dedicated infrastructure",
+                    "24/7 phone support",
+                    "Custom feature development"
+                ]
+            }
+        ],
+
         title: "Stay secure and compliant from day one",
         tag: "Compliance & Security",
         backgroundImage: "/assets/image30.webp",
@@ -170,42 +265,20 @@ export const developerPageData = {
     },
 
     engageCustomers: {
-        badgeText: "SMS and social media",
-        title: "Engage customers on the apps they use everyday",
+        badgeText: "",
+        title: "",
         columns: [
-            {
-                title: "Instagram",
-                description:
-                    "Respond to Instagram DMs, story replies and mentions directly from Intercom, and interact with customers using rich multi-media, from emojis to images - perfect for startup marketing.",
-                imageSrc:
-                    "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01.webp?&q=90",
-                imageAlt: "Instagram",
-            },
-            {
-                title: "Facebook",
-                description:
-                    "Route direct messages to the Inbox, so customers can reach out directly from Facebook for a seamless experience that scales with your startup.",
-                imageSrc:
-                    "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02.webp?&q=90",
-                imageAlt: "Facebook",
-            },
-            {
-                title: "SMS",
-                description:
-                    "Send and receive text messages from the Inbox in 45 languages, to enable real-time, conversational support with your growing customer base.",
-                imageSrc:
-                    "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
-                imageAlt: "SMS",
-            },
+
+
         ],
     },
 
     testimonial: {
-        title: "What Startups Are Saying",
+        title: "What Developers Are Building",
         quote:
-            "With TervanX, we reduced our wallet integration timeline from 9 months to 3 weeks and scaled to 50,000 users without adding backend engineers. It's the infrastructure partner every startup needs.",
-        role: " CTO of NovaFi",
-        name: "Maya Okoro,",
+            "We integrated TervanX's Wallet API and had our MVP live in 2 weeks. The documentation is exceptional, and the support team actually understands developer needs.",
+        role: "Lead Developer at Web3 Startup",
+        name: "Sarah Chen,"
     },
 
     bannerCTA: {

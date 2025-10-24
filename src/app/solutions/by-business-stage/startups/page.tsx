@@ -44,6 +44,19 @@ const Page = () => {
       <div className="py-12">
         <DottedLine fill="gray" />
       </div>
+      <div className="w-[90%] lg:w-[80%] mx-auto">
+        <SubSection
+          title={startupPageData.subsection2.title}
+          description={startupPageData.subsection2.description}
+          children={
+            <BrandEmailSupport {...startupPageData.brandEmailSupport} />
+          }
+          tag={startupPageData.subsection2.tag}
+        />
+      </div>
+      <div className="py-12">
+        <DottedLine fill="gray" />
+      </div>
       <CallAndConversation {...startupPageData.callAndConversation} />
       <div className="py-6 lg:py-20">
         <DottedLine fill="gray" />

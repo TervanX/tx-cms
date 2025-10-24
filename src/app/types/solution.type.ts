@@ -32,6 +32,8 @@ export interface LiveChatProps {
 interface CardItem {
     title: string;
     description: string;
+    code?: string;
+    language?: string;
     img: string;
     backgroundImage?: string;
     imageAlt?: string;

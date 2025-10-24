@@ -1,6 +1,8 @@
 interface BorderTopCardProps {
   title?: string;
   description?: string;
+  code?: string;
+  language?: string;
   onClick?: () => void;
   active?: boolean;
   lists?: string[];
@@ -28,7 +30,6 @@ const BorderTopCard: React.FC<BorderTopCardProps> = ({
       )}
 
       <div className="pl-4 lg:pl-6">
-        {" "}
         {lists && (
           <ul className="mt-3 list-disc text-sm text-gray-600 font-sans leading-relaxed">
             {lists?.map((item) => (
