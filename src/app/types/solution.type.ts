@@ -9,6 +9,8 @@ export interface CallProps {
     title?: string;
     tag?: string;
     description?: string;
+    cards?: CardItem[];
+
 }
 
 interface LiveChatPropscardItem {
