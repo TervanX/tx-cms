@@ -216,7 +216,7 @@ export const cryptoExchangesPageData = {
             {
                 title: "Performance Metrics",
                 description: "",
-                img: "/asset/highlight.webp",
+                img: "/assets/highlight.webp",
                 imageAlt: "Performance Metrics",
                 list: [
                     'Order matching: <0.1ms latency',

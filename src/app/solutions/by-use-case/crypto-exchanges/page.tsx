@@ -65,7 +65,7 @@ const Page = () => {
           children={
             <BrandEmailSupport {...cryptoExchangesPageData.brandEmailSupport2} />
           }
-          tag={cryptoExchangesPageData.subsection2.tag}
+          tag={cryptoExchangesPageData.subsection3.tag}
         />
         <SubSection
           title={cryptoExchangesPageData.subsection4.title}

@@ -57,6 +57,7 @@ const Page = () => {
       <div className="py-12 mt-8">
         <DottedLine fill="gray" />
       </div>
+      <EngageCustomersSection {...fintechPlatformsPageData.engageCustomers} />
       <div className="w-[90%] lg:w-[80%] mx-auto">
         <SubSection
           title={fintechPlatformsPageData.subsection3.title}
@@ -64,7 +65,7 @@ const Page = () => {
           children={
             <BrandEmailSupport {...fintechPlatformsPageData.brandEmailSupport2} />
           }
-          tag={fintechPlatformsPageData.subsection2.tag}
+          tag={fintechPlatformsPageData.subsection3.tag}
         />
         <SubSection
           title={fintechPlatformsPageData.subsection4.title}
