@@ -56,9 +56,11 @@ const EngageCustomersSection = (
           </div>
 
           {/* Columns Section */}
-          <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
+          <div className="flex flex-col lg:flex-row justify-evenly gap-6 lg:gap-8">
             {columns.map((column, index) => (
-              <EngagementSestionCard column={column} key={index} />
+              <div className="flex-1 min-w-0"> {/* Add this wrapper */}
+                <EngagementSestionCard column={column} key={index} />
+              </div>
             ))}
           </div>
         </div>
