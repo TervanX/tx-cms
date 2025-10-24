@@ -251,7 +251,7 @@ const creatorMediaPageData = {
 
   bannerCTA: {
     title: "Start Your Creator Journey",
-    backgroundImage: "/assets/custom-bg.webp",
+    backgroundImage: "/assets/image30.webp",
     primaryButton: {
       text: "Get Started",
       href: "/get-started",

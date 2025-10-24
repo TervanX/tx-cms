@@ -31,6 +31,7 @@ const BannerCTA: React.FC<BannerProps> = ({
   },
   title = "Start delivering omnichannel support today",
 }) => {
+  console.log(backgroundImage);
   return (
     <div className="bg-black">
       <article className="relative w-full max-h-screen mx-auto grid overflow-hidden">

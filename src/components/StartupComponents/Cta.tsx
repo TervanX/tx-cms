@@ -11,6 +11,7 @@ export default function CtaBanner({
   backgroundImage = "/assets/image14.webp",
   onButtonClick
 }: CtaBannerProps) {
+  console.log(backgroundImage);
   return (
     <div className={`px-6 md:px-12 lg:px-16 xl:px-20 2xl:px-24 my-28`}>
       <div className="container mx-auto px-4">
