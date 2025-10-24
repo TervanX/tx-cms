@@ -208,166 +208,139 @@ export const fintechPlatformsPageData = {
             },
         ],
     },
-    engageCustomers2: {
-        badgeText: "",
-        title: "Use Cases",
-        columns: [
-            {
-                title: "Neo-banks & Digital Banks",
-                description: "",
-                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01.webp?&q=90",
-                imageAlt: "Neo-banks & Digital Banks",
-                list: {
-                    items: [
-                        'Multi-currency accounts with crypto integration',
-                        'Real-time global payments',
-                        'AI-powered financial management',
-                        'Embedded investment products',
-                    ]
-                }
-            },
-            {
-                title: "Investment Platforms",
-                description: "",
-                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02.webp?&q=90",
-                imageAlt: "Investment Platforms",
-                list: {
-                    items: [
-                        'Unified traditional and digital asset trading',
-                        'Portfolio management across all asset classes',
-                        'Automated tax optimization and reporting',
-                        'Institutional-grade security and compliance',
-                    ]
-                }
-            },
-            {
-                title: "Payment Processors",
-                description: "",
-                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
-                imageAlt: "Payment Processors",
-                list: {
-                    items: [
-                        'Cross-border payment optimization',
-                        'Crypto payment acceptance and settlement',
-                        'Fraud prevention and risk management',
-                        'Multi-currency treasury management',
-                    ]
-                }
-            },
-            {
-                title: "Wealth Management",
-                description: "",
-                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
-                imageAlt: "Wealth Management",
-                list: {
-                    items: [
-                        'Digital asset portfolio management',
-                        'Automated rebalancing and tax harvesting',
-                        'Family office and institutional reporting',
-                        'Compliance and audit trail generation',
-                    ]
-                }
-            },
-        ],
-    },
-    engageCustomers3: {
-        badgeText: "",
+
+    subsection4: {
+        description: "",
         title: "Technical Excellence",
-        columns: [
+        tag: ""
+    },
+    brandEmailSupport3: {
+        cards: [
             {
                 title: "Performance & Reliability",
                 description: "",
-                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01.webp?&q=90",
+                img: "/assets/highlight.webp",
                 imageAlt: "Performance & Reliability",
-                list: {
-                    items: [
-                        '99.99% uptime SLA',
-                        '<100ms API response times',
-                        '10,000+ transactions per second',
-                        'Global edge network with 50+ locations',
-                    ]
-                }
+                list: [
+                    '99.99% uptime SLA',
+                    '<100ms API response times',
+                    '10,000+ transactions per second',
+                    'Global edge network with 50+ locations',
+                ]
             },
             {
                 title: "Security & Compliance",
                 description: "",
-                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02.webp?&q=90",
+                img: "/assets/highlight.webp",
                 imageAlt: "Security & Compliance",
-                list: {
-                    items: [
-                        'SOC 2 Type II certified',
-                        'ISO 27001 compliant',
-                        'GDPR and CCPA ready',
-                        'Regular third-party security audits',
-                    ]
-                }
+                list: [
+                    'SOC 2 Type II certified',
+                    'ISO 27001 compliant',
+                    'GDPR and CCPA ready',
+                    'Regular third-party security audits',
+                ]
             },
             {
                 title: "Developer Experience",
                 description: "",
-                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
+                img: "/assets/highlight.webp",
                 imageAlt: "Developer Experience",
-                list: {
-                    items: [
-                        'Comprehensive REST and GraphQL APIs',
-                        'SDKs in 8 programming languages',
-                        'Detailed documentation and tutorials',
-                        'Dedicated technical support',
-                    ]
-                }
+                list: [
+                    'Comprehensive REST and GraphQL APIs',
+                    'SDKs in 8 programming languages',
+                    'Detailed documentation and tutorials',
+                    'Dedicated technical support',
+                ]
+
             },
         ],
+        backgroundImage: "/assets/image30.webp",
+        backgroundAlt: "Trading Engine",
     },
-    engageCustomers4: {
-        badgeText: "",
+
+    subsection3: {
+        description: "",
+        title: "Key Products for Exchanges",
+        tag: ""
+    },
+    brandEmailSupport2: {
+        cards: [
+            {
+                title: "Liquidity Hub",
+                description: "Access $15B+ daily liquidity depth across all major venues and chains with intelligent routing.",
+                img: "/assets/highlight.webp",
+                imageAlt: "Liquidity Hub",
+            },
+            {
+                title: "TX Vault",
+                description: "Institutional-grade custody with multi-sig approvals, policy engines, and automated treasury management.",
+                img: "/assets/highlight.webp",
+                imageAlt: "TX Vault",
+            },
+            {
+                title: "TX Shield",
+                description: "Advanced security monitoring with real-time threat detection and automated incident response.",
+                img: "/assets/highlight.webp",
+                imageAlt: "TX Shield",
+            },
+            {
+                title: "TX Automate",
+                description: "Automate operational workflows including listings, risk management, and compliance reporting.",
+                img: "/assets/highlight.webp",
+                imageAlt: "TX Automate",
+            },
+        ],
+        backgroundImage: "/assets/image30.webp",
+        backgroundAlt: "Trading Engine",
+    },
+
+    subsection5: {
+        description: "",
         title: "Enterprise-Grade Features",
-        columns: [
+        tag: ""
+    },
+    brandEmailSupport4: {
+        cards: [
             {
                 title: "Dedicated Infrastructure",
                 description: "",
-                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01.webp?&q=90",
+                img: "/assets/highlight.webp",
                 imageAlt: "Dedicated Infrastructure",
-                list: {
-                    items: [
-                        'Isolated processing environments',
-                        'Custom deployment options',
-                        'Dedicated node clusters',
-                        'Private blockchain connectivity',
-                    ]
-                }
+                list: [
+                    'Isolated processing environments',
+                    'Custom deployment options',
+                    'Dedicated node clusters',
+                    'Private blockchain connectivity',
+                ]
             },
             {
                 title: "Custom Workflows",
                 description: "",
-                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02.webp?&q=90",
+                img: "/assets/highlight.webp",
                 imageAlt: "Custom Workflows",
-                list: {
-                    items: [
-                        'Tailored compliance rules',
-                        'Custom settlement logic',
-                        'Branded user experiences',
-                        'Proprietary integration patterns',
-                    ]
-                }
+                list: [
+                    'Tailored compliance rules',
+                    'Custom settlement logic',
+                    'Branded user experiences',
+                    'Proprietary integration patterns',
+                ]
             },
             {
                 title: "Premium Support",
                 description: "",
-                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
+                img: "/assets/highlight.webp",
                 imageAlt: "Premium Support",
-                list: {
-                    items: [
-                        '24/7 dedicated engineering support',
-                        'Account management and strategic guidance',
-                        'Custom feature development',
-                        'Training and certification programs',
-                    ]
-                }
+                list: [
+                    '24/7 dedicated engineering support',
+                    'Account management and strategic guidance',
+                    'Custom feature development',
+                    'Training and certification programs',
+                ]
             },
         ],
+        backgroundImage: "/assets/image30.webp",
+        backgroundAlt: "Trading Engine",
     },
-
-
     testimonial: {
         title: "What Fintech Leaders Say",
         quote:

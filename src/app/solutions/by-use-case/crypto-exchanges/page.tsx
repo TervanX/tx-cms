@@ -58,12 +58,43 @@ const Page = () => {
         <DottedLine fill="gray" />
       </div>
       <EngageCustomersSection {...cryptoExchangesPageData.engageCustomers} />
-      <EngageCustomersSection {...cryptoExchangesPageData.engageCustomers2} />
-      <EngageCustomersSection {...cryptoExchangesPageData.engageCustomers3} />
-      <EngageCustomersSection {...cryptoExchangesPageData.engageCustomers4} />
+      <div className="w-[90%] lg:w-[80%] mx-auto">
+        <SubSection
+          title={cryptoExchangesPageData.subsection3.title}
+          description={cryptoExchangesPageData.subsection3.description}
+          children={
+            <BrandEmailSupport {...cryptoExchangesPageData.brandEmailSupport2} />
+          }
+          tag={cryptoExchangesPageData.subsection2.tag}
+        />
+        <SubSection
+          title={cryptoExchangesPageData.subsection4.title}
+          description={cryptoExchangesPageData.subsection4.description}
+          children={
+            <BrandEmailSupport {...cryptoExchangesPageData.brandEmailSupport3} />
+          }
+          tag={cryptoExchangesPageData.subsection4.tag}
+        />
+        <SubSection
+          title={cryptoExchangesPageData.subsection5.title}
+          description={cryptoExchangesPageData.subsection5.description}
+          children={
+            <BrandEmailSupport {...cryptoExchangesPageData.brandEmailSupport4} />
+          }
+          tag={cryptoExchangesPageData.subsection5.tag}
+        />
+        <SubSection
+          title={cryptoExchangesPageData.subsection6.title}
+          description={cryptoExchangesPageData.subsection6.description}
+          children={
+            <BrandEmailSupport {...cryptoExchangesPageData.brandEmailSupport5} />
+          }
+          tag={cryptoExchangesPageData.subsection6.tag}
+        />
+      </div>
       <TestimonialCarousel {...cryptoExchangesPageData.testimonial} />
       <BannerCTA {...cryptoExchangesPageData.bannerCTA} />
-    </div>
+    </div >
   );
 };
 

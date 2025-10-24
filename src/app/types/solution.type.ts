@@ -49,10 +49,6 @@ interface ColumnItem {
     description: string;
     imageSrc: string;
     imageAlt: string;
-    list?: {
-        items: string[
-        ]
-    };
 }
 
 export interface EngageCustomersProps {

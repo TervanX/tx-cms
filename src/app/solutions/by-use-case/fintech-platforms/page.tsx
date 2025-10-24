@@ -57,10 +57,32 @@ const Page = () => {
       <div className="py-12 mt-8">
         <DottedLine fill="gray" />
       </div>
-      <EngageCustomersSection {...fintechPlatformsPageData.engageCustomers} />
-      <EngageCustomersSection {...fintechPlatformsPageData.engageCustomers2} />
-      <EngageCustomersSection {...fintechPlatformsPageData.engageCustomers3} />
-      <EngageCustomersSection {...fintechPlatformsPageData.engageCustomers4} />
+      <div className="w-[90%] lg:w-[80%] mx-auto">
+        <SubSection
+          title={fintechPlatformsPageData.subsection3.title}
+          description={fintechPlatformsPageData.subsection3.description}
+          children={
+            <BrandEmailSupport {...fintechPlatformsPageData.brandEmailSupport2} />
+          }
+          tag={fintechPlatformsPageData.subsection2.tag}
+        />
+        <SubSection
+          title={fintechPlatformsPageData.subsection4.title}
+          description={fintechPlatformsPageData.subsection4.description}
+          children={
+            <BrandEmailSupport {...fintechPlatformsPageData.brandEmailSupport3} />
+          }
+          tag={fintechPlatformsPageData.subsection4.tag}
+        />
+        <SubSection
+          title={fintechPlatformsPageData.subsection5.title}
+          description={fintechPlatformsPageData.subsection5.description}
+          children={
+            <BrandEmailSupport {...fintechPlatformsPageData.brandEmailSupport4} />
+          }
+          tag={fintechPlatformsPageData.subsection5.tag}
+        />
+      </div>
       <TestimonialCarousel {...fintechPlatformsPageData.testimonial} />
       <BannerCTA {...fintechPlatformsPageData.bannerCTA} />
     </div>
