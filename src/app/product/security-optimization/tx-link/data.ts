@@ -1,7 +1,7 @@
 export const productivityProps = {
     heading: {
-        main: "Autonomous cross-chain operations",
-        highlighted: ""
+        main: "Autonomous  ",
+        highlighted: "cross-chain operations"
     },
     description:
         "TX Link automates the most complex aspects of multi-chain interoperability—from bridge selection to settlement finality—operating with precision across all connected networks.",
@@ -71,8 +71,8 @@ fill="none"
 
 export const usabilityProps = {
     heading: {
-        main: "Enterprise-grade interoperability made ",
-        highlighted: "simple",
+        main: "Enterprise-grade  ",
+        highlighted: "interoperability made simple",
     },
     description:
         "An intuitive platform for managing all cross-chain operations with enterprise-grade security and reliability.",
@@ -142,8 +142,8 @@ export const usabilityProps = {
 
 export const outboundProps = {
     heading: {
-        main: "Intelligent bridge analytics that ensure optimal performance",
-        highlighted: "",
+        main: "Intelligent bridge analytics that",
+        highlighted: "ensure optimal performance",
     },
     description:
         "Move beyond basic transfer tracking to predictive insights that optimize routing and prevent cross-chain issues.",

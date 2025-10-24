@@ -1,7 +1,7 @@
 export const productivityProps = {
     heading: {
-        main: "Autonomous treasury operations ",
-        highlighted: "with ironclad security"
+        main: "Autonomous treasury",
+        highlighted: "operations with ironclad security"
     },
     description:
         "TX Vault automates the most critical aspects of digital asset management—from multi-signature approvals to cross-chain settlements—while maintaining institutional-grade security standards.",

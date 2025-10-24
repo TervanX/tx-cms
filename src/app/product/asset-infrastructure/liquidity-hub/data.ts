@@ -1,7 +1,7 @@
 export const productivityProps = {
     heading: {
-        main: "Autonomous liquidity optimization that",
-        highlighted: "never sleeps"
+        main: "Autonomous liquidity ",
+        highlighted: "optimization that never sleeps"
     },
     description:
         "Liquidity Hub automates the most complex aspects of liquidity sourcing—venue selection, route optimization, and execution management—delivering superior trading outcomes with zero manual intervention.",
@@ -145,8 +145,8 @@ export const usabilityProps = {
 
 export const outboundProps = {
     heading: {
-        main: "Intelligence-driven liquidity execution",
-        highlighted: "",
+        main: "Intelligence-drivenn",
+        highlighted: " liquidity execution",
     },
     description:
         "Move beyond basic price feeds to predictive analytics that transform liquidity management into a strategic advantage.",
