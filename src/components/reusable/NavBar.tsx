@@ -30,73 +30,73 @@ const navItems: NavItemInterface[] = [
   {
     title: "Products",
     solutions: [
-      {
-        logo: (
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 18 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g id="Vector">
-              <path
-                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
-                fill="black"
-              ></path>
-              <path
-                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
-                fill="black"
-              ></path>
-              <path
-                d="M11.8502 3.02548C13.0375 3.02548 13.996 3.98391 13.996 5.17121V16H17.0143V6.44434C17.0143 2.88958 14.1319 0 10.57 0H0.985687V3.01833H11.8431L11.8502 3.02548Z"
-                fill="black"
-              ></path>
-              <path
-                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
-                fill="black"
-              ></path>
-              <path
-                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
-                fill="black"
-              ></path>
-            </g>
-          </svg>
-        ),
-        title: "Products",
-        description:
-          "All TervanX’s core infrastructure and modules — fiat, crypto, and plugin systems.",
-        links: [
-          {
-            href: "/product/payments-infrastructure/crypto-payments",
-            text: "Crypto Payments",
-          },
-          {
-            href: "/product/payments-infrastructure/fiat-payments",
-            text: "Fiat Payments",
-          },
-          {
-            href: "/product/payments-infrastructure/checkout",
-            text: "Checkout ",
-          },
-          {
-            href: "/product/payments-infrastructure/payment-links",
-            text: "Payment Links ",
-          },
-          // {
-          //   href: "/product/payments-infrastructure/pos-terminal",
-          //   text: "POS / Terminal  ",
-          // },
-          {
-            href: "/product/payments-infrastructure/payout-api",
-            text: "Payouts API  ",
-          },
-          {
-            href: "/product/payments-infrastructure/payment-method",
-            text: "Payment Methods ",
-          },
-        ],
-      },
+      // {
+      //   logo: (
+      //     <svg
+      //       width="20"
+      //       height="20"
+      //       viewBox="0 0 18 16"
+      //       fill="none"
+      //       xmlns="http://www.w3.org/2000/svg"
+      //     >
+      //       <g id="Vector">
+      //         <path
+      //           d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+      //           fill="black"
+      //         ></path>
+      //         <path
+      //           d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+      //           fill="black"
+      //         ></path>
+      //         <path
+      //           d="M11.8502 3.02548C13.0375 3.02548 13.996 3.98391 13.996 5.17121V16H17.0143V6.44434C17.0143 2.88958 14.1319 0 10.57 0H0.985687V3.01833H11.8431L11.8502 3.02548Z"
+      //           fill="black"
+      //         ></path>
+      //         <path
+      //           d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+      //           fill="black"
+      //         ></path>
+      //         <path
+      //           d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+      //           fill="black"
+      //         ></path>
+      //       </g>
+      //     </svg>
+      //   ),
+      //   title: "Products",
+      //   description:
+      //     "All TervanX’s core infrastructure and modules — fiat, crypto, and plugin systems.",
+      //   links: [
+      //     {
+      //       href: "/product/payments-infrastructure/crypto-payments",
+      //       text: "Crypto Payments",
+      //     },
+      //     {
+      //       href: "/product/payments-infrastructure/fiat-payments",
+      //       text: "Fiat Payments",
+      //     },
+      //     {
+      //       href: "/product/payments-infrastructure/checkout",
+      //       text: "Checkout ",
+      //     },
+      //     {
+      //       href: "/product/payments-infrastructure/payment-links",
+      //       text: "Payment Links ",
+      //     },
+      //     // {
+      //     //   href: "/product/payments-infrastructure/pos-terminal",
+      //     //   text: "POS / Terminal  ",
+      //     // },
+      //     {
+      //       href: "/product/payments-infrastructure/payout-api",
+      //       text: "Payouts API  ",
+      //     },
+      //     {
+      //       href: "/product/payments-infrastructure/payment-method",
+      //       text: "Payment Methods ",
+      //     },
+      //   ],
+      // },
       {
         logo: (
           <svg
@@ -119,7 +119,7 @@ const navItems: NavItemInterface[] = [
         links: [
           {
             href: "/product/asset-infrastructure/wallet-api",
-            text: "Wallets API",
+            text: "Wallets as a Service",
           },
           { href: "/product/asset-infrastructure/vault", text: "Vault" },
           {
@@ -230,10 +230,10 @@ const navItems: NavItemInterface[] = [
           },
           { href: "/product/finance-treasury/tx-capital", text: "Tx Capital" },
           { href: "/product/finance-treasury/tx-issuing", text: "Tx Issuing" },
-          {
-            href: "/product/finance-treasury/global-payouts",
-            text: "Global Payouts",
-          },
+          // {
+          //   href: "/product/finance-treasury/global-payouts",
+          //   text: "Global Payouts",
+          // },
         ],
       },
       {
@@ -1174,7 +1174,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ toggle, isOpen }) => {
         </div>
       </div>
       <div className="flex items-center gap-4 justify-end">
-        <Button size="md" variant="primary" type="button" onClick={() => {}}>
+        <Button size="md" variant="primary" type="button" onClick={() => { }}>
           Sign up for free
         </Button>
 
@@ -1338,9 +1338,8 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
       </button>
 
       <div
-        className={`overflow-y-scroll transition-all duration-300 ease-in-out px-6 ${
-          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-        }`}
+        className={`overflow-y-scroll transition-all duration-300 ease-in-out px-6 ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          }`}
       >
         <div className="pb-5 text-dark text-sm lg:text-base leading-relaxed  border-gray-200 border-t-[1.5px] pt-4">
           <div className="flex flex-col lg:flex-row gap-6 ">

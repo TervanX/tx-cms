@@ -86,11 +86,10 @@ const TabsNav: React.FC<{
             }}
             key={s.id}
             onClick={() => onSelect(s.id)}
-            className={`w-full whitespace-nowrap rounded p-4 text-xs transition-all ${
-              index === i
+            className={`w-full whitespace-nowrap rounded p-4 text-xs transition-all ${index === i
                 ? "bg-yellow1"
                 : "bg-[#f7f5f2] text-neutral-900 hover:bg-neutral-100"
-            }`}
+              }`}
             aria-selected={index === i}
             role="tab"
           >
@@ -323,14 +322,12 @@ const MotionHorizontalPeekCarousel: React.FC = () => {
     setIndex(clampedIndex);
   };
 
-  // Re-center on layout changes
   useEffect(() => {
     if (isMobile) {
       y.set(clamp(yCentered(index), bottomBound, topBound));
     } else {
       x.set(clamp(xCentered(index), leftBound, rightBound));
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
     vw,
     vh,
@@ -342,6 +339,11 @@ const MotionHorizontalPeekCarousel: React.FC = () => {
     topBound,
     bottomBound,
     isMobile,
+    y,
+    x,
+    yCentered,
+    xCentered,
+    clamp
   ]);
 
   // Drag end → snap to nearest index
@@ -473,9 +475,8 @@ const MotionHorizontalPeekCarousel: React.FC = () => {
           }
           dragElastic={0.06}
           onDragEnd={onDragEnd}
-          className={`h-full flex ${
-            isMobile ? "flex-col" : "flex-col lg:flex-row"
-          } items-stretch`}
+          className={`h-full flex ${isMobile ? "flex-col" : "flex-col lg:flex-row"
+            } items-stretch`}
         >
           {sections.map((s, i) => (
             <div key={s.id} className="shrink-0 flex items-center w-screen">

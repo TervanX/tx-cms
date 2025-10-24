@@ -28,18 +28,23 @@ export interface FormErrors {
 
 export interface AccessFormData {
     fullName: string;
-    businessEmail: string;
-    companyName: string;
-    companyWebsite: string;
-    businessType: string;
-    useCase: string;
-    country: string;
-    teamSize: string;
-    monthlyVolume: string;
-    contactMethod: string;
-    message: string;
-    agreeToTerms: boolean;
+    businessEmail?: string;
+    email?: string;
+    role?: string;
+    companyName?: string;
+    companyWebsite?: string;
+    businessType?: string;
+    useCase?: string;
+    country?: string;
+    teamSize?: string;
+    monthlyVolume?: string;
+    contactMethod?: string;
+    message?: string;
+    agreeToTerms?: boolean;
+    referralCode?: string;
+    interestReason?: string;
 }
+
 
 export interface AccessFormErrors {
     fullName?: string;
@@ -54,4 +59,5 @@ export interface AccessFormErrors {
     contactMethod?: string;
     message?: string;
     agreeToTerms?: string;
+    referralCode?: string;
 }

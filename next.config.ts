@@ -1,7 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-
   images: {
     domains: ['images.ctfassets.net'],
     remotePatterns: [
@@ -18,9 +18,7 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
     ],
-
   },
-
 };
 
 export default nextConfig;

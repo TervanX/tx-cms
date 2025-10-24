@@ -1,11 +1,9 @@
-// src/app/components/ContentLayout/ContentLayout.tsx
 "use client";
 
 import { useScroll, useTransform } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import ChapterNavigation from "./ChapterNavigation";
 
-// Define section component types
 export type SectionComponent = React.ComponentType<any>;
 
 export interface SectionConfig {
@@ -31,7 +29,6 @@ const ContentLayout: React.FC<ContentLayoutProps> = ({
     defaultActiveSection || sections[0]?.id || ""
   );
 
-  // Create refs for each section dynamically
   const sectionRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
 
   const { scrollYProgress } = useScroll({
@@ -43,6 +40,8 @@ const ContentLayout: React.FC<ContentLayoutProps> = ({
   const sectionProgress = sections.reduce((acc, section, index) => {
     const start = index / sections.length;
     const end = (index + 1) / sections.length;
+
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     acc[section.id] = useTransform(scrollYProgress, [start, end], [0, 1]);
     return acc;
   }, {} as { [key: string]: any });
@@ -86,8 +85,6 @@ const ContentLayout: React.FC<ContentLayoutProps> = ({
       observer.disconnect();
     };
   }, [activeSection, sections]);
-
-  // Alternative: Use scroll event listener as fallback
   useEffect(() => {
     if (sections.length === 0) return;
 
