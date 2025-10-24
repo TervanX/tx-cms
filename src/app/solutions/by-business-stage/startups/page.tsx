@@ -18,7 +18,6 @@ import DottedLine from "@/components/helpDeskComponents/DottedBg";
 gsap.registerPlugin(ScrollTrigger);
 
 const Page = () => {
-  console.log("Called");
   return (
     <div className="relative z-10 ">
       <HeroSection {...startupPageData.heroSection} />
