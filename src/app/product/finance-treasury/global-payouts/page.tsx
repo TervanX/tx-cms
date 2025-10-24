@@ -1,5 +1,4 @@
 "use client";
-"use client";
 import Hero from "@/components/subhelpdeskComponents/Hero";
 import Banner from "@/components/subhelpdeskComponents/Banner";
 import ProductivitySection from "@/components/subhelpdeskComponents/ProductivitySection";
