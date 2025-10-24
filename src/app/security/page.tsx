@@ -45,10 +45,10 @@ export default function SecurityTrust() {
     ];
 
     return (
-        <div className="min-h-screen bg-gray-50 font-sans">
+        <div className="min-h-screen bg-gray-50 font-sans lg:my-24 mt-14">
             {/* Header */}
-            <div className="bg-white border-b border-gray-200">
-                <div className="container mx-auto px-4 py-8 my-24">
+            <div className="bg-white border-b border-gray-200 ">
+                <div className="container mx-auto px-4 py-8 ">
                     <div className="max-w-6xl mx-auto">
                         <h1 className="text-3xl font-bold text-gray-900 mb-4">
                             Tervan X Trust Center
@@ -67,7 +67,7 @@ export default function SecurityTrust() {
                             </div>
                             <Link
                                 href="/security/privacy"
-                                className="text-blue-600 hover:text-blue-800 font-medium"
+                                className="text-primary hover:text-primary/80 font-medium"
                             >
                                 Privacy Policy
                             </Link>
@@ -80,7 +80,29 @@ export default function SecurityTrust() {
             <div className="bg-white border-b border-gray-200 sticky top-0 z-10">
                 <div className="container mx-auto px-4">
                     <div className="max-w-6xl mx-auto">
-                        <nav className="flex space-x-8 overflow-x-auto">
+                        <div className="lg:hidden mb-4">
+                            <select
+                                value={activeTab}
+                                onChange={(e) => setActiveTab(e.target.value)}
+                                className="w-full p-3 border border-gray-300 rounded-lg focus:border-black bg-white text-gray-700"
+                            >
+                                {[
+                                    { id: 'overview', label: 'Overview' },
+                                    { id: 'compliance', label: 'Compliance' },
+                                    { id: 'resources', label: 'Resources' },
+                                    { id: 'controls', label: 'Controls' },
+                                    { id: 'subprocessors', label: 'Subprocessors' },
+                                    { id: 'faq', label: 'FAQ' },
+                                    { id: 'updates', label: 'Updates' },
+                                ].map((tab) => (
+                                    <option key={tab.id} value={tab.id}>
+                                        {tab.label}
+                                    </option>
+                                ))}
+                            </select>
+                        </div>
+
+                        <nav className="hidden lg:flex space-x-8 overflow-x-auto">
                             {[
                                 { id: 'overview', label: 'Overview' },
                                 { id: 'compliance', label: 'Compliance' },
@@ -94,7 +116,7 @@ export default function SecurityTrust() {
                                     key={tab.id}
                                     onClick={() => setActiveTab(tab.id)}
                                     className={`whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm ${activeTab === tab.id
-                                        ? 'border-blue-500 text-blue-600'
+                                        ? 'border-primary text-primary'
                                         : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                                         }`}
                                 >
@@ -124,15 +146,15 @@ export default function SecurityTrust() {
                                         </p>
                                         <ul className="text-gray-600 space-y-2">
                                             <li className="flex items-center gap-2">
-                                                <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
+                                                <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
                                                 Enterprise-grade infrastructure
                                             </li>
                                             <li className="flex items-center gap-2">
-                                                <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
+                                                <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
                                                 Comprehensive compliance certifications
                                             </li>
                                             <li className="flex items-center gap-2">
-                                                <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
+                                                <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
                                                 Advanced AI threat protection
                                             </li>
                                         </ul>
@@ -174,7 +196,7 @@ export default function SecurityTrust() {
                                                 </span>
                                             </div>
                                             <p className="text-gray-600 text-sm mb-4">{item.description}</p>
-                                            <button className="text-blue-600 hover:text-blue-800 text-sm font-medium">
+                                            <button className="text-primary hover:text-primary/80 text-sm font-medium">
                                                 View Certificate →
                                             </button>
                                         </div>
@@ -209,9 +231,7 @@ export default function SecurityTrust() {
                             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
                                 <div className="flex items-center justify-between mb-6">
                                     <h2 className="text-2xl font-bold text-gray-900">Infrastructure Security</h2>
-                                    <span className="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">
-                                        {infrastructureControls.length} controls
-                                    </span>
+
                                 </div>
                                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
                                     {infrastructureControls.slice(0, 6).map((control, index) => (
@@ -221,18 +241,12 @@ export default function SecurityTrust() {
                                         </div>
                                     ))}
                                 </div>
-                                <button className="text-blue-600 hover:text-blue-800 font-medium text-sm">
-                                    View {infrastructureControls.length - 6} more Infrastructure security controls →
-                                </button>
                             </div>
 
                             {/* Organizational Security */}
                             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
                                 <div className="flex items-center justify-between mb-6">
                                     <h2 className="text-2xl font-bold text-gray-900">Organizational Security</h2>
-                                    <span className="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">
-                                        {organizationalControls.length} controls
-                                    </span>
                                 </div>
                                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
                                     {organizationalControls.slice(0, 6).map((control, index) => (
@@ -242,18 +256,12 @@ export default function SecurityTrust() {
                                         </div>
                                     ))}
                                 </div>
-                                <button className="text-blue-600 hover:text-blue-800 font-medium text-sm">
-                                    View {organizationalControls.length - 6} more Organizational security controls →
-                                </button>
                             </div>
 
                             {/* Data Protection */}
                             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
                                 <div className="flex items-center justify-between mb-6">
                                     <h2 className="text-2xl font-bold text-gray-900">Data Protection</h2>
-                                    <span className="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">
-                                        {dataProtectionControls.length} controls
-                                    </span>
                                 </div>
                                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                                     {dataProtectionControls.map((control, index) => (
