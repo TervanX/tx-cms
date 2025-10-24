@@ -145,8 +145,8 @@ export const usabilityProps = {
 
 export const outboundProps = {
     heading: {
-        main: "Intelligence-drivenn",
-        highlighted: " liquidity execution",
+        main: "Intelligence-driven ",
+        highlighted: "liquidity execution",
     },
     description:
         "Move beyond basic price feeds to predictive analytics that transform liquidity management into a strategic advantage.",

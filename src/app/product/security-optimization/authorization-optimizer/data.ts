@@ -1,7 +1,7 @@
 export const productivityProps = {
     heading: {
         main: "Autonomous permission ",
-        highlighted: "management that"
+        highlighted: "management that scales"
     },
     description:
         "TX Authorization Optimizer automates the most complex aspects of access governance—from role engineering to permission cleanup—operating with precision across your entire digital ecosystem.",
@@ -71,8 +71,8 @@ fill="none"
 
 export const usabilityProps = {
     heading: {
-        main: "Enterprise-grade   ",
-        highlighted: "authorization made simple",
+        main: "Enterprise-grade authorization ",
+        highlighted: "made simple",
     },
     description:
         "An intuitive platform for managing complex permission structures across multiple systems, chains, and business units with full visibility and control.",
@@ -142,8 +142,8 @@ export const usabilityProps = {
 
 export const outboundProps = {
     heading: {
-        main: "Intelligent authorization",
-        highlighted: "analytics that prevent breaches",
+        main: "Intelligent authorization analytics ",
+        highlighted: "that prevent breaches",
     },
     description:
         "Move beyond basic access reporting to predictive insights that identify and mitigate access risks before they lead to security incidents.",

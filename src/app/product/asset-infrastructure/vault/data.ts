@@ -1,7 +1,7 @@
 export const productivityProps = {
     heading: {
         main: "Autonomous treasury",
-        highlighted: "operations with ironclad security"
+        highlighted: "operations with ironclad "
     },
     description:
         "TX Vault automates the most critical aspects of digital asset management—from multi-signature approvals to cross-chain settlements—while maintaining institutional-grade security standards.",
@@ -71,8 +71,8 @@ fill="none"
 
 export const usabilityProps = {
     heading: {
-        main: "Enterprise-grade security made ",
-        highlighted: "operational",
+        main: "Enterprise-grade security  ",
+        highlighted: " made operational",
     },
     description:
         "An intuitive interface for managing complex treasury operations across hundreds of chains, with full visibility and control over all digital assets.",
@@ -142,8 +142,8 @@ export const usabilityProps = {
 
 export const outboundProps = {
     heading: {
-        main: "Transform treasury management into strategic advantage",
-        highlighted: "",
+        main: "Transform treasury management",
+        highlighted: " into strategic advantage",
     },
     description:
         "Move beyond basic balance tracking to predictive intelligence that optimizes capital allocation and mitigates risk across your entire digital asset portfolio.",

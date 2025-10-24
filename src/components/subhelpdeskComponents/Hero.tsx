@@ -267,9 +267,12 @@ export default function Hero({
                         opacity: headerOpacity,
                     }}
                 >
-                    <h1 className="text-[2.5rem] leading-[95%] font-semibold tracking-[-0.1rem] text-balance flex flex-col lg:text-6xl xl:text-[4.5rem] xl:tracking-[-0.25rem] w-full">
+                    <h1
+                        className="text-[2.5rem] leading-[95%] font-semibold tracking-[-0.1rem] text-balance flex flex-col lg:text-6xl xl:text-[4.5rem] xl:tracking-[-0.25rem] w-full"
+                        style={{ ['--title-length' as any]: Math.min(title.length, 30) } as React.CSSProperties}
+                    >
                         {title}
-                        <span className="lg:mt-[0.15em] lg:ml-[30%] ">{span}</span>
+                        <span className="lg:mt-[0.15em] lg:ml-[calc(var(--title-length)*1%)]">{span}</span>
                     </h1>
                     <p className="mt-8 mb-1 w-full max-w-[500px] text-lg leading-[120%] 2xl:max-w-[600px] 2xl:text-xl">
                         {description}
