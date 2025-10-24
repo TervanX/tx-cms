@@ -21,7 +21,6 @@ const LiveChat: React.FC<LiveChatProps> = ({
         "Tailor the Messenger with self-serve apps that empower your customers to find help articles, read product updates, and more—without having to start a conversation.",
       img: "/assets/highlight.webp",
     },
-
     {
       title: "Multi-brand & multilingual",
       description:

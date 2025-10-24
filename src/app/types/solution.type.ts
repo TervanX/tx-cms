@@ -9,6 +9,8 @@ export interface CallProps {
     title?: string;
     tag?: string;
     description?: string;
+    cards?: CardItem[];
+
 }
 
 interface LiveChatPropscardItem {
@@ -47,6 +49,10 @@ interface ColumnItem {
     description: string;
     imageSrc: string;
     imageAlt: string;
+    list?: {
+        items: string[
+        ]
+    };
 }
 
 export interface EngageCustomersProps {
