@@ -8,7 +8,7 @@ export const productivityProps = {
         `TervanX automates the most complex aspects of wallet management—from key security to transaction orchestration—so your developers can focus on building your core product.
 `, images: {
         mobile: {
-            src: "//assetsproductivity-hero-mobile.webp",
+            src: "/assets/productivity-hero-mobile.webp",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {

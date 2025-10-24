@@ -69,7 +69,7 @@ export default function TxSmartFlow() {
         defaultActiveSection="productivity"
         className="custom-content-layout"
       />{" "}
-      <Banner />
+      <Banner title="Transform manual financial operations into autonomous intelligent workflows" />
     </main>
   );
 }

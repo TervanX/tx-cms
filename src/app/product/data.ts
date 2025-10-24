@@ -7,7 +7,7 @@ export const productivityProps = {
         "TervanX automates settlements, reconciliation, and compliance — all powered by on-chain intelligence.",
     images: {
         mobile: {
-            src: "//assetsproductivity-hero-mobile.webp",
+            src: "/assets/productivity-hero-mobile.webp",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {

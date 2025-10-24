@@ -172,7 +172,7 @@ export const outboundProps = {
         items: [
             { name: 'blockchains continuously monitored', value: '300+', color: 'text-black' },
             { name: 'threat detection accuracy', value: '99.9%', color: 'text-black/40' },
-            { name: 'average incident response time', value: '<500ms', color: 'text-black/40' },
+            { name: 'average incident response time', value: '<500s', color: 'text-black/40' },
             { name: 'successful attacks across protected clients', value: '$0', color: 'text-black/40' }
         ],
     },

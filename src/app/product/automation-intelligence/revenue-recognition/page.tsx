@@ -10,7 +10,7 @@ import {
   outboundProps,
   productivityProps,
   usabilityProps,
-} from "@/app/product/data";
+} from "./data";
 import ContentLayout, {
   SectionConfig,
 } from "@/components/subhelpdeskComponents/Content";
@@ -46,14 +46,31 @@ export default function RevenueRecognition() {
     <main>
       <Hero
         title="Revenue Recognition"
-        description="Smart reconciliation and reporting"
+        description="Automate revenue recognition, compliance reporting, and real-time revenue intelligence across 300+ blockchains and traditional systems"
+        span="Intelligent Financial Automation"
+        efficiencyTitle='How Revenue Recognition Simplifies Financial Compliance'
+
+        efficiencyCards={[
+          {
+            category: 'Productivity',
+            title: 'AI-driven accounting automation and compliance engines reduce manual work by 80% while ensuring regulatory accuracy'
+          },
+          {
+            category: 'Usability',
+            title: 'Unified dashboards and intuitive rule builders make complex revenue accounting accessible to finance teams of all sizes'
+          },
+          {
+            category: 'Data & Insights',
+            title: 'Real-time revenue analytics and predictive forecasting transform financial reporting from backward-looking to strategic advantage'
+          }
+        ]}
       />
       <ContentLayout
         sections={sections}
         defaultActiveSection="productivity"
         className="custom-content-layout"
       />{" "}
-      <Banner />
+      <Banner title="Automate revenue compliance and unlock intelligent financial insights" />
     </main>
   );
 }

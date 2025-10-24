@@ -172,7 +172,7 @@ export const outboundProps = {
         items: [
             { name: 'integrated chains and applications', value: '300+', color: 'text-black' },
             { name: 'verification accuracy rate', value: '99.9%', color: 'text-black/40' },
-            { name: 'average verification time', value: '<60 seconds', color: 'text-black/40' },
+            { name: 'average verification time', value: '<60', color: 'text-black/40' },
             { name: 'regulatory fines across compliant deployments', value: '$0', color: 'text-black/40' }
         ],
     },

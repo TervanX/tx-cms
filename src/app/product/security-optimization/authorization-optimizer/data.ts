@@ -173,7 +173,7 @@ export const outboundProps = {
             { name: 'integrated systems and blockchain networks', value: '300+', color: 'text-black' },
             { name: 'reduction in excessive permissions', value: '90%', color: 'text-black/40' },
             { name: 'access certification accuracy', value: '99.9%', color: 'text-black/40' },
-            { name: 'real-time compliance monitoring across all regulations', value: '', color: 'text-black/40' }
+            { name: 'real-time compliance monitoring across all regulations', value: '100%', color: 'text-black/40' }
         ],
     },
     sectionStyle: {

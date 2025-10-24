@@ -10,7 +10,7 @@ import {
   outboundProps,
   productivityProps,
   usabilityProps,
-} from "@/app/product/data";
+} from "./data";
 import ContentLayout, {
   SectionConfig,
 } from "@/components/subhelpdeskComponents/Content";
@@ -44,13 +44,33 @@ export default function TxPipeline() {
   ];
   return (
     <main>
-      <Hero title="Tx Pipeline" description="Data sync to external BI tools" />
+      <Hero
+        title="TX Pipeline"
+        description="Automate data ingestion, transformation, and loading across 300+ blockchains and business systems"
+        span="Intelligent Data Integration & ETL"
+        efficiencyTitle='How TX Pipeline Streamlines Data Operations'
+
+        efficiencyCards={[
+          {
+            category: 'Productivity',
+            title: 'AI-optimized data workflows and automated pipeline management reduce ETL development time by 90% while ensuring data quality'
+          },
+          {
+            category: 'Usability',
+            title: 'Visual pipeline builder and unified monitoring dashboard make complex data engineering accessible to all teams'
+          },
+          {
+            category: 'Data & Insights',
+            title: 'Real-time data quality analytics and pipeline intelligence transform raw data into trusted business assets'
+          }
+        ]}
+      />
       <ContentLayout
         sections={sections}
         defaultActiveSection="productivity"
         className="custom-content-layout"
       />{" "}
-      <Banner />
+      <Banner title="Transform your data operations with intelligent, automated pipeline management" />
     </main>
   );
 }

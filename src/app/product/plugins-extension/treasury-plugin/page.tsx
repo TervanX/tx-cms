@@ -10,7 +10,7 @@ import {
   outboundProps,
   productivityProps,
   usabilityProps,
-} from "@/app/product/data";
+} from "./data";
 import ContentLayout, {
   SectionConfig,
 } from "@/components/subhelpdeskComponents/Content";
@@ -45,15 +45,32 @@ export default function TreasuryPlugin() {
   return (
     <main>
       <Hero
-        title="Treasury Plugin"
-        description="Manage business reserves and yield"
+        title="TX Treasury"
+        description="Unify, automate, and optimize your financial operations across 300+ blockchains and traditional systems"
+        span="Intelligent Treasury Management"
+        efficiencyTitle='How TX Treasury Transforms Financial Operations'
+
+        efficiencyCards={[
+          {
+            category: 'Productivity',
+            title: 'AI-driven cash management and automated financial operations reduce manual workload by 85% while maximizing capital efficiency'
+          },
+          {
+            category: 'Usability',
+            title: 'Unified dashboard for complete financial visibility and control across all assets, chains, and banking relationships'
+          },
+          {
+            category: 'Data & Insights',
+            title: 'Real-time treasury intelligence and predictive analytics transform financial management from reactive to strategic advantage'
+          }
+        ]}
       />
       <ContentLayout
         sections={sections}
         defaultActiveSection="productivity"
         className="custom-content-layout"
       />{" "}
-      <Banner />
+      <Banner title="Transform your treasury operations with intelligent, automated financial management" />
     </main>
   );
 }
