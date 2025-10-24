@@ -7,7 +7,7 @@ export const productivityProps = {
         "TX SmartFlow automates the most complex multi-chain financial operations—from treasury management to DeFi strategies—executing with precision and intelligence 24/7.",
     images: {
         mobile: {
-            src: "//assetsproductivity-hero-mobile.webp",
+            src: "/assets/productivity-hero-mobile.webp",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {

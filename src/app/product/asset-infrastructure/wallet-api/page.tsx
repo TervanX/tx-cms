@@ -5,15 +5,16 @@ import ProductivitySection from "@/components/subhelpdeskComponents/Productivity
 import UsabilitySection from "@/components/subhelpdeskComponents/UsabilitySection";
 import FeaturesSection from "@/components/subhelpdeskComponents/FeaturesSection";
 import OutboundSection from "@/components/subhelpdeskComponents/DataSection";
-import {
-  featuresProps,
-  outboundProps,
-  productivityProps,
-  usabilityProps,
-} from "@/app/product/data";
+
 import ContentLayout, {
   SectionConfig,
 } from "@/components/subhelpdeskComponents/Content";
+import {
+  productivityProps,
+  usabilityProps,
+  outboundProps,
+  featuresProps,
+} from "./data";
 
 export default function WalletsAPI() {
   const sections: SectionConfig[] = [
@@ -45,8 +46,35 @@ export default function WalletsAPI() {
   return (
     <main>
       <Hero
-        title="Wallets API"
-        description="Create, manage, and secure digital wallets"
+        title="Wallet As"
+        span="A Service"
+        description="Embed powerful, programmable wallets Seamlessly integrate secure, non-custodial and custodial wallets into any application. Launch in days, not months."
+        efficiencyTitle="How Wallet As A Service Accelerates Your Product Launch"
+        efficiencyCards={[
+          {
+            category: "Productivity",
+            title:
+              "AI-driven key management and automated gas operations free your team from infrastructure complexity.",
+          },
+          {
+            category: "Usability",
+            title:
+              "A single, unified API to deploy user-friendly wallets across 300+ chains with full customization.",
+          },
+          {
+            category: "Data & Insights",
+            title:
+              "Gain deep intelligence into user wallet activity, asset flows, and on-chain behaviors.",
+          },
+        ]}
+        primaryButton={{
+          text: "Login",
+          href: "https://www.intercom.com/view-demos",
+        }}
+        secondaryButton={{
+          text: "Contact Sales",
+          href: "/contact/contact-sales",
+        }}
       />
       <ContentLayout
         sections={sections}

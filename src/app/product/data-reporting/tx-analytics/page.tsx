@@ -10,7 +10,7 @@ import {
   outboundProps,
   productivityProps,
   usabilityProps,
-} from "@/app/product/data";
+} from "./data";
 import ContentLayout, {
   SectionConfig,
 } from "@/components/subhelpdeskComponents/Content";
@@ -44,13 +44,33 @@ export default function TxAnalytics() {
   ];
   return (
     <main>
-      <Hero title="Tx Analytics" description="Real-time monitoring dashboard" />
+      <Hero
+        title="TX Analytics"
+        description="Transform multi-chain data into actionable insights with AI-powered analytics and real-time dashboards"
+        span="Intelligent Business Intelligence Platform"
+        efficiencyTitle='How TX Analytics Drives Data-Driven Decisions'
+
+        efficiencyCards={[
+          {
+            category: 'Productivity',
+            title: 'AI-enhanced analysis and automated reporting reduce insight generation time from days to minutes while improving accuracy'
+          },
+          {
+            category: 'Usability',
+            title: 'Unified analytics dashboard with drag-and-drop customization and intuitive data exploration for all skill levels'
+          },
+          {
+            category: 'Data & Insights',
+            title: 'Predictive modeling and real-time intelligence transform raw data into strategic foresight and competitive advantage'
+          }
+        ]}
+      />
       <ContentLayout
         sections={sections}
         defaultActiveSection="productivity"
         className="custom-content-layout"
       />{" "}
-      <Banner />
+      <Banner title="Transform raw data into competitive advantage with intelligent, AI-powered analytics" />
     </main>
   );
 }

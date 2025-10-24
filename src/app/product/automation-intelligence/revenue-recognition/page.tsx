@@ -70,7 +70,7 @@ export default function RevenueRecognition() {
         defaultActiveSection="productivity"
         className="custom-content-layout"
       />{" "}
-      <Banner title="Transform manual financial operations into autonomous intelligent workflows" />
+      <Banner title="Automate revenue compliance and unlock intelligent financial insights" />
     </main>
   );
 }

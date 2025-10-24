@@ -7,7 +7,7 @@ export const productivityProps = {
         "TX Automate handles the most complex multi-chain financial workflows—from treasury management to cross-chain settlements—executing with precision and intelligence around the clock.",
     images: {
         mobile: {
-            src: "//assetsproductivity-hero-mobile.webp",
+            src: "/assets/productivity-hero-mobile.webp",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
