@@ -11,54 +11,6 @@ const ChevronUpIcon: React.FC<{ className?: string }> = () => (
     <svg width="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 8.375H2V9.625H16V8.375Z" fill="#47423D"></path></svg>
 );
 
-const faqData: FAQItem[] = [
-
-    {
-        question: 'Who is eligible for the exclusive discount?',
-        answer: (
-            <>
-                You must be a new Apollo user affiliated with one of our startup ecosystem partners, have less than 20 employees, and a valid corporate domain.
-            </>
-        ),
-    },
-    {
-        question: 'What if my startup is not affiliated with a startup ecosystem partner?',
-        answer: (
-            <>
-                Encourage your accelerator, VC firm, or community to <Link href="/product/sales-engagement" className=" underline">
-                    join here
-                </Link>. You can also
-                <Link href="/product/sales-engagement" className=" hover:underline">
-                    apply here
-                </Link>
-                to join our waitlist for the Apollo for Startups community.
-            </>
-        ),
-    },
-    {
-        question: 'I want this discount to be available to my startup community. How can I become a partner?',
-        answer: (
-            <>
-                We want to hear from you!  <Link href="/product/sales-engagement" className=" underline">
-                    Apply to be a partner
-                </Link> and we’ll get back to you with more information.
-            </>
-        ),
-    },
-    {
-        question: 'I still have questions. Who can I reach out to?',
-        answer: (
-            <>
-                For any additional support, questions, or feedback — feel free to contact us at  <Link href="/product/sales-engagement" className=" underline">
-                    startups@apollo.io.
-                </Link> We can’t wait to grow with you 🎉
-            </>
-        ),
-    },
-
-];
-
-
 
 const AccordionItem: React.FC<AccordionItemProps> = ({ item, isOpen, onToggle }) => {
     return (
@@ -81,14 +33,14 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ item, isOpen, onToggle })
                     }`}
             >
                 <div className=" pb-5 text-dark text-sm lg:text-base leading-relaxed">
-                    {item.answer}
+                    <div dangerouslySetInnerHTML={{ __html: item.answer }} />
                 </div>
             </div>
         </div>
     );
 };
 
-const FAQAccordion: React.FC<{ title?: string }> = ({ title = " Frequently asked questions" }) => {
+const FAQAccordion: React.FC<{ title?: string, faqData: FAQItem[] }> = ({ title = " Frequently asked questions", faqData }) => {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
 
     const handleToggle = (index: number) => {

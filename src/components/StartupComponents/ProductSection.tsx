@@ -5,32 +5,7 @@ import Image from "next/image";
 import { ProductSectionProps } from "@/app/types/product.types";
 
 const ProductSection: React.FC<ProductSectionProps> = ({
-  products = [
-    {
-      title: "Sales",
-      description: "Find the right buyers at the right time using our 210M+ contacts and 65+ filters, then keep deals rolling — all from one place.",
-      image: "/assets/image6.webp",
-      imagePosition: "left"
-    },
-    {
-      title: "Marketing",
-      description: "Send emails and launch marketing campaigns through Apollo, using out-of-the-box automations & signal-based triggers.",
-      image: "/assets/image7.webp",
-      imagePosition: "right"
-    },
-    {
-      title: "Fundraising",
-      description: "Identify potential investors, automate outreach, and seamlessly manage relationships to streamline fundraising efforts.",
-      image: "/assets/image8.webp",
-      imagePosition: "left"
-    },
-    {
-      title: "Revenue Operations",
-      description: "Automate outreach, manage leads, and track performance metrics to fine-tune strategies and boost revenue growth.",
-      image: "/assets/image9.webp",
-      imagePosition: "right"
-    }
-  ],
+  products = [],
   title = "Every tool you need, wrapped into one",
 }) => {
   return (
