@@ -1,13 +1,12 @@
 import React from "react";
-
 import PricingFAQAccordion from "@/components/PricingComponents/PricingFAQAccordion";
-import HeroSection from "@/components/meetingComponents/HeroSection";
+import HeroSection from "@/components/MeetingComponents/HeroSection";
 import FeatureSections, {
-  featuresData,
-} from "@/components/meetingComponents/FeatureSection";
-import SolutionSection from "@/components/meetingComponents/SolutionSection";
-import StreamlineSection from "@/components/meetingComponents/StreamlineSection";
-import CompetitorsSection from "@/components/meetingComponents/CompetitorsSection";
+  featuresData
+} from "@/components/MeetingComponents/FeatureSection";
+import SolutionSection from "@/components/MeetingComponents/SolutionSection";
+import StreamlineSection from "@/components/MeetingComponents/StreamlineSection";
+import CompetitorsSection from "@/components/MeetingComponents/CompetitorsSection";
 
 const PricingPage: React.FC = () => {
   return (

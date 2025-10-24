@@ -229,13 +229,13 @@ export default function HeroSection() {
 
       <main className="group relative flex flex-wrap gap-4 lg:flex-1 lg:flex-nowrap">
         <HeroCard
-          href="/home"
+          href="/contact/waitlist"
           id="hero-card-fin"
-          title="For Individual"
+          title="TX Switch"
           subtitle="Digital Assets Payment Company"
           description="TX helps people use, send, and receive digital assets effortlessly.
 It’s like having a Stripe + Wallet + Exchange in one, giving users access to crypto payments, wallets, and real-time asset management."
-          buttonText="Explore TX Personal"
+          buttonText="Explore TX Switch"
           imageSrc="/assets/mobile-Individual.png"
           bgImageSrc="/assets/fin-card-bg.webp"
           videoSrc="/videos/fin-prototype.mp4"

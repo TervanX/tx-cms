@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 
 interface SuccessMessageProps {
@@ -14,7 +14,7 @@ export default function SuccessMessage({
     icon = <CheckCircle className="w-20 h-20 text-green-500" />
 }: SuccessMessageProps) {
 
-    const containerVariants = {
+    const containerVariants: Variants = {
         hidden: { opacity: 0, y: 20 },
         visible: {
             opacity: 1,
@@ -28,7 +28,7 @@ export default function SuccessMessage({
         }
     };
 
-    const itemVariants = {
+    const itemVariants: Variants = {
         hidden: { opacity: 0, y: 10 },
         visible: {
             opacity: 1,
@@ -41,7 +41,7 @@ export default function SuccessMessage({
     };
 
     return (
-        <main className=" min-h-screen flex items-center justify-center px-4">
+        <main className="min-h-screen flex items-center justify-center px-4">
             <motion.div
                 className="text-center max-w-md mx-auto p-8"
                 variants={containerVariants}
