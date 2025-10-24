@@ -218,7 +218,7 @@ export const cryptoExchangesPageData = {
                 description: "",
                 img: "/assets/highlight.webp",
                 imageAlt: "Performance Metrics",
-                list: [
+                lists: [
                     'Order matching: <0.1ms latency',
                     'Throughput: 1,000,000+ orders/second',
                     'Uptime: 99.999% SLA',
@@ -230,7 +230,7 @@ export const cryptoExchangesPageData = {
                 description: "",
                 img: "/assets/highlight.webp",
                 imageAlt: "Security Features",
-                list: [
+                lists: [
                     'MPC with threshold signatures',
                     'DDoS protection and rate limiting',
                     'Regular penetration testing',
@@ -242,7 +242,7 @@ export const cryptoExchangesPageData = {
                 description: "",
                 img: "/assets/highlight.webp",
                 imageAlt: "Integration Options",
-                list: [
+                lists: [
                     'Full stack exchange solution',
                     'Modular component integration',
                     'Cloud or on-premise deployment',
@@ -342,7 +342,7 @@ export const cryptoExchangesPageData = {
                 description: "",
                 img: "/assets/highlight.webp",
                 imageAlt: "Dedicated Infrastructure",
-                list: [
+                lists: [
                     'Isolated matching engine instances',
                     'Custom hardware acceleration',
                     'Geographic latency optimization',
@@ -354,7 +354,7 @@ export const cryptoExchangesPageData = {
                 description: "",
                 img: "/assets/highlight.webp",
                 imageAlt: "Custom Development",
-                list: [
+                lists: [
                     'Proprietary order types',
                     'Unique fee structures',
                     'Custom risk models',
@@ -367,7 +367,7 @@ export const cryptoExchangesPageData = {
                 description: "",
                 img: "/assets/highlight.webp",
                 imageAlt: "Premium Support",
-                list: [
+                lists: [
                     '24/7 dedicated engineering support',
                     'Exchange operation specialists',
                     'Security incident response team',
@@ -381,7 +381,7 @@ export const cryptoExchangesPageData = {
 
 
     testimonial: {
-        title: "What Exchange Leaders Say",
+        title: "Exchange Leader Testimonials",
         quote: "TervanX's liquidity aggregation reduced our spreads by 60% and increased trading volume by 300% in the first month. Their matching engine handles our peak loads without breaking a sweat.",
         role: "CTO of Tier-1 Exchange",
         name: "Alex Thompson",

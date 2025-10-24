@@ -253,7 +253,7 @@ export const embeddedFinancePageData = {
                 description: "",
                 img: "/assets/highlight.webp",
                 imageAlt: "API Performance",
-                list: [
+                lists: [
                     '99.99% uptime SLA',
                     '<100ms API response times',
                     '10,000+ requests per second',
@@ -265,7 +265,7 @@ export const embeddedFinancePageData = {
                 description: "",
                 img: "/assets/highlight.webp",
                 imageAlt: "Security & Compliance",
-                list: [
+                lists: [
                     'SOC 2 Type II certified',
                     'PCI DSS Level 1 compliant',
                     'GDPR and CCPA ready',
@@ -277,7 +277,7 @@ export const embeddedFinancePageData = {
                 description: "",
                 img: "/assets/highlight.webp",
                 imageAlt: "Developer Experience",
-                list: [
+                lists: [
                     'Comprehensive REST and GraphQL APIs',
                     'SDKs for web, mobile, and backend',
                     'Detailed API documentation',

@@ -221,7 +221,7 @@ export const fintechPlatformsPageData = {
                 description: "",
                 img: "/assets/highlight.webp",
                 imageAlt: "Performance & Reliability",
-                list: [
+                lists: [
                     '99.99% uptime SLA',
                     '<100ms API response times',
                     '10,000+ transactions per second',
@@ -233,7 +233,7 @@ export const fintechPlatformsPageData = {
                 description: "",
                 img: "/assets/highlight.webp",
                 imageAlt: "Security & Compliance",
-                list: [
+                lists: [
                     'SOC 2 Type II certified',
                     'ISO 27001 compliant',
                     'GDPR and CCPA ready',
@@ -245,7 +245,7 @@ export const fintechPlatformsPageData = {
                 description: "",
                 img: "/assets/highlight.webp",
                 imageAlt: "Developer Experience",
-                list: [
+                lists: [
                     'Comprehensive REST and GraphQL APIs',
                     'SDKs in 8 programming languages',
                     'Detailed documentation and tutorials',
@@ -306,7 +306,7 @@ export const fintechPlatformsPageData = {
                 description: "",
                 img: "/assets/highlight.webp",
                 imageAlt: "Dedicated Infrastructure",
-                list: [
+                lists: [
                     'Isolated processing environments',
                     'Custom deployment options',
                     'Dedicated node clusters',
@@ -318,7 +318,7 @@ export const fintechPlatformsPageData = {
                 description: "",
                 img: "/assets/highlight.webp",
                 imageAlt: "Custom Workflows",
-                list: [
+                lists: [
                     'Tailored compliance rules',
                     'Custom settlement logic',
                     'Branded user experiences',
@@ -330,7 +330,7 @@ export const fintechPlatformsPageData = {
                 description: "",
                 img: "/assets/highlight.webp",
                 imageAlt: "Premium Support",
-                list: [
+                lists: [
                     '24/7 dedicated engineering support',
                     'Account management and strategic guidance',
                     'Custom feature development',

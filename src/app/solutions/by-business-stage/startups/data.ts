@@ -91,18 +91,24 @@ export const startupPageData = {
                 description:
                     "Integrate once and support every major blockchain and token—future-proofing your startup’s product roadmap.",
                 img: "/assets/highlight.webp",
+                backgroundImage: "/assets/image30.webp",
+
             },
             {
                 title: "Pre-built & customizable UI kits",
                 description:
                     "Accelerate time-to-market with embeddable, brandable wallet components. Deliver a native wallet experience without building UI from scratch.",
                 img: "/assets/highlight.webp",
+                backgroundImage: "/assets/image30.webp",
+
             },
             {
                 title: "AI-driven key management",
                 description:
                     "Leverage MPC technology and social recovery options to keep user assets secure—without the risk of a single point of failure.",
                 img: "/assets/highlight.webp",
+                backgroundImage: "/assets/image30.webp",
+
             },
         ]
     },
@@ -218,3 +224,4 @@ export const startupPageData = {
         },
     },
 };
+

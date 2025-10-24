@@ -48,6 +48,12 @@ const Page = () => {
       </div>
       <LiveChat {...developerPageData.liveChat} />
       <GlobalWhatsapp {...developerPageData.globalWhatsapp} />
+      <div className="py-12">
+        <DottedLine fill="gray" />
+      </div>
+      {developerPageData.globalWhatsapp2 && (
+        <GlobalWhatsapp {...developerPageData.globalWhatsapp2} />
+      )}
       <div className="py-12 mt-8">
         <DottedLine fill="gray" />
       </div>
@@ -59,5 +65,3 @@ const Page = () => {
 };
 
 export default Page;
-
-
