@@ -44,7 +44,11 @@ export default function TxLink() {
       ];
   return (
     <main>
-      <Hero title="Tx Link" description="1-click user checkout and identity" />
+      <Hero
+        title="Tx Link"
+        span="Cross-Chain Interoperability Hub"
+        description="Seamlessly connect and transfer assets across 300+ blockchains with intelligent routing and secure bridging."
+      />
       <ContentLayout
         sections={sections}
         defaultActiveSection="productivity"

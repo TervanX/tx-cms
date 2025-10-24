@@ -81,7 +81,20 @@ export default function WalletsAPI() {
         defaultActiveSection="productivity"
         className="custom-content-layout"
       />{" "}
-      <Banner />
+      <Banner
+        title="Launch secure, scalable wallets in days, not months."
+        primaryButton={{
+          text: "Get Started",
+          href: "https://www.intercom.com/view-demos",
+        }}
+        secondaryButton={{
+          text: "Contact Sales",
+          href: "/contact/contact-sales",
+        }}
+        backgroundImage={"/assets/helpdesk-ctabanner.webp"}
+        backgroundImageLQIP={"/assets/helpdesk-ctabanner-lqip.webp"}
+        altText="CTA Banner"
+      />
     </main>
   );
 }

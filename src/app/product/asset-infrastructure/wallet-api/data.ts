@@ -190,91 +190,99 @@ export const outboundProps = {
 };
 
 export const featuresProps = {
-    title: "Features",
+    title: "Multi-Chain Wallet Infrastructure",
+    defaultActiveFeature: "omnichannel",
+    sectionStyle: {
+        backgroundColor: "var(--color-cream)",
+    },
+    linkStyle: {
+        text: "Find out more",
+    },
     features: [
         {
             id: 'cross-chain-settlement',
-            name: 'Automated Cross-Chain Settlement',
+            name: 'Multi-Chain Wallet Infrastructure',
             href: '/suite/helpdesk/inbox',
-            description: 'Seamlessly settle transactions across multiple blockchains without manual processes.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            description:
+                "Deploy secure wallets for any supported blockchain with a single API call.", image: '/assets/photo-1552664730-d307ca884978.jpg'
         },
         {
             id: 'smart-gas-routing',
-            name: 'Smart Gas & Fee Routing',
+            name: 'MPC & Custodial Options',
             href: '/suite/helpdesk/copilot',
-            description: 'Optimize costs with intelligent gas routing that automatically finds the most efficient fee paths.',
+            description: "Choose from non-custodial MPC wallets, fully custodial vaults, or a hybrid model.",
             image: '/assets/photo-1677442136019-21780ecad995.jpg'
         },
         {
             id: 'instant-reconciliation',
-            name: 'Instant Reconciliation',
+            name: 'Customizable Wallet UI Kits',
             href: '/suite/helpdesk/tickets',
-            description: 'Reconcile transactions instantly with real-time sync between wallets, ledgers, and treasury systems.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            description:
+                "Speed up front-end development with pre-built, white-labelable React and Flutter components.", image: '/assets/photo-1552664730-d307ca884978.jpg'
         },
         {
             id: 'unified-treasury',
-            name: 'Unified Treasury Dashboard',
+            name: 'Programmable Key Management',
             href: '/suite/helpdesk/omnichannel',
-            description: 'Gain complete visibility and control of all your assets across blockchains and accounts in one interface.',
+            description: 'Implement custom approval flows, social recovery, and multi-factor security schemes.',
             image: '/assets/photo-1677442136019-21780ecad995.jpg'
         },
         {
             id: 'multi-asset-wallet',
-            name: 'Multi-Asset Wallet Integration',
+            name: 'Gas Abstraction & Meta-Transactions',
             href: '/suite/helpdesk/help-center',
-            description: 'Manage and transact across hundreds of blockchains and tokens from a single dashboard.',
+            description:
+                "Allow users to pay fees in your app's token or sponsor their gas fees entirely.",
             image: '/assets/photo-1552664730-d307ca884978.jpg'
         },
         {
             id: 'dynamic-liquidity',
-            name: 'Dynamic Liquidity Allocation',
+            name: 'Automated Treasury Management',
             href: '/app-store',
-            description: 'Automatically rebalance and distribute liquidity across wallets, exchanges, and chains.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            description:
+                "Set rules for auto-sweeping funds, rebalancing assets, and managing liquidity across wallets.", image: '/assets/photo-1677442136019-21780ecad995.jpg'
         },
         {
             id: 'institutional-security',
-            name: 'Institutional-Grade Security',
+            name: 'Real-Time Wallet Event Streaming',
             href: '/suite/helpdesk/reporting',
-            description: 'Protect every transaction with MPC technology, encryption, and continuous monitoring.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            description:
+                "Subscribe to events for transactions, balance changes, and smart contract interactions.", image: '/assets/photo-1552664730-d307ca884978.jpg'
         },
         {
             id: 'regulatory-compliance',
-            name: 'Regulatory Compliance Layer',
+            name: 'User Portfolio & Activity APIs',
             href: '/suite/helpdesk/knowledge-hub',
-            description: 'Stay compliant with integrated KYC, KYT, and AML analytics for every asset movement.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            description:
+                "Access complete data on user holdings, NFT collections, and transaction history.", image: '/assets/photo-1677442136019-21780ecad995.jpg'
         },
         {
             id: 'access-controls',
-            name: 'Access Controls & Role Management',
+            name: 'Integrated KYC/AML & Compliance',
             href: '/suite/helpdesk/outbound',
-            description: 'Define user roles and granular permissions to manage secure team and enterprise operations.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            description:
+                "Add identity verification and transaction monitoring directly into your wallet flows.", image: '/assets/photo-1552664730-d307ca884978.jpg'
         },
         {
             id: 'ai-settlement',
-            name: 'AI-Driven Settlement Optimization',
+            name: 'Advanced Access Controls',
             href: '/suite/helpdesk/inbox',
-            description: 'Leverage AI to predict the fastest and most cost-efficient settlement routes across chains.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            description:
+                "Define roles and permissions for team members managing your wallet infrastructure.", image: '/assets/photo-1677442136019-21780ecad995.jpg'
         },
         {
             id: 'error-recovery',
-            name: 'Automated Error Recovery',
+            name: 'Cross-Chain Swap Integration',
             href: '/suite/helpdesk/copilot',
-            description: 'Detect failed transactions and automatically retry or reroute them for guaranteed delivery.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            description:
+                "Embed seamless token swapping capabilities directly into the wallet experience.", image: '/assets/photo-1552664730-d307ca884978.jpg'
         },
         {
             id: 'predictive-insights',
-            name: 'Predictive Treasury Insights',
+            name: 'Smart Contract Wallet Deployment',
             href: '/suite/helpdesk/tickets',
-            description: 'Anticipate liquidity needs, network fee trends, and volume patterns using intelligent forecasting.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            description:
+                "Enable account abstraction for advanced features like session keys and spend limits", image: '/assets/photo-1677442136019-21780ecad995.jpg'
         },
         {
             id: 'transaction-analytics',
@@ -284,13 +292,7 @@ export const featuresProps = {
             image: '/assets/photo-1552664730-d307ca884978.jpg'
         }
     ],
-    defaultActiveFeature: "omnichannel",
-    sectionStyle: {
-        backgroundColor: "var(--color-cream)",
-    },
-    linkStyle: {
-        text: "Find out more",
-    },
+
 };
 
 
