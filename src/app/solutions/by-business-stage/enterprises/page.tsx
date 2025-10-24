@@ -250,7 +250,7 @@ const enterprisePageData = {
 
   bannerCTA: {
     title: "Enterprise Solutions",
-    backgroundImage: "/assets/custom-bg.webp",
+    backgroundImage: "/assets/image30.webp",
     primaryButton: {
       text: "Get Started",
       href: "/get-started",

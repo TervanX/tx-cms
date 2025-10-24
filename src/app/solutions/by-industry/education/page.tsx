@@ -251,7 +251,7 @@ const educationPageData = {
 
   bannerCTA: {
     title: "Enhance Your Educational Institution",
-    backgroundImage: "/assets/custom-bg.webp",
+    backgroundImage: "/assets/image30.webp",
     primaryButton: {
       text: "Get Started",
       href: "/get-started",

@@ -18,6 +18,7 @@ import DottedLine from "@/components/helpDeskComponents/DottedBg";
 gsap.registerPlugin(ScrollTrigger);
 
 const Page = () => {
+  console.log("Called");
   return (
     <div className="relative z-10 ">
       <HeroSection {...startupPageData.heroSection} />
@@ -250,7 +251,7 @@ const startupPageData = {
 
   bannerCTA: {
     title: "Start Building Today",
-    backgroundImage: "/assets/custom-bg.webp",
+    backgroundImage: "/assets/image30.webp",
     primaryButton: {
       text: "Get Started",
       href: "/get-started",
