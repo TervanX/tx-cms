@@ -1,7 +1,7 @@
 export const productivityProps = {
     heading: {
-        main: "Autonomous trading infrastructure that",
-        highlighted: "works 24/7"
+        main: "Autonomous trading infrastructure",
+        highlighted: "that works 24/7"
     },
     description:
         "TX Exchange Engine automates the most complex aspects of digital asset trading—liquidity provisioning, route optimization, and risk management—delivering superior execution with minimal intervention.",
@@ -133,8 +133,8 @@ export const usabilityProps = {
 
 export const outboundProps = {
     heading: {
-        main: "Intelligence-driven trading execution",
-        highlighted: "",
+        main: "Intelligence-driven ",
+        highlighted: "trading execution",
     },
     description:
         "Move beyond basic price feeds. TX Exchange Engine delivers predictive analytics that transform liquidity management from a cost center into a strategic advantage.",

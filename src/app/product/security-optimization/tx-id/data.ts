@@ -1,7 +1,7 @@
 export const productivityProps = {
     heading: {
-        main: "Autonomous identity verification that",
-        highlighted: "scales"
+        main: "Autonomous identity verification ",
+        highlighted: "that scales"
     },
     description:
         "TX ID automates the most complex aspects of digital identity—from biometric verification to credential issuance—operating with precision across global jurisdictions.",
@@ -142,8 +142,8 @@ export const usabilityProps = {
 
 export const outboundProps = {
     heading: {
-        main: "Intelligent identity analytics that build trust",
-        highlighted: "",
+        main: "Intelligent identity analytics ",
+        highlighted: "that build trust",
     },
     description:
         "Move beyond basic verification to predictive insights that enhance security, improve user experience, and prevent identity fraud.",

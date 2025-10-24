@@ -1,7 +1,7 @@
 export const productivityProps = {
     heading: {
-        main: "Autonomous security operations that",
-        highlighted: "never sleep"
+        main: "Autonomous security operations ",
+        highlighted: "that never sleep"
     },
     description:
         "TX Shield automates the most critical aspects of digital asset protection—from threat detection to incident response—operating with precision 24/7 across all your blockchain operations.",
@@ -142,8 +142,8 @@ export const usabilityProps = {
 
 export const outboundProps = {
     heading: {
-        main: "Predictive security intelligence that prevents attacks",
-        highlighted: "",
+        main: "Predictive security intelligence s",
+        highlighted: "that prevents attack",
     },
     description:
         "Move beyond basic threat detection to predictive analytics that anticipate and neutralize threats before they materialize.",

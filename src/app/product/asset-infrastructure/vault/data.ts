@@ -142,8 +142,8 @@ export const usabilityProps = {
 
 export const outboundProps = {
     heading: {
-        main: "Transform treasury management into strategic advantage",
-        highlighted: "",
+        main: "Transform treasury management",
+        highlighted: "into strategic advantage",
     },
     description:
         "Move beyond basic balance tracking to predictive intelligence that optimizes capital allocation and mitigates risk across your entire digital asset portfolio.",
