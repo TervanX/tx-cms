@@ -1,17 +1,9 @@
+import {
+  EngageCustomersProps,
+  EngagementSestionCardProps,
+} from "@/app/types/solution.type";
 import Tag from "../helpDeskComponents/Tag";
 import DottedLine from "./DottedLine";
-interface ColumnItem {
-  title: string;
-  description: string;
-  imageSrc: string;
-  imageAlt: string;
-}
-
-interface EngageCustomersProps {
-  badgeText?: string;
-  title?: string;
-  columns?: ColumnItem[];
-}
 
 const EngageCustomersSection = ({
   badgeText = "SMS and social media",
@@ -45,7 +37,6 @@ const EngageCustomersSection = ({
 }: EngageCustomersProps) => {
   return (
     <div className="">
-    
       <div
         className="flex flex-col gap-4 items-center justify-center px-3 md:px-4 my-28 w-full lg:max-w-[80%] mx-auto"
         id="engage-customers-on-the-apps-they-use-everyday"
@@ -66,39 +57,7 @@ const EngageCustomersSection = ({
           {/* Columns Section */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
             {columns.map((column, index) => (
-              <div key={index} className="flex flex-col">
-                {/* Image Container */}
-                <div className="mb-4 overflow-hidden">
-                  <div className="relative w-full h-[400px]">
-                    <img
-                      alt={column.imageAlt}
-                      loading="lazy"
-                      className="object-cover w-full h-full"
-                      src={column.imageSrc}
-                      srcSet={`
-                      ${column.imageSrc}&w=480 480w,
-                      ${column.imageSrc}&w=640 640w,
-                      ${column.imageSrc}&w=960 960w,
-                      ${column.imageSrc}&w=1280 1280w,
-                      ${column.imageSrc}&w=1512 1512w,
-                      ${column.imageSrc}&w=1920 1920w,
-                      ${column.imageSrc}&w=2560 2560w
-                    `}
-                      sizes="(min-width: 1920px) 1920px, 100vw"
-                    />
-                  </div>
-                </div>
-
-                {/* Content Container */}
-                <div className="flex flex-col gap-2">
-                  <span className="text-lg font-sans font-bold text-gray-900">
-                    {column.title}
-                  </span>
-                  <span className="text-sm text-gray-600 font-sans leading-relaxed">
-                    {column.description}
-                  </span>
-                </div>
-              </div>
+              <EngagementSestionCard column={column} key={index} />
             ))}
           </div>
         </div>
@@ -108,3 +67,43 @@ const EngageCustomersSection = ({
 };
 
 export default EngageCustomersSection;
+
+const EngagementSestionCard: React.FC<EngagementSestionCardProps> = ({
+  column,
+}) => {
+  return (
+    <div className="flex flex-col">
+      {/* Image Container */}
+      <div className="mb-4 overflow-hidden">
+        <div className="relative w-full h-[400px]">
+          <img
+            alt={column.imageAlt}
+            loading="lazy"
+            className="object-cover w-full h-full"
+            src={column.imageSrc}
+            srcSet={`
+                      ${column.imageSrc}&w=480 480w,
+                      ${column.imageSrc}&w=640 640w,
+                      ${column.imageSrc}&w=960 960w,
+                      ${column.imageSrc}&w=1280 1280w,
+                      ${column.imageSrc}&w=1512 1512w,
+                      ${column.imageSrc}&w=1920 1920w,
+                      ${column.imageSrc}&w=2560 2560w
+                    `}
+            sizes="(min-width: 1920px) 1920px, 100vw"
+          />
+        </div>
+      </div>
+
+      {/* Content Container */}
+      <div className="flex flex-col gap-2">
+        <span className="text-lg font-sans font-bold text-gray-900">
+          {column.title}
+        </span>
+        <span className="text-sm text-gray-600 font-sans leading-relaxed">
+          {column.description}
+        </span>
+      </div>
+    </div>
+  );
+};

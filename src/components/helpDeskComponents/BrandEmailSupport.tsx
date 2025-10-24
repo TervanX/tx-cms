@@ -1,9 +1,11 @@
+"use client";
+
 import { useState } from "react";
 import BorderTopCard from "./BorderTopCard";
+import { BrandEmailSupportProps } from "@/app/types/solution.type";
 
-const BrandEmailSupport = () => {
-  const [active, setActive] = useState(0);
-  const cards = [
+const BrandEmailSupport: React.FC<BrandEmailSupportProps> = ({
+  cards = [
     {
       title: "Ensure every email is on-brand",
       description:
@@ -13,25 +15,29 @@ const BrandEmailSupport = () => {
     {
       title: "Continue the conversation",
       description:
-        "Move the conversation from live chat to email, and let customers pick up when it’s most convenient to them.",
+        "Move the conversation from live chat to email, and let customers pick up when it's most convenient to them.",
       img: "/assets/highlight.webp",
     },
-
     {
       title: "Track email performance",
       description:
         "Monitor performance metrics and customer satisfaction to maintain high CSAT for your email support.",
       img: "/assets/highlight.webp",
     },
-  ];
+  ],
+  backgroundImage = "/assets/image30.webp",
+  backgroundAlt = "Brand support",
+}) => {
+  const [active, setActive] = useState(0);
+
   return (
     <div className="flex flex-col-reverse lg:flex-col">
-      <div className="w-full  border-solid border-primary mx-auto relative bg-white-transparent">
+      <div className="w-full border-solid border-primary mx-auto relative bg-white-transparent">
         {/* Background Pattern */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/assets/image30.webp"
-            alt={"Brand support"}
+            src={backgroundImage}
+            alt={backgroundAlt}
             className="absolute inset-0 w-full h-full object-cover z-0"
           />
         </div>
@@ -40,7 +46,8 @@ const BrandEmailSupport = () => {
       <div className="flex flex-col lg:flex-row gap-6 py-6">
         {cards.map((item, index) => (
           <BorderTopCard
-            active={index === active ? true : false}
+            key={index}
+            active={index === active}
             {...item}
             onClick={() => {
               setActive(index);

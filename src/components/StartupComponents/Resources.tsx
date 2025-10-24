@@ -3,67 +3,8 @@ import Button from '../reusable/Button';
 import { CardItem, CardGridProps } from '@/app/types/startups.types';
 
 
-const Resources: React.FC = () => {
-    const cards: CardItem[] = [
-        {
-            id: 'academy',
-            title: 'Visit Apollo Academy to learn new skills and become an Apollo power user.',
-            image: {
-                src: '/assets/image15.webp',
-                sizes: '(max-width: 1024px) 100vw, 50vw',
-                alt: 'Apollo Academy'
-            },
-            button: {
-                text: 'Visit Apollo Academy',
-                href: '/academy',
-                target: '_blank'
-            }
-        },
-        {
-            id: 'slack-community',
-            title: 'Join our startup community to connect & learn from fellow entrepreneurs and experts.',
-            image: {
-                src: '/assets/image16.webp',
-                sizes: '(max-width: 1024px) 100vw, 50vw',
-                alt: 'Slack Community'
-            },
-            button: {
-                text: 'Join Slack Community',
-                href: '/community',
-                target: '_blank'
-            }
-        },
-        {
-            id: 'explore-marketplace',
-            title: 'Explore Apollos deal marketplace for exclusive discounts on SaaS tools.',
-            image: {
-                src: '/assets/image17.webp',
-                sizes: '(max-width: 1024px) 100vw, 50vw',
-                alt: 'Explore Marketplace'
-            },
-            button: {
-                text: 'Explore Marketplace',
-                href: '/marketplace',
-                target: '_blank'
-            }
-        },
-        {
-            id: 'outbound-sales',
-            title: 'Read Outbound Sales to learn a multi-channel approach to growing your startup.',
-            image: {
-                src: '/assets/image18.webp',
-                sizes: '(max-width: 1024px) 100vw, 50vw',
-                alt: 'Read Outbound Sales'
-            },
-            button: {
-                text: 'Read Outbound Sales',
-                href: '/outbound',
-                target: '_blank'
-            }
-        }
-    ];
-
-    return <CardGrid cards={cards} />;
+const Resources: React.FC<{ cards: CardItem[], title: string }> = ({ cards, title }) => {
+    return <CardGrid cards={cards} title={title} />;
 };
 
 export default Resources;
@@ -131,13 +72,13 @@ const Card: React.FC<{ card: CardItem }> = ({ card }) => {
     );
 };
 
-export const CardGrid: React.FC<CardGridProps> = ({ cards }) => {
+export const CardGrid: React.FC<CardGridProps> = ({ cards, title }) => {
     return (
         <div className="px-6 md:px-12 lg:px-16 xl:px-20 2xl:px-24 my-28">
             <div className="container mx-auto px-4">
                 <div className="flex flex-col items-center gap-4 text-center md:gap-6">
                     <h4 className="max-w-6xl text-balance font-founders-grotesk text-[36px] leading-none tracking-[-0.72px] text-dark md:text-[48px] md:tracking-[-0.96px] lg:text-[48px] lg:tracking-[-0.96px]  lg:mb-12 mb-6">
-                        Resources for Startups
+                        {title}
                     </h4>
                 </div>
                 <div className="h-10" />

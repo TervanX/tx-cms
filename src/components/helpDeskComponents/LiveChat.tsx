@@ -2,10 +2,13 @@ import { useState } from "react";
 import BorderTopCard from "./BorderTopCard";
 import DottedLine from "./DottedBg";
 import SubSection from "./Subsection";
+import { LiveChatProps } from "@/app/types/solution.type";
 
-const LiveChat = () => {
-  const [active, setActive] = useState(0);
-  const cards = [
+const LiveChat: React.FC<LiveChatProps> = ({
+  title = "Live chat with a best-in-class Messenger",
+  tag = "Messenger",
+  description = "Deliver live chat support that’s personalized, contextual, and on-brand across your product, app, and website.",
+  cards = [
     {
       title: "Fully customizable",
       description:
@@ -25,17 +28,17 @@ const LiveChat = () => {
         "Support multiple brands, resolve queries in 45 languages and deliver exceptional experiences within the Messenger—anytime, anywhere.",
       img: "/assets/highlight.webp",
     },
-  ];
+  ],
+  backgroundImage = "/assets/image30.webp",
+}) => {
+  const [active, setActive] = useState(0);
+
   return (
     <div className="">
       <DottedLine />
       <div className="relative  w-[80%] mx-auto ">
         <div className="">
-          <SubSection
-            title="Live chat with a best-in-class Messenger"
-            tag="Messenger"
-            description="Deliver live chat support that’s personalized, contextual, and on-brand across your product, app, and website."
-          />
+          <SubSection title={title} tag={tag} description={description} />
         </div>
         <div className="flex flex-col lg:flex-row-reverse lg:gap-14">
           <div className="flex-1 flex flex-col gap-4">
@@ -54,7 +57,7 @@ const LiveChat = () => {
               {/* Background Pattern */}
               <div className="absolute inset-0 z-0">
                 <img
-                  src="/assets/image30.webp"
+                  src={backgroundImage}
                   alt={"Brand support"}
                   className="absolute inset-0 w-full h-full object-cover z-0"
                 />

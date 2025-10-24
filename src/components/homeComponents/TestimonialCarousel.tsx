@@ -1,6 +1,8 @@
 "use client";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import DottedLine from "../helpDeskComponents/DottedBg";
+import { motion, useInView } from "framer-motion";
+import { TestimonialCarouselProps } from "@/app/types/solution.type";
 interface Testimonial {
   company: string;
   quote: string;
@@ -10,7 +12,14 @@ interface Testimonial {
   fontStyle: string;
 }
 
-export default function TestimonialCarousel() {
+const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({
+  title = "Effortless omnichannel support",
+  quote = "Since adopting TervanX Crypto Payments, we’ve achieved 80% faster reconciliation and reduced transaction errors to near zero",
+  role = "VP of Digital Finance",
+  name = "Maya Okoro",
+}) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [activeIndex, setActiveIndex] = useState(0);
 
   const testimonials: Testimonial[] = [
@@ -79,11 +88,10 @@ export default function TestimonialCarousel() {
           className="scroll-mt-6 text-4xl md:text-5xl font-medium text-center"
           id="effortless-omnichannel-support"
         >
-          Effortless omnichannel support
+          {title}
         </h2>
 
-        <div className="w-full flex flex-col justify-center items-center gap-4 md:gap-6 pb-6">
-          {/* Navigation Buttons */}
+        {/* <div className="w-full flex flex-col justify-center items-center gap-4 md:gap-6 pb-6">
           <div className="max-w-full w-auto mb-2">
             <div className="flex items-center gap-4 lg:gap-5 my-3 w-full overflow-x-auto scrollbar-hide">
               {testimonials.map((testimonial, index) => (
@@ -108,8 +116,6 @@ export default function TestimonialCarousel() {
               ))}
             </div>
           </div>
-
-          {/* Testimonial Cards Stack */}
           <div className="relative w-full" style={{ minHeight: "450px" }}>
             {displayOrder.map(
               ({ testimonial, originalIndex, stackPosition }) => {
@@ -158,6 +164,38 @@ export default function TestimonialCarousel() {
               }
             )}
           </div>
+        </div> */}
+
+        <div className="px-3 md:p-0">
+          <div className="w-full rounded-md border border-black/20 px-4 py-6 md:p-6 xl:p-12 bg-transparent">
+            <div className=" w-full flex flex-col gap-6  lg:gap-y-12 items-center justify-center">
+              {/* Quote */}
+              <div className="flex flex-col gap-4 text-current [grid-area:quote]">
+                <span className=" text-[26px] leading-[120%]  @2xl:text-[36px] w-full text-center">
+                  {quote}
+                </span>
+              </div>
+              {/* Author */}
+              <div className="mt-auto flex flex-col [grid-area:author] items-center">
+                <span className="font-sans text-base font-bold text-current leading-[123%] tracking-[-0.16px]">
+                  {name}{" "}
+                </span>
+                <span className="font-sans text-base text-current/60 leading-[135%]">
+                  {role}
+                </span>
+              </div>
+              {/* Image */}
+              {/* <div className="relative aspect-[315/420] h-full w-full overflow-hidden [grid-area:image]">
+                                <div className="overflow-hidden bg-cover absolute inset-0 size-full">
+                                    <img
+                                        alt="Angelo Livanos"
+                                        src="/assets/lightspeed-headshot-min.png"
+                                        className="transition-opacity duration-300 ease-out-quad size-full object-cover object-center opacity-100"
+                                    />
+                                </div>
+                            </div> */}
+            </div>
+          </div>
         </div>
 
         <style jsx>{`
@@ -180,4 +218,6 @@ export default function TestimonialCarousel() {
       </div>
     </div>
   );
-}
+};
+
+export default TestimonialCarousel;

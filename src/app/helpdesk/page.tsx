@@ -19,7 +19,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Page = () => {
   return (
-    <div className="relative z-10 bg-[#f4f3ec]">
+    <div className="relative z-10 ">
       <HeroSection
         heading="Meet your customers wherever they are"
         subheading="Manage all your support channels and customer conversations—from email and live chat, to phone, SMS, and social—in one omnichannel platform."
@@ -30,7 +30,7 @@ const Page = () => {
         }}
         secondaryButton={{
           text: "Contact Sales",
-          href: "/contact-sales",
+          href: "/contact/contact-sales",
         }}
       />
       <div className="w-[95%] mx-auto">

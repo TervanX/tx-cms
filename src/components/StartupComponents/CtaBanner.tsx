@@ -2,7 +2,15 @@ import Image from 'next/image';
 import Button from '../reusable/Button';
 
 
-export default function Banner() {
+interface BannerProps {
+  title?: string;
+  backgroundImage?: string;
+  buttonText?: string;
+}
+
+export default function Banner({ title = "Join over 3,000 startups propelling their business forward with Apollo",
+  backgroundImage = "/assets/image10.webp",
+  buttonText = "Apply now", }: BannerProps) {
   return (
     <div className="px-6 md:px-12 lg:px-16 xl:px-20 2xl:px-24">
       <div className="container mx-auto px-4">
@@ -11,14 +19,14 @@ export default function Banner() {
             alt="Banner background"
             fill
             className="z-0 object-cover"
-            src="/assets/image10.webp"
+            src={backgroundImage}
             sizes="100vw"
           />
 
           <div className="relative z-10 flex flex-col gap-10 items-center text-center">
             <div className="flex flex-col items-center gap-4 ">
               <h2 className="xl:text-[72px] xl:tracking-[-1.44px] xl:leading-[90%] lg:text-[72px] lg:tracking-[-1.44px] lg:leading-[90%] md:text-[64px] md:tracking-[-1.28px] md:leading-[90%] text-[48px] tracking-[-0.96px] leading-none font-founders-grotesk text-text-header text-center ">
-                Join over 3,000 startups propelling their business forward with Apollo
+                {title}
               </h2>
 
               {/* Mobile Logos */}
@@ -74,7 +82,7 @@ export default function Banner() {
               </div>
             </div>
 
-            <Button variant="primary" size="lg">Apply now</Button>
+            <Button variant="primary" size="lg">{buttonText}</Button>
           </div>
         </div>
         <div className="h-10"></div>

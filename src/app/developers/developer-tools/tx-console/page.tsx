@@ -8,19 +8,22 @@ import CtaBanner from "@/components/StartupComponents/Cta";
 import FAQAccordion from "@/components/StartupComponents/Faq";
 import { Marquee } from "@/components/StartupComponents/Marquee";
 import Resources from "@/components/StartupComponents/Resources";
-
+import { supportData } from '../data';
 export default function Startups() {
   return (
     <div>
       <HeroSection title="Tx Console" description="Developer dashboard" />
-      <FeaturesSection />
-      <ProductSection />
-      <Banner />
-      <Testimonial />
-      <Marquee />
-      <Resources />
-      <CtaBanner />
-      <FAQAccordion />
+      <FeaturesSection {...supportData.featuredata} />
+      <ProductSection
+        {...supportData.productdata}
+      />
+      <Banner {...supportData.bannerdata} />
+      <Testimonial {...supportData.testimonialdata} />
+      <Marquee items={supportData.marqueedata.marqueeItems} />
+      <Resources {...(supportData.resourcesdata as any)} />
+      <CtaBanner
+        {...supportData.ctaBanner} />
+      <FAQAccordion faqData={supportData.faqData} />
     </div>
   );
 }
