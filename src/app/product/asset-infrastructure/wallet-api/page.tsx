@@ -45,8 +45,35 @@ export default function WalletsAPI() {
   return (
     <main>
       <Hero
-        title="Wallets API"
-        description="Create, manage, and secure digital wallets"
+        title="Wallet As"
+        span="A Service"
+        description="Embed powerful, programmable wallets
+Seamlessly integrate secure, non-custodial and custodial wallets into any application. Launch in days, not months."
+        efficiencyTitle="How Wallet As A Service Accelerates Your Product Launch"
+        efficiencyCards={[
+          {
+            category: "Productivity",
+            title:
+              "AI-driven key management and automated gas operations free your team from infrastructure complexity.",
+          },
+          {
+            category: "Usability",
+            title:
+              "A single, unified API to deploy user-friendly wallets across 300+ chains with full customization.",
+          },
+          {
+            category: "Data & Insights",
+            title: "Actionable intelligence that drives better decisions",
+          },
+        ]}
+        primaryButton={{
+          text: "Login",
+          href: "https://www.intercom.com/view-demos",
+        }}
+        secondaryButton={{
+          text: "Contact Sales",
+          href: "/contact/contact-sales",
+        }}
       />
       <ContentLayout
         sections={sections}
