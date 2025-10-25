@@ -270,188 +270,113 @@ export const educationPageData = {
         ],
     },
 
+
     technicalSpecifications: {
+        title: "Technical Specifications",
+        description: "",
         cards: [
             {
                 title: "Performance",
-                lists: [
-                    "Instant credential verification (<2 seconds)",
-                    "99.99% system availability",
-                    "Support for millions of student records",
-                    "Real-time transcript updates"
-                ],
+                description: "Instant credential verification (<2 seconds), 99.99% system availability, Support for millions of student records, Real-time transcript updates",
                 img: "/assets/highlight.webp",
-                imageAlt: "Performance",
-                description: ""
             },
             {
                 title: "Security",
-                lists: [
-                    "W3C Verifiable Credentials standard",
-                    "Zero-knowledge proof capabilities",
-                    "GDPR and FERPA compliant",
-                    "Regular security audits"
-                ],
+                description: "W3C Verifiable Credentials standard, Zero-knowledge proof capabilities, GDPR and FERPA compliant, Regular security audits",
                 img: "/assets/highlight.webp",
-                imageAlt: "Security",
-                description: ""
             },
             {
                 title: "Interoperability",
-                lists: [
-                    "IMS Global Standards (Open Badges, Comprehensive Learner Record)",
-                    "National Student Clearinghouse integration",
-                    "Credential Engine compatibility",
-                    "Legacy SIS integration"
-                ],
+                description: "IMS Global Standards (Open Badges, Comprehensive Learner Record), National Student Clearinghouse integration, Credential Engine compatibility, Legacy SIS integration",
                 img: "/assets/highlight.webp",
-                imageAlt: "Interoperability",
-                description: ""
-            }
+            },
         ],
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Technical Specifications",
+        tag: ""
     },
 
     educationSolutions: {
         cards: [
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "K-12 Schools",
-                lists: [
-                    "Digital student records and transcripts",
-                    "Parent and student portals",
-                    "Attendance and behavior tracking",
-                    "Standardized test result verification"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "K-12 Schools",
-                description: ""
+                description: "Digital student records and transcripts, Parent and student portals, Attendance and behavior tracking, Standardized test result verification",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Higher Education",
-                lists: [
-                    "Digital diplomas and transcripts",
-                    "Research integrity and IP management",
-                    "International student credential verification",
-                    "Alumni engagement and fundraising"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Higher Education",
-                description: ""
+                description: "Digital diplomas and transcripts, Research integrity and IP management, International student credential verification, Alumni engagement and fundraising",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Vocational & Technical Schools",
-                lists: [
-                    "Skill-based credential verification",
-                    "Industry certification management",
-                    "Employer partnership platforms",
-                    "Job placement verification"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Vocational & Technical Schools",
-                description: ""
+                description: "Skill-based credential verification, Industry certification management, Employer partnership platforms, Job placement verification",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Corporate Training",
-                lists: [
-                    "Employee skill certification",
-                    "Compliance training tracking",
-                    "Leadership development programs",
-                    "Succession planning integration"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Corporate Training",
-                description: ""
-            }
+                description: "Employee skill certification, Compliance training tracking, Leadership development programs, Succession planning integration",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+            },
         ],
+        title: "Education Solutions",
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Education Solutions",
+        description: "",
+        tag: ""
     },
 
     successMetrics: {
+        title: "Success Metrics",
+        description: "",
         cards: [
             {
                 title: "Operational Efficiency",
-                lists: [
-                    "80% reduction in credential verification costs",
-                    "90% faster transcript processing",
-                    "60% reduction in administrative overhead",
-                    "50% decrease in credential fraud"
-                ],
+                description: "80% reduction in credential verification costs, 90% faster transcript processing, 60% reduction in administrative overhead, 50% decrease in credential fraud",
                 img: "/assets/highlight.webp",
-                imageAlt: "Operational Efficiency",
-                description: ""
             },
             {
                 title: "Student Outcomes",
-                lists: [
-                    "40% faster job placement with verified credentials",
-                    "30% increase in credit transfer efficiency",
-                    "25% higher student engagement",
-                    "35% improved employer satisfaction"
-                ],
+                description: "40% faster job placement with verified credentials, 30% increase in credit transfer efficiency, 25% higher student engagement, 35% improved employer satisfaction",
                 img: "/assets/highlight.webp",
-                imageAlt: "Student Outcomes",
-                description: ""
             },
             {
                 title: "Research Impact",
-                lists: [
-                    "50% faster research timestamping",
-                    "40% increase in research collaboration",
-                    "30% reduction in IP disputes",
-                    "25% more efficient grant management"
-                ],
+                description: "50% faster research timestamping, 40% increase in research collaboration, 30% reduction in IP disputes, 25% more efficient grant management",
                 img: "/assets/highlight.webp",
-                imageAlt: "Research Impact",
-                description: ""
-            }
+            },
         ],
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Success Metrics",
+        tag: ""
     },
 
     complianceFramework: {
         cards: [
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Student Privacy",
-                lists: [
-                    "FERPA compliance for US institutions",
-                    "GDPR for international students",
-                    "Data minimization and privacy by design",
-                    "Student consent management"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Student Privacy",
-                description: ""
+                description: "FERPA compliance for US institutions, GDPR for international students, Data minimization and privacy by design, Student consent management",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Academic Standards",
-                lists: [
-                    "Regional accreditation requirements",
-                    "Credit hour and competency standards",
-                    "Transfer credit regulations",
-                    "Degree audit compliance"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Academic Standards",
-                description: ""
+                description: "Regional accreditation requirements, Credit hour and competency standards, Transfer credit regulations, Degree audit compliance",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "International Education",
-                lists: [
-                    "Credential evaluation standards",
-                    "Visa and immigration compliance",
-                    "International quality assurance",
-                    "Cross-border education regulations"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "International Education",
-                description: ""
-            }
+                description: "Credential evaluation standards, Visa and immigration compliance, International quality assurance, Cross-border education regulations",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+            },
         ],
+        title: "Compliance Framework",
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Compliance Framework",
+        description: "",
+        tag: ""
     },
 
     testimonial: {

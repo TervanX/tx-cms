@@ -55,41 +55,17 @@ const Page = () => {
       <div className="py-12 mt-8">
         <DottedLine fill="gray" />
       </div>
-      <EngageCustomersSection {...gamingPageData.engageCustomers} />
-      <div className="w-[90%] lg:w-[80%] mx-auto">
-        <SubSection
-          title={gamingPageData.subsection4.title}
-          description={gamingPageData.subsection4.description}
-          children={
-            <BrandEmailSupport {...gamingPageData.brandEmailSupport3} />
-          }
-          tag={gamingPageData.subsection4.tag}
-        />
-        <SubSection
-          title={gamingPageData.subsection5.title}
-          description={gamingPageData.subsection5.description}
-          children={
-            <BrandEmailSupport {...gamingPageData.brandEmailSupport4} />
-          }
-          tag={gamingPageData.subsection5.tag}
-        />
-        <SubSection
-          title={gamingPageData.subsection6.title}
-          description={gamingPageData.subsection6.description}
-          children={
-            <BrandEmailSupport {...gamingPageData.brandEmailSupport5} />
-          }
-          tag={gamingPageData.subsection6.tag}
-        />
-        <SubSection
-          title={gamingPageData.subsection7.title}
-          description={gamingPageData.subsection7.description}
-          children={
-            <BrandEmailSupport {...gamingPageData.brandEmailSupport6} />
-          }
-          tag={gamingPageData.subsection7.tag}
-        />
+      <LiveChat {...gamingPageData.keyFeaturesForGameDevelopers} />
+      <GlobalWhatsapp {...gamingPageData.technicalSpecifications} />
+      <div className="py-12 mt-8">
+        <DottedLine fill="gray" />
       </div>
+      <LiveChat {...gamingPageData.gamingSpecificSolutions} />
+      <GlobalWhatsapp {...gamingPageData.successStories} />
+      <div className="py-12 mt-8">
+        <DottedLine fill="gray" />
+      </div>
+      <EngageCustomersSection {...gamingPageData.engageCustomers} />
       <TestimonialCarousel {...gamingPageData.testimonial} />
       <BannerCTA {...gamingPageData.bannerCTA} />
     </div>

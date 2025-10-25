@@ -237,189 +237,113 @@ export const energyPageData = {
         ],
     },
 
-    technicalSpecifications: {
-        cards: [
-            {
-                title: "Performance",
-                lists: [
-                    "Sub-second energy transaction settlement",
-                    "99.99% uptime for critical grid operations",
-                    "Real-time data processing from millions of IoT devices",
-                    "Scalable to utility-scale operations"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Performance",
-                description: ""
-            },
-            {
-                title: "Security",
-                lists: [
-                    "NIST cybersecurity framework compliance",
-                    "Quantum-resistant cryptography",
-                    "Distributed denial-of-service protection",
-                    "Regular security audits and penetration testing"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Security",
-                description: ""
-            },
-            {
-                title: "Interoperability",
-                lists: [
-                    "IEEE 2030.5 (Smart Energy Profile 2.0)",
-                    "OpenADR for demand response",
-                    "IEC 61850 for substation automation",
-                    "Legacy SCADA system integration"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Interoperability",
-                description: ""
-            }
-        ],
-        backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Technical Specifications",
-    },
+technicalSpecifications: {
+    title: "Technical Specifications",
+    description: "",
+    cards: [
+        {
+            title: "Performance",
+            description: "Sub-second energy transaction settlement, 99.99% uptime for critical grid operations, Real-time data processing from millions of IoT devices, Scalable to utility-scale operations",
+            img: "/assets/highlight.webp",
+        },
+        {
+            title: "Security",
+            description: "NIST cybersecurity framework compliance, Quantum-resistant cryptography, Distributed denial-of-service protection, Regular security audits and penetration testing",
+            img: "/assets/highlight.webp",
+        },
+        {
+            title: "Interoperability",
+            description: "IEEE 2030.5 (Smart Energy Profile 2.0), OpenADR for demand response, IEC 61850 for substation automation, Legacy SCADA system integration",
+            img: "/assets/highlight.webp",
+        },
+    ],
+    backgroundImage: "/assets/image30.webp",
+    tag: ""
+},
 
-    industrySolutions: {
-        cards: [
-            {
-                title: "Utility Companies",
-                lists: [
-                    "Grid modernization and digital transformation",
-                    "Customer engagement and new revenue streams",
-                    "Regulatory compliance automation",
-                    "Asset management and optimization"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Utility Companies",
-                description: ""
-            },
-            {
-                title: "Renewable Developers",
-                lists: [
-                    "Project financing through tokenization",
-                    "Energy and REC revenue optimization",
-                    "Performance verification and reporting",
-                    "Maintenance and operations management"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Renewable Developers",
-                description: ""
-            },
-            {
-                title: "Commercial & Industrial",
-                lists: [
-                    "Energy cost optimization",
-                    "Sustainability goal achievement",
-                    "Microgrid development and management",
-                    "Energy resilience planning"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Commercial & Industrial",
-                description: ""
-            },
-            {
-                title: "Energy Traders",
-                lists: [
-                    "Automated market participation",
-                    "Portfolio management and risk hedging",
-                    "Cross-border trading optimization",
-                    "Regulatory compliance automation"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Energy Traders",
-                description: ""
-            }
-        ],
-        backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Industry Solutions",
-    },
+industrySolutions: {
+    cards: [
+        {
+            backgroundImage: "/assets/image30.webp",
+            title: "Utility Companies",
+            description: "Grid modernization and digital transformation, Customer engagement and new revenue streams, Regulatory compliance automation, Asset management and optimization",
+            img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+        },
+        {
+            backgroundImage: "/assets/image30.webp",
+            title: "Renewable Developers",
+            description: "Project financing through tokenization, Energy and REC revenue optimization, Performance verification and reporting, Maintenance and operations management",
+            img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+        },
+        {
+            backgroundImage: "/assets/image30.webp",
+            title: "Commercial & Industrial",
+            description: "Energy cost optimization, Sustainability goal achievement, Microgrid development and management, Energy resilience planning",
+            img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+        },
+        {
+            backgroundImage: "/assets/image30.webp",
+            title: "Energy Traders",
+            description: "Automated market participation, Portfolio management and risk hedging, Cross-border trading optimization, Regulatory compliance automation",
+            img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+        },
+    ],
+    title: "Industry Solutions",
+    backgroundImage: "/assets/image30.webp",
+    description: "",
+    tag: ""
+},
 
-    successMetrics: {
-        cards: [
-            {
-                title: "Operational Efficiency",
-                lists: [
-                    "40% reduction in settlement times",
-                    "30% improvement in grid utilization",
-                    "50% reduction in administrative costs",
-                    "25% faster outage response"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Operational Efficiency",
-                description: ""
-            },
-            {
-                title: "Financial Impact",
-                lists: [
-                    "15-25% new revenue from energy services",
-                    "20% reduction in energy procurement costs",
-                    "35% increase in asset utilization",
-                    "50% lower transaction costs"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Financial Impact",
-                description: ""
-            },
-            {
-                title: "Sustainability Impact",
-                lists: [
-                    "30% increase in renewable energy integration",
-                    "25% reduction in carbon emissions",
-                    "40% improvement in energy efficiency",
-                    "100% transparency in green energy claims"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Sustainability Impact",
-                description: ""
-            }
-        ],
-        backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Success Metrics",
-    },
+successMetrics: {
+    title: "Success Metrics",
+    description: "",
+    cards: [
+        {
+            title: "Operational Efficiency",
+            description: "40% reduction in settlement times, 30% improvement in grid utilization, 50% reduction in administrative costs, 25% faster outage response",
+            img: "/assets/highlight.webp",
+        },
+        {
+            title: "Financial Impact",
+            description: "15-25% new revenue from energy services, 20% reduction in energy procurement costs, 35% increase in asset utilization, 50% lower transaction costs",
+            img: "/assets/highlight.webp",
+        },
+        {
+            title: "Sustainability Impact",
+            description: "30% increase in renewable energy integration, 25% reduction in carbon emissions, 40% improvement in energy efficiency, 100% transparency in green energy claims",
+            img: "/assets/highlight.webp",
+        },
+    ],
+    backgroundImage: "/assets/image30.webp",
+    tag: ""
+},
 
-    regulatoryCompliance: {
-        cards: [
-            {
-                title: "North America",
-                lists: [
-                    "NERC CIP standards",
-                    "FERC Order 2222 compliance",
-                    "State-specific utility regulations",
-                    "EPA emissions reporting"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "North America",
-                description: ""
-            },
-            {
-                title: "Europe",
-                lists: [
-                    "EU Clean Energy Package",
-                    "RED II renewable energy directives",
-                    "National grid code compliance",
-                    "GDPR data protection"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Europe",
-                description: ""
-            },
-            {
-                title: "International",
-                lists: [
-                    "Local utility regulations",
-                    "International renewable energy standards",
-                    "Cross-border energy trading agreements",
-                    "Environmental reporting requirements"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "International",
-                description: ""
-            }
-        ],
-        backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Regulatory Compliance",
-    },
+regulatoryCompliance: {
+    cards: [
+        {
+            backgroundImage: "/assets/image30.webp",
+            title: "North America",
+            description: "NERC CIP standards, FERC Order 2222 compliance, State-specific utility regulations, EPA emissions reporting",
+            img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+        },
+        {
+            backgroundImage: "/assets/image30.webp",
+            title: "Europe",
+            description: "EU Clean Energy Package, RED II renewable energy directives, National grid code compliance, GDPR data protection",
+            img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+        },
+        {
+            backgroundImage: "/assets/image30.webp",
+            title: "International",
+            description: "Local utility regulations, International renewable energy standards, Cross-border energy trading agreements, Environmental reporting requirements",
+            img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+        },
+    ],
+    title: "Regulatory Compliance",
+    backgroundImage: "/assets/image30.webp",
+    description: "",
+    tag: ""
+},
 
     testimonial: {
         title: "Energy Leader Testimonials",

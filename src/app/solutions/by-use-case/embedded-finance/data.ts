@@ -203,153 +203,81 @@ export const embeddedFinancePageData = {
         ],
     },
 
-    subsection4: {
-        description: "",
-        title: "Industry Solutions",
-        tag: ""
-    },
-
-    brandEmailSupport3: {
+    industrySolutions: {
         cards: [
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "E-commerce & Marketplaces",
                 description: "One-click checkout and financing, Multi-currency storefronts, Seller advances and payouts, Chargeback protection",
-                img: "/assets/highlight.webp",
-                imageAlt: "E-commerce & Marketplaces",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "SaaS & Productivity Platforms",
                 description: "In-app expense management, Team spending controls, Automated bill pay, Corporate card programs",
-                img: "/assets/highlight.webp",
-                imageAlt: "SaaS & Productivity Platforms",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Gaming & Metaverse",
                 description: "In-game asset trading, Player-to-player lending, Tournament prize pools, Virtual economy banking",
-                img: "/assets/highlight.webp",
-                imageAlt: "Gaming & Metaverse",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Gig Economy & Workforce",
                 description: "Instant worker payouts, Income smoothing products, Expense management, Financial wellness tools",
-                img: "/assets/highlight.webp",
-                imageAlt: "Gig Economy & Workforce",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
         ],
+        title: "Industry Solutions",
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Industry Solutions",
-    },
-
-    subsection5: {
         description: "",
-        title: "Technical Excellence",
         tag: ""
     },
 
-    brandEmailSupport4: {
+    technicalExcellence: {
+        title: "Technical Excellence",
+        description: "",
+        tag: "",
         cards: [
             {
                 title: "API Performance",
-                description: "",
+                description: "99.99% uptime SLA, <100ms API response times, 10,000+ requests per second, Global edge network deployment",
                 img: "/assets/highlight.webp",
-                imageAlt: "API Performance",
-                lists: [
-                    '99.99% uptime SLA',
-                    '<100ms API response times',
-                    '10,000+ requests per second',
-                    'Global edge network deployment',
-                ]
             },
             {
                 title: "Security & Compliance",
-                description: "",
+                description: "SOC 2 Type II certified, PCI DSS Level 1 compliant, GDPR and CCPA ready, Bank-grade encryption",
                 img: "/assets/highlight.webp",
-                imageAlt: "Security & Compliance",
-                lists: [
-                    'SOC 2 Type II certified',
-                    'PCI DSS Level 1 compliant',
-                    'GDPR and CCPA ready',
-                    'Bank-grade encryption',
-                ]
             },
             {
                 title: "Developer Experience",
-                description: "",
+                description: "Comprehensive REST and GraphQL APIs, SDKs for web, mobile, and backend, Detailed API documentation, Sandbox environment with test data",
                 img: "/assets/highlight.webp",
-                imageAlt: "Developer Experience",
-                lists: [
-                    'Comprehensive REST and GraphQL APIs',
-                    'SDKs for web, mobile, and backend',
-                    'Detailed API documentation',
-                    'Sandbox environment with test data',
-                ]
             },
         ],
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Technical Excellence",
-    },
-
-
-    subsection6: {
-        description: "",
-        title: "Implementation Options",
-        tag: ""
-    },
-
-    brandEmailSupport5: {
-        cards: [
-            {
-                title: "Quick Start",
-                description: "Pre-built UI components, Standard product configurations, 2-week integration timeline, Documentation and tutorials",
-                img: "/assets/highlight.webp",
-                imageAlt: "Quick Start",
-            },
-            {
-                title: "Custom Build",
-                description: "Tailored product features, Custom risk models, Brand-specific workflows, 4-8 week implementation",
-                img: "/assets/highlight.webp",
-                imageAlt: "Custom Build",
-            },
-            {
-                title: "Enterprise Scale",
-                description: "Dedicated infrastructure, Custom compliance frameworks, Advanced analytics and reporting, 8-12 week implementation",
-                img: "/assets/highlight.webp",
-                imageAlt: "Enterprise Scale",
-            },
-        ],
-        backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Implementation Options",
     },
 
     successMetrics: {
+        title: "Success Metrics",
+        description: "",
+        tag: "",
         cards: [
             {
-                title: "💰 Revenue Impact",
-                lists: [
-                    "20-40% increase in user LTV",
-                    "15-30% higher conversion rates",
-                    "50-80% reduction in payment costs",
-                    "3-5x more transactions per user"
-                ],
+                title: " Revenue Impact",
+                description: "20-40% increase in user LTV, 15-30% higher conversion rates, 50-80% reduction in payment costs, 3-5x more transactions per user",
                 img: "/assets/highlight.webp",
-                imageAlt: "Revenue Impact",
-                description: ""
             },
             {
-                title: "📈 User Engagement",
-                lists: [
-                    "40-60% higher daily active users",
-                    "25-45% increased session duration",
-                    "30-50% lower churn rates",
-                    "2-3x more frequent platform usage"
-                ],
+                tag: "",
+                title: "User Engagement",
+                description: "40-60% higher daily active users, 25-45% increased session duration, 30-50% lower churn rates, 2-3x more frequent platform usage",
                 img: "/assets/highlight.webp",
-                imageAlt: "User Engagement",
-                description: ""
-            }
+            },
         ],
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Success Metrics",
     },
 
     testimonial: {

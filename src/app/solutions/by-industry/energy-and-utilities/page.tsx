@@ -53,44 +53,21 @@ const Page = () => {
         <DottedLine fill="gray" />
       </div>
       <LiveChat {...energyPageData.energyAssetManagement} />
+      <GlobalWhatsapp {...energyPageData.technicalSpecifications} />
+      <div className="py-12 mt-8">
+        <DottedLine fill="gray" />
+      </div>
+      <LiveChat {...energyPageData.industrySolutions} />
+      <GlobalWhatsapp {...energyPageData.successMetrics} />
+      <div className="py-12 mt-8">
+        <DottedLine fill="gray" />
+      </div>
+      <LiveChat {...energyPageData.regulatoryCompliance} />
       <div className="py-12 mt-8">
         <DottedLine fill="gray" />
       </div>
       <EngageCustomersSection {...energyPageData.engageCustomers} />
-      <div className="w-[90%] lg:w-[80%] mx-auto">
-        <SubSection
-          title="Technical Specifications"
-          description=""
-          children={
-            <BrandEmailSupport {...energyPageData.technicalSpecifications} />
-          }
-          tag=""
-        />
-        <SubSection
-          title="Industry Solutions"
-          description=""
-          children={
-            <BrandEmailSupport {...energyPageData.industrySolutions} />
-          }
-          tag=""
-        />
-        <SubSection
-          title="Success Metrics"
-          description=""
-          children={
-            <BrandEmailSupport {...energyPageData.successMetrics} />
-          }
-          tag=""
-        />
-        <SubSection
-          title="Regulatory Compliance"
-          description=""
-          children={
-            <BrandEmailSupport {...energyPageData.regulatoryCompliance} />
-          }
-          tag=""
-        />
-      </div>
+
       <TestimonialCarousel {...energyPageData.testimonial} />
       <BannerCTA {...energyPageData.bannerCTA} />
     </div>

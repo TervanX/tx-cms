@@ -64,43 +64,20 @@ const Page = () => {
       <div className="py-12 mt-8">
         <DottedLine fill="gray" />
       </div>
+      <LiveChat {...realEstatePageData.complianceFramework} />
+      <GlobalWhatsapp {...realEstatePageData.successMetrics} />
+      <div className="py-12 mt-8">
+        <DottedLine fill="gray" />
+      </div>
+      <LiveChat {...realEstatePageData.technicalSpecifications} />
+      <GlobalWhatsapp {...realEstatePageData.industrySolutions} />
+      <div className="py-12 mt-8">
+        <DottedLine fill="gray" />
+      </div>
       <EngageCustomersSection
         {...realEstatePageData.engageCustomers}
       />
-      <div className="w-[90%] lg:w-[80%] mx-auto">
-        <SubSection
-          title="Technical Specifications"
-          description=""
-          children={
-            <BrandEmailSupport {...realEstatePageData.technicalSpecifications} />
-          }
-          tag=""
-        />
-        <SubSection
-          title="Industry Solutions"
-          description=""
-          children={
-            <BrandEmailSupport {...realEstatePageData.industrySolutions} />
-          }
-          tag=""
-        />
-        <SubSection
-          title={realEstatePageData.subsection3.title}
-          description={realEstatePageData.subsection3.description}
-          children={
-            <BrandEmailSupport {...realEstatePageData.brandEmailSupport2} />
-          }
-          tag={realEstatePageData.subsection3.tag}
-        />
-        <SubSection
-          title="Compliance Framework"
-          description=""
-          children={
-            <BrandEmailSupport {...realEstatePageData.complianceFramework} />
-          }
-          tag=""
-        />
-      </div>
+
       <TestimonialCarousel {...realEstatePageData.testimonial} />
       <BannerCTA {...realEstatePageData.bannerCTA} />
     </div>

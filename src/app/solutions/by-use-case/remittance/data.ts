@@ -191,116 +191,82 @@ export const remittancePageData = {
         ],
     },
 
-    subsection4: {
-        description: "",
+    integrationOptions: {
         title: "Integration Options",
-        tag: ""
-    },
-
-    brandEmailSupport3: {
+        description: "",
         cards: [
             {
                 title: "API-First Integration",
-                lists: ["RESTful APIs for all operations", "Webhooks for real-time notifications", "SDKs in 8 programming languages", "Comprehensive documentation"],
+                description: "RESTful APIs for all operations, Webhooks for real-time notifications, SDKs in 8 programming languages, Comprehensive documentation",
                 img: "/assets/highlight.webp",
-                imageAlt: "API-First Integration",
-                description: ""
             },
             {
                 title: "White-Label Solutions",
-                lists: ["Custom mobile applications", "Branded web platforms", "Agent management systems", "Customer support tools"],
+                description: "Custom mobile applications, Branded web platforms, Agent management systems, Customer support tools",
                 img: "/assets/highlight.webp",
-                imageAlt: "White-Label Solutions",
-                description: ""
             },
             {
                 title: "Modular Components",
-                lists: ["Standalone KYC/AML module", "FX rate management only", "Payout network access", "Compliance reporting suite"],
+                description: "Standalone KYC/AML module, FX rate management only, Payout network access, Compliance reporting suite",
                 img: "/assets/highlight.webp",
-                imageAlt: "Modular Components",
-                description: ""
             },
         ],
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Integration Options",
-    },
-    subsection5: {
-        description: "",
-        title: "Corridor-Specific Solutions",
         tag: ""
     },
 
-    brandEmailSupport4: {
+    corridorSolutions: {
         cards: [
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "USD ⇄ MXN",
-                lists: ["30-second settlement times", "15,000+ cash pickup locations in Mexico", "1% all-in cost", "Full CIBAN compatibility"],
-                img: "/assets/highlight.webp",
-                imageAlt: "USD to MXN",
-                description: ""
+                description: "30-second settlement times, 15,000+ cash pickup locations in Mexico, 1% all-in cost, Full CIBAN compatibility",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "EUR ⇄ PHP",
-                lists: ["Direct to Philippine bank accounts", "45-second processing", "0.8% average cost", "Mobile wallet integration"],
-                img: "/assets/highlight.webp",
-                imageAlt: "EUR to PHP",
-                description: ""
+                description: "Direct to Philippine bank accounts, 45-second processing, 0.8% average cost, Mobile wallet integration",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "GBP ⇄ INR",
-                lists: ["Real-time RBI compliance", "60-second bank transfers", "1.2% total cost", "PAN card validation"],
-                img: "/assets/highlight.webp",
-                imageAlt: "GBP to INR",
-                description: ""
+                description: "Real-time RBI compliance, 60-second bank transfers, 1.2% total cost, PAN card validation",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "AUD ⇄ VND",
-                lists: ["30,000+ payout locations in Vietnam", "1-minute processing", "1.5% all-in cost", "Multi-language support"],
-                img: "/assets/highlight.webp",
-                imageAlt: "AUD to VND",
-                description: ""
+                description: "30,000+ payout locations in Vietnam, 1-minute processing, 1.5% all-in cost, Multi-language support",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
         ],
+        title: "Corridor-Specific Solutions",
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Corridor-Specific Solutions",
-    },
-
-    subsection6: {
         description: "",
-        title: "Success Metrics",
         tag: ""
     },
 
-    brandEmailSupport5: {
+    successMetrics: {
+        title: "Success Metrics",
+        description: "",
         cards: [
             {
                 title: "Operational Efficiency",
-                lists: [
-                    "80% reduction in transfer costs",
-                    "99% automation of compliance checks",
-                    "90% faster settlement times",
-                    "60% reduction in operational overhead"
-                ],
+                description: "80% reduction in transfer costs, 99% automation of compliance checks, 90% faster settlement times, 60% reduction in operational overhead",
                 img: "/assets/highlight.webp",
-                imageAlt: "Operational Efficiency",
-                description: ""
             },
             {
                 title: "Business Impact",
-                lists: [
-                    "40% increase in transfer volume",
-                    "35% higher customer satisfaction",
-                    "50% growth in new corridors",
-                    "25% improvement in customer retention"
-                ],
+                description: "40% increase in transfer volume, 35% higher customer satisfaction, 50% growth in new corridors, 25% improvement in customer retention",
                 img: "/assets/highlight.webp",
-                imageAlt: "Business Impact",
-                description: ""
-            }
+            },
         ],
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Corridor-Specific Solutions",
+        tag: ""
     },
+
 
     testimonial: {
         title: "Remittance Provider Testimonials",

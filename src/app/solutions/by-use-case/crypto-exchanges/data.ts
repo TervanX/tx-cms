@@ -206,180 +206,118 @@ export const cryptoExchangesPageData = {
         ],
     },
 
-    subsection3: {
-        description: "",
+    technicalSpecifications: {
         title: "Technical Specifications",
-        tag: ""
-    },
-    brandEmailSupport2: {
+        description: "",
+        tag: "",
         cards: [
             {
                 title: "Performance Metrics",
-                description: "",
+                description: "Order matching: <0.1ms latency, Throughput: 1,000,000+ orders/second, Uptime: 99.999% SLA, Data feeds: Real-time with 10ms updates",
                 img: "/assets/highlight.webp",
-                imageAlt: "Performance Metrics",
-                lists: [
-                    'Order matching: <0.1ms latency',
-                    'Throughput: 1,000,000+ orders/second',
-                    'Uptime: 99.999% SLA',
-                    'Data feeds: Real-time with 10ms updates',
-                ]
             },
             {
                 title: "Security Features",
-                description: "",
+                description: "MPC with threshold signatures, DDoS protection and rate limiting, Regular penetration testing, Comprehensive audit trails",
                 img: "/assets/highlight.webp",
-                imageAlt: "Security Features",
-                lists: [
-                    'MPC with threshold signatures',
-                    'DDoS protection and rate limiting',
-                    'Regular penetration testing',
-                    'Comprehensive audit trails',
-                ]
             },
             {
                 title: "Integration Options",
-                description: "",
+                description: "Full stack exchange solution, Modular component integration, Cloud or on-premise deployment, Custom development services",
                 img: "/assets/highlight.webp",
-                imageAlt: "Integration Options",
-                lists: [
-                    'Full stack exchange solution',
-                    'Modular component integration',
-                    'Cloud or on-premise deployment',
-                    'Custom development services',
-                ]
             },
         ],
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Trading Engine",
     },
 
-    subsection4: {
-        description: "",
-        title: "Key Products for Exchanges",
-        tag: ""
-    },
-    brandEmailSupport3: {
+    keyProducts: {
         cards: [
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Liquidity Hub",
                 description: "Access $15B+ daily liquidity depth across all major venues and chains with intelligent routing.",
-                img: "/assets/highlight.webp",
-                imageAlt: "Liquidity Hub",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "TX Vault",
                 description: "Institutional-grade custody with multi-sig approvals, policy engines, and automated treasury management.",
-                img: "/assets/highlight.webp",
-                imageAlt: "TX Vault",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "TX Shield",
                 description: "Advanced security monitoring with real-time threat detection and automated incident response.",
-                img: "/assets/highlight.webp",
-                imageAlt: "TX Shield",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "TX Automate",
                 description: "Automate operational workflows including listings, risk management, and compliance reporting.",
-                img: "/assets/highlight.webp",
-                imageAlt: "TX Automate",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
         ],
+        title: "Key Products for Exchanges",
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Trading Engine",
+        description: "",
+        tag: "",
     },
 
-    subsection5: {
-        description: "",
+    exchangeUseCases: {
         title: "Use Cases",
-        tag: ""
-    },
-    brandEmailSupport4: {
+        description: "",
+        tag: "",
         cards: [
             {
                 title: "New Exchange Launch",
                 description: "Go from zero to fully operational exchange in 30 days with complete trading infrastructure.",
                 img: "/assets/highlight.webp",
-                imageAlt: "New Exchange Launch",
-                lists: []
             },
             {
                 title: "Existing Exchange Upgrade",
                 description: "Modernize legacy systems with high-performance matching engine and enhanced security.",
                 img: "/assets/highlight.webp",
-                imageAlt: "Exchange Upgrade",
-                lists: []
             },
             {
                 title: "Regional Expansion",
                 description: "Launch in new jurisdictions with localized compliance, payment rails, and language support.",
                 img: "/assets/highlight.webp",
-                imageAlt: "Regional Expansion",
-                lists: []
             },
             {
                 title: "Asset Diversification",
                 description: "Rapidly list new tokens and blockchains with automated wallet and trading pair setup.",
                 img: "/assets/highlight.webp",
-                imageAlt: "Asset Diversification",
-                lists: []
             },
         ],
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Trading Engine",
     },
 
-    subsection6: {
-        description: "",
-        title: "Enterprise Features",
-        tag: ""
-    },
-    brandEmailSupport5: {
+    enterpriseFeatures: {
         cards: [
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Dedicated Infrastructure",
-                description: "",
-                img: "/assets/highlight.webp",
-                imageAlt: "Dedicated Infrastructure",
-                lists: [
-                    'Isolated matching engine instances',
-                    'Custom hardware acceleration',
-                    'Geographic latency optimization',
-                    'Disaster recovery solutions',
-                ]
+                description: "Isolated matching engine instances, Custom hardware acceleration, Geographic latency optimization, Disaster recovery solutions",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Custom Development",
-                description: "",
-                img: "/assets/highlight.webp",
-                imageAlt: "Custom Development",
-                lists: [
-                    'Proprietary order types',
-                    'Unique fee structures',
-                    'Custom risk models',
-                    'Specialized reporting',
-                ]
-
+                description: "Proprietary order types, Unique fee structures, Custom risk models, Specialized reporting",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Premium Support",
-                description: "",
-                img: "/assets/highlight.webp",
-                imageAlt: "Premium Support",
-                lists: [
-                    '24/7 dedicated engineering support',
-                    'Exchange operation specialists',
-                    'Security incident response team',
-                    'Strategic business consulting',
-                ]
+                description: "24/7 dedicated engineering support, Exchange operation specialists, Security incident response team, Strategic business consulting",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
         ],
+        title: "Enterprise Features",
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Trading Engine",
+        description: "",
+        tag: "",
     },
-
-
     testimonial: {
         title: "Exchange Leader Testimonials",
         quote: "TervanX's liquidity aggregation reduced our spreads by 60% and increased trading volume by 300% in the first month. Their matching engine handles our peak loads without breaking a sweat.",

@@ -270,224 +270,107 @@ export const creatorsPageData = {
         ],
     },
 
+
     technicalSpecifications: {
+        title: "Technical Specifications",
+        description: "",
         cards: [
             {
                 title: "Performance",
-                lists: [
-                    "Instant content minting and listing",
-                    "Sub-second payment processing",
-                    "99.99% platform availability",
-                    "Support for 4K video streaming and large file transfers"
-                ],
+                description: "Instant content minting and listing, Sub-second payment processing, 99.99% platform availability, Support for 4K video streaming and large file transfers",
                 img: "/assets/highlight.webp",
-                imageAlt: "Performance",
-                description: ""
             },
             {
                 title: "Security",
-                lists: [
-                    "Content piracy protection",
-                    "Secure key management with social recovery",
-                    "$50M content protection insurance",
-                    "Regular security audits and bug bounty programs"
-                ],
+                description: "Content piracy protection, Secure key management with social recovery, $50M content protection insurance, Regular security audits and bug bounty programs",
                 img: "/assets/highlight.webp",
-                imageAlt: "Security",
-                description: ""
             },
             {
                 title: "Creator Experience",
-                lists: [
-                    "No-code tools for non-technical creators",
-                    "Mobile-first design for on-the-go management",
-                    "45+ language localization",
-                    "Accessibility-compliant interfaces"
-                ],
+                description: "No-code tools for non-technical creators, Mobile-first design for on-the-go management, 45+ language localization, Accessibility-compliant interfaces",
                 img: "/assets/highlight.webp",
-                imageAlt: "Creator Experience",
-                description: ""
-            }
+            },
         ],
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Technical Specifications",
+        tag: ""
     },
 
     creatorSolutions: {
         cards: [
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Individual Creators",
-                lists: [
-                    "All-in-one monetization platform",
-                    "Community building tools",
-                    "Financial management services",
-                    "Legal and copyright support"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Individual Creators",
-                description: ""
+                description: "All-in-one monetization platform, Community building tools, Financial management services, Legal and copyright support",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Creator Agencies",
-                lists: [
-                    "Multi-creator portfolio management",
-                    "Consolidated billing and reporting",
-                    "Talent discovery and development tools",
-                    "Brand partnership management"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Creator Agencies",
-                description: ""
+                description: "Multi-creator portfolio management, Consolidated billing and reporting, Talent discovery and development tools, Brand partnership management",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Content Platforms",
-                lists: [
-                    "White-label creator tools",
-                    "Revenue sharing automation",
-                    "Content moderation integration",
-                    "Platform-specific customization"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Content Platforms",
-                description: ""
+                description: "White-label creator tools, Revenue sharing automation, Content moderation integration, Platform-specific customization",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Brands & Advertisers",
-                lists: [
-                    "Verified creator marketplace",
-                    "Campaign performance tracking",
-                    "Automated payment and reporting",
-                    "Compliance and brand safety tools"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Brands & Advertisers",
-                description: ""
-            }
+                description: "Verified creator marketplace, Campaign performance tracking, Automated payment and reporting, Compliance and brand safety tools",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+            },
         ],
+        title: "Creator Solutions",
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Creator Solutions",
-    },
-
-    gettingStartedTimeline: {
-        cards: [
-            {
-                title: "Day 1: Platform Setup",
-                lists: [
-                    "Creator profile verification",
-                    "Payment method configuration",
-                    "Content library import",
-                    "Basic analytics setup"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Platform Setup",
-                description: ""
-            },
-            {
-                title: "Week 1: First Monetization",
-                lists: [
-                    "First NFT collection minting",
-                    "Subscription tier creation",
-                    "Community token launch",
-                    "Cross-platform integration"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "First Monetization",
-                description: ""
-            },
-            {
-                title: "Month 1: Growth Optimization",
-                lists: [
-                    "Advanced analytics activation",
-                    "Automated campaign setup",
-                    "Collaboration network joining",
-                    "Revenue diversification strategy"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Growth Optimization",
-                description: ""
-            }
-        ],
-        backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Getting Started Timeline",
-    },
-
-    pricingStructure: {
-        cards: [
-            {
-                title: "Creator Starter Plan",
-                lists: [
-                    "5% platform fee",
-                    "No monthly cost",
-                    "Up to $10K monthly volume",
-                    "Basic analytics and support"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Creator Starter Plan",
-                description: ""
-            },
-            {
-                title: "Professional Creator Plan",
-                lists: [
-                    "3% platform fee",
-                    "$49 monthly fee",
-                    "Up to $50K monthly volume",
-                    "Advanced tools and priority support"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Professional Creator Plan",
-                description: ""
-            },
-            {
-                title: "Enterprise Creator Plan",
-                lists: [
-                    "1% platform fee",
-                    "$199 monthly fee",
-                    "Unlimited volume",
-                    "Dedicated account management"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Enterprise Creator Plan",
-                description: ""
-            }
-        ],
-        backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Pricing Structure",
-    },
-    subsection6: {
         description: "",
-        title: "Success Metrics",
         tag: ""
     },
 
-    brandEmailSupport5: {
+    gettingStartedTimeline: {
+        title: "Getting Started Timeline",
+        description: "",
         cards: [
             {
-                title: "Revenue Growth",
-                lists: [
-                    "90-95% creator payout (vs. 30-70% on traditional platforms)",
-                    "3-5x increase in revenue per fan",
-                    "40-60% higher conversion rates on premium content",
-                    "25-35% increase in fan lifetime value"
-                ],
+                title: "Day 1: Platform Setup",
+                description: "Creator profile verification, Payment method configuration, Content library import, Basic analytics setup",
                 img: "/assets/highlight.webp",
-                imageAlt: "Revenue Growth",
-                description: ""
             },
             {
-                title: "Community Engagement",
-                lists: [
-                    "50-70% higher fan retention",
-                    "3-4x more community interactions",
-                    "60-80% increase in repeat purchases",
-                    "40-50% higher content sharing"
-                ],
+                title: "Week 1: First Monetization",
+                description: "First NFT collection minting, Subscription tier creation, Community token launch, Cross-platform integration",
                 img: "/assets/highlight.webp",
-                imageAlt: "Community Engagement",
-                description: ""
-            }
+            },
+            {
+                title: "Month 1: Growth Optimization",
+                description: "Advanced analytics activation, Automated campaign setup, Collaboration network joining, Revenue diversification strategy",
+                img: "/assets/highlight.webp",
+            },
         ],
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Success Metrics",
+        tag: ""
+    },
+
+    successMetrics: {
+        cards: [
+            {
+                backgroundImage: "/assets/image30.webp",
+                title: "Revenue Growth",
+                description: "90-95% creator payout (vs. 30-70% on traditional platforms), 3-5x increase in revenue per fan, 40-60% higher conversion rates on premium content, 25-35% increase in fan lifetime value",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+            },
+            {
+                backgroundImage: "/assets/image30.webp",
+                title: "Community Engagement",
+                description: "50-70% higher fan retention, 3-4x more community interactions, 60-80% increase in repeat purchases, 40-50% higher content sharing",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+            },
+        ],
+        title: "Success Metrics",
+        backgroundImage: "/assets/image30.webp",
+        description: "",
+        tag: ""
     },
 
     testimonial: {

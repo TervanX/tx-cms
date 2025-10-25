@@ -58,41 +58,17 @@ const Page = () => {
       <div className="py-12 mt-8">
         <DottedLine fill="gray" />
       </div>
-      <EngageCustomersSection {...educationPageData.engageCustomers} />
-      <div className="w-[90%] lg:w-[80%] mx-auto">
-        <SubSection
-          title="Technical Specifications"
-          description=""
-          children={
-            <BrandEmailSupport {...educationPageData.technicalSpecifications} />
-          }
-          tag=""
-        />
-        <SubSection
-          title="Education Solutions"
-          description=""
-          children={
-            <BrandEmailSupport {...educationPageData.educationSolutions} />
-          }
-          tag=""
-        />
-        <SubSection
-          title="Success Metrics"
-          description=""
-          children={
-            <BrandEmailSupport {...educationPageData.successMetrics} />
-          }
-          tag=""
-        />
-        <SubSection
-          title="Compliance Framework"
-          description=""
-          children={
-            <BrandEmailSupport {...educationPageData.complianceFramework} />
-          }
-          tag=""
-        />
+      <LiveChat {...educationPageData.technicalSpecifications} />
+      <GlobalWhatsapp {...educationPageData.educationSolutions} />
+      <div className="py-12 mt-8">
+        <DottedLine fill="gray" />
       </div>
+      <LiveChat {...educationPageData.successMetrics} />
+      <GlobalWhatsapp {...educationPageData.complianceFramework} />
+      <div className="py-12 mt-8">
+        <DottedLine fill="gray" />
+      </div>
+      <EngageCustomersSection {...educationPageData.engageCustomers} />
       <TestimonialCarousel {...educationPageData.testimonial} />
       <BannerCTA {...educationPageData.bannerCTA} />
     </div>
