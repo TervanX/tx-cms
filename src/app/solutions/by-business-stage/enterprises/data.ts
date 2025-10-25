@@ -171,7 +171,7 @@ export const enterprisePageData = {
     },
 
     engageCustomers: {
-        badgeText: "Deployment Options",
+        badgeText: "Enterprise Deployment Options",
         title: "Choose the deployment that fits your security needs",
         columns: [
             {

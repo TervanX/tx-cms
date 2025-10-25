@@ -191,7 +191,55 @@ export const healthcarePageData = {
         backgroundImage: "/assets/image30.webp",
         description: "",
     },
+
     globalWhatsapp2: {
+        title: "Digital health transformation",
+        tag: "Telemedicine & Remote Care",
+        description: "",
+        cards: [
+            {
+                backgroundImage: "/assets/image30.webp",
+
+                title: "Secure telemedicine platforms",
+                description: "Blockchain-verified practitioner credentials and encrypted video consultations.",
+                img: "/assets/highlight.webp",
+                imageAlt: "Secure telemedicine platforms",
+                lists: []
+            },
+            {
+                backgroundImage: "/assets/image30.webp",
+
+                title: "Remote patient monitoring",
+                description: "IoT device data integration with secure health record synchronization.",
+                img: "/assets/highlight.webp",
+                imageAlt: "Remote patient monitoring",
+                lists: []
+            },
+            {
+                backgroundImage: "/assets/image30.webp",
+
+                title: "Prescription management",
+                description: "E-prescriptions with verification, abuse prevention, and pharmacy coordination.",
+                img: "/assets/highlight.webp",
+                imageAlt: "Prescription management",
+                lists: []
+            },
+            {
+                backgroundImage: "/assets/image30.webp",
+
+                title: " Medical device integration",
+                description: "Secure data streaming from connected health devices with patient consent management.",
+                img: "/assets/highlight.webp",
+                imageAlt: "Medical device integration",
+                lists: []
+            }
+        ],
+        backgroundImage: "/assets/image30.webp",
+        backgroundAlt: "DataSectionProps",
+
+
+    },
+    globalWhatsapp3: {
         title: "Key Healthcare Features",
         tag: "",
         description: "",
@@ -257,7 +305,7 @@ export const healthcarePageData = {
         backgroundAlt: "DataSectionProps",
 
     },
-    globalWhatsapp3: {
+    globalWhatsapp4: {
         title: "Technical Specifications",
         tag: "",
         description: "",
@@ -308,7 +356,7 @@ export const healthcarePageData = {
         backgroundAlt: "DataSectionProps",
 
     },
-    globalWhatsapp4: {
+    globalWhatsapp5: {
         title: "Healthcare Solutions",
         tag: "",
         description: "",
@@ -374,58 +422,6 @@ export const healthcarePageData = {
         backgroundAlt: "DataSectionProps",
 
     },
-    globalWhatsapp5: {
-        title: "Success Metrics",
-        tag: "",
-        description: "",
-        cards: [
-            {
-                title: " Operational Efficiency",
-                description: "",
-                img: "/assets/highlight.webp",
-                imageAlt: "Operational Efficiency",
-                backgroundImage: "/assets/image30.webp",
-
-                lists: [
-                    "70% faster claims processing",
-                    "60% reduction in administrative costs",
-                    "90% improvement in data accuracy",
-                    "80% faster patient data access"
-                ]
-            },
-            {
-                title: " Financial Impact",
-                description: "",
-                img: "/assets/highlight.webp",
-                imageAlt: "Financial Impact",
-                backgroundImage: "/assets/image30.webp",
-
-                lists: [
-                    "40% reduction in claim denials",
-                    "30% lower operational costs",
-                    "50% decrease in fraud losses",
-                    "25% improvement in cash flow"
-                ]
-            },
-            {
-                title: " Patient Outcomes",
-                description: "",
-                img: "/assets/highlight.webp",
-                imageAlt: "Patient Outcomes",
-                backgroundImage: "/assets/image30.webp",
-
-                lists: [
-                    "35% better care coordination",
-                    "50% faster diagnosis times",
-                    "40% improved medication adherence",
-                    "25% higher patient satisfaction"
-                ]
-            }
-        ],
-        backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "DataSectionProps",
-
-    },
     globalWhatsapp6: {
         title: "Success Metrics",
         tag: "",
@@ -479,6 +475,58 @@ export const healthcarePageData = {
 
     },
     globalWhatsapp7: {
+        title: "Success Metrics",
+        tag: "",
+        description: "",
+        cards: [
+            {
+                title: " Operational Efficiency",
+                description: "",
+                img: "/assets/highlight.webp",
+                imageAlt: "Operational Efficiency",
+                backgroundImage: "/assets/image30.webp",
+
+                lists: [
+                    "70% faster claims processing",
+                    "60% reduction in administrative costs",
+                    "90% improvement in data accuracy",
+                    "80% faster patient data access"
+                ]
+            },
+            {
+                title: " Financial Impact",
+                description: "",
+                img: "/assets/highlight.webp",
+                imageAlt: "Financial Impact",
+                backgroundImage: "/assets/image30.webp",
+
+                lists: [
+                    "40% reduction in claim denials",
+                    "30% lower operational costs",
+                    "50% decrease in fraud losses",
+                    "25% improvement in cash flow"
+                ]
+            },
+            {
+                title: " Patient Outcomes",
+                description: "",
+                img: "/assets/highlight.webp",
+                imageAlt: "Patient Outcomes",
+                backgroundImage: "/assets/image30.webp",
+
+                lists: [
+                    "35% better care coordination",
+                    "50% faster diagnosis times",
+                    "40% improved medication adherence",
+                    "25% higher patient satisfaction"
+                ]
+            }
+        ],
+        backgroundImage: "/assets/image30.webp",
+        backgroundAlt: "DataSectionProps",
+
+    },
+    globalWhatsapp8: {
         title: "Implementation Timeline",
         tag: "",
         description: "",
@@ -529,7 +577,7 @@ export const healthcarePageData = {
 
 
     },
-    globalWhatsapp8: {
+    globalWhatsapp9: {
         title: "Compliance Framework",
         tag: "",
         description: "",
@@ -578,7 +626,7 @@ export const healthcarePageData = {
         backgroundAlt: "DataSectionProps",
 
     },
-    globalWhatsapp9: {
+    globalWhatsapp10: {
         title: "Pricing Structure",
         tag: "",
         description: "",
@@ -669,7 +717,7 @@ export const healthcarePageData = {
     },
 
     bannerCTA: {
-        title: "Transform Your Healthcare Operations",
+        title: "Get Started",
         backgroundImage: "/assets/image30.webp",
         primaryButton: {
             text: "Schedule Demo",

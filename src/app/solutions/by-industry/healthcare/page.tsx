@@ -45,42 +45,43 @@ const Page = () => {
         <DottedLine fill="gray" />
       </div>
       <CallAndConversation {...healthcarePageData.callAndConversation} />
-      <div className="py-6 lg:py-20">
-        <DottedLine fill="gray" />
-      </div>
+
       <LiveChat {...healthcarePageData.liveChat} />
       <GlobalWhatsapp {...healthcarePageData.globalWhatsapp} />
       {healthcarePageData.globalWhatsapp2 && (
         <GlobalWhatsapp {...healthcarePageData.globalWhatsapp2} />
       )}
       {healthcarePageData.globalWhatsapp3 && (
-        <GlobalWhatsapp {...healthcarePageData.globalWhatsapp3} />
+        <LiveChat {...healthcarePageData.globalWhatsapp3} />
       )}
       {healthcarePageData.globalWhatsapp4 && (
         <GlobalWhatsapp {...healthcarePageData.globalWhatsapp4} />
       )}
 
       {healthcarePageData.globalWhatsapp5 && (
-        <GlobalWhatsapp {...healthcarePageData.globalWhatsapp5} />
+        <LiveChat {...healthcarePageData.globalWhatsapp5} />
       )}
 
       {healthcarePageData.globalWhatsapp6 && (
         <GlobalWhatsapp {...healthcarePageData.globalWhatsapp6} />
       )}
       {healthcarePageData.globalWhatsapp7 && (
-        <GlobalWhatsapp {...healthcarePageData.globalWhatsapp7} />
+        <LiveChat {...healthcarePageData.globalWhatsapp7} />
       )}
       {healthcarePageData.globalWhatsapp8 && (
         <GlobalWhatsapp {...healthcarePageData.globalWhatsapp8} />
       )}
       {healthcarePageData.globalWhatsapp9 && (
+        <LiveChat {...healthcarePageData.globalWhatsapp} />
+      )}
+      {healthcarePageData.globalWhatsapp10 && (
         <GlobalWhatsapp {...healthcarePageData.globalWhatsapp} />
       )}
 
       <div className="py-12 mt-8">
         <DottedLine fill="gray" />
       </div>
-      <EngageCustomersSection {...healthcarePageData.engageCustomers} />
+      {/* <EngageCustomersSection {...healthcarePageData.engageCustomers} /> */}
       <TestimonialCarousel {...healthcarePageData.testimonial} />
       <BannerCTA {...healthcarePageData.bannerCTA} />
     </div>

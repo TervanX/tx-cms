@@ -1,7 +1,7 @@
 export const startupPageData = {
     heroSection: {
         heading: "Startups",
-        subheading: "Build your product on TervanX infrastructure",
+        subheading: "Build and scale your startup on TervanX infrastructure",
         tag: "",
         primaryButton: {
             text: "Login",

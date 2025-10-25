@@ -51,27 +51,25 @@ const Page = () => {
       <CallAndConversation
         {...transportationLogisticsPageData.callAndConversation}
       />
-      <div className="py-6 lg:py-20">
-        <DottedLine fill="gray" />
-      </div>
+
       <LiveChat {...transportationLogisticsPageData.liveChat} />
       <GlobalWhatsapp {...transportationLogisticsPageData.globalWhatsapp} />
 
       {transportationLogisticsPageData.globalWhatsapp2 && (
-        <GlobalWhatsapp {...transportationLogisticsPageData.globalWhatsapp2} />
+        <LiveChat {...transportationLogisticsPageData.globalWhatsapp2} />
       )}
 
       {transportationLogisticsPageData.globalWhatsapp3 && (
         <GlobalWhatsapp {...transportationLogisticsPageData.globalWhatsapp3} />
       )}
       {transportationLogisticsPageData.globalWhatsapp4 && (
-        <GlobalWhatsapp {...transportationLogisticsPageData.globalWhatsapp4} />
+        <LiveChat {...transportationLogisticsPageData.globalWhatsapp4} />
       )}
       {transportationLogisticsPageData.globalWhatsapp5 && (
         <GlobalWhatsapp {...transportationLogisticsPageData.globalWhatsapp5} />
       )}
       {transportationLogisticsPageData.globalWhatsapp6 && (
-        <GlobalWhatsapp {...transportationLogisticsPageData.globalWhatsapp6} />
+        <LiveChat {...transportationLogisticsPageData.globalWhatsapp6} />
       )}
       {transportationLogisticsPageData.globalWhatsapp7 && (
         <GlobalWhatsapp {...transportationLogisticsPageData.globalWhatsapp7} />

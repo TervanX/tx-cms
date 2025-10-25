@@ -45,14 +45,12 @@ const Page = () => {
         <DottedLine fill="gray" />
       </div>
       <CallAndConversation {...ecommercePageData.callAndConversation} />
-      <div className="py-6 lg:py-20">
-        <DottedLine fill="gray" />
-      </div>
+     
       <LiveChat {...ecommercePageData.liveChat} />
       <GlobalWhatsapp {...ecommercePageData.globalWhatsapp} />
 
       {ecommercePageData.globalWhatsapp2 && (
-        <GlobalWhatsapp {...ecommercePageData.globalWhatsapp2} />
+        <LiveChat {...ecommercePageData.globalWhatsapp2} />
       )}
 
       {ecommercePageData.globalWhatsapp3 && (
@@ -60,7 +58,7 @@ const Page = () => {
       )}
 
       {ecommercePageData.globalWhatsapp4 && (
-        <GlobalWhatsapp {...ecommercePageData.globalWhatsapp4} />
+        <LiveChat {...ecommercePageData.globalWhatsapp4} />
       )}
 
       {ecommercePageData.globalWhatsapp5 && (
@@ -68,10 +66,21 @@ const Page = () => {
       )}
 
       {ecommercePageData.globalWhatsapp6 && (
-        <GlobalWhatsapp {...ecommercePageData.globalWhatsapp6} />
+        <LiveChat {...ecommercePageData.globalWhatsapp6} />
+      )}
+      {ecommercePageData.globalWhatsapp7 && (
+        <GlobalWhatsapp {...ecommercePageData.globalWhatsapp7} />
       )}
 
-      <EngageCustomersSection {...ecommercePageData.engageCustomers} />
+      {ecommercePageData.globalWhatsapp8 && (
+        <LiveChat {...ecommercePageData.globalWhatsapp8} />
+      )}
+
+      {ecommercePageData.globalWhatsapp9 && (
+        <GlobalWhatsapp {...ecommercePageData.globalWhatsapp9} />
+      )}
+
+      {/* <EngageCustomersSection {...ecommercePageData.engageCustomers} /> */}
       <TestimonialCarousel {...ecommercePageData.testimonial} />
       <BannerCTA {...ecommercePageData.bannerCTA} />
     </div>

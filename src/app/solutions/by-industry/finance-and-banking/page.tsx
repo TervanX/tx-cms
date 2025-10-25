@@ -45,40 +45,26 @@ const Page = () => {
         <DottedLine fill="gray" />
       </div>
       <CallAndConversation {...financeBankingPageData.callAndConversation} />
-      <div className="py-6 lg:py-20">
-        <DottedLine fill="gray" />
-      </div>
+
       <LiveChat {...financeBankingPageData.liveChat} />
       <GlobalWhatsapp {...financeBankingPageData.globalWhatsapp} />
-      <div className="py-12">
-        <DottedLine fill="gray" />
-      </div>
-      {financeBankingPageData.globalWhatsapp2 && (
-        <GlobalWhatsapp {...financeBankingPageData.globalWhatsapp2} />
-      )}
 
-      <div className="py-12 mt-8">
-        <DottedLine fill="gray" />
-      </div>
+      {financeBankingPageData.globalWhatsapp2 && (
+        <LiveChat {...financeBankingPageData.globalWhatsapp2} />
+      )}
       {financeBankingPageData.globalWhatsapp3 && (
         <GlobalWhatsapp {...financeBankingPageData.globalWhatsapp3} />
       )}
-      <div className="py-12 mt-8">
-        <DottedLine fill="gray" />
-      </div>
+
       {financeBankingPageData.globalWhatsapp4 && (
-        <GlobalWhatsapp {...financeBankingPageData.globalWhatsapp4} />
+        <LiveChat {...financeBankingPageData.globalWhatsapp4} />
       )}
-      <div className="py-12 mt-8">
-        <DottedLine fill="gray" />
-      </div>
+
       {financeBankingPageData.globalWhatsapp5 && (
         <GlobalWhatsapp {...financeBankingPageData.globalWhatsapp5} />
       )}
-      <div className="py-12 mt-8">
-        <DottedLine fill="gray" />
-      </div>
-      <EngageCustomersSection {...financeBankingPageData.engageCustomers} />
+
+      {/* <EngageCustomersSection {...financeBankingPageData.engageCustomers} /> */}
       <TestimonialCarousel {...financeBankingPageData.testimonial} />
       <BannerCTA {...financeBankingPageData.bannerCTA} />
     </div>

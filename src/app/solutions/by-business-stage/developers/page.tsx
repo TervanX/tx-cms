@@ -42,18 +42,12 @@ const Page = () => {
       <div className="py-12">
         <DottedLine fill="gray" />
       </div>
-      <CallAndConversation {...developerPageData.callAndConversation} />
-      <div className="py-6 lg:py-20">
-        <DottedLine fill="gray" />
-      </div>
+      <CallAndConversation {...developerPageData.keyDeveloperProducts} />
       <LiveChat {...developerPageData.liveChat} />
+      <CallAndConversation {...developerPageData.callAndConversation} />
+
       <GlobalWhatsapp {...developerPageData.globalWhatsapp} />
-      <div className="py-12">
-        <DottedLine fill="gray" />
-      </div>
-      {developerPageData.globalWhatsapp2?.title && (
-        <GlobalWhatsapp {...developerPageData.globalWhatsapp2} />
-      )}
+
       <div className="py-12 mt-8">
         <DottedLine fill="gray" />
       </div>

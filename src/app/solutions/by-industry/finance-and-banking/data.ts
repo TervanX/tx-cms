@@ -193,6 +193,99 @@ export const financeBankingPageData = {
     },
 
     globalWhatsapp2: {
+            title: "Wealth Management",
+            tag: "",
+            description: "",
+            cards: [
+                {
+                    title: "Digital asset allocation",
+                                backgroundImage: "/assets/image30.webp",
+
+                    description: "Portfolio construction and rebalancing across traditional and digital assets.",
+                    img: "/assets/highlight.webp",
+                    imageAlt: "Digital asset allocation",
+                    lists: []
+                },
+                {
+                    title: " Tokenized alternative assets",
+                                backgroundImage: "/assets/image30.webp",
+
+                    description: "Access to private equity, real estate, and other alternatives through tokenization.",
+                    img: "/assets/highlight.webp",
+                    imageAlt: "Tokenized alternative assets",
+                    lists: []
+                },
+                {
+                    title: "Automated tax optimization",
+                                backgroundImage: "/assets/image30.webp",
+
+                    description: "Tax-loss harvesting and reporting for complex digital asset portfolios.",
+                    img: "/assets/highlight.webp",
+                    imageAlt: "Automated tax optimization",
+                    lists: []
+                },
+                {
+                    title: "Family office services",
+                    description: "Multi-generational wealth transfer and estate planning using blockchain technology.",
+                    img: "/assets/highlight.webp",
+                    backgroundImage: "/assets/image30.webp",
+
+                    imageAlt: "Family office services",
+                    lists: []
+                }
+            ],
+            backgroundImage: "/assets/image30.webp",
+            backgroundAlt: "DataSectionProps",
+        
+
+    },
+    globalWhatsapp3: {
+            title: "Compliance & Risk Management",
+            tag: "",
+            description: "",
+            cards: [
+                {
+                    backgroundImage: "/assets/image30.webp",
+
+                    title:  "Automated regulatory reporting",
+                    description: "Generate reports for Basel III, Dodd-Frank, MiFID II, and other global regulations.",
+                    img: "/assets/highlight.webp",
+                    imageAlt: "Automated regulatory reporting",
+                    lists: []
+                },
+                {
+                    backgroundImage: "/assets/image30.webp",
+
+                    title: "Real-time risk monitoring",
+                    description: "AI-powered surveillance for market manipulation, fraud detection, and compliance breaches.",
+                    img: "/assets/highlight.webp",
+                    imageAlt: "Real-time risk monitoring",
+                    lists: []
+                },
+                {
+                    backgroundImage: "/assets/image30.webp",
+
+                    title: "Audit trail management",
+                    description: "Immutable record-keeping with complete transaction history and compliance documentation.",
+                    img: "/assets/highlight.webp",
+                    imageAlt: "Audit trail management",
+                    lists: []
+                },
+                {
+                    backgroundImage: "/assets/image30.webp",
+
+                    title: "Sanctions screening",
+                    description: "Real-time monitoring against global watchlists and sanctions databases.",
+                    img: "/assets/highlight.webp",
+                    imageAlt: "Sanctions screening",
+                    lists: []
+                }
+            ],
+            backgroundImage: "/assets/image30.webp",
+            backgroundAlt: "DataSectionProps",
+        
+    },
+    globalWhatsapp4: {
         title: "Key Banking Features",
         tag: "",
         description:
@@ -253,7 +346,8 @@ export const financeBankingPageData = {
         backgroundAlt: "DataSectionProps",
 
     },
-    globalWhatsapp3: {
+
+    globalWhatsapp5: {
         title: "Implementation Framework",
         tag: "",
         description:
@@ -305,7 +399,7 @@ export const financeBankingPageData = {
 
 
     },
-    globalWhatsapp4: {
+    globalWhatsapp6: {
         title: "Regulatory Compliance Coverage",
         tag: "",
         description:
@@ -357,7 +451,7 @@ export const financeBankingPageData = {
 
 
     },
-    globalWhatsapp5: {
+    globalWhatsapp7: {
         title: "Enterprise Security Features",
         tag: "",
         description:

@@ -368,7 +368,7 @@ export const fintechPlatformsPageData = {
     },
 
     bannerCTA: {
-        title: "Ready to transform your fintech platform?",
+        title: "Get Started",
         backgroundImage: "/assets/image30.webp",
         primaryButton: {
             text: "Get Started",

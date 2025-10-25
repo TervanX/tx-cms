@@ -1,6 +1,6 @@
 export const developerPageData = {
     heroSection: {
-        heading: "",
+        heading: "Developers",
         subheading: "Developer-first infrastructure for building the future of finance",
         tag: "",
         primaryButton: {
@@ -74,7 +74,55 @@ export const developerPageData = {
         backgroundAlt: "DataSectionProps",
     },
 
-    // The following sections remain UNCHANGED as they don't have equivalents in the enterprise data
+    keyDeveloperProducts: {
+        title: "Key Developer Products",
+        image:
+            "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+        backgroundImage: "/assets/image30.webp",
+        primaryButton: {
+            text: "Learn More",
+            href: "/learn-more",
+        },
+        alignLeft: true,
+        tag: "",
+        description: "",
+        cards: [
+            {
+                title: "Payments API",
+                description: "Accept and send payments in any cryptocurrency with a few lines of code.",
+                language: "javascript",
+                code: `// Accept payment in any token
+const payment = await tervanx.payments.create({
+  amount: "100.00",
+  currency: "USDC",
+  chain: "ethereum"
+});`,
+                img: "/assets/highlight.webp",
+            },
+            {
+                title: "Wallet Infrastructure",
+                description: "Embed secure, non-custodial wallets into your application in days, not months.",
+                language: "python",
+                code: `# Create user wallet
+wallet = tervanx.wallets.create(
+  user_id="user_123",
+  chains=["ethereum", "polygon", "solana"]
+)`, img: "/assets/highlight.webp",
+            },
+            {
+                title: "Smart Contract Interactions",
+                description: "Execute smart contract calls across multiple chains with unified interfaces.",
+                language: "solidity",
+                code: `// Cross-chain contract call
+await tervanx.contracts.execute({
+  contract: "0x...",
+  method: "transfer",
+  args: [to, amount],
+  chain: "arbitrum"
+});`, img: "/assets/highlight.webp",
+            }
+        ]
+    },
     callAndConversation: {
         image:
             "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
@@ -142,7 +190,7 @@ TervanxClient.syncToERP(
             "",
         cards: [
             {
-                title: "🛠️ Sandbox Environment",
+                title: "Sandbox Environment",
                 description: "",
                 img: "/assets/highlight.webp",
                 imageAlt: "Sandbox Environment",
@@ -154,7 +202,7 @@ TervanxClient.syncToERP(
                 ]
             },
             {
-                title: "🔧 CLI & Local Development",
+                title: " CLI & Local Development",
                 description: "",
                 img: "/assets/highlight.webp",
                 imageAlt: "CLI & Local Development",
@@ -166,7 +214,7 @@ TervanxClient.syncToERP(
                 ]
             },
             {
-                title: "📊 Monitoring & Analytics",
+                title: " Monitoring & Analytics",
                 description: "",
                 img: "/assets/highlight.webp",
                 imageAlt: "Monitoring & Analytics",
@@ -185,84 +233,58 @@ TervanxClient.syncToERP(
     },
 
     globalWhatsapp: {
-        cards: [
-            {
-                backgroundImage: "/assets/image30.webp",
-                title: "Automated regulatory reporting",
-                description:
-                    "Generate compliance reports for multiple jurisdictions with one click. Stay audit-ready as you expand into new markets.",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
-            },
-            {
-                backgroundImage: "/assets/image30.webp",
-                title: "Real-time threat detection",
-                description:
-                    "AI-powered monitoring detects suspicious activity, phishing attempts, and anomalous transactions—before they become problems.",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
-            },
-            {
-                backgroundImage: "/assets/image30.webp",
-                title: "Role-based access controls",
-                description:
-                    "Define permissions for team members and enforce financial controls—keeping your startup secure as you grow",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
-            },
-        ],
-        title: "Pricing & Getting Started",
+        title: "Community & Support",
         tag: "",
-        backgroundImage: "/assets/image30.webp",
-        description:
-            "",
-    },
-    globalWhatsapp2: {
+        description: "",
         cards: [
             {
-                backgroundImage: "/assets/image30.webp",
-                title: "Free Tier",
+                title: " Developer Community",
                 description: "",
                 img: "/assets/highlight.webp",
-                imageAlt: "Free Tier",
+                imageAlt: "Developer Community",
+                backgroundImage: "/assets/image30.webp",
+
                 lists: [
-                    "10,000 API requests/month",
-                    "Testnet access only",
-                    "Community support",
-                    "Perfect for prototyping"
+                    "Discord: 50,000+ developers sharing knowledge",
+                    "GitHub: Open-source examples and contributions",
+                    "Stack Overflow: Active community support",
+                    "Developer Forums: Technical discussions and best practices"
                 ]
             },
             {
-                backgroundImage: "/assets/image30.webp",
-                title: "Growth Tier",
+                title: "Learning Resources",
                 description: "",
                 img: "/assets/highlight.webp",
-                imageAlt: "Growth Tier",
+                backgroundImage: "/assets/image30.webp",
+
+                imageAlt: "Learning Resources",
                 lists: [
-                    "$99/month for 100K requests",
-                    "Mainnet access",
-                    "Priority support",
-                    "Advanced features"
+                    "Interactive tutorials with real code examples",
+                    "Video workshops and webinars",
+                    "Case studies from successful implementations",
+                    "API cookbook with common use cases and solutions"
                 ]
             },
             {
-                backgroundImage: "/assets/image30.webp",
-                title: "Enterprise Tier",
+                title: "Technical Support",
                 description: "",
                 img: "/assets/highlight.webp",
-                imageAlt: "Enterprise Tier",
+                imageAlt: "Technical Support",
+                backgroundImage: "/assets/image30.webp",
+
                 lists: [
-                    "Custom pricing and limits",
-                    "Dedicated infrastructure",
-                    "24/7 phone support",
-                    "Custom feature development"
+                    "24/7 developer chat support",
+                    "Dedicated technical account managers for enterprise",
+                    "SLA-backed response times for production issues",
+                    "Regular office hours with core engineering team"
                 ]
             }
         ],
-
-        title: "Stay secure and compliant from day one",
-        tag: "Compliance & Security",
         backgroundImage: "/assets/image30.webp",
-        description:
-            "Built-in KYC, AML, and transaction monitoring ensure your startup meets global regulations—without slowing you down.",
+        backgroundAlt: "DataSectionProps",
+
     },
+   
 
     engageCustomers: {
         badgeText: "",

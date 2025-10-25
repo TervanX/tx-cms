@@ -192,7 +192,167 @@ export const ecommercePageData = {
         description: "",
     },
 
+
     globalWhatsapp2: {
+        title: "Tokenized customer engagement",
+        tag: "Loyalty & Rewards",
+        description: "",
+        cards: [
+            {
+                title: "Crypto reward programs",
+                backgroundImage: "/assets/image30.webp",
+
+                description: "Issue branded tokens or popular cryptocurrencies for customer loyalty.",
+                img: "/assets/highlight.webp",
+                imageAlt: "Crypto reward programs",
+                lists: []
+            },
+            {
+                title: "NFT-based promotions",
+                backgroundImage: "/assets/image30.webp",
+
+                description: "Limited edition digital collectibles as purchase bonuses or promotional items.",
+                img: "/assets/highlight.webp",
+                imageAlt: "NFT-based promotions",
+                lists: []
+            },
+            {
+                title: "Cashback in crypto",
+                backgroundImage: "/assets/image30.webp",
+
+                description: "Automatic crypto rewards based on purchase volume or customer behavior.",
+                img: "/assets/highlight.webp",
+                imageAlt: "Cashback in crypto",
+                lists: []
+            },
+            {
+                title: "Gamified shopping",
+                backgroundImage: "/assets/image30.webp",
+
+                description: "Achievement-based rewards and tiered benefits using blockchain verification.",
+                img: "/assets/highlight.webp",
+                imageAlt: "Gamified shopping",
+                lists: []
+            }
+        ],
+        backgroundImage: "/assets/image30.webp",
+        backgroundAlt: "DataSectionProps",
+
+
+    },
+    globalWhatsapp3: {
+        title: "Easy integration with existing stacks",
+        tag: "Platform Integration",
+        description: "",
+        cards: [
+            {
+                title: "E-commerce plugins",
+                backgroundImage: "/assets/image30.webp",
+
+                description: "Pre-built integrations for Shopify, WooCommerce, Magento, and other platforms.",
+                img: "/assets/highlight.webp",
+                imageAlt: "E-commerce plugins",
+                lists: []
+            },
+            {
+                title: "API-first architecture",
+                backgroundImage: "/assets/image30.webp",
+
+                description: "RESTful APIs for custom integrations and proprietary e-commerce systems.",
+                img: "/assets/highlight.webp",
+                imageAlt: "API-first architecture",
+                lists: []
+            },
+            {
+                title: "White-label solutions",
+                backgroundImage: "/assets/image30.webp",
+
+                description: "Fully branded payment experiences matching your e-commerce design.",
+                img: "/assets/highlight.webp",
+                imageAlt: "White-label solutions",
+                lists: []
+            },
+            {
+                backgroundImage: "/assets/image30.webp",
+
+                title: "Developer tools",
+                description: "Comprehensive SDKs, documentation, and sandbox environments.",
+                img: "/assets/highlight.webp",
+                imageAlt: "Developer tools",
+                lists: []
+            }
+        ],
+        backgroundImage: "/assets/image30.webp",
+        backgroundAlt: "DataSectionProps",
+
+    },
+    globalWhatsapp4: {
+        title: "Key E-commerce Features",
+        tag: "",
+        description: "",
+        cards: [
+            {
+                title: "Shopping Cart Integration",
+                description: "",
+                img: "/assets/highlight.webp",
+                imageAlt: "Shopping Cart Integration",
+                backgroundImage: "/assets/image30.webp",
+
+                lists: [
+                    "Add to cart with crypto pricing",
+                    "Real-time exchange rate updates",
+                    "Abandoned cart recovery with crypto options",
+                    "Multi-currency cart displays"
+                ]
+            },
+            {
+                title: "Payment Options",
+                description: "",
+                img: "/assets/highlight.webp",
+                imageAlt: "Payment Options",
+                backgroundImage: "/assets/image30.webp",
+
+                lists: [
+                    "Direct crypto payments",
+                    "Stablecoin settlements",
+                    "Hybrid crypto/fiat checkout",
+                    "Buy now, pay later with crypto"
+                ]
+            },
+            {
+                title: "Global Compliance",
+                description: "",
+                img: "/assets/highlight.webp",
+                backgroundImage: "/assets/image30.webp",
+
+                imageAlt: "Global Compliance",
+                lists: [
+                    "Automated KYC for regulated goods",
+                    "AML transaction monitoring",
+                    "Tax calculation and reporting",
+                    "Regional regulatory compliance"
+                ]
+            },
+            {
+                title: "Analytics & Reporting",
+                description: "",
+                img: "/assets/highlight.webp",
+                backgroundImage: "/assets/image30.webp",
+
+                imageAlt: "Analytics & Reporting",
+                lists: [
+                    "Real-time sales analytics",
+                    "Customer payment preference insights",
+                    "Conversion rate optimization",
+                    "Revenue forecasting"
+                ]
+            }
+        ],
+        backgroundImage: "/assets/image30.webp",
+        backgroundAlt: "DataSectionProps",
+
+    },
+    globalWhatsapp5: {
         title: "Technical Specifications",
         tag: "",
         description:
@@ -246,18 +406,19 @@ export const ecommercePageData = {
 
 
     },
-    globalWhatsapp3: {
+
+    globalWhatsapp6: {
+
         title: "E-commerce Platform Solutions",
         tag: "",
-        description:
-            "",
+        description: "",
         cards: [
             {
                 title: "Marketplaces",
-                description: "",
-                img: "/assets/highlight.webp",
                 backgroundImage: "/assets/image30.webp",
 
+                description: "",
+                img: "/assets/highlight.webp",
                 imageAlt: "Marketplaces",
                 lists: [
                     "Multi-vendor payment splitting",
@@ -268,10 +429,10 @@ export const ecommercePageData = {
             },
             {
                 title: "Subscription Businesses",
-                description: "",
-                img: "/assets/highlight.webp",
                 backgroundImage: "/assets/image30.webp",
 
+                description: "",
+                img: "/assets/highlight.webp",
                 imageAlt: "Subscription Businesses",
                 lists: [
                     "Recurring crypto billing",
@@ -282,46 +443,28 @@ export const ecommercePageData = {
             },
             {
                 title: "Digital Products",
-                description: "",
-                img: "/assets/highlight.webp",
                 backgroundImage: "/assets/image30.webp",
 
+                description: "",
+                img: "/assets/highlight.webp",
                 imageAlt: "Digital Products",
-                lists: [
-                    "Instant digital delivery upon payment",
-                    "NFT-based digital ownership",
-                    "License management and transfer",
-                    "Royalty distribution for content creators"
-                ]
-            },
-            {
-                title: "Physical Goods",
-                description: "",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
-
-                imageAlt: "Physical Goods",
-                lists: [
-                    "Supply chain integration",
-                    "Authenticity verification",
-                    "International shipping optimization",
-                    "Customs and duty calculation"
-                ]
+                lists: []
             }
         ],
         backgroundImage: "/assets/image30.webp",
         backgroundAlt: "DataSectionProps",
 
 
+
     },
-    globalWhatsapp4: {
+    globalWhatsapp7: {
         title: "Success Metrics",
         tag: "",
         description:
             "",
         cards: [
             {
-                title: "📈 Conversion Optimization",
+                title: "Conversion Optimization",
                 description: "",
                 img: "/assets/highlight.webp",
                 imageAlt: "Conversion Optimization",
@@ -368,7 +511,7 @@ export const ecommercePageData = {
 
 
     },
-    globalWhatsapp5: {
+    globalWhatsapp8: {
         title: "Implementation Timeline",
         tag: "",
         description:
@@ -422,7 +565,7 @@ export const ecommercePageData = {
 
 
     },
-    globalWhatsapp6: {
+    globalWhatsapp9: {
         title: "Pricing Structure",
         tag: "",
         description:
@@ -516,7 +659,7 @@ export const ecommercePageData = {
     },
 
     bannerCTA: {
-        title: "Start Accepting Crypto Payments",
+        title: "Get Started",
         backgroundImage: "/assets/image30.webp",
         primaryButton: {
             text: "Get Started",

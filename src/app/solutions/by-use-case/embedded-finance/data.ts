@@ -360,7 +360,7 @@ export const embeddedFinancePageData = {
     },
 
     bannerCTA: {
-        title: "Ready to transform your platform with embedded finance?",
+        title: "Get Started",
         backgroundImage: "/assets/image30.webp",
         primaryButton: {
             text: "Get Started",
