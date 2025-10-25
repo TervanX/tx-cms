@@ -257,41 +257,59 @@ export const fintechPlatformsPageData = {
         backgroundImage: "/assets/image30.webp",
         backgroundAlt: "Trading Engine",
     },
-
-    subsection3: {
-        description: "",
-        title: "Key Products for Exchanges",
-        tag: ""
-    },
-    brandEmailSupport2: {
+    useCases: {
         cards: [
             {
-                title: "Liquidity Hub",
-                description: "Access $15B+ daily liquidity depth across all major venues and chains with intelligent routing.",
+                title: "Neo-banks & Digital Banks",
+                lists: [
+                    "Multi-currency accounts with crypto integration",
+                    "Real-time global payments",
+                    "AI-powered financial management",
+                    "Embedded investment products"
+                ],
                 img: "/assets/highlight.webp",
-                imageAlt: "Liquidity Hub",
+                imageAlt: "Neo-banks & Digital Banks",
+                description: ""
             },
             {
-                title: "TX Vault",
-                description: "Institutional-grade custody with multi-sig approvals, policy engines, and automated treasury management.",
+                title: "Investment Platforms",
+                lists: [
+                    "Unified traditional and digital asset trading",
+                    "Portfolio management across all asset classes",
+                    "Automated tax optimization and reporting",
+                    "Institutional-grade security and compliance"
+                ],
                 img: "/assets/highlight.webp",
-                imageAlt: "TX Vault",
+                imageAlt: "Investment Platforms",
+                description: ""
             },
             {
-                title: "TX Shield",
-                description: "Advanced security monitoring with real-time threat detection and automated incident response.",
+                title: "Payment Processors",
+                lists: [
+                    "Cross-border payment optimization",
+                    "Crypto payment acceptance and settlement",
+                    "Fraud prevention and risk management",
+                    "Multi-currency treasury management"
+                ],
                 img: "/assets/highlight.webp",
-                imageAlt: "TX Shield",
+                imageAlt: "Payment Processors",
+                description: ""
             },
             {
-                title: "TX Automate",
-                description: "Automate operational workflows including listings, risk management, and compliance reporting.",
+                title: "Wealth Management",
+                lists: [
+                    "Digital asset portfolio management",
+                    "Automated rebalancing and tax harvesting",
+                    "Family office and institutional reporting",
+                    "Compliance and audit trail generation"
+                ],
                 img: "/assets/highlight.webp",
-                imageAlt: "TX Automate",
+                imageAlt: "Wealth Management",
+                description: ""
             },
         ],
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Trading Engine",
+        backgroundAlt: "Use Cases",
     },
 
     subsection5: {

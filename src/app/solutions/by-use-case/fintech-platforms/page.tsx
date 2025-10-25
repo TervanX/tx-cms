@@ -60,12 +60,12 @@ const Page = () => {
       <EngageCustomersSection {...fintechPlatformsPageData.engageCustomers} />
       <div className="w-[90%] lg:w-[80%] mx-auto">
         <SubSection
-          title={fintechPlatformsPageData.subsection3.title}
-          description={fintechPlatformsPageData.subsection3.description}
+          title="Use Cases"
+          description=""
           children={
-            <BrandEmailSupport {...fintechPlatformsPageData.brandEmailSupport2} />
+            <BrandEmailSupport {...fintechPlatformsPageData.useCases} />
           }
-          tag={fintechPlatformsPageData.subsection3.tag}
+          tag=""
         />
         <SubSection
           title={fintechPlatformsPageData.subsection4.title}

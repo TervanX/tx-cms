@@ -289,6 +289,7 @@ export const embeddedFinancePageData = {
         backgroundAlt: "Technical Excellence",
     },
 
+
     subsection6: {
         description: "",
         title: "Implementation Options",
@@ -321,27 +322,34 @@ export const embeddedFinancePageData = {
     },
 
     successMetrics: {
-        title: "Success Metrics",
-        metrics: [
+        cards: [
             {
-                category: "Revenue Impact",
-                items: [
+                title: "💰 Revenue Impact",
+                lists: [
                     "20-40% increase in user LTV",
                     "15-30% higher conversion rates",
                     "50-80% reduction in payment costs",
                     "3-5x more transactions per user"
-                ]
+                ],
+                img: "/assets/highlight.webp",
+                imageAlt: "Revenue Impact",
+                description: ""
             },
             {
-                category: "User Engagement",
-                items: [
+                title: "📈 User Engagement",
+                lists: [
                     "40-60% higher daily active users",
                     "25-45% increased session duration",
                     "30-50% lower churn rates",
                     "2-3x more frequent platform usage"
-                ]
+                ],
+                img: "/assets/highlight.webp",
+                imageAlt: "User Engagement",
+                description: ""
             }
-        ]
+        ],
+        backgroundImage: "/assets/image30.webp",
+        backgroundAlt: "Success Metrics",
     },
 
     testimonial: {

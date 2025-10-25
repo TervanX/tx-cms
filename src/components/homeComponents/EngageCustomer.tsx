@@ -45,8 +45,9 @@ const EngageCustomersSection = ({
           {/* Header Section */}
           <div className="scroll-mt-6 text-center mb-8">
             <div className="flex justify-center mb-4">
-              <div className="  px-3 py-1 rounded-full text-sm font-medium">
-                <Tag tag={badgeText} />
+              <div className="  px-3 py-1 rounded-full text-sm font-medium">{
+                badgeText &&
+                <Tag tag={badgeText} />}
               </div>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-gray-900 max-w-2xl w-full mx-auto">
