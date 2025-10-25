@@ -276,7 +276,7 @@ export const remittancePageData = {
     },
 
     bannerCTA: {
-        title: "Ready to revolutionize your cross-border payment services?",
+        title: "Get Started",
         backgroundImage: "/assets/image30.webp",
         primaryButton: {
             text: "Get Started",

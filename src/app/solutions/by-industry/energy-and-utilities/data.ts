@@ -353,7 +353,7 @@ regulatoryCompliance: {
     },
 
     bannerCTA: {
-        title: "Ready to power the future energy grid with blockchain intelligence?",
+        title: "Get Started",
         backgroundImage: "/assets/image30.webp",
         primaryButton: {
             text: "Get Started",

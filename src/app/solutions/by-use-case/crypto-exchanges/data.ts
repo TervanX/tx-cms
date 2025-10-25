@@ -326,7 +326,7 @@ export const cryptoExchangesPageData = {
     },
 
     bannerCTA: {
-        title: "Ready to build or upgrade your exchange?",
+        title: "Get Started",
         backgroundImage: "/assets/image30.webp",
         primaryButton: {
             text: "Get Started",

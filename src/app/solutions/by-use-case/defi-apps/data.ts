@@ -318,7 +318,7 @@ export const defiFinancePageData = {
     },
 
     bannerCTA: {
-        title: "Ready to build the next generation of DeFi applications?",
+        title: "Get Started",
         backgroundImage: "/assets/image30.webp",
         primaryButton: {
             text: "Get Started",

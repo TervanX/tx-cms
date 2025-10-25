@@ -380,7 +380,7 @@ export const realEstatePageData = {
     },
 
     bannerCTA: {
-        title: "Ready to digitize your property assets and transform guest experiences?",
+        title: "Get Started",
         backgroundImage: "/assets/image30.webp",
         primaryButton: {
             text: "Get Started",

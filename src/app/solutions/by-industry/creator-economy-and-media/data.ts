@@ -381,7 +381,7 @@ export const creatorsPageData = {
     },
 
     bannerCTA: {
-        title: "Ready to transform your creative passion into sustainable income?",
+        title: "Get Started",
         backgroundImage: "/assets/image30.webp",
         primaryButton: {
             text: "Start Creating",

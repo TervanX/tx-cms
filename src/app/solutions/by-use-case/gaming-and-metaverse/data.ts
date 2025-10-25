@@ -322,7 +322,7 @@ export const gamingPageData = {
     },
 
     bannerCTA: {
-        title: "Ready to build the next generation of gaming economies?",
+        title: "Get Started",
         backgroundImage: "/assets/image30.webp",
         primaryButton: {
             text: "Start Building",
