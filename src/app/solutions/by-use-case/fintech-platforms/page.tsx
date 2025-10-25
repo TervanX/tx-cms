@@ -49,14 +49,14 @@ const Page = () => {
         <DottedLine fill="gray" />
       </div>
       <CallAndConversation {...fintechPlatformsPageData.callAndConversation} />
-      <div className="py-6 lg:py-20">
-        <DottedLine fill="gray" />
-      </div>
       <LiveChat {...fintechPlatformsPageData.liveChat} />
       <GlobalWhatsapp {...fintechPlatformsPageData.globalWhatsapp} />
       <LiveChat {...fintechPlatformsPageData.technicalExcellence} />
       <GlobalWhatsapp {...fintechPlatformsPageData.useCases} />
       <LiveChat {...fintechPlatformsPageData.enterpriseGradeFeatures} />
+      <div className="py-12">
+        <DottedLine fill="gray" />
+      </div>
       <EngageCustomersSection {...fintechPlatformsPageData.engageCustomers} />
       <TestimonialCarousel {...fintechPlatformsPageData.testimonial} />
       <BannerCTA {...fintechPlatformsPageData.bannerCTA} />
