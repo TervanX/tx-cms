@@ -7,7 +7,7 @@ export interface FormData {
     phoneNumber: string;
     businessType: string;
     monthlyVolume: string;
-    helpNeeded: string[];
+    helpNeeded?: string[];
     message: string;
     contactMethod: string;
 }

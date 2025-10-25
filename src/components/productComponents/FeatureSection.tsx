@@ -1,7 +1,9 @@
-import React from 'react';
-import Link from 'next/link';
-import { FeatureSectionProp, FeatureItemDetailed } from '@/app/types/product.types';
-
+import React from "react";
+import Link from "next/link";
+import {
+  FeatureSectionProp,
+  FeatureItemDetailed,
+} from "@/app/types/product.types";
 
 const FeatureSection: React.FC<FeatureSectionProp> = ({ data, index }) => {
   const isEven = index % 2 === 0;
@@ -147,8 +149,8 @@ export const featuresData: FeatureItemDetailed[] = [
         .
       </>
     ),
-    ctaText: "Sign up for free",
-    ctaLink: "/sign-up",
+    ctaText: "Request Access",
+    ctaLink: "/contact/request-access",
     image: {
       src: "/assets/image1.webp",
       alt: "Illustration for Find and Close the Right Buyers with Apollo's B2B Database",
@@ -236,8 +238,8 @@ export const featuresData: FeatureItemDetailed[] = [
         complex deals faster.
       </>
     ),
-    ctaText: "Sign up for free",
-    ctaLink: "/sign-up",
+    ctaText: "Request Access",
+    ctaLink: "/contact/request-access",
     image: {
       src: "/assets/image3.webp",
       alt: "Illustration for bigger deals Apollo's B2B Database ",
@@ -275,8 +277,8 @@ export const featuresData: FeatureItemDetailed[] = [
         work together to find net-new contacts who match your best deals.
       </>
     ),
-    ctaText: "Sign up for free",
-    ctaLink: "/sign-up",
+    ctaText: "Request Access",
+    ctaLink: "/contact/request-access",
     image: {
       src: "/assets/image4.webp",
       alt: "Illustration for bigger deals Apollo's B2B Database ",

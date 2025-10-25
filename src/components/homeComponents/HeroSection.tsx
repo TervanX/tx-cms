@@ -54,7 +54,7 @@ const HeroSection = () => {
             <div className="overflow-hidden bg-cover absolute inset-0 size-full">
               <Image
                 alt="Suite"
-                src="/assets/download.jfif.jpg"
+                src="/assets/bg.png"
                 fill
                 className="object-cover object-center"
                 priority

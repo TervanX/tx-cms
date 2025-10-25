@@ -19,8 +19,11 @@ const StreamlineSection = () => {
               </h1>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4 pt-4 mb-0">
                 <a href="/sign-up" className="w-full sm:w-auto">
-                  <Button className="w-full sm:w-auto bg-black hover:bg-gray-900 text-white font-medium px-8 py-3.5 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl min-w-[200px] text-base sm:text-lg">
-                    Sign up for free
+                  <Button
+                    className="w-full sm:w-auto bg-black hover:bg-gray-900 text-white font-medium px-8 py-3.5 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl min-w-[200px] text-base sm:text-lg"
+                    href="/contact/request-access"
+                  >
+                    Request Access
                   </Button>
                 </a>
                 <a href="/contact/contact-sales" className="w-full sm:w-auto">
