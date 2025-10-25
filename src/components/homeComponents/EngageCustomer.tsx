@@ -46,7 +46,7 @@ const EngageCustomersSection = ({
           <div className="scroll-mt-6 text-center mb-8">
             <div className="flex justify-center mb-4">
               <div className="  px-3 py-1 rounded-full text-sm font-medium">
-                {badgeText && <Tag tag={badgeText} />}
+                <Tag tag={badgeText} />
               </div>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-gray-900 max-w-2xl w-full mx-auto">
@@ -55,7 +55,7 @@ const EngageCustomersSection = ({
           </div>
 
           {/* Columns Section */}
-          <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
             {columns.map((column, index) => (
               <EngagementSestionCard column={column} key={index} />
             ))}
@@ -103,13 +103,6 @@ const EngagementSestionCard: React.FC<EngagementSestionCardProps> = ({
         <span className="text-sm text-gray-600 font-sans leading-relaxed">
           {column.description}
         </span>
-        {column.list && (
-          <ul className="mt-3 list-disc text-sm text-gray-600 font-sans leading-relaxed">
-            {column.list?.items.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        )}
       </div>
     </div>
   );
