@@ -56,44 +56,20 @@ const Page = () => {
         <DottedLine fill="gray" />
       </div>
       <LiveChat {...defiFinancePageData.liveChat2} />
+      <GlobalWhatsapp {...defiFinancePageData.technicalSpecifications} />
+      <div className="py-12 mt-8">
+        <DottedLine fill="gray" />
+      </div>
+      <LiveChat {...defiFinancePageData.protocolServices} />
+      <GlobalWhatsapp {...defiFinancePageData.defiUseCases} />
+      <div className="py-12 mt-8">
+        <DottedLine fill="gray" />
+      </div>
+      <LiveChat {...defiFinancePageData.enterpriseFeatures} />
       <div className="py-12 mt-8">
         <DottedLine fill="gray" />
       </div>
       <EngageCustomersSection {...defiFinancePageData.engageCustomers} />
-      <div className="w-[90%] lg:w-[80%] mx-auto">
-        <SubSection
-          title={defiFinancePageData.subsection4.title}
-          description={defiFinancePageData.subsection4.description}
-          children={
-            <BrandEmailSupport {...defiFinancePageData.brandEmailSupport3} />
-          }
-          tag={defiFinancePageData.subsection4.tag}
-        />
-        <SubSection
-          title={defiFinancePageData.subsection5.title}
-          description={defiFinancePageData.subsection5.description}
-          children={
-            <BrandEmailSupport {...defiFinancePageData.brandEmailSupport4} />
-          }
-          tag={defiFinancePageData.subsection5.tag}
-        />
-        <SubSection
-          title={defiFinancePageData.subsection6.title}
-          description={defiFinancePageData.subsection6.description}
-          children={
-            <BrandEmailSupport {...defiFinancePageData.brandEmailSupport5} />
-          }
-          tag={defiFinancePageData.subsection6.tag}
-        />
-        <SubSection
-          title={defiFinancePageData.subsection7.title}
-          description={defiFinancePageData.subsection7.description}
-          children={
-            <BrandEmailSupport {...defiFinancePageData.brandEmailSupport6} />
-          }
-          tag={defiFinancePageData.subsection7.tag}
-        />
-      </div>
       <TestimonialCarousel {...defiFinancePageData.testimonial} />
       <BannerCTA {...defiFinancePageData.bannerCTA} />
     </div>

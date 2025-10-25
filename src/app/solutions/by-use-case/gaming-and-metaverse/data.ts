@@ -208,177 +208,110 @@ export const gamingPageData = {
         ],
     },
 
-    subsection4: {
-        description: "",
+    keyFeaturesForGameDevelopers: {
         title: "Key Features for Game Developers",
-        tag: ""
-    },
-
-    brandEmailSupport3: {
+        description: "",
         cards: [
             {
                 title: "Game Engine Integration",
-                lists: ["Unity SDK with drag-and-drop components", "Unreal Engine plugin with Blueprint support", "Web3.js and Ethers.js for custom implementations", "Mobile SDK for iOS and Android"],
+                description: "Unity SDK with drag-and-drop components, Unreal Engine plugin with Blueprint support, Web3.js and Ethers.js for custom implementations, Mobile SDK for iOS and Android",
                 img: "/assets/highlight.webp",
-                imageAlt: "Game Engine Integration",
-                description: ""
             },
             {
                 title: "Monetization Tools",
-                lists: ["Flexible royalty structures (0-25%)", "Primary and secondary sale commissions", "Subscription and battle pass systems", "In-game advertising integration"],
+                description: "Flexible royalty structures (0-25%), Primary and secondary sale commissions, Subscription and battle pass systems, In-game advertising integration",
                 img: "/assets/highlight.webp",
-                imageAlt: "Monetization Tools",
-                description: ""
             },
             {
                 title: "Analytics & Insights",
-                lists: ["Real-time player economy monitoring", "Asset rarity and valuation tracking", "Player behavior and engagement metrics", "Predictive modeling for economy balance"],
+                description: "Real-time player economy monitoring, Asset rarity and valuation tracking, Player behavior and engagement metrics, Predictive modeling for economy balance",
                 img: "/assets/highlight.webp",
-                imageAlt: "Analytics & Insights",
-                description: ""
             },
             {
                 title: "Security & Compliance",
-                lists: ["Cheat and exploit detection", "Anti-money laundering monitoring", "Age verification and geofencing", "Regulatory compliance for gaming commissions"],
+                description: "Cheat and exploit detection, Anti-money laundering monitoring, Age verification and geofencing, Regulatory compliance for gaming commissions",
                 img: "/assets/highlight.webp",
-                imageAlt: "Security & Compliance",
-                description: ""
             },
         ],
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Developer Features",
-    },
-
-    subsection5: {
-        description: "",
-        title: "Technical Specifications",
         tag: ""
     },
 
-    brandEmailSupport4: {
+    technicalSpecifications: {
         cards: [
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Performance",
-                lists: ["Batch minting: 10,000 NFTs in <30 seconds", "Transaction latency: <2 seconds confirmation", "Marketplace matching: <100ms execution", "99.9% uptime SLA for game-critical services"],
-                img: "/assets/highlight.webp",
-                imageAlt: "Performance Specifications",
-                description: ""
+                description: "Batch minting: 10,000 NFTs in <30 seconds, Transaction latency: <2 seconds confirmation, Marketplace matching: <100ms execution, 99.9% uptime SLA for game-critical services",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Security",
-                lists: ["Smart contract audits before mainnet deployment", "Real-time exploit monitoring", "$50M insurance coverage for platform assets", "Regular penetration testing"],
-                img: "/assets/highlight.webp",
-                imageAlt: "Security Features",
-                description: ""
+                description: "Smart contract audits before mainnet deployment, Real-time exploit monitoring, $50M insurance coverage for platform assets, Regular penetration testing",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Scalability",
-                lists: ["Support for 1M+ concurrent players", "Horizontal scaling for seasonal peaks", "Multi-region deployment for global latency", "Layer 2 integration for cost efficiency"],
-                img: "/assets/highlight.webp",
-                imageAlt: "Scalability Features",
-                description: ""
+                description: "Support for 1M+ concurrent players, Horizontal scaling for seasonal peaks, Multi-region deployment for global latency, Layer 2 integration for cost efficiency",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
         ],
+        title: "Technical Specifications",
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Technical Specifications",
-    },
-
-    subsection6: {
         description: "",
-        title: "Gaming-Specific Solutions",
         tag: ""
     },
 
-    brandEmailSupport5: {
+    gamingSpecificSolutions: {
+        title: "Gaming-Specific Solutions",
+        description: "",
         cards: [
             {
                 title: "AAA Game Studios",
-                lists: [
-                    "Custom blockchain integration",
-                    "Enterprise-grade security",
-                    "Dedicated infrastructure",
-                    "White-glove implementation support"
-                ],
+                description: "Custom blockchain integration, Enterprise-grade security, Dedicated infrastructure, White-glove implementation support",
                 img: "/assets/highlight.webp",
-                imageAlt: "AAA Game Studios",
-                description: ""
             },
             {
                 title: "Indie Game Developers",
-                lists: [
-                    "No-code asset creation tools",
-                    "Affordable gas optimization",
-                    "Template marketplaces",
-                    "Community building resources"
-                ],
+                description: "No-code asset creation tools, Affordable gas optimization, Template marketplaces, Community building resources",
                 img: "/assets/highlight.webp",
-                imageAlt: "Indie Game Developers",
-                description: ""
             },
             {
                 title: "Mobile Game Publishers",
-                lists: [
-                    "App store compliance tools",
-                    "Mobile-optimized wallet experiences",
-                    "Carrier billing integration",
-                    "Push notification systems"
-                ],
+                description: "App store compliance tools, Mobile-optimized wallet experiences, Carrier billing integration, Push notification systems",
                 img: "/assets/highlight.webp",
-                imageAlt: "Mobile Game Publishers",
-                description: ""
             },
             {
                 title: "Esports Platforms",
-                lists: [
-                    "Instant prize distribution",
-                    "Verifiable tournament results",
-                    "Player performance NFTs",
-                    "Sponsorship and advertising integration"
-                ],
+                description: "Instant prize distribution, Verifiable tournament results, Player performance NFTs, Sponsorship and advertising integration",
                 img: "/assets/highlight.webp",
-                imageAlt: "Esports Platforms",
-                description: ""
             },
         ],
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Gaming Solutions",
-    },
-
-    subsection7: {
-        description: "",
-        title: "Success Stories",
         tag: ""
     },
 
-    brandEmailSupport6: {
+    successStories: {
         cards: [
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "RPG Game Implementation",
-                lists: [
-                    "500,000 unique NFT items minted",
-                    "$2.5M in secondary market volume first month",
-                    "40% increase in player retention",
-                    "25% higher average revenue per user"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "RPG Game Implementation",
-                description: ""
+                description: "500,000 unique NFT items minted, $2.5M in secondary market volume first month, 40% increase in player retention, 25% higher average revenue per user",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Racing Game Economy",
-                lists: [
-                    "Custom car part NFTs with interoperability",
-                    "Player-run tuning shops earning real revenue",
-                    "Cross-game car appearances in partner titles",
-                    "300% increase in daily active users"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Racing Game Economy",
-                description: ""
-            }
+                description: "Custom car part NFTs with interoperability, Player-run tuning shops earning real revenue, Cross-game car appearances in partner titles, 300% increase in daily active users",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+            },
         ],
+        title: "Success Stories",
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Success Metrics",
+        description: "",
+        tag: ""
     },
 
     testimonial: {

@@ -203,175 +203,111 @@ export const defiFinancePageData = {
         ],
     },
 
-    subsection4: {
-        description: "",
+    technicalSpecifications: {
         title: "Technical Specifications",
-        tag: ""
-    },
-
-    brandEmailSupport3: {
+        description: "",
+        tag: "",
         cards: [
             {
                 title: "Performance",
-                description: "",
+                description: "Sub-second cross-chain executions, <100ms price feed updates, 99.99% uptime for critical infrastructure, Scalable to 1M+ daily transactions",
                 img: "/assets/highlight.webp",
-                imageAlt: "Performance",
-                lists: [
-                    'Sub-second cross-chain executions',
-                    '<100ms price feed updates',
-                    '99.99% uptime for critical infrastructure',
-                    'Scalable to 1M+ daily transactions',
-                ]
             },
             {
                 title: "Security",
-                description: "",
+                description: "Regular smart contract audits, Bug bounty program management, Real-time exploit monitoring, $100M+ insurance coverage available",
                 img: "/assets/highlight.webp",
-                imageAlt: "Security",
-                lists: [
-                    'Regular smart contract audits',
-                    'Bug bounty program management',
-                    'Real-time exploit monitoring',
-                    '$100M+ insurance coverage available',
-                ]
             },
             {
                 title: "Integration",
-                description: "",
+                description: "Web3.js and Ethers.js support, GraphQL for complex queries, Real-time event streaming, Custom webhook configurations",
                 img: "/assets/highlight.webp",
-                imageAlt: "Integration",
-                lists: [
-                    'Web3.js and Ethers.js support',
-                    'GraphQL for complex queries',
-                    'Real-time event streaming',
-                    'Custom webhook configurations',
-                ]
             },
         ],
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Technical Specifications",
     },
 
-    subsection5: {
-        description: "",
-        title: "Protocol Services",
-        tag: ""
-    },
-
-    brandEmailSupport4: {
+    protocolServices: {
         cards: [
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Governance Systems",
-                lists: ["Token voting infrastructure", "Delegation and snapshot services", "Proposal lifecycle management", "Cross - chain governance support"],
-                img: "/assets/highlight.webp",
-                imageAlt: "Governance Systems",
-                description: ""
+                description: "Token voting infrastructure, Delegation and snapshot services, Proposal lifecycle management, Cross-chain governance support",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Treasury Management",
-                lists: ["Multi-sig wallet systems", "Yield-generating treasury strategies", "Expense management and reporting", "Risk-managed asset allocation"],
-                img: "/assets/highlight.webp",
-                imageAlt: "Treasury Management",
-                description: ""
+                description: "Multi-sig wallet systems, Yield-generating treasury strategies, Expense management and reporting, Risk-managed asset allocation",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "User Experience",
-                lists: ["Pre-built UI components for DeFi", "Mobile-optimized dApp interfaces", "Gasless transaction patterns", "Social login and account abstraction"],
-                img: "/assets/highlight.webp",
-                imageAlt: "User Experience",
-                description: ""
+                description: "Pre-built UI components for DeFi, Mobile-optimized dApp interfaces, Gasless transaction patterns, Social login and account abstraction",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
         ],
+        title: "Protocol Services",
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Protocol Services",
-    },
-
-    subsection6: {
         description: "",
-        title: "Use Cases",
         tag: ""
     },
 
-    brandEmailSupport5: {
+    defiUseCases: {
+        title: "Use Cases",
+        description: "",
+        tag: "",
         cards: [
             {
                 title: "DEX & AMM Development",
-                lists: ["Custom bonding curve implementations", "Concentrated liquidity management", "Fee tier optimization", "Multi-hop routing algorithms"],
+                description: "Custom bonding curve implementations, Concentrated liquidity management, Fee tier optimization, Multi-hop routing algorithms",
                 img: "/assets/highlight.webp",
-                imageAlt: "DEX & AMM Development",
-                description: ""
             },
             {
                 title: "Lending Protocol Creation",
-                lists: ["Isolated and shared risk pools", "Interest rate model development", "Collateral factor optimization", "Credit delegation systems"],
+                description: "Isolated and shared risk pools, Interest rate model development, Collateral factor optimization, Credit delegation systems",
                 img: "/assets/highlight.webp",
-                imageAlt: "Lending Protocol Creation",
-                description: ""
             },
             {
                 title: "Yield Aggregators",
-                lists: ["Strategy automation and optimization", "Risk-adjusted portfolio management", "Cross-protocol asset deployment", "Performance fee mechanisms"],
+                description: "Strategy automation and optimization, Risk-adjusted portfolio management, Cross-protocol asset deployment, Performance fee mechanisms",
                 img: "/assets/highlight.webp",
-                imageAlt: "Yield Aggregators",
-                description: ""
             },
             {
                 title: "Derivatives & Synthetics",
-                lists: ["Perpetual swap infrastructure", "Options trading platforms", "Synthetic asset minting", "Liquidity provider incentives"],
+                description: "Perpetual swap infrastructure, Options trading platforms, Synthetic asset minting, Liquidity provider incentives",
                 img: "/assets/highlight.webp",
-                imageAlt: "Derivatives & Synthetics",
-                description: ""
             },
         ],
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Use Cases",
     },
 
-    subsection7: {
-        description: "",
-        title: "Enterprise Features",
-        tag: ""
-    },
-
-    brandEmailSupport6: {
+    enterpriseFeatures: {
         cards: [
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Custom Development",
-                lists: [
-                    "Protocol-specific risk models",
-                    "Unique tokenomics implementations",
-                    "Custom oracle solutions",
-                    "Specialized governance mechanisms"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Derivatives & Synthetics",
-                description: ""
+                description: "Protocol-specific risk models, Unique tokenomics implementations, Custom oracle solutions, Specialized governance mechanisms",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Security Services",
-                lists: [
-                    "Dedicated audit teams",
-                    "24/7 monitoring and response",
-                    "Insurance program management",
-                    "Compliance and regulatory guidance"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Derivatives & Synthetics",
-                description: ""
+                description: "Dedicated audit teams, 24/7 monitoring and response, Insurance program management, Compliance and regulatory guidance",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Growth Tools",
-                lists: [
-                    "Liquidity bootstrapping programs",
-                    "Community building resources",
-                    "Partnership development support",
-                    "Marketing and token distribution"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Derivatives & Synthetics",
-                description: ""
-            }
-        ]
+                description: "Liquidity bootstrapping programs, Community building resources, Partnership development support, Marketing and token distribution",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+            },
+        ],
+        title: "Enterprise Features",
+        backgroundImage: "/assets/image30.webp",
+        description: "",
+        tag: ""
     },
 
     testimonial: {

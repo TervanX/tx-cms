@@ -270,183 +270,106 @@ export const realEstatePageData = {
         description: "Innovative property financing",
     },
 
-
     complianceFramework: {
+        title: "Compliance Framework",
+        description: "",
         cards: [
             {
                 title: "Real Estate Regulations",
-                lists: [
-                    "SEC regulations for property tokenization",
-                    "Real estate licensing requirements",
-                    "Property disclosure regulations",
-                    "International ownership restrictions"
-                ],
+                description: "SEC regulations for property tokenization, Real estate licensing requirements, Property disclosure regulations, International ownership restrictions",
                 img: "/assets/highlight.webp",
-                imageAlt: "Real Estate Regulations",
-                description: ""
             },
             {
                 title: "Hospitality Standards",
-                lists: [
-                    "PCI DSS for payment processing",
-                    "GDPR for guest data protection",
-                    "Accessibility compliance (ADA)",
-                    "Health and safety regulations"
-                ],
+                description: "PCI DSS for payment processing, GDPR for guest data protection, Accessibility compliance (ADA), Health and safety regulations",
                 img: "/assets/highlight.webp",
-                imageAlt: "Hospitality Standards",
-                description: ""
             },
             {
                 title: "Financial Compliance",
-                lists: [
-                    "KYC/AML for investment transactions",
-                    "Tax reporting and withholding",
-                    "Securities law compliance",
-                    "Cross-border payment regulations"
-                ],
+                description: "KYC/AML for investment transactions, Tax reporting and withholding, Securities law compliance, Cross-border payment regulations",
                 img: "/assets/highlight.webp",
-                imageAlt: "Financial Compliance",
-                description: ""
-            }
+            },
         ],
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Compliance Framework",
-    },
-
-    subsection3: {
-        description: "",
-        title: "Success Metrics",
         tag: ""
     },
 
-    brandEmailSupport2: {
+    successMetrics: {
         cards: [
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Operational Efficiency",
-                lists: [
-                    "60% reduction in administrative costs",
-                    "80% faster booking processing",
-                    "50% decrease in payment processing time",
-                    "40% improvement in space utilization"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Operational Efficiency",
-                description: ""
+                description: "60% reduction in administrative costs, 80% faster booking processing, 50% decrease in payment processing time, 40% improvement in space utilization",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Revenue Enhancement",
-                lists: [
-                    "25% increase in property investment accessibility",
-                    "30% higher guest retention through loyalty programs",
-                    "20% improvement in dynamic pricing effectiveness",
-                    "35% faster vacancy filling"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Revenue Enhancement",
-                description: ""
-            }
+                description: "25% increase in property investment accessibility, 30% higher guest retention through loyalty programs, 20% improvement in dynamic pricing effectiveness, 35% faster vacancy filling",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+            },
         ],
+        title: "Success Metrics",
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Success Metrics",
+        description: "",
+        tag: ""
     },
 
     technicalSpecifications: {
+        title: "Technical Specifications",
+        description: "",
         cards: [
             {
                 title: "Performance",
-                lists: [
-                    "Instant property token transfers",
-                    "Sub-second booking confirmations",
-                    "Real-time IoT data processing",
-                    "99.99% uptime for booking systems"
-                ],
+                description: "Instant property token transfers, Sub-second booking confirmations, Real-time IoT data processing, 99.99% uptime for booking systems",
                 img: "/assets/highlight.webp",
-                imageAlt: "Performance",
-                description: ""
             },
             {
                 title: "Security",
-                lists: [
-                    "SOC 2 Type II certified",
-                    "Biometric authentication integration",
-                    "Quantum-resistant cryptography",
-                    "Regular penetration testing"
-                ],
+                description: "SOC 2 Type II certified, Biometric authentication integration, Quantum-resistant cryptography, Regular penetration testing",
                 img: "/assets/highlight.webp",
-                imageAlt: "Security",
-                description: ""
             },
             {
                 title: "Interoperability",
-                lists: [
-                    "Property management system integration",
-                    "Payment gateway connectivity",
-                    "IoT device standardization",
-                    "Legacy system migration tools"
-                ],
+                description: "Property management system integration, Payment gateway connectivity, IoT device standardization, Legacy system migration tools",
                 img: "/assets/highlight.webp",
-                imageAlt: "Interoperability",
-                description: ""
-            }
+            },
         ],
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Technical Specifications",
+        tag: ""
     },
 
     industrySolutions: {
         cards: [
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Hotel Chains & Resorts",
-                lists: [
-                    "Unified guest profile management",
-                    "Cross-property loyalty programs",
-                    "Dynamic pricing optimization",
-                    "Staff performance tracking"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Hotel Chains & Resorts",
-                description: ""
+                description: "Unified guest profile management, Cross-property loyalty programs, Dynamic pricing optimization, Staff performance tracking",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Vacation Rental Platforms",
-                lists: [
-                    "Automated host payout systems",
-                    "Guest verification and screening",
-                    "Property maintenance coordination",
-                    "Multi-calendar synchronization"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Vacation Rental Platforms",
-                description: ""
+                description: "Automated host payout systems, Guest verification and screening, Property maintenance coordination, Multi-calendar synchronization",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Commercial Property Managers",
-                lists: [
-                    "Tenant lease administration",
-                    "Building operations optimization",
-                    "Energy management and reporting",
-                    "Space utilization analytics"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Commercial Property Managers",
-                description: ""
+                description: "Tenant lease administration, Building operations optimization, Energy management and reporting, Space utilization analytics",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
             },
             {
+                backgroundImage: "/assets/image30.webp",
                 title: "Real Estate Developers",
-                lists: [
-                    "Project financing and investor relations",
-                    "Construction progress tracking",
-                    "Pre-sales and reservation management",
-                    "Community development platforms"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Real Estate Developers",
-                description: ""
-            }
+                description: "Project financing and investor relations, Construction progress tracking, Pre-sales and reservation management, Community development platforms",
+                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+            },
         ],
+        title: "Industry Solutions",
         backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Industry Solutions",
+        description: "",
+        tag: ""
     },
 
     testimonial: {

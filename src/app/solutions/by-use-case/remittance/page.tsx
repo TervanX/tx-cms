@@ -55,34 +55,16 @@ const Page = () => {
       <div className="py-12 mt-8">
         <DottedLine fill="gray" />
       </div>
-      <EngageCustomersSection {...remittancePageData.engageCustomers} />
-      <div className="w-[90%] lg:w-[80%] mx-auto">
-        <SubSection
-          title={remittancePageData.subsection4.title}
-          description={remittancePageData.subsection4.description}
-          children={
-            <BrandEmailSupport {...remittancePageData.brandEmailSupport3} />
-          }
-          tag={remittancePageData.subsection4.tag}
-        />
-        <SubSection
-          title={remittancePageData.subsection5.title}
-          description={remittancePageData.subsection5.description}
-          children={
-            <BrandEmailSupport {...remittancePageData.brandEmailSupport4} />
-          }
-          tag={remittancePageData.subsection5.tag}
-        />
-        <SubSection
-          title={remittancePageData.subsection6.title}
-          description={remittancePageData.subsection6.description}
-          children={
-            <BrandEmailSupport {...remittancePageData.brandEmailSupport5} />
-          }
-          tag={remittancePageData.subsection6.tag}
-        />
-
+      <LiveChat {...remittancePageData.integrationOptions} />
+      <GlobalWhatsapp {...remittancePageData.corridorSolutions} />
+      <div className="py-12 mt-8">
+        <DottedLine fill="gray" />
       </div>
+      <LiveChat {...remittancePageData.successMetrics} />
+      <div className="py-12 mt-8">
+        <DottedLine fill="gray" />
+      </div>
+      <EngageCustomersSection {...remittancePageData.engageCustomers} />
       <TestimonialCarousel {...remittancePageData.testimonial} />
       <BannerCTA {...remittancePageData.bannerCTA} />
     </div>
