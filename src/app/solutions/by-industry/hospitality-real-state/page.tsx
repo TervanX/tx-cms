@@ -51,24 +51,12 @@ const Page = () => {
       <CallAndConversation
         {...realEstatePageData.callAndConversation}
       />
-      <div className="py-6 lg:py-20">
-        <DottedLine fill="gray" />
-      </div>
       <LiveChat {...realEstatePageData.liveChat} />
       <GlobalWhatsapp {...realEstatePageData.globalWhatsapp} />
-      <div className="py-6 lg:py-20">
-        <DottedLine fill="gray" />
-      </div>
       <LiveChat {...realEstatePageData.commercialRealEstate} />
       <GlobalWhatsapp {...realEstatePageData.realEstateFinance} />
-      <div className="py-12 mt-8">
-        <DottedLine fill="gray" />
-      </div>
       <LiveChat {...realEstatePageData.complianceFramework} />
       <GlobalWhatsapp {...realEstatePageData.successMetrics} />
-      <div className="py-12 mt-8">
-        <DottedLine fill="gray" />
-      </div>
       <LiveChat {...realEstatePageData.technicalSpecifications} />
       <GlobalWhatsapp {...realEstatePageData.industrySolutions} />
       <div className="py-12 mt-8">

@@ -47,24 +47,12 @@ const Page = () => {
         <DottedLine fill="gray" />
       </div>
       <CallAndConversation {...defiFinancePageData.callAndConversation} />
-      <div className="py-6 lg:py-20">
-        <DottedLine fill="gray" />
-      </div>
       <LiveChat {...defiFinancePageData.liveChat} />
       <GlobalWhatsapp {...defiFinancePageData.globalWhatsapp} />
-      <div className="py-12">
-        <DottedLine fill="gray" />
-      </div>
       <LiveChat {...defiFinancePageData.liveChat2} />
       <GlobalWhatsapp {...defiFinancePageData.technicalSpecifications} />
-      <div className="py-12 mt-8">
-        <DottedLine fill="gray" />
-      </div>
       <LiveChat {...defiFinancePageData.protocolServices} />
       <GlobalWhatsapp {...defiFinancePageData.defiUseCases} />
-      <div className="py-12 mt-8">
-        <DottedLine fill="gray" />
-      </div>
       <LiveChat {...defiFinancePageData.enterpriseFeatures} />
       <div className="py-12 mt-8">
         <DottedLine fill="gray" />

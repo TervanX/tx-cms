@@ -44,24 +44,12 @@ const Page = () => {
         <DottedLine fill="gray" />
       </div>
       <CallAndConversation {...energyPageData.callAndConversation} />
-      <div className="py-6 lg:py-20">
-        <DottedLine fill="gray" />
-      </div>
       <LiveChat {...energyPageData.liveChat} />
       <GlobalWhatsapp {...energyPageData.globalWhatsapp} />
-      <div className="py-12 mt-8">
-        <DottedLine fill="gray" />
-      </div>
       <LiveChat {...energyPageData.energyAssetManagement} />
       <GlobalWhatsapp {...energyPageData.technicalSpecifications} />
-      <div className="py-12 mt-8">
-        <DottedLine fill="gray" />
-      </div>
       <LiveChat {...energyPageData.industrySolutions} />
       <GlobalWhatsapp {...energyPageData.successMetrics} />
-      <div className="py-12 mt-8">
-        <DottedLine fill="gray" />
-      </div>
       <LiveChat {...energyPageData.regulatoryCompliance} />
       <div className="py-12 mt-8">
         <DottedLine fill="gray" />
