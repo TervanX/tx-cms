@@ -54,18 +54,9 @@ const Page = () => {
       </div>
       <LiveChat {...fintechPlatformsPageData.liveChat} />
       <GlobalWhatsapp {...fintechPlatformsPageData.globalWhatsapp} />
-      <div className="py-12 mt-8">
-        <DottedLine fill="gray" />
-      </div>
       <LiveChat {...fintechPlatformsPageData.technicalExcellence} />
       <GlobalWhatsapp {...fintechPlatformsPageData.useCases} />
-      <div className="py-12 mt-8">
-        <DottedLine fill="gray" />
-      </div>
       <LiveChat {...fintechPlatformsPageData.enterpriseGradeFeatures} />
-      <div className="py-12 mt-8">
-        <DottedLine fill="gray" />
-      </div>
       <EngageCustomersSection {...fintechPlatformsPageData.engageCustomers} />
       <TestimonialCarousel {...fintechPlatformsPageData.testimonial} />
       <BannerCTA {...fintechPlatformsPageData.bannerCTA} />

@@ -49,19 +49,10 @@ const Page = () => {
         <DottedLine fill="gray" />
       </div>
       <CallAndConversation {...cryptoExchangesPageData.callAndConversation} />
-      <div className="py-6 lg:py-20">
-        <DottedLine fill="gray" />
-      </div>
       <LiveChat {...cryptoExchangesPageData.liveChat} />
       <GlobalWhatsapp {...cryptoExchangesPageData.globalWhatsapp} />
-      <div className="py-12 mt-8">
-        <DottedLine fill="gray" />
-      </div>
       <LiveChat {...cryptoExchangesPageData.technicalSpecifications} />
       <GlobalWhatsapp {...cryptoExchangesPageData.keyProducts} />
-      <div className="py-12 mt-8">
-        <DottedLine fill="gray" />
-      </div>
       <LiveChat {...cryptoExchangesPageData.exchangeUseCases} />
       <GlobalWhatsapp {...cryptoExchangesPageData.enterpriseFeatures} />
       <div className="py-12 mt-8">
