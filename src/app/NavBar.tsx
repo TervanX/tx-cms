@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { IoIosArrowForward, IoIosArrowDown, IoMdClose } from "react-icons/io";
 import Button from "@/components/reusable/Button";
 import { Menu } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 interface NavItem {
   label: string;
@@ -90,6 +91,7 @@ const Header = () => {
 };
 
 const DeskTopNavbar = () => {
+  const router = useRouter();
   return (
     <div className="py-4 hidden lg:flex items-center justify-between">
       <div className="flex gap-10 items-center justify-start">
@@ -117,8 +119,15 @@ const DeskTopNavbar = () => {
           <span className="absolute inset-0 block w-full rounded-md transition-all duration-400 bg-[#0d07ed] group-hover:bg-white/80"></span>
           <span className="relative z-10 text-[#f0f0f2]">Get Started</span>
         </button>
-        <Button size="md" variant="primary" type="button" onClick={() => {}}>
-          Sign up for free
+        <Button
+          size="md"
+          variant="primary"
+          type="button"
+          onClick={() => {
+            router.push("/contact/request-access");
+          }}
+        >
+          Request Access
         </Button>
       </div>
     </div>
@@ -149,7 +158,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ toggle, isOpen }) => {
       </div>
       <div className="flex items-center gap-4 justify-end">
         <Button size="md" variant="primary" type="button" onClick={() => {}}>
-          Sign up for free
+          Request Access
         </Button>
 
         <button onClick={toggle}>
@@ -270,6 +279,7 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, onClose }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const handleToggle = (index: number) => {
+    console.log(index);
     setOpenIndex(openIndex === index ? null : index);
   };
 

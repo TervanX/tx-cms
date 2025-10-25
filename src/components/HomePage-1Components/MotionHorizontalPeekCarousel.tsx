@@ -87,8 +87,8 @@ const TabsNav: React.FC<{
             key={s.id}
             onClick={() => onSelect(s.id)}
             className={`w-full whitespace-nowrap rounded p-4 text-xs transition-all ${index === i
-                ? "bg-yellow1"
-                : "bg-[#f7f5f2] text-neutral-900 hover:bg-neutral-100"
+              ? "bg-yellow1"
+              : "bg-[#f7f5f2] text-neutral-900 hover:bg-neutral-100"
               }`}
             aria-selected={index === i}
             role="tab"

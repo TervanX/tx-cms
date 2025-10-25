@@ -10,26 +10,26 @@ const BOTTOM_URL = "/assets/bottom.svg";
 
 const items = [
   {
-    title: "DATA",
-    description: "Access our B2B database of over 200 million contacts",
+    title: "INFRASTRUCTURE",
+    description: "Power every transaction — from payments to digital assets",
     scrollUrl: "/assets/1.svg",
     stackUrl: "/assets/1.svg",
   },
   {
     title: "INTEGRATIONS",
-    description: "Connect with your favorite tools and platforms",
+    description: "Connect seamlessly with banks, chains, and protocols",
     scrollUrl: "/assets/2.svg",
     stackUrl: "/assets/3.svg",
   },
   {
-    title: "ACTIONS",
-    description: "Automate your sales workflow with powerful actions",
+    title: "COMPLIANCE",
+    description: "Enterprise-grade security and regulatory coverage",
     scrollUrl: "/assets/4.svg",
     stackUrl: "/assets/5.svg",
   },
   {
-    title: "AI",
-    description: "Leverage AI to optimize your sales process",
+    title: "AI & AUTOMATION",
+    description: "The intelligent core for financial operations",
     scrollUrl: "/assets/6.svg",
     stackUrl: "/assets/7.svg",
   },

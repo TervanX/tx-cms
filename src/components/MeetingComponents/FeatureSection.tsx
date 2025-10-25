@@ -1,18 +1,19 @@
 import React from "react";
 import { FeatureSectionProps, FeatureItem } from "@/app/types/product.types";
 
-
 const FeatureSection: React.FC<FeatureSectionProps> = ({ data, index }) => {
   const isEven = index % 2 === 0;
   return (
     <div
-      className={`scroll-mt-20 font-grotesque lg:h-screen ${isEven ? "bg-white" : "bg-bg-blue"
-        }`}
+      className={`scroll-mt-20 font-grotesque lg:h-screen ${
+        isEven ? "bg-white" : "bg-bg-blue"
+      }`}
     >
       <div className="container">
         <div
-          className={`flex flex-col-reverse w-full ${isEven ? " lg:flex-row-reverse" : "lg:flex-row"
-            } items-stretch`}
+          className={`flex flex-col-reverse w-full ${
+            isEven ? " lg:flex-row-reverse" : "lg:flex-row"
+          } items-stretch`}
         >
           {/* Text Content */}
           <div className="lg:w-1/2 pl-4 pr-4 lg:pl-20 lg:gap-12 py-6 lg:py-18 px-4 lg:pr-32   lg:h-screen">
@@ -52,8 +53,9 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({ data, index }) => {
               width={data.image.width}
               height={data.image.height}
               decoding="async"
-              className={`w-full ${data.image.height ? data.image.height : "h-auto lg:h-screen"
-                } `}
+              className={`w-full ${
+                data.image.height ? data.image.height : "h-auto lg:h-screen"
+              } `}
               srcSet={`
                 ${data.image.src}?w=1200&q=75 1x,
                 ${data.image.src}?w=3840&q=75 2x
@@ -98,8 +100,8 @@ export const featuresData: FeatureItem[] = [
         availability or even distribution. .
       </>
     ),
-    ctaText: "Sign up for free",
-    ctaLink: "/sign-up",
+    ctaText: "Request Access",
+    ctaLink: "/contact/request-access",
     image: {
       src: "/assets/submitted.webp",
       alt: "Illustration for Find and Close the Right Buyers with Apollo's B2B Database",
@@ -137,8 +139,8 @@ export const featuresData: FeatureItem[] = [
         pipeline faster, all while syncing with your CRM.
       </>
     ),
-    ctaText: "Sign up for free",
-    ctaLink: "/sign-up",
+    ctaText: "Request Access",
+    ctaLink: "/contact/request-access",
     image: {
       src: "/assets/insights.webp",
       alt: "Illustration for bigger deals Apollo's B2B Database ",

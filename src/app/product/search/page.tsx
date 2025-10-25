@@ -17,8 +17,8 @@ const ProductPage: React.FC = () => {
         heading="Better B2B lead generation & prospecting"
         subheading="With the world's largest living data network and AI recommendations, your best leads are just a search away."
         primaryButton={{
-          text: "Sign up for free",
-          href: "/sign-up",
+          text: "Request Access",
+          href: "/contact/request-access",
         }}
         secondaryButton={{
           text: "Get a demo",

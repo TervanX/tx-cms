@@ -1,6 +1,6 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function FooterCTA() {
   return (
@@ -8,7 +8,7 @@ export default function FooterCTA() {
       <div className="w-full max-w-[1872px]">
         <div className="h-0"></div>
         <div className="mt-3 overflow-hidden rounded-t-xl ">
-          <div className="relative" style={{ backgroundColor: '#D1ECFF' }}>
+          <div className="relative" style={{ backgroundColor: "#D1ECFF" }}>
             <div className="px-5 md:px-7 lg:px-9 xl:px-[54px] 2xl:px-[72px]">
               <div className="flex w-full md:gap-6 justify-between">
                 {/* Left Content Section */}
@@ -17,11 +17,12 @@ export default function FooterCTA() {
 
                   <div
                     className="relative z-10 flex flex-col justify-between gap-6 md:gap-20 md:max-xl:min-h-0"
-                    style={{ minHeight: 'calc(90vh - 80px - 80px)' }}
+                    style={{ minHeight: "calc(90vh - 80px - 80px)" }}
                   >
                     {/* Heading */}
                     <h3 className="text-[40px] tracking-[-0.8px] leading-none md:text-[48px] md:tracking-[-0.96px] lg:text-[56px] lg:tracking-[-1.12px] xl:text-[64px] xl:tracking-[-1.28px] 2xl:text-[72px] 2xl:tracking-[-1.44px] font-medium text-gray-900 xl:max-w-[521px] 2xl:max-w-[559px]">
-                      The best sales platform in the world, at an (almost) unbelievable value
+                      The best financial infrastructure platform — at an
+                      (almost) unbelievable value
                     </h3>
 
                     {/* Mobile Image */}
@@ -38,7 +39,10 @@ export default function FooterCTA() {
                     {/* Description and CTA Buttons */}
                     <div className="flex flex-col gap-8 md:max-w-[273px] lg:max-w-[368px] xl:max-w-[413px]">
                       <p className="text-[16px] leading-[130%] 2xl:text-[18px] text-gray-700">
-                        You don&apos;t have to spend a fortune to run a world-class revenue-generating machine. Replace ZoomInfo, Outreach, Salesloft, Gong, Chili Piper, and more with Apollo to cut costs and get better results.
+                        You don’t need to spend a fortune to build a world-class
+                        financial ecosystem. TervanX replaces multiple providers
+                        — Stripe, Fireblocks, Alchemy, Chainalysis, and more —
+                        into one powerful, compliant layer.
                       </p>
 
                       <div className="flex flex-col gap-4 md:flex-row">
@@ -59,7 +63,7 @@ export default function FooterCTA() {
                         </Link>
 
                         <Link
-                          href="/sign-up"
+                          href="/contact/request-access"
                           className="w-full whitespace-nowrap md:w-fit"
                         >
                           <button

@@ -6,7 +6,6 @@ const layout = ({ children }: { children: React.ReactNode }) => {
         <div className="lg:pt-18 pt-10 font-sans">
             <Header />
             {children}
-            <Footer />
         </div>
     );
 };
