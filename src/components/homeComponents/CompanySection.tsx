@@ -17,7 +17,8 @@ export default function CompaniesSection() {
             <div className="flex flex-col gap-12 md:gap-16">
               <div className="flex flex-col items-center gap-4  lg:flex-row lg:justify-between">
                 <p className="text-xs font-mono uppercase tracking-wider text-gray-600">
-                  Join over 500,000 businesses using Apollo
+                  Join over 50,000 developers and financial teams building on
+                  TervanX{" "}
                 </p>
 
                 {/* Company Logos Grid */}
@@ -28,8 +29,9 @@ export default function CompaniesSection() {
               <div className="flex flex-col gap-6 lg:flex-row lg:items-end">
                 <div className="flex-[2_2_0%]">
                   <h3 className="text-4xl font-medium leading-tight tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
-                    &quot;Apollo supports people who want to be innovative — to
-                    do something new.&quot;
+                    &quot;TervanX enables us to ship new payment and crypto
+                    capabilities in weeks, not months — securely and globally.
+                    &quot;
                   </h3>
                 </div>
                 <div className="flex-1">
@@ -59,7 +61,7 @@ export default function CompaniesSection() {
               <div className="flex min-h-36 flex-1 flex-col justify-between rounded-lg bg-white p-4 shadow-md md:h-40 lg:h-56 lg:p-6">
                 <div className="flex flex-col-reverse justify-between gap-2 lg:flex-row">
                   <p className="text-base text-gray-600 lg:max-w-32">
-                    5x meetings booked
+                    Trusted by modern finance builders
                   </p>
                   <Image
                     src="/assets/smartling.svg"
@@ -77,7 +79,7 @@ export default function CompaniesSection() {
               <div className="flex min-h-36 flex-1 flex-col justify-between rounded-lg bg-white p-4 shadow-md md:h-40 lg:h-56 lg:p-6">
                 <div className="flex flex-col-reverse justify-between gap-2 lg:flex-row">
                   <p className="text-base text-gray-600 lg:max-w-32">
-                    2x increase in email open rate
+                    3x faster time-to-market with unified APIs
                   </p>
                   <Image
                     src="/assets/smartling.svg"
@@ -87,7 +89,7 @@ export default function CompaniesSection() {
                   />
                 </div>
                 <h1 className="text-5xl font-medium leading-none tracking-tight text-[#3F3653]0 md:text-6xl lg:text-7xl">
-                  2x
+                  3x
                 </h1>
               </div>
 
@@ -95,7 +97,7 @@ export default function CompaniesSection() {
               <div className="flex min-h-36 flex-1 flex-col justify-between rounded-lg bg-white p-4 shadow-md md:h-40 lg:h-56 lg:p-6">
                 <div className="flex flex-col-reverse justify-between gap-2 lg:flex-row">
                   <p className="text-base text-gray-600 lg:max-w-32">
-                    400% more phone numbers
+                    99.99% uptime across fiat and crypto infrastructure
                   </p>
                   <Image
                     src="/assets/smartling.svg"
@@ -105,7 +107,24 @@ export default function CompaniesSection() {
                   />
                 </div>
                 <h1 className="text-5xl font-medium leading-none tracking-tight text-[#3F3653]0 md:text-6xl lg:text-7xl">
-                  400%
+                  99.99%{" "}
+                </h1>
+              </div>
+              {/* Card 4 */}
+              <div className="flex min-h-36 flex-1 flex-col justify-between rounded-lg bg-white p-4 shadow-md md:h-40 lg:h-56 lg:p-6">
+                <div className="flex flex-col-reverse justify-between gap-2 lg:flex-row">
+                  <p className="text-base text-gray-600 lg:max-w-32">
+                    60% reduction in compliance and operations cost{" "}
+                  </p>
+                  <Image
+                    src="/assets/smartling.svg"
+                    width={50}
+                    height={50}
+                    alt="smart logo"
+                  />
+                </div>
+                <h1 className="text-5xl font-medium leading-none tracking-tight text-[#3F3653]0 md:text-6xl lg:text-7xl">
+                  60%{" "}
                 </h1>
               </div>
             </div>

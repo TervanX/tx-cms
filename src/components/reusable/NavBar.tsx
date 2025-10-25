@@ -636,68 +636,68 @@ const navItems: NavItemInterface[] = [
         description: "Find the right people and book quality meetings",
         linkTitle: "Sales Leaders",
         links: [
-          {
-            href: "/resources/support/support-center",
-            text: "Support Center ",
-          },
+          // {
+          //   href: "/resources/support/support-center",
+          //   text: "Support Center ",
+          // },
           // {
           //   href: "/resources/support/managed-support-plans",
           //   text: "Managed Support Plans",
           // },
           {
-            href: "/resources/support/contact-support",
+            href: "/contact/contact",
             text: "Contact Support",
           },
-          { href: "/contact/contact-sales", text: "Contact sales" },
+          { href: "/contact/contact", text: "Contact sales" },
         ],
       },
-      {
-        logo: (
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 18 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g id="Vector">
-              <path
-                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
-                fill="black"
-              ></path>
-              <path
-                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
-                fill="black"
-              ></path>
-              <path
-                d="M11.8502 3.02548C13.0375 3.02548 13.996 3.98391 13.996 5.17121V16H17.0143V6.44434C17.0143 2.88958 14.1319 0 10.57 0H0.985687V3.01833H11.8431L11.8502 3.02548Z"
-                fill="black"
-              ></path>
-              <path
-                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
-                fill="black"
-              ></path>
-              <path
-                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
-                fill="black"
-              ></path>
-            </g>
-          </svg>
-        ),
-        title: "Learn",
-        description: "Find the right people and book quality meetings",
-        linkTitle: "Sales Leaders",
-        links: [
-          { href: "/resources/learn/blog", text: "Blog " },
-          { href: "/resources/learn/case-studies", text: "Case Studies " },
-          { href: "/resources/learn/documentation", text: "Documentation " },
-          { href: "/resources/learn/guides", text: "Guides " },
-          {
-            href: "/resources/learn/tervanx-sessions",
-            text: "Tervanx Sessions (Annual Dev Summit) ",
-          },
-        ],
-      },
+      // {
+      //   logo: (
+      //     <svg
+      //       width="20"
+      //       height="20"
+      //       viewBox="0 0 18 16"
+      //       fill="none"
+      //       xmlns="http://www.w3.org/2000/svg"
+      //     >
+      //       <g id="Vector">
+      //         <path
+      //           d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+      //           fill="black"
+      //         ></path>
+      //         <path
+      //           d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+      //           fill="black"
+      //         ></path>
+      //         <path
+      //           d="M11.8502 3.02548C13.0375 3.02548 13.996 3.98391 13.996 5.17121V16H17.0143V6.44434C17.0143 2.88958 14.1319 0 10.57 0H0.985687V3.01833H11.8431L11.8502 3.02548Z"
+      //           fill="black"
+      //         ></path>
+      //         <path
+      //           d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+      //           fill="black"
+      //         ></path>
+      //         <path
+      //           d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+      //           fill="black"
+      //         ></path>
+      //       </g>
+      //     </svg>
+      //   ),
+      //   title: "Learn",
+      //   description: "Find the right people and book quality meetings",
+      //   linkTitle: "Sales Leaders",
+      //   links: [
+      //     { href: "/resources/learn/blog", text: "Blog " },
+      //     { href: "/resources/learn/case-studies", text: "Case Studies " },
+      //     { href: "/resources/learn/documentation", text: "Documentation " },
+      //     { href: "/resources/learn/guides", text: "Guides " },
+      //     {
+      //       href: "/resources/learn/tervanx-sessions",
+      //       text: "Tervanx Sessions (Annual Dev Summit) ",
+      //     },
+      //   ],
+      // },
       {
         logo: (
           <svg
@@ -736,19 +736,19 @@ const navItems: NavItemInterface[] = [
         linkTitle: "Sales Leaders",
         links: [
           {
-            href: "/resources/company_partners/become-a-partner",
+            href: "/contact/contact",
             text: "Become a Partner",
           },
           {
-            href: "/resources/company_partners/professional-services",
+            href: "/contact/contact",
             text: "Professional Services (Integration Assistance)",
           },
-          {
-            href: "/resources/company_partners/partner-program",
-            text: "Partner Program ",
-          },
-          { href: "/resources/company_partners/jobs", text: "Jobs " },
-          { href: "/resources/company_partners/newsroom", text: "Newsroom" },
+          // {
+          //   href: "/resources/company_partners/partner-program",
+          //   text: "Partner Program ",
+          // },
+          // { href: "/resources/company_partners/jobs", text: "Jobs " },
+          // { href: "/resources/company_partners/newsroom", text: "Newsroom" },
         ],
       },
     ],
@@ -820,21 +820,21 @@ const navItems: NavItemInterface[] = [
         linkTitle: "Sales Leaders",
         links: [
           {
-            href: "/developers/documentation/get-started",
+            href: "/contact/request-access",
             text: "Get Started",
           },
           { href: "/developers/documentation", text: "Prebuilt Components" },
           {
-            href: "/developers/documentation/libraries-and-SDKs",
+            href: "/contact/request-access",
             text: "Libraries & SDKs",
           },
-          { href: "/developers/api-and-reference", text: "API Reference" },
+          { href: "/contact/request-access", text: "API Reference" },
           {
-            href: "/developers/documentation/webhook-reference",
+            href: "/contact/request-access",
             text: "Webhook Reference",
           },
           {
-            href: "/developers/documentation/guides",
+            href: "/contact/request-access",
             text: "Guides",
           },
         ],
@@ -877,15 +877,15 @@ const navItems: NavItemInterface[] = [
         linkTitle: "Sales Leaders",
         links: [
           {
-            href: "/developers/api-and-reference/api-and-reference",
+            href: "/contact/request-access",
             text: "CMS Plugins ",
           },
           {
-            href: "/developers/api-and-reference/erp-integrations",
+            href: "/contact/request-access",
             text: "ERP Integrations",
           },
           {
-            href: "/developers/api-and-reference/api-sandbox",
+            href: "/contact/request-access",
             text: "API Sandbox",
           },
         ],
@@ -928,7 +928,7 @@ const navItems: NavItemInterface[] = [
         linkTitle: "Sales Leaders",
         links: [
           {
-            href: "/developers/developer-tools/tx-console",
+            href: "/contact/request-access",
             text: "Tx Console",
           },
           {
@@ -936,7 +936,7 @@ const navItems: NavItemInterface[] = [
             text: "API Changelog",
           },
           {
-            href: "/developers/developer-tools/tx-apps-SDK",
+            href: "/contact/request-access",
             text: "TX Apps SDK",
           },
           {
@@ -945,59 +945,59 @@ const navItems: NavItemInterface[] = [
           },
         ],
       },
-      {
-        logo: (
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 18 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g id="Vector">
-              <path
-                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
-                fill="black"
-              ></path>
-              <path
-                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
-                fill="black"
-              ></path>
-              <path
-                d="M11.8502 3.02548C13.0375 3.02548 13.996 3.98391 13.996 5.17121V16H17.0143V6.44434C17.0143 2.88958 14.1319 0 10.57 0H0.985687V3.01833H11.8431L11.8502 3.02548Z"
-                fill="black"
-              ></path>
-              <path
-                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
-                fill="black"
-              ></path>
-              <path
-                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
-                fill="black"
-              ></path>
-            </g>
-          </svg>
-        ),
-        title: "Ecosystem",
-        description: "Full technical resources and integration docs. ",
-        linkTitle: "lorewm raser",
-        links: [
-          {
-            href: "/developers/ecosystem/tx-marketplace",
-            text: "Tx Marketplace ",
-          },
-          {
-            href: "/developers/ecosystem/partner-network",
-            text: "Partner Network ",
-          },
-          { href: "/developers/ecosystem/tx-studio", text: "Tx Studio  " },
-          { href: "/developers/ecosystem/tx-ventures", text: "Tx Ventures" },
-          {
-            href: "/developers/ecosystem/partner-network",
-            text: "Partner Network ",
-          },
-        ],
-      },
+      // {
+      //   logo: (
+      //     <svg
+      //       width="20"
+      //       height="20"
+      //       viewBox="0 0 18 16"
+      //       fill="none"
+      //       xmlns="http://www.w3.org/2000/svg"
+      //     >
+      //       <g id="Vector">
+      //         <path
+      //           d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+      //           fill="black"
+      //         ></path>
+      //         <path
+      //           d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+      //           fill="black"
+      //         ></path>
+      //         <path
+      //           d="M11.8502 3.02548C13.0375 3.02548 13.996 3.98391 13.996 5.17121V16H17.0143V6.44434C17.0143 2.88958 14.1319 0 10.57 0H0.985687V3.01833H11.8431L11.8502 3.02548Z"
+      //           fill="black"
+      //         ></path>
+      //         <path
+      //           d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+      //           fill="black"
+      //         ></path>
+      //         <path
+      //           d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+      //           fill="black"
+      //         ></path>
+      //       </g>
+      //     </svg>
+      //   ),
+      //   title: "Ecosystem",
+      //   description: "Full technical resources and integration docs. ",
+      //   linkTitle: "lorewm raser",
+      //   links: [
+      //     {
+      //       href: "/developers/ecosystem/tx-marketplace",
+      //       text: "Tx Marketplace ",
+      //     },
+      //     {
+      //       href: "/developers/ecosystem/partner-network",
+      //       text: "Partner Network ",
+      //     },
+      //     { href: "/developers/ecosystem/tx-studio", text: "Tx Studio  " },
+      //     { href: "/developers/ecosystem/tx-ventures", text: "Tx Ventures" },
+      //     {
+      //       href: "/developers/ecosystem/partner-network",
+      //       text: "Partner Network ",
+      //     },
+      //   ],
+      // },
     ],
     platforms: [
       {
@@ -1174,8 +1174,13 @@ const MobileNav: React.FC<MobileNavProps> = ({ toggle, isOpen }) => {
         </Link>
       </div>
       <div className="flex items-center gap-4 justify-end">
-        <Button size="md" variant="primary" type="button" onClick={() => { }}>
-          Sign up for free
+        <Button
+          size="md"
+          variant="primary"
+          type="button"
+          href="/contact/request-access"
+        >
+          Request Access
         </Button>
 
         <button onClick={toggle}>
@@ -1283,8 +1288,8 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, onClose }) => {
           <AccordionItem
             key={index}
             nav={item}
-            isOpen={openIndex === 1}
-            onToggle={() => handleToggle(1)}
+            isOpen={openIndex === index}
+            onToggle={() => handleToggle(index)}
           />
         ))}
       </div>
@@ -1332,14 +1337,16 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
         aria-expanded={isOpen}
       >
         <h6 className="text-2xl  font-medium text-dark pr-8"> {nav.title}</h6>
-        <div className={`flex-shrink-0 transition-transform duration-200`}>
-          {isOpen ? <IoIosArrowDown /> : <IoIosArrowForward />}
-        </div>
+        {nav.solutions && (
+          <div className={`flex-shrink-0 transition-transform duration-200`}>
+            {isOpen ? <IoIosArrowDown /> : <IoIosArrowForward />}
+          </div>
+        )}
       </button>
-
       <div
-        className={`overflow-y-scroll transition-all duration-300 ease-in-out px-6 ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-          }`}
+        className={`overflow-y-scroll transition-all duration-300 ease-in-out px-6 ${
+          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        }`}
       >
         <div className="pb-5 text-dark text-sm lg:text-base leading-relaxed  border-gray-200 border-t-[1.5px] pt-4">
           <div className="flex flex-col lg:flex-row gap-6 ">

@@ -55,15 +55,15 @@ const footerData: FooterSection[] = [
       { label: "Contact Sales", href: "#" },
     ],
   },
-  {
-    title: "Miscellaneous",
-    links: [
-      { label: "Sitemap", href: "#" },
-      { label: "Sign In", href: "#" },
-      { label: "Dashboard", href: "#" },
-      { label: "Get Started", href: "#" },
-    ],
-  },
+  // {
+  //   title: "Miscellaneous",
+  //   links: [
+  //     { label: "Sitemap", href: "#" },
+  //     { label: "Sign In", href: "#" },
+  //     { label: "Dashboard", href: "#" },
+  //     { label: "Get Started", href: "#" },
+  //   ],
+  // },
 ];
 
 const legalLinks: FooterLink[] = [

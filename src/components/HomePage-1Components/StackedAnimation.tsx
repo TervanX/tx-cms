@@ -10,7 +10,7 @@ const BOTTOM_URL = "/assets/bottom.svg";
 
 const items = [
   {
-    title: "DATA",
+    title: "INFRASTRUCTURE",
     description: "Access our B2B database of over 200 million contacts",
     scrollUrl: "/assets/1.svg",
     stackUrl: "/assets/1.svg",
