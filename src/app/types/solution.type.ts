@@ -32,6 +32,8 @@ export interface LiveChatProps {
 interface CardItem {
     title: string;
     description: string;
+    code?: string;
+    language?: string;
     img: string;
     backgroundImage?: string;
     imageAlt?: string;
@@ -49,10 +51,6 @@ interface ColumnItem {
     description: string;
     imageSrc: string;
     imageAlt: string;
-    list?: {
-        items: string[
-        ]
-    };
 }
 
 export interface EngageCustomersProps {

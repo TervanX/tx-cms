@@ -35,13 +35,16 @@ const SubSection: React.FC<SectionProps> = ({
           >
             {title}
           </h1>
-          <p
-            className={`font-grotesque text-xs lg:text-base   ${
-              alignLeft ? "text-left" : "text-center"
-            } `}
-          >
-            {description}
-          </p>
+          {description && (
+            <p
+              className={`font-grotesque text-xs lg:text-base   ${
+                alignLeft ? "text-left" : "text-center"
+              } `}
+            >
+              {description}
+            </p>
+          )}
+
           {ctaButton}
           <div className="flex flex-col sm:flex-row gap-4 justify-start items-center pt-4">
             {primaryButton && (

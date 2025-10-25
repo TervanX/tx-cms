@@ -1,7 +1,7 @@
 export const startupPageData = {
     heroSection: {
         heading: "Startups",
-        subheading: "Build your product on TervanX infrastructure",
+        subheading: "Build and scale your startup on TervanX infrastructure",
         tag: "",
         primaryButton: {
             text: "Login",
@@ -91,18 +91,24 @@ export const startupPageData = {
                 description:
                     "Integrate once and support every major blockchain and token—future-proofing your startup’s product roadmap.",
                 img: "/assets/highlight.webp",
+                backgroundImage: "/assets/image30.webp",
+
             },
             {
                 title: "Pre-built & customizable UI kits",
                 description:
                     "Accelerate time-to-market with embeddable, brandable wallet components. Deliver a native wallet experience without building UI from scratch.",
                 img: "/assets/highlight.webp",
+                backgroundImage: "/assets/image30.webp",
+
             },
             {
                 title: "AI-driven key management",
                 description:
                     "Leverage MPC technology and social recovery options to keep user assets secure—without the risk of a single point of failure.",
                 img: "/assets/highlight.webp",
+                backgroundImage: "/assets/image30.webp",
+
             },
         ]
     },
@@ -168,33 +174,6 @@ export const startupPageData = {
 
     engageCustomers: {
         badgeText: "",
-        // title: "Engage customers on the apps they use everyday",
-        // columns: [
-        //     {
-        //         title: "Instagram",
-        //         description:
-        //             "Respond to Instagram DMs, story replies and mentions directly from Intercom, and interact with customers using rich multi-media, from emojis to images - perfect for startup marketing.",
-        //         imageSrc:
-        //             "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01.webp?&q=90",
-        //         imageAlt: "Instagram",
-        //     },
-        //     {
-        //         title: "Facebook",
-        //         description:
-        //             "Route direct messages to the Inbox, so customers can reach out directly from Facebook for a seamless experience that scales with your startup.",
-        //         imageSrc:
-        //             "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02.webp?&q=90",
-        //         imageAlt: "Facebook",
-        //     },
-        //     {
-        //         title: "SMS",
-        //         description:
-        //             "Send and receive text messages from the Inbox in 45 languages, to enable real-time, conversational support with your growing customer base.",
-        //         imageSrc:
-        //             "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
-        //         imageAlt: "SMS",
-        //     },
-        // ],
     },
 
     testimonial: {
@@ -218,3 +197,4 @@ export const startupPageData = {
         },
     },
 };
+

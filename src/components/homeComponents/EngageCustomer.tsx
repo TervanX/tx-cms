@@ -5,37 +5,36 @@ import {
 import Tag from "../helpDeskComponents/Tag";
 import DottedLine from "./DottedLine";
 
-const EngageCustomersSection = (
-  {
-    badgeText = "SMS and social media",
-    title = "Engage customers on the apps they use everyday",
-    columns = [
-      {
-        title: "Instagram",
-        description:
-          "Respond to Instagram DMs, story replies and mentions directly from Intercom, and interact with customers using rich multi-media, from emojis to images.",
-        imageSrc:
-          "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01.webp?&q=90",
-        imageAlt: "Instagram",
-      },
-      {
-        title: "Facebook",
-        description:
-          "Route direct messages to the Inbox, so customers can reach out directly from Facebook for a seamless experience.",
-        imageSrc:
-          "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02.webp?&q=90",
-        imageAlt: "Facebook",
-      },
-      {
-        title: "SMS",
-        description:
-          "Send and receive text messages from the Inbox in 45 languages, to enable real-time, conversational support with your customers.",
-        imageSrc:
-          "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
-        imageAlt: "SMS",
-      },
-    ],
-  }: EngageCustomersProps) => {
+const EngageCustomersSection = ({
+  badgeText = "SMS and social media",
+  title = "Engage customers on the apps they use everyday",
+  columns = [
+    {
+      title: "Instagram",
+      description:
+        "Respond to Instagram DMs, story replies and mentions directly from Intercom, and interact with customers using rich multi-media, from emojis to images.",
+      imageSrc:
+        "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01.webp?&q=90",
+      imageAlt: "Instagram",
+    },
+    {
+      title: "Facebook",
+      description:
+        "Route direct messages to the Inbox, so customers can reach out directly from Facebook for a seamless experience.",
+      imageSrc:
+        "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02.webp?&q=90",
+      imageAlt: "Facebook",
+    },
+    {
+      title: "SMS",
+      description:
+        "Send and receive text messages from the Inbox in 45 languages, to enable real-time, conversational support with your customers.",
+      imageSrc:
+        "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
+      imageAlt: "SMS",
+    },
+  ],
+}: EngageCustomersProps) => {
   return (
     <div className="">
       <div
@@ -46,8 +45,9 @@ const EngageCustomersSection = (
           {/* Header Section */}
           <div className="scroll-mt-6 text-center mb-8">
             <div className="flex justify-center mb-4">
-              <div className="  px-3 py-1 rounded-full text-sm font-medium">
-                {badgeText && <Tag tag={badgeText} />}
+              <div className="  px-3 py-1 rounded-full text-sm font-medium">{
+                badgeText &&
+                <Tag tag={badgeText} />}
               </div>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-gray-900 max-w-2xl w-full mx-auto">
@@ -56,7 +56,11 @@ const EngageCustomersSection = (
           </div>
 
           {/* Columns Section */}
-          <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
+          <div className={`grid grid-cols-1 gap-6 lg:gap-8 ${columns.length === 2 ? 'md:grid-cols-2' :
+              columns.length === 3 ? 'md:grid-cols-3' :
+                columns.length === 4 ? 'md:grid-cols-2 lg:grid-cols-4' :
+                  'md:grid-cols-2 lg:grid-cols-3'
+            }`}>
             {columns.map((column, index) => (
               <EngagementSestionCard column={column} key={index} />
             ))}
@@ -104,13 +108,6 @@ const EngagementSestionCard: React.FC<EngagementSestionCardProps> = ({
         <span className="text-sm text-gray-600 font-sans leading-relaxed">
           {column.description}
         </span>
-        {column.list && (
-          <ul className="mt-3 list-disc text-sm text-gray-600 font-sans leading-relaxed">
-            {column.list?.items.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        )}
       </div>
     </div>
   );

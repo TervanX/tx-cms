@@ -1,6 +1,6 @@
 import { useState } from "react";
 import BorderTopCard from "./BorderTopCard";
-import DottedLine from "./DottedBg";
+import DottedLine from "@/components/helpDeskComponents/DottedBg";
 import SubSection from "./Subsection";
 import { LiveChatProps } from "@/app/types/solution.type";
 
@@ -34,7 +34,9 @@ const LiveChat: React.FC<LiveChatProps> = ({
 
   return (
     <div className="">
-      <DottedLine />
+      <div className="py-12">
+        <DottedLine fill="gray" />
+      </div>{" "}
       <div className="relative  w-[80%] mx-auto ">
         <div className="">
           <SubSection title={title} tag={tag} description={description} />
@@ -52,7 +54,7 @@ const LiveChat: React.FC<LiveChatProps> = ({
             ))}
           </div>
           <div className="flex flex-col lg:flex-row gap-6   flex-1 ">
-            <div className="w-full mx-auto relative bg-white-transparent">
+            <div className="w-full mx-auto relative bg-white-transparent min-h-125 max-h-130">
               {/* Background Pattern */}
               <div className="absolute inset-0 z-0">
                 <img

@@ -54,7 +54,7 @@ const HeroSection = () => {
             <div className="overflow-hidden bg-cover absolute inset-0 size-full">
               <Image
                 alt="Suite"
-                src="/assets/hero-bg.webp"
+                src="/assets/download.jfif.jpg"
                 fill
                 className="object-cover object-center"
                 priority
@@ -106,11 +106,11 @@ const HeroSection = () => {
                     filter: useTransform(headerBlur, (blur) => `blur(${blur}px)`)
                   }}
                 >
-                  <span>The #1 AI Agent.</span>
-                  <span>The next generation Helpdesk.</span>
+                  <span>The infrastructure layer</span>
+                  <span></span>
                 </motion.div>
                 <span>
-                  One seamless service suite.
+                  for money, assets, and trust.
                 </span>
               </h1>
             </div>
@@ -118,7 +118,7 @@ const HeroSection = () => {
             {/* Description & CTA */}
             <div className="mt-6 flex flex-col gap-4 border-t border-white/60 pt-4 md:mt-8 md:flex-row lg:mt-10 xl:mt-11">
               <p className="w-full text-sm leading-[100%] tracking-[0.7px] uppercase lg:w-7/12">
-                Fin AI Agent + Helpdesk
+                TX switch + TX core
               </p>
 
               <div className="w-full lg:w-5/12">
@@ -133,7 +133,7 @@ const HeroSection = () => {
                   animate={{ opacity: 1, filter: "blur(0px)" }}
                   transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
                 >
-                  The Intercom Customer Service Suite combines the #1 AI Agent for customer service with a next-gen Helpdesk—built on a single platform that maximizes team efficiency and delivers superior service.
+                  TervanX provides secure, compliant, and scalable financial infrastructure through a unified platform for payments, crypto, and digital assets — giving developers and enterprises the tools to innovate, integrate, and scale financial solutions across borders and ecosystems.
                 </motion.p>
 
                 <motion.div
