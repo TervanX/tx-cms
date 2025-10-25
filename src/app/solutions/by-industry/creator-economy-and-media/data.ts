@@ -368,6 +368,91 @@ export const creatorsPageData = {
         backgroundAlt: "Creator Solutions",
     },
 
+    gettingStartedTimeline: {
+        cards: [
+            {
+                title: "Day 1: Platform Setup",
+                lists: [
+                    "Creator profile verification",
+                    "Payment method configuration",
+                    "Content library import",
+                    "Basic analytics setup"
+                ],
+                img: "/assets/highlight.webp",
+                imageAlt: "Platform Setup",
+                description: ""
+            },
+            {
+                title: "Week 1: First Monetization",
+                lists: [
+                    "First NFT collection minting",
+                    "Subscription tier creation",
+                    "Community token launch",
+                    "Cross-platform integration"
+                ],
+                img: "/assets/highlight.webp",
+                imageAlt: "First Monetization",
+                description: ""
+            },
+            {
+                title: "Month 1: Growth Optimization",
+                lists: [
+                    "Advanced analytics activation",
+                    "Automated campaign setup",
+                    "Collaboration network joining",
+                    "Revenue diversification strategy"
+                ],
+                img: "/assets/highlight.webp",
+                imageAlt: "Growth Optimization",
+                description: ""
+            }
+        ],
+        backgroundImage: "/assets/image30.webp",
+        backgroundAlt: "Getting Started Timeline",
+    },
+
+    pricingStructure: {
+        cards: [
+            {
+                title: "Creator Starter Plan",
+                lists: [
+                    "5% platform fee",
+                    "No monthly cost",
+                    "Up to $10K monthly volume",
+                    "Basic analytics and support"
+                ],
+                img: "/assets/highlight.webp",
+                imageAlt: "Creator Starter Plan",
+                description: ""
+            },
+            {
+                title: "Professional Creator Plan",
+                lists: [
+                    "3% platform fee",
+                    "$49 monthly fee",
+                    "Up to $50K monthly volume",
+                    "Advanced tools and priority support"
+                ],
+                img: "/assets/highlight.webp",
+                imageAlt: "Professional Creator Plan",
+                description: ""
+            },
+            {
+                title: "Enterprise Creator Plan",
+                lists: [
+                    "1% platform fee",
+                    "$199 monthly fee",
+                    "Unlimited volume",
+                    "Dedicated account management"
+                ],
+                img: "/assets/highlight.webp",
+                imageAlt: "Enterprise Creator Plan",
+                description: ""
+            }
+        ],
+        backgroundImage: "/assets/image30.webp",
+        backgroundAlt: "Pricing Structure",
+    },
     subsection6: {
         description: "",
         title: "Success Metrics",

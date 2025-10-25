@@ -56,6 +56,9 @@ const Page = () => {
       </div>
       <LiveChat {...realEstatePageData.liveChat} />
       <GlobalWhatsapp {...realEstatePageData.globalWhatsapp} />
+      <div className="py-6 lg:py-20">
+        <DottedLine fill="gray" />
+      </div>
       <LiveChat {...realEstatePageData.commercialRealEstate} />
       <GlobalWhatsapp {...realEstatePageData.realEstateFinance} />
       <div className="py-12 mt-8">
@@ -88,14 +91,6 @@ const Page = () => {
             <BrandEmailSupport {...realEstatePageData.brandEmailSupport2} />
           }
           tag={realEstatePageData.subsection3.tag}
-        />
-        <SubSection
-          title="Implementation Timeline"
-          description=""
-          children={
-            <BrandEmailSupport {...realEstatePageData.implementationTimeline} />
-          }
-          tag=""
         />
         <SubSection
           title="Compliance Framework"

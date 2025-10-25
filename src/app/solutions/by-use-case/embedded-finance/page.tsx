@@ -52,6 +52,9 @@ const Page = () => {
       </div>
       <LiveChat {...embeddedFinancePageData.liveChat} />
       <GlobalWhatsapp {...embeddedFinancePageData.globalWhatsapp} />
+      <div className="py-12 mt-8">
+        <DottedLine fill="gray" />
+      </div>
       <LiveChat {...embeddedFinancePageData.liveChat2} />
       <div className="py-12 mt-8">
         <DottedLine fill="gray" />
@@ -73,6 +76,14 @@ const Page = () => {
             <BrandEmailSupport {...embeddedFinancePageData.brandEmailSupport4} />
           }
           tag={embeddedFinancePageData.subsection5.tag}
+        />
+        <SubSection
+          title="Success Metrics"
+          description=""
+          children={
+            <BrandEmailSupport {...embeddedFinancePageData.successMetrics} />
+          }
+          tag=""
         />
       </div>
       <TestimonialCarousel {...embeddedFinancePageData.testimonial} />

@@ -50,6 +50,9 @@ const Page = () => {
       </div>
       <LiveChat {...creatorsPageData.liveChat} />
       <GlobalWhatsapp {...creatorsPageData.globalWhatsapp} />
+      <div className="py-6 lg:py-20">
+        <DottedLine fill="gray" />
+      </div>
       <LiveChat {...creatorsPageData.creatorFinancialTools} />
       <GlobalWhatsapp {...creatorsPageData.collaborationNetworking} />
       <div className="py-12 mt-8">
@@ -63,7 +66,7 @@ const Page = () => {
           children={
             <BrandEmailSupport {...creatorsPageData.technicalSpecifications} />
           }
-          tag="Technical"
+          tag=""
         />
         <SubSection
           title="Creator Solutions"
@@ -71,7 +74,7 @@ const Page = () => {
           children={
             <BrandEmailSupport {...creatorsPageData.creatorSolutions} />
           }
-          tag="Solutions"
+          tag=""
         />
         <SubSection
           title={creatorsPageData.subsection6.title}

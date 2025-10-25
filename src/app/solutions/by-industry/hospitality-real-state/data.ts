@@ -270,48 +270,6 @@ export const realEstatePageData = {
         description: "Innovative property financing",
     },
 
-    implementationTimeline: {
-        cards: [
-            {
-                title: "Phase 1: Digital Foundation (4-6 weeks)",
-                lists: [
-                    "Property data digitization and tokenization",
-                    "Smart contract development and auditing",
-                    "Guest/Tenant identity system setup",
-                    "Staff training and system integration"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Digital Foundation",
-                description: ""
-            },
-            {
-                title: "Phase 2: Experience Transformation (8-10 weeks)",
-                lists: [
-                    "Mobile app and digital key deployment",
-                    "Loyalty token ecosystem launch",
-                    "Automated payment systems activation",
-                    "IoT and smart building integration"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Experience Transformation",
-                description: ""
-            },
-            {
-                title: "Phase 3: Ecosystem Expansion (12-16 weeks)",
-                lists: [
-                    "Secondary trading platform launch",
-                    "Partner network integration",
-                    "Advanced analytics and AI optimization",
-                    "Continuous innovation program"
-                ],
-                img: "/assets/highlight.webp",
-                imageAlt: "Ecosystem Expansion",
-                description: ""
-            }
-        ],
-        backgroundImage: "/assets/image30.webp",
-        backgroundAlt: "Implementation Timeline",
-    },
 
     complianceFramework: {
         cards: [
