@@ -1,8 +1,8 @@
 import { useState } from "react";
 import BorderTopCard from "./BorderTopCard";
-import DottedLine from "./DottedBg";
 import SubSection from "./Subsection";
 import { GlobalWhatsappProps } from "@/app/types/solution.type";
+import DottedLine from "@/components/helpDeskComponents/DottedBg";
 
 const GlobalWhatsapp: React.FC<GlobalWhatsappProps> = ({
   cards = [
@@ -37,7 +37,9 @@ const GlobalWhatsapp: React.FC<GlobalWhatsappProps> = ({
 
   return (
     <div className="mt-8 lg:mt-14">
-      <DottedLine />
+      <div className="py-12">
+        <DottedLine fill="gray" />
+      </div>{" "}
       <div className="relative  w-[80%] mx-auto ">
         <div className="">
           <SubSection title={title} tag={tag} description={description} />

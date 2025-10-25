@@ -436,7 +436,7 @@ export const financeBankingPageData = {
             {
                 title: "Family office services",
                 description: "Multi-generational wealth transfer and estate planning using blockchain technology.",
-                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_04.webp?&q=90",
+                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
                 imageAlt: "Family office services",
             },
         ],

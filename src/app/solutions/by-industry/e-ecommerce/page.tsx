@@ -50,40 +50,27 @@ const Page = () => {
       </div>
       <LiveChat {...ecommercePageData.liveChat} />
       <GlobalWhatsapp {...ecommercePageData.globalWhatsapp} />
-      <div className="py-12">
-        <DottedLine fill="gray" />
-      </div>
+
       {ecommercePageData.globalWhatsapp2 && (
         <GlobalWhatsapp {...ecommercePageData.globalWhatsapp2} />
       )}
 
-      <div className="py-12 mt-8">
-        <DottedLine fill="gray" />
-      </div>
       {ecommercePageData.globalWhatsapp3 && (
         <GlobalWhatsapp {...ecommercePageData.globalWhatsapp3} />
       )}
-      <div className="py-12 mt-8">
-        <DottedLine fill="gray" />
-      </div>
+
       {ecommercePageData.globalWhatsapp4 && (
         <GlobalWhatsapp {...ecommercePageData.globalWhatsapp4} />
       )}
-      <div className="py-12 mt-8">
-        <DottedLine fill="gray" />
-      </div>
+
       {ecommercePageData.globalWhatsapp5 && (
         <GlobalWhatsapp {...ecommercePageData.globalWhatsapp5} />
       )}
-      <div className="py-12 mt-8">
-        <DottedLine fill="gray" />
-      </div>
+
       {ecommercePageData.globalWhatsapp6 && (
         <GlobalWhatsapp {...ecommercePageData.globalWhatsapp6} />
       )}
-      <div className="py-12 mt-8">
-        <DottedLine fill="gray" />
-      </div>
+
       <EngageCustomersSection {...ecommercePageData.engageCustomers} />
       <TestimonialCarousel {...ecommercePageData.testimonial} />
       <BannerCTA {...ecommercePageData.bannerCTA} />

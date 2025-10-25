@@ -256,6 +256,8 @@ export const ecommercePageData = {
                 title: "Marketplaces",
                 description: "",
                 img: "/assets/highlight.webp",
+                backgroundImage: "/assets/image30.webp",
+
                 imageAlt: "Marketplaces",
                 lists: [
                     "Multi-vendor payment splitting",
