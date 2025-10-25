@@ -5,37 +5,36 @@ import {
 import Tag from "../helpDeskComponents/Tag";
 import DottedLine from "./DottedLine";
 
-const EngageCustomersSection = (
-  {
-    badgeText = "SMS and social media",
-    title = "Engage customers on the apps they use everyday",
-    columns = [
-      {
-        title: "Instagram",
-        description:
-          "Respond to Instagram DMs, story replies and mentions directly from Intercom, and interact with customers using rich multi-media, from emojis to images.",
-        imageSrc:
-          "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01.webp?&q=90",
-        imageAlt: "Instagram",
-      },
-      {
-        title: "Facebook",
-        description:
-          "Route direct messages to the Inbox, so customers can reach out directly from Facebook for a seamless experience.",
-        imageSrc:
-          "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02.webp?&q=90",
-        imageAlt: "Facebook",
-      },
-      {
-        title: "SMS",
-        description:
-          "Send and receive text messages from the Inbox in 45 languages, to enable real-time, conversational support with your customers.",
-        imageSrc:
-          "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
-        imageAlt: "SMS",
-      },
-    ],
-  }: EngageCustomersProps) => {
+const EngageCustomersSection = ({
+  badgeText = "SMS and social media",
+  title = "Engage customers on the apps they use everyday",
+  columns = [
+    {
+      title: "Instagram",
+      description:
+        "Respond to Instagram DMs, story replies and mentions directly from Intercom, and interact with customers using rich multi-media, from emojis to images.",
+      imageSrc:
+        "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01.webp?&q=90",
+      imageAlt: "Instagram",
+    },
+    {
+      title: "Facebook",
+      description:
+        "Route direct messages to the Inbox, so customers can reach out directly from Facebook for a seamless experience.",
+      imageSrc:
+        "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02.webp?&q=90",
+      imageAlt: "Facebook",
+    },
+    {
+      title: "SMS",
+      description:
+        "Send and receive text messages from the Inbox in 45 languages, to enable real-time, conversational support with your customers.",
+      imageSrc:
+        "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
+      imageAlt: "SMS",
+    },
+  ],
+}: EngageCustomersProps) => {
   return (
     <div className="">
       <div

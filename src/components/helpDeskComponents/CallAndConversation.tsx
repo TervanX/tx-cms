@@ -41,8 +41,8 @@ const CallAndConversation: React.FC<CallProps> = ({
             ))}
           </div>
           <div className="flex flex-col lg:flex-row gap-6   flex-1 ">
-            <div className="flex items-center justify-center bg-[#1b1b1c] w-full rounded-lg pl-4 lg:pl-6">
-              {cards && cards[active]?.code && (
+            {cards[active]?.code && cards[active]?.code && (
+              <div className="flex items-center justify-center bg-[#1b1b1c] w-full rounded-lg pl-4 lg:pl-6">
                 <SyntaxHighlighter
                   language={cards[active]?.language || "javascript"}
                   style={tomorrowNight}
@@ -51,10 +51,10 @@ const CallAndConversation: React.FC<CallProps> = ({
                 >
                   {cards[active]?.code}
                 </SyntaxHighlighter>
-              )}
-            </div>
+              </div>
+            )}
             {!cards[active]?.code && (
-              <div className="w-full mx-auto relative bg-white-transparent">
+              <div className="w-full mx-auto relative bg-white-transparent min-h-125 max-h-130">
                 {/* Background Pattern */}
                 <div className="absolute inset-0 z-0">
                   <img

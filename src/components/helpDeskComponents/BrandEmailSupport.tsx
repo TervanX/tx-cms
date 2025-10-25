@@ -52,6 +52,7 @@ const BrandEmailSupport: React.FC<BrandEmailSupportProps> = ({
             onClick={() => {
               setActive(index);
             }}
+            flex1
           />
         ))}
       </div>

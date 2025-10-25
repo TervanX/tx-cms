@@ -51,13 +51,14 @@ const Page = () => {
       <div className="py-12">
         <DottedLine fill="gray" />
       </div>
-      {developerPageData.globalWhatsapp2 && (
+      {developerPageData.globalWhatsapp2?.title && (
         <GlobalWhatsapp {...developerPageData.globalWhatsapp2} />
       )}
       <div className="py-12 mt-8">
         <DottedLine fill="gray" />
       </div>
-      <EngageCustomersSection {...developerPageData.engageCustomers} />
+      {}
+      {/* <EngageCustomersSection {...developerPageData.engageCustomers} /> */}
       <TestimonialCarousel {...developerPageData.testimonial} />
       <BannerCTA {...developerPageData.bannerCTA} />
     </div>

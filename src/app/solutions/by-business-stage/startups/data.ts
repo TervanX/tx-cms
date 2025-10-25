@@ -174,33 +174,6 @@ export const startupPageData = {
 
     engageCustomers: {
         badgeText: "",
-        // title: "Engage customers on the apps they use everyday",
-        // columns: [
-        //     {
-        //         title: "Instagram",
-        //         description:
-        //             "Respond to Instagram DMs, story replies and mentions directly from Intercom, and interact with customers using rich multi-media, from emojis to images - perfect for startup marketing.",
-        //         imageSrc:
-        //             "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01.webp?&q=90",
-        //         imageAlt: "Instagram",
-        //     },
-        //     {
-        //         title: "Facebook",
-        //         description:
-        //             "Route direct messages to the Inbox, so customers can reach out directly from Facebook for a seamless experience that scales with your startup.",
-        //         imageSrc:
-        //             "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02.webp?&q=90",
-        //         imageAlt: "Facebook",
-        //     },
-        //     {
-        //         title: "SMS",
-        //         description:
-        //             "Send and receive text messages from the Inbox in 45 languages, to enable real-time, conversational support with your growing customer base.",
-        //         imageSrc:
-        //             "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
-        //         imageAlt: "SMS",
-        //     },
-        // ],
     },
 
     testimonial: {
