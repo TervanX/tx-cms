@@ -127,16 +127,20 @@ export default function JoinWaitlistPage() {
         setIsSubmitting(true);
 
         try {
-            const response = await fetch("/", {
-                method: "POST",
-                headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: new URLSearchParams({
-                    "form-name": "join-waitlist-form",
-                    ...formData,
-                    agreeToTerms: formData.agreeToTerms ? "Yes" : "No" // Convert boolean to string
-                }).toString()
+            const netlifyForm = new FormData();
+            netlifyForm.append('form-name', 'join-waitlist-form');
+            Object.entries(formData).forEach(([key, value]) => {
+                if (typeof value === 'boolean') {
+                    netlifyForm.append(key, value ? "Yes" : "No");
+                } else {
+                    netlifyForm.append(key, value as string);
+                }
             });
 
+            const response = await fetch('/', {
+                method: 'POST',
+                body: netlifyForm,
+            });
             if (response.ok) {
                 console.log("Waitlist form successfully submitted to Netlify");
                 setIsSubmitted(true);
@@ -167,28 +171,6 @@ export default function JoinWaitlistPage() {
 
     return (
         <main className="bg-[#F0F0F2] min-h-screen" style={{ margin: '-1px auto 0 auto', padding: '1px 0 0 0' }}>
-            {/* Hidden Netlify Form */}
-            <form
-                name="join-waitlist-form"
-                method="POST"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-                className="hidden"
-            >
-                <input type="hidden" name="form-name" value="join-waitlist-form" />
-                <input type="hidden" name="fullName" value={formData.fullName} />
-                <input type="hidden" name="email" value={formData.email} />
-                <input type="hidden" name="companyName" value={formData.companyName} />
-                <input type="hidden" name="role" value={formData.role} />
-                <input type="hidden" name="country" value={formData.country} />
-                <input type="hidden" name="useCase" value={formData.useCase} />
-                <input type="hidden" name="monthlyVolume" value={formData.monthlyVolume} />
-                <input type="hidden" name="interestReason" value={formData.interestReason} />
-                <input type="hidden" name="referralCode" value={formData.referralCode} />
-                <input type="hidden" name="agreeToTerms" value={formData.agreeToTerms ? "Yes" : "No"} />
-                <input type="text" name="bot-field" style={{ display: 'none' }} />
-            </form>
-
             <div className="px-4 py-12 md:px-0 md:py-0 max-w-[600px] mx-auto md:max-w-none grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-0 md:min-h-screen">
                 <FormSidebar
                     title="Join the future of digital asset infrastructure"

@@ -202,7 +202,7 @@ const ApolloScrollTabs: React.FC = () => {
 
         const ctx = gsap.context(() => {
             const totalTabs = tabs.length;
-            const scrollLength = isMobileRef.current ? 0 : totalTabs * 100;
+            const scrollLength = isMobileRef.current ? 0 : totalTabs * 85;
 
             scrollTriggerRef.current = ScrollTrigger.create({
                 trigger: sectionRef.current,

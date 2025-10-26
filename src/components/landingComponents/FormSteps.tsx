@@ -221,7 +221,7 @@ export default function FormSteps({
                                                 type="submit"
                                                 className="px-8 py-3 bg-[#0D07ED] text-white rounded-lg transition-colors font-medium ml-auto w-full"
                                             >
-                                                {isSubmitting ? "Submitting..." : submitButtonText}
+                                                {submitButtonText}
                                             </button>
                                         )}
                                     </div>
