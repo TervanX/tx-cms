@@ -4,9 +4,11 @@ import ContactFormSteps from "@/components/landingComponents/ContactFormSteps";
 import SuccessMessage from "@/components/landingComponents/SuccessMessage";
 import FormSidebar from "@/components/landingComponents/FormSidebar";
 
-
 export default function ContactSalesPage() {
     const [currentStep, setCurrentStep] = useState(1);
+    const [isSubmitted, setIsSubmitted] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
     const [formData, setFormData] = useState({
         // Step 1
         fullName: "",
@@ -27,7 +29,6 @@ export default function ContactSalesPage() {
     });
 
     const [errors, setErrors] = useState<Record<string, string>>({});
-    const [isSubmitted, setIsSubmitted] = useState(false);
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
@@ -138,23 +139,79 @@ export default function ContactSalesPage() {
         setCurrentStep(prev => prev - 1);
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        if (validateStep3()) {
-            console.log("Form submitted:", formData);
-            setIsSubmitted(true);
+
+        if (!validateStep3()) {
+            return;
+        }
+
+        setIsSubmitting(true);
+
+        try {
+            const response = await fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams({
+                    "form-name": "contact-sales-form",
+                    ...formData,
+                    helpNeeded: formData.helpNeeded.join(", ") // Convert array to string for Netlify
+                }).toString()
+            });
+
+            if (response.ok) {
+                console.log("Sales form successfully submitted to Netlify");
+                setIsSubmitted(true);
+                setTimeout(() => {
+                    window.history.back();
+                }, 3000);
+            } else {
+                throw new Error("Network response was not ok");
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            alert("There was an error submitting the form. Please try again or contact us directly.");
+        } finally {
+            setIsSubmitting(false);
         }
     };
 
     if (isSubmitted) {
-        return <SuccessMessage
-            title="Thank you for reaching out!"
-            message="Our sales team will get back to you within 24 hours to understand your needs and tailor a TervanX solution for your business."
-        />
+        return (
+            <div className="min-h-screen bg-[#F0F0F2] flex items-center justify-center">
+                <SuccessMessage
+                    title="Thank you for reaching out!"
+                    message="Our sales team will get back to you within 24 hours to understand your needs and tailor a TervanX solution for your business."
+                />
+            </div>
+        );
     }
 
     return (
         <main className="bg-[#F0F0F2] min-h-screen" style={{ margin: '-1px auto 0 auto', padding: '1px 0 0 0' }}>
+            {/* Hidden Netlify Form */}
+            <form
+                name="contact-sales-form"
+                method="POST"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                className="hidden"
+            >
+                <input type="hidden" name="form-name" value="contact-sales-form" />
+                <input type="hidden" name="fullName" value={formData.fullName} />
+                <input type="hidden" name="workEmail" value={formData.workEmail} />
+                <input type="hidden" name="companyName" value={formData.companyName} />
+                <input type="hidden" name="companyWebsite" value={formData.companyWebsite} />
+                <input type="hidden" name="country" value={formData.country} />
+                <input type="hidden" name="phoneNumber" value={formData.phoneNumber} />
+                <input type="hidden" name="businessType" value={formData.businessType} />
+                <input type="hidden" name="monthlyVolume" value={formData.monthlyVolume} />
+                <input type="hidden" name="helpNeeded" value={formData.helpNeeded.join(", ")} />
+                <input type="hidden" name="message" value={formData.message} />
+                <input type="hidden" name="contactMethod" value={formData.contactMethod} />
+                <input type="text" name="bot-field" style={{ display: 'none' }} />
+            </form>
+
             <div className="px-4 py-12 md:px-0 md:py-0 max-w-[600px] mx-auto md:max-w-none grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-0 md:min-h-screen">
                 <FormSidebar
                     title="The compliant, bank-grade digital asset infrastructure built to scale with confidence"
@@ -171,6 +228,7 @@ export default function ContactSalesPage() {
                     onPrevStep={prevStep}
                     onNextStep={nextStep}
                     onSubmit={handleSubmit}
+                    isSubmitting={isSubmitting}
                 />
             </div>
         </main>

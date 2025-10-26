@@ -12,6 +12,7 @@ interface AccessFormStepsProps {
     onPrevStep: () => void;
     onNextStep: () => void;
     onSubmit: (e: React.FormEvent) => void;
+    isSubmitting?: boolean
 }
 
 const accessSteps = [
@@ -121,6 +122,7 @@ export default function AccessFormSteps(props: AccessFormStepsProps) {
             steps={accessSteps}
             mobileHeading={mobileHeading}
             submitButtonText="Request Access"
+            isSubmitting
         />
     );
 }

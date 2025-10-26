@@ -12,6 +12,7 @@ interface JoinWaitlistFormProps {
     onPrevStep: () => void;
     onNextStep: () => void;
     onSubmit: (e: React.FormEvent) => void;
+    isSubmitting?: boolean
 }
 
 const waitlistSteps = [
@@ -126,6 +127,7 @@ export default function JoinWaitlistForm(props: JoinWaitlistFormProps) {
             steps={waitlistSteps}
             mobileHeading={mobileHeading}
             submitButtonText="Join Waitlist"
+            isSubmitting
         />
     );
 }
