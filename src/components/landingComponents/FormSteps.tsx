@@ -32,6 +32,7 @@ interface FormStepsProps {
     onPrevStep: () => void;
     onNextStep: () => void;
     onSubmit: (e: React.FormEvent) => void;
+    isSubmitting?: boolean
 }
 
 export default function FormSteps({
@@ -46,7 +47,8 @@ export default function FormSteps({
     onRadioChange,
     onPrevStep,
     onNextStep,
-    onSubmit
+    onSubmit,
+    isSubmitting
 }: FormStepsProps) {
 
     const renderField = (field: FormField) => {
@@ -219,7 +221,7 @@ export default function FormSteps({
                                                 type="submit"
                                                 className="px-8 py-3 bg-[#0D07ED] text-white rounded-lg transition-colors font-medium ml-auto w-full"
                                             >
-                                                {submitButtonText}
+                                                {isSubmitting ? "Submitting..." : submitButtonText}
                                             </button>
                                         )}
                                     </div>

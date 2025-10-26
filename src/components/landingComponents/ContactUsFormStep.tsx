@@ -11,6 +11,7 @@ interface ContactFormStepsProps {
     onPrevStep: () => void;
     onNextStep: () => void;
     onSubmit: (e: React.FormEvent) => void;
+    isSubmitting?: boolean
 }
 
 const contactSteps = [
@@ -119,6 +120,7 @@ export default function ContactFormSteps(props: ContactFormStepsProps) {
             steps={contactSteps}
             mobileHeading={mobileHeading}
             submitButtonText="Send Message"
+            isSubmitting
         />
     );
 }
