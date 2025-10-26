@@ -8,8 +8,6 @@ import ApolloTestimonials from "@/components/homeComponents/Testimonial";
 import FooterCTA from "@/components/homeComponents/FooterCta";
 import StackedAnimation from "@/components/HomePage-1Components/StackedAnimation";
 import CardShowcase from "@/components/HomePage-1Components/EveryThingYouNeed";
-import ApolloScrollTabs from "@/components/HomePage-1Components/TabbedSection";
-import MotionHorizontalPeekCarousel from "@/components/HomePage-1Components/MotionHorizontalPeekCarousel";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -27,7 +25,6 @@ const Page = () => {
       </div>
       <StackedAnimation />
       <CardShowcase />
-      <ApolloScrollTabs />
       <ApolloTestimonials />
       <FooterCTA />
     </div>
