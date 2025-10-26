@@ -123,21 +123,23 @@ export default function ContactPage() {
         if (!validateStep3()) {
             return;
         }
-
         setIsSubmitting(true);
 
         try {
-            const response = await fetch("/", {
-                method: "POST",
-                headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: new URLSearchParams({
-                    "form-name": "contact-form",
-                    ...formData
-                }).toString()
+            const netlifyForm = new FormData();
+            netlifyForm.append('form-name', 'contact-form');
+            Object.entries(formData).forEach(([key, value]) => {
+                netlifyForm.append(key, value as string);
+            });
+
+            const response = await fetch('/', {
+                method: 'POST',
+                body: netlifyForm,
             });
 
             if (response.ok) {
                 console.log("Form successfully submitted to Netlify");
+                console.log(netlifyForm)
                 setIsSubmitted(true);
                 setTimeout(() => {
                     window.history.back();
@@ -153,6 +155,7 @@ export default function ContactPage() {
         }
     };
 
+
     if (isSubmitted) {
         return (
             <div className="min-h-screen bg-[#F0F0F2] flex items-center justify-center">
@@ -166,28 +169,6 @@ export default function ContactPage() {
 
     return (
         <main className="bg-[#F0F0F2] min-h-screen" style={{ margin: '-1px auto 0 auto', padding: '1px 0 0 0' }}>
-            <form
-                name="contact-form"
-                method="POST"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-                className="hidden"
-            >
-                <input type="hidden" name="form-name" value="contact-form" />
-                <input type="hidden" name="fullName" value={formData.fullName} />
-                <input type="hidden" name="workEmail" value={formData.workEmail} />
-                <input type="hidden" name="subject" value={formData.subject} />
-                <input type="hidden" name="companyName" value={formData.companyName} />
-                <input type="hidden" name="companyWebsite" value={formData.companyWebsite} />
-                <input type="hidden" name="country" value={formData.country} />
-                <input type="hidden" name="phoneNumber" value={formData.phoneNumber} />
-                <input type="hidden" name="businessType" value={formData.businessType} />
-                <input type="hidden" name="monthlyVolume" value={formData.monthlyVolume} />
-                <input type="hidden" name="message" value={formData.message} />
-                <input type="hidden" name="contactMethod" value={formData.contactMethod} />
-                <input type="text" name="bot-field" style={{ display: 'none' }} />
-            </form>
-
             <div className="px-4 py-12 md:px-0 md:py-0 max-w-[600px] mx-auto md:max-w-none grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-0 md:min-h-screen">
                 <FormSidebar
                     title="Get in Touch with TervanX"

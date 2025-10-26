@@ -132,14 +132,19 @@ export default function RequestAccessPage() {
         setIsSubmitting(true);
 
         try {
-            const response = await fetch("/", {
-                method: "POST",
-                headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: new URLSearchParams({
-                    "form-name": "request-access-form",
-                    ...formData,
-                    agreeToTerms: formData.agreeToTerms ? "Yes" : "No" // Convert boolean to string
-                }).toString()
+            const netlifyForm = new FormData();
+            netlifyForm.append('form-name', 'request-access-form');
+            Object.entries(formData).forEach(([key, value]) => {
+                if (typeof value === 'boolean') {
+                    netlifyForm.append(key, value ? "Yes" : "No");
+                } else {
+                    netlifyForm.append(key, value as string);
+                }
+            });
+
+            const response = await fetch('/', {
+                method: 'POST',
+                body: netlifyForm,
             });
 
             if (response.ok) {
@@ -173,30 +178,6 @@ export default function RequestAccessPage() {
 
     return (
         <main className="bg-[#F0F0F2] min-h-screen">
-            {/* Hidden Netlify Form */}
-            <form
-                name="request-access-form"
-                method="POST"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-                className="hidden"
-            >
-                <input type="hidden" name="form-name" value="request-access-form" />
-                <input type="hidden" name="fullName" value={formData.fullName} />
-                <input type="hidden" name="businessEmail" value={formData.businessEmail} />
-                <input type="hidden" name="companyName" value={formData.companyName} />
-                <input type="hidden" name="companyWebsite" value={formData.companyWebsite} />
-                <input type="hidden" name="businessType" value={formData.businessType} />
-                <input type="hidden" name="useCase" value={formData.useCase} />
-                <input type="hidden" name="country" value={formData.country} />
-                <input type="hidden" name="teamSize" value={formData.teamSize} />
-                <input type="hidden" name="monthlyVolume" value={formData.monthlyVolume} />
-                <input type="hidden" name="contactMethod" value={formData.contactMethod} />
-                <input type="hidden" name="message" value={formData.message} />
-                <input type="hidden" name="agreeToTerms" value={formData.agreeToTerms ? "Yes" : "No"} />
-                <input type="text" name="bot-field" style={{ display: 'none' }} />
-            </form>
-
             <div className="px-4 py-12 md:px-0 md:py-0 max-w-[600px] mx-auto md:max-w-none grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-0 md:min-h-screen">
                 <FormSidebar
                     title="Request Access to TervanX"
