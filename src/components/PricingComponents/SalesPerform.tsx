@@ -1,7 +1,7 @@
 import { FaStar } from "react-icons/fa6";
 const SalesPerform = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-8">
+    <div className="flex flex-col lg:flex-row gap-8 w-full justify-between my-12">
       <div>
         <p className="text-[24px] font-medium text-dark font-grotesk text-center lg:text-start">
           The most loved sales platform on the planet
