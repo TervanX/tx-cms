@@ -1329,6 +1329,20 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
   isOpen,
   onToggle,
 }) => {
+  // If nav has a direct href, make it a clickable link that closes the sidebar
+  if (nav.href) {
+    return (
+      <Link
+        href={nav.href}
+        className="w-full flex items-start justify-between py-5 px-6 text-left font-grotesque"
+        onClick={onToggle} // This will close the sidebar
+      >
+        <h6 className="text-2xl font-medium text-dark pr-8">{nav.title}</h6>
+      </Link>
+    );
+  }
+
+  // Original accordion logic for items with dropdown content
   return (
     <div className="font-grotesque">
       <button
@@ -1336,7 +1350,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
         className="w-full flex items-start justify-between py-5 px-6 text-left"
         aria-expanded={isOpen}
       >
-        <h6 className="text-2xl  font-medium text-dark pr-8"> {nav.title}</h6>
+        <h6 className="text-2xl font-medium text-dark pr-8">{nav.title}</h6>
         {nav.solutions && (
           <div className={`flex-shrink-0 transition-transform duration-200`}>
             {isOpen ? <IoIosArrowDown /> : <IoIosArrowForward />}
@@ -1347,37 +1361,41 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
         className={`overflow-y-scroll transition-all duration-300 ease-in-out px-6 ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
           }`}
       >
-        <div className="pb-5 text-dark text-sm lg:text-base leading-relaxed  border-gray-200 border-t-[1.5px] pt-4">
-          <div className="flex flex-col lg:flex-row gap-6 ">
+        <div className="pb-5 text-dark text-sm lg:text-base leading-relaxed border-gray-200 border-t-[1.5px] pt-4">
+          <div className="flex flex-col lg:flex-row gap-6">
             {nav.solutions &&
               nav.solutions.map((solution, index) => (
-                <div className="flex flex-col basis-[18%] flex-grow min-w-[135px] max-w-[400px]">
+                <div
+                  key={index}
+                  className="flex flex-col basis-[18%] flex-grow min-w-[135px] max-w-[400px]"
+                >
                   <div className="flex justify-between items-start gap-3">
                     <div className="flex flex-col w-[60%] items-start justify-between">
                       <div className="flex items-center gap-3">
                         {solution.logo}
-
                         <p className="font-grotesque font-medium text-lg lg:leading-[110%] leading-[110%]">
                           {solution.title}
                         </p>
                       </div>
                       <p className="text-xs text-sand font-grotesque mt-2">
-                        {solution.description}{" "}
+                        {solution.description}
                       </p>
                     </div>
                   </div>
                   <div className="mt-6 flex flex-col gap-2">
-                    <p className="text-xs text-sand font-grotesque ">
+                    <p className="text-xs text-sand font-grotesque">
                       {solution.linkTitle}
                     </p>
                     {solution?.links &&
                       solution.links.map((link, index) => (
-                        <a
-                          className="text-xs text-black  font-grotesque font-semibold"
-                          href={link?.href}
+                        <Link
+                          key={index}
+                          className="text-xs text-black font-grotesque font-semibold"
+                          href={link.href}
+                          onClick={onToggle} // Close sidebar when link is clicked
                         >
                           {link.text}
-                        </a>
+                        </Link>
                       ))}
                   </div>
                 </div>
