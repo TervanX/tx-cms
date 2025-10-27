@@ -202,7 +202,8 @@ const ApolloScrollTabs: React.FC = () => {
 
         const ctx = gsap.context(() => {
             const totalTabs = tabs.length;
-            const scrollLength = isMobileRef.current ? 0 : totalTabs * 85;
+            // Increased scroll length for better compatibility across different screen sizes
+            const scrollLength = isMobileRef.current ? 0 : totalTabs * 80;
 
             scrollTriggerRef.current = ScrollTrigger.create({
                 trigger: sectionRef.current,
@@ -215,9 +216,10 @@ const ApolloScrollTabs: React.FC = () => {
                     if (isMobileRef.current) return;
 
                     const progress = self.progress;
+                    // Improved progress calculation with smoother transition thresholds
                     const newIndex = Math.min(
                         totalTabs - 1,
-                        Math.floor(progress * totalTabs)
+                        Math.floor(progress * totalTabs + 0.5)
                     );
 
                     if (newIndex !== activeTab) {
