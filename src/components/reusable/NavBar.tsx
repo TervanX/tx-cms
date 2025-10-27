@@ -1017,7 +1017,7 @@ const navItems: NavItemInterface[] = [
 
   {
     title: "Pricing",
-    href: "#",
+    href: "/pricing",
     // solutions: [
     //   {
     //     logo: (
