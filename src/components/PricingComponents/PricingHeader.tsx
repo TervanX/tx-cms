@@ -10,7 +10,7 @@ const PricingPageHeader: React.FC<PricingPageHeaderProps> = ({
   onBillingChange
 }) => {
   return (
-    <div className="flex flex-col lg:flex-row items-start justify-between gap-22">
+    <div className="flex flex-col lg:flex-row items-start justify-between lg:gap-22 gap-6">
       <h1 className="text-3xl lg:text-6xl font-medium text-center lg:text-start">
         The all-in-one platform to grow your business
       </h1>
