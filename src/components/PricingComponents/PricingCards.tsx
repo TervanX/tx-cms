@@ -1,7 +1,7 @@
-// components/PricingComponents/PricingSection.tsx
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { Check, ChevronDown, CoinsIcon } from "lucide-react";
 import Button from "../reusable/Button";
 import { pricingPlans, payAsYouGoPlan } from "./data";
@@ -9,26 +9,74 @@ import { pricingPlans, payAsYouGoPlan } from "./data";
 interface PricingSectionProps {
   isAnnualBilling: boolean;
   onBillingChange: (isAnnual: boolean) => void;
+  forceActiveTab?: string;
 }
 
 const PricingSection: React.FC<PricingSectionProps> = ({
   isAnnualBilling,
-  onBillingChange
+  onBillingChange,
+  forceActiveTab
 }) => {
   const [activeTab, setActiveTab] = useState("fixed");
-
-
+  const [selectedFeatures, setSelectedFeatures] = useState<string[]>([]);
 
   const tabs = [
     { id: "fixed", label: "Subscription", plans: pricingPlans },
     { id: "payg", label: "Pay As You Go", plans: [payAsYouGoPlan] }
   ];
 
+  useEffect(() => {
+    if (forceActiveTab) {
+      setActiveTab(forceActiveTab);
+    }
+  }, [forceActiveTab]);
+
+  const featurePricing = payAsYouGoPlan.detailedPricing.corePricing.map(item => {
+    const costMatch = item.cost.match(/(\d+\.?\d*)/);
+    const price = costMatch ? parseFloat(costMatch[1]) : 0;
+    const isPercentage = item.cost.includes('%');
+
+
+    return {
+      id: item.feature.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
+      name: item.feature,
+      price,
+      isPercentage,
+      description: item.description,
+      originalCost: item.cost
+    };
+  });
+
+  const toggleFeature = (featureId: string) => {
+    setSelectedFeatures(prev =>
+      prev.includes(featureId)
+        ? prev.filter(id => id !== featureId)
+        : [...prev, featureId]
+    );
+  };
+  const router = useRouter()
+  const handleTabClick = (tabId: string) => {
+    if (tabId === "payg") {
+      router.push("/pricing/payg");
+    } else {
+      router.push("/pricing")
+    }
+  };
+
+  const calculateTotal = () => {
+    return selectedFeatures.reduce((total, featureId) => {
+      const feature = featurePricing.find(f => f.id === featureId);
+      return total + (feature?.price || 0);
+    }, 0);
+  };
+
+
+
   return (
     <div className="w-full mx-auto px-4 py-12">
       {/* Tabs Navigation */}
       <div className="flex items-center gap-2 rounded-lg border border-gray-200 p-4 shadow-sm mx-auto overflow-x-auto no-scrollbar">
-        <div className="w-full hidden lg:flex flex-col" >
+        <div className="w-full hidden lg:flex flex-col">
           <h2 className="text-2xl font-medium text-gray-900">
             Explore features by solutions:
           </h2>
@@ -39,10 +87,10 @@ const PricingSection: React.FC<PricingSectionProps> = ({
         {tabs.map((tab) => (
           <button
             key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
-            className={`whitespace-nowrap px-6 py-3 text-xs uppercase tracking-wide transition-all w-full ${activeTab === tab.id
-              ? "bg-gray-100 text-black shadow-sm"
-              : "bg-transparent text-gray-600 hover:text-gray-800"
+            onClick={() => handleTabClick(tab.id)}
+            className={`whitespace-nowrap px-6 py-3 text-xs uppercase tracking-wide bg-gray-100 transition-all w-full ${activeTab === tab.id
+              ? "bg-white text-black shadow-sm"
+              : " text-black hover:text-gray-800"
               }`}
           >
             <span className="text-sm font-medium tracking-normal">
@@ -52,19 +100,163 @@ const PricingSection: React.FC<PricingSectionProps> = ({
         ))}
       </div>
 
-      {/* Pricing Cards */}
-      <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-8 w-full">
-        {tabs
-          .find(tab => tab.id === activeTab)
-          ?.plans.map((plan) => (
+      {/* Pay As You Go Calculator Section */}
+      {activeTab === "payg" && (
+        <div className="mt-12 mb-8">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-medium text-gray-900 mb-4">
+              Build Your Custom Usage Based Plan
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Select the features you need, TervanX’s usage-based model lets you scale elastically
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Feature Selection */}
+            <div className="py-6 px-2 bg-white">
+              <div className="flex items-center gap-3 mb-6">
+                <h3 className="text-xl font-medium text-gray-900">What are you looking for?</h3>
+              </div>
+
+              {/* Feature Tags Grid */}
+              <div className="flex flex-wrap gap-2">
+                {featurePricing.map((feature) => (
+                  <button
+                    key={feature.id}
+                    onClick={() => toggleFeature(feature.id)}
+                    className={`rounded-full p-1 text-xs font-bold transition-all border flex items-center justify-center gap-2 ${selectedFeatures.includes(feature.id)
+                      ? "border-blue-300 bg-blue-50 text-blue-700"
+                      : "bg-white text-gray-700 border-none hover:border-blue-300 hover:bg-blue-50"
+                      }`}
+                  >
+                    <div className={`w-4 h-4 rounded-full border flex items-center justify-center transition-all ${selectedFeatures.includes(feature.id)
+                      ? "bg-blue-500 border-blue-500"
+                      : "bg-white border-gray-400"
+                      }`}>
+                      <Check
+                        size={12}
+                        className={`text-white transition-all ${selectedFeatures.includes(feature.id) ? "opacity-100" : "opacity-0"
+                          }`}
+                      />
+                    </div>
+                    {feature.name}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Pay As You Go Summary */}
+            <div className="border border-gray-200 rounded-xl p-6 bg-white overflow-hidden h-full flex flex-col">
+              <div className="flex items-center gap-3 mb-6">
+                <h3 className="text-xl font-medium text-gray-900">Pay As You Go</h3>
+              </div>
+              <p className="text-sm text-gray-600 mt-2">Flexible — pay only for what you use.</p>
+              <div className="space-y-6">
+                <div className="pt-4">
+                  <span className="text-3xl font-medium text-black  font-grotesque">
+                    ${calculateTotal().toFixed(2)}
+                  </span>
+                  <p className="text-sm text-gray-600 text-uppercase">
+                    per feature
+                  </p>
+                </div>
+                {selectedFeatures.length > 0 && (
+                  <div className="space-y-2">
+                    <h4 className="font-medium text-gray-900 text-sm">Selected Features:</h4>
+                    <p className="text-sm text-gray-600 flex items-start">
+                      <div className="border-primary border-1  p-1 mr-1 rounded-full"> <Check size={12} className="flex-shrink-0 text-blue-600 " />
+                      </div>
+                      {selectedFeatures.map(featureId => {
+                        const feature = featurePricing.find(f => f.id === featureId);
+                        return feature ? feature.name : null;
+                      }).filter(Boolean).join(', ')}
+                    </p>
+                  </div>
+                )}
+
+                {/* CTA Buttons */}
+                <div className="space-y-3 flex">
+                  <Button
+                    size="md"
+                    variant="primary"
+                    className="w-full py-3"
+                    onClick={() => console.log('Get Started with selected features:', selectedFeatures)}
+                  >
+                    Get Started
+                  </Button>
+                </div>
+              </div>
+            </div>
+            {/* Enterprise Plan Card */}
+            <div className="border-2 border-blue-500 rounded-xl bg-gradient-to-br from-blue-50 to-white overflow-hidden h-full flex flex-col">
+
+
+              <div className="flex flex-col flex-1 p-6">
+                {/* Plan Header */}
+                <div className="mb-6">
+                  <h3 className="text-xl font-medium text-gray-900">Enterprise</h3>
+                  <p className="text-sm text-gray-600 mt-2">
+                    High-volume Pay As You Go? Get custom volume discounts and dedicated support.
+                  </p>
+                </div>
+
+                {/* Pricing */}
+                <div className="mb-6">
+                  <div className="text-2xl lg:text-3xl font-grotesque font-medium my-4">
+                    Custom Pricing
+                  </div>
+                  <p className="text-sm text-gray-600">
+                    Volume-based discounts on Pay As You Go
+                  </p>
+                </div>
+                {/* Features */}
+                <div className="w-full flex flex-col gap-3 mb-6 flex-1">
+                  {[
+                    "Custom volume pricing", ,
+                    "Priority 24/7 support",
+                    "SLA guarantees",
+                    "Advanced analytics"
+                  ].map((feature, index) => (
+                    <div key={index} className="flex items-start justify-start w-full gap-2">
+                      <Check size={16} className="flex-shrink-0 text-blue-600 mt-0.5" />
+                      <p className="text-sm text-gray-700">{feature}</p>
+                    </div>
+                  ))}
+                </div>
+
+                {/* CTA Button */}
+                <div className="flex flex-col gap-4 w-full">
+                  <Button
+                    size="md"
+                    variant="primary"
+                    type="button"
+                    onClick={() => console.log('Contact Enterprise Sales')}
+                    className="w-full py-3 bg-blue-600 hover:bg-blue-700"
+                  >
+                    Contact Sales
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Subscription Plans (including Enterprise) */}
+      {activeTab === "fixed" && (
+        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-8 w-full">
+          {pricingPlans.map((plan) => (
             <PricingCard
               key={plan.id}
               plan={plan}
               isAnnualBilling={isAnnualBilling}
-              isPayg={activeTab === "payg"}
+              isPayg={false}
             />
           ))}
-      </div>
+
+        </div>
+      )}
 
       <p className="text-base font-medium text-dark/80 text-center mt-8">
         Prices exclude any applicable taxes.
@@ -102,13 +294,13 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isAnnualBilling, isPayg
   return (
     <div
       className={`border border-solid overflow-hidden rounded-xl font-medium h-full flex flex-col ${plan.mostPopular
-        ? "border-[#e0e0e2] border-2 bg-[#FFFFF7]"
+        ? "border-[#e0e0e2] border-2 bg-[#D1ECFF]/80"
         : "border-[#E5E7EB] bg-white"
         }`}
     >
       {plan.mostPopular && (
         <div className="px-6 pt-6">
-          <span className="bg-yellow1 text-black text-xs font-mono py-1 px-2 rounded-lg">
+          <span className="bg-primary text-white text-xs font-mono py-1 px-2 rounded-lg">
             Most Popular
           </span>
         </div>
@@ -128,7 +320,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isAnnualBilling, isPayg
           <div className="text-2xl lg:text-3xl font-grotesque font-medium my-4">
             {currentPrice === 0 ? (isPayg ? "Flexible" : "Free") : `$${currentPrice}`}
             {currentPrice !== 0 && !isPayg && (
-              <span className="text-sm ml-1">/mo</span>
+              <span className="text-sm ml-1">{isAnnualBilling ? "/yr" : "/mo"}</span>
             )}
           </div>
           <p className="text-sm text-gray-600">
@@ -197,7 +389,6 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isAnnualBilling, isPayg
           >
             {plan.buttonText}
           </Button>
-          {plan.CtaText && <p className="text-center text-lg text-black text-medium">{plan.CtaText}</p>}
           {plan.CtaButton && (
             <Button
               size="md"
@@ -217,7 +408,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isAnnualBilling, isPayg
               key={index}
               className="flex items-start justify-start w-full gap-2"
             >
-              <Check size={16} className="flex-shrink-0 text-green-600 mt-0.5" />
+              <Check size={16} className="flex-shrink-0 text-black mt-0.5" />
               <p className="text-sm text-dark/80">{feature}</p>
             </div>
           ))}

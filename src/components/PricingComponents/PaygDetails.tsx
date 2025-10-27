@@ -64,22 +64,6 @@ const PayAsYouGoDetails: React.FC<PayAsYouGoDetailsProps> = ({ plan }) => {
 
     return (
         <div className="min-h-screen bg-white">
-            {/* Header */}
-            <div className="border-b border-[#E5E7EB]">
-                <div className="max-w-7xl mx-auto px-4 lg:px-14 py-8">
-                    <Link href="/pricing" className="inline-flex items-center text-sm text-gray-600 hover:text-gray-900 mb-6">
-                        <ArrowLeft size={16} className="mr-2" />
-                        Back to Pricing
-                    </Link>
-                    <div className="text-center">
-                        <h1 className="text-3xl lg:text-6xl font-medium text-gray-900 mb-4">Pay-As-You-Go</h1>
-                        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                            {description}
-                        </p>
-                    </div>
-                </div>
-            </div>
-
             <div className="max-w-7xl mx-auto px-4 lg:px-14 py-12">
                 {/* Core Pricing Breakdown */}
                 <section className="mb-16">
@@ -127,7 +111,7 @@ const PayAsYouGoDetails: React.FC<PayAsYouGoDetailsProps> = ({ plan }) => {
                         <div className="space-y-3 mb-8">
                             {starterBundle.includes.map((item, index) => (
                                 <div key={index} className="flex items-start gap-3">
-                                    <Check size={16} className="text-green-600 mt-0.5 flex-shrink-0" />
+                                    <Check size={16} className="text-black mt-0.5 flex-shrink-0" />
                                     <span className="text-gray-700 text-sm">{item}</span>
                                 </div>
                             ))}
@@ -151,7 +135,7 @@ const PayAsYouGoDetails: React.FC<PayAsYouGoDetailsProps> = ({ plan }) => {
                         <div className="space-y-3 mb-8">
                             {freeTier.includes.map((item, index) => (
                                 <div key={index} className="flex items-start gap-3">
-                                    <Check size={16} className="text-green-600 mt-0.5 flex-shrink-0" />
+                                    <Check size={16} className="textblack mt-0.5 flex-shrink-0" />
                                     <span className="text-gray-700 text-sm">{item}</span>
                                 </div>
                             ))}
@@ -174,7 +158,7 @@ const PayAsYouGoDetails: React.FC<PayAsYouGoDetailsProps> = ({ plan }) => {
                         <ul className="space-y-3">
                             {safeguards.map((safeguard, index) => (
                                 <li key={index} className="flex items-start gap-3 text-sm text-gray-700">
-                                    <Check size={16} className="text-green-600 mt-0.5 flex-shrink-0" />
+                                    <Check size={16} className="text-black mt-0.5 flex-shrink-0" />
                                     {safeguard}
                                 </li>
                             ))}
@@ -191,7 +175,7 @@ const PayAsYouGoDetails: React.FC<PayAsYouGoDetailsProps> = ({ plan }) => {
                         <ul className="space-y-3">
                             {developerFeatures.map((feature, index) => (
                                 <li key={index} className="flex items-start gap-3 text-sm text-gray-700">
-                                    <Check size={16} className="text-green-600 mt-0.5 flex-shrink-0" />
+                                    <Check size={16} className="text-black mt-0.5 flex-shrink-0" />
                                     {feature}
                                 </li>
                             ))}
@@ -209,7 +193,7 @@ const PayAsYouGoDetails: React.FC<PayAsYouGoDetailsProps> = ({ plan }) => {
                         {targetAudience.map((audience, index) => (
                             <div key={index} className="border border-[#E5E7EB] rounded-xl p-6 bg-white">
                                 <div className="flex items-start gap-3">
-                                    <Check size={16} className="text-green-600 mt-0.5 flex-shrink-0" />
+                                    <Check size={16} className="text-black mt-0.5 flex-shrink-0" />
                                     <p className="text-gray-700 text-sm">{audience}</p>
                                 </div>
                             </div>

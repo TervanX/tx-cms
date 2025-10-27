@@ -21,14 +21,14 @@ export const pricingPlans: PricingPlan[] = [
             "Chrome extension"
         ],
         buttonText: "Get started",
-        buttonVariant: "secondary"
+        buttonVariant: "blue"
     },
     {
         id: "basic",
         name: "Basic / Starter",
         description: "Perfect for small businesses or startups (e.g., African e-commerce, payment apps).",
         price: 199,
-        monthlyPrice: 199,
+        monthlyPrice: 1990,
         priceNote: "per month",
         monthlyPriceNote: "per month",
         credits: 1000000,
@@ -51,7 +51,7 @@ export const pricingPlans: PricingPlan[] = [
         ],
         CtaText: "Start 14-day trial",
         buttonText: "Buy now",
-        buttonVariant: "secondary",
+        buttonVariant: "blue",
         // Detailed information for plan detail page
         detailInfo: {
             quota: "1M API calls/day (~30M/month)",
@@ -134,7 +134,7 @@ export const pricingPlans: PricingPlan[] = [
         id: "professional",
         name: "Pro / Growth",
         description: "Ideal for mid-sized fintechs or crypto platforms.",
-        price: 499,
+        price: 4990,
         monthlyPrice: 499,
         priceNote: "per month",
         monthlyPriceNote: "per month",
@@ -237,7 +237,7 @@ export const pricingPlans: PricingPlan[] = [
         id: "enterprise",
         name: "Enterprise",
         description: "For large exchanges, banks, custodians with custom requirements.",
-        price: 2000,
+        price: 20000,
         monthlyPrice: 2000,
         priceNote: "starting at per month (custom pricing)",
         monthlyPriceNote: "starting at per month (custom pricing)",
@@ -263,7 +263,7 @@ export const pricingPlans: PricingPlan[] = [
         ],
         buttonText: "Buy now",
         CtaButton: "Talk to Sales",
-        buttonVariant: "secondary",
+        buttonVariant: "blue",
         // Detailed information for plan detail page
         detailInfo: {
             quota: "Unlimited API Calls (Post-Vetting)",
@@ -465,7 +465,7 @@ export const payAsYouGoPlan: PayAsYouGoPlan = {
         "Starter Bundle: $99/month available"
     ],
     buttonText: "Get Started",
-    buttonVariant: "secondary",
+    buttonVariant: "blue",
     CtaText: "Start with Free Tier",
     detailedPricing: {
         description: "Pay-As-You-Go (Usage-Based) Plan - Flexible pricing for developers and startups building customer-facing apps without upfront commitment.",
@@ -583,3 +583,5 @@ export const payAsYouGoPlan: PayAsYouGoPlan = {
         ]
     }
 };
+
+

@@ -86,9 +86,6 @@ const PlanDetailPage: React.FC<PlanDetailPageProps> = ({ planId, isAnnualBilling
                                 >
                                     {plan.buttonText}
                                 </Button>
-                                {plan.CtaText && (
-                                    <p className="text-center text-sm text-gray-600">{plan.CtaText}</p>
-                                )}
                             </div>
                         </div>
                     </div>
@@ -183,7 +180,7 @@ const PlanDetailPage: React.FC<PlanDetailPageProps> = ({ planId, isAnnualBilling
                                 <ul className="space-y-3">
                                     {plan.detailInfo.safeguards.map((safeguard, index) => (
                                         <li key={index} className="flex items-start gap-3 text-sm text-gray-700">
-                                            <Check size={16} className="text-green-600 mt-0.5 flex-shrink-0" />
+                                            <Check size={16} className="text-blackmt-0.5 flex-shrink-0" />
                                             {safeguard}
                                         </li>
                                     ))}
@@ -201,7 +198,7 @@ const PlanDetailPage: React.FC<PlanDetailPageProps> = ({ planId, isAnnualBilling
                                 <ul className="space-y-3">
                                     {plan.detailInfo.deployment.map((item, index) => (
                                         <li key={index} className="flex items-start gap-3 text-sm text-gray-700">
-                                            <Check size={16} className="text-green-600 mt-0.5 flex-shrink-0" />
+                                            <Check size={16} className="text-black mt-0.5 flex-shrink-0" />
                                             {item}
                                         </li>
                                     ))}
@@ -219,7 +216,7 @@ const PlanDetailPage: React.FC<PlanDetailPageProps> = ({ planId, isAnnualBilling
                                 <ul className="space-y-3">
                                     {plan.detailInfo.customization.map((item, index) => (
                                         <li key={index} className="flex items-start gap-3 text-sm text-gray-700">
-                                            <Check size={16} className="text-green-600 mt-0.5 flex-shrink-0" />
+                                            <Check size={16} className="text-black mt-0.5 flex-shrink-0" />
                                             {item}
                                         </li>
                                     ))}
@@ -237,7 +234,7 @@ const PlanDetailPage: React.FC<PlanDetailPageProps> = ({ planId, isAnnualBilling
                                 <ul className="space-y-3">
                                     {plan.detailInfo.support.map((item, index) => (
                                         <li key={index} className="flex items-start gap-3 text-sm text-gray-700">
-                                            <Check size={16} className="text-green-600 mt-0.5 flex-shrink-0" />
+                                            <Check size={16} className="text-black mt-0.5 flex-shrink-0" />
                                             {item}
                                         </li>
                                     ))}
@@ -254,7 +251,7 @@ const PlanDetailPage: React.FC<PlanDetailPageProps> = ({ planId, isAnnualBilling
                                 <ul className="space-y-2">
                                     {plan.detailInfo.idealFor.map((item, index) => (
                                         <li key={index} className="text-sm text-gray-700 flex items-start gap-3">
-                                            <Check size={16} className="text-green-600 mt-0.5 flex-shrink-0" />
+                                            <Check size={16} className="text-black mt-0.5 flex-shrink-0" />
                                             {item}
                                         </li>
                                     ))}
@@ -288,7 +285,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({ title, features }) => {
             <ul className="space-y-3">
                 {features.map((feature, index) => (
                     <li key={index} className="flex items-start gap-3 text-gray-700">
-                        <Check size={16} className="text-green-600 mt-0.5 flex-shrink-0" />
+                        <Check size={16} className="text-black mt-0.5 flex-shrink-0" />
                         <span>{feature}</span>
                     </li>
                 ))}

@@ -44,7 +44,7 @@ export interface PricingPlan {
   mostPopular: boolean;
   features: string[];
   buttonText: string;
-  buttonVariant: 'primary' | 'secondary' | 'outline' | 'ghost';
+  buttonVariant: 'primary' | 'secondary' | 'outline' | 'ghost' | 'blue';
   CtaText?: string;
   CtaButton?: string;
   detailInfo?: {
@@ -94,7 +94,7 @@ export interface PayAsYouGoPlan {
   mostPopular: boolean;
   features: string[];
   buttonText: string;
-  buttonVariant: 'primary' | 'secondary' | 'outline' | 'ghost';
+  buttonVariant: 'primary' | 'secondary' | 'outline' | 'ghost' | 'blue';
   CtaText?: string;
   detailedPricing: {
     description: string;

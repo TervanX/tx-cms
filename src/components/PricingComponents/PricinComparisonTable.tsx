@@ -48,7 +48,7 @@ const PricingComparisonTable: React.FC<PricingComparisonTableProps> = ({
                                         <h3 className="text-xl font-medium mb-2">{plan.name}</h3>
                                         {plan.mostPopular && (
                                             <div className="flex-shrink-0">
-                                                <span className="bg-yellow1 text-black text-xs font-mono py-1 px-2 rounded-lg">
+                                                <span className="bg-primary text-white text-xs font-mono py-1 px-2 rounded-lg">
                                                     Most Popular
                                                 </span>
                                             </div>
@@ -87,7 +87,7 @@ const PricingComparisonTable: React.FC<PricingComparisonTableProps> = ({
                                     {item.values.map((value, valueIndex) => (
                                         <div
                                             key={valueIndex}
-                                            className={`p-2 text-center flex items-center justify-center ${valueIndex < item.values.length - 1 ? 'border-r border-gray-200' : ''
+                                            className={`p-2 text-start flex items-start ${valueIndex < item.values.length - 1 ? 'border-r border-gray-200' : ''
                                                 }`}
                                         >
                                             {value || "-"}

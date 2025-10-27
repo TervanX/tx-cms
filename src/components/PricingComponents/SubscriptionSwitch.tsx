@@ -27,7 +27,7 @@ const SubscriptionSwitch: React.FC<SubscriptionSwitchProps> = ({
               Annual billing
             </span>
             {isAnnualBilling && (
-              <span className="absolute left-1/2 transform -translate-x-1/2 -bottom-6 bg-yellow1 text-black text-xs uppercase font-mono font-bold px-2 py-1 rounded-md whitespace-nowrap">
+              <span className="absolute left-1/2 transform -translate-x-1/2 -bottom-6 bg-primary text-white text-xs uppercase font-mono font-medium px-2 py-1 rounded-md whitespace-nowrap">
                 Save 20%
               </span>
             )}
