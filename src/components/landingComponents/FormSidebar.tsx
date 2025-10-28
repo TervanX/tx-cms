@@ -22,7 +22,7 @@ const defaultCompanies = [
 ];
 
 const defaultTestimonial = {
-    quote: "Scaling to meet customer demand has never been easier — TervanX ensures seamless performance, uptime, and compliance at every transaction.",
+    quote: "Scaling to meet customer demand has never been easier — TX Switch ensures seamless performance, uptime, and compliance at every transaction.",
     author: "Jeff Cardoso",
     position: "Vice President Operations, Azazie"
 };

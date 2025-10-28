@@ -11,7 +11,7 @@ export const productivityProps = {
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
-            src: "/assets/productivity-hero-desktop.webp",
+            src: "/assets/solution1.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         product: {

@@ -120,9 +120,7 @@ export default function FeaturesSection({
 
               <a
                 className="font-sans relative cursor-pointer bg-gradient-to-r from-current to-current bg-no-repeat bg-[size:100%_0.05em] bg-[position:0%_100%] [transition:background-size_0.2s_ease-out] hover:bg-[size:0%_0.05em] hover:bg-[position:100%_100%] inline-block pb-1 leading-[95%] font-semibold tracking-[-0.16px] text-black"
-                href={activeFeatureData.href}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#"
               >
                 {linkStyle.text}
               </a>
@@ -140,23 +138,20 @@ export default function FeaturesSection({
               >
                 <div
                   className="flex w-full items-start justify-between cursor-pointer"
-                  onClick={() => window.open(feature.href, "_blank")}
                 >
                   <h3
-                    className={`font-medium-ll mr-4 text-[42px] leading-[95%] font-[600] tracking-[-2.56px] lg:text-[48px] xl:text-[52px] [@media(min-width:1450px)]:text-[64px] transition-colors duration-300 group-hover:text-black ${
-                      activeFeature === feature.id
-                        ? "text-black"
-                        : "text-[#00000033]"
-                    }`}
+                    className={`font-medium-ll mr-4 text-[42px] leading-[95%] font-[600] tracking-[-2.56px] lg:text-[48px] xl:text-[52px] [@media(min-width:1450px)]:text-[64px] transition-colors duration-300 group-hover:text-black ${activeFeature === feature.id
+                      ? "text-black"
+                      : "text-[#00000033]"
+                      }`}
                   >
                     {feature.name}
                   </h3>
                   <ArrowUpRight
-                    className={`mt-3 h-7 w-7 xl:mt-3 xl:h-9 xl:w-9 [@media(min-width:1450px)]:mt-4 transition-all duration-300 ${
-                      activeFeature === feature.id
-                        ? "fill-black opacity-100"
-                        : "fill-transparent opacity-0"
-                    }`}
+                    className={`mt-3 h-7 w-7 xl:mt-3 xl:h-9 xl:w-9 [@media(min-width:1450px)]:mt-4 transition-all duration-300 ${activeFeature === feature.id
+                      ? "fill-black opacity-100"
+                      : "fill-transparent opacity-0"
+                      }`}
                   />
                 </div>
               </motion.div>

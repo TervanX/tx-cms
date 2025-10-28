@@ -30,7 +30,7 @@ export default function PayoutsAPI() {
     },
     {
       id: "outbound",
-      label: "Data",
+      label: "Data & Insights",
       component: OutboundSection,
       props: outboundProps,
     },

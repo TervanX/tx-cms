@@ -819,7 +819,7 @@ const navItems: NavItemInterface[] = [
             href: "/contact/request-access",
             text: "Get Started",
           },
-          { href: "/developers/documentation", text: "Prebuilt Components" },
+          // { href: "/developers/documentation", text: "Prebuilt Components" },
           {
             href: "/contact/request-access",
             text: "Libraries & SDKs",
@@ -927,10 +927,10 @@ const navItems: NavItemInterface[] = [
             href: "/contact/request-access",
             text: "Tx Console",
           },
-          {
-            href: "/api-changelog",
-            text: "API Changelog",
-          },
+          // {
+          //   href: "/api-changelog",
+          //   text: "API Changelog",
+          // },
           {
             href: "/contact/request-access",
             text: "TX Apps SDK",

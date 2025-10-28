@@ -31,7 +31,7 @@ export default function RevenueRecognition() {
     },
     {
       id: "outbound",
-      label: "Data",
+      label: "Data & Insights",
       component: OutboundSection,
       props: outboundProps,
     },

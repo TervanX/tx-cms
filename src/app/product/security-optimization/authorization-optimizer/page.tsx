@@ -31,7 +31,7 @@ export default function AuthorizationOptimizer() {
     },
     {
       id: "outbound",
-      label: "Data",
+      label: "Data & Insights",
       component: OutboundSection,
       props: outboundProps,
     },
@@ -49,7 +49,7 @@ export default function AuthorizationOptimizer() {
         span="Intelligent Access & Permission Management"
         description="Automate authorization, optimize permission structures, and enforce least-privilege access across 300+ systems and chains."
         efficiencyTitle="How TX Authorization Optimizer Secures Your Digital Operations"
-        
+
         efficiencyCards={[
           {
             category: "Productivity",
