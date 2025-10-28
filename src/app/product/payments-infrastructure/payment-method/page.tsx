@@ -30,7 +30,7 @@ export default function PaymentMethods() {
     },
     {
       id: "outbound",
-      label: "Data",
+      label: "Data & Insights",
       component: OutboundSection,
       props: outboundProps,
     },

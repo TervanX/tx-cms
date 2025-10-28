@@ -183,7 +183,7 @@ export default function ProductivitySection({
               {/* Quote */}
               <div className="flex flex-col gap-4 text-current [grid-area:quote]">
                 <span className=" font-serif text-[26px] leading-[120%] tracking-[-1.2px] md:tracking-[-1.8px]  @2xl:text-[36px] w-full text-center">
-                  {testimonial.quote}
+                  "{testimonial.quote}"
                 </span>
               </div>
 

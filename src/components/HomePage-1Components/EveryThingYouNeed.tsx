@@ -12,31 +12,31 @@ interface CardProps {
 const cards: CardProps[] = [
   {
     id: "1",
-    href: "#outbound",
+    href: "#payment",
     logo: "/assets/pipeline_builder_icon.e6b3fd21.svg",
-    title: "Outbound",
-    description: "Book more meetings faster with better data, smarter AI, and easier automation."
+    title: "Payment",
+    description: "Enable fast and safer stable coin payment."
   },
   {
     id: "2",
-    href: "#inbound",
+    href: "#treasury",
     logo: "/assets/pipeline_builder_icon.e6b3fd21.svg",
-    title: "Inbound",
-    description: "Capture, qualify, and route every lead instantly so hot leads never go cold."
+    title: "Treasury Management",
+    description: "Secure Control and automate Operations for digital assets."
   },
   {
     id: "3",
-    href: "#enrichment",
+    href: "#embedded",
     logo: "/assets/pipeline_builder_icon.e6b3fd21.svg",
-    title: "Data Enrichment",
-    description: "Cleanse and complete your records with always-fresh data that powers smarter targeting."
+    title: "Embedded Wallets",
+    description: "Create white label wallet for consumers and retails."
   },
   {
     id: "4",
-    href: "#deal",
+    href: "#wallet",
     logo: "/assets/pipeline_builder_icon.e6b3fd21.svg",
-    title: "Deal Execution",
-    description: "Keep deals moving with AI-powered prep, meeting insights, and follow-up."
+    title: "Wallet as a services",
+    description: "Protect scale and Optimise Crypto wallets."
   }
 ];
 
@@ -45,11 +45,10 @@ const CardShowcase: React.FC = () => {
     <div className="relative py-2 lg:py-12 z-40 bg-white overflow-x-hidden">
       <div className="bg-white my-16 lg:my-28 px-4 lg:px-0 lg:w-1/2 mx-auto">
         <h1 className="text-2xl sm:text-3xl md:text-5xl font-medium text-dark text-center mb-4 sm:mb-2">
-          Everything you need,
-          from finding leads to winning deals
+          Get to Know TervanX - Built for Scale. Trusted for Security
         </h1>
         <p className="text-center text-base sm:text-lg md:text-xl px-2 sm:px-0">
-          Powered by Apollo Data — one of the largest, most accurate business data networks on the planet.
+          TervanX is the next-generation financial infrastructure layer — connecting banks, fintechs, and enterprises through a secure, high-performance blockchain network designed to move money and digital assets seamlessly across borders.
         </p>
       </div>
 

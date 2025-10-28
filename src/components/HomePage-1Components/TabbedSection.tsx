@@ -10,16 +10,24 @@ import {
     Workflow,
     Eye,
     UserCheck,
-    Calendar,
+    Key,
     RefreshCw,
     Database,
-    Phone,
-    Target,
-    Trash2,
-    CalendarDays,
-    FileText,
-    AlertCircle,
-    BarChart3
+    Smartphone,
+    Puzzle,
+    Lock,
+    Wallet,
+    FileKey,
+    Server,
+    BarChart3,
+    Globe,
+    Coins,
+    Cpu,
+    Settings,
+    ScanEye,
+    Scale,
+    BadgeCheck,
+    CircuitBoard
 } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -32,112 +40,126 @@ type TabItem = {
     bullets: { text: string; icon: React.ReactNode }[];
     image: string;
     bgColor: string;
+    ctaPrimary: string;
+    ctaSecondary: string;
 };
 
 const tabs: TabItem[] = [
     {
-        id: "outbound",
-        label: "OUTBOUND",
-        title: "Turn hours of prospecting into minutes",
+        id: "payment",
+        label: "Payment Infrastructure",
+        title: "Enable fast and safer stable coin payment",
         description: "",
         bullets: [
             {
-                text: "AI-powered, multichannel campaigns in a click",
+                text: "Accept and send USDT, USDC, and other stablecoins globally",
+                icon: <Globe className="w-4 h-4" />
+            },
+            {
+                text: "Real-time settlement with programmable workflows",
                 icon: <Zap className="w-4 h-4" />
             },
             {
-                text: "Built-in email deliverability guardrails",
+                text: "Bank-grade compliance, KYT, and AML protection",
                 icon: <Shield className="w-4 h-4" />
             },
             {
-                text: "Prioritized task lists to maximize selling",
-                icon: <ListChecks className="w-4 h-4" />
-            },
-            {
-                text: "Workflow automations to identify and scale what works",
-                icon: <Workflow className="w-4 h-4" />
+                text: "Multi-chain support for seamless cross-border operations",
+                icon: <CircuitBoard className="w-4 h-4" />
             },
         ],
         image: "/assets/outbound2.webp",
         bgColor: "bg-yellow-50",
+        ctaPrimary: "Start Processing Payments",
+        ctaSecondary: "Explore API Documentation"
     },
     {
-        id: "inbound",
-        label: "INBOUND",
-        title: "Qualify and act on inbound leads in seconds",
+        id: "treasury",
+        label: "Treasury Management",
+        title: "Secure Control and automate Operations for digital assets",
         description: "",
         bullets: [
             {
-                text: "Anonymous visitor identification",
-                icon: <Eye className="w-4 h-4" />
+                text: "Unified dashboard for multi-wallet and multi-asset management",
+                icon: <BarChart3 className="w-4 h-4" />
             },
             {
                 text: "Real-time form enrichment",
-                icon: <UserCheck className="w-4 h-4" />
+                icon: <ScanEye className="w-4 h-4" />
             },
             {
-                text: "Instant routing with built-in calendar and scheduler",
-                icon: <Calendar className="w-4 h-4" />
+                text: "Multi-Party Computation (MPC) protection for high-value assets",
+                icon: <Key className="w-4 h-4" />
             },
             {
-                text: "Automated nurture & follow-up sequences",
+                text: "Automated rebalancing and smart policy enforcement",
                 icon: <RefreshCw className="w-4 h-4" />
+            },
+            {
+                text: "Real-time analytics, risk monitoring, and transaction visibility",
+                icon: <Eye className="w-4 h-4" />
             },
         ],
         image: "/assets/inbound2.webp",
         bgColor: "bg-purple-50",
+        ctaPrimary: " Get a Demo",
+        ctaSecondary: "See How Treasury Works"
     },
     {
-        id: "enrichment",
-        label: "DATA ENRICHMENT",
-        title: "Fuel smarter selling with always-fresh data",
+        id: "embedded",
+        label: "Embedded Wallets",
+        title: "Create white label wallet for consumers and retails",
         description: "",
         bullets: [
             {
-                text: "210M+ contacts and 30M+ companies",
-                icon: <Database className="w-4 h-4" />
+                text: "Fully white-labeled wallet SDK and APIs",
+                icon: <Settings className="w-4 h-4" />
             },
             {
-                text: "Verified emails & phone numbers for faster reach",
-                icon: <Phone className="w-4 h-4" />
+                text: "Support for stablecoins, crypto, and fiat balances",
+                icon: <Coins className="w-4 h-4" />
             },
             {
-                text: "Better targeting and personalization",
-                icon: <Target className="w-4 h-4" />
+                text: "Easy integration with existing apps and ecosystems",
+                icon: <Puzzle className="w-4 h-4" />
             },
             {
-                text: "Clean data across your entire stack and CRM",
-                icon: <Trash2 className="w-4 h-4" />
+                text: "Enterprise security and fraud prevention built-in",
+                icon: <Lock className="w-4 h-4" />
             },
         ],
         image: "/assets/data2.webp",
         bgColor: "bg-pink-50",
+        ctaPrimary: "Build Your Wallet Now",
+        ctaSecondary: " View Developer Tools"
     },
     {
-        id: "deal",
-        label: "DEAL EXECUTION",
-        title: "Capture every conversation, accelerate every deal",
+        id: "wallet",
+        label: "Wallet-as-a-Service",
+        title: "Protect scale and Optimise Crypto wallets",
         description: "",
         bullets: [
             {
-                text: "Pre-meeting insights to prep in seconds",
-                icon: <CalendarDays className="w-4 h-4" />
+                text: "Modular wallet architecture for crypto and stablecoins",
+                icon: <Cpu className="w-4 h-4" />
             },
             {
-                text: "AI-powered call summaries, follow-ups, and task creation",
-                icon: <FileText className="w-4 h-4" />
+                text: "Advanced MPC and key management",
+                icon: <FileKey className="w-4 h-4" />
             },
             {
-                text: "Pipeline boards & real-time deal alerts",
-                icon: <AlertCircle className="w-4 h-4" />
+                text: "Auto-scaling infrastructure for global performance",
+                icon: <Server className="w-4 h-4" />
             },
             {
-                text: "Conversation insights & performance dashboards for coaching",
-                icon: <BarChart3 className="w-4 h-4" />
+                text: "Policy controls, KYT, and transaction automation",
+                icon: <Scale className="w-4 h-4" />
             },
         ],
         image: "/assets/deal2.webp",
         bgColor: "bg-blue-50",
+        ctaPrimary: "Launch with WaaS",
+        ctaSecondary: "Book a Technical Session"
     },
 ];
 
@@ -296,7 +318,7 @@ const ApolloScrollTabs: React.FC = () => {
                                 initial={{ y: -20, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ duration: 0.5, ease: "easeOut" }}
-                                className="bg-white mb-8"
+                                className="bg-white mb-6"
                             >
                                 <div className="w-full mx-auto px-4 py-3">
                                     <nav className="flex justify-between w-full gap-6 overflow-x-auto no-scrollbar">
@@ -382,10 +404,10 @@ const ApolloScrollTabs: React.FC = () => {
                                                 className="flex flex-col sm:flex-row gap-4 pt-4 absolute inset-0"
                                             >
                                                 <button className="bg-black hover:bg-gray-800 text-white font-medium px-6 py-3 rounded-lg transition-all">
-                                                    Get started for free
+                                                    {currentTab.ctaPrimary}
                                                 </button>
                                                 <button className="bg-transparent hover:bg-black/5 text-black font-medium px-6 py-3 rounded-lg border-2 border-black transition-all">
-                                                    Learn more
+                                                    {currentTab.ctaSecondary}
                                                 </button>
                                             </motion.div>
                                         </AnimatePresence>
@@ -505,10 +527,10 @@ const ApolloScrollTabs: React.FC = () => {
                                     {/* Buttons */}
                                     <div className="flex flex-col gap-3 pt-4">
                                         <button className="bg-black hover:bg-gray-800 text-white font-medium px-5 py-2.5 rounded-lg transition-all text-sm">
-                                            Get started for free
+                                            {currentTab.ctaPrimary}
                                         </button>
                                         <button className="bg-transparent hover:bg-black/5 text-black font-medium px-5 py-2.5 rounded-lg border-2 border-black transition-all text-sm">
-                                            Learn more
+                                            {currentTab.ctaSecondary}
                                         </button>
                                     </div>
 
