@@ -88,7 +88,7 @@ const LogoGrid: React.FC<LogoGridProps> = ({
               src={logoItem.url}
               alt={logoItem.imageAlt}
               height="20"
-              className="h-10 filter brightness-0 invert"
+              className={`h-10 ${className}`}
             />
           </motion.span>
         ))}
@@ -103,7 +103,7 @@ const LogoGrid: React.FC<LogoGridProps> = ({
               src={logoItem.url}
               alt={logoItem.imageAlt}
               height="20"
-              className="h-10 filter brightness-0 invert"
+              className={`h-10 ${className}`}
             />
           </motion.span>
         ))}

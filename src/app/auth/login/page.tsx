@@ -6,6 +6,7 @@ const SignUpPage = () => {
         <div>
             <div className='h-20' />
             <SignUp />
+
         </div>
     )
 }
