@@ -7,7 +7,7 @@ export const productivityProps = {
         "TX Exchange Engine automates the most complex aspects of digital asset trading—liquidity provisioning, route optimization, and risk management—delivering superior execution with minimal intervention.",
     images: {
         mobile: {
-            src: "//assetsproductivity-hero-mobile.webp",
+            src: "/assets/solution1.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
@@ -172,7 +172,7 @@ export const outboundProps = {
     },
     images: {
         mobile: {
-            src: "/assets/outbound-hero-mobile.webp",
+            src: "/assets/outbound-hero-desktop.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {

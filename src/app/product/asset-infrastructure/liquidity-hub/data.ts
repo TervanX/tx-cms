@@ -7,7 +7,7 @@ export const productivityProps = {
         "Liquidity Hub automates the most complex aspects of liquidity sourcing—venue selection, route optimization, and execution management—delivering superior trading outcomes with zero manual intervention.",
     images: {
         mobile: {
-            src: "//assetsproductivity-hero-mobile.webp",
+            src: "/assets/solution1.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
@@ -185,7 +185,7 @@ export const outboundProps = {
     },
     images: {
         mobile: {
-            src: "/assets/outbound-hero-mobile.webp",
+            src: "/assets/outbound-hero-desktop.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {

@@ -7,7 +7,7 @@ export const productivityProps = {
         "TX Treasury automates the most complex aspects of digital treasury management—from cash positioning to cross-chain settlements—executing with precision and intelligence around the clock.",
     images: {
         mobile: {
-            src: "/assets/productivity-hero-mobile.webp",
+            src: "/assets/solution1.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
@@ -143,7 +143,7 @@ export const outboundProps = {
         "Move beyond basic balance tracking to predictive insights that optimize capital allocation and financial strategy.",
     images: {
         mobile: {
-            src: "/assets/outbound-hero-mobile.webp",
+            src: "/assets/outbound-hero-desktop.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {

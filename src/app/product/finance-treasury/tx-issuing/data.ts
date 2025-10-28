@@ -7,7 +7,7 @@ export const productivityProps = {
         "TX Issuing automates the most complex aspects of digital asset creation—from smart contract deployment to regulatory compliance—executing with precision across all supported chains.",
     images: {
         mobile: {
-            src: "/assets/productivity-hero-mobile.webp",
+            src: "/assets/solution1.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
@@ -143,7 +143,7 @@ export const outboundProps = {
         "Move beyond basic token metrics to predictive insights that optimize asset performance and compliance posture.",
     images: {
         mobile: {
-            src: "/assets/outbound-hero-mobile.webp",
+            src: "/assets/outbound-hero-desktop.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {

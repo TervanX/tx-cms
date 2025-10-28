@@ -124,7 +124,7 @@ export default function ApolloTestimonials() {
           <h1 className="text-[96px] md:text-[136px] lg:text-[170px] tracking-[-0.96px] sm:tracking-[-1.28px] md:tracking-[-1.44px] lg:tracking-[-1.76px] xl:tracking-[-1.92px] leading-[90%] lg:leading-[174px] xl:leading-[192px] font-medium text-[#3F3653]">
             99.99%{" "}
           </h1>
-          <div className="flex items-center justify-end transform -translate-y-5">
+          <div className="flex items-center justify-end transform  -translate-y-4  lg:-translate-y-5">
             {" "}
             <p className="text-2xl   font-medium text-[#3F3653]">Reliability</p>
           </div>

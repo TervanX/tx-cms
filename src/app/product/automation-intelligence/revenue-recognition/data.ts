@@ -7,7 +7,7 @@ export const productivityProps = {
         "Revenue Recognition automates the most complex aspects of financial compliance—from multi-jurisdiction reporting to real-time revenue categorization—saving thousands of hours in manual accounting work.",
     images: {
         mobile: {
-            src: "/assets/productivity-hero-mobile.webp",
+            src: "/assets/solution1.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
@@ -143,7 +143,7 @@ export const outboundProps = {
         "Move beyond basic accounting to predictive insights that drive revenue optimization and compliance confidence.",
     images: {
         mobile: {
-            src: "/assets/outbound-hero-mobile.webp",
+            src: "/assets/outbound-hero-desktop.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {

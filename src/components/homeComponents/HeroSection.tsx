@@ -79,6 +79,14 @@ const HeroSection = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const logosArray = [
+    { url: "/assets/Stripe.png", imageAlt: "Stripe" },
+    { url: "/assets/flutterwave.svg", imageAlt: "flutterwave" },
+    { url: "/assets/Checkbox.webp", imageAlt: "Checkbox" },
+    { url: "/assets/1200px-Paystack_Logo.png", imageAlt: "Paystack_Logo" },
+    { url: "/assets/fireblocks-logo.svg", imageAlt: "fireblocks" },
+  ];
+
   return (
     <div className="mx-auto rounded-t-md overflow-clip rounded-b-md">
       <div className="-z-[1000]"></div>
@@ -215,50 +223,49 @@ const HeroSection = () => {
               <div className="font-sans text-current pt-4 text-base leading-[135%] font-semibold tracking-[-0.16px] md:text-xl md:leading-[110%] md:tracking-[-0.6px]">
                 <div className="flex flex-col gap-2">
                   <p> The same world-class infrastructure that powers</p>
-                  <span className="border-solid  grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 rounded-md px-3 py-2 bg-[rgba(255,255,255,.5)] lg:max-w-[600px] overflow-x-auto">
-                    <span className="flex items-center justify-start gap-4">
-                      <img
-                        src="/assets/Stripe.png"
-                        alt="Stripe"
-                        height="20"
-                        className="h-6"
-                      />
-                      <img
-                        src="/assets/flutterwave.svg"
-                        alt="flutterwave"
-                        height="20"
-                        className="h-6"
-                      />
-                      <img
-                        src="/assets/Checkbox.webp"
-                        alt="Checkbox"
-                        height="20"
-                        className="h-10"
-                      />
-                      <img
-                        src="/assets/1200px-Paystack_Logo.png"
-                        alt="Paystack"
-                        height="20"
-                        className="h-6"
-                      />
-                      <img
-                        src="/assets/fireblocks-logo.svg"
-                        alt="fireblocks"
-                        height="20"
-                        className="h-6"
-                      />
-                    </span>
-                  </span>
 
                   <p className="lg:max-w-[50%]">
                     now powers the TervanX Network — delivering secure,
                     scalable, and intelligent financial systems built for
                     Africa and beyond.
                   </p>
+                  <span className="border-solid  grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 rounded-md px-3 py-2 bg-[rgba(255,255,255,.5)] lg:max-w-[600px]">
+                    <div className="relative mx-auto my-6 overflow-hidden [mask-image:linear-gradient(to_right,transparent_0%,black_20%,black_80%,transparent_100%)]">
+                      <motion.div
+                        className="flex w-max gap-10"
+                        animate={{
+                          x: [0, -windowWidth],
+                        }}
+                        transition={{
+                          x: {
+                            repeat: Infinity,
+                            repeatType: "loop",
+                            duration: 30,
+                            ease: "linear",
+                          },
+                        }}
+                      >
+                        {logosArray.map((logoItem, index) => (
+                          <motion.span
+                            key={`${logoItem.imageAlt}-${index}`}
+                            className="flex gap-10 font-semibold whitespace-nowrap text-lg lg:text-[32px]"
+                            whileHover={{ scale: 1.1, color: "#60a5fa" }}
+                            transition={{ type: "spring", stiffness: 300 }}
+                          >
+                            <img
+                              src={logoItem.url}
+                              alt="Stripe"
+                              height="20"
+                              className="h-6"
+                            />
+                          </motion.span>
+                        ))}
+                      </motion.div>
+                    </div>
+                  </span>
                 </div>
               </div>
             </div>
-
             <div className="relative mx-auto my-6 overflow-hidden [mask-image:linear-gradient(to_right,transparent_0%,black_20%,black_80%,transparent_100%)]">
               <motion.div
                 className="flex w-max gap-10"
