@@ -7,7 +7,7 @@ export const productivityProps = {
         "Risk and Compliance AI automates the most complex aspects of regulatory oversight—from transaction monitoring to suspicious pattern detection—operating with precision across all time zones and jurisdictions.",
     images: {
         mobile: {
-            src: "/assets/productivity-hero-mobile.webp",
+            src: "/assets/solution1.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
@@ -143,7 +143,7 @@ export const outboundProps = {
         "Move beyond reactive monitoring to proactive risk prevention with AI-driven insights and predictive analytics.",
     images: {
         mobile: {
-            src: "/assets/outbound-hero-mobile.webp",
+            src: "/assets/outbound-hero-desktop.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {

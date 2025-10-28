@@ -57,9 +57,9 @@ const EngageCustomersSection = ({
 
           {/* Columns Section */}
           <div className={`grid grid-cols-1 gap-6 lg:gap-8 ${columns.length === 2 ? 'md:grid-cols-2' :
-              columns.length === 3 ? 'md:grid-cols-3' :
-                columns.length === 4 ? 'md:grid-cols-2 lg:grid-cols-4' :
-                  'md:grid-cols-2 lg:grid-cols-3'
+            columns.length === 3 ? 'md:grid-cols-3' :
+              columns.length === 4 ? 'md:grid-cols-2 lg:grid-cols-4' :
+                'md:grid-cols-2 lg:grid-cols-3'
             }`}>
             {columns.map((column, index) => (
               <EngagementSestionCard column={column} key={index} />
@@ -79,7 +79,7 @@ const EngagementSestionCard: React.FC<EngagementSestionCardProps> = ({
   return (
     <div className="flex flex-col">
       {/* Image Container */}
-      <div className="mb-4 overflow-hidden">
+      {/* <div className="mb-4 overflow-hidden">
         <div className="relative w-full h-[400px]">
           <img
             alt={column.imageAlt}
@@ -98,7 +98,7 @@ const EngagementSestionCard: React.FC<EngagementSestionCardProps> = ({
             sizes="(min-width: 1920px) 1920px, 100vw"
           />
         </div>
-      </div>
+      </div> */}
 
       {/* Content Container */}
       <div className="flex flex-col gap-2">

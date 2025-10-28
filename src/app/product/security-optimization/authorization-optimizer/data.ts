@@ -7,7 +7,7 @@ export const productivityProps = {
         "TX Authorization Optimizer automates the most complex aspects of access governance—from role engineering to permission cleanup—operating with precision across your entire digital ecosystem.",
     images: {
         mobile: {
-            src: "//assetsproductivity-hero-mobile.webp",
+            src: "/assets/solution1.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
@@ -181,7 +181,7 @@ export const outboundProps = {
     },
     images: {
         mobile: {
-            src: "/assets/outbound-hero-mobile.webp",
+            src: "/assets/outbound-hero-desktop.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {

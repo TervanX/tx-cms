@@ -10,9 +10,11 @@ const layout = ({
         <div className='bg-white'>
             <Header />
             {children}
-            <LogoGrid
-                backgroundColor="#ffffff"
-                py="py-10" />
+            <div className='lg:py-20'>
+                <LogoGrid
+
+                />
+            </div>
         </div>
     )
 }

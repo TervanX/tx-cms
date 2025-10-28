@@ -37,7 +37,7 @@ export default function Hero({
     span,
     subtitle,
     backgroundImage = "/assets/hero.webp",
-    productImage = "/assets/download.png",
+    productImage = "/assets/product1.png",
     featureLinks = [
         {
             name: "Inbox",
@@ -253,7 +253,15 @@ export default function Hero({
                     alt="Helpdesk illustration"
                     src={backgroundImage}
                     className="transition-opacity duration-300 ease-out-quad size-full object-cover object-center opacity-100"
-                    style={{ position: 'absolute', height: '100%', width: '100%', left: 0, top: 0, right: 0, bottom: 0 }}
+                    style={{
+                        position: "absolute",
+                        height: "100%",
+                        width: "100%",
+                        left: 0,
+                        top: 0,
+                        right: 0,
+                        bottom: 0,
+                    }}
                 />
             </div>
             <div className="absolute inset-[0_0_50%] z-30 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.4)_1px,transparent_1px)] [background-size:34px_34px] [mask:radial-gradient(black,transparent)]" />
@@ -269,10 +277,16 @@ export default function Hero({
                 >
                     <h1
                         className="text-[2.5rem] leading-[95%] font-semibold tracking-[-0.1rem] text-balance flex flex-col lg:text-6xl xl:text-[4.5rem] xl:tracking-[-0.25rem] w-full"
-                        style={{ ['--title-length' as any]: Math.min(title.length, 30) } as React.CSSProperties}
+                        style={
+                            {
+                                ["--title-length" as any]: Math.min(title.length, 30),
+                            } as React.CSSProperties
+                        }
                     >
                         {title}
-                        <span className="lg:mt-[0.15em] lg:ml-[calc(var(--title-length)*1%)]">{span}</span>
+                        <span className="lg:mt-[0.15em] lg:ml-[calc(var(--title-length)*1%)]">
+                            {span}
+                        </span>
                     </h1>
                     <p className="mt-8 mb-1 w-full max-w-[500px] text-lg leading-[120%] 2xl:max-w-[600px] 2xl:text-xl">
                         {description}

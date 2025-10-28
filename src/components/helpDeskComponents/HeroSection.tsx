@@ -60,7 +60,10 @@ export function HeroSection({
             {(primaryButton || secondaryButton) && (
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4 mb-3 w-full">
                 {primaryButton && (
-                  <a className="w-full lg:w-auto relative block lg:inline-block cursor-pointer text-sm rounded-md font-semibold tracking-tight whitespace-nowrap text-white  px-4 py-2.5 leading-none overflow-hidden border-solid border-1 border-white hover:bg-white hover:text-black" href={primaryButton.href}>
+                  <a
+                    className="w-full lg:w-auto relative block lg:inline-block cursor-pointer text-sm rounded-md font-semibold tracking-tight whitespace-nowrap text-white  px-4 py-2.5 leading-none overflow-hidden border-solid border-1 border-white hover:bg-white hover:text-black"
+                    href={primaryButton.href}
+                  >
                     <span className="absolute inset-0 block w-full rounded-md transition-all duration-400 "></span>
                     <span className="relative z-10 ">{primaryButton.text}</span>
                   </a>
@@ -115,10 +118,7 @@ export function HeroSection({
         </div>
       </div>
       <div className="relative ">
-        <img
-          src="/assets/Omnichannel_foreground.webp?&q=90&w=2560"
-          className="w-[80%] mx-auto"
-        />
+        <img src="/assets/product1.png" className="w-[80%] mx-auto" />
         {/* <div className="flex items-center w-[80%] mx-auto py-16">
           <div className="flex items-center w-full  border-[rgba(255,255,255,.1)] border-solid border-t-[.3px] border-b-[.3px] ">
             <p className="font-grotesque text-xs lg:text-base  text-left text-white max-w-[12rem]">

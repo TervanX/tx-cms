@@ -14,15 +14,18 @@ export default function CompaniesSection() {
         <div className="px-5 md:px-7 lg:px-9 xl:px-16">
           <div className="flex flex-col gap-16 pt-12 md:gap-20 md:pt-16 lg:gap-24 lg:pt-20">
             {/* Companies Section */}
-            <div className="flex flex-col gap-12 md:gap-16">
+            <div className="flex flex-col gap-12 md:gap-16 ">
               <div className="flex flex-col items-center gap-4  lg:flex-row lg:justify-between">
                 <p className="text-xs font-mono uppercase tracking-wider text-gray-600">
                   Join over 50,000 developers and financial teams building on
-                  TervanX{" "}
+                  TervanX
                 </p>
 
                 {/* Company Logos Grid */}
-                <LogoGrid w="w-20" backgroundColor="#fffff" />
+                <LogoGrid
+                  backgroundColor="#fffff"
+                  className=" h-10 filter invert-0 brightness-0"
+                />
               </div>
 
               {/* Testimonial Quote Section */}

@@ -50,7 +50,7 @@ export default function LiquidityHub() {
         description="Access deep, optimized liquidity across 300+ chains and all major venues through a single intelligent endpoint."
         primaryButton={{
           text: "Login",
-          href: "https://www.intercom.com/view-demos",
+          href: "/auth/login",
         }}
         secondaryButton={{
           text: "Contact Sales",

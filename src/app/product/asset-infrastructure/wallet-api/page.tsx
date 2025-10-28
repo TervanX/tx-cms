@@ -69,7 +69,7 @@ export default function WalletsAPI() {
         ]}
         primaryButton={{
           text: "Login",
-          href: "https://www.intercom.com/view-demos",
+          href: "/auth/login",
         }}
         secondaryButton={{
           text: "Contact Sales",
@@ -85,7 +85,7 @@ export default function WalletsAPI() {
         title="Launch secure, scalable wallets in days, not months."
         primaryButton={{
           text: "Get Started",
-          href: "https://www.intercom.com/view-demos",
+          href: "/auth/login",
         }}
         secondaryButton={{
           text: "Contact Sales",

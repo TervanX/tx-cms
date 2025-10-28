@@ -7,7 +7,7 @@ export const productivityProps = {
         "TervanX automates settlements, reconciliation, and compliance — all powered by on-chain intelligence.",
     images: {
         mobile: {
-            src: "/assets/productivity-hero-mobile.webp",
+            src: "/assets/solution1.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
@@ -142,7 +142,7 @@ export const outboundProps = {
         "Turn blockchain activity into financial intelligence. TervanX transforms millions of on-chain data points into real-time analytics, predictive insights, and AI-powered optimization, helping teams make smarter, faster financial decisions.",
     images: {
         mobile: {
-            src: "/assets/outbound-hero-mobile.webp",
+            src: "/assets/outbound-hero-desktop.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {
