@@ -65,7 +65,7 @@ const navItems: NavItemInterface[] = [
       //   ),
       //   title: "Products",
       //   description:
-      //     "All TervanX’s core infrastructure and modules — fiat, crypto, and plugin systems.",
+      //     "All LayerX core infrastructure and modules — fiat, crypto, and plugin systems.",
       //   links: [
       //     {
       //       href: "/product/payments-infrastructure/crypto-payments",
@@ -690,7 +690,7 @@ const navItems: NavItemInterface[] = [
       //     { href: "/resources/learn/guides", text: "Guides " },
       //     {
       //       href: "/resources/learn/tervanx-sessions",
-      //       text: "Tervanx Sessions (Annual Dev Summit) ",
+      //       text: "LayerX Sessions (Annual Dev Summit) ",
       //     },
       //   ],
       // },
@@ -1125,7 +1125,7 @@ const DeskTopNavbar = () => {
             height={24}
             alt="logo"
           />
-          <span className="font-medium font-grotesque">TervanX</span>
+          <span className="font-medium font-grotesque">LayerX</span>
         </Link>
         <nav className="hidden lg:flex gap-10 relative">
           {navItems.map((item, index) => (
@@ -1179,7 +1179,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ toggle, isOpen }) => {
             height={24}
             alt="logo"
           />
-          <span className="font-medium font-grotesque">TervanX</span>
+          <span className="font-medium font-grotesque">LayerX</span>
         </Link>
       </div>
       <div className="flex items-center gap-4 justify-end">

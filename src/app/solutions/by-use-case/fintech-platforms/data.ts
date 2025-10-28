@@ -299,7 +299,7 @@ export const fintechPlatformsPageData = {
     testimonial: {
         title: "What Fintech Leaders Say",
         quote:
-            "TervanX enabled us to launch crypto trading features in 30 days instead of 12 months. Their unified API eliminated the complexity of managing multiple blockchain integrations.",
+            "LayerX enabled us to launch crypto trading features in 30 days instead of 12 months. Their unified API eliminated the complexity of managing multiple blockchain integrations.",
         role: "CTO of Neo-bank Platform",
         name: "Maria Rodriguez",
     },

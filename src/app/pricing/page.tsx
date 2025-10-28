@@ -64,7 +64,7 @@ const PricingPage: React.FC = () => {
           </div>
         </div>
         <p className="text-center text-lg text-dark/80 mt-8">
-          now powers the TervanX Network — delivering secure, scalable, and
+          now powers the LayerX Network — delivering secure, scalable, and
           intelligent financial systems built for Africa and beyond.
         </p>
       </div>

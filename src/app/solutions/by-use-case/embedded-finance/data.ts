@@ -284,7 +284,7 @@ export const embeddedFinancePageData = {
 
     testimonial: {
         title: "Platform Leader Testimonials",
-        quote: "By embedding TervanX's financial services, we increased our average revenue per user by 35% and transformed from a single-product company into a financial ecosystem.",
+        quote: "By embedding LayerX's financial services, we increased our average revenue per user by 35% and transformed from a single-product company into a financial ecosystem.",
         role: "CEO of SaaS Platform",
         name: "Michael Chen",
     },

@@ -135,7 +135,7 @@ const Footer: React.FC = () => {
               {/* Legal Links */}
               <div className="flex flex-col gap-4">
                 <p className="text-sm lg:text-base leading-[130%] font-sans font-bold text-white">
-                  Tervanx © 2025
+                  LayerX © 2025
                 </p>
                 {legalLinks.map((link, index) => (
                   <FooterButton
@@ -154,8 +154,9 @@ const Footer: React.FC = () => {
               {footerData.map((section, sectionIndex) => (
                 <div
                   key={`section-${sectionIndex}-${section.title}`}
-                  className={`flex flex-col gap-4 ${sectionIndex >= 6 ? "md:col-span-2 lg:col-span-1" : ""
-                    } ${sectionIndex === 6 ? "lg:col-span-2 xl:col-span-1" : ""}`}
+                  className={`flex flex-col gap-4 ${
+                    sectionIndex >= 6 ? "md:col-span-2 lg:col-span-1" : ""
+                  } ${sectionIndex === 6 ? "lg:col-span-2 xl:col-span-1" : ""}`}
                 >
                   <p className="text-sm lg:text-base leading-[130%] font-sans font-bold text-white">
                     {section.title}

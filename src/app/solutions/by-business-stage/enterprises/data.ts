@@ -167,7 +167,7 @@ export const enterprisePageData = {
         tag: "Integration & Customization",
         backgroundImage: "/assets/image30.webp",
         description:
-            "Connect TervanX to your existing financial infrastructure with enterprise-grade APIs and dedicated support.",
+            "Connect LayerX to your existing financial infrastructure with enterprise-grade APIs and dedicated support.",
     },
 
     engageCustomers: {
@@ -204,7 +204,7 @@ export const enterprisePageData = {
     testimonial: {
         title: "What Enterprise Leaders Are Saying",
         quote:
-            "TervanX enabled us to process $15B in cross-border settlements with 99.99% uptime while maintaining full regulatory compliance across 30 countries. The enterprise-grade reliability and security are unmatched.",
+            "LayerX enabled us to process $15B in cross-border settlements with 99.99% uptime while maintaining full regulatory compliance across 30 countries. The enterprise-grade reliability and security are unmatched.",
         role: " Global Head of Digital Assets, Global Investment Bank",
         name: "Robert Hayes,",
     },

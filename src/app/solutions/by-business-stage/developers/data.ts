@@ -298,7 +298,7 @@ TervanxClient.syncToERP(
     testimonial: {
         title: "What Developers Are Building",
         quote:
-            "We integrated TervanX's Wallet API and had our MVP live in 2 weeks. The documentation is exceptional, and the support team actually understands developer needs.",
+            "We integrated LayerX's Wallet API and had our MVP live in 2 weeks. The documentation is exceptional, and the support team actually understands developer needs.",
         role: "Lead Developer at Web3 Startup",
         name: "Sarah Chen,"
     },
