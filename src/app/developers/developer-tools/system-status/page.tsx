@@ -63,7 +63,7 @@ export default function StatusPage() {
           description: "Main API endpoints and authentication",
           lastUpdated: new Date().toISOString(),
           responseTime: 45,
-          uptime: 99.98
+          uptime: 99.98,
         },
         {
           id: "payments",
@@ -72,7 +72,7 @@ export default function StatusPage() {
           description: "Crypto payment processing and settlement",
           lastUpdated: new Date().toISOString(),
           responseTime: 120,
-          uptime: 99.95
+          uptime: 99.95,
         },
         {
           id: "cards",
@@ -81,7 +81,7 @@ export default function StatusPage() {
           description: "Virtual and physical crypto card services",
           lastUpdated: new Date().toISOString(),
           responseTime: 85,
-          uptime: 99.97
+          uptime: 99.97,
         },
         {
           id: "compliance",
@@ -90,7 +90,7 @@ export default function StatusPage() {
           description: "KYC verification and compliance checks",
           lastUpdated: new Date().toISOString(),
           responseTime: 200,
-          uptime: 99.90
+          uptime: 99.9,
         },
         {
           id: "infrastructure",
@@ -99,7 +99,7 @@ export default function StatusPage() {
           description: "Node infrastructure and blockchain connectivity",
           lastUpdated: new Date().toISOString(),
           responseTime: 150,
-          uptime: 99.99
+          uptime: 99.99,
         },
         {
           id: "autotrade",
@@ -108,16 +108,16 @@ export default function StatusPage() {
           description: "Automated trading and plugin systems",
           lastUpdated: new Date().toISOString(),
           responseTime: 0,
-          uptime: 99.85
+          uptime: 99.85,
         },
         {
           id: "checkout",
-          name: "TervanX Checkout",
+          name: "LayerX Checkout",
           status: "operational",
           description: "Payment checkout and merchant tools",
           lastUpdated: new Date().toISOString(),
           responseTime: 75,
-          uptime: 99.96
+          uptime: 99.96,
         },
         {
           id: "dashboard",
@@ -126,8 +126,8 @@ export default function StatusPage() {
           description: "Business dashboard and analytics",
           lastUpdated: new Date().toISOString(),
           responseTime: 60,
-          uptime: 99.98
-        }
+          uptime: 99.98,
+        },
       ];
 
       const mockIncidents: Incident[] = [

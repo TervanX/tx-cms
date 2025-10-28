@@ -39,7 +39,8 @@ export default function SignUp() {
             </h1>
 
             <p className="text-[16px] lg:text-[18px] leading-[130%] text-gray-700 mb-6 mt-6 text-center md:text-left antialiased">
-              Sign in to your account to access trading infrastructure, treasury management, and embedded wallet solutions.
+              Sign in to your account to access trading infrastructure, treasury
+              management, and embedded wallet solutions.
             </p>
 
             {/* Form Container */}
@@ -48,7 +49,7 @@ export default function SignUp() {
                 {/* Terms Notice */}
                 <div className="rounded-lg border border-blue-100 bg-blue-50 px-4 py-2">
                   <p className="text-[12px] leading-[130%] text-gray-700 antialiased">
-                    By signing up, I agree to TervanX&apos;s{" "}
+                    By signing up, I agree to LayerX&apos;s{" "}
                     <a
                       className="underline"
                       target="_blank"
@@ -106,14 +107,10 @@ export default function SignUp() {
                       {loading ? (
                         <>
                           <Loader className="h-4 w-4 animate-spin" />
-                          <p className="text-[16px] leading-[130%]">
-                            Continue
-                          </p>
+                          <p className="text-[16px] leading-[130%]">Continue</p>
                         </>
                       ) : (
-                        <p className="text-[16px] leading-[130%]">
-                          Continue
-                        </p>
+                        <p className="text-[16px] leading-[130%]">Continue</p>
                       )}
                     </div>
                   </Button>

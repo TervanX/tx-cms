@@ -375,7 +375,7 @@ export const creatorsPageData = {
 
     testimonial: {
         title: "Creator Testimonials",
-        quote: "I went from earning 55% on traditional platforms to keeping 93% with TervanX. The NFT functionality turned my archived content into a continuous revenue stream that pays me even when I'm not creating new work.",
+        quote: "I went from earning 55% on traditional platforms to keeping 93% with LayerX. The NFT functionality turned my archived content into a continuous revenue stream that pays me even when I'm not creating new work.",
         role: "Digital Artist with 500K Followers",
         name: "Maya Rodriguez",
     },

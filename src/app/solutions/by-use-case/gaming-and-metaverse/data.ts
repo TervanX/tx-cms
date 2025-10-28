@@ -316,7 +316,7 @@ export const gamingPageData = {
 
     testimonial: {
         title: "Metaverse Platform Testimonials",
-        quote: "TervanX enabled us to launch our metaverse with 50,000 concurrent users on day one. Their asset interoperability tools allowed players to bring their existing NFTs into our world seamlessly.",
+        quote: "LayerX enabled us to launch our metaverse with 50,000 concurrent users on day one. Their asset interoperability tools allowed players to bring their existing NFTs into our world seamlessly.",
         role: "CTO of Virtual World Platform",
         name: "Lena Petrova",
     },

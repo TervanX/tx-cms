@@ -381,7 +381,7 @@ export const educationPageData = {
 
     testimonial: {
         title: "Education Leader Testimonials",
-        quote: "TervanX transformed our credential verification process from weeks to seconds. Employers now trust our graduates' qualifications implicitly, and our administrative costs have decreased by 70%.",
+        quote: "LayerX transformed our credential verification process from weeks to seconds. Employers now trust our graduates' qualifications implicitly, and our administrative costs have decreased by 70%.",
         role: "University Registrar at Major Research University",
         name: "Dr. Rebecca Moore",
     },

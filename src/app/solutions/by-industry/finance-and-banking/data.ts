@@ -539,7 +539,7 @@ export const financeBankingPageData = {
     testimonial: {
         title: "Banking Leader Testimonials",
         quote:
-            "TervanX enabled us to launch digital asset services to 5 million customers in 6 months instead of 2 years. Their compliance framework ensured we met every regulatory requirement across 15 jurisdictions.",
+            "LayerX enabled us to launch digital asset services to 5 million customers in 6 months instead of 2 years. Their compliance framework ensured we met every regulatory requirement across 15 jurisdictions.",
         role: "Chief Digital Officer at Global Bank",
         name: "Robert Henderson,",
     },

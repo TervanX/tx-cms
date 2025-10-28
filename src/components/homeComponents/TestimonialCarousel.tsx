@@ -14,7 +14,7 @@ interface Testimonial {
 
 const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({
   title = "Effortless omnichannel support",
-  quote = "Since adopting TervanX Crypto Payments, we’ve achieved 80% faster reconciliation and reduced transaction errors to near zero",
+  quote = "Since adopting LayerX Crypto Payments, we’ve achieved 80% faster reconciliation and reduced transaction errors to near zero",
   role = "VP of Digital Finance",
   name = "Maya Okoro",
 }) => {

@@ -18,30 +18,37 @@ const contentCards = [
   {
     id: 1,
     title: "Builder's Block?",
-    description: "Spending months building wallet security, compliance, and payment rails from scratch? We've done the heavy lifting for you.",
-    solution: "With TervanX, go from concept to live product in weeks, not years.",
+    description:
+      "Spending months building wallet security, compliance, and payment rails from scratch? We've done the heavy lifting for you.",
+    solution:
+      "With LayerX, go from concept to live product in weeks, not years.",
     icon: Rocket,
-    statLabel: "faster development"
+    statLabel: "faster development",
   },
   {
     id: 2,
     title: "Fear of Regulatory Fires?",
-    description: "Navigating AML/KYC and transaction monitoring alone is risky and complex. Our built-in compliance tools keep you safe.",
-    solution: "Launch with confidence, knowing your foundation is secure and audit-ready.",
+    description:
+      "Navigating AML/KYC and transaction monitoring alone is risky and complex. Our built-in compliance tools keep you safe.",
+    solution:
+      "Launch with confidence, knowing your foundation is secure and audit-ready.",
     icon: Shield,
-    statLabel: "compliance coverage"
+    statLabel: "compliance coverage",
   },
   {
     id: 3,
     title: "Scaling Anxiety?",
-    description: "Worried your infrastructure will crack under the pressure of your first 1,000 users? Our platform scales seamlessly with you.",
+    description:
+      "Worried your infrastructure will crack under the pressure of your first 1,000 users? Our platform scales seamlessly with you.",
     solution: "Focus on your growth, not your server load.",
     icon: TrendingUp,
-    statLabel: "effortless scaling"
-  }
+    statLabel: "effortless scaling",
+  },
 ];
 
-const ContentCard: React.FC<{ content: typeof contentCards[0] }> = ({ content }) => {
+const ContentCard: React.FC<{ content: (typeof contentCards)[0] }> = ({
+  content,
+}) => {
   const IconComponent = content.icon;
 
   return (
@@ -112,7 +119,8 @@ const ContentShowcase: React.FC = () => {
 
   // Auto-scroll functionality
   useEffect(() => {
-    if (!isAutoScrolling || !scrollRef.current || contentCards.length === 0) return;
+    if (!isAutoScrolling || !scrollRef.current || contentCards.length === 0)
+      return;
 
     const startAutoScroll = () => {
       autoScrollRef.current = setInterval(() => {
@@ -137,7 +145,7 @@ const ContentShowcase: React.FC = () => {
 
     el.scrollTo({
       left: scrollPosition,
-      behavior: "smooth"
+      behavior: "smooth",
     });
 
     setCurrentIndex(index);
@@ -150,7 +158,8 @@ const ContentShowcase: React.FC = () => {
   };
 
   const scrollToPrev = () => {
-    const prevIndex = currentIndex === 0 ? contentCards.length - 1 : currentIndex - 1;
+    const prevIndex =
+      currentIndex === 0 ? contentCards.length - 1 : currentIndex - 1;
     scrollToIndex(prevIndex);
   };
 
@@ -217,17 +226,17 @@ const ContentShowcase: React.FC = () => {
               Pricing Built for Growth, Trusted by Leaders
             </h5>
             <p className="block w-full text-base leading-[130%] font-sans text-gray-700 md:max-w-[500px] lg:max-w-[600px] xl:text-lg">
-              The most innovative fintechs build on TervanX <br />
-              Join thousands of startups and enterprises using TervanX to launch secure crypto and payment products faster.
+              The most innovative fintechs build on LayerX <br />
+              Join thousands of startups and enterprises using LayerX to launch
+              secure crypto and payment products faster.
             </p>
           </div>
           <div className="flex h-full w-auto items-end max-md:justify-start md:w-auto lg:w-full">
             <Link href="/contact/contact-sales">
-              <Button
-                variant="outline"
-                size="md"
-              >
-                <span className="text-base leading-[130%] font-sans">Get started for free</span>
+              <Button variant="outline" size="md">
+                <span className="text-base leading-[130%] font-sans">
+                  Get started for free
+                </span>
               </Button>
             </Link>
           </div>
@@ -266,7 +275,9 @@ const ContentShowcase: React.FC = () => {
               type="button"
               onClick={() => scrollByOne(-1)}
               disabled={!canLeft}
-              className={`w-10 ${!canLeft ? "cursor-not-allowed opacity-50" : ""}`}
+              className={`w-10 ${
+                !canLeft ? "cursor-not-allowed opacity-50" : ""
+              }`}
             >
               <IoArrowBackSharp />
             </Button>
@@ -276,7 +287,9 @@ const ContentShowcase: React.FC = () => {
               type="button"
               onClick={() => scrollByOne(1)}
               disabled={!canRight}
-              className={`w-10 ${!canRight ? "cursor-not-allowed opacity-50" : ""}`}
+              className={`w-10 ${
+                !canRight ? "cursor-not-allowed opacity-50" : ""
+              }`}
             >
               <IoArrowForwardSharp />
             </Button>

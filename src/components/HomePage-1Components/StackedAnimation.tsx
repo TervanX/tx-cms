@@ -20,7 +20,7 @@ const items = [
   {
     title: "INTEGRATIONS",
     subTitle:
-      "TervanX integrates with major blockchain networks, payment processors, and banking partners, letting you launch multi-asset products without switching platforms.",
+      "LayerX integrates with major blockchain networks, payment processors, and banking partners, letting you launch multi-asset products without switching platforms.",
     description: "Connect seamlessly with banks, chains, and protocols",
     scrollUrl: "/assets/2.svg",
     stackUrl: "/assets/3.svg",
@@ -36,7 +36,7 @@ const items = [
   {
     title: "AI & AUTOMATION",
     subTitle:
-      "TervanX’s AI engine automates reconciliation, fraud detection, and liquidity optimization — reducing manual workloads while improving trust and speed.",
+      "LayerX AI engine automates reconciliation, fraud detection, and liquidity optimization — reducing manual workloads while improving trust and speed.",
     description: "The intelligent core for financial operations",
     scrollUrl: "/assets/6.svg",
     stackUrl: "/assets/7.svg",

@@ -40,7 +40,7 @@ export default function FooterCTA() {
                     <div className="flex flex-col gap-8 md:max-w-[273px] lg:max-w-[368px] xl:max-w-[413px]">
                       <p className="text-[16px] leading-[130%] 2xl:text-[18px] text-gray-700">
                         You don’t need to spend a fortune to build a world-class
-                        financial ecosystem. TervanX replaces multiple providers
+                        financial ecosystem. LayerX replaces multiple providers
                         — Stripe, Fireblocks, Alchemy, Chainalysis, and more —
                         into one powerful, compliant layer.
                       </p>

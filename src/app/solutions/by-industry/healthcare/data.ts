@@ -711,7 +711,7 @@ export const healthcarePageData = {
     testimonial: {
         title: "What Healthcare Leaders Say",
         quote:
-            "TervanX's blockchain solutions reduced our claims processing time by 85% and eliminated medication counterfeiting across our supply chain. The patient data security improvements have been transformative.",
+            "LayerX's blockchain solutions reduced our claims processing time by 85% and eliminated medication counterfeiting across our supply chain. The patient data security improvements have been transformative.",
         role: " Chief Information Officer, Major Healthcare System",
         name: "Dr. Michael Chen,",
     },

@@ -107,8 +107,9 @@ const contactSteps = [
 ];
 
 const mobileHeading = {
-    title: "Get in Touch with TervanX",
-    description: "Have questions about our digital asset infrastructure? Our team is here to help you find the right solution for your business needs."
+  title: "Get in Touch with LayerX",
+  description:
+    "Have questions about our digital asset infrastructure? Our team is here to help you find the right solution for your business needs.",
 };
 
 export default function ContactFormSteps(props: ContactFormStepsProps) {

@@ -115,7 +115,7 @@ export default function ApolloTestimonials() {
             Powered by the Most Advanced Blockchain Network
           </h5>
           <p className="text-[14px] xl:text-[16px] leading-[130%] text-gray-600 mt-4 sm:mt-8 lg:w-[302px] xl:w-[341px]">
-            TervanX runs on a high-performance, multi-chain infrastructure built
+            LayerX runs on a high-performance, multi-chain infrastructure built
             for real-world scale — delivering secure, instant, and low-cost
             transactions across the globe.{" "}
           </p>

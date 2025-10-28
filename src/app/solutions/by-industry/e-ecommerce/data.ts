@@ -653,7 +653,7 @@ export const ecommercePageData = {
     testimonial: {
         title: "What E-commerce Leaders Say",
         quote:
-            "Integrating TervanX helped us reduce payment processing fees by 75% and opened up 15 new international markets overnight. The checkout experience is seamless for our customers.",
+            "Integrating LayerX helped us reduce payment processing fees by 75% and opened up 15 new international markets overnight. The checkout experience is seamless for our customers.",
         role: " Head of Payments, Global E-commerce Platform",
         name: "Jessica Martinez,",
     },

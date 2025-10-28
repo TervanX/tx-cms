@@ -318,7 +318,7 @@ export const defiFinancePageData = {
 
     testimonial: {
         title: "DeFi Leader Testimonials",
-        quote: "TervanX's cross-chain infrastructure allowed us to deploy on 10 new chains in 2 weeks instead of 6 months. Their liquidity aggregation increased our trading volume by 400%.",
+        quote: "LayerX's cross-chain infrastructure allowed us to deploy on 10 new chains in 2 weeks instead of 6 months. Their liquidity aggregation increased our trading volume by 400%.",
         role: "Lead Developer of DEX Protocol",
         name: "Sarah Rodriguez",
     },

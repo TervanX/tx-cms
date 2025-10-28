@@ -193,7 +193,7 @@ export default function ContactPage() {
     >
       <div className="px-4 py-12 md:px-0 md:py-0 max-w-[600px] mx-auto md:max-w-none grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-0 md:min-h-screen">
         <FormSidebar
-          title="Get in Touch with TervanX"
+          title="Get in Touch with LayerX"
           description="Have questions about our digital asset infrastructure? Our team is here to help you find the right solution for your business needs."
           showCompanies={true}
         />

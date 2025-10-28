@@ -119,8 +119,8 @@ export default function FormSidebar({
                 />
               </section>
               <span className="text-black text-center">
-                Now powers the TervanX Network — delivering secure, scalable,
-                and intelligent financial systems built for Africa and beyond.
+                Now powers the LayerX Network — delivering secure, scalable, and
+                intelligent financial systems built for Africa and beyond.
               </span>
             </div>
           )}

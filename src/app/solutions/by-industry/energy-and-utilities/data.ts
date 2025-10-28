@@ -353,7 +353,7 @@ export const energyPageData = {
 
     testimonial: {
         title: "Energy Leader Testimonials",
-        quote: "TervanX enabled us to launch a peer-to-peer energy trading platform that increased renewable energy usage by 35% while creating new revenue streams. The blockchain verification gave regulators confidence in our REC tracking.",
+        quote: "LayerX enabled us to launch a peer-to-peer energy trading platform that increased renewable energy usage by 35% while creating new revenue streams. The blockchain verification gave regulators confidence in our REC tracking.",
         role: "Chief Innovation Officer at Major Utility",
         name: "Dr. Emily Watson",
     },
