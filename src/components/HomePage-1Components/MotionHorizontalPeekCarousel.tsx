@@ -86,10 +86,11 @@ const TabsNav: React.FC<{
             }}
             key={s.id}
             onClick={() => onSelect(s.id)}
-            className={`w-full whitespace-nowrap rounded p-4 text-xs transition-all ${index === i
-              ? "bg-yellow1"
-              : "bg-[#f7f5f2] text-neutral-900 hover:bg-neutral-100"
-              }`}
+            className={`w-full whitespace-nowrap rounded p-4 text-xs transition-all ${
+              index === i
+                ? "bg-yellow1"
+                : "bg-[#f7f5f2] text-neutral-900 hover:bg-neutral-100"
+            }`}
             aria-selected={index === i}
             role="tab"
           >
@@ -215,7 +216,7 @@ const MotionHorizontalPeekCarousel: React.FC = () => {
       {
         id: "pipeline",
         tab: "PIPELINE BUILDER",
-        heading: "Find the right people and book quality meetings",
+        heading: "",
         bullets: [
           "The world's best B2B data",
           "Multiple data providers in one place",
@@ -343,7 +344,7 @@ const MotionHorizontalPeekCarousel: React.FC = () => {
     x,
     yCentered,
     xCentered,
-    clamp
+    clamp,
   ]);
 
   // Drag end → snap to nearest index
@@ -475,8 +476,9 @@ const MotionHorizontalPeekCarousel: React.FC = () => {
           }
           dragElastic={0.06}
           onDragEnd={onDragEnd}
-          className={`h-full flex ${isMobile ? "flex-col" : "flex-col lg:flex-row"
-            } items-stretch`}
+          className={`h-full flex ${
+            isMobile ? "flex-col" : "flex-col lg:flex-row"
+          } items-stretch`}
         >
           {sections.map((s, i) => (
             <div key={s.id} className="shrink-0 flex items-center w-screen">

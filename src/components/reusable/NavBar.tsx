@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { IoIosArrowForward, IoIosArrowDown, IoMdClose } from "react-icons/io";
 import Button from "@/components/reusable/Button";
 import { Menu } from "lucide-react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 interface NavItemInterface {
   title: string;
@@ -326,7 +326,7 @@ const navItems: NavItemInterface[] = [
           </svg>
         ),
         title: "Security & Optimization",
-        description: "Find the right people and book quality meetings",
+        description: "",
         linkTitle: "",
         links: [
           {
@@ -375,7 +375,7 @@ const navItems: NavItemInterface[] = [
           </svg>
         ),
         title: "Data & Reporting",
-        description: "Find the right people and book quality meetings",
+        description: "",
         linkTitle: "",
         links: [
           { href: "/product/data-reporting/tx-sigma", text: "Tx Sigma" },
@@ -629,7 +629,7 @@ const navItems: NavItemInterface[] = [
           </svg>
         ),
         title: "Support",
-        description: "Find the right people and book quality meetings",
+        description: "",
         linkTitle: "",
         links: [
           // {
@@ -681,7 +681,7 @@ const navItems: NavItemInterface[] = [
       //     </svg>
       //   ),
       //   title: "Learn",
-      //   description: "Find the right people and book quality meetings",
+      //   description: "",
       //   linkTitle: "",
       //   links: [
       //     { href: "/resources/learn/blog", text: "Blog " },
@@ -728,7 +728,7 @@ const navItems: NavItemInterface[] = [
           </svg>
         ),
         title: "Company & Partners ",
-        description: "Find the right people and book quality meetings",
+        description: "",
         linkTitle: "",
         links: [
           {
@@ -812,7 +812,7 @@ const navItems: NavItemInterface[] = [
           </svg>
         ),
         title: "Documentation",
-        description: "Find the right people and book quality meetings",
+        description: "",
         linkTitle: "",
         links: [
           {
@@ -869,7 +869,7 @@ const navItems: NavItemInterface[] = [
           </svg>
         ),
         title: "App & Plugin Integrations",
-        description: "Find the right people and book quality meetings",
+        description: "",
         linkTitle: "",
         links: [
           {
@@ -920,7 +920,7 @@ const navItems: NavItemInterface[] = [
           </svg>
         ),
         title: "Developer Tools ",
-        description: "Find the right people and book quality meetings",
+        description: "",
         linkTitle: "",
         links: [
           {
@@ -1110,6 +1110,7 @@ const Header = ({ bg }: HeaderProps) => {
 };
 
 const DeskTopNavbar = () => {
+  const router = useRouter();
   return (
     <div className=" py-4 hidden lg:flex items-center justify-between">
       <div className="flex gap-16 items-center justify-start">
@@ -1136,11 +1137,20 @@ const DeskTopNavbar = () => {
         <Button size="md" variant="ghost" type="button">
           Log in
         </Button>
-        <Button size="md" variant="blue" type="button">
+        <Button
+          size="md"
+          variant="blue"
+          type="button"
+          onClick={() => {
+            router.push("/contact/request-access");
+          }}
+        >
           Get Started
         </Button>
         <Button size="md" variant="primary" type="button">
-          <Link href="/contact/contact-sales">Contact Sales</Link>
+          <Link href="/contact/contact-sales " className="focus:white">
+            Contact Sales
+          </Link>
         </Button>
       </div>
     </div>
@@ -1155,6 +1165,9 @@ interface MobileNavProps {
 }
 
 const MobileNav: React.FC<MobileNavProps> = ({ toggle, isOpen }) => {
+  const router = useRouter();
+  const location = usePathname();
+  console.log(location);
   return (
     <header className="lg:px-8 py-3 flex items-center justify-between lg:hidden fixed top-0 left-0 w-screen z-50 px-6 bg-white">
       <div className="flex gap-10 items-center justify-start">
@@ -1170,14 +1183,18 @@ const MobileNav: React.FC<MobileNavProps> = ({ toggle, isOpen }) => {
         </Link>
       </div>
       <div className="flex items-center gap-4 justify-end">
-        <Button
-          size="md"
-          variant="primary"
-          type="button"
-          href="/contact/request-access"
-        >
-          Request Access
-        </Button>
+        {location !== "/contact/request-access" && (
+          <Button
+            size="md"
+            variant="primary"
+            type="button"
+            onClick={() => {
+              router.push("/contact/request-access");
+            }}
+          >
+            Request Access
+          </Button>
+        )}
 
         <button onClick={toggle}>
           {isOpen ? <IoMdClose size={18} /> : <Menu size={18} />}
@@ -1354,8 +1371,9 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
         )}
       </button>
       <div
-        className={`overflow-y-scroll transition-all duration-300 ease-in-out px-6 ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-          }`}
+        className={`overflow-y-scroll transition-all duration-300 ease-in-out px-6 ${
+          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        }`}
       >
         <div className="pb-5 text-dark text-sm lg:text-base leading-relaxed border-gray-200 border-t-[1.5px] pt-4">
           <div className="flex flex-col lg:flex-row gap-6">

@@ -112,7 +112,14 @@ const DeskTopNavbar = () => {
         </nav>
       </div>
       <div className="flex items-center gap-3">
-        <Button size="md" variant="ghost" type="button" onClick={() => {}}>
+        <Button
+          size="md"
+          variant="ghost"
+          type="button"
+          onClick={() => {
+            router.push("/contact/request-access");
+          }}
+        >
           Log in
         </Button>
         <button className="relative inline-block cursor-pointer rounded-md font-semibold tracking-tight whitespace-nowrap text-black text-base px-4 py-2.5 leading-none overflow-hidden">
@@ -142,6 +149,8 @@ interface MobileNavProps {
 }
 
 const MobileNav: React.FC<MobileNavProps> = ({ toggle, isOpen }) => {
+  const router = useRouter();
+
   return (
     <header className="lg:px-8 py-3 flex items-center justify-between lg:hidden fixed top-0 left-0 w-screen z-50 px-6 bg-white">
       <div className="flex gap-10 items-center justify-start">
@@ -157,7 +166,14 @@ const MobileNav: React.FC<MobileNavProps> = ({ toggle, isOpen }) => {
         </div>
       </div>
       <div className="flex items-center gap-4 justify-end">
-        <Button size="md" variant="primary" type="button" onClick={() => {}}>
+        <Button
+          size="md"
+          variant="primary"
+          type="button"
+          onClick={() => {
+            router.push("/contact/request-access");
+          }}
+        >
           Request Access
         </Button>
 
@@ -211,9 +227,7 @@ const NavItem: React.FC<NavItemProps> = ({ navName }) => {
                     <p className="font-grotesque font-medium text-lg lg:leading-[110%] leading-[110%]">
                       Pipeline Builder
                     </p>
-                    <p className="text-xs text-sand font-grotesque">
-                      Find the right people and book quality meetings
-                    </p>
+                    <p className="text-xs text-sand font-grotesque"></p>
                   </div>
                   <Button
                     size="sm"
@@ -372,9 +386,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
                       Pipeline Builder
                     </p>
                   </div>
-                  <p className="text-xs text-sand font-grotesque mt-2">
-                    Find the right people and book quality meetings
-                  </p>
+                  <p className="text-xs text-sand font-grotesque mt-2"></p>
                 </div>
                 <div className="w-[40%] flex items-center justify-end">
                   <div>
