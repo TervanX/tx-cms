@@ -30,7 +30,7 @@ export default function AutoTradePlugin() {
     },
     {
       id: "outbound",
-      label: "Data",
+      label: "Data & Insights",
       component: OutboundSection,
       props: outboundProps,
     },

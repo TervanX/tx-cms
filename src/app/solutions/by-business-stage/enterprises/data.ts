@@ -5,7 +5,7 @@ export const enterprisePageData = {
         tag: "",
         primaryButton: {
             text: "Login",
-            href: "/sign-up",
+            href: "/auth/login",
         },
         secondaryButton: {
             text: "Contact Sales",
@@ -77,8 +77,8 @@ export const enterprisePageData = {
             "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
         backgroundImage: "/assets/image30.webp",
         primaryButton: {
-            text: "Learn More",
-            href: "/learn-more",
+            text: "Contact Sales",
+            href: "/contact/contact-sales",
         },
         alignLeft: true,
         title: "Sophisticated treasury operations at scale",
@@ -214,11 +214,11 @@ export const enterprisePageData = {
         backgroundImage: "/assets/image30.webp",
         primaryButton: {
             text: "Get Started",
-            href: "/get-started",
+            href: "/contact/request-access",
         },
         secondaryButton: {
-            text: "Learn More",
-            href: "/learn-more",
+            text: "Contact Sales",
+            href: "/contact/contact-sales",
         },
     },
 };

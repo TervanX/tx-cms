@@ -74,7 +74,7 @@ export default function Banner(
                             alt={altText}
                             fill
                             className="transition-opacity duration-300 ease-out-quad size-full object-cover object-center opacity-100"
-                            src={backgroundImage}
+                            src="/assets/product-banner.jpg"
                             sizes="100vw"
                             placeholder="empty"
                             priority={false}

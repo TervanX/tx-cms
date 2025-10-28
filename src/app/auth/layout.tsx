@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../NavBar'
+import Header from '@/components/reusable/NavBar';
 import LogoGrid from '@/components/productComponents/LogoGrid';
 const layout = ({
     children,
@@ -7,11 +7,11 @@ const layout = ({
     children: React.ReactNode;
 }) => {
     return (
-        <div className='bg-bg-footer'>
+        <div className='bg-white'>
             <Header />
             {children}
             <LogoGrid
-                backgroundColor="#CCC9C6"
+                backgroundColor="#ffffff"
                 py="py-10" />
         </div>
     )

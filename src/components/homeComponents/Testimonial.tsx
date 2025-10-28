@@ -112,15 +112,23 @@ export default function ApolloTestimonials() {
       <div className="flex flex-col gap-4 md:flex-row md:justify-between mb-16">
         <div className="md:w-[329px] lg:w-[411px] xl:w-[632px]">
           <h5 className="text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[56px] tracking-[-0.32px] sm:tracking-[-0.72px] md:tracking-[-0.8px] lg:tracking-[-0.96px] xl:tracking-[-1.12px] leading-none font-medium text-gray-900">
-            The fastest growing businesses use Apollo
+            Powered by the Most Advanced Blockchain Network
           </h5>
           <p className="text-[14px] xl:text-[16px] leading-[130%] text-gray-600 mt-4 sm:mt-8 lg:w-[302px] xl:w-[341px]">
-            Over 500,000 companies use Apollo to stay ahead of the competition.
+            TervanX runs on a high-performance, multi-chain infrastructure built
+            for real-world scale — delivering secure, instant, and low-cost
+            transactions across the globe.{" "}
           </p>
         </div>
-        <h1 className="text-[96px] sm:text-[96px] md:text-[146px] lg:text-[220px] tracking-[-0.96px] sm:tracking-[-1.28px] md:tracking-[-1.44px] lg:tracking-[-1.76px] xl:tracking-[-1.92px] leading-[90%] lg:leading-[174px] xl:leading-[192px] font-medium text-[#3F3653]">
-          500K+
-        </h1>
+        <div>
+          <h1 className="text-[96px] md:text-[136px] lg:text-[170px] tracking-[-0.96px] sm:tracking-[-1.28px] md:tracking-[-1.44px] lg:tracking-[-1.76px] xl:tracking-[-1.92px] leading-[90%] lg:leading-[174px] xl:leading-[192px] font-medium text-[#3F3653]">
+            99.99%{" "}
+          </h1>
+          <div className="flex items-center justify-end transform -translate-y-5">
+            {" "}
+            <p className="text-2xl   font-medium text-[#3F3653]">Reliability</p>
+          </div>
+        </div>
       </div>
 
       <div className="relative">

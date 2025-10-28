@@ -109,8 +109,8 @@ export default function FeaturesSection({
           {title}
         </h2>
 
-        <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-start gap-12 px-4 md:gap-16 md:px-8 lg:grid-cols-[2fr_3fr] lg:px-12 2xl:gap-20">
-          <div className="sticky top-25 hidden lg:block">
+        <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-center gap-12 px-4 md:gap-16 md:px-8 lg:px-12 2xl:gap-20">
+          {/* <div className="sticky top-25 hidden lg:block">
             <div className="space-y-4">
               <ImageDisplay className="w-full" />
 
@@ -120,17 +120,15 @@ export default function FeaturesSection({
 
               <a
                 className="font-sans relative cursor-pointer bg-gradient-to-r from-current to-current bg-no-repeat bg-[size:100%_0.05em] bg-[position:0%_100%] [transition:background-size_0.2s_ease-out] hover:bg-[size:0%_0.05em] hover:bg-[position:100%_100%] inline-block pb-1 leading-[95%] font-semibold tracking-[-0.16px] text-black"
-                href={activeFeatureData.href}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#"
               >
                 {linkStyle.text}
               </a>
             </div>
-          </div>
+          </div> */}
 
           {/* Features List */}
-          <div className="relative [@media(max-height:1300px)_and_(min-width:768px)]:pb-[150px]">
+          <div className="w-full text-center ">
             {features.map((feature) => (
               <motion.div
                 key={feature.id}
@@ -140,32 +138,29 @@ export default function FeaturesSection({
               >
                 <div
                   className="flex w-full items-start justify-between cursor-pointer"
-                  onClick={() => window.open(feature.href, "_blank")}
                 >
                   <h3
-                    className={`font-medium-ll mr-4 text-[42px] leading-[95%] font-[600] tracking-[-2.56px] lg:text-[48px] xl:text-[52px] [@media(min-width:1450px)]:text-[64px] transition-colors duration-300 group-hover:text-black ${
-                      activeFeature === feature.id
-                        ? "text-black"
-                        : "text-[#00000033]"
-                    }`}
+                    className={`font-medium-ll mr-4 text-[42px] leading-[95%] font-[600] tracking-[-2.56px] lg:text-[48px] xl:text-[52px] [@media(min-width:1450px)]:text-[64px] transition-colors duration-300 group-hover:text-black ${activeFeature === feature.id
+                      ? "text-black"
+                      : "text-[#00000033]"
+                      }`}
                   >
                     {feature.name}
                   </h3>
                   <ArrowUpRight
-                    className={`mt-3 h-7 w-7 xl:mt-3 xl:h-9 xl:w-9 [@media(min-width:1450px)]:mt-4 transition-all duration-300 ${
-                      activeFeature === feature.id
-                        ? "fill-black opacity-100"
-                        : "fill-transparent opacity-0"
-                    }`}
+                    className={`mt-3 h-7 w-7 xl:mt-3 xl:h-9 xl:w-9 [@media(min-width:1450px)]:mt-4 transition-all duration-300 ${activeFeature === feature.id
+                      ? "fill-black opacity-100"
+                      : "fill-transparent opacity-0"
+                      }`}
                   />
                 </div>
               </motion.div>
             ))}
 
             {/* Mobile Image */}
-            <div className="sticky bottom-3 z-10 mt-9 lg:hidden">
+            {/* <div className="sticky bottom-3 z-10 mt-9 lg:hidden">
               <ImageDisplay className="w-full max-w-[240px]" />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

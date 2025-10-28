@@ -12,8 +12,8 @@ const CallAndConversation: React.FC<CallProps> = ({
   backgroundImage = "/assets/image30.webp",
   image = "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
   primaryButton = {
-    text: "Learn more",
-    href: "/sign-up",
+    text: "Contact Sales",
+    href: "/auth/login",
   },
   alignLeft = true,
   title = "Calls and conversations in one place",

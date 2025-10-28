@@ -16,32 +16,32 @@ import ContentLayout, {
 } from "@/components/subhelpdeskComponents/Content";
 
 export default function TxLink() {
-     const sections: SectionConfig[] = [
-        {
-          id: "productivity",
-          label: "Productivity",
-          component: ProductivitySection,
-          props: productivityProps,
-        },
-        {
-          id: "usability",
-          label: "Usability",
-          component: UsabilitySection,
-          props: usabilityProps,
-        },
-        {
-          id: "outbound",
-          label: "Data",
-          component: OutboundSection,
-          props: outboundProps,
-        },
-        {
-          id: "features",
-          label: "Features",
-          component: FeaturesSection,
-          props: featuresProps,
-        },
-      ];
+  const sections: SectionConfig[] = [
+    {
+      id: "productivity",
+      label: "Productivity",
+      component: ProductivitySection,
+      props: productivityProps,
+    },
+    {
+      id: "usability",
+      label: "Usability",
+      component: UsabilitySection,
+      props: usabilityProps,
+    },
+    {
+      id: "outbound",
+      label: "Data & Insights",
+      component: OutboundSection,
+      props: outboundProps,
+    },
+    {
+      id: "features",
+      label: "Features",
+      component: FeaturesSection,
+      props: featuresProps,
+    },
+  ];
   return (
     <main>
       <Hero
