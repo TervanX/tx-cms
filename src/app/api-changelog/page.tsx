@@ -11,11 +11,15 @@ const WhatsNewPage = () => {
 
       <div className="flex flex-col lg:flex-row lg:gap-10 pt-10">
         <div className="hidden lg:block lg:w-[400px] ">
-          <div className="fixed top-[calc(var(--header-height)+2rem)] w-[300px]">
+          <div
+            className="sticky"
+            style={{
+              top: "5rem",
+            }}
+          >
             <FilterBy />
           </div>
         </div>
-
         {/* Right content container with relative positioning */}
         <div className="w-full relative">
           <div>

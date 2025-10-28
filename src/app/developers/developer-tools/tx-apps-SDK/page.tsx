@@ -15,7 +15,7 @@ export default function Startups() {
       <HeroSection
         title="API Reference"
 
-        description="Lorem ipsum dolor sit, amet consectetur adipisicing."
+        description=""
       />
       <FeaturesSection {...supportData.featuredata} />
       <ProductSection

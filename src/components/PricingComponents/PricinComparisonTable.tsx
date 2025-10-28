@@ -28,8 +28,8 @@ const PricingComparisonTable: React.FC<PricingComparisonTableProps> = ({
             </div>
 
             {/* Plans Header */}
-            <div className="overflow-x-auto">
-                <div className="min-w-[800px]  p-4">
+            <div className="overflow-x-auto ">
+                <div className="min-w-[800px]  p-4 border-b border-gray-200">
                     {/* Plans Row */}
                     <div className="grid grid-cols-5 border-b border-gray-200">
                         <div className="p-4 border-r border-gray-200">
@@ -43,31 +43,35 @@ const PricingComparisonTable: React.FC<PricingComparisonTableProps> = ({
                                 : `${Math.round(plan.credits / 12).toLocaleString()} credits`
 
                             return (
-                                <div key={index} className={`p-4 ${index < pricingPlans.length - 1 ? 'border-r border-gray-200' : ''}`}>
-                                    <div className="flex gap-2 justify-between items-start w-full">
-                                        <h3 className="text-xl font-medium mb-2">{plan.name}</h3>
+                                <div key={index} className={`p-4 grid grid-rows-[auto_auto_1fr_auto] ${index < pricingPlans.length - 1 ? 'border-r border-gray-200' : ''}`}>
+                                    {/* This will make all sections equal height across cards */}
+                                    <div className="flex gap-2 justify-between items-start w-full min-h-[60px]">
+                                        <h3 className="text-xl font-medium">{plan.name}</h3>
                                         {plan.mostPopular && (
-                                            <div className="flex-shrink-0">
+                                            <div className="hidden lg:flex flex-shrink-0">
                                                 <span className="bg-primary text-white text-xs font-mono py-1 px-2 rounded-lg">
                                                     Most Popular
                                                 </span>
                                             </div>
                                         )}
                                     </div>
-                                    <div className="text-2xl font-grotesque mb-2">
+
+                                    <div className="text-2xl font-grotesque my-2">
                                         ${currentPrice}
                                     </div>
-                                    <div className="text-sm text-gray-600 mb-4 min-h-[40px] flex flex-col">
+
+                                    <div className="text-sm text-gray-600 min-h-[60px] flex flex-col">
                                         {priceNote}
                                         <span>
                                             {creditsNote}
                                         </span>
                                     </div>
+
                                     <Button
                                         size="md"
                                         variant={plan.buttonVariant}
                                         type="button"
-                                        className="w-full"
+                                        className="w-full mt-4"
                                     >
                                         {plan.buttonText}
                                     </Button>
