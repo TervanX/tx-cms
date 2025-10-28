@@ -7,7 +7,7 @@ export const productivityProps = {
         "TX Health automates the most complex aspects of healthcare administration—from claims adjudication to cross-border medical payments—operating with precision and compliance 24/7.",
     images: {
         mobile: {
-            src: "/assets/productivity-hero-mobile.webp",
+            src: "/assets/solution1.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
@@ -143,7 +143,7 @@ export const outboundProps = {
         "Move beyond basic financial metrics to predictive insights that optimize revenue cycle performance and patient financial experience.",
     images: {
         mobile: {
-            src: "/assets/outbound-hero-mobile.webp",
+            src: "/assets/outbound-hero-desktop.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {

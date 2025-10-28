@@ -81,10 +81,17 @@ const ContentCard: React.FC<{ content: typeof contentCards[0] }> = ({ content })
 const ContentShowcase: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement | null>(null);
   const firstCardRef = useRef<HTMLDivElement | null>(null);
+  const autoScrollRef = useRef<NodeJS.Timeout | null>(null);
   const [cardW, setCardW] = useState<number>(0);
   const gapPx = 24;
   const [canLeft, setCanLeft] = useState(false);
   const [canRight, setCanRight] = useState(true);
+  const [isAutoScrolling, setIsAutoScrolling] = useState(true);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Auto-scroll configuration
+  const AUTO_SCROLL_INTERVAL = 4000; // 4 seconds
+  const SCROLL_DURATION = 800; // Animation duration in ms
 
   useEffect(() => {
     const cardEl = firstCardRef.current;
@@ -103,20 +110,82 @@ const ContentShowcase: React.FC = () => {
     return () => ro.disconnect();
   }, []);
 
+  // Auto-scroll functionality
+  useEffect(() => {
+    if (!isAutoScrolling || !scrollRef.current || contentCards.length === 0) return;
+
+    const startAutoScroll = () => {
+      autoScrollRef.current = setInterval(() => {
+        scrollToNext();
+      }, AUTO_SCROLL_INTERVAL);
+    };
+
+    startAutoScroll();
+
+    return () => {
+      if (autoScrollRef.current) {
+        clearInterval(autoScrollRef.current);
+      }
+    };
+  }, [isAutoScrolling, cardW, contentCards.length]);
+
+  const scrollToIndex = (index: number) => {
+    const el = scrollRef.current;
+    if (!el) return;
+
+    const scrollPosition = index * (cardW + gapPx);
+
+    el.scrollTo({
+      left: scrollPosition,
+      behavior: "smooth"
+    });
+
+    setCurrentIndex(index);
+    updateArrows();
+  };
+
+  const scrollToNext = () => {
+    const nextIndex = (currentIndex + 1) % contentCards.length;
+    scrollToIndex(nextIndex);
+  };
+
+  const scrollToPrev = () => {
+    const prevIndex = currentIndex === 0 ? contentCards.length - 1 : currentIndex - 1;
+    scrollToIndex(prevIndex);
+  };
+
+  const scrollByOne = (dir: 1 | -1) => {
+    // Pause auto-scroll when user manually interacts
+    setIsAutoScrolling(false);
+
+    if (dir === 1) {
+      scrollToNext();
+    } else {
+      scrollToPrev();
+    }
+
+    // Resume auto-scroll after a delay
+    setTimeout(() => {
+      setIsAutoScrolling(true);
+    }, AUTO_SCROLL_INTERVAL + 1000);
+  };
+
   const handleWheel: React.WheelEventHandler<HTMLDivElement> = (e) => {
     e.preventDefault();
     const el = scrollRef.current;
     if (!el) return;
+
+    // Pause auto-scroll on user interaction
+    setIsAutoScrolling(false);
+
     if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
       el.scrollLeft += e.deltaY;
     }
-  };
 
-  const scrollByOne = (dir: 1 | -1) => {
-    const el = scrollRef.current;
-    if (!el) return;
-    const amount = dir * (cardW + gapPx);
-    el.scrollBy({ left: amount, behavior: "smooth" });
+    // Resume auto-scroll after inactivity
+    setTimeout(() => {
+      setIsAutoScrolling(true);
+    }, 3000);
   };
 
   const updateArrows = () => {
@@ -126,9 +195,17 @@ const ContentShowcase: React.FC = () => {
     const left = el.scrollLeft;
     setCanLeft(left > 4);
     setCanRight(left < maxScroll - 4);
+
+    // Update current index based on scroll position
+    const newIndex = Math.round(left / (cardW + gapPx));
+    setCurrentIndex(Math.min(newIndex, contentCards.length - 1));
   };
 
   const onScroll: React.UIEventHandler<HTMLDivElement> = () => updateArrows();
+
+  // Pause auto-scroll on hover
+  const handleMouseEnter = () => setIsAutoScrolling(false);
+  const handleMouseLeave = () => setIsAutoScrolling(true);
 
   return (
     <div className="flex w-full flex-col gap-10 py-8 lg:flex-row lg:gap-20 xl:gap-24 lg:py-12">
@@ -164,6 +241,8 @@ const ContentShowcase: React.FC = () => {
             ref={scrollRef}
             onWheel={handleWheel}
             onScroll={onScroll}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
             className="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide"
             style={{ scrollPaddingLeft: 4, scrollPaddingRight: 4 }}
           >

@@ -7,7 +7,7 @@ export const productivityProps = {
         "TX Vault automates the most critical aspects of digital asset management—from multi-signature approvals to cross-chain settlements—while maintaining institutional-grade security standards.",
     images: {
         mobile: {
-            src: "//assetsproductivity-hero-mobile.webp",
+            src: "/assets/solution1.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
@@ -181,7 +181,7 @@ export const outboundProps = {
     },
     images: {
         mobile: {
-            src: "/assets/outbound-hero-mobile.webp",
+            src: "/assets/outbound-hero-desktop.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {

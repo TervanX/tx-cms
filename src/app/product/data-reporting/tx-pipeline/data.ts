@@ -7,7 +7,7 @@ export const productivityProps = {
         "TX Pipeline automates the most complex aspects of data engineering—from schema mapping to quality validation—operating reliably across all your data sources.",
     images: {
         mobile: {
-            src: "/assets/productivity-hero-mobile.webp",
+            src: "/assets/solution1.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
@@ -143,7 +143,7 @@ export const outboundProps = {
         "Move beyond basic pipeline monitoring to predictive insights that prevent issues and optimize data flow.",
     images: {
         mobile: {
-            src: "/assets/outbound-hero-mobile.webp",
+            src: "/assets/outbound-hero-desktop.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {

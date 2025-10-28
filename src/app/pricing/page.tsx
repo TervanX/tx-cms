@@ -24,7 +24,9 @@ const PricingPage: React.FC = () => {
           isAnnualBilling={isAnnualBilling}
           onBillingChange={setIsAnnualBilling}
         />
-        <p className="text-center text-lg text-dark/80 mt-8">The same world-class infrastructure that powers</p>
+        <p className="text-center text-lg text-dark/80 mt-8">
+          The same world-class infrastructure that powers
+        </p>
         <div
           className={`space-y-12 px-12 md:px-12 lg:px-112 xl:px-20 2xl:px-24 my-12`}
         >
@@ -33,7 +35,7 @@ const PricingPage: React.FC = () => {
               src="/assets/Stripe.png"
               alt="Stripe"
               height="20"
-              className="h-10 filter invert-0 brightness-0" // Black
+              className="h-10 filter invert-0 brightness-0"
             />
             <img
               src="/assets/flutterwave.svg"
@@ -62,9 +64,8 @@ const PricingPage: React.FC = () => {
           </div>
         </div>
         <p className="text-center text-lg text-dark/80 mt-8">
-          now powers the TervanX Network — delivering secure,
-          scalable, and intelligent financial systems built for
-          Africa and beyond.
+          now powers the TervanX Network — delivering secure, scalable, and
+          intelligent financial systems built for Africa and beyond.
         </p>
       </div>
       <ComparePlan isAnnualBilling={isAnnualBilling} />

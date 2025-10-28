@@ -116,9 +116,11 @@ const PayAsYouGoDetails: React.FC<PayAsYouGoDetailsProps> = ({ plan }) => {
                                 </div>
                             ))}
                         </div>
-                        <Button size="md" variant="primary" className="w-full">
-                            Get Started with Starter Bundle
-                        </Button>
+                        <Link href="/contact/contact-sales">
+                            <Button size="md" variant="primary" className="w-full">
+                                Get Started with Starter Bundle
+                            </Button>
+                        </Link>
                     </div>
 
                     {/* Free Tier */}
@@ -140,9 +142,11 @@ const PayAsYouGoDetails: React.FC<PayAsYouGoDetailsProps> = ({ plan }) => {
                                 </div>
                             ))}
                         </div>
-                        <Button size="md" variant="outline" className="w-full">
-                            Start with Free Tier
-                        </Button>
+                        <Link href="/contact/contact-sales">
+                            <Button size="md" variant="outline" className="w-full">
+                                Start with Free Tier
+                            </Button>
+                        </Link>
                     </div>
                 </div>
 

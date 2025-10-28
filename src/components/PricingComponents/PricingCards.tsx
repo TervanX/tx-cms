@@ -357,9 +357,10 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isAnnualBilling, isPayg
               <span className="text-xs text-gray-600">
                 {creditsNote}
               </span>
-              <Link href={`/pricing/${plan.id}`} className="text-xs underline mt-1">
-                Learn more
-              </Link>
+              {plan.detailInfo &&
+                <Link href={`/pricing/${plan.id}`} className="text-xs underline mt-1">
+                  Learn more
+                </Link>}
             </div>
           </div>
         )}

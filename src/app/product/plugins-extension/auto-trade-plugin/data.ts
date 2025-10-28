@@ -7,7 +7,7 @@ export const productivityProps = {
         "TX Auto Trade automates the most complex aspects of digital asset trading—from strategy execution to risk management—operating with precision across all market conditions.",
     images: {
         mobile: {
-            src: "/assets/productivity-hero-mobile.webp",
+            src: "/assets/solution1.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
@@ -143,7 +143,7 @@ export const outboundProps = {
         "Move beyond basic performance metrics to predictive insights that optimize strategy performance and risk management.",
     images: {
         mobile: {
-            src: "/assets/outbound-hero-mobile.webp",
+            src: "/assets/outbound-hero-desktop.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {

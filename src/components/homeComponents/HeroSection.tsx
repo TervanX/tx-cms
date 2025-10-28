@@ -9,6 +9,7 @@ import {
   useInView,
   animate,
 } from "framer-motion";
+import LogoGrid from "../productComponents/LogoGrid";
 
 const HeroSection = () => {
   const companies = [
@@ -66,18 +67,6 @@ const HeroSection = () => {
   const buttonsTranslateY = useTransform(scrollY, [50, 150], [0, -120]);
 
   const duplicatedCompanies = [...companies, ...companies];
-
-  // Get window width on client side only
-  useEffect(() => {
-    setWindowWidth(window.innerWidth);
-
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   return (
     <div className="mx-auto rounded-t-md overflow-clip rounded-b-md">
@@ -210,81 +199,21 @@ const HeroSection = () => {
           </div>
 
           {/* Trusted Companies */}
-          <div className="mx-auto pb-8 lg:pb-12">
+          <div className="mx-auto pb-8 lg:pb-12 font-sans text-current pt-4 text-base leading-[135%] font-semibold tracking-[-0.16px] md:text-xl md:leading-[110%] md:tracking-[-0.6px] mt-8">
             <div className="mx-auto w-full max-w-[1000px] px-3 md:px-4 mb-4 flex flex-col overflow-hidden lg:mb-10 lg:max-w-[1262px]">
-              <div className="font-sans text-current pt-4 text-base leading-[135%] font-semibold tracking-[-0.16px] md:text-xl md:leading-[110%] md:tracking-[-0.6px]">
-                <div className="flex flex-col gap-2">
-                  <p> The same world-class infrastructure that powers</p>
-                  <span className="border-solid  grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 rounded-md px-3 py-2 bg-[rgba(255,255,255,.5)] lg:max-w-[600px] overflow-x-auto">
-                    <span className="flex items-center justify-start gap-4">
-                      <img
-                        src="/assets/Stripe.png"
-                        alt="Stripe"
-                        height="20"
-                        className="h-6"
-                      />
-                      <img
-                        src="/assets/flutterwave.svg"
-                        alt="flutterwave"
-                        height="20"
-                        className="h-6"
-                      />
-                      <img
-                        src="/assets/Checkbox.webp"
-                        alt="Checkbox"
-                        height="20"
-                        className="h-10"
-                      />
-                      <img
-                        src="/assets/1200px-Paystack_Logo.png"
-                        alt="Paystack"
-                        height="20"
-                        className="h-6"
-                      />
-                      <img
-                        src="/assets/fireblocks-logo.svg"
-                        alt="fireblocks"
-                        height="20"
-                        className="h-6"
-                      />
-                    </span>
-                  </span>
-
-                  <p className="lg:max-w-[50%]">
-                    now powers the TervanX Network — delivering secure,
+              <div className="">
+                <div className="flex flex-col gap-6">
+                  <p className="text-center mt-3">
+                    The same world-class infrastructure that powers
+                  </p>
+                  <LogoGrid className="filter brightness-0 invert" />
+                  <p className="text-center">
+                    Now powers the TervanX Network — delivering secure,
                     scalable, and intelligent financial systems built for
                     Africa and beyond.
                   </p>
                 </div>
               </div>
-            </div>
-
-            <div className="relative mx-auto my-6 overflow-hidden [mask-image:linear-gradient(to_right,transparent_0%,black_20%,black_80%,transparent_100%)]">
-              <motion.div
-                className="flex w-max gap-10"
-                animate={{
-                  x: [0, -windowWidth],
-                }}
-                transition={{
-                  x: {
-                    repeat: Infinity,
-                    repeatType: "loop",
-                    duration: 30,
-                    ease: "linear",
-                  },
-                }}
-              >
-                {duplicatedCompanies.map((company, index) => (
-                  <motion.span
-                    key={`${company}-${index}`}
-                    className="flex gap-10 font-semibold whitespace-nowrap text-lg lg:text-[32px]"
-                    whileHover={{ scale: 1.1, color: "#60a5fa" }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                  >
-                    {company}
-                  </motion.span>
-                ))}
-              </motion.div>
             </div>
           </div>
         </div>

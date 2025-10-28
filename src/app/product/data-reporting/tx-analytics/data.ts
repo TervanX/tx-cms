@@ -7,7 +7,7 @@ export const productivityProps = {
         "TX Analytics automates the most complex aspects of data analysis—from cross-chain data aggregation to predictive insights—delivering intelligence with unprecedented speed and precision.",
     images: {
         mobile: {
-            src: "/assets/productivity-hero-mobile.webp",
+            src: "/assets/solution1.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
@@ -143,7 +143,7 @@ export const outboundProps = {
         "Move beyond descriptive analytics to prescriptive insights that drive proactive decision-making and strategic advantage.",
     images: {
         mobile: {
-            src: "/assets/outbound-hero-mobile.webp",
+            src: "/assets/outbound-hero-desktop.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {

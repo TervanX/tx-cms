@@ -7,7 +7,7 @@ export const productivityProps = {
         "TX HR automates the most complex aspects of workforce management—from multi-currency payroll to token vesting—executing with precision across jurisdictions and payment methods.",
     images: {
         mobile: {
-            src: "/assets/productivity-hero-mobile.webp",
+            src: "/assets/solution1.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
@@ -143,7 +143,7 @@ export const outboundProps = {
         "Move beyond basic HR metrics to predictive insights that optimize workforce planning and compensation strategy.",
     images: {
         mobile: {
-            src: "/assets/outbound-hero-mobile.webp",
+            src: "/assets/outbound-hero-desktop.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {

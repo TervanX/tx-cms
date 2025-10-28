@@ -7,7 +7,7 @@ export const productivityProps = {
         "TX Logistics automates the most complex aspects of global supply chain management—from inventory optimization to cross-border compliance—operating with precision 24/7.",
     images: {
         mobile: {
-            src: "/assets/productivity-hero-mobile.webp",
+            src: "/assets/solution1.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
@@ -143,7 +143,7 @@ export const outboundProps = {
         "Move beyond basic tracking to predictive insights that optimize entire supply chain performance and reduce operational risks.",
     images: {
         mobile: {
-            src: "/assets/outbound-hero-mobile.webp",
+            src: "/assets/outbound-hero-desktop.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {

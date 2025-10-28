@@ -7,7 +7,7 @@ export const productivityProps = {
         "TX Capital automates the most complex aspects of institutional treasury management—from yield farming to liquidity provisioning—executing sophisticated strategies with precision 24/7.",
     images: {
         mobile: {
-            src: "/assets/productivity-hero-mobile.webp",
+            src: "/assets/solution1.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
@@ -143,7 +143,7 @@ export const outboundProps = {
         "Move beyond basic performance tracking to predictive insights that optimize capital allocation and risk-adjusted returns.",
     images: {
         mobile: {
-            src: "/assets/outbound-hero-mobile.webp",
+            src: "/assets/outbound-hero-desktop.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {
