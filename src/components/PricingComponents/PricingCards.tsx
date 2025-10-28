@@ -293,40 +293,53 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isAnnualBilling, isPayg
 
   return (
     <div
-      className={`border border-solid overflow-hidden rounded-xl font-medium h-full flex flex-col ${plan.mostPopular
-        ? "border-[#e0e0e2] border-2 bg-[#D1ECFF]/80"
-        : "border-[#E5E7EB] bg-white"
+      className={`overflow-hidden rounded-xl font-medium h-full flex flex-col ${plan.mostPopular
+        ? "border border-[#e0e0e2] border-2 bg-[#D1ECFF]/80"
+        : pricingPlans.indexOf(plan) === 0
+          ? "border-b border-[#E5E7EB] bg-white sm:border-b-0 sm:border-r"
+          : pricingPlans.indexOf(plan) < pricingPlans.length - 1
+            ? "bg-white sm:border-r border-[#E5E7EB]"
+            : "bg-white"
+        } ${
+        // Small screens: only first item has bottom border
+        pricingPlans.indexOf(plan) === 0 ? "border-b border-[#E5E7EB]" : "border-0"
+        } ${
+        // Medium+ screens: right borders except last item
+        pricingPlans.indexOf(plan) < pricingPlans.length - 1 ? "sm:border-r border-[#E5E7EB]" : ""
         }`}
     >
-      {plan.mostPopular && (
-        <div className="px-6 pt-6">
+      {plan.mostPopular ? (
+        <div className="px-4 pt-2">
           <span className="bg-primary text-white text-xs font-mono py-1 px-2 rounded-lg">
             Most Popular
           </span>
         </div>
-      )}
-
-      <div className={`flex flex-col flex-1 p-6 ${plan.mostPopular ? '' : 'pt-6'}`}>
+      ) : <div className="px-4 pt-2">
+        <span className="text-white text-xs font-mono py-1 px-2 rounded-lg">
+        </span>
+      </div>}
+      <div className={`flex flex-col flex-1 px-4 py-2 ${plan.mostPopular ? '' : ''} grid grid-rows-[80px_80px_100px_100px_1fr_60px] gap-6`}>
         {/* Plan Header */}
-        <div className="mb-6">
+        <div className="mb-0">
           <h3 className="text-xl font-medium">{plan.name}</h3>
-          <p className="text-sm text-dark mt-2">
+          <p className="text-sm text-dark mt-2 line-clamp-2">
             {plan.description}
           </p>
         </div>
 
         {/* Pricing */}
-        <div className="mb-6">
+        <div className="mb-0">
           <div className="text-2xl lg:text-3xl font-grotesque font-medium my-4">
             {currentPrice === 0 ? (isPayg ? "Flexible" : "Free") : `$${currentPrice}`}
             {currentPrice !== 0 && !isPayg && (
               <span className="text-sm ml-1">{isAnnualBilling ? "/yr" : "/mo"}</span>
             )}
           </div>
-          <p className="text-sm text-gray-600">
+          <p className="text-sm text-gray-600 line-clamp-2">
             {priceNote}
           </p>
         </div>
+
 
         {/* Credits/Usage */}
         {!isPayg && (
@@ -416,7 +429,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isAnnualBilling, isPayg
 
         {/* Compare Plans Button */}
         {!isPayg && (
-          <div className="flex items-center justify-center pt-4 border-t border-gray-200">
+          <div className="flex items-center justify-center pt-4">
             <Button
               size="md"
               variant="ghost"
