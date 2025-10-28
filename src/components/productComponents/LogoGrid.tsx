@@ -20,7 +20,9 @@ interface LogoGridProps {
   w?: string;
 }
 
-const LogoGrid: React.FC<LogoGridProps> = ({ className }) => {
+const LogoGrid: React.FC<LogoGridProps> = ({
+  className = "h-10 filter invert-0 brightness-0",
+}) => {
   const logosArray = [
     { url: "/assets/Stripe.png", imageAlt: "Stripe" },
     { url: "/assets/flutterwave.svg", imageAlt: "flutterwave" },

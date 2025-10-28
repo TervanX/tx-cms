@@ -47,7 +47,7 @@ export default function FormSidebar({
   title,
   description,
   testimonial = defaultTestimonial,
-  trust = "Trusted by leading companies worldwide",
+  trust = "The same world-class infrastructure that powers",
   showCompanies = true,
   backgroundImage = "/assets/b117dbac815c7c71ea073f7a30999c33.jpeg?&q=90",
   customCompanies,
@@ -118,6 +118,10 @@ export default function FormSidebar({
                   className="h-10 filter invert-0 brightness-0" // Black
                 />
               </section>
+              <span className="text-black text-center">
+                Now powers the TervanX Network — delivering secure, scalable,
+                and intelligent financial systems built for Africa and beyond.
+              </span>
             </div>
           )}
         </div>

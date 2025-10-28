@@ -1315,7 +1315,7 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, onClose }) => {
           onClick={onClose}
           className="flex-1"
         >
-          Log in
+          <Link href="/auth/login"> Login</Link>
         </Button>
         <Button
           size="md"
@@ -1371,9 +1371,8 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
         )}
       </button>
       <div
-        className={`overflow-y-scroll transition-all duration-300 ease-in-out px-6 ${
-          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-        }`}
+        className={`overflow-y-scroll transition-all duration-300 ease-in-out px-6 ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          }`}
       >
         <div className="pb-5 text-dark text-sm lg:text-base leading-relaxed border-gray-200 border-t-[1.5px] pt-4">
           <div className="flex flex-col lg:flex-row gap-6">
