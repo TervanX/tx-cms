@@ -5,7 +5,7 @@ export const financeBankingPageData = {
         tag: "",
         primaryButton: {
             text: "Login",
-            href: "/sign-up",
+            href: "/auth/login",
         },
         secondaryButton: {
             text: "Contact Sales",
@@ -83,8 +83,8 @@ export const financeBankingPageData = {
             "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
         backgroundImage: "/assets/image30.webp",
         primaryButton: {
-            text: "Learn More",
-            href: "/learn-more",
+            text: "Contact Sales",
+            href: "/contact/contact-sales",
         },
         alignLeft: true,
         title: "Corporate and business banking solutions",
@@ -193,97 +193,97 @@ export const financeBankingPageData = {
     },
 
     globalWhatsapp2: {
-            title: "Wealth Management",
-            tag: "",
-            description: "",
-            cards: [
-                {
-                    title: "Digital asset allocation",
-                                backgroundImage: "/assets/image30.webp",
+        title: "Wealth Management",
+        tag: "",
+        description: "",
+        cards: [
+            {
+                title: "Digital asset allocation",
+                backgroundImage: "/assets/image30.webp",
 
-                    description: "Portfolio construction and rebalancing across traditional and digital assets.",
-                    img: "/assets/highlight.webp",
-                    imageAlt: "Digital asset allocation",
-                    lists: []
-                },
-                {
-                    title: " Tokenized alternative assets",
-                                backgroundImage: "/assets/image30.webp",
+                description: "Portfolio construction and rebalancing across traditional and digital assets.",
+                img: "/assets/highlight.webp",
+                imageAlt: "Digital asset allocation",
+                lists: []
+            },
+            {
+                title: " Tokenized alternative assets",
+                backgroundImage: "/assets/image30.webp",
 
-                    description: "Access to private equity, real estate, and other alternatives through tokenization.",
-                    img: "/assets/highlight.webp",
-                    imageAlt: "Tokenized alternative assets",
-                    lists: []
-                },
-                {
-                    title: "Automated tax optimization",
-                                backgroundImage: "/assets/image30.webp",
+                description: "Access to private equity, real estate, and other alternatives through tokenization.",
+                img: "/assets/highlight.webp",
+                imageAlt: "Tokenized alternative assets",
+                lists: []
+            },
+            {
+                title: "Automated tax optimization",
+                backgroundImage: "/assets/image30.webp",
 
-                    description: "Tax-loss harvesting and reporting for complex digital asset portfolios.",
-                    img: "/assets/highlight.webp",
-                    imageAlt: "Automated tax optimization",
-                    lists: []
-                },
-                {
-                    title: "Family office services",
-                    description: "Multi-generational wealth transfer and estate planning using blockchain technology.",
-                    img: "/assets/highlight.webp",
-                    backgroundImage: "/assets/image30.webp",
+                description: "Tax-loss harvesting and reporting for complex digital asset portfolios.",
+                img: "/assets/highlight.webp",
+                imageAlt: "Automated tax optimization",
+                lists: []
+            },
+            {
+                title: "Family office services",
+                description: "Multi-generational wealth transfer and estate planning using blockchain technology.",
+                img: "/assets/highlight.webp",
+                backgroundImage: "/assets/image30.webp",
 
-                    imageAlt: "Family office services",
-                    lists: []
-                }
-            ],
-            backgroundImage: "/assets/image30.webp",
-            backgroundAlt: "DataSectionProps",
-        
+                imageAlt: "Family office services",
+                lists: []
+            }
+        ],
+        backgroundImage: "/assets/image30.webp",
+        backgroundAlt: "DataSectionProps",
+
 
     },
     globalWhatsapp3: {
-            title: "Compliance & Risk Management",
-            tag: "",
-            description: "",
-            cards: [
-                {
-                    backgroundImage: "/assets/image30.webp",
+        title: "Compliance & Risk Management",
+        tag: "",
+        description: "",
+        cards: [
+            {
+                backgroundImage: "/assets/image30.webp",
 
-                    title:  "Automated regulatory reporting",
-                    description: "Generate reports for Basel III, Dodd-Frank, MiFID II, and other global regulations.",
-                    img: "/assets/highlight.webp",
-                    imageAlt: "Automated regulatory reporting",
-                    lists: []
-                },
-                {
-                    backgroundImage: "/assets/image30.webp",
+                title: "Automated regulatory reporting",
+                description: "Generate reports for Basel III, Dodd-Frank, MiFID II, and other global regulations.",
+                img: "/assets/highlight.webp",
+                imageAlt: "Automated regulatory reporting",
+                lists: []
+            },
+            {
+                backgroundImage: "/assets/image30.webp",
 
-                    title: "Real-time risk monitoring",
-                    description: "AI-powered surveillance for market manipulation, fraud detection, and compliance breaches.",
-                    img: "/assets/highlight.webp",
-                    imageAlt: "Real-time risk monitoring",
-                    lists: []
-                },
-                {
-                    backgroundImage: "/assets/image30.webp",
+                title: "Real-time risk monitoring",
+                description: "AI-powered surveillance for market manipulation, fraud detection, and compliance breaches.",
+                img: "/assets/highlight.webp",
+                imageAlt: "Real-time risk monitoring",
+                lists: []
+            },
+            {
+                backgroundImage: "/assets/image30.webp",
 
-                    title: "Audit trail management",
-                    description: "Immutable record-keeping with complete transaction history and compliance documentation.",
-                    img: "/assets/highlight.webp",
-                    imageAlt: "Audit trail management",
-                    lists: []
-                },
-                {
-                    backgroundImage: "/assets/image30.webp",
+                title: "Audit trail management",
+                description: "Immutable record-keeping with complete transaction history and compliance documentation.",
+                img: "/assets/highlight.webp",
+                imageAlt: "Audit trail management",
+                lists: []
+            },
+            {
+                backgroundImage: "/assets/image30.webp",
 
-                    title: "Sanctions screening",
-                    description: "Real-time monitoring against global watchlists and sanctions databases.",
-                    img: "/assets/highlight.webp",
-                    imageAlt: "Sanctions screening",
-                    lists: []
-                }
-            ],
-            backgroundImage: "/assets/image30.webp",
-            backgroundAlt: "DataSectionProps",
-        
+                title: "Sanctions screening",
+                description: "Real-time monitoring against global watchlists and sanctions databases.",
+                img: "/assets/highlight.webp",
+                imageAlt: "Sanctions screening",
+                lists: []
+            }
+        ],
+        backgroundImage: "/assets/image30.webp",
+        backgroundAlt: "DataSectionProps",
+
     },
     globalWhatsapp4: {
         title: "Key Banking Features",
