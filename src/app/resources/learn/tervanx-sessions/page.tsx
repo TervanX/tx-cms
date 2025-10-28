@@ -14,7 +14,7 @@ export default function TervanXSessions() {
         <div>
             <HeroSection
                 title="TervanX Sessions"
-                description="Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore."
+                description=""
             />
             <FeaturesSection {...supportData.featuredata} />
             <ProductSection

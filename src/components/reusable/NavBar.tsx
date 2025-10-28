@@ -327,7 +327,7 @@ const navItems: NavItemInterface[] = [
         ),
         title: "Security & Optimization",
         description: "Find the right people and book quality meetings",
-        linkTitle: "Sales Leaders",
+        linkTitle: "",
         links: [
           {
             href: "/product/security-optimization/tx-shield",
@@ -376,7 +376,7 @@ const navItems: NavItemInterface[] = [
         ),
         title: "Data & Reporting",
         description: "Find the right people and book quality meetings",
-        linkTitle: "Sales Leaders",
+        linkTitle: "",
         links: [
           { href: "/product/data-reporting/tx-sigma", text: "Tx Sigma" },
           { href: "/product/data-reporting/tx-pipeline", text: "Tx Pipeline" },
@@ -439,9 +439,8 @@ const navItems: NavItemInterface[] = [
           </svg>
         ),
         title: "By Business Stage",
-        description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quibusdam ",
-        linkTitle: "lorem",
+        description: "",
+        linkTitle: "",
         links: [
           { href: "/solutions/by-business-stage/startups", text: "Startups" },
           {
@@ -488,9 +487,8 @@ const navItems: NavItemInterface[] = [
           </svg>
         ),
         title: "By Use Case ",
-        description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quibusdam ",
-        linkTitle: "lorem",
+        description: "",
+        linkTitle: "",
         links: [
           {
             href: "/solutions/by-use-case/fintech-platforms",
@@ -546,9 +544,8 @@ const navItems: NavItemInterface[] = [
           </svg>
         ),
         title: "By Industry ",
-        description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quibusdam ",
-        linkTitle: "lorem",
+        description: "",
+        linkTitle: "",
         links: [
           {
             href: "/solutions/by-industry/finance-and-banking",
@@ -580,8 +577,7 @@ const navItems: NavItemInterface[] = [
       {
         logo: "/assets/just.webp",
         tag: "By Industry ",
-        descriptions:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quibusdam voluptate dolores exercitationem.",
+        descriptions: "",
         links: [
           { text: "Finance & Banking ", href: "" },
           { text: "E-Commerce", href: "" },
@@ -634,7 +630,7 @@ const navItems: NavItemInterface[] = [
         ),
         title: "Support",
         description: "Find the right people and book quality meetings",
-        linkTitle: "Sales Leaders",
+        linkTitle: "",
         links: [
           // {
           //   href: "/resources/support/support-center",
@@ -686,7 +682,7 @@ const navItems: NavItemInterface[] = [
       //   ),
       //   title: "Learn",
       //   description: "Find the right people and book quality meetings",
-      //   linkTitle: "Sales Leaders",
+      //   linkTitle: "",
       //   links: [
       //     { href: "/resources/learn/blog", text: "Blog " },
       //     { href: "/resources/learn/case-studies", text: "Case Studies " },
@@ -733,7 +729,7 @@ const navItems: NavItemInterface[] = [
         ),
         title: "Company & Partners ",
         description: "Find the right people and book quality meetings",
-        linkTitle: "Sales Leaders",
+        linkTitle: "",
         links: [
           {
             href: "/contact/contact",
@@ -817,7 +813,7 @@ const navItems: NavItemInterface[] = [
         ),
         title: "Documentation",
         description: "Find the right people and book quality meetings",
-        linkTitle: "Sales Leaders",
+        linkTitle: "",
         links: [
           {
             href: "/contact/request-access",
@@ -874,7 +870,7 @@ const navItems: NavItemInterface[] = [
         ),
         title: "App & Plugin Integrations",
         description: "Find the right people and book quality meetings",
-        linkTitle: "Sales Leaders",
+        linkTitle: "",
         links: [
           {
             href: "/contact/request-access",
@@ -925,7 +921,7 @@ const navItems: NavItemInterface[] = [
         ),
         title: "Developer Tools ",
         description: "Find the right people and book quality meetings",
-        linkTitle: "Sales Leaders",
+        linkTitle: "",
         links: [
           {
             href: "/contact/request-access",
@@ -1054,7 +1050,7 @@ const navItems: NavItemInterface[] = [
     //     ),
     //     title: "Pricing",
     //     description: "Transparent, modular pricing for APIs and plugins. ",
-    //     linkTitle: "Sales Leaders",
+    //     linkTitle: "",
     //     links: [
     //       { href: "#", text: "Core API Pricing" },
     //       { href: "#", text: "Enterprise Plans" },

@@ -11,25 +11,33 @@ const BOTTOM_URL = "/assets/bottom.svg";
 const items = [
   {
     title: "INFRASTRUCTURE",
-    description: "Access our B2B database of over 200 million contacts",
+    subTitle:
+      "Access scalable APIs for wallets, settlements, on/off-ramps, KYC, and liquidity — everything needed to power modern financial ecosystems.",
+    description: "Power every transaction — from payments to digital assets",
     scrollUrl: "/assets/1.svg",
     stackUrl: "/assets/1.svg",
   },
   {
     title: "INTEGRATIONS",
-    description: "Connect with your favorite tools and platforms",
+    subTitle:
+      "TervanX integrates with major blockchain networks, payment processors, and banking partners, letting you launch multi-asset products without switching platforms.",
+    description: "Connect seamlessly with banks, chains, and protocols",
     scrollUrl: "/assets/2.svg",
     stackUrl: "/assets/3.svg",
   },
   {
     title: "ACTIONS",
-    description: "Automate your sales workflow with powerful actions",
+    subTitle:
+      "Built with bank-grade encryption, AML/KYC automation, and regional compliance to help your products scale confidently across jurisdictions.",
+    description: "Enterprise-grade security and regulatory coverage",
     scrollUrl: "/assets/4.svg",
     stackUrl: "/assets/5.svg",
   },
   {
-    title: "AI",
-    description: "Leverage AI to optimize your sales process",
+    title: "AI & AUTOMATION",
+    subTitle:
+      "TervanX’s AI engine automates reconciliation, fraud detection, and liquidity optimization — reducing manual workloads while improving trust and speed.",
+    description: "The intelligent core for financial operations",
     scrollUrl: "/assets/6.svg",
     stackUrl: "/assets/7.svg",
   },
@@ -121,8 +129,8 @@ const StackedAnimation: React.FC = () => {
               raw <= start
                 ? 0
                 : raw >= endStack
-                  ? 1
-                  : (raw - start) / (endStack - start);
+                ? 1
+                : (raw - start) / (endStack - start);
 
             const total = layers.length;
             const fadeFactor = 0.6;
@@ -288,34 +296,36 @@ const StackedAnimation: React.FC = () => {
           className="flex flex-col lg:flex-row min-h-screen items-center justify-center relative z-30"
         >
           {/* LEFT TEXT CONTENT (no background) */}
-          <div className="relative w-full z-40 lg:w-[35%] pr-0 md:pr-10 lg:pr-16 flex items-center justify-center h-full">
+          <div className="relative w-full z-40 lg:w-[35%] pr-0  flex items-center justify-center h-full">
             <div className="w-full max-w-md  px-0 lg:p-5 md:p-6">
               <h1 className="text-3xl md:text-5xl font-medium text-dark md:leading-[60px] lg:px-4 mb-0 text-start font-grotesque">
-                Apollo,
+                Infrastructure{" "}
               </h1>
               <h1 className="text-3xl md:text-5xl font-medium text-dark md:leading-[60px] lg:px-4 mb-0 text-start font-grotesque">
-                The AI Sales
+                that powers{" "}
               </h1>
               <h1 className="text-3xl md:text-5xl font-medium text-dark md:leading-[60px] lg:px-4 mb-0 text-start font-grotesque">
-                Platform
+                financial possibilities
               </h1>
               <h6 className="text-sm md:text-base text-dark max-w-3xl mx-auto lg:px-4 leading-relaxed mb-0 py-2 font-grotesque">
-                Apollo is an end-to-end AI sales platform with all the features,
-                integrations, and training you need to grow your business.
+                {items[activeItem]?.subTitle}
               </h6>
-
               <div className="w-full flex flex-col gap-2 lg:px-4 mt-6">
                 {items.map((item, index) => (
                   <div
                     key={index}
-                    className={`flex flex-col gap-1 border-solid border-b py-2 transition-colors duration-300 ${activeItem === index ? 'px-2' : ''
-                      }`}
+                    className={`flex flex-col gap-1 border-solid border-b py-2 transition-colors duration-300 ${
+                      activeItem === index ? "px-2" : ""
+                    }`}
                   >
                     <div className="flex justify-between items-center w-full">
-                      <p className={`text-xs transition-colors duration-300 ${activeItem === index
-                        ? 'text-black font-semibold'
-                        : 'text-sand hover:text-black'
-                        }`}>
+                      <p
+                        className={`text-xs transition-colors duration-300 ${
+                          activeItem === index
+                            ? "text-black font-semibold"
+                            : "text-sand hover:text-black"
+                        }`}
+                      >
                         {item.title}
                       </p>
                       <a>
@@ -327,7 +337,9 @@ const StackedAnimation: React.FC = () => {
                         >
                           <path
                             d="M12.0421 3.52704L16.0644 7.54927C17.5693 9.05275 16.5033 11.6252 14.3757 11.6252L2.5 11.6208V12.3673L14.3787 12.3718C16.5048 12.3718 17.5708 14.9443 16.0659 16.4477L12.0406 20.473L12.5692 21L21.5692 12L12.5692 3L12.0406 3.52704H12.0421Z"
-                            fill={activeItem === index ? "black" : "currentColor"}
+                            fill={
+                              activeItem === index ? "black" : "currentColor"
+                            }
                           />
                         </svg>
                       </a>
@@ -335,9 +347,9 @@ const StackedAnimation: React.FC = () => {
                     {activeItem === index && (
                       <p className="mt-1 text-xs text-dark mb-0 font-grotesque leading-tight break-all whitespace-normal lg:hidden block">
                         {item.description}
-                      </p>)}
+                      </p>
+                    )}
                   </div>
-
                 ))}
               </div>
             </div>

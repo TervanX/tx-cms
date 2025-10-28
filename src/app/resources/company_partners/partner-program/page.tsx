@@ -14,7 +14,7 @@ export default function PartnerProgram() {
         <div>
             <HeroSection
                 title="Partner Program"
-                description="Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore."
+                description=""
             />
             <FeaturesSection {...supportData.featuredata} />
             <ProductSection

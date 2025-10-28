@@ -249,7 +249,7 @@ const marketplacesPageData = {
   },
 
   bannerCTA: {
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    title: "",
     backgroundImage: "/assets/image30.webp",
     primaryButton: {
       text: "Get Started",

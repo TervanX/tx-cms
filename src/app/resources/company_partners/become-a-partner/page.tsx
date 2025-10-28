@@ -14,7 +14,7 @@ export default function BecomePartner() {
         <div>
             <HeroSection
                 title="Become a Partner"
-                description="Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore."
+                description=""
             />
             <FeaturesSection {...supportData.featuredata} />
             <ProductSection

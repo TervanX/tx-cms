@@ -14,7 +14,7 @@ export default function ProfessionalServices() {
         <div>
             <HeroSection
                 title="Professional Services"
-                description="Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore."
+                description=""
             />
             <FeaturesSection {...supportData.featuredata} />
             <ProductSection

@@ -8,24 +8,18 @@ import CtaBanner from "@/components/StartupComponents/Cta";
 import FAQAccordion from "@/components/StartupComponents/Faq";
 import { Marquee } from "@/components/StartupComponents/Marquee";
 import Resources from "@/components/StartupComponents/Resources";
-import { supportData } from '../data';
+import { supportData } from "../data";
 export default function Startups() {
   return (
     <div>
-      <HeroSection
-        title="Tx Apps SDK"
-        description="Lorem ipsum dolor sit, amet consectetur adipisicing."
-      />
+      <HeroSection title="Tx Apps SDK" description="" />
       <FeaturesSection {...supportData.featuredata} />
-      <ProductSection
-        {...supportData.productdata}
-      />
+      <ProductSection {...supportData.productdata} />
       <Banner {...supportData.bannerdata} />
       <Testimonial {...supportData.testimonialdata} />
       <Marquee items={supportData.marqueedata.marqueeItems} />
       <Resources {...(supportData.resourcesdata as any)} />
-      <CtaBanner
-        {...supportData.ctaBanner} />
+      <CtaBanner {...supportData.ctaBanner} />
       <FAQAccordion faqData={supportData.faqData} />
     </div>
   );

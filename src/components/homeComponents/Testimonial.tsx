@@ -17,7 +17,7 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    category: "Sales Leaders",
+    category: "",
     name: "Nicole Coetzer",
     title: "Head of Sales Development",
     company: "Kinsta",
