@@ -20,7 +20,7 @@ const SubscriptionSwitch: React.FC<SubscriptionSwitchProps> = ({
             onClick={() => onBillingChange(true)}
             className={`group transition-all h-10 px-4 relative rounded-full outline-none focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-black ${isAnnualBilling
               ? "bg-black text-white"
-              : "bg-transparent text-gray-500 hover:bg-gray-100"
+              : "bg-transparent text-gray-500 hover:bg-black/50"
               }`}
           >
             <span className="antialiased text-sm leading-[130%] font-bold tracking-normal group-hover:text-white">
@@ -41,7 +41,7 @@ const SubscriptionSwitch: React.FC<SubscriptionSwitchProps> = ({
             onClick={() => onBillingChange(false)}
             className={`group transition-all h-10 px-4 rounded-full outline-none focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-black ${!isAnnualBilling
               ? "bg-black text-white"
-              : "bg-transparent text-gray-500 hover:bg-gray-100"
+              : "bg-transparent text-gray-500 hover:bg-black/50"
               }`}
           >
             <span className="antialiased text-sm leading-[130%] font-bold tracking-normal group-hover:text-white">

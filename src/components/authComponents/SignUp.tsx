@@ -25,19 +25,6 @@ export default function SignUp() {
     }, 3000);
   };
 
-  const handleGoogleSignUp = () => {
-    if (loading) return;
-    console.log("Google sign up clicked");
-    setMessage("User not found with this email");
-    setTimeout(() => setMessage(""), 5000);
-  };
-
-  const handleMicrosoftSignUp = () => {
-    if (loading) return;
-    console.log("Microsoft sign up clicked");
-    setMessage("User not found with this email");
-    setTimeout(() => setMessage(""), 5000);
-  };
 
   return (
     <div className="relative grid gap-3 mx-0 md:mx-6 lg:grid-cols-[2fr_1fr]">
@@ -138,19 +125,17 @@ export default function SignUp() {
       </div>
 
       {/* Right Column - Video */}
-      <div className="relative min-h-[688px] overflow-hidden rounded-lg aspect-[2/3] bg-gray-200">
+      <div className="hidden lg:flex relative min-h-[300px] sm:min-h-[400px] lg:min-h-[688px] overflow-hidden rounded-lg bg-gray-200">
         <div className="relative h-full w-full">
-          <img src="/assets/signup.jpg" alt="" className="absolute inset-0 h-full w-full rounded-xl object-cover" />
-          {/* <video
-            src="/assets/video.webm"
+          <img
+            src="/assets/signup.jpg"
+            alt="Secure login illustration"
             className="absolute inset-0 h-full w-full rounded-xl object-cover"
-            loop
-            muted
-            playsInline
-            autoPlay
-          /> */}
+          />
         </div>
       </div>
     </div>
   );
 }
+
+
