@@ -4,6 +4,7 @@ import { Check, ArrowLeft, Info } from "lucide-react";
 import Button from "../reusable/Button";
 import { useRouter } from "next/navigation";
 import { pricingPlans } from "./data";
+import Link from "next/link";
 
 interface PlanDetailPageProps {
     planId: string;
@@ -68,7 +69,7 @@ const PlanDetailPage: React.FC<PlanDetailPageProps> = ({ planId, isAnnualBilling
                                 <div className="flex items-center gap-4">
                                     <div className="text-3xl font-medium text-gray-900">
                                         {currentPrice === 0 ? 'Free' : `$${currentPrice}`}
-                                        {currentPrice !== 0 && <span className="text-lg font-normal text-gray-600">/month</span>}
+                                        {currentPrice !== 0 && <span className="text-lg font-normal text-gray-600">{isAnnualBilling ? "/year" : "/month"}</span>}
                                     </div>
                                     {plan.detailInfo.quota && (
                                         <div className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium">
@@ -78,14 +79,16 @@ const PlanDetailPage: React.FC<PlanDetailPageProps> = ({ planId, isAnnualBilling
                                 </div>
                             </div>
                             <div className="flex flex-col gap-3">
-                                <Button
-                                    size="md"
-                                    variant={plan.buttonVariant}
-                                    className="px-8 py-3"
-                                    onClick={() => console.log(`Selected ${plan.name}`)}
-                                >
-                                    {plan.buttonText}
-                                </Button>
+                                <Link href="/contact/contact-sales">
+                                    <Button
+                                        size="md"
+                                        variant={plan.buttonVariant}
+                                        className="px-8 py-3"
+                                        onClick={() => console.log(`Selected ${plan.name}`)}
+                                    >
+                                        {plan.buttonText}
+                                    </Button>
+                                </Link>
                             </div>
                         </div>
                     </div>

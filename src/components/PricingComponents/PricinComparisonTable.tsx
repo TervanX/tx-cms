@@ -1,5 +1,6 @@
 
 "use client";
+import Link from "next/link";
 import { FaCheck } from "react-icons/fa6";
 import React from "react";
 import Button from "../reusable/Button";
@@ -66,15 +67,16 @@ const PricingComparisonTable: React.FC<PricingComparisonTableProps> = ({
                                             {creditsNote}
                                         </span>
                                     </div>
-
-                                    <Button
-                                        size="md"
-                                        variant={plan.buttonVariant}
-                                        type="button"
-                                        className="w-full mt-4"
-                                    >
-                                        {plan.buttonText}
-                                    </Button>
+                                    <Link href="/contact/contact-sales">
+                                        <Button
+                                            size="md"
+                                            variant={plan.buttonVariant}
+                                            type="button"
+                                            className="w-full mt-4"
+                                        >
+                                            {plan.buttonText}
+                                        </Button>
+                                    </Link>
                                 </div>
                             );
                         })}
