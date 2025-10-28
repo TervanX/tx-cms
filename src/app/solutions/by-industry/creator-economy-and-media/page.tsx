@@ -45,24 +45,12 @@ const Page = () => {
         <DottedLine fill="gray" />
       </div>
       <CallAndConversation {...creatorsPageData.callAndConversation} />
-      <div className="py-6 lg:py-20">
-        <DottedLine fill="gray" />
-      </div>
       <LiveChat {...creatorsPageData.liveChat} />
       <GlobalWhatsapp {...creatorsPageData.globalWhatsapp} />
-      <div className="py-6 lg:py-20">
-        <DottedLine fill="gray" />
-      </div>
       <LiveChat {...creatorsPageData.creatorFinancialTools} />
       <GlobalWhatsapp {...creatorsPageData.collaborationNetworking} />
-      <div className="py-12 mt-8">
-        <DottedLine fill="gray" />
-      </div>
       <LiveChat {...creatorsPageData.technicalSpecifications} />
       <GlobalWhatsapp {...creatorsPageData.creatorSolutions} />
-      <div className="py-12 mt-8">
-        <DottedLine fill="gray" />
-      </div>
       <LiveChat {...creatorsPageData.gettingStartedTimeline} />
       <GlobalWhatsapp {...creatorsPageData.successMetrics} />
       <div className="py-12 mt-8">

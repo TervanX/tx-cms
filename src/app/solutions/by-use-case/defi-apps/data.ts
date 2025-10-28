@@ -207,24 +207,26 @@ export const defiFinancePageData = {
         title: "Technical Specifications",
         description: "",
         tag: "",
+        backgroundImage: "/assets/image30.webp",
         cards: [
             {
                 title: "Performance",
                 description: "Sub-second cross-chain executions, <100ms price feed updates, 99.99% uptime for critical infrastructure, Scalable to 1M+ daily transactions",
-                img: "/assets/highlight.webp",
+                img: "/assets/highlight.webp", backgroundImage: "/assets/image30.webp",
             },
             {
                 title: "Security",
                 description: "Regular smart contract audits, Bug bounty program management, Real-time exploit monitoring, $100M+ insurance coverage available",
                 img: "/assets/highlight.webp",
+                backgroundImage: "/assets/image30.webp",
             },
             {
                 title: "Integration",
                 description: "Web3.js and Ethers.js support, GraphQL for complex queries, Real-time event streaming, Custom webhook configurations",
                 img: "/assets/highlight.webp",
+                backgroundImage: "/assets/image30.webp",
             },
         ],
-        backgroundImage: "/assets/image30.webp",
     },
 
     protocolServices: {
@@ -263,21 +265,25 @@ export const defiFinancePageData = {
                 title: "DEX & AMM Development",
                 description: "Custom bonding curve implementations, Concentrated liquidity management, Fee tier optimization, Multi-hop routing algorithms",
                 img: "/assets/highlight.webp",
+                backgroundImage: "/assets/image30.webp",
             },
             {
                 title: "Lending Protocol Creation",
                 description: "Isolated and shared risk pools, Interest rate model development, Collateral factor optimization, Credit delegation systems",
                 img: "/assets/highlight.webp",
+                backgroundImage: "/assets/image30.webp",
             },
             {
                 title: "Yield Aggregators",
                 description: "Strategy automation and optimization, Risk-adjusted portfolio management, Cross-protocol asset deployment, Performance fee mechanisms",
                 img: "/assets/highlight.webp",
+                backgroundImage: "/assets/image30.webp",
             },
             {
                 title: "Derivatives & Synthetics",
                 description: "Perpetual swap infrastructure, Options trading platforms, Synthetic asset minting, Liquidity provider incentives",
                 img: "/assets/highlight.webp",
+                backgroundImage: "/assets/image30.webp",
             },
         ],
         backgroundImage: "/assets/image30.webp",

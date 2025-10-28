@@ -7,6 +7,9 @@ import { ShieldCheck } from "lucide-react";
 
 export default function RequestAccessPage() {
     const [currentStep, setCurrentStep] = useState(1);
+    const [isSubmitted, setIsSubmitted] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
     const [formData, setFormData] = useState({
         // Step 1
         fullName: "",
@@ -28,7 +31,6 @@ export default function RequestAccessPage() {
     });
 
     const [errors, setErrors] = useState<Record<string, string>>({});
-    const [isSubmitted, setIsSubmitted] = useState(false);
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
@@ -120,20 +122,58 @@ export default function RequestAccessPage() {
         setCurrentStep(prev => prev - 1);
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        if (validateStep3()) {
-            console.log("Access request submitted:", formData);
-            setIsSubmitted(true);
+
+        if (!validateStep3()) {
+            return;
+        }
+
+        setIsSubmitting(true);
+
+        try {
+            const netlifyForm = new FormData();
+            netlifyForm.append('form-name', 'request-access-form');
+            Object.entries(formData).forEach(([key, value]) => {
+                if (typeof value === 'boolean') {
+                    netlifyForm.append(key, value ? "Yes" : "No");
+                } else {
+                    netlifyForm.append(key, value as string);
+                }
+            });
+
+            const response = await fetch('/', {
+                method: 'POST',
+                body: netlifyForm,
+            });
+
+            if (response.ok) {
+                console.log("Access request form successfully submitted to Netlify");
+                setIsSubmitted(true);
+                setTimeout(() => {
+                    window.history.back();
+                }, 3000);
+            } else {
+                throw new Error("Network response was not ok");
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            alert("There was an error submitting your request. Please try again or contact us directly.");
+        } finally {
+            setIsSubmitting(false);
         }
     };
 
     if (isSubmitted) {
-        return <SuccessMessage
-            title="Thank you for your interest in TervanX"
-            message="Our partnerships team will review your request and contact you within 24 to 48 hours to guide you through the onboarding process."
-            icon={<ShieldCheck className="w-20 h-20 text-green-500" />}
-        />
+        return (
+            <div className="min-h-screen bg-[#F0F0F2] flex items-center justify-center">
+                <SuccessMessage
+                    title="Thank you for your interest in TervanX"
+                    message="Our partnerships team will review your request and contact you within 24 to 48 hours to guide you through the onboarding process."
+                    icon={<ShieldCheck className="w-20 h-20 text-green-500" />}
+                />
+            </div>
+        );
     }
 
     return (
@@ -155,6 +195,7 @@ export default function RequestAccessPage() {
                     onPrevStep={prevStep}
                     onNextStep={nextStep}
                     onSubmit={handleSubmit}
+                    isSubmitting={isSubmitting}
                 />
             </div>
         </main>

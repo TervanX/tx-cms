@@ -4,9 +4,11 @@ import ContactFormSteps from "@/components/landingComponents/ContactFormSteps";
 import SuccessMessage from "@/components/landingComponents/SuccessMessage";
 import FormSidebar from "@/components/landingComponents/FormSidebar";
 
-
 export default function ContactSalesPage() {
     const [currentStep, setCurrentStep] = useState(1);
+    const [isSubmitted, setIsSubmitted] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
     const [formData, setFormData] = useState({
         // Step 1
         fullName: "",
@@ -27,7 +29,6 @@ export default function ContactSalesPage() {
     });
 
     const [errors, setErrors] = useState<Record<string, string>>({});
-    const [isSubmitted, setIsSubmitted] = useState(false);
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
@@ -138,19 +139,59 @@ export default function ContactSalesPage() {
         setCurrentStep(prev => prev - 1);
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        if (validateStep3()) {
-            console.log("Form submitted:", formData);
-            setIsSubmitted(true);
+
+        if (!validateStep3()) {
+            return;
+        }
+
+        setIsSubmitting(true);
+
+        try {
+            const netlifyForm = new FormData();
+            netlifyForm.append('form-name', 'contact-sales-form');
+            Object.entries(formData).forEach(([key, value]) => {
+                if (key === 'helpNeeded' && Array.isArray(value)) {
+                    netlifyForm.append(key, value.join(", "));
+                } else if (typeof value === 'boolean') {
+                    netlifyForm.append(key, value ? "Yes" : "No");
+                } else {
+                    netlifyForm.append(key, value as string);
+                }
+            });
+
+            const response = await fetch('/', {
+                method: 'POST',
+                body: netlifyForm,
+            });
+
+            if (response.ok) {
+                console.log("Sales form successfully submitted to Netlify");
+                setIsSubmitted(true);
+                setTimeout(() => {
+                    window.history.back();
+                }, 3000);
+            } else {
+                throw new Error("Network response was not ok");
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            alert("There was an error submitting the form. Please try again or contact us directly.");
+        } finally {
+            setIsSubmitting(false);
         }
     };
 
     if (isSubmitted) {
-        return <SuccessMessage
-            title="Thank you for reaching out!"
-            message="Our sales team will get back to you within 24 hours to understand your needs and tailor a TervanX solution for your business."
-        />
+        return (
+            <div className="min-h-screen bg-[#F0F0F2] flex items-center justify-center">
+                <SuccessMessage
+                    title="Thank you for reaching out!"
+                    message="Our sales team will get back to you within 24 hours to understand your needs and tailor a TervanX solution for your business."
+                />
+            </div>
+        );
     }
 
     return (
@@ -171,6 +212,7 @@ export default function ContactSalesPage() {
                     onPrevStep={prevStep}
                     onNextStep={nextStep}
                     onSubmit={handleSubmit}
+                    isSubmitting={isSubmitting}
                 />
             </div>
         </main>

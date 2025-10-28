@@ -7,52 +7,59 @@ const footerData: FooterSection[] = [
   {
     title: "Products",
     links: [
-      { label: "Payments API", href: "#" },
-      { label: "Wallet API", href: "#" },
-      { label: "Exchange Engine", href: "#" },
-      { label: "Auto Trade Plugin", href: "#" },
-      { label: "Treasury Plugin", href: "#" },
-      { label: "Compliance Layer", href: "#" },
-      { label: "Tx Shield", href: "#" },
-      { label: "Tx Analytics", href: "#" },
+      { label: "Wallet As a Service", href: "/product/asset-infrastructure/wallet-api" },
+      { label: "Exchange Engine", href: "/product/asset-infrastructure/exchange-engine" },
+      { label: "Auto Trade Plugin", href: "product/plugins-extension/auto-trade-plugin" },
+      { label: "Treasury Plugin", href: "product/plugins-extension/treasury-plugin" },
+      { label: "Tx Shield", href: "/product/security-optimization/tx-shield" },
+      { label: "Tx Analytics", href: "/product/data-reporting/tx-analytics" },
+    ],
+  },
+  {
+    title: "Solutions",
+
+    links: [
+      { href: "/solutions/by-business-stage/startups", label: "Startups" },
+      {
+        href: "/solutions/by-business-stage/enterprises",
+        label: "Enterprises",
+      },
+      {
+        href: "/solutions/by-use-case/fintech-platforms",
+        label: "Fintech Platforms",
+      },
+      {
+        href: "/solutions/by-use-case/crypto-exchanges",
+        label: "Crypto Exchanges",
+      },
+      {
+        href: "/solutions/by-industry/finance-and-banking",
+        label: "Finance & Banking",
+      },
+      { href: "/solutions/by-industry/education", label: "Education " },
     ],
   },
   {
     title: "Developers",
     links: [
-      { label: "Documentation", href: "#" },
-      { label: "API Reference", href: "#" },
-      { label: "System Status", href: "#" },
-      { label: "Changelog", href: "#" },
-      { label: "Tx SDKs", href: "#" },
-    ],
-  },
-  {
-    title: "Resources",
-    links: [
-      { label: "Blog", href: "#" },
-      { label: "Case Studies", href: "#" },
-      { label: "Events", href: "#" },
-      { label: "Learning Hub", href: "#" },
+      { label: "API Reference", href: "/contact/request-access" },
+      { label: "System Status", href: "/developers/developer-tools/system-status" },
+      { label: "API Changelog", href: "/api-changelog" },
+      { label: "Tx Apps SDKs", href: "/contact/request-access" },
     ],
   },
   {
     title: "Company",
     links: [
-      { label: "About", href: "#" },
-      { label: "Careers", href: "#" },
-      { label: "Newsroom", href: "#" },
-      { label: "Legal & Compliance", href: "#" },
-      { label: "Privacy & Terms", href: "#" },
-      { label: "Cookie Settings", href: "#" },
+      { label: "Become a Partner", href: "/contact/contact" },
+      { label: "Professional Services", href: "/contact/contact" },
     ],
   },
   {
     title: "Support",
     links: [
-      { label: "Help Center", href: "#" },
-      { label: "Managed Plans", href: "#" },
-      { label: "Contact Sales", href: "#" },
+      { label: "Contact Support", href: "/contact/contact" },
+      { label: "Contact Sales", href: "/contact/contact" },
     ],
   },
   // {
@@ -67,10 +74,9 @@ const footerData: FooterSection[] = [
 ];
 
 const legalLinks: FooterLink[] = [
-  { label: "Privacy Policy", href: "#" },
-  { label: "Terms of Service", href: "#" },
-  { label: "Don't Sell My Info", href: "#" },
-  { label: "About Tervanax", href: "#" },
+  { label: "Privacy Policy", href: "/security/policy" },
+  { label: "Terms of Service", href: "/security/terms" },
+  { label: "Security", href: "/security" },
 ];
 
 const FooterButton: React.FC<{
@@ -89,7 +95,7 @@ const FooterButton: React.FC<{
   const content = (
     <button type="button" className={`${baseClasses} ${variantClasses}`}>
       <div className="flex items-center justify-center gap-2">
-        <p className="text-sm leading-[130%] font-sans text-inherit text-white">
+        <p className="text-sm leading-[130%] font-sans text-inherit text-white cursor-pointer">
           {children}
         </p>
       </div>
@@ -148,9 +154,8 @@ const Footer: React.FC = () => {
               {footerData.map((section, sectionIndex) => (
                 <div
                   key={`section-${sectionIndex}-${section.title}`}
-                  className={`flex flex-col gap-4 ${
-                    sectionIndex >= 6 ? "md:col-span-2 lg:col-span-1" : ""
-                  } ${sectionIndex === 6 ? "lg:col-span-2 xl:col-span-1" : ""}`}
+                  className={`flex flex-col gap-4 ${sectionIndex >= 6 ? "md:col-span-2 lg:col-span-1" : ""
+                    } ${sectionIndex === 6 ? "lg:col-span-2 xl:col-span-1" : ""}`}
                 >
                   <p className="text-sm lg:text-base leading-[130%] font-sans font-bold text-white">
                     {section.title}
@@ -195,7 +200,7 @@ const Footer: React.FC = () => {
                 <Link href="/contact/contact-sales">
                   <button
                     type="button"
-                    className="group rounded-lg transition-all h-10 px-4 bg-transparent border border-dark text-dark hover:bg-neutral-200 hover:border-dark hover:text-dark active:bg-neutral-300 active:border-dark active:text-dark focus:border-dark focus:text-dark disabled:bg-transparent disabled:border-neutral-400 disabled:text-neutral-400 whitespace-nowrap w-full"
+                    className="group rounded-lg transition-all h-10 px-4 bg-white border border-dark text-dark hover:bg-neutral-200 hover:border-dark hover:text-dark active:bg-neutral-300 active:border-dark active:text-dark focus:border-dark focus:text-dark disabled:bg-transparent disabled:border-neutral-400 disabled:text-neutral-400 whitespace-nowrap w-full cursor-pointer"
                   >
                     <div className="flex items-center justify-center gap-2">
                       <p className="text-sm leading-[130%] font-sans text-inherit">

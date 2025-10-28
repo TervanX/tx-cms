@@ -24,7 +24,7 @@ const Page = () => {
         </div>
       </div>
       <StackedAnimation />
-      {/* <CardShowcase /> */}
+      <CardShowcase />
       <ApolloTestimonials />
       <FooterCTA />
     </div>

@@ -6,6 +6,9 @@ import FormSidebar from "@/components/landingComponents/FormSidebar";
 
 export default function JoinWaitlistPage() {
     const [currentStep, setCurrentStep] = useState(1);
+    const [isSubmitted, setIsSubmitted] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
     const [formData, setFormData] = useState({
         // Step 1
         fullName: "",
@@ -25,7 +28,6 @@ export default function JoinWaitlistPage() {
     });
 
     const [errors, setErrors] = useState<Record<string, string>>({});
-    const [isSubmitted, setIsSubmitted] = useState(false);
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
@@ -115,20 +117,56 @@ export default function JoinWaitlistPage() {
         setCurrentStep(prev => prev - 1);
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        if (validateStep3()) {
-            console.log("Waitlist form submitted:", formData);
-            setIsSubmitted(true);
+
+        if (!validateStep3()) {
+            return;
+        }
+
+        setIsSubmitting(true);
+
+        try {
+            const netlifyForm = new FormData();
+            netlifyForm.append('form-name', 'join-waitlist-form');
+            Object.entries(formData).forEach(([key, value]) => {
+                if (typeof value === 'boolean') {
+                    netlifyForm.append(key, value ? "Yes" : "No");
+                } else {
+                    netlifyForm.append(key, value as string);
+                }
+            });
+
+            const response = await fetch('/', {
+                method: 'POST',
+                body: netlifyForm,
+            });
+            if (response.ok) {
+                console.log("Waitlist form successfully submitted to Netlify");
+                setIsSubmitted(true);
+                setTimeout(() => {
+                    window.history.back();
+                }, 3000);
+            } else {
+                throw new Error("Network response was not ok");
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            alert("There was an error joining the waitlist. Please try again or contact us directly.");
+        } finally {
+            setIsSubmitting(false);
         }
     };
 
     if (isSubmitted) {
-        return <SuccessMessage
-            title="You're on the waitlist!"
-            message="Thank you for joining the waitlist!
- You’ll receive a confirmation email shortly. Stay tuned — we’re almost ready to power the next generation of African payment networks."
-        />
+        return (
+            <div className="min-h-screen bg-[#F0F0F2] flex items-center justify-center">
+                <SuccessMessage
+                    title="You're on the waitlist!"
+                    message="Thank you for joining the waitlist! You'll receive a confirmation email shortly. Stay tuned — we're almost ready to power the next generation of African payment networks."
+                />
+            </div>
+        );
     }
 
     return (
@@ -136,7 +174,7 @@ export default function JoinWaitlistPage() {
             <div className="px-4 py-12 md:px-0 md:py-0 max-w-[600px] mx-auto md:max-w-none grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-0 md:min-h-screen">
                 <FormSidebar
                     title="Join the future of digital asset infrastructure"
-                    description="You’ll get early access and private beta updates as we roll out across Africa."
+                    description="You'll get early access and private beta updates as we roll out across Africa."
                     showCompanies={false}
                 />
                 <JoinWaitlistForm
@@ -149,6 +187,7 @@ export default function JoinWaitlistPage() {
                     onPrevStep={prevStep}
                     onNextStep={nextStep}
                     onSubmit={handleSubmit}
+                    isSubmitting={isSubmitting}
                 />
             </div>
         </main>

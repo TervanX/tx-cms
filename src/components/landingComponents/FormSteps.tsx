@@ -27,11 +27,12 @@ interface FormStepsProps {
     };
     submitButtonText?: string;
     onInputChange: (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => void;
-    onCheckboxChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    onCheckboxChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
     onRadioChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     onPrevStep: () => void;
     onNextStep: () => void;
     onSubmit: (e: React.FormEvent) => void;
+    isSubmitting?: boolean
 }
 
 export default function FormSteps({
@@ -46,7 +47,8 @@ export default function FormSteps({
     onRadioChange,
     onPrevStep,
     onNextStep,
-    onSubmit
+    onSubmit,
+    isSubmitting
 }: FormStepsProps) {
 
     const renderField = (field: FormField) => {

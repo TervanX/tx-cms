@@ -1,18 +1,28 @@
 import SubcriptionSwitch from "./SubscriptionSwitch";
 
-const PricingPageHeader = () => {
+interface PricingPageHeaderProps {
+  isAnnualBilling: boolean;
+  onBillingChange: (isAnnual: boolean) => void;
+}
+
+const PricingPageHeader: React.FC<PricingPageHeaderProps> = ({
+  isAnnualBilling,
+  onBillingChange
+}) => {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
-      <h1 className="font-grotesque text-3xl lg:text-5xl font-medium  text-center lg:text-start">
-        Everything you need to grow your business
+    <div className="flex flex-col lg:flex-row items-start justify-between lg:gap-22 gap-6">
+      <h1 className="text-3xl lg:text-6xl font-medium text-center lg:text-start">
+        The all-in-one platform to grow your business
       </h1>
       <div>
-        <h4 className="font-grotesque text-sm lg:text-lg font-medium  text-center lg:text-start">
-          Build pipeline, close more deals, and enrich data with
-          industry-leading B2B data and AI-powered tools.
+        <h4 className="text-lg text-xl font-medium text-center lg:text-start">
+          Build pipeline smarter, close deals faster, and unify your tech stack with an AI-powered platform.
         </h4>
         <div className="flex justify-center lg:justify-start">
-          <SubcriptionSwitch />
+          <SubcriptionSwitch
+            isAnnualBilling={isAnnualBilling}
+            onBillingChange={onBillingChange}
+          />
         </div>
       </div>
     </div>
