@@ -68,10 +68,10 @@ const PricingPage: React.FC = () => {
         </p>
       </div>
       <ComparePlan isAnnualBilling={isAnnualBilling} />
-      <div className="bg-white w-full px-4 lg:px-14  pb-4 rounded-lg mt-8">
+      {/* <div className="bg-white w-full px-4 lg:px-14  pb-4 rounded-lg mt-8">
         <SalesPerform />
       </div>
-      <WhatAreCredits />
+      <WhatAreCredits /> */}
       <Busineses />
       <FAQAccordion
         title="Frequently asked questions"

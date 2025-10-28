@@ -176,16 +176,15 @@ const PricingSection: React.FC<PricingSectionProps> = ({
                 )}
 
                 {/* CTA Buttons */}
-                <div className="space-y-3 flex">
+                <Link href="/contact/contact-sales">
                   <Button
                     size="md"
                     variant="primary"
                     className="w-full py-3"
-                    onClick={() => console.log('Get Started with selected features:', selectedFeatures)}
                   >
                     Get Started
                   </Button>
-                </div>
+                </Link>
               </div>
             </div>
             {/* Enterprise Plan Card */}
@@ -227,15 +226,16 @@ const PricingSection: React.FC<PricingSectionProps> = ({
 
                 {/* CTA Button */}
                 <div className="flex flex-col gap-4 w-full">
-                  <Button
-                    size="md"
-                    variant="primary"
-                    type="button"
-                    onClick={() => console.log('Contact Enterprise Sales')}
-                    className="w-full py-3 bg-blue-600 hover:bg-blue-700"
-                  >
-                    Contact Sales
-                  </Button>
+                  <Link href="/contact/contact-sales">
+                    <Button
+                      size="md"
+                      variant="primary"
+                      type="button"
+                      className="w-full py-3 bg-blue-600 hover:bg-blue-700"
+                    >
+                      Contact Sales
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -393,24 +393,27 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isAnnualBilling, isPayg
 
         {/* CTA Button */}
         <div className="flex flex-col gap-4 w-full mb-6">
-          <Button
-            size="md"
-            variant={plan.buttonVariant}
-            type="button"
-            onClick={() => console.log(`Selected ${plan.name}`)}
-            className="w-full py-3"
-          >
-            {plan.buttonText}
-          </Button>
-          {plan.CtaButton && (
+          <Link href="/contact/contact-sales">
             <Button
               size="md"
-              variant="outline"
+              variant={plan.buttonVariant}
               type="button"
               className="w-full py-3"
             >
-              {plan.CtaButton}
+              {plan.buttonText}
             </Button>
+          </Link>
+          {plan.CtaButton && (
+            <Link href="/contact/contact-sales">
+              <Button
+                size="md"
+                variant="outline"
+                type="button"
+                className="w-full py-3"
+              >
+                {plan.CtaButton}
+              </Button>
+            </Link>
           )}
         </div>
 
