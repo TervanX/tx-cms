@@ -8,7 +8,7 @@ export default function Footer() {
         <Link className="font-sans text-base font-semibold lg:hidden block" href="/contact/contact-sales">
           Contact sales
         </Link>
-        <Link className="font-sans text-base font-semibold lg:hidden block" href="#">
+        <Link className="font-sans text-base font-semibold lg:hidden block" href="/auth/login">
           Sign in
         </Link>
         <Link className="font-sans relative cursor-pointer text-base font-normal text-white/60 transition-colors hover:text-white lg:mr-6 lg:py-3 mt-10 lg:mt-0" href="/security/terms">

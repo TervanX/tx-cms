@@ -26,7 +26,7 @@ const Page = () => {
         tag="TX channel"
         primaryButton={{
           text: "Login",
-          href: "/sign-up",
+          href: "/auth/login",
         }}
         secondaryButton={{
           text: "Contact Sales",

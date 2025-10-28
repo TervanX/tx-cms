@@ -5,7 +5,7 @@ export const startupPageData = {
         tag: "",
         primaryButton: {
             text: "Login",
-            href: "/sign-up",
+            href: "/auth/login",
         },
         secondaryButton: {
             text: "Contact Sales",
@@ -77,8 +77,8 @@ export const startupPageData = {
             "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
         backgroundImage: "/assets/image30.webp",
         primaryButton: {
-            text: "Learn More",
-            href: "/learn-more",
+            text: "Contact Sales",
+            href: "/contact/contact-sales",
         },
         alignLeft: true,
         title: "Embed powerful, programmable wallets",
@@ -186,14 +186,14 @@ export const startupPageData = {
 
     bannerCTA: {
         title: "Start Building Today",
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "/assets/pilot.jpg",
         primaryButton: {
             text: "Get Started",
-            href: "/get-started",
+            href: "/contact/request-access",
         },
         secondaryButton: {
-            text: "Learn More",
-            href: "/learn-more",
+            text: "Contact Sales",
+            href: "/contact/contact-sales",
         },
     },
 };

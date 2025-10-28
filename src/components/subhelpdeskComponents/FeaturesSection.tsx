@@ -109,8 +109,8 @@ export default function FeaturesSection({
           {title}
         </h2>
 
-        <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-start gap-12 px-4 md:gap-16 md:px-8 lg:grid-cols-[2fr_3fr] lg:px-12 2xl:gap-20">
-          <div className="sticky top-25 hidden lg:block">
+        <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-center gap-12 px-4 md:gap-16 md:px-8 lg:px-12 2xl:gap-20">
+          {/* <div className="sticky top-25 hidden lg:block">
             <div className="space-y-4">
               <ImageDisplay className="w-full" />
 
@@ -125,10 +125,10 @@ export default function FeaturesSection({
                 {linkStyle.text}
               </a>
             </div>
-          </div>
+          </div> */}
 
           {/* Features List */}
-          <div className="relative [@media(max-height:1300px)_and_(min-width:768px)]:pb-[150px]">
+          <div className="w-full text-center ">
             {features.map((feature) => (
               <motion.div
                 key={feature.id}
@@ -158,9 +158,9 @@ export default function FeaturesSection({
             ))}
 
             {/* Mobile Image */}
-            <div className="sticky bottom-3 z-10 mt-9 lg:hidden">
+            {/* <div className="sticky bottom-3 z-10 mt-9 lg:hidden">
               <ImageDisplay className="w-full max-w-[240px]" />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

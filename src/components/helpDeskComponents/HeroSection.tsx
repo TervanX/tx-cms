@@ -60,7 +60,7 @@ export function HeroSection({
             {(primaryButton || secondaryButton) && (
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4 mb-3 w-full">
                 {primaryButton && (
-                  <a className="w-full lg:w-auto relative block lg:inline-block cursor-pointer text-sm rounded-md font-semibold tracking-tight whitespace-nowrap text-white  px-4 py-2.5 leading-none overflow-hidden border-solid border-1 border-white hover:bg-white hover:text-black">
+                  <a className="w-full lg:w-auto relative block lg:inline-block cursor-pointer text-sm rounded-md font-semibold tracking-tight whitespace-nowrap text-white  px-4 py-2.5 leading-none overflow-hidden border-solid border-1 border-white hover:bg-white hover:text-black" href={primaryButton.href}>
                     <span className="absolute inset-0 block w-full rounded-md transition-all duration-400 "></span>
                     <span className="relative z-10 ">{primaryButton.text}</span>
                   </a>

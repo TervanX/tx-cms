@@ -1135,7 +1135,7 @@ const DeskTopNavbar = () => {
       </div>
       <div className="flex items-center gap-3">
         <Button size="md" variant="ghost" type="button">
-          Log in
+          <Link href="/auth/login">Login</Link>
         </Button>
         <Button
           size="md"

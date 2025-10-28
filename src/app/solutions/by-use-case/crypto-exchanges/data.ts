@@ -7,7 +7,7 @@ export const cryptoExchangesPageData = {
         tag: "",
         primaryButton: {
             text: "Login",
-            href: "/sign-up",
+            href: "/auth/login",
         },
         secondaryButton: {
             text: "Contact Sales",
@@ -77,8 +77,8 @@ export const cryptoExchangesPageData = {
         image: "/assets/exchange-liquidity.webp",
         backgroundImage: "/assets/image30.webp",
         primaryButton: {
-            text: "Learn More",
-            href: "/learn-more",
+            text: "Contact Sales",
+            href: "/contact/contact-sales",
         },
         alignLeft: true,
         title: "Liquidity Solutions",
@@ -330,11 +330,11 @@ export const cryptoExchangesPageData = {
         backgroundImage: "/assets/image30.webp",
         primaryButton: {
             text: "Get Started",
-            href: "/get-started",
+            href: "/contact/request-access",
         },
         secondaryButton: {
-            text: "Learn More",
-            href: "/learn-more",
+            text: "Contact Sales",
+            href: "/contact/contact-sales",
         },
     },
 };
