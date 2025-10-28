@@ -32,8 +32,7 @@ const BrandEmailSupport: React.FC<BrandEmailSupportProps> = ({
 
   return (
     <div className="flex flex-col-reverse lg:flex-col">
-      <div className="w-full border-solid border-primary mx-auto relative bg-white-transparent">
-        {/* Background Pattern */}
+      {/* <div className="w-full border-solid border-primary mx-auto relative bg-white-transparent">
         <div className="absolute inset-0 z-0">
           <img
             src={backgroundImage}
@@ -42,7 +41,7 @@ const BrandEmailSupport: React.FC<BrandEmailSupportProps> = ({
           />
         </div>
         <img src={cards[active]?.img} className="relative z-10" />
-      </div>
+      </div> */}
       <div className="flex flex-col lg:flex-row gap-6 py-6">
         {cards.map((item, index) => (
           <BorderTopCard

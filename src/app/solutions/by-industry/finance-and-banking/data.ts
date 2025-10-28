@@ -548,12 +548,12 @@ export const financeBankingPageData = {
         title: "Get Started",
         backgroundImage: "/assets/image30.webp",
         primaryButton: {
-            text: "Schedule Consultation",
-            href: "/contact",
+            text: "Contact Sales",
+            href: "/contact/contact-sales",
         },
         secondaryButton: {
-            text: "Download Whitepaper",
-            href: "/whitepaper",
+            text: "Login",
+            href: "/auth/login",
         },
     },
 };

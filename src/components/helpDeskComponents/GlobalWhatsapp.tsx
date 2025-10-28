@@ -56,7 +56,7 @@ const GlobalWhatsapp: React.FC<GlobalWhatsappProps> = ({
               />
             ))}
           </div>
-          <div className="flex flex-col lg:flex-row gap-6   flex-1 ">
+          {/* <div className="flex flex-col lg:flex-row gap-6   flex-1 ">
             <div className="w-full mx-auto relative bg-white-transparent  min-h-125  max-h-130">
 
               <div className="absolute inset-0 z-0">
@@ -68,7 +68,7 @@ const GlobalWhatsapp: React.FC<GlobalWhatsappProps> = ({
               </div>
               <img src={cards[active]?.img} className="relative z-10" />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

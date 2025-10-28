@@ -53,9 +53,8 @@ const LiveChat: React.FC<LiveChatProps> = ({
               />
             ))}
           </div>
-          <div className="flex flex-col lg:flex-row gap-6   flex-1 ">
+          {/* <div className="flex flex-col lg:flex-row gap-6  flex-1 ">
             <div className="w-full mx-auto relative bg-white-transparent min-h-125 max-h-130">
-              {/* Background Pattern */}
               <div className="absolute inset-0 z-0">
                 <img
                   src={backgroundImage}
@@ -65,7 +64,7 @@ const LiveChat: React.FC<LiveChatProps> = ({
               </div>
               <img src={cards[active]?.img} className="relative z-10" />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
