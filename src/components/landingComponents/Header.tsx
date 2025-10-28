@@ -56,7 +56,7 @@ export default function Header() {
             <li className="group relative hidden md:block">
               <Link
                 className={`text-base leading-none font-semibold tracking-tight cursor-pointer rounded-md border border-transparent px-2 py-2 transition-all duration-300 ${textColor} ${hoverTextColor}`}
-                href="#"
+                href="/auth/login"
               >
                 Sign in
               </Link>
