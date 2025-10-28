@@ -12,7 +12,8 @@ const layout = ({
             {children}
             <LogoGrid
                 backgroundColor="#ffffff"
-                py="py-10" />
+                py="10"
+            />
         </div>
     )
 }

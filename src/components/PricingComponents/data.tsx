@@ -27,8 +27,8 @@ export const pricingPlans: PricingPlan[] = [
         id: "basic",
         name: "Basic / Starter",
         description: "Perfect for small businesses or startups (e.g., African e-commerce, payment apps).",
-        price: 199,
-        monthlyPrice: 1990,
+        price: 1990,
+        monthlyPrice: 199,
         priceNote: "per month",
         monthlyPriceNote: "per month",
         credits: 1000000,
@@ -356,43 +356,43 @@ export const comparisonData: ComparisonSection[] = [
         items: [
             {
                 name: "API Calls",
-                values: ["-", "1M/day (~30M/month)", "5M/day (~150M/month)", "Unlimited (post-vetting)"]
+                values: ["Testnet", "1M/day (~30M/month)", "5M/day (~150M/month)", "Unlimited (post-vetting)"]
             },
             {
                 name: "Master MPC Wallets",
-                values: ["-", "20 (basic MPC)", "30 (advanced MPC)", "100 (enterprise-grade MPC)"]
+                values: ["Testnet", "20 (basic MPC)", "30 (advanced MPC)", "100 (enterprise-grade MPC)"]
             },
             {
                 name: "Sub-Wallets",
-                values: ["-", "2,000", "Unlimited", "Unlimited"]
+                values: ["Testnet", "2,000", "Unlimited", "Unlimited"]
             },
             {
                 name: "TervanX Dashboard",
-                values: ["-", "Basic analytics", "Advanced analytics", "Full enterprise suite"]
+                values: ["Testnet", "Basic analytics", "Advanced analytics", "Full enterprise suite"]
             },
             {
                 name: "AML / KYT / KYC Tools",
-                values: ["-", "Basic KYT, 50 KYC checks/month", "Real-time KYT, 200 KYC checks/month", "Global compliance, unlimited KYC"]
+                values: ["Testnet", "Basic KYT, 50 KYC checks/month", "Real-time KYT, 200 KYC checks/month", "Global compliance, unlimited KYC"]
             },
             {
                 name: "Policy Engine",
-                values: ["-", "Lite (pre-set rules)", "Standard (custom rules)", "Advanced (dynamic rules + risk scoring)"]
+                values: ["Testnet", "Lite (pre-set rules)", "Standard (custom rules)", "Advanced (dynamic rules + risk scoring)"]
             },
             {
                 name: "Automation Tools",
-                values: ["-", "Auto-Trade, batch transactions", "Auto-Trade, Webhooks, batch transactions", "Full automation + smart triggers"]
+                values: ["Testnet", "Auto-Trade, batch transactions", "Auto-Trade, Webhooks, batch transactions", "Full automation + smart triggers"]
             },
             {
                 name: "DeFi & Multi-Chain Integration",
-                values: ["-", "-", "DeFi API + 20+ blockchains", "Full multi-chain + private nodes"]
+                values: ["Testnet", "-", "DeFi API + 20+ blockchains", "Full multi-chain + private nodes"]
             },
             {
                 name: "Payment Integration",
-                values: ["-", "2 providers (e.g., M-Pesa, MTN)", "Multiple global providers", "Custom integrations"]
+                values: ["Testnet", "2 providers (e.g., M-Pesa, MTN)", "Multiple global providers", "Custom integrations"]
             },
             {
                 name: "Quantum-Secure MPC Wallets",
-                values: ["-", "2 master wallets", "5 master wallets", "All wallets quantum-secure"]
+                values: ["Testnet", "2 master wallets", "5 master wallets", "All wallets quantum-secure"]
             },
             {
                 name: "Smart Contract Templates",
@@ -432,7 +432,7 @@ export const comparisonData: ComparisonSection[] = [
             },
             {
                 name: "Developer Sandbox",
-                values: ["-", "Included", "Sandbox + staging environments", "Full development suite"]
+                values: ["Testnet", "Included", "Sandbox + staging environments", "Full development suite"]
             },
             {
                 name: "SDK Access",
