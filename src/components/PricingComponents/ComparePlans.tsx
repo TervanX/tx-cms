@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
+import { FAQItem } from "@/app/types/pricing.types";
 import PricingComparisonTable from "./PricinComparisonTable";
+
 
 interface ComparePlanProps {
   isAnnualBilling?: boolean;
@@ -18,7 +20,6 @@ const ComparePlan: React.FC<ComparePlanProps> = ({
 
 export default ComparePlan;
 
-import { FAQItem } from "@/app/types/pricing.types";
 
 export const pricingFAQData: FAQItem[] = [
   {
