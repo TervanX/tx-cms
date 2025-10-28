@@ -307,12 +307,12 @@ TervanxClient.syncToERP(
         title: "Start Building Today",
         backgroundImage: "/assets/image30.webp",
         primaryButton: {
-            text: "Get Started",
-            href: "/contact/request-access",
-        },
-        secondaryButton: {
             text: "Contact Sales",
             href: "/contact/contact-sales",
+        },
+        secondaryButton: {
+            text: "Login",
+            href: "/auth/login",
         },
     },
 };

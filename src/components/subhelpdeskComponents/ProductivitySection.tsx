@@ -136,7 +136,7 @@ export default function ProductivitySection({
 
         {/* Main Content */}
         <div className="px-3 md:p-0">
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.8, delay: 0.5 }}
@@ -147,7 +147,7 @@ export default function ProductivitySection({
               src={images.product.src}
               className="w-full transition-opacity duration-300 ease-out-quad opacity-100"
             />
-          </motion.div>
+          </motion.div> */}
 
           <div className="flex flex-col divide-y divide-black/10 @2xl:mt-6 @2xl:flex-row @2xl:justify-between @2xl:gap-6 @2xl:divide-y-0">
             {features.map((feature, index) => (

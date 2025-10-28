@@ -50,7 +50,7 @@ export default function ExchangeEngine() {
         description="Embed institutional-grade trading and liquidity. Power seamless swaps, deep liquidity, and intelligent routing across 300+ chains."
         primaryButton={{
           text: "Login",
-          href: "https://www.intercom.com/view-demos",
+          href: "/auth/login",
         }}
         secondaryButton={{
           text: "Contact Sales",

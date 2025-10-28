@@ -230,7 +230,7 @@ export default function Hero({
     ],
     primaryButton = {
         text: "Login",
-        href: "https://www.intercom.com/view-demos",
+        href: "/auth/login",
     },
     secondaryButton = {
         text: "Contact Sales",

@@ -50,7 +50,7 @@ export default function Vault() {
         description="Multi-chain digital asset custody with MPC technology, policy-driven controls, and automated treasury operations."
         primaryButton={{
           text: "Login",
-          href: "https://www.intercom.com/view-demos",
+          href: "/auth/login",
         }}
         secondaryButton={{
           text: "Contact Sales",

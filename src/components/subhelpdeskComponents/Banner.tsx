@@ -22,7 +22,7 @@ export default function Banner(
         title = "Empower your business with instant, intelligent crypto transactions",
         primaryButton = {
             text: "Get Started",
-            href: "https://www.intercom.com/view-demos"
+            href: "/contact/request-access"
         },
         secondaryButton = {
             text: "Contact Sales",

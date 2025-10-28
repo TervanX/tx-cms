@@ -96,7 +96,7 @@ export default function UsabilitySection({
 
         {/* Main Content */}
         <div className="px-3 md:p-0">
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.8, delay: 0.5 }}
@@ -107,7 +107,7 @@ export default function UsabilitySection({
               src={images.mainFeature.src}
               className="w-full transition-opacity duration-300 ease-out-quad opacity-100"
             />
-          </motion.div>
+          </motion.div> */}
 
           <div className="flex flex-col divide-y divide-black/10 @2xl:mt-6 @2xl:flex-row @2xl:justify-between @2xl:gap-6 @2xl:divide-y-0">
             {usabilityFeatures.map((feature, index) => (
@@ -146,13 +146,13 @@ export default function UsabilitySection({
               transition={{ duration: 0.8, delay: 0.7 + index * 0.2 }}
               className="flex flex-col @2xl:gap-4"
             >
-              <div className="overflow-hidden bg-cover relative block w-full rounded-[10px] bg-[#E7E6DF]">
+              {/* <div className="overflow-hidden bg-cover relative block w-full rounded-[10px] bg-[#E7E6DF]">
                 <img
                   alt={feature.image?.alt || feature.title}
                   src={feature.image?.src}
                   className="w-full transition-opacity duration-300 ease-out-quad opacity-100"
                 />
-              </div>
+              </div> */}
               <div className="flex w-full max-w-[316px] flex-1 flex-col items-start py-4 text-black last:pb-0 lg:max-w-[390px] @2xl:py-0">
                 <h3 className="mb-2 text-base leading-[120%] font-semibold tracking-[-0.18px] lg:mb-3 lg:text-lg">
                   {feature.title}
