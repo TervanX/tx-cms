@@ -223,7 +223,7 @@ export default function HeroSection() {
     <section className="my-auto overflow-hidden md:flex-col pt-[70px] mx-auto w-full max-w-[1920px] px-3 md:px-4">
       <header className="relative flex items-center justify-center text-center py-12 xl:py-16 xl:min-[1360px]:py-24">
         <h1 className="font-sans text-current text-[42px] leading-[1.025] tracking-[-0.8px] font-semibold text-balance md:text-[35px] lg:text-[45px] xl:text-5xl">
-          TX is a digital assets payment and infrastructure company
+          Layer X is a digital assets payment and infrastructure company
         </h1>
       </header>
 
