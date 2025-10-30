@@ -19,40 +19,40 @@ const grotesque = Bricolage_Grotesque({
 });
 
 export const metadata: Metadata = {
-  title: "TervanX - Financial Infrastructure Platform",
+  title: "LayerX - Financial Infrastructure Platform",
   description:
-    "TervanX is the AWS for Finance – a powerful financial infrastructure platform supporting fiat, crypto, and digital assets with scalable APIs, dashboards, and developer-first tools.",
+    "LayerX is the AWS for Finance – a powerful financial infrastructure platform supporting fiat, crypto, and digital assets with scalable APIs, dashboards, and developer-first tools.",
   robots: { index: true, follow: true },
   openGraph: {
-    title: "TervanX - Financial Infrastructure Platform",
+    title: "LayerX - Financial Infrastructure Platform",
     description:
       "Powerful financial infrastructure platform for Africa and beyond – supporting fiat, crypto, and digital assets.",
-    url: "https://tervanx.com",
-    siteName: "TervanX",
+    url: "https://layerx.com",
+    siteName: "LayerX",
     locale: "en_US",
     type: "website",
-    images: ["/assets/logo.svg"],
+    images: ["https://res.cloudinary.com/dx1etzf66/image/upload/v1761842277/LayerX_Logo_ffy6pb.png"],
   },
   twitter: {
     card: "summary_large_image",
-    site: "@tervanx",
-    creator: "@tervanx",
-    title: "TervanX - Financial Infrastructure Platform",
+    site: "@layerx",
+    creator: "@layerx",
+    title: "LayerX - Financial Infrastructure Platform",
     description:
       "Scalable financial APIs and infrastructure for businesses, startups, and developers.",
-    images: ["/assets/logo.svg"],
+    images: ["https://res.cloudinary.com/dx1etzf66/image/upload/v1761842277/LayerX_Logo_ffy6pb.png"],
   },
   icons: {
     icon: [
       {
-        url: "/assets/logo.svg",
+        url: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761842277/LayerX_Logo_ffy6pb.png",
         type: "image/svg",
       },
     ],
-    shortcut: "/assets/logo.svg",
+    shortcut: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761842277/LayerX_Logo_ffy6pb.png",
   },
   alternates: {
-    canonical: "https://tervanx.com",
+    canonical: "https://layerx.com",
   },
 };
 
@@ -66,7 +66,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased ${grotesque.variable}`}
       >
-        <div className="w-full">{children}
+        <div className="w-full">
+          {children}
           <ClarityInit />
         </div>
       </body>

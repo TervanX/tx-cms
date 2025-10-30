@@ -270,7 +270,7 @@ export const remittancePageData = {
 
     testimonial: {
         title: "Remittance Provider Testimonials",
-        quote: "TervanX reduced our average transfer cost from $15 to $3 while cutting settlement time from 3 days to 30 seconds. Our customers love the speed and transparency.",
+        quote: "LayerX reduced our average transfer cost from $15 to $3 while cutting settlement time from 3 days to 30 seconds. Our customers love the speed and transparency.",
         role: "CEO of Regional Remittance Firm",
         name: "Maria Gonzalez",
     },

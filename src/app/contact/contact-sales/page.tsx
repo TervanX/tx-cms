@@ -236,7 +236,7 @@ export default function ContactSalesPage() {
       <div className="min-h-screen bg-[#F0F0F2] flex items-center justify-center">
         <SuccessMessage
           title="Thank you for reaching out!"
-          message="Our sales team will get back to you within 24 hours to understand your needs and tailor a TervanX solution for your business."
+          message="Our sales team will get back to you within 24 hours to understand your needs and tailor a LayerX solution for your business."
         />
       </div>
     );
@@ -258,7 +258,7 @@ export default function ContactSalesPage() {
       <div className="px-4 py-12 md:px-0 md:py-0 max-w-[600px] mx-auto md:max-w-none grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-0 md:min-h-screen">
         <FormSidebar
           title="The compliant, bank-grade digital asset infrastructure built to scale with confidence"
-          description="Book a meeting with our sales experts to discuss compliant, secure solutions designed for your industry — and see how TervanX can power your financial infrastructure."
+          description="Book a meeting with our sales experts to discuss compliant, secure solutions designed for your industry — and see how LayerX can power your financial infrastructure."
           showCompanies={true}
         />
         <ContactFormSteps

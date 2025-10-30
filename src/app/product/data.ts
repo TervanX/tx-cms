@@ -4,7 +4,7 @@ export const productivityProps = {
         highlighted: "maximize productivity",
     },
     description:
-        "TervanX automates settlements, reconciliation, and compliance — all powered by on-chain intelligence.",
+        "LayerX automates settlements, reconciliation, and compliance — all powered by on-chain intelligence.",
     images: {
         mobile: {
             src: "/assets/solution1.jpg",
@@ -22,7 +22,7 @@ export const productivityProps = {
     features: [
         {
             title: 'Automated cross-chain settlement',
-            description: ' Instantly bridge and settle payments across multiple blockchains without manual intervention. TervanX identifies the most efficient settlement path, executes transfers autonomously, and ensures every transaction reaches its final destination in real time.'
+            description: ' Instantly bridge and settle payments across multiple blockchains without manual intervention. LayerX identifies the most efficient settlement path, executes transfers autonomously, and ensures every transaction reaches its final destination in real time.'
         },
         {
             title: 'Smart gas and fee routing',
@@ -35,7 +35,7 @@ export const productivityProps = {
     ],
     testimonial: {
         quote:
-            "Since adopting TervanX Crypto Payments, we’ve achieved 80% faster reconciliation and reduced transaction errors to near zero",
+            "Since adopting LayerX Crypto Payments, we’ve achieved 80% faster reconciliation and reduced transaction errors to near zero",
         author: "Maya Okoro",
         role: "VP of Digital Finance",
         companyLogo: ` <svg
@@ -139,7 +139,7 @@ export const outboundProps = {
         highlighted: "that drives better decisions",
     },
     description:
-        "Turn blockchain activity into financial intelligence. TervanX transforms millions of on-chain data points into real-time analytics, predictive insights, and AI-powered optimization, helping teams make smarter, faster financial decisions.",
+        "Turn blockchain activity into financial intelligence. LayerX transforms millions of on-chain data points into real-time analytics, predictive insights, and AI-powered optimization, helping teams make smarter, faster financial decisions.",
     images: {
         mobile: {
             src: "/assets/outbound-hero-desktop.webp",
@@ -170,7 +170,7 @@ export const outboundProps = {
 
     ],
     g2Comparison: {
-        title: " TervanX ensures enterprise-grade reliability and multi-chain confidence",
+        title: " LayerX ensures enterprise-grade reliability and multi-chain confidence",
         description:
             "",
         items: [

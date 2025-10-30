@@ -243,7 +243,7 @@ const marketplacesPageData = {
   testimonial: {
     title: "Transformative marketplace integration",
     quote:
-      "Since implementing TervanX marketplace solutions, our platform improved user communication efficiency by 75%, reduced payment support time by 60%, and enhanced user satisfaction with instant, secure crypto and fiat payment options for global buyers and sellers",
+      "Since implementing LayerX marketplace solutions, our platform improved user communication efficiency by 75%, reduced payment support time by 60%, and enhanced user satisfaction with instant, secure crypto and fiat payment options for global buyers and sellers",
     role: "Marketplace Operations Director",
     name: "Sophia Rodriguez",
   },

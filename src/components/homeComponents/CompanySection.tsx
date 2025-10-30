@@ -18,7 +18,7 @@ export default function CompaniesSection() {
               <div className="flex flex-col items-center gap-4  lg:flex-row lg:justify-between">
                 <p className="text-xs font-mono uppercase tracking-wider text-gray-600">
                   Join over 50,000 developers and financial teams building on
-                  TervanX
+                  LayerX
                 </p>
 
                 {/* Company Logos Grid */}
@@ -32,7 +32,7 @@ export default function CompaniesSection() {
               <div className="flex flex-col gap-6 lg:flex-row lg:items-end">
                 <div className="flex-[2_2_0%]">
                   <h3 className="text-4xl font-medium leading-tight tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
-                    &quot;TervanX enables us to ship new payment and crypto
+                    &quot;LayerX enables us to ship new payment and crypto
                     capabilities in weeks, not months — securely and globally.
                     &quot;
                   </h3>

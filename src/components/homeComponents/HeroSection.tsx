@@ -158,7 +158,7 @@ const HeroSection = () => {
                   animate={{ opacity: 1, filter: "blur(0px)" }}
                   transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
                 >
-                  TervanX provides secure, compliant, and scalable financial
+                  LayerX provides secure, compliant, and scalable financial
                   infrastructure through a unified platform for payments,
                   crypto, and digital assets — giving developers and enterprises
                   the tools to innovate, integrate, and scale financial
@@ -208,8 +208,8 @@ const HeroSection = () => {
                   </p>
                   <LogoGrid className="filter brightness-0 invert" />
                   <p className="text-center">
-                    Now powers the TervanX Network — delivering secure,
-                    scalable, and intelligent financial systems built for
+                    Now powers the LayerX Network — delivering secure, scalable,
+                    and intelligent financial systems built for
                     Africa and beyond.
                   </p>
                 </div>

@@ -21,17 +21,17 @@ export default function Header() {
         <ul className="flex items-center md:border md:border-transparent md:px-2 md:py-2">
           {!isWaitlistPage ? <Link href="/" className="px-0 flex items-center gap-2">
             <img
-              src="/assets/logo.svg"
+              src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761842277/LayerX_Logo_ffy6pb.png"
               alt="logo"
               width="28px"
               height="28px"
             />
-            <p className={textColor}>Tervan X</p>
+            <p className={textColor}>Layer X</p>
           </Link> :
             <Link href="/" className="px-0 flex items-center gap-2">
               <div className="bg-orange-500 rounded-lg p-1.5">
                 <img
-                  src="/assets/logo.svg"
+                  src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761842277/LayerX_Logo_ffy6pb.png"
                   alt="logo"
                   width="28px"
                   height="28px"

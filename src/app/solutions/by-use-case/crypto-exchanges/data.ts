@@ -320,7 +320,7 @@ export const cryptoExchangesPageData = {
     },
     testimonial: {
         title: "Exchange Leader Testimonials",
-        quote: "TervanX's liquidity aggregation reduced our spreads by 60% and increased trading volume by 300% in the first month. Their matching engine handles our peak loads without breaking a sweat.",
+        quote: "LayerX's liquidity aggregation reduced our spreads by 60% and increased trading volume by 300% in the first month. Their matching engine handles our peak loads without breaking a sweat.",
         role: "CTO of Tier-1 Exchange",
         name: "Alex Thompson",
     },

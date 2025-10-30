@@ -5,7 +5,7 @@ export const productivityProps = {
             "maximizes efficiency"
     },
     description:
-        `TervanX automates the most complex aspects of wallet management—from key security to transaction orchestration—so your developers can focus on building your core product.
+        `LayerX automates the most complex aspects of wallet management—from key security to transaction orchestration—so your developers can focus on building your core product.
 `, images: {
         mobile: {
             src: "/assets/solution1.jpg",
@@ -42,7 +42,7 @@ export const productivityProps = {
     ],
     testimonial: {
         quote:
-            `With TervanX WaaS, we reduced our wallet integration timeline from 9 months to just 3 weeks, accelerating our entire product roadmap.`, author: "Ben Carter,", role:
+            `With LayerX WaaS, we reduced our wallet integration timeline from 9 months to just 3 weeks, accelerating our entire product roadmap.`, author: "Ben Carter,", role:
             `Head of Blockchain Product`, companyLogo: `<svg
         xmlns="http://www.w3.org/2000/svg"
         width="102"
@@ -142,7 +142,7 @@ export const outboundProps = {
         highlighted: " actionable intelligence",
     },
     description:
-        "Move beyond simple balances. TervanX provides a deep, AI-powered understanding of how wallets are used, enabling you to optimize products and drive engagement.",
+        "Move beyond simple balances. LayerX provides a deep, AI-powered understanding of how wallets are used, enabling you to optimize products and drive engagement.",
     images: {
         mobile: {
             src: "/assets/outbound-hero-desktop.webp",
@@ -175,7 +175,7 @@ export const outboundProps = {
 
     ],
     g2Comparison: {
-        title: " TervanX WaaS ensures enterprise-grade performance and security from day one.",
+        title: " LayerX WaaS ensures enterprise-grade performance and security from day one.",
         description:
             "",
         items: [

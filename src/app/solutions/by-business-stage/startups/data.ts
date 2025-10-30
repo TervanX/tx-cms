@@ -1,7 +1,7 @@
 export const startupPageData = {
     heroSection: {
         heading: "Startups",
-        subheading: "Build and scale your startup on TervanX infrastructure",
+        subheading: "Build and scale your startup on LayerX infrastructure",
         tag: "",
         primaryButton: {
             text: "Login",
@@ -84,7 +84,7 @@ export const startupPageData = {
         title: "Embed powerful, programmable wallets",
         tag: "Wallet Infrastructure",
         description:
-            "Launch secure, non-custodial or custodial wallets directly in your app. Go live in days, not months, with TervanX’s Wallet-as-a-Service.",
+            "Launch secure, non-custodial or custodial wallets directly in your app. Go live in days, not months, with LayerX Wallet-as-a-Service.",
         cards: [
             {
                 title: "Unified API for 300+ blockchains",
@@ -128,7 +128,7 @@ export const startupPageData = {
             {
                 title: "Automated cross-chain settlements",
                 description:
-                    "Move assets seamlessly between blockchains and traditional systems. TervanX handles bridging, wrapping, and routing behind the scenes.",
+                    "Move assets seamlessly between blockchains and traditional systems. LayerX handles bridging, wrapping, and routing behind the scenes.",
                 img: "/assets/highlight.webp",
             },
             {
@@ -179,7 +179,7 @@ export const startupPageData = {
     testimonial: {
         title: "What Startups Are Saying",
         quote:
-            "With TervanX, we reduced our wallet integration timeline from 9 months to 3 weeks and scaled to 50,000 users without adding backend engineers. It’s the infrastructure partner every startup needs.",
+            "With LayerX, we reduced our wallet integration timeline from 9 months to 3 weeks and scaled to 50,000 users without adding backend engineers. It’s the infrastructure partner every startup needs.",
         role: " CTO of NovaFi",
         name: "Maya Okoro,",
     },

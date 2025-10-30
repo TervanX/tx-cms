@@ -102,8 +102,10 @@ const contactSteps = [
 ];
 
 const mobileHeading = {
-    title: "The compliant, bank-grade digital asset infrastructure built to scale with confidence.",
-    description: "Book a meeting with our sales experts to discuss compliant, secure solutions designed for your industry — and see how TervanX can power your financial infrastructure."
+    title:
+        "The compliant, bank-grade digital asset infrastructure built to scale with confidence.",
+    description:
+        "Book a meeting with our sales experts to discuss compliant, secure solutions designed for your industry — and see how LayerX can power your financial infrastructure.",
 };
 
 export default function ContactFormSteps(props: ContactFormStepsProps) {

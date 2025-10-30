@@ -80,18 +80,17 @@ const PricingSection: React.FC<PricingSectionProps> = ({
           <h2 className="text-2xl font-medium text-gray-900">
             Explore features by solutions:
           </h2>
-          <p className="text-gray-600">
-            All tiers include every solution
-          </p>
+          <p className="text-gray-600">All tiers include every solution</p>
         </div>
         {tabs.map((tab) => (
           <button
             key={tab.id}
             onClick={() => handleTabClick(tab.id)}
-            className={`whitespace-nowrap px-6 py-3 text-xs uppercase tracking-wide bg-gray-100 transition-all w-full ${activeTab === tab.id
-              ? "bg-white text-black shadow-sm"
-              : " text-black hover:text-gray-800"
-              }`}
+            className={`whitespace-nowrap px-6 py-3 text-xs uppercase tracking-wide bg-gray-100 transition-all w-full ${
+              activeTab === tab.id
+                ? "bg-white text-black shadow-sm"
+                : " text-black hover:text-gray-800"
+            }`}
           >
             <span className="text-sm font-medium tracking-normal">
               {tab.label}
@@ -108,7 +107,8 @@ const PricingSection: React.FC<PricingSectionProps> = ({
               Build Your Custom Usage Based Plan
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Select the features you need, TervanX’s usage-based model lets you scale elastically
+              Select the features you need, LayerX usage-based model lets you
+              scale elastically
             </p>
           </div>
 
@@ -116,7 +116,9 @@ const PricingSection: React.FC<PricingSectionProps> = ({
             {/* Feature Selection */}
             <div className="py-6 px-2 bg-white">
               <div className="flex items-center gap-3 mb-6">
-                <h3 className="text-xl font-medium text-gray-900">What are you looking for?</h3>
+                <h3 className="text-xl font-medium text-gray-900">
+                  What are you looking for?
+                </h3>
               </div>
 
               {/* Feature Tags Grid */}
@@ -125,19 +127,26 @@ const PricingSection: React.FC<PricingSectionProps> = ({
                   <button
                     key={feature.id}
                     onClick={() => toggleFeature(feature.id)}
-                    className={`rounded-full p-1 text-xs font-bold transition-all border flex items-center justify-center gap-2 ${selectedFeatures.includes(feature.id)
-                      ? "border-blue-300 bg-blue-50 text-blue-700"
-                      : "bg-white text-gray-700 border-none hover:border-blue-300 hover:bg-blue-50"
-                      }`}
+                    className={`rounded-full p-1 text-xs font-bold transition-all border flex items-center justify-center gap-2 ${
+                      selectedFeatures.includes(feature.id)
+                        ? "border-blue-300 bg-blue-50 text-blue-700"
+                        : "bg-white text-gray-700 border-none hover:border-blue-300 hover:bg-blue-50"
+                    }`}
                   >
-                    <div className={`w-4 h-4 rounded-full border flex items-center justify-center transition-all ${selectedFeatures.includes(feature.id)
-                      ? "bg-blue-500 border-blue-500"
-                      : "bg-white border-gray-400"
-                      }`}>
+                    <div
+                      className={`w-4 h-4 rounded-full border flex items-center justify-center transition-all ${
+                        selectedFeatures.includes(feature.id)
+                          ? "bg-blue-500 border-blue-500"
+                          : "bg-white border-gray-400"
+                      }`}
+                    >
                       <Check
                         size={12}
-                        className={`text-white transition-all ${selectedFeatures.includes(feature.id) ? "opacity-100" : "opacity-0"
-                          }`}
+                        className={`text-white transition-all ${
+                          selectedFeatures.includes(feature.id)
+                            ? "opacity-100"
+                            : "opacity-0"
+                        }`}
                       />
                     </div>
                     {feature.name}
@@ -149,9 +158,13 @@ const PricingSection: React.FC<PricingSectionProps> = ({
             {/* Pay As You Go Summary */}
             <div className="border border-gray-200 rounded-xl p-6 bg-white overflow-hidden h-full flex flex-col">
               <div className="flex items-center gap-3 mb-6">
-                <h3 className="text-xl font-medium text-gray-900">Pay As You Go</h3>
+                <h3 className="text-xl font-medium text-gray-900">
+                  Pay As You Go
+                </h3>
               </div>
-              <p className="text-sm text-gray-600 mt-2">Flexible — pay only for what you use.</p>
+              <p className="text-sm text-gray-600 mt-2">
+                Flexible — pay only for what you use.
+              </p>
               <div className="space-y-6">
                 <div className="pt-4">
                   <span className="text-3xl font-medium text-black  font-grotesque">
@@ -163,25 +176,33 @@ const PricingSection: React.FC<PricingSectionProps> = ({
                 </div>
                 {selectedFeatures.length > 0 && (
                   <div className="space-y-2">
-                    <h4 className="font-medium text-gray-900 text-sm">Selected Features:</h4>
+                    <h4 className="font-medium text-gray-900 text-sm">
+                      Selected Features:
+                    </h4>
                     <p className="text-sm text-gray-600 flex items-start">
-                      <div className="border-primary border-1  p-1 mr-1 rounded-full"> <Check size={12} className="flex-shrink-0 text-blue-600 " />
+                      <div className="border-primary border-1  p-1 mr-1 rounded-full">
+                        {" "}
+                        <Check
+                          size={12}
+                          className="flex-shrink-0 text-blue-600 "
+                        />
                       </div>
-                      {selectedFeatures.map(featureId => {
-                        const feature = featurePricing.find(f => f.id === featureId);
-                        return feature ? feature.name : null;
-                      }).filter(Boolean).join(', ')}
+                      {selectedFeatures
+                        .map((featureId) => {
+                          const feature = featurePricing.find(
+                            (f) => f.id === featureId
+                          );
+                          return feature ? feature.name : null;
+                        })
+                        .filter(Boolean)
+                        .join(", ")}
                     </p>
                   </div>
                 )}
 
                 {/* CTA Buttons */}
                 <Link href="/contact/contact-sales">
-                  <Button
-                    size="md"
-                    variant="primary"
-                    className="w-full py-3"
-                  >
+                  <Button size="md" variant="primary" className="w-full py-3">
                     Get Started
                   </Button>
                 </Link>
@@ -189,14 +210,15 @@ const PricingSection: React.FC<PricingSectionProps> = ({
             </div>
             {/* Enterprise Plan Card */}
             <div className="border-2 border-blue-500 rounded-xl bg-gradient-to-br from-blue-50 to-white overflow-hidden h-full flex flex-col">
-
-
               <div className="flex flex-col flex-1 p-6">
                 {/* Plan Header */}
                 <div className="mb-6">
-                  <h3 className="text-xl font-medium text-gray-900">Enterprise</h3>
+                  <h3 className="text-xl font-medium text-gray-900">
+                    Enterprise
+                  </h3>
                   <p className="text-sm text-gray-600 mt-2">
-                    High-volume Pay As You Go? Get custom volume discounts and dedicated support.
+                    High-volume Pay As You Go? Get custom volume discounts and
+                    dedicated support.
                   </p>
                 </div>
 
@@ -212,13 +234,20 @@ const PricingSection: React.FC<PricingSectionProps> = ({
                 {/* Features */}
                 <div className="w-full flex flex-col gap-3 mb-6 flex-1">
                   {[
-                    "Custom volume pricing", ,
+                    "Custom volume pricing",
+                    ,
                     "Priority 24/7 support",
                     "SLA guarantees",
-                    "Advanced analytics"
+                    "Advanced analytics",
                   ].map((feature, index) => (
-                    <div key={index} className="flex items-start justify-start w-full gap-2">
-                      <Check size={16} className="flex-shrink-0 text-blue-600 mt-0.5" />
+                    <div
+                      key={index}
+                      className="flex items-start justify-start w-full gap-2"
+                    >
+                      <Check
+                        size={16}
+                        className="flex-shrink-0 text-blue-600 mt-0.5"
+                      />
                       <p className="text-sm text-gray-700">{feature}</p>
                     </div>
                   ))}
@@ -254,7 +283,6 @@ const PricingSection: React.FC<PricingSectionProps> = ({
               isPayg={false}
             />
           ))}
-
         </div>
       )}
 

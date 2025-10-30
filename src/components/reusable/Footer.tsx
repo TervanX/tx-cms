@@ -125,7 +125,7 @@ const Footer: React.FC = () => {
               {/* Logo */}
               <div className="relative w-[162px] h-[162px] md:w-[188px] md:h-[188px] lg:w-[254px] lg:h-[254px] xl:w-[303px] xl:h-[303px] 2xl:w-[303px] 2xl:h-[303px]">
                 <Image
-                  src="/assets/logo.svg"
+                  src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761842277/LayerX_Logo_ffy6pb.png"
                   alt="logo"
                   layout="fill"
                   objectFit="contain"
@@ -135,7 +135,7 @@ const Footer: React.FC = () => {
               {/* Legal Links */}
               <div className="flex flex-col gap-4">
                 <p className="text-sm lg:text-base leading-[130%] font-sans font-bold text-white">
-                  Tervanx © 2025
+                  LayerX © 2025
                 </p>
                 {legalLinks.map((link, index) => (
                   <FooterButton

@@ -221,7 +221,7 @@ export default function RequestAccessPage() {
     return (
       <div className="min-h-screen bg-[#F0F0F2] flex items-center justify-center">
         <SuccessMessage
-          title="Thank you for your interest in TervanX"
+          title="Thank you for your interest in LayerX"
           message="Our partnerships team will review your request and contact you within 24 to 48 hours to guide you through the onboarding process."
           icon={<ShieldCheck className="w-20 h-20 text-green-500" />}
         />
@@ -241,7 +241,7 @@ export default function RequestAccessPage() {
 
       <div className="px-4 py-12 md:px-0 md:py-0 max-w-[600px] mx-auto md:max-w-none grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-0 md:min-h-screen">
         <FormSidebar
-          title="Request Access to TervanX"
+          title="Request Access to LayerX"
           description="Join the next generation of digital asset infrastructure — built for scale, trusted for security."
           showCompanies={true}
           trust="The same world-class infrastructure that powers"

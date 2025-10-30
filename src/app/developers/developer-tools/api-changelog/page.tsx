@@ -8,7 +8,7 @@ import { X, MessageSquare } from "lucide-react";
 const WhatsNewPage = () => {
   return (
     <div className="container mx-auto pt-[var(--header-height)]">
-      <h3 className="font-bold text-4xl lg:mb-8">What's new in Play Tervanx</h3>
+      <h3 className="font-bold text-4xl lg:mb-8">What's new in Play LayerX</h3>
 
       <div className="flex flex-col lg:flex-row lg:gap-10 pt-10">
         <div className="hidden lg:block lg:w-[400px] ">

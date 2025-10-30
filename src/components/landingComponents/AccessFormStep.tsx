@@ -114,8 +114,9 @@ const accessSteps = [
 ];
 
 const mobileHeading = {
-    title: "Request Access to TervanX",
-    description: "Join the next generation of digital asset infrastructure — built for scale, trusted for security."
+    title: "Request Access to LayerX",
+    description:
+        "Join the next generation of digital asset infrastructure — built for scale, trusted for security.",
 };
 
 export default function AccessFormSteps(props: AccessFormStepsProps) {

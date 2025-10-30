@@ -11,22 +11,16 @@ import Resources from '@/components/StartupComponents/Resources';
 import { supportData } from '../data';
 export default function TervanXSessions() {
     return (
-        <div>
-            <HeroSection
-                title="TervanX Sessions"
-                description=""
-            />
-            <FeaturesSection {...supportData.featuredata} />
-            <ProductSection
-                {...supportData.productdata}
-            />
-            <Banner {...supportData.bannerdata} />
-            <Testimonial {...supportData.testimonialdata} />
-            <Marquee items={supportData.marqueedata.marqueeItems} />
-            <Resources {...(supportData.resourcesdata as any)} />
-            <CtaBanner
-                {...supportData.ctaBanner} />
-            <FAQAccordion faqData={supportData.faqData} />
-        </div>
+      <div>
+        <HeroSection title="LayerX Sessions" description="" />
+        <FeaturesSection {...supportData.featuredata} />
+        <ProductSection {...supportData.productdata} />
+        <Banner {...supportData.bannerdata} />
+        <Testimonial {...supportData.testimonialdata} />
+        <Marquee items={supportData.marqueedata.marqueeItems} />
+        <Resources {...(supportData.resourcesdata as any)} />
+        <CtaBanner {...supportData.ctaBanner} />
+        <FAQAccordion faqData={supportData.faqData} />
+      </div>
     );
 }
