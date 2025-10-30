@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "LayerX",
     locale: "en_US",
     type: "website",
-    images: ["/assets/logo.svg"],
+    images: ["https://res.cloudinary.com/dx1etzf66/image/upload/v1761842277/LayerX_Logo_ffy6pb.png"],
   },
   twitter: {
     card: "summary_large_image",
@@ -40,16 +40,16 @@ export const metadata: Metadata = {
     title: "LayerX - Financial Infrastructure Platform",
     description:
       "Scalable financial APIs and infrastructure for businesses, startups, and developers.",
-    images: ["/assets/logo.svg"],
+    images: ["https://res.cloudinary.com/dx1etzf66/image/upload/v1761842277/LayerX_Logo_ffy6pb.png"],
   },
   icons: {
     icon: [
       {
-        url: "/assets/logo.svg",
+        url: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761842277/LayerX_Logo_ffy6pb.png",
         type: "image/svg",
       },
     ],
-    shortcut: "/assets/logo.svg",
+    shortcut: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761842277/LayerX_Logo_ffy6pb.png",
   },
   alternates: {
     canonical: "https://layerx.com",

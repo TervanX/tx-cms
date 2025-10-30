@@ -3,12 +3,14 @@ import { useState } from "react";
 import AccessFormSteps from "@/components/landingComponents/AccessFormStep";
 import FormSidebar from "@/components/landingComponents/FormSidebar";
 import SuccessMessage from "@/components/landingComponents/SuccessMessage";
+import ErrorToast from "@/components/landingComponents/ErrorToastComponent";
 import { ShieldCheck } from "lucide-react";
 
 export default function RequestAccessPage() {
   const [currentStep, setCurrentStep] = useState(1);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const [formData, setFormData] = useState({
     // Step 1
@@ -68,49 +70,71 @@ export default function RequestAccessPage() {
 
   const validateStep1 = () => {
     const newErrors: Record<string, string> = {};
+
     if (!formData.fullName.trim()) {
       newErrors.fullName = "Full name is required";
     }
+
     if (!formData.businessEmail.trim()) {
       newErrors.businessEmail = "Business email is required";
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.businessEmail)) {
       newErrors.businessEmail = "Please enter a valid email address";
     }
+
     if (!formData.companyName.trim()) {
       newErrors.companyName = "Company name is required";
     }
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
 
   const validateStep2 = () => {
     const newErrors: Record<string, string> = {};
+
+    if (!formData.companyWebsite.trim()) {
+      newErrors.companyWebsite = "Company website is required";
+    } else if (!formData.companyWebsite.startsWith("http://") && !formData.companyWebsite.startsWith("https://")) {
+      newErrors.companyWebsite = "Website must start with http:// or https://";
+    }
+
     if (!formData.businessType) {
       newErrors.businessType = "Business type is required";
     }
+
     if (!formData.useCase.trim()) {
       newErrors.useCase = "Please describe your use case";
     } else if (formData.useCase.trim().length < 10) {
       newErrors.useCase = "Please provide more details (minimum 10 characters)";
     }
-    if (
-      formData.companyWebsite.trim() &&
-      !formData.companyWebsite.startsWith("http")
-    ) {
-      newErrors.companyWebsite = "Website must start with http:// or https://";
-    }
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
 
   const validateStep3 = () => {
     const newErrors: Record<string, string> = {};
+
     if (!formData.country) {
       newErrors.country = "Country is required";
     }
+
+    if (!formData.teamSize) {
+      newErrors.teamSize = "Team size is required";
+    }
+
+    if (!formData.monthlyVolume) {
+      newErrors.monthlyVolume = "Monthly volume is required";
+    }
+
+    if (!formData.contactMethod) {
+      newErrors.contactMethod = "Preferred contact method is required";
+    }
+
     if (!formData.agreeToTerms) {
       newErrors.agreeToTerms = "You must agree to the terms and privacy policy";
     }
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -143,36 +167,50 @@ export default function RequestAccessPage() {
     }
 
     setIsSubmitting(true);
+    setErrorMessage(null); // Clear any previous errors
 
     try {
-      const netlifyForm = new FormData();
-      netlifyForm.append("form-name", "request-access-form");
-      Object.entries(formData).forEach(([key, value]) => {
-        if (typeof value === "boolean") {
-          netlifyForm.append(key, value ? "Yes" : "No");
-        } else {
-          netlifyForm.append(key, value as string);
-        }
-      });
+      const submissionData = {
+        fullName: formData.fullName,
+        businessEmail: formData.businessEmail,
+        companyOrOrganization: formData.companyName,
+        businessType: formData.businessType,
+        companyWebsite: formData.companyWebsite,
+        whatDoYouWantToBuild: formData.useCase,
+        countryOfOperation: formData.country,
+        teamSize: formData.teamSize,
+        estimatedMonthlyVolumeUSD: formData.monthlyVolume,
+        preferredContactMethod: formData.contactMethod,
+        additionalDetails: formData.message,
+        agreeToTerms: formData.agreeToTerms,
+      };
 
-      const response = await fetch("/", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/contact/request-access`, {
         method: "POST",
-        body: netlifyForm,
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(submissionData),
       });
 
       if (response.ok) {
-        console.log("Access request form successfully submitted to Netlify");
+        console.log("Access request form successfully submitted");
         setIsSubmitted(true);
         setTimeout(() => {
           window.history.back();
         }, 3000);
       } else {
-        throw new Error("Network response was not ok");
+        const errorData = await response.json();
+        console.error("Server error:", errorData);
+
+        // Extract error message from API response
+        const apiErrorMessage = errorData?.message || errorData?.title || "Failed to submit form";
+        setErrorMessage(`${apiErrorMessage}. Please check your information and try again.`);
       }
     } catch (error) {
       console.error("Error submitting form:", error);
-      alert(
-        "There was an error submitting your request. Please try again or contact us directly."
+      setErrorMessage(
+        "Unable to submit your request at this time. Please check your internet connection and try again, or contact us directly."
       );
     } finally {
       setIsSubmitting(false);
@@ -193,6 +231,14 @@ export default function RequestAccessPage() {
 
   return (
     <main className="bg-[#F0F0F2] min-h-screen">
+      {/* Error Toast */}
+      {errorMessage && (
+        <ErrorToast
+          message={errorMessage}
+          onClose={() => setErrorMessage(null)}
+        />
+      )}
+
       <div className="px-4 py-12 md:px-0 md:py-0 max-w-[600px] mx-auto md:max-w-none grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-0 md:min-h-screen">
         <FormSidebar
           title="Request Access to LayerX"

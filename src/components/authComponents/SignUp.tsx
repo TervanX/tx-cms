@@ -34,7 +34,7 @@ export default function SignUp() {
           <div className="mx-auto max-w-[436px] md:mx-0">
             {/* Heading */}
             <h1 className="text-3xl lg:text-4xl tracking-tight text-center antialiased">
-              Welcome back to Tervan X <br />
+              Welcome back to Layer X <br />
               Secure Login
             </h1>
 

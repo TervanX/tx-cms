@@ -1,8 +1,10 @@
 "use client";
 
+import { Loader2 } from "lucide-react";
+
 interface FormField {
     name: string;
-    type: 'text' | 'email' | 'url' | 'tel' | 'select' | 'textarea' | 'checkbox' | 'radio';
+    type: 'text' | 'email' | 'url' | 'tel' | 'select' | 'textarea' | 'checkbox' | 'radio' | "singleCheckbox";
     label: string;
     required?: boolean;
     placeholder?: string;
@@ -116,6 +118,21 @@ export default function FormSteps({
                         ))}
                     </div>
                 );
+            case 'singleCheckbox':
+                return (
+                    <label className="flex items-start space-x-3 cursor-pointer">
+                        <input
+                            type="checkbox"
+                            name={field.name}
+                            checked={!!formData[field.name]}
+                            onChange={onCheckboxChange}
+                            className="mt-1 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                        />
+                        <span className="text-sm text-gray-700">
+                            {field.label}
+                        </span>
+                    </label>
+                );
 
             case 'radio':
                 return (
@@ -219,9 +236,17 @@ export default function FormSteps({
                                         ) : (
                                             <button
                                                 type="submit"
-                                                className="px-8 py-3 bg-[#0D07ED] text-white rounded-lg transition-colors font-medium ml-auto w-full"
+                                                className="flex items-center justify-center px-8 py-3 bg-[#0D07ED] text-white rounded-lg transition-colors font-medium hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed w-full"
+                                                disabled={isSubmitting}
                                             >
-                                                {submitButtonText}
+                                                {isSubmitting ? (
+                                                    <>
+                                                        <Loader2 className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" />
+                                                        Submitting...
+                                                    </>
+                                                ) : (
+                                                    submitButtonText
+                                                )}
                                             </button>
                                         )}
                                     </div>

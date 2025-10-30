@@ -121,7 +121,7 @@ export default function ContactFormSteps(props: ContactFormStepsProps) {
             steps={contactSteps}
             mobileHeading={mobileHeading}
             submitButtonText="Send Message"
-            isSubmitting
+            isSubmitting={props.isSubmitting}
         />
     );
 }

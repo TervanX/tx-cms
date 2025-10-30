@@ -1119,7 +1119,7 @@ const DeskTopNavbar = () => {
           className="flex items-center gap-2 font-bold text-lg"
         >
           <Image
-            src="/assets/logo.svg"
+            src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761842277/LayerX_Logo_ffy6pb.png"
             className="h-6 w-6"
             width={24}
             height={24}
@@ -1173,7 +1173,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ toggle, isOpen }) => {
       <div className="flex gap-10 items-center justify-start">
         <Link href="/" className="flex items-center gap-2 font-bold text-lg">
           <Image
-            src="/assets/logo.svg"
+            src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761842277/LayerX_Logo_ffy6pb.png"
             className="h-6 w-6"
             width={24}
             height={24}
