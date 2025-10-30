@@ -18,6 +18,11 @@ const grotesque = Bricolage_Grotesque({
   subsets: ["latin"],
 });
 
+// Optimized Cloudinary URLs
+const iconBaseUrl = "https://res.cloudinary.com/dx1etzf66/image/upload";
+const iconVersion = "v1761842277";
+const iconId = "LayerX_Logo_ffy6pb.png";
+
 export const metadata: Metadata = {
   title: "LayerX - Financial Infrastructure Platform",
   description:
@@ -31,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "LayerX",
     locale: "en_US",
     type: "website",
-    images: ["https://res.cloudinary.com/dx1etzf66/image/upload/v1761842277/LayerX_Logo_ffy6pb.png"],
+    images: [`${iconBaseUrl}/c_limit,w_1200,h_630,f_auto,q_80/${iconVersion}/${iconId}`],
   },
   twitter: {
     card: "summary_large_image",
@@ -40,16 +45,28 @@ export const metadata: Metadata = {
     title: "LayerX - Financial Infrastructure Platform",
     description:
       "Scalable financial APIs and infrastructure for businesses, startups, and developers.",
-    images: ["https://res.cloudinary.com/dx1etzf66/image/upload/v1761842277/LayerX_Logo_ffy6pb.png"],
+    images: [`${iconBaseUrl}/c_limit,w_1200,h_600,f_auto,q_80/${iconVersion}/${iconId}`],
   },
   icons: {
     icon: [
       {
-        url: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761842277/LayerX_Logo_ffy6pb.png",
-        type: "image/svg",
+        url: `${iconBaseUrl}/w_32,h_32,f_auto,q_80/${iconVersion}/${iconId}`,
+        type: "image/png",
+        sizes: "32x32",
+      },
+      {
+        url: `${iconBaseUrl}/w_64,h_64,f_auto,q_80/${iconVersion}/${iconId}`,
+        type: "image/png",
+        sizes: "64x64",
+      },
+      {
+        url: `${iconBaseUrl}/w_180,h_180,f_auto,q_80/${iconVersion}/${iconId}`,
+        type: "image/png",
+        sizes: "180x180",
       },
     ],
-    shortcut: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761842277/LayerX_Logo_ffy6pb.png",
+    shortcut: `${iconBaseUrl}/w_32,h_32,f_auto,q_80/${iconVersion}/${iconId}`,
+    apple: `${iconBaseUrl}/w_180,h_180,f_auto,q_80/${iconVersion}/${iconId}`,
   },
   alternates: {
     canonical: "https://layerx.com",
@@ -63,6 +80,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="preload"
+          href={`${iconBaseUrl}/w_32,h_32,f_auto,q_80/${iconVersion}/${iconId}`}
+          as="image"
+          type="image/png"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased ${grotesque.variable}`}
       >
