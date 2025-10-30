@@ -46,7 +46,8 @@ const accessSteps = [
             {
                 name: "companyWebsite",
                 type: "url" as const,
-                label: "Company Website (Optional)",
+                label: "Company Website ",
+                required: true,
                 placeholder: "https://example.com"
             },
             {
@@ -77,30 +78,33 @@ const accessSteps = [
             {
                 name: "teamSize",
                 type: "select" as const,
+                required: true,
                 label: "Team Size",
                 options: ["1–10", "11–50", "51–200", "200+"]
             },
             {
                 name: "monthlyVolume",
                 type: "select" as const,
+                required: true,
                 label: "Estimated Monthly Volume (USD)",
                 options: ["< $10K", "$10K – $100K", "$100K – $1M", "Above $1M"]
             },
             {
                 name: "contactMethod",
                 type: "radio" as const,
+                required: true,
                 label: "Preferred Contact Method",
                 options: ["Email", "WhatsApp", "Phone Call"]
             },
             {
                 name: "message",
                 type: "textarea" as const,
-                label: "Additional Details (Optional)",
+                label: "Additional Details (Optional) ",
                 placeholder: "Any additional information you'd like to share..."
             },
             {
                 name: "agreeToTerms",
-                type: "checkbox" as const,
+                type: "singleCheckbox" as const,
                 label: "I agree to the Terms & Conditions and Privacy Policy",
                 required: true,
                 options: ["I agree to the Terms & Conditions and Privacy Policy *"]
@@ -122,7 +126,7 @@ export default function AccessFormSteps(props: AccessFormStepsProps) {
             steps={accessSteps}
             mobileHeading={mobileHeading}
             submitButtonText="Request Access"
-            isSubmitting
+            isSubmitting={props.isSubmitting}
         />
     );
 }

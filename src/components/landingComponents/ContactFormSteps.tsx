@@ -12,7 +12,7 @@ interface ContactFormStepsProps {
     onPrevStep: () => void;
     onNextStep: () => void;
     onSubmit: (e: React.FormEvent) => void;
-    isSubmitting?: boolean
+    isSubmitting: boolean
 }
 
 const contactSteps = [
@@ -47,20 +47,15 @@ const contactSteps = [
                 name: "companyWebsite",
                 type: "url" as const,
                 label: "Company Website",
-                placeholder: "https://example.com"
-            },
-            {
-                name: "country",
-                type: "select" as const,
-                label: "Country / Region",
+                placeholder: "https://example.com",
                 required: true,
-                options: ["Nigeria", "Ghana", "Kenya", "United Kingdom", "United States", "South Africa", "Canada", "Other"]
             },
             {
                 name: "phoneNumber",
                 type: "tel" as const,
                 label: "Phone Number",
-                placeholder: "+234 810 000 0000"
+                placeholder: "+234 810 000 0000",
+                required: true,
             },
             {
                 name: "businessType",
@@ -77,7 +72,8 @@ const contactSteps = [
                 name: "monthlyVolume",
                 type: "select" as const,
                 label: "Monthly Transaction Volume",
-                options: ["Less than $10k", "$10k – $50k", "$50k – $250k", "$250k – $1M", "Above $1M"]
+                options: ["Less than $10k", "$10k – $50k", "$50k – $250k", "$250k – $1M", "Above $1M"],
+                required: true,
             },
             {
                 name: "helpNeeded",
@@ -91,13 +87,15 @@ const contactSteps = [
                 type: "textarea" as const,
                 label: "Message / Use Case",
                 required: true,
-                placeholder: "Tell us more about your business or project…"
+                placeholder: "Tell us more about your business or project…",
+
             },
             {
                 name: "contactMethod",
                 type: "radio" as const,
                 label: "Preferred Contact Method",
-                options: ["Email", "WhatsApp", "Phone Call"]
+                options: ["Email", "WhatsApp", "Phone Call"],
+                required: true,
             }
         ]
     }
@@ -117,7 +115,7 @@ export default function ContactFormSteps(props: ContactFormStepsProps) {
             steps={contactSteps}
             mobileHeading={mobileHeading}
             submitButtonText="Contact Sales"
-            isSubmitting
+            isSubmitting={props.isSubmitting}
         />
     );
 }

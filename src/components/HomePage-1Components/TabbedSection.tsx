@@ -2,6 +2,7 @@
 import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { gsap } from "gsap";
+import Link from "next/link";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {
     Zap,
@@ -402,13 +403,16 @@ const ApolloScrollTabs: React.FC = () => {
                                                 exit={{ y: -30, opacity: 0 }}
                                                 transition={{ duration: 0.4, ease: "easeOut", delay: 0.2 }}
                                                 className="flex flex-col sm:flex-row gap-4 pt-4 absolute inset-0"
-                                            >
-                                                <button className="bg-black hover:bg-gray-800 text-white font-medium px-6 py-3 rounded-lg transition-all">
-                                                    {currentTab.ctaPrimary}
-                                                </button>
-                                                <button className="bg-transparent hover:bg-black/5 text-black font-medium px-6 py-3 rounded-lg border-2 border-black transition-all">
-                                                    {currentTab.ctaSecondary}
-                                                </button>
+                                            ><Link href="/contact/contact-sales">
+                                                    <button className="bg-black hover:bg-gray-800 text-white font-medium px-6 py-3 rounded-lg transition-all">
+                                                        {currentTab.ctaPrimary}
+                                                    </button>
+                                                </Link>
+                                                <Link href="/contact/contact-sales">
+                                                    <button className="bg-transparent hover:bg-black/5 text-black font-medium px-6 py-3 rounded-lg border-2 border-black transition-all">
+                                                        {currentTab.ctaSecondary}
+                                                    </button>
+                                                </Link>
                                             </motion.div>
                                         </AnimatePresence>
                                     </div>
@@ -526,12 +530,16 @@ const ApolloScrollTabs: React.FC = () => {
 
                                     {/* Buttons */}
                                     <div className="flex flex-col gap-3 pt-4">
-                                        <button className="bg-black hover:bg-gray-800 text-white font-medium px-5 py-2.5 rounded-lg transition-all text-sm">
-                                            {currentTab.ctaPrimary}
-                                        </button>
-                                        <button className="bg-transparent hover:bg-black/5 text-black font-medium px-5 py-2.5 rounded-lg border-2 border-black transition-all text-sm">
-                                            {currentTab.ctaSecondary}
-                                        </button>
+                                        <Link href="/contact/contact-sales">
+                                            <button className="bg-black hover:bg-gray-800 text-white font-medium px-5 py-2.5 rounded-lg transition-all text-sm">
+                                                {currentTab.ctaPrimary}
+                                            </button>
+                                        </Link>
+                                        <Link href="/contact/contact-sales">
+                                            <button className="bg-transparent hover:bg-black/5 text-black font-medium px-5 py-2.5 rounded-lg border-2 border-black transition-all text-sm">
+                                                {currentTab.ctaSecondary}
+                                            </button>
+                                        </Link>
                                     </div>
 
                                     {/* Image */}
