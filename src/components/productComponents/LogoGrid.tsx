@@ -24,11 +24,27 @@ const LogoGrid: React.FC<LogoGridProps> = ({
   className = "h-10 filter invert-0 brightness-0",
 }) => {
   const logosArray = [
-    { url: "/assets/Stripe.png", imageAlt: "Stripe" },
-    { url: "/assets/flutterwave.svg", imageAlt: "flutterwave" },
-    { url: "/assets/Checkbox.webp", imageAlt: "Checkbox" },
-    { url: "/assets/1200px-Paystack_Logo.png", imageAlt: "Paystack_Logo" },
-    { url: "/assets/fireblocks-logo.svg", imageAlt: "fireblocks" },
+    {
+      url: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/Stripe_ecrzh7.png.png",
+      imageAlt: "Stripe",
+    },
+    {
+      url: "assets/https://res.cloudinary.com/dx1etzf66/image/upload/v1761890451/flutterwave-1_iivhor.svg.svg",
+      imageAlt:
+        "https://res.cloudinary.com/dx1etzf66/image/upload/v1761890451/flutterwave-1_iivhor.svg",
+    },
+    {
+      url: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889000/Checkbox_y9pnxl.webpkbox.webp",
+      imageAlt: "Checkbox",
+    },
+    {
+      url: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761890641/1200px-Paystack_Logo_pgortw.png",
+      imageAlt: "Paystack_Logo",
+    },
+    {
+      url: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761890602/fireblocks-logo_aioa7u.svg-logo.svg",
+      imageAlt: "fireblocks",
+    },
   ];
 
   const [windowWidth, setWindowWidth] = useState(1440);

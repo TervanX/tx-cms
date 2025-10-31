@@ -7,10 +7,22 @@ const footerData: FooterSection[] = [
   {
     title: "Products",
     links: [
-      { label: "Wallet As a Service", href: "/product/asset-infrastructure/wallet-api" },
-      { label: "Exchange Engine", href: "/product/asset-infrastructure/exchange-engine" },
-      { label: "Auto Trade Plugin", href: "product/plugins-extension/auto-trade-plugin" },
-      { label: "Treasury Plugin", href: "product/plugins-extension/treasury-plugin" },
+      {
+        label: "Wallet As a Service",
+        href: "/product/asset-infrastructure/wallet-api",
+      },
+      {
+        label: "Exchange Engine",
+        href: "/product/asset-infrastructure/exchange-engine",
+      },
+      {
+        label: "Auto Trade Plugin",
+        href: "product/plugins-extension/auto-trade-plugin",
+      },
+      {
+        label: "Treasury Plugin",
+        href: "product/plugins-extension/treasury-plugin",
+      },
       { label: "Tx Shield", href: "/product/security-optimization/tx-shield" },
       { label: "Tx Analytics", href: "/product/data-reporting/tx-analytics" },
     ],
@@ -43,7 +55,10 @@ const footerData: FooterSection[] = [
     title: "Developers",
     links: [
       { label: "API Reference", href: "/contact/request-access" },
-      { label: "System Status", href: "/developers/developer-tools/system-status" },
+      {
+        label: "System Status",
+        href: "/developers/developer-tools/system-status",
+      },
       { label: "API Changelog", href: "/api-changelog" },
       { label: "Tx Apps SDKs", href: "/contact/request-access" },
     ],
@@ -125,7 +140,7 @@ const Footer: React.FC = () => {
               {/* Logo */}
               <div className="relative w-[162px] h-[162px] md:w-[188px] md:h-[188px] lg:w-[254px] lg:h-[254px] xl:w-[303px] xl:h-[303px] 2xl:w-[303px] 2xl:h-[303px]">
                 <Image
-                  src="/assets/logo.svg"
+                  src="/assets/lxlogo.png"
                   alt="logo"
                   layout="fill"
                   objectFit="contain"
