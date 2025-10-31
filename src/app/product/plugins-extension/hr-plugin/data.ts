@@ -7,15 +7,15 @@ export const productivityProps = {
         "TX HR automates the most complex aspects of workforce management—from multi-currency payroll to token vesting—executing with precision across jurisdictions and payment methods.",
     images: {
         mobile: {
-            src: "/assets/solution1.jpg",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/solution1_avbfxx.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
-            src: "/assets/solution1.jpg",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/solution1_avbfxx.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         product: {
-            src: "/assets/productivity-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889043/productivity-1-desktop_sdzsp4.webp",
             alt: "Helpdesk product UI",
         },
     },
@@ -63,7 +63,7 @@ export const productivityProps = {
         </g>
       </svg>`,
         image: {
-            src: "/assets/lightspeed-headshot-min.png",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891745/lightspeed-headshot-min_qiohvg.png",
             alt: "Angelo Livanos",
         },
     },
@@ -78,15 +78,15 @@ export const usabilityProps = {
         "A unified platform for managing all workforce operations—from onboarding to offboarding—across both traditional and web3 compensation structures.",
     images: {
         mobile: {
-            src: "/assets/usability-hero-mobile.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891812/usability-hero-desktop_uirwq4.webp",
             alt: "Illustration of people walking down a flowery path",
         },
         desktop: {
-            src: "/assets/usability-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891812/usability-hero-desktop_uirwq4.webp",
             alt: "Illustration of people walking down a flowery path",
         },
         mainFeature: {
-            src: "/assets/usability-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891807/usability-1-desktop_sdggi4.webp",
             alt: "Helpdesk usability instant insight product visual",
         },
     },
@@ -98,12 +98,12 @@ export const usabilityProps = {
     ],
     additionalFeatures: [
         {
-            image: { src: "/assets/usability-2-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891808/usability-2-desktop_h3f0oo.webp" },
             title: 'Visual Workflow Builder',
             description: 'Create and modify HR processes without technical expertise. Use our drag-and-drop interface to define approval workflows, compensation rules, and compliance parameters',
         },
         {
-            image: { src: "/assets/usability-2-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891808/usability-2-desktop_h3f0oo.webp" },
             title: 'Pre-Built HR Templates',
             description: 'Accelerate deployment with industry-specific templates:',
             list: {
@@ -116,7 +116,7 @@ export const usabilityProps = {
             }
         },
         {
-            image: { src: "/assets/usability-2-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891808/usability-2-desktop_h3f0oo.webp" },
             title: 'Comprehensive System Integration',
             description: 'Connect TX HR to your entire operational stack:',
             list: {
@@ -143,15 +143,15 @@ export const outboundProps = {
         "Move beyond basic HR metrics to predictive insights that optimize workforce planning and compensation strategy.",
     images: {
         mobile: {
-            src: "/assets/outbound-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891763/outbound-hero-desktop_feua3q.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {
-            src: "/assets/outbound-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891763/outbound-hero-desktop_feua3q.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         mainFeature: {
-            src: "/assets/outbound-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891760/outbound-1-desktop_msubtn.webp",
             alt: "Helpdesk outbound product visual",
         },
     },
@@ -198,84 +198,84 @@ export const featuresProps = {
             name: 'Global Payroll Automation',
             href: '/suite/hr/payroll-automation',
             description: 'Process payroll across multiple countries with automated tax compliance.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'token-compensation-management',
             name: 'Token Compensation Management',
             href: '/suite/hr/token-compensation',
             description: 'Handle grants, vesting, and releases across multiple blockchain networks.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'multi-currency-payment-processing',
             name: 'Multi-Currency Payment Processing',
             href: '/suite/hr/multi-currency-payments',
             description: 'Support fiat, crypto, and token payments in single payroll runs.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'smart-contract-vesting',
             name: 'Smart Contract Vesting',
             href: '/suite/hr/smart-vesting',
             description: 'Automatically execute token releases according to vesting schedules.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'employee-self-service-portal',
             name: 'Employee Self-Service Portal',
             href: '/suite/hr/employee-portal',
             description: 'Provide access to pay stubs, tax documents, and compensation details.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'benefits-administration',
             name: 'Benefits Administration',
             href: '/suite/hr/benefits',
             description: 'Manage health insurance, retirement plans, and crypto-native benefits.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'time-attendance-tracking',
             name: 'Time & Attendance Tracking',
             href: '/suite/hr/time-tracking',
             description: 'Integrate with time tracking systems for accurate payroll calculation.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'expense-management',
             name: 'Expense Management',
             href: '/suite/hr/expense-management',
             description: 'Process and reimburse expenses in both fiat and digital assets.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'compliance-reporting',
             name: 'Compliance Reporting',
             href: '/suite/hr/compliance-reporting',
             description: 'Generate required reports for tax authorities and regulatory bodies.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'workflow-automation',
             name: 'Workflow Automation',
             href: '/suite/hr/workflow-automation',
             description: 'Streamline approvals for hires, promotions, and compensation changes.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'role-based-access-controls',
             name: 'Role-Based Access Controls',
             href: '/suite/hr/access-controls',
             description: 'Manage HR data access with granular permission settings.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'api-first-integration',
             name: 'API-First Integration',
             href: '/suite/hr/api-integration',
             description: 'Connect with existing HRIS, accounting, and compliance systems.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         }
     ],
     defaultActiveFeature: "omnichannel",

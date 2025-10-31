@@ -103,7 +103,7 @@ export const featuresData: FeatureItem[] = [
     ctaText: "Request Access",
     ctaLink: "/contact/request-access",
     image: {
-      src: "/assets/submitted.webp",
+      src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/submitted_kfe8sn.webp",
       alt: "Illustration for Find and Close the Right Buyers with Apollo's B2B Database",
     },
   },
@@ -122,7 +122,7 @@ export const featuresData: FeatureItem[] = [
 
     imgbg: "#DCD2FD",
     image: {
-      src: "/assets/host.webp",
+      src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891684/host_dyjscj.webp",
       alt: "Illustration for Use Apollo's B2B Database Wherever You Work",
       height: "h-[320px]",
     },
@@ -142,7 +142,7 @@ export const featuresData: FeatureItem[] = [
     ctaText: "Request Access",
     ctaLink: "/contact/request-access",
     image: {
-      src: "/assets/insights.webp",
+      src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891734/insights_pw71zn.webp",
       alt: "Illustration for bigger deals Apollo's B2B Database ",
     },
   },
@@ -161,7 +161,7 @@ export const featuresData: FeatureItem[] = [
     ),
     imgbg: "#A288FA",
     image: {
-      src: "/assets/filled.webp",
+      src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891628/filled_q3r9b7.webp",
       alt: "Illustration for bigger deals Apollo's B2B Database ",
     },
   },

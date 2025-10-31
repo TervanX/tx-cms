@@ -3,7 +3,7 @@ import { HeroSectionProps } from "@/app/types/startups.types";
 const HeroSection: React.FC<HeroSectionProps> = ({
   title,
   description,
-  imageUrl = "/assets/image5.webp"
+  imageUrl = "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891702/image5_nrmljf.webp",
 }) => {
   return (
     <section className="px-6 md:px-12 lg:px-16 xl:px-20 2xl:px-24">
@@ -18,11 +18,17 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               {description}
             </div>
             <div className="flex justify-start ">
-              <Button variant="primary" size="lg">Apply now</Button>
+              <Button variant="primary" size="lg">
+                Apply now
+              </Button>
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <img src={imageUrl} className="relative aspect-square w-full rounded-xl" alt={title} />
+            <img
+              src={imageUrl}
+              className="relative aspect-square w-full rounded-xl"
+              alt={title}
+            />
           </div>
         </div>
         <div className="h-10" />

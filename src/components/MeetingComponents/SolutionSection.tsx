@@ -13,7 +13,7 @@ const SolutionSection = () => {
         <div className="relative z-10 flex items-center justify-center   lg:px-4 py-6">
           <div className="flex  items-center justify-start w-full gap-4">
             <img
-              src="/assets/jens.webp"
+              src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891735/jens_v9pjol.webp"
               className="w-[80px] lg:w-[105px] h-auto rounded-full"
               alt=""
             />

@@ -5,8 +5,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const TOP_URL = "/assets/top.svg";
-const BOTTOM_URL = "/assets/bottom.svg";
+const TOP_URL =
+  "https://res.cloudinary.com/dx1etzf66/image/upload/v1761890098/top_n54dx6.svg";
+const BOTTOM_URL =
+  "https://res.cloudinary.com/dx1etzf66/image/upload/v1761890158/bottom_iqgxtl.svg";
 
 const items = [
   {
@@ -14,32 +16,40 @@ const items = [
     subTitle:
       "Access scalable APIs for wallets, settlements, on/off-ramps, KYC, and liquidity — everything needed to power modern financial ecosystems.",
     description: "Power every transaction — from payments to digital assets",
-    scrollUrl: "/assets/1.svg",
-    stackUrl: "/assets/1.svg",
+    scrollUrl:
+      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889069/1_n60rey.svg",
+    stackUrl:
+      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889069/1_n60rey.svg",
   },
   {
     title: "INTEGRATIONS",
     subTitle:
       "LayerX integrates with major blockchain networks, payment processors, and banking partners, letting you launch multi-asset products without switching platforms.",
     description: "Connect seamlessly with banks, chains, and protocols",
-    scrollUrl: "/assets/2.svg",
-    stackUrl: "/assets/3.svg",
+    scrollUrl:
+      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889069/2_hn4h5m.svg",
+    stackUrl:
+      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889093/3_tybxci.svg",
   },
   {
     title: "ACTIONS",
     subTitle:
       "Built with bank-grade encryption, AML/KYC automation, and regional compliance to help your products scale confidently across jurisdictions.",
     description: "Enterprise-grade security and regulatory coverage",
-    scrollUrl: "/assets/4.svg",
-    stackUrl: "/assets/5.svg",
+    scrollUrl:
+      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761888993/4_a2weqt.svg",
+    stackUrl:
+      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761888995/5_ouxm1i.svg",
   },
   {
     title: "AI & AUTOMATION",
     subTitle:
       "LayerX AI engine automates reconciliation, fraud detection, and liquidity optimization — reducing manual workloads while improving trust and speed.",
     description: "The intelligent core for financial operations",
-    scrollUrl: "/assets/6.svg",
-    stackUrl: "/assets/7.svg",
+    scrollUrl:
+      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761888993/6_sinna7.svg",
+    stackUrl:
+      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761888993/7_ilmz9v.svg",
   },
 ];
 
@@ -274,7 +284,10 @@ const StackedAnimation: React.FC = () => {
               <div className="relative h-20">
                 <div className="flex items-center h-full mt-4">
                   <div className="">
-                    <img src="/assets/right-arrow.svg" alt="" />
+                    <img
+                      src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891782/right-arrow_awd3iv.svg"
+                      alt=""
+                    />
                   </div>
 
                   <div className="h-full w-32 overflow-hidden">

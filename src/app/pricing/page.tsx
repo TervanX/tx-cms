@@ -32,31 +32,31 @@ const PricingPage: React.FC = () => {
         >
           <div className={`flex flex-wrap items-center gap-8 justify-center`}>
             <img
-              src="/assets/Stripe.png"
+              src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/Stripe_ecrzh7.png"
               alt="Stripe"
               height="20"
               className="h-10 filter invert-0 brightness-0"
             />
             <img
-              src="/assets/flutterwave.svg"
+              src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761890451/flutterwave-1_iivhor.svg"
               alt="flutterwave"
               height="20"
               className="h-10 filter invert-0 brightness-0"
             />
             <img
-              src="/assets/Checkbox.webp"
+              src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761889000/Checkbox_y9pnxl.webp"
               alt="Checkbox"
               height="20"
               className="h-10 filter invert-0 brightness-0"
             />
             <img
-              src="/assets/1200px-Paystack_Logo.png"
+              src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761890641/1200px-Paystack_Logo_pgortw.png"
               alt="Paystack"
               height="20"
               className="h-10 filter invert-0 brightness-0"
             />
             <img
-              src="/assets/fireblocks-logo.svg"
+              src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761890602/fireblocks-logo_aioa7u.svg"
               alt="fireblocks"
               height="20"
               className="h-10 filter invert-0 brightness-0"

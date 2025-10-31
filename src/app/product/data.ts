@@ -7,15 +7,15 @@ export const productivityProps = {
         "LayerX automates settlements, reconciliation, and compliance — all powered by on-chain intelligence.",
     images: {
         mobile: {
-            src: "/assets/solution1.jpg",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/solution1_avbfxx.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
-            src: "/assets/solution1.jpg",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/solution1_avbfxx.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         product: {
-            src: "/assets/productivity-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889043/productivity-1-desktop_sdzsp4.webp",
             alt: "Helpdesk product UI",
         },
     },
@@ -63,7 +63,7 @@ export const productivityProps = {
         </g>
       </svg>`,
         image: {
-            src: "/assets/lightspeed-headshot-min.png",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891745/lightspeed-headshot-min_qiohvg.png",
             alt: "Angelo Livanos",
         },
     },
@@ -78,15 +78,15 @@ export const usabilityProps = {
         "Crypto Payments is simple to set up, powerful to scale, and intuitive to use. Unified dashboards, multi-chain visibility, and an API-first experience make it effortless for teams and developers alike.",
     images: {
         mobile: {
-            src: "/assets/usability-hero-mobile.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891812/usability-hero-desktop_uirwq4.webp",
             alt: "Illustration of people walking down a flowery path",
         },
         desktop: {
-            src: "/assets/usability-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891812/usability-hero-desktop_uirwq4.webp",
             alt: "Illustration of people walking down a flowery path",
         },
         mainFeature: {
-            src: "/assets/usability-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891807/usability-1-desktop_sdggi4.webp",
             alt: "Helpdesk usability instant insight product visual",
         },
     },
@@ -105,7 +105,7 @@ export const usabilityProps = {
     ],
     additionalFeatures: [
         {
-            image: { src: "/assets/usability-2-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891808/usability-2-desktop_h3f0oo.webp" },
             title: 'Unified payment flows',
             description: 'Centralize collections and settlements across multiple chains with one dashboard.',
             list: {
@@ -117,7 +117,7 @@ export const usabilityProps = {
             }
         },
         {
-            image: { src: "/assets/usability-3-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891810/usability-3-desktop_ofrgcb.webp" },
             title: 'Integrate with your existing tools',
             description: 'Easily connect to ERP, accounting, or compliance systems with SDKs and APIs.',
             list: {
@@ -142,15 +142,15 @@ export const outboundProps = {
         "Turn blockchain activity into financial intelligence. LayerX transforms millions of on-chain data points into real-time analytics, predictive insights, and AI-powered optimization, helping teams make smarter, faster financial decisions.",
     images: {
         mobile: {
-            src: "/assets/outbound-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891763/outbound-hero-desktop_feua3q.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {
-            src: "/assets/outbound-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891763/outbound-hero-desktop_feua3q.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         mainFeature: {
-            src: "/assets/outbound-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891760/outbound-1-desktop_msubtn.webp",
             alt: "Helpdesk outbound product visual",
         },
     },
@@ -192,91 +192,91 @@ export const featuresProps = {
             name: 'Automated Cross-Chain Settlement',
             href: '/suite/helpdesk/inbox',
             description: 'Seamlessly settle transactions across multiple blockchains without manual processes.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'smart-gas-routing',
             name: 'Smart Gas & Fee Routing',
             href: '/suite/helpdesk/copilot',
             description: 'Optimize costs with intelligent gas routing that automatically finds the most efficient fee paths.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'instant-reconciliation',
             name: 'Instant Reconciliation',
             href: '/suite/helpdesk/tickets',
             description: 'Reconcile transactions instantly with real-time sync between wallets, ledgers, and treasury systems.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'unified-treasury',
             name: 'Unified Treasury Dashboard',
             href: '/suite/helpdesk/omnichannel',
             description: 'Gain complete visibility and control of all your assets across blockchains and accounts in one interface.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'multi-asset-wallet',
             name: 'Multi-Asset Wallet Integration',
             href: '/suite/helpdesk/help-center',
             description: 'Manage and transact across hundreds of blockchains and tokens from a single dashboard.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'dynamic-liquidity',
             name: 'Dynamic Liquidity Allocation',
             href: '/app-store',
             description: 'Automatically rebalance and distribute liquidity across wallets, exchanges, and chains.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'institutional-security',
             name: 'Institutional-Grade Security',
             href: '/suite/helpdesk/reporting',
             description: 'Protect every transaction with MPC technology, encryption, and continuous monitoring.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'regulatory-compliance',
             name: 'Regulatory Compliance Layer',
             href: '/suite/helpdesk/knowledge-hub',
             description: 'Stay compliant with integrated KYC, KYT, and AML analytics for every asset movement.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'access-controls',
             name: 'Access Controls & Role Management',
             href: '/suite/helpdesk/outbound',
             description: 'Define user roles and granular permissions to manage secure team and enterprise operations.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'ai-settlement',
             name: 'AI-Driven Settlement Optimization',
             href: '/suite/helpdesk/inbox',
             description: 'Leverage AI to predict the fastest and most cost-efficient settlement routes across chains.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'error-recovery',
             name: 'Automated Error Recovery',
             href: '/suite/helpdesk/copilot',
             description: 'Detect failed transactions and automatically retry or reroute them for guaranteed delivery.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'predictive-insights',
             name: 'Predictive Treasury Insights',
             href: '/suite/helpdesk/tickets',
             description: 'Anticipate liquidity needs, network fee trends, and volume patterns using intelligent forecasting.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'transaction-analytics',
             name: 'Real-Time Transaction Analytics',
             href: '/suite/helpdesk/omnichannel',
             description: 'Monitor, visualize, and analyze all transactions in real time across every integrated blockchain.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         }
     ],
     defaultActiveFeature: "omnichannel",

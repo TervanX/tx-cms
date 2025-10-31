@@ -7,15 +7,15 @@ export const productivityProps = {
         "TX Shield automates the most critical aspects of digital asset protection—from threat detection to incident response—operating with precision 24/7 across all your blockchain operations.",
     images: {
         mobile: {
-            src: "/assets/solution1.jpg",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/solution1_avbfxx.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
-            src: "/assets/solution1.jpg",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/solution1_avbfxx.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         product: {
-            src: "/assets/productivity-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889043/productivity-1-desktop_sdzsp4.webp",
             alt: "Helpdesk product UI",
         },
     },
@@ -63,7 +63,7 @@ fill="none"
 </svg>`,
 
         image: {
-            src: "/assets/lightspeed-headshot-min.png",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891745/lightspeed-headshot-min_qiohvg.png",
             alt: "Angelo Livanos",
         },
     },
@@ -78,15 +78,15 @@ export const usabilityProps = {
         "An intuitive platform for managing complex security operations across multiple chains, with full visibility and control over all protective measures.",
     images: {
         mobile: {
-            src: "/assets/usability-hero-mobile.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891812/usability-hero-desktop_uirwq4.webp",
             alt: "Illustration of people walking down a flowery path",
         },
         desktop: {
-            src: "/assets/usability-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891812/usability-hero-desktop_uirwq4.webp",
             alt: "Illustration of people walking down a flowery path",
         },
         mainFeature: {
-            src: "/assets/usability-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891807/usability-1-desktop_sdggi4.webp",
             alt: "Helpdesk usability instant insight product visual",
         },
     },
@@ -101,7 +101,7 @@ export const usabilityProps = {
     ],
     additionalFeatures: [
         {
-            image: { src: "/assets/usability-2-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891808/usability-2-desktop_h3f0oo.webp" },
             title: 'Visual Security Policy Builder',
             description: 'Create and modify security rules without technical expertise. Use our drag-and-drop interface to define threat parameters, response protocols, and risk thresholds tailored to your specific security requirements.',
             list: {
@@ -109,7 +109,7 @@ export const usabilityProps = {
             }
         },
         {
-            image: { src: "/assets/usability-3-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891810/usability-3-desktop_ofrgcb.webp" },
             title: 'Pre-Built Security Templates',
             description: 'Accelerate deployment with industry-specific protection frameworks:',
             list: {
@@ -122,7 +122,7 @@ export const usabilityProps = {
             }
         },
         {
-            image: { src: "/assets/usability-3-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891810/usability-3-desktop_ofrgcb.webp" },
             title: 'Comprehensive Security Integration',
             description: 'Connect TX Shield to your entire security ecosystem:',
             list: {
@@ -181,15 +181,15 @@ export const outboundProps = {
     },
     images: {
         mobile: {
-            src: "/assets/outbound-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891763/outbound-hero-desktop_feua3q.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {
-            src: "/assets/outbound-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891763/outbound-hero-desktop_feua3q.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         mainFeature: {
-            src: "/assets/outbound-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891760/outbound-1-desktop_msubtn.webp",
             alt: "Helpdesk outbound product visual",
         },
     },
@@ -211,84 +211,84 @@ export const featuresProps = {
             name: 'AI Threat Detection',
             href: '/suite/helpdesk/inbox',
             description: "Real-time analysis of transaction patterns and wallet behaviors across all chains.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'automated-incident-response',
             name: 'Automated Incident Response',
             href: '/suite/helpdesk/copilot',
             description: "Millisecond response with pre-defined security protocols and mitigation measures.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'smart-contract-monitoring',
             name: 'Smart Contract Monitoring',
             href: '/suite/helpdesk/tickets',
             description: "Continuous audit and protection for deployed smart contracts.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'behavioral-anomaly-detection',
             name: 'Behavioral Anomaly Detection',
             href: '/suite/helpdesk/omnichannel',
             description: "AI-powered analysis of normal patterns and instant anomaly identification.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'multi-signature-safeguards',
             name: 'Multi-Signature Safeguards',
             href: '/suite/helpdesk/help-center',
             description: "Advanced approval workflows with threat-aware transaction blocking.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'phishing-scam-protection',
             name: "Phishing & Scam Protection",
             href: '/app-store',
             description: "Real-time detection of malicious domains and social engineering attempts.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'mev-attack-prevention',
             name: 'MEV Attack Prevention',
             href: '/suite/helpdesk/reporting',
             description: "Protection against front-running, sandwich attacks, and other MEV exploits.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'vulnerability-scanning',
             name: 'Vulnerability Scanning',
             href: '/suite/helpdesk/knowledge-hub',
             description: "Continuous assessment of smart contracts and protocol integrations.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'compliance-monitoring',
             name: 'Compliance Monitoring',
             href: '/suite/helpdesk/outbound',
             description: "Automated tracking of regulatory requirements and security standards.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'insurance-integration',
             name: 'Insurance Integration',
             href: '/suite/helpdesk/inbox',
             description: "Seamless connection to digital asset insurance providers for covered protection.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'audit-trail-generation',
             name: 'Audit Trail Generation',
             href: '/suite/helpdesk/copilot',
             description: "Comprehensive, immutable records of all security events and responses.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'api-first-security-integration',
             name: 'API-First Security Integration',
             href: '/suite/helpdesk/tickets',
             description: "Connect with existing security tools and monitoring systems.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
     ],
 };

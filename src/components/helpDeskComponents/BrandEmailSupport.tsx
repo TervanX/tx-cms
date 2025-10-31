@@ -10,22 +10,22 @@ const BrandEmailSupport: React.FC<BrandEmailSupportProps> = ({
       title: "Ensure every email is on-brand",
       description:
         "Support multiple email domains, assign logos and create custom signatures to ensure every customer email reflects your unique brand identity.",
-      img: "/assets/highlight.webp",
+      img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
     },
     {
       title: "Continue the conversation",
       description:
         "Move the conversation from live chat to email, and let customers pick up when it's most convenient to them.",
-      img: "/assets/highlight.webp",
+      img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
     },
     {
       title: "Track email performance",
       description:
         "Monitor performance metrics and customer satisfaction to maintain high CSAT for your email support.",
-      img: "/assets/highlight.webp",
+      img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
     },
   ],
-  backgroundImage = "/assets/image30.webp",
+  backgroundImage = "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
   backgroundAlt = "Brand support",
 }) => {
   const [active, setActive] = useState(0);

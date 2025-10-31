@@ -7,15 +7,15 @@ export const productivityProps = {
         "TX Account automates the most complex aspects of digital treasury management—from cash positioning to cross-chain settlements—executing with precision and intelligence around the clock.",
     images: {
         mobile: {
-            src: "/assets/solution1.jpg",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/solution1_avbfxx.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
-            src: "/assets/solution1.jpg",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/solution1_avbfxx.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         product: {
-            src: "/assets/productivity-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889043/productivity-1-desktop_sdzsp4.webp",
             alt: "Helpdesk product UI",
         },
     },
@@ -63,7 +63,7 @@ export const productivityProps = {
         </g>
       </svg>`,
         image: {
-            src: "/assets/lightspeed-headshot-min.png",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891745/lightspeed-headshot-min_qiohvg.png",
             alt: "Angelo Livanos",
         },
     },
@@ -78,15 +78,15 @@ export const usabilityProps = {
         "A unified interface for managing all financial operations across traditional banking and digital assets, with enterprise-grade security and controls.",
     images: {
         mobile: {
-            src: "/assets/usability-hero-mobile.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891812/usability-hero-desktop_uirwq4.webp",
             alt: "Illustration of people walking down a flowery path",
         },
         desktop: {
-            src: "/assets/usability-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891812/usability-hero-desktop_uirwq4.webp",
             alt: "Illustration of people walking down a flowery path",
         },
         mainFeature: {
-            src: "/assets/usability-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891807/usability-1-desktop_sdggi4.webp",
             alt: "Helpdesk usability instant insight product visual",
         },
     },
@@ -98,12 +98,12 @@ export const usabilityProps = {
     ],
     additionalFeatures: [
         {
-            image: { src: "/assets/usability-2-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891808/usability-2-desktop_h3f0oo.webp" },
             title: 'Visual Workflow Builder',
             description: 'Create and modify financial automation rules without technical expertise. Use our drag-and-drop interface to define cash management rules, payment approvals, and risk parameters',
         },
         {
-            image: { src: "/assets/usability-2-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891808/usability-2-desktop_h3f0oo.webp" },
             title: 'Pre-Built Treasury Templates',
             description: 'Accelerate deployment with industry-specific templates:',
             list: {
@@ -116,7 +116,7 @@ export const usabilityProps = {
             }
         },
         {
-            image: { src: "/assets/usability-2-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891808/usability-2-desktop_h3f0oo.webp" },
             title: 'Comprehensive Financial Integration',
             description: 'Connect TX Account to your entire financial ecosystem:',
             list: {
@@ -143,15 +143,15 @@ export const outboundProps = {
         "Move beyond basic balance tracking to predictive insights that optimize capital allocation and financial strategy.",
     images: {
         mobile: {
-            src: "/assets/outbound-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891763/outbound-hero-desktop_feua3q.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {
-            src: "/assets/outbound-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891763/outbound-hero-desktop_feua3q.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         mainFeature: {
-            src: "/assets/outbound-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891760/outbound-1-desktop_msubtn.webp",
             alt: "Helpdesk outbound product visual",
         },
     },
@@ -198,84 +198,84 @@ export const featuresProps = {
             name: 'Unified Balance Aggregation',
             href: '/suite/treasury/balance-aggregation',
             description: 'Real-time visibility across all bank accounts, crypto wallets, and chain positions.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'ai-cash-forecasting',
             name: 'AI Cash Forecasting',
             href: '/suite/treasury/cash-forecasting',
             description: 'Predict future cash positions and liquidity needs with intelligent modeling.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'automated-sweep-accounts',
             name: 'Automated Sweep Accounts',
             href: '/suite/treasury/sweep-accounts',
             description: 'Intelligently move funds between accounts to optimize interest and yield.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'cross-chain-settlement-engine',
             name: 'Cross-Chain Settlement Engine',
             href: '/suite/treasury/cross-chain-settlement',
             description: 'Seamlessly transfer assets between different blockchain networks.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'multi-currency-management',
             name: 'Multi-Currency Management',
             href: '/suite/treasury/multi-currency',
             description: 'Handle crypto, fiat, and token assets with automatic currency accounting.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'payment-automation',
             name: 'Payment Automation',
             href: '/suite/treasury/payment-automation',
             description: 'Schedule and execute complex payment workflows with approval controls.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'risk-monitoring-alerting',
             name: 'Risk Monitoring & Alerting',
             href: '/suite/treasury/risk-monitoring',
             description: 'Track exposure limits, concentration risks, and unusual activities.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'regulatory-reporting',
             name: 'Regulatory Reporting',
             href: '/suite/treasury/regulatory-reporting',
             description: 'Generate financial statements, audit trails, and compliance reports.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'yield-optimization',
             name: 'Yield Optimization',
             href: '/suite/treasury/yield-optimization',
             description: 'Automatically deploy idle cash to approved yield-generating strategies.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'approval-workflow-management',
             name: 'Approval Workflow Management',
             href: '/suite/treasury/approval-workflows',
             description: 'Configure multi-signature controls for financial transactions.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'real-time-reconciliation',
             name: 'Real-time Reconciliation',
             href: '/suite/treasury/reconciliation',
             description: 'Automatically match transactions across all accounts and systems.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'api-first-architecture',
             name: 'API-First Architecture',
             href: '/suite/treasury/api',
             description: 'Integrate with existing financial systems and custom applications.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         }
     ],
     defaultActiveFeature: "omnichannel",

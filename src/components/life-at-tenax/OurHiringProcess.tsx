@@ -39,28 +39,28 @@ interface CardProps {
 const cards: CardProps[] = [
   {
     tag: "Stage 1",
-    bg: "/assets/hiring.webp",
+    bg: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891682/hiring_lnub03.webp",
     stage: "Skill assessment",
     description:
       "You'll meet with 2-4 team members in a series of 1:1 conversations. These help us get a well-rounded sense of your skills, working style, and culture fit.",
   },
   {
     tag: "Stage 2",
-    bg: "/assets/hiring.webp",
+    bg: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891682/hiring_lnub03.webp",
     stage: "Culture fit",
     description:
       "We’ll assess alignment with our mission, values, and approach to collaboration.",
   },
   {
     tag: "Stage 3",
-    bg: "/assets/hiring.webp",
+    bg: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891682/hiring_lnub03.webp",
     stage: "Technical challenge",
     description:
       "You’ll complete a brief task relevant to your role to show us how you approach real-world problems.",
   },
   {
     tag: "Stage 4",
-    bg: "/assets/hiring.webp",
+    bg: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891682/hiring_lnub03.webp",
     stage: "Final interview",
     description:
       "You’ll meet with leadership to discuss your growth, impact, and fit within the team.",

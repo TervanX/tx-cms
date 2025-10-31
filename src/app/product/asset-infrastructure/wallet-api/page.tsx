@@ -91,8 +91,12 @@ export default function WalletsAPI() {
           text: "Contact Sales",
           href: "/contact/contact-sales",
         }}
-        backgroundImage={"/assets/helpdesk-ctabanner.webp"}
-        backgroundImageLQIP={"/assets/helpdesk-ctabanner-lqip.webp"}
+        backgroundImage={
+          "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889003/helpdesk-ctabanner_ogrzvq.webp.webp"
+        }
+        backgroundImageLQIP={
+          "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889003/helpdesk-ctabanner_ogrzvq.webp-lqip.webp"
+        }
         altText="CTA Banner"
       />
     </main>

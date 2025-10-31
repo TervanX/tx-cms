@@ -15,28 +15,28 @@ const SalesPerform = () => {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4 px-3 lg:px-0 w-[80%] mx-auto lg:w-full">
           <div className="flex items-center justify-center">
             <img
-              src="/assets/2025-spring-top50-small-business-products.39d1f8e7.svg"
+              src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891847/2025-spring-top50-small-business-products.39d1f8e7_uzigqr.svg"
               className="max-h-[144px] max-w-[127px] object-contain"
               alt="Award 1"
             />
           </div>
           <div className="flex items-center justify-center">
             <img
-              src="/assets/2025-spring-top50-small-business-products.39d1f8e7.svg"
+              src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891847/2025-spring-top50-small-business-products.39d1f8e7_uzigqr.svg"
               className="max-h-[144px] max-w-[127px] object-contain"
               alt="Award 1"
             />
           </div>
           <div className="flex items-center justify-center">
             <img
-              src="/assets/2025-spring-top50-small-business-products.39d1f8e7.svg"
+              src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891847/2025-spring-top50-small-business-products.39d1f8e7_uzigqr.svg"
               className="max-h-[144px] max-w-[127px] object-contain"
               alt="Award 1"
             />
           </div>
           <div className="flex items-center justify-center">
             <img
-              src="/assets/2025-spring-top50-small-business-products.39d1f8e7.svg"
+              src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891847/2025-spring-top50-small-business-products.39d1f8e7_uzigqr.svg"
               className="max-h-[144px] max-w-[127px] object-contain"
               alt="Award 1"
             />

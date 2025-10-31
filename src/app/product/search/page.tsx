@@ -11,7 +11,7 @@ const ProductPage: React.FC = () => {
   return (
     <div>
       <HeroSection
-        backgroundImage="/assets/bg.5.svg"
+        backgroundImage="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891862/bg.5_rbcmlf.svg"
         backgroundAlt="Abstract wave pattern background with navy-blue gradient"
         tag="CONTACT & ACCOUNT SEARCH"
         heading="Better B2B lead generation & prospecting"

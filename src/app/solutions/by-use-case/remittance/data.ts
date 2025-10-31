@@ -50,29 +50,29 @@ export const remittancePageData = {
             {
                 title: "Cross-border corridor management",
                 description: "Optimize routes for 5,000+ currency corridors with intelligent liquidity allocation.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Cross-border corridor management",
             },
             {
                 title: "Real-time settlement engine",
                 description: "Process transfers with sub-minute finality using stablecoins and digital asset bridges.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Real-time settlement engine",
             },
             {
                 title: "Payout network integration",
                 description: "Connect to 500,000+ cash pickup locations, bank networks, and mobile money providers.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Payout network integration",
             },
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "Remittance Infrastructure",
     },
 
     callAndConversation: {
-        image: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
-        backgroundImage: "/assets/image30.webp",
+        image: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         primaryButton: {
             text: "Contact Sales",
             href: "/contact/contact-sales",
@@ -85,26 +85,26 @@ export const remittancePageData = {
             {
                 title: "Automated KYC verification",
                 description: "Instant identity verification across 200 countries with document validation and biometric checks.",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
             },
             {
                 title: "Real-time AML screening",
                 description: "Monitor transactions against 500+ global watchlists with AI-powered risk scoring.",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
             },
             {
                 title: "Travel rule compliance",
                 description: "Automated IVMS-101 data exchange between VASPs with secure message formatting.",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
             },
             {
                 title: "Regulatory reporting",
                 description: "Generate reports for FinCEN, FCA, AUSTRAC, and other global regulators with one click.",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
             },
         ]
     },
@@ -117,46 +117,46 @@ export const remittancePageData = {
             {
                 title: "Best execution routing",
                 description: "Access 50+ liquidity providers for optimal FX rates with transparent fee structures.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
             {
                 title: "Dynamic pricing engine",
                 description: "Real-time rate calculation with margin control and competitive positioning.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
             {
                 title: "Risk management tools",
                 description: "Hedge currency exposure, manage liquidity positions, and monitor corridor limits.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
     },
 
     globalWhatsapp: {
         cards: [
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "White-label applications",
                 description: "Fully branded mobile apps and web platforms with customizable user flows.",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "Multi-channel access",
                 description: "Support web, mobile, API, and agent-based transfers with consistent experience.",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "Real-time tracking",
                 description: "End-to-end transfer status updates with estimated delivery times and notifications.",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
         ],
         title: "Customer Experience",
         tag: "",
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         description: "Seamless transfer journeys",
     },
 
@@ -167,25 +167,25 @@ export const remittancePageData = {
             {
                 title: "Global Coverage",
                 description: "200+ supported countries, 150+ fiat currencies, 500,000+ payout locations, 24/7 operation availability",
-                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01.webp?&q=90",
+                imageSrc: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891688/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01_agtevz.webp",
                 imageAlt: "Global Coverage",
             },
             {
                 title: "Competitive Pricing",
                 description: "80% lower than traditional costs, Transparent fee breakdown, No hidden exchange rate margins, Bulk transfer discounts",
-                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02.webp?&q=90",
+                imageSrc: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889040/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02_raaawc.webp",
                 imageAlt: "Competitive Pricing",
             },
             {
                 title: "Speed & Reliability",
                 description: "90% of transfers in under 60 seconds, 99.99% system uptime, Instant recipient notification, Automated failure recovery",
-                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
+                imageSrc: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889040/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03_cede0g.webp",
                 imageAlt: "Speed & Reliability",
             },
             {
                 title: "Security & Trust",
                 description: "$500M in insurance coverage, Regulatory compliance across jurisdictions, Bank-grade security protocols, Regular third-party audits",
-                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
+                imageSrc: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889040/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03_cede0g.webp",
                 imageAlt: "Security & Trust",
             },
         ],
@@ -198,52 +198,52 @@ export const remittancePageData = {
             {
                 title: "API-First Integration",
                 description: "RESTful APIs for all operations, Webhooks for real-time notifications, SDKs in 8 programming languages, Comprehensive documentation",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
             {
                 title: "White-Label Solutions",
                 description: "Custom mobile applications, Branded web platforms, Agent management systems, Customer support tools",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
             {
                 title: "Modular Components",
                 description: "Standalone KYC/AML module, FX rate management only, Payout network access, Compliance reporting suite",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         tag: ""
     },
 
     corridorSolutions: {
         cards: [
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "USD ⇄ MXN",
                 description: "30-second settlement times, 15,000+ cash pickup locations in Mexico, 1% all-in cost, Full CIBAN compatibility",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "EUR ⇄ PHP",
                 description: "Direct to Philippine bank accounts, 45-second processing, 0.8% average cost, Mobile wallet integration",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "GBP ⇄ INR",
                 description: "Real-time RBI compliance, 60-second bank transfers, 1.2% total cost, PAN card validation",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "AUD ⇄ VND",
                 description: "30,000+ payout locations in Vietnam, 1-minute processing, 1.5% all-in cost, Multi-language support",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
         ],
         title: "Corridor-Specific Solutions",
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         description: "",
         tag: ""
     },
@@ -255,15 +255,15 @@ export const remittancePageData = {
             {
                 title: "Operational Efficiency",
                 description: "80% reduction in transfer costs, 99% automation of compliance checks, 90% faster settlement times, 60% reduction in operational overhead",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
             {
                 title: "Business Impact",
                 description: "40% increase in transfer volume, 35% higher customer satisfaction, 50% growth in new corridors, 25% improvement in customer retention",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         tag: ""
     },
 
@@ -277,7 +277,7 @@ export const remittancePageData = {
 
     bannerCTA: {
         title: "Get Started",
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         primaryButton: {
             text: "Get Started",
             href: "/contact/request-access",

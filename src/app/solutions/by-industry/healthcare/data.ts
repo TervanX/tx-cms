@@ -49,39 +49,39 @@ export const healthcarePageData = {
                 title: "Electronic Health Records (EHR)",
                 description:
                     "Blockchain-secured patient data with HIPAA-compliant access controls and audit trails.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Electronic Health Records",
             },
             {
                 title: "Patient data sovereignty",
                 description:
                     "Give patients control over their health data with permissioned access and usage tracking.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Patient data sovereignty",
             },
             {
                 title: "Interoperability solutions",
                 description:
                     "Seamless data exchange between hospitals, clinics, and providers with maintained data integrity.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Interoperability solutions",
             },
             {
                 title: "Clinical trial data management",
                 description:
                     "Immutable trial records, patient consent tracking, and real-time research data access.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Clinical trial data management",
             },
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
     },
 
     callAndConversation: {
         image:
-            "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
-        backgroundImage: "/assets/image30.webp",
+            "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         primaryButton: {
             text: "Contact Sales",
             href: "/contact/contact-sales",
@@ -95,29 +95,29 @@ export const healthcarePageData = {
                 title: "Insurance claims processing",
                 description:
                     "Automate claims adjudication with smart contracts, reducing processing time from weeks to hours.",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
             },
             {
                 title: "Patient billing automation",
                 description:
                     "Streamline patient statements, payment plans, and collections across multiple payment methods.",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
             },
             {
                 title: "Cross-border medical payments",
                 description:
                     "Facilitate medical tourism with instant international payments and automated currency conversion.",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
             },
             {
                 title: "Clinical trial compensation",
                 description:
                     "Automate patient reimbursement and site payments with transparent tracking and instant settlement.",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
             },
         ]
     },
@@ -131,64 +131,64 @@ export const healthcarePageData = {
                 title: "Drug provenance verification",
                 description:
                     "Track pharmaceuticals from manufacturer to patient with tamper-proof authenticity records.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
             {
                 title: "Temperature and condition monitoring",
                 description:
                     "IoT integration with blockchain logging for sensitive medications and vaccines.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
             {
                 title: "Recall management",
                 description:
                     "Instant, targeted recalls with precise batch tracking and patient notification systems.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
             {
                 title: "Inventory optimization",
                 description:
                     "AI-powered demand forecasting and automated replenishment across healthcare networks.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
     },
 
     globalWhatsapp: {
         cards: [
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "Research data marketplace",
                 description:
                     "Secure, permissioned access to anonymized patient data for medical research.",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "Intellectual property protection",
                 description:
                     "Time-stamp research discoveries, manage patents, and track licensing agreements.",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "Collaborative research platforms",
                 description:
                     "Multi-institution research projects with shared data and transparent contribution tracking.",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "Trial participant management",
                 description:
                     "Streamline recruitment, consent, and compensation for clinical trial participants.",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
         ],
         title: "Accelerating healthcare innovation",
         tag: "Medical Research & Development",
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         description: "",
     },
 
@@ -198,43 +198,43 @@ export const healthcarePageData = {
         description: "",
         cards: [
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 title: "Secure telemedicine platforms",
                 description: "Blockchain-verified practitioner credentials and encrypted video consultations.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Secure telemedicine platforms",
                 lists: []
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 title: "Remote patient monitoring",
                 description: "IoT device data integration with secure health record synchronization.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Remote patient monitoring",
                 lists: []
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 title: "Prescription management",
                 description: "E-prescriptions with verification, abuse prevention, and pharmacy coordination.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Prescription management",
                 lists: []
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 title: " Medical device integration",
                 description: "Secure data streaming from connected health devices with patient consent management.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Medical device integration",
                 lists: []
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
 
@@ -247,9 +247,9 @@ export const healthcarePageData = {
             {
                 title: " Compliance & Security",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Compliance & Security",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "HIPAA and GDPR compliant",
@@ -261,9 +261,9 @@ export const healthcarePageData = {
             {
                 title: "Patient Privacy",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Patient Privacy",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "Zero-knowledge proof verification",
@@ -275,9 +275,9 @@ export const healthcarePageData = {
             {
                 title: " Supply Chain Security",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Supply Chain Security",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "DSCSA compliance for drug tracking",
@@ -289,9 +289,9 @@ export const healthcarePageData = {
             {
                 title: "Analytics & Reporting",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Analytics & Reporting",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "Real-time operational analytics",
@@ -301,7 +301,7 @@ export const healthcarePageData = {
                 ]
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
     },
@@ -313,9 +313,9 @@ export const healthcarePageData = {
             {
                 title: "Performance",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Performance",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "Sub-second data access for critical care",
@@ -327,8 +327,8 @@ export const healthcarePageData = {
             {
                 title: " Security",
                 description: "",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 imageAlt: "Security",
                 lists: [
@@ -341,9 +341,9 @@ export const healthcarePageData = {
             {
                 title: "Integration",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Integration",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 lists: [
                     "FHIR API for EHR systems",
                     "HL7 compatibility",
@@ -352,7 +352,7 @@ export const healthcarePageData = {
                 ]
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
     },
@@ -364,9 +364,9 @@ export const healthcarePageData = {
             {
                 title: "Hospitals & Health Systems",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Hospitals & Health Systems",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "Unified patient identity management",
@@ -378,9 +378,9 @@ export const healthcarePageData = {
             {
                 title: "Pharmaceutical Companies",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Pharmaceutical Companies",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "Clinical trial management",
@@ -392,9 +392,9 @@ export const healthcarePageData = {
             {
                 title: "Health Insurance Providers",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Health Insurance Providers",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "Claims processing automation",
@@ -406,9 +406,9 @@ export const healthcarePageData = {
             {
                 title: "Medical Research Institutions",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Medical Research Institutions",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "Research data integrity",
@@ -418,7 +418,7 @@ export const healthcarePageData = {
                 ]
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
     },
@@ -430,9 +430,9 @@ export const healthcarePageData = {
             {
                 title: " Operational Efficiency",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Operational Efficiency",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "70% faster claims processing",
@@ -444,9 +444,9 @@ export const healthcarePageData = {
             {
                 title: " Financial Impact",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Financial Impact",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "40% reduction in claim denials",
@@ -458,9 +458,9 @@ export const healthcarePageData = {
             {
                 title: " Patient Outcomes",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Patient Outcomes",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "35% better care coordination",
@@ -470,7 +470,7 @@ export const healthcarePageData = {
                 ]
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
     },
@@ -482,9 +482,9 @@ export const healthcarePageData = {
             {
                 title: " Operational Efficiency",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Operational Efficiency",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "70% faster claims processing",
@@ -496,9 +496,9 @@ export const healthcarePageData = {
             {
                 title: " Financial Impact",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Financial Impact",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "40% reduction in claim denials",
@@ -510,9 +510,9 @@ export const healthcarePageData = {
             {
                 title: " Patient Outcomes",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Patient Outcomes",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "35% better care coordination",
@@ -522,7 +522,7 @@ export const healthcarePageData = {
                 ]
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
     },
@@ -534,9 +534,9 @@ export const healthcarePageData = {
             {
                 title: "Phase 1: Foundation (4-6 weeks)",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Foundation Phase",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 lists: [
                     "Compliance and security setup",
                     "EHR system integration",
@@ -547,9 +547,9 @@ export const healthcarePageData = {
             {
                 title: "Phase 2: Expansion (8-10 weeks)",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Expansion Phase",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "Full organization rollout",
@@ -561,9 +561,9 @@ export const healthcarePageData = {
             {
                 title: "Phase 3: Optimization (12-16 weeks)",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Optimization Phase",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 lists: [
                     "Multi-organization data sharing",
                     "Research platform deployment",
@@ -572,7 +572,7 @@ export const healthcarePageData = {
                 ]
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
 
@@ -585,9 +585,9 @@ export const healthcarePageData = {
             {
                 title: "US Healthcare Regulations",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "US Healthcare Regulations",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 lists: [
                     "HIPAA privacy and security rules",
                     "HITECH Act compliance",
@@ -598,9 +598,9 @@ export const healthcarePageData = {
             {
                 title: "International Standards",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "International Standards",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 lists: [
                     "GDPR for European patients",
                     "PIPEDA for Canadian healthcare",
@@ -611,9 +611,9 @@ export const healthcarePageData = {
             {
                 title: "Industry Certifications",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Industry Certifications",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 lists: [
                     "HITRUST CSF certification",
                     "SOC 2 Type II compliance",
@@ -622,7 +622,7 @@ export const healthcarePageData = {
                 ]
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
     },
@@ -632,11 +632,11 @@ export const healthcarePageData = {
         description: "",
         cards: [
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 title: "Community Health Plan",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Community Health Plan",
                 lists: [
                     "$2,999 per month",
@@ -646,10 +646,10 @@ export const healthcarePageData = {
                 ]
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "Health System Plan",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Health System Plan",
                 lists: [
                     "$9,999 per month",
@@ -659,10 +659,10 @@ export const healthcarePageData = {
                 ]
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "Enterprise Network Plan",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Enterprise Network Plan",
                 lists: [
                     "Custom pricing",
@@ -672,7 +672,7 @@ export const healthcarePageData = {
                 ]
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
     },
@@ -684,25 +684,25 @@ export const healthcarePageData = {
             {
                 title: "Secure telemedicine platforms",
                 description: "Blockchain-verified practitioner credentials and encrypted video consultations.",
-                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01.webp?&q=90",
+                imageSrc: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891688/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01_agtevz.webp",
                 imageAlt: "Secure telemedicine platforms",
             },
             {
                 title: "Remote patient monitoring",
                 description: "IoT device data integration with secure health record synchronization.",
-                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02.webp?&q=90",
+                imageSrc: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889040/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02_raaawc.webp",
                 imageAlt: "Remote patient monitoring",
             },
             {
                 title: "Prescription management",
                 description: "E-prescriptions with verification, abuse prevention, and pharmacy coordination.",
-                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
+                imageSrc: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889040/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03_cede0g.webp",
                 imageAlt: "Prescription management",
             },
             {
                 title: "Medical device integration",
                 description: "Secure data streaming from connected health devices with patient consent management.",
-                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
+                imageSrc: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889040/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03_cede0g.webp",
                 imageAlt: "Medical device integration",
             },
         ],
@@ -718,7 +718,7 @@ export const healthcarePageData = {
 
     bannerCTA: {
         title: "Get Started",
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         primaryButton: {
             text: "Schedule Demo",
             href: "/demo",

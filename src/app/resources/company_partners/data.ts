@@ -30,25 +30,25 @@ export const supportData = {
             {
                 title: "Sales",
                 description: "Find the right buyers at the right time using our 210M+ contacts and 65+ filters, then keep deals rolling — all from one place.",
-                image: "/assets/image6.webp",
+                image: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891703/image6_bkr0sn.webp",
                 imagePosition: "left"
             },
             {
                 title: "Marketing",
                 description: "Send emails and launch marketing campaigns through Apollo, using out-of-the-box automations & signal-based triggers.",
-                image: "/assets/image7.webp",
+                image: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891705/image7_uju2vd.webp",
                 imagePosition: "right"
             },
             {
                 title: "Fundraising",
                 description: "Identify potential investors, automate outreach, and seamlessly manage relationships to streamline fundraising efforts.",
-                image: "/assets/image8.webp",
+                image: "image8",
                 imagePosition: "left"
             },
             {
                 title: "Revenue Operations",
                 description: "Automate outreach, manage leads, and track performance metrics to fine-tune strategies and boost revenue growth.",
-                image: "/assets/image9.webp",
+                image: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891708/image9_rwtpeg.webp",
                 imagePosition: "right"
             }
         ],
@@ -56,7 +56,7 @@ export const supportData = {
     },
     bannerdata: {
         title: "Join over 3,000 startups propelling their business forward with Apollo",
-        backgroundImage: "/assets/image10.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891709/image10_hxxmdc.webp",
         buttonText: "Apply now"
     },
     testimonialdata: {
@@ -64,34 +64,34 @@ export const supportData = {
             {
                 id: 1,
                 company: "Paraform",
-                logo: "/assets/paraform.svg",
+                logo: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891764/paraform_qowzol.svg",
                 title: "How to win your startup its first 100 customers",
                 quote: "Apollo makes it easy to target our ICP. You can find, for example, a high-intent head of talent that started their job within the last 6 months.",
                 author: "John Kim",
                 authorRole: "Founder at Paraform",
-                authorImage: "/assets/image11.webp",
+                authorImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891711/image11_wg6z88.webp",
                 link: ""
             },
             {
                 id: 2,
                 company: "Huntr",
-                logo: "/assets/huntr.svg",
+                logo: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891687/huntr_im2dnv.svg",
                 title: "How Huntr.co doubled revenue and cracked B2C partnerships",
                 quote: "Apollo makes it so smooth and easy to do everything all in one place — building lists, importing and exporting data, sorting into specific cohorts, and A/B testing our messaging.",
                 author: "Sam Wright",
                 authorRole: "Head of Operations at Huntr.co",
-                authorImage: "/assets/image12.webp",
+                authorImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891712/image12_bihxip.webp",
                 link: ""
             },
             {
                 id: 3,
                 company: "lfdm",
-                logo: "/assets/lfdm.svg",
+                logo: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891742/lfdm_tw8iho.svg",
                 title: "How to find, engage, and deliver to clients at scale",
                 quote: "I never recommend a tool I don’t trust,” Howard says, “For me, Apollo, is my insurance…For my clients, [I recommend] Apollo as their primary method for generating revenue streams.",
                 author: "Howard Lee",
                 authorRole: "Founder at LFDM Marketing",
-                authorImage: "/assets/image13.webp",
+                authorImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891713/image13_odvyl5.webp",
                 link: ""
             }
         ],
@@ -104,7 +104,7 @@ export const supportData = {
                 id: 'academy',
                 title: 'Visit Apollo Academy to learn new skills and become an Apollo power user.',
                 image: {
-                    src: '/assets/image15.webp',
+                    src: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891715/image14_szlyvm.webp',
                     sizes: '(max-width: 1024px) 100vw, 50vw',
                     alt: 'Apollo Academy'
                 },
@@ -118,7 +118,7 @@ export const supportData = {
                 id: 'slack-community',
                 title: 'Join our startup community to connect & learn from fellow entrepreneurs and experts.',
                 image: {
-                    src: '/assets/image16.webp',
+                    src: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891718/image16_obcymp.webp',
                     sizes: '(max-width: 1024px) 100vw, 50vw',
                     alt: 'Slack Community'
                 },
@@ -132,7 +132,7 @@ export const supportData = {
                 id: 'explore-marketplace',
                 title: 'Explore Apollos deal marketplace for exclusive discounts on SaaS tools.',
                 image: {
-                    src: '/assets/image17.webp',
+                    src: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891720/image17_xkongc.webp',
                     sizes: '(max-width: 1024px) 100vw, 50vw',
                     alt: 'Explore Marketplace'
                 },
@@ -146,7 +146,7 @@ export const supportData = {
                 id: 'outbound-sales',
                 title: 'Read Outbound Sales to learn a multi-channel approach to growing your startup.',
                 image: {
-                    src: '/assets/image18.webp',
+                    src: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891721/image18_stgpx9.webp',
                     sizes: '(max-width: 1024px) 100vw, 50vw',
                     alt: 'Read Outbound Sales'
                 },
@@ -164,7 +164,7 @@ export const supportData = {
         title: "Are you part of a startup community or backed by a VC?",
         description: "Check if your community is an Apollo partner and unlock your exclusive discount (or join the waitlist!) by applying today.",
         buttonText: "Apply now",
-        backgroundImage: "/assets/image14.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891715/image14_szlyvm.webp",
     },
     faqData: [
         {
@@ -189,77 +189,77 @@ export const supportData = {
             {
                 id: '1',
                 alt: '2025 spring best relationship',
-                src: '/assets/2025-spring-best-relatnionship.e852da01.svg',
+                src: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891836/2025-spring-best-relatnionship.e852da01_vtdqly.svg',
                 width: 105,
                 height: 120,
             },
             {
                 id: '2',
                 alt: '2025 spring best results',
-                src: '/assets/2025-spring-best-results.bd944908.svg',
+                src: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891837/2025-spring-best-results.bd944908_nmigwk.svg',
                 width: 105,
                 height: 120,
             },
             {
                 id: '3',
                 alt: '2025 spring best roi',
-                src: '/assets/2025-spring-best-roi.4e11006b.svg',
+                src: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761888995/2025-spring-best-roi.4e11006b_f3vu2m.svg',
                 width: 105,
                 height: 120,
             },
             {
                 id: '4',
                 alt: '2025 spring high performer',
-                src: '/assets/2025-spring-high-performer.ac61c4b0.svg',
+                src: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761888994/2025-spring-high-performer.ac61c4b0_zxxtk4.svg',
                 width: 105,
                 height: 120,
             },
             {
                 id: '5',
                 alt: '2025 spring momentum leader',
-                src: '/assets/2025-spring-momentum-leader.1dedd1e8.svg',
+                src: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761888994/2025-spring-high-performer.ac61c4b0_zxxtk4.svg',
                 width: 105,
                 height: 120,
             },
             {
                 id: '6',
                 alt: '2025 spring most implementable',
-                src: '/assets/2025-spring-most-implementable.357d0c18.svg',
+                src: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891844/2025-spring-most-implementable.357d0c18_lcmb6m.svg',
                 width: 105,
                 height: 120,
             },
             {
                 id: '7',
                 alt: '2025 spring top50 sales products',
-                src: '/assets/2025-spring-top50-sales-products.a56b5440.svg',
+                src: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891845/2025-spring-top50-sales-products.a56b5440_zmmo9y.svg',
                 width: 105,
                 height: 120,
             },
             {
                 id: '8',
                 alt: '2025 spring top50 small business products',
-                src: '/assets/2025-spring-top50-small-business-products.39d1f8e7.svg',
+                src: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891847/2025-spring-top50-small-business-products.39d1f8e7_uzigqr.svg',
                 width: 105,
                 height: 120,
             },
             {
                 id: '9',
                 alt: '2025 spring top100 best software products',
-                src: '/assets/2025-spring-top100-best-software-products.2ab8a2d3.svg',
+                src: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891848/2025-spring-top100-best-software-products.2ab8a2d3_yykhjr.svg',
                 width: 105,
                 height: 120,
             },
             {
                 id: '10',
                 alt: '2025 spring top100 global sellers',
-                src: '/assets/2025-spring-top100-global-sellers.8a1741b6.svg',
+                src: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891850/2025-spring-top100-global-sellers.8a1741b6_qgibsv.svg',
                 width: 105,
                 height: 120,
             },
             {
                 id: '11',
                 alt: '2025 spring top100 highest satisfation product',
-                src: '/assets/2025-spring-top100-highest-satisfation-product.2851ec87.svg',
+                src: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891852/2025-spring-top100-highest-satisfation-product.2851ec87_namqil.svg',
                 width: 105,
                 height: 120,
             },

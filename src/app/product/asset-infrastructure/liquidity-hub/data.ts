@@ -7,15 +7,15 @@ export const productivityProps = {
         "Liquidity Hub automates the most complex aspects of liquidity sourcing—venue selection, route optimization, and execution management—delivering superior trading outcomes with zero manual intervention.",
     images: {
         mobile: {
-            src: "/assets/solution1.jpg",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/solution1_avbfxx.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
-            src: "/assets/solution1.jpg",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/solution1_avbfxx.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         product: {
-            src: "/assets/productivity-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889043/productivity-1-desktop_sdzsp4.webp",
             alt: "Helpdesk product UI",
         },
     },
@@ -63,7 +63,7 @@ fill="none"
 </svg>`,
 
         image: {
-            src: "/assets/lightspeed-headshot-min.png",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891745/lightspeed-headshot-min_qiohvg.png",
             alt: "Angelo Livanos",
         },
     },
@@ -78,15 +78,15 @@ export const usabilityProps = {
         "From simple swaps to complex institutional orders, our unified API provides consistent, reliable access to the world's deepest liquidity pools without the complexity of multiple integrations.",
     images: {
         mobile: {
-            src: "/assets/usability-hero-mobile.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891812/usability-hero-desktop_uirwq4.webp",
             alt: "Illustration of people walking down a flowery path",
         },
         desktop: {
-            src: "/assets/usability-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891812/usability-hero-desktop_uirwq4.webp",
             alt: "Illustration of people walking down a flowery path",
         },
         mainFeature: {
-            src: "/assets/usability-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891807/usability-1-desktop_sdggi4.webp",
             alt: "Helpdesk usability instant insight product visual",
         },
     },
@@ -101,7 +101,7 @@ export const usabilityProps = {
     ],
     additionalFeatures: [
         {
-            image: { src: "/assets/usability-2-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891808/usability-2-desktop_h3f0oo.webp" },
             title: 'Pre-Built Trading Components',
             description: 'Accelerate integration with our production-ready modules:',
             list: {
@@ -113,7 +113,7 @@ export const usabilityProps = {
             }
         },
         {
-            image: { src: "/assets/usability-3-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891810/usability-3-desktop_ofrgcb.webp" },
             title: 'Smart Order Management',
             description: 'Implement sophisticated execution strategies without complex infrastructure:',
             list: {
@@ -125,7 +125,7 @@ export const usabilityProps = {
             }
         },
         {
-            image: { src: "/assets/usability-3-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891810/usability-3-desktop_ofrgcb.webp" },
             title: 'Seamless Ecosystem Integration',
             description: 'Connect Liquidity Hub to your entire trading stack:',
             list: {
@@ -185,15 +185,15 @@ export const outboundProps = {
     },
     images: {
         mobile: {
-            src: "/assets/outbound-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891763/outbound-hero-desktop_feua3q.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {
-            src: "/assets/outbound-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891763/outbound-hero-desktop_feua3q.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         mainFeature: {
-            src: "/assets/outbound-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891760/outbound-1-desktop_msubtn.webp",
             alt: "Helpdesk outbound product visual",
         },
     },
@@ -215,42 +215,42 @@ export const featuresProps = {
             name: 'Intelligent Order Splitting',
             href: '/suite/helpdesk/inbox',
             description: "Automatically fragment large orders across multiple venues to minimize market impact.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'cross-chain-liquidity-access',
             name: 'Cross-Chain Liquidity Access',
             href: '/suite/helpdesk/copilot',
             description: "Trade any asset on any chain through our intelligent bridge and wrapping aggregation.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'mev-protection-optimization',
             name: 'MEV Protection & Optimization',
             href: '/suite/helpdesk/tickets',
             description: "Detect and avoid malicious MEV while capturing beneficial arbitrage opportunities.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'dynamic-slippage-management',
             name: 'Dynamic Slippage Management',
             href: '/suite/helpdesk/omnichannel',
             description: "Auto-adjust slippage tolerance based on token volatility and market conditions.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'venue-performance-scoring',
             name: 'Venue Performance Scoring',
             href: '/suite/helpdesk/help-center',
             description: "Real-time ranking of liquidity sources based on fill rates, costs, and reliability.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'custom-routing-logic',
             name: "Custom Routing Logic",
             href: '/app-store',
             description: "Define proprietary routing rules and venue preferences while leveraging our infrastructure."
-            , image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            , image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
 
         },
         {
@@ -258,35 +258,35 @@ export const featuresProps = {
             name: 'Real-Time Price Feeds',
             href: '/suite/helpdesk/reporting',
             description: "Access aggregated, manipulation-resistant price data from 50+ independent sources."
-            , image: '/assets/photo-1552664730-d307ca884978.jpg'
+            , image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'advanced-charting-integration',
             name: 'Advanced Charting Integration',
             href: '/suite/helpdesk/knowledge-hub',
             description: "Embed professional trading charts with depth visualization and technical analysis.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'portfolio-rebalancing-automation',
             name: 'Portfolio Rebalancing Automation',
             href: '/suite/helpdesk/outbound',
             description: "Execute complex multi-asset rebalancing across all connected venues in single operations.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'yield-aware-execution',
             name: 'Yield-Aware Execution',
             href: '/suite/helpdesk/inbox',
             description: "Route trades through venues that offer additional yield or reward incentives."
-            , image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            , image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'institutional-grade-security',
             name: 'Institutional-Grade Security',
             href: '/suite/helpdesk/copilot',
             description: "MPC-signed transactions, smart contract audits, and continuous threat monitoring."
-            , image: '/assets/photo-1552664730-d307ca884978.jpg'
+            , image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'comprehensive-reporting-suite',
@@ -294,7 +294,7 @@ export const featuresProps = {
             href: '/suite/helpdesk/tickets',
             description: "Generate detailed execution analytics, cost breakdowns, and performance reports."
             ,
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
     ],
 };

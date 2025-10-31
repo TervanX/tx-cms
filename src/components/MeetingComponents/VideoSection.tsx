@@ -5,7 +5,7 @@ import Button from "../reusable/Button";
 import { VideoHeroProps } from "@/app/types/product.types";
 
 export default function VideoHero({
-  thumbnailSrc = "/assets/videoimage.webp",
+  thumbnailSrc = "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891815/videoimage_rjvqgt.webp",
   videoSrc = "https://www.youtube.com/watch?v=zIfkgC7ZPiQ",
   title = "Play video",
   className = "",

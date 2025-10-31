@@ -32,7 +32,7 @@ const FEATURE_CATEGORIES: FeatureCategory[] = [
         color: "text-[#105BCC]",
         learnMoreLink: "/product/search",
         image: {
-          src: "/assets/contact.webp",
+          src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891557/contact_hjfn5w.webp",
           alt: "Screenshot showing Contact & Account Search",
         },
       },
@@ -59,7 +59,7 @@ const FEATURE_CATEGORIES: FeatureCategory[] = [
         color: "text-[#105BCC]",
         learnMoreLink: "/product/search",
         image: {
-          src: "/assets/scores.webp",
+          src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891788/scores_nxdfge.webp",
           alt: "Screenshot showing Scores & Signals",
         },
       },
@@ -95,7 +95,7 @@ const FEATURE_CATEGORIES: FeatureCategory[] = [
         color: "text-[#105BCC]",
         learnMoreLink: "/product/search",
         image: {
-          src: "/assets/inbound.webp",
+          src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891733/inbound_gomgut.webp",
           alt: "Screenshot showing Inbound Optimization",
         },
       },
@@ -119,7 +119,7 @@ const FEATURE_CATEGORIES: FeatureCategory[] = [
         color: "text-[#105BCC]",
         learnMoreLink: "/product/search",
         image: {
-          src: "/assets/sales.webp",
+          src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891784/sales_ilppwy.webp",
           alt: "Screenshot showing Sales Engagement",
         },
       },
@@ -151,7 +151,7 @@ const FEATURE_CATEGORIES: FeatureCategory[] = [
         color: "text-[#7456DA]",
         learnMoreLink: "/product/search",
         image: {
-          src: "/assets/meetings.webp",
+          src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891749/meetings_gd3i1l.webp",
           alt: "Screenshot showing Meetings",
         },
       },
@@ -176,7 +176,7 @@ const FEATURE_CATEGORIES: FeatureCategory[] = [
         color: "text-[#7456DA]",
         learnMoreLink: "/product/search",
         image: {
-          src: "/assets/deal.webp",
+          src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891609/deal_pbsdw0.webp",
           alt: "Screenshot showing Deal Management",
         },
       },
@@ -201,7 +201,7 @@ const FEATURE_CATEGORIES: FeatureCategory[] = [
         color: "text-[#7456DA]",
         learnMoreLink: "/product/search",
         image: {
-          src: "/assets/conversation.webp",
+          src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891567/conversion_ewmc9m.webp",
           alt: "Screenshot showing Conversation Intelligence",
         },
       },
@@ -233,7 +233,7 @@ const FEATURE_CATEGORIES: FeatureCategory[] = [
         color: "text-[#17B94E]",
         learnMoreLink: "/product/search",
         image: {
-          src: "/assets/analytics.webp",
+          src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761888996/analytics_q6zauz.webp",
           alt: "Screenshot showing Analytics",
         },
       },
@@ -258,7 +258,7 @@ const FEATURE_CATEGORIES: FeatureCategory[] = [
         color: "text-[#17B94E]",
         learnMoreLink: "/product/search",
         image: {
-          src: "/assets/coaching.webp",
+          src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891550/coaching_lw2zln.webp",
           alt: "Screenshot showing Coaching",
         },
       },
@@ -290,7 +290,7 @@ const FEATURE_CATEGORIES: FeatureCategory[] = [
         color: "text-[#D26719]",
         learnMoreLink: "/product/search",
         image: {
-          src: "/assets/workflow.webp",
+          src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891818/workflow_iucqfe.webp",
           alt: "Screenshot showing Workflow Engine",
         },
       },
@@ -325,7 +325,7 @@ const FEATURE_CATEGORIES: FeatureCategory[] = [
         color: "text-[#D26719]",
         learnMoreLink: "/product/search",
         image: {
-          src: "/assets/enrich.webp",
+          src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891626/enrich_bqmobw.webp",
           alt: "Screenshot showing Enrich & Cleanse",
         },
       },
@@ -346,9 +346,10 @@ const FeatureCard = ({
   <div
     className={`
       flex items-center gap-2 p-2 rounded-lg cursor-pointer transition-all duration-200
-      ${isActive
-        ? "bg-blue-50 border border-blue-200"
-        : "hover:bg-gray-50 border border-transparent"
+      ${
+        isActive
+          ? "bg-blue-50 border border-blue-200"
+          : "hover:bg-gray-50 border border-transparent"
       }
     `}
     onClick={onClick}
@@ -413,10 +414,12 @@ const FeaturesShowcase = () => {
   const featureContainerRef = useRef<HTMLDivElement>(null);
 
   // Get all features flattened for easy access
-  const allFeatures = FEATURE_CATEGORIES.flatMap(category => category.features);
-  const currentFeature = allFeatures.find(feature => feature.id === activeFeature) || allFeatures[0];
-
-
+  const allFeatures = FEATURE_CATEGORIES.flatMap(
+    (category) => category.features
+  );
+  const currentFeature =
+    allFeatures.find((feature) => feature.id === activeFeature) ||
+    allFeatures[0];
 
   // Get the current category for background color
   const currentCategory = FEATURE_CATEGORIES.find((category) =>
@@ -462,11 +465,12 @@ const FeaturesShowcase = () => {
                             key={feature.id}
                             className={`
                                                             flex items-center gap-2 p-2 rounded-lg cursor-pointer transition-all duration-200 min-w-max
-                                                            ${activeFeature ===
-                                feature.id
-                                ? "bg-blue-50 border border-blue-200"
-                                : "hover:bg-gray-50 border border-transparent"
-                              }
+                                                            ${
+                                                              activeFeature ===
+                                                              feature.id
+                                                                ? "bg-blue-50 border border-blue-200"
+                                                                : "hover:bg-gray-50 border border-transparent"
+                                                            }
                                                         `}
                             onClick={() => setActiveFeature(feature.id)}
                           >

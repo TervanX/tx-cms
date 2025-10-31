@@ -44,28 +44,28 @@ interface CardProps {
 const cards: CardProps[] = [
   {
     id: "1",
-    img: "/assets/work.webp",
+    img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891817/work_gihjvt.webp",
     title: "Remote (global)",
     description:
       "Our team spans 22 countries, so you can work where your feet are.",
   },
   {
     id: "1",
-    img: "/assets/work.webp",
+    img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891817/work_gihjvt.webp",
     title: "Remote (global)",
     description:
       "Our team spans 22 countries, so you can work where your feet are.",
   },
   {
     id: "1",
-    img: "/assets/work.webp",
+    img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891817/work_gihjvt.webp",
     title: "Remote (global)",
     description:
       "Our team spans 22 countries, so you can work where your feet are.",
   },
   {
     id: "1",
-    img: "/assets/work.webp",
+    img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891817/work_gihjvt.webp",
     title: "Remote (global)",
     description:
       "Our team spans 22 countries, so you can work where your feet are.",
