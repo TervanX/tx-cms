@@ -7,15 +7,15 @@ export const productivityProps = {
         "TX Vault automates the most critical aspects of digital asset management—from multi-signature approvals to cross-chain settlements—while maintaining institutional-grade security standards.",
     images: {
         mobile: {
-            src: "/assets/solution1.jpg",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/solution1_avbfxx.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
-            src: "/assets/solution1.jpg",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/solution1_avbfxx.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         product: {
-            src: "/assets/productivity-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889043/productivity-1-desktop_sdzsp4.webp",
             alt: "Helpdesk product UI",
         },
     },
@@ -63,7 +63,7 @@ fill="none"
 </svg>`,
 
         image: {
-            src: "/assets/lightspeed-headshot-min.png",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891745/lightspeed-headshot-min_qiohvg.png",
             alt: "Angelo Livanos",
         },
     },
@@ -78,15 +78,15 @@ export const usabilityProps = {
         "An intuitive interface for managing complex treasury operations across hundreds of chains, with full visibility and control over all digital assets.",
     images: {
         mobile: {
-            src: "/assets/usability-hero-mobile.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891812/usability-hero-desktop_uirwq4.webp",
             alt: "Illustration of people walking down a flowery path",
         },
         desktop: {
-            src: "/assets/usability-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891812/usability-hero-desktop_uirwq4.webp",
             alt: "Illustration of people walking down a flowery path",
         },
         mainFeature: {
-            src: "/assets/usability-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891807/usability-1-desktop_sdggi4.webp",
             alt: "Helpdesk usability instant insight product visual",
         },
     },
@@ -101,7 +101,7 @@ export const usabilityProps = {
     ],
     additionalFeatures: [
         {
-            image: { src: "/assets/usability-2-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891808/usability-2-desktop_h3f0oo.webp" },
             title: 'Granular Access Controls & Role Management',
             description: 'Define precise permissions for team members with role-based access. From view-only observers to transaction approvers and policy administrators, maintain security while enabling operational efficiency.',
             list: {
@@ -109,7 +109,7 @@ export const usabilityProps = {
             }
         },
         {
-            image: { src: "/assets/usability-3-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891810/usability-3-desktop_ofrgcb.webp" },
             title: 'Pre-Built Policy Templates',
             description: 'Accelerate deployment with customizable security templates for common use cases:',
             list: {
@@ -122,7 +122,7 @@ export const usabilityProps = {
             }
         },
         {
-            image: { src: "/assets/usability-3-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891810/usability-3-desktop_ofrgcb.webp" },
             title: 'Comprehensive Integration Ecosystem',
             description: 'Connect TX Vault to your existing financial infrastructure:',
             list: {
@@ -181,15 +181,15 @@ export const outboundProps = {
     },
     images: {
         mobile: {
-            src: "/assets/outbound-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891763/outbound-hero-desktop_feua3q.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {
-            src: "/assets/outbound-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891763/outbound-hero-desktop_feua3q.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         mainFeature: {
-            src: "/assets/outbound-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891760/outbound-1-desktop_msubtn.webp",
             alt: "Helpdesk outbound product visual",
         },
     },
@@ -211,84 +211,84 @@ export const featuresProps = {
             name: 'MPC-TSS Technology',
             href: '/suite/helpdesk/inbox',
             description: "Eliminate single points of failure with distributed key generation and signing.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'custom-approval-workflows',
             name: 'Custom Approval Workflows',
             href: '/suite/helpdesk/copilot',
             description: "Design multi-signature policies with hierarchical approvals and spending limits.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'automated-cold-storage-management',
             name: 'Automated Cold Storage Management',
             href: '/suite/helpdesk/tickets',
             description: "Schedule regular sweeps to cold wallets with customizable thresholds and timing.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'cross-chain-balance-aggregation',
             name: 'Cross-Chain Balance Aggregation',
             href: '/suite/helpdesk/omnichannel',
             description: "View consolidated balances and transactions across all connected wallets and chains.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'real-time-transaction-monitoring',
             name: 'Real-Time Transaction Monitoring',
             href: '/suite/helpdesk/help-center',
             description: "Track all inbound and outbound transfers with instant notifications and status updates.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'smart-contract-interaction-controls',
             name: "Smart Contract Interaction Controls",
             href: '/app-store',
             description: "Whitelist approved DeFi protocols and set limits for interactions with smart contracts.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'batch-transaction-processing',
             name: 'Batch Transaction Processing',
             href: '/suite/helpdesk/reporting',
             description: "Execute multiple payments and transfers in single, gas-optimized operations.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'comprehensive-audit-logging',
             name: 'Comprehensive Audit Logging',
             href: '/suite/helpdesk/knowledge-hub',
             description: "Maintain immutable records of all vault activities, access attempts, and policy changes.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'regulatory-reporting-templates',
             name: 'Regulatory Reporting Templates',
             href: '/suite/helpdesk/outbound',
             description: "Generate standardized reports for KYC/AML, financial auditing, and tax compliance.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'disaster-recovery-protocols',
             name: 'Disaster Recovery Protocols',
             href: '/suite/helpdesk/inbox',
             description: "Automated key share backup and recovery procedures ensure business continuity.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'integration-ready-apis',
             name: 'Integration Ready APIs',
             href: '/suite/helpdesk/copilot',
             description: "RESTful APIs and webhooks for seamless connection to existing systems and workflows.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: '24-7-security-monitoring',
             name: '24/7 Security Monitoring',
             href: '/suite/helpdesk/tickets',
             description: "Continuous threat detection and anomaly monitoring with immediate alert escalation.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
     ],
 };

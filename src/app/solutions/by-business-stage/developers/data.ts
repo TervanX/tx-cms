@@ -49,7 +49,7 @@ export const developerPageData = {
                 title: "Unified REST API",
                 description:
                     "Single endpoint for all blockchain interactions across 300+ chains. Consistent response format and comprehensive error handling.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Unified REST API",
                 lists: []
             },
@@ -57,28 +57,28 @@ export const developerPageData = {
                 title: "Real-time WebSocket feeds",
                 description:
                     "Subscribe to transaction events, balance changes, and market data with millisecond latency for reactive applications.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Real-time WebSocket feeds",
                 lists: []
             },
             {
                 title: "Multi-language SDKs",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Multi-language SDKs",
                 lists: ["JavaScript/TypeScript - Full browser and Node.js support", "Python - Data science and backend integration", "Go - High-performance applications", "Java - Enterprise system integration", "Rust - Systems programming and performance-critical applications"]
 
             },
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
     },
 
     keyDeveloperProducts: {
         title: "Key Developer Products",
         image:
-            "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
-        backgroundImage: "/assets/image30.webp",
+            "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         primaryButton: {
             text: "Contact Sales",
             href: "/contact/contact-sales",
@@ -97,7 +97,7 @@ const payment = await tervanx.payments.create({
   currency: "USDC",
   chain: "ethereum"
 });`,
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
             {
                 title: "Wallet Infrastructure",
@@ -107,7 +107,7 @@ const payment = await tervanx.payments.create({
 wallet = tervanx.wallets.create(
   user_id="user_123",
   chains=["ethereum", "polygon", "solana"]
-)`, img: "/assets/highlight.webp",
+)`, img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
             {
                 title: "Smart Contract Interactions",
@@ -119,14 +119,14 @@ await tervanx.contracts.execute({
   method: "transfer",
   args: [to, amount],
   chain: "arbitrum"
-});`, img: "/assets/highlight.webp",
+});`, img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             }
         ]
     },
     callAndConversation: {
         image:
-            "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
-        backgroundImage: "/assets/image30.webp",
+            "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         primaryButton: {
             text: "Contact Sales",
             href: "/contact/contact-sales",
@@ -141,7 +141,7 @@ await tervanx.contracts.execute({
                 title: "DeFi Protocol Integration",
                 description:
                     "Build lending protocols, DEXs, and yield optimizers with our comprehensive DeFi APIs.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 language: "java",
                 code: `// Get best swap route across all DEXs
 const route = await tervanx.defi.getBestRoute({
@@ -155,7 +155,7 @@ const route = await tervanx.defi.getBestRoute({
                 title: "NFT Marketplace",
                 description:
                     "Create NFT marketplaces with built-in royalty enforcement and cross-chain support.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 language: "python",
 
                 code: `# List NFT for sale
@@ -170,7 +170,7 @@ listing = await tervanx.nfts.list({
                 title: "Enterprise Applications",
                 description:
                     "Integrate with existing enterprise systems and traditional finance infrastructure.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 language: "java",
                 code: `
 // Sync with accounting system
@@ -192,7 +192,7 @@ TervanxClient.syncToERP(
             {
                 title: "Sandbox Environment",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Sandbox Environment",
                 lists: [
                     "Testnet access across all supported chains",
@@ -204,7 +204,7 @@ TervanxClient.syncToERP(
             {
                 title: " CLI & Local Development",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "CLI & Local Development",
                 lists: [
                     "Local development server",
@@ -216,7 +216,7 @@ TervanxClient.syncToERP(
             {
                 title: " Monitoring & Analytics",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Monitoring & Analytics",
                 lists: [
                     "Real-time request logging",
@@ -226,7 +226,7 @@ TervanxClient.syncToERP(
                 ]
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
 
@@ -240,9 +240,9 @@ TervanxClient.syncToERP(
             {
                 title: " Developer Community",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Developer Community",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "Discord: 50,000+ developers sharing knowledge",
@@ -254,8 +254,8 @@ TervanxClient.syncToERP(
             {
                 title: "Learning Resources",
                 description: "",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 imageAlt: "Learning Resources",
                 lists: [
@@ -268,9 +268,9 @@ TervanxClient.syncToERP(
             {
                 title: "Technical Support",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Technical Support",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "24/7 developer chat support",
@@ -280,7 +280,7 @@ TervanxClient.syncToERP(
                 ]
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
     },
@@ -305,7 +305,7 @@ TervanxClient.syncToERP(
 
     bannerCTA: {
         title: "Start Building Today",
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         primaryButton: {
             text: "Contact Sales",
             href: "/contact/contact-sales",

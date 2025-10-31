@@ -152,7 +152,7 @@ export const featuresData: FeatureItemDetailed[] = [
     ctaText: "Request Access",
     ctaLink: "/contact/request-access",
     image: {
-      src: "/assets/image1.webp",
+      src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891696/image1_asambv.webp",
       alt: "Illustration for Find and Close the Right Buyers with Apollo's B2B Database",
       width: 1184,
       height: 1184,
@@ -201,7 +201,7 @@ export const featuresData: FeatureItemDetailed[] = [
       "https://chrome.google.com/webstore/detail/apolloio-email-finder-and/alhgpfoeiimagjlnfekdhkjlkiomcapa",
     ctaTarget: "_blank",
     image: {
-      src: "/assets/image2.webp",
+      src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891697/image2_e8txmb.webp",
       alt: "Illustration for Use Apollo's B2B Database Wherever You Work",
       width: 1184,
       height: 1184,
@@ -241,7 +241,7 @@ export const featuresData: FeatureItemDetailed[] = [
     ctaText: "Request Access",
     ctaLink: "/contact/request-access",
     image: {
-      src: "/assets/image3.webp",
+      src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891699/image3_jhq2rs.webp",
       alt: "Illustration for bigger deals Apollo's B2B Database ",
       width: 1184,
       height: 1184,
@@ -280,7 +280,7 @@ export const featuresData: FeatureItemDetailed[] = [
     ctaText: "Request Access",
     ctaLink: "/contact/request-access",
     image: {
-      src: "/assets/image4.webp",
+      src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891700/image4_qdhdsi.webp",
       alt: "Illustration for bigger deals Apollo's B2B Database ",
       width: 1184,
       height: 1184,

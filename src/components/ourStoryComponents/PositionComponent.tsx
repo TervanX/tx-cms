@@ -18,7 +18,7 @@ const PositionSection = () => {
       </div>
       <div className="w-full lg:w-2/6 flex items-center">
         <img
-          src="/assets/closing.webp"
+          src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891548/closing_yuvxlt.webp"
           className="w-full h-auto rounded-lg"
           alt=""
         />

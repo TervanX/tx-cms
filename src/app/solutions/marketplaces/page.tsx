@@ -113,32 +113,34 @@ const marketplacesPageData = {
         title: "Maintain marketplace brand consistency",
         description:
           "Support multiple marketplace categories, assign platform logos and create professional signatures that reinforce your marketplace identity in every user communication.",
-        img: "/assets/highlight.webp",
+        img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
         imageAlt: "Maintain marketplace brand consistency",
       },
       {
         title: "Seamless buyer-seller conversations",
         description:
           "Move user conversations from marketplace platforms to email, allowing buyers and sellers to continue transaction discussions and support inquiries at their convenience.",
-        img: "/assets/highlight.webp",
+        img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
         imageAlt: "Seamless buyer-seller conversations",
       },
       {
         title: "Track marketplace service performance",
         description:
           "Monitor response times, transaction resolution rates, and user satisfaction to maintain high marketplace service standards and trust.",
-        img: "/assets/highlight.webp",
+        img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
         imageAlt: "Track marketplace service performance",
       },
     ],
-    backgroundImage: "/assets/image30.webp",
+    backgroundImage:
+      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
     backgroundAlt: "DataSectionProps",
   },
 
   callAndConversation: {
     image:
-      "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
-    backgroundImage: "/assets/image30.webp",
+      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
+    backgroundImage:
+      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
     primaryButton: {
       text: "Contact Sales",
       href: "/contact/contact-sales",
@@ -160,51 +162,56 @@ const marketplacesPageData = {
         title: "Marketplace-branded experience",
         description:
           "Customize the Messenger to match your marketplace platform's branding, creating a seamless user experience from product browsing to secure checkout.",
-        img: "/assets/highlight.webp",
+        img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
       },
       {
         title: "Self-serve for common inquiries",
         description:
           "Empower users with self-serve options for order tracking, payment methods, seller ratings, and FAQs—reducing support load during peak shopping seasons.",
-        img: "/assets/highlight.webp",
+        img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
       },
       {
         title: "Multi-category & multilingual support",
         description:
           "Manage multiple product categories, resolve user queries in 45 languages and provide consistent support experiences across different marketplace segments.",
-        img: "/assets/highlight.webp",
+        img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
       },
     ],
-    backgroundImage: "/assets/image30.webp",
+    backgroundImage:
+      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
   },
 
   globalWhatsapp: {
     cards: [
       {
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage:
+          "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         title: "Connect with international buyers and sellers",
         description:
           "Manage all your WhatsApp marketplace accounts and user interactions in one workspace, ensuring you never miss important order updates or user inquiries.",
-        img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+        img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
       },
       {
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage:
+          "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         title: "Rich marketplace communications",
         description:
           "Send and receive order confirmations, shipping updates, and payment notifications directly from the Inbox, providing comprehensive support for marketplace users.",
-        img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+        img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
       },
       {
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage:
+          "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         title: "Measure user satisfaction",
         description:
           "Track how satisfied buyers and sellers are with your marketplace services and transaction experience, and compare performance across different communication channels.",
-        img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+        img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
       },
     ],
     title: "Global marketplace support through WhatsApp",
     tag: "WhatsApp",
-    backgroundImage: "/assets/image30.webp",
+    backgroundImage:
+      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
     description:
       "Expand your marketplace reach and provide instant support to international users on the world's most popular messaging app for e-commerce communications.",
   },
@@ -218,7 +225,7 @@ const marketplacesPageData = {
         description:
           "Respond to user inquiries, order questions, and payment management requests directly from your marketplace dashboard, enhancing the shopping experience.",
         imageSrc:
-          "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01.webp?&q=90",
+          "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891688/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01_agtevz.webp",
         imageAlt: "E-commerce Platforms",
       },
       {
@@ -226,7 +233,7 @@ const marketplacesPageData = {
         description:
           "Route messages from shopping forums, review communities, and seller networks to a unified Inbox, making it easy to manage user communications.",
         imageSrc:
-          "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02.webp?&q=90",
+          "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889040/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02_raaawc.webp",
         imageAlt: "Shopping Social Platforms",
       },
       {
@@ -234,7 +241,7 @@ const marketplacesPageData = {
         description:
           "Send and receive purchase confirmations, delivery updates, and seller messages in 45 languages, enabling real-time communication with marketplace users.",
         imageSrc:
-          "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
+          "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889040/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03_cede0g.webp",
         imageAlt: "SMS Order Alerts",
       },
     ],
@@ -250,7 +257,8 @@ const marketplacesPageData = {
 
   bannerCTA: {
     title: "",
-    backgroundImage: "/assets/image30.webp",
+    backgroundImage:
+      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
     primaryButton: {
       text: "Get Started",
       href: "/contact/request-access",

@@ -157,10 +157,11 @@ function HeroCard({
       >
         <div className="absolute inset-0 z-10 flex size-full items-end overflow-hidden">
           <div
-            className={`pointer-events-none absolute inset-0 z-10 items-end transition-opacity duration-500 ${isHovering && videoSrc
-              ? "opacity-0 lg:flex"
-              : "opacity-100 lg:flex"
-              }`}
+            className={`pointer-events-none absolute inset-0 z-10 items-end transition-opacity duration-500 ${
+              isHovering && videoSrc
+                ? "opacity-0 lg:flex"
+                : "opacity-100 lg:flex"
+            }`}
           >
             <div className="mx-auto !aspect-auto w-full pr-10 pl-10 lg:pr-0 lg:pl-0">
               <div className="overflow-hidden bg-cover relative block">
@@ -179,8 +180,9 @@ function HeroCard({
           <div className="mx-auto size-full relative z-20">
             <canvas
               ref={canvasRef}
-              className={`w-full h-full transition-opacity duration-500 ${isHovering && videoSrc ? "opacity-100" : "opacity-0"
-                }`}
+              className={`w-full h-full transition-opacity duration-500 ${
+                isHovering && videoSrc ? "opacity-100" : "opacity-0"
+              }`}
               style={{ verticalAlign: "top" }}
             />
           </div>
@@ -223,7 +225,7 @@ export default function HeroSection() {
     <section className="my-auto overflow-hidden md:flex-col pt-[70px] mx-auto w-full max-w-[1920px] px-3 md:px-4">
       <header className="relative flex items-center justify-center text-center py-12 xl:py-16 xl:min-[1360px]:py-24">
         <h1 className="font-sans text-current text-[42px] leading-[1.025] tracking-[-0.8px] font-semibold text-balance md:text-[35px] lg:text-[45px] xl:text-5xl">
-          TX is a digital assets payment and infrastructure company
+          Layer X is a digital assets payment and infrastructure company
         </h1>
       </header>
 
@@ -236,8 +238,8 @@ export default function HeroSection() {
           description="TX offers institutional-grade digital asset custody and wallet infrastructure.
 It enables businesses, developers, and financial institutions to build crypto apps, manage millions of wallets, and automate operations securely."
           buttonText="Explore TX Business"
-          imageSrc="/assets/desktop-business.png"
-          bgImageSrc="/assets/suite-card-bg.webp"
+          imageSrc="https://res.cloudinary.com/dx1etzf66/image/upload/v1761889001/desktop-business_gt9uqn.png"
+          bgImageSrc="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891799/suite-card-bg_pfondh.webp"
           videoSrc="/videos/suite-prototype.mp4"
         />
         <HeroCard
@@ -248,8 +250,8 @@ It enables businesses, developers, and financial institutions to build crypto ap
           description="TX helps people use, send, and receive digital assets effortlessly.
 It’s like having a Stripe + Wallet + Exchange in one, giving users access to crypto payments, wallets, and real-time asset management."
           buttonText="Explore TX Switch"
-          imageSrc="/assets/mobile-Individual.png"
-          bgImageSrc="/assets/fin-card-bg.webp"
+          imageSrc="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891752/mobile-Individual_dndvvt.png"
+          bgImageSrc="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891631/fin-card-bg_f0byqy.webp"
           videoSrc="/videos/fin-prototype.mp4"
         />
       </main>

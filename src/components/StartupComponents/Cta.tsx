@@ -1,15 +1,14 @@
-import Image from 'next/image';
-import Button from '../reusable/Button';
-import { CtaBannerProps } from '@/app/types/startups.types';
+import Image from "next/image";
+import Button from "../reusable/Button";
+import { CtaBannerProps } from "@/app/types/startups.types";
 export default function CtaBanner({
-
   buttonHref,
   tagline = "Apollo for startups",
   title = "Are you part of a startup community or backed by a VC?",
   description = "Check if your community is an Apollo partner and unlock your exclusive discount (or join the waitlist!) by applying today.",
   buttonText = "Apply now",
-  backgroundImage = "/assets/image14.webp",
-  onButtonClick
+  backgroundImage = "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891715/image14_szlyvm.webp",
+  onButtonClick,
 }: CtaBannerProps) {
   console.log(backgroundImage);
   return (

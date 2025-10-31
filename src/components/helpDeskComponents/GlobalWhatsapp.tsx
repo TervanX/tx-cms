@@ -7,26 +7,29 @@ import DottedLine from "@/components/helpDeskComponents/DottedBg";
 const GlobalWhatsapp: React.FC<GlobalWhatsappProps> = ({
   cards = [
     {
-      backgroundImage: "/assets/image30.webp",
+      backgroundImage:
+        "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
       title: "Integrate all your accounts",
       description:
         "Connect and manage all of your WhatsApp business accounts in a single workspace, to ensure you never miss a message.",
-      img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+      img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
     },
     {
-      backgroundImage: "/assets/image30.webp",
+      backgroundImage:
+        "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
       title: "Deliver context-rich support",
       description:
         "Send and receive images, attachments and more directly from the Inbox, so your support agents have all the context they need to resolve issues faster.",
-      img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+      img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
     },
 
     {
-      backgroundImage: "/assets/image30.webp",
+      backgroundImage:
+        "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
       title: "Capture CSAT on WhatsApp",
       description:
         "Monitor how satisfied customers are with the support provided, and how it compares to your other channels.",
-      img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+      img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
     },
   ],
   title = "Global support is just a WhatsApp away",

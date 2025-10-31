@@ -18,10 +18,7 @@ const PositionSection = () => {
         </div>
       </div>
       <div className="w-full lg:w-2/6 flex items-center">
-        <img
-          src="/assets/position.webp"
-          className="w-full h-auto rounded-lg"
-        />
+        <img src="position" className="w-full h-auto rounded-lg" />
       </div>
     </div>
   );

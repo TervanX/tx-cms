@@ -13,7 +13,7 @@ const OurStoryHero = () => {
       </div>
       <div className="">
         <img
-          src="/assets/story.webp"
+          src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891794/story_cgqobi.webp"
           className="w-full h-auto rounded-2xl"
           alt=""
         />

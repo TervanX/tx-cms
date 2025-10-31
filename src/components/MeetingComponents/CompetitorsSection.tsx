@@ -5,7 +5,10 @@ const CompetitorsSection = () => {
         Brief competitor comparison table
       </h4>
       <div className="w-3/4 mx-auto mt-20">
-        <img src="/assets/table.webp" alt="" />
+        <img
+          src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891802/table_w8lyqa.webp"
+          alt=""
+        />
       </div>
     </div>
   );

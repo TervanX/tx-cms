@@ -49,39 +49,39 @@ export const transportationLogisticsPageData = {
                 title: "Multi-modal tracking",
                 description:
                     "Seamlessly track shipments across ocean, air, rail, and truck with unified blockchain records.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Multi-modal tracking",
             },
             {
                 title: "IoT sensor integration",
                 description:
                     "Real-time monitoring of temperature, humidity, shock, and location for sensitive cargo.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "IoT sensor integration",
             },
             {
                 title: "Proof of delivery automation",
                 description:
                     "Digital signatures, photo verification, and automated delivery confirmation with blockchain timestamps.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Proof of delivery automation",
             },
             {
                 title: "Asset utilization optimization",
                 description:
                     "Track container, pallet, and vehicle utilization across global operations with AI-powered recommendations.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Asset utilization optimization",
             },
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
     },
 
     callAndConversation: {
         image:
-            "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
-        backgroundImage: "/assets/image30.webp",
+            "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         primaryButton: {
             text: "Contact Sales",
             href: "/contact/contact-sales",
@@ -95,29 +95,29 @@ export const transportationLogisticsPageData = {
                 title: "Smart bills of lading",
                 description:
                     "Digital, transferable bills of lading with instant verification and ownership tracking.",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
             },
             {
                 title: "Automated customs clearance",
                 description:
                     "Pre-filled customs declarations with verified data and instant submission to authorities.",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
             },
             {
                 title: "Regulatory compliance",
                 description:
                     "Automated compliance with SOLAS, IMDG, IATA, and 200+ country-specific regulations.",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
             },
             {
                 title: "Certificate management",
                 description:
                     "Digital management of certificates of origin, insurance documents, and inspection certificates.",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
             },
         ]
     },
@@ -131,64 +131,64 @@ export const transportationLogisticsPageData = {
                 title: "Instant payment processing",
                 description:
                     "Automated payments upon delivery verification with multiple currency settlement options.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
             {
                 title: "Trade finance automation",
                 description:
                     "Letters of credit, purchase order financing, and invoice factoring with smart contract execution.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
             {
                 title: "Dynamic pricing & billing",
                 description:
                     "Real-time rate calculation based on fuel costs, demand patterns, and capacity availability.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
             {
                 title: "Claims management",
                 description:
                     "Automated insurance claims for damaged goods with IoT verification and instant payout processing.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
     },
 
     globalWhatsapp: {
         cards: [
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "Capacity matching",
                 description:
                     "AI-powered matching of available capacity with shipment requirements across global networks.",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "Predictive maintenance",
                 description:
                     "Blockchain-verified maintenance records with predictive analytics for fleet optimization.",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "Fuel management",
                 description:
                     "Track fuel consumption, optimize routes, and manage carbon emissions with verified reporting.",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "Driver & carrier management",
                 description:
                     "Digital credentials, performance tracking, and automated payment for carriers and drivers.",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
         ],
         title: "Optimized asset utilization",
         tag: "Fleet & Capacity Management",
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         description: "",
     },
 
@@ -200,39 +200,39 @@ export const transportationLogisticsPageData = {
             {
                 title: "Carbon footprint tracking",
                 description: "Real-time emissions monitoring with blockchain-verified sustainability reporting.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Carbon footprint tracking",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 lists: []
             },
             {
                 title: "Circular economy enablement",
                 description: "Track packaging reuse, recycling, and sustainable material usage across supply chains.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Circular economy enablement",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: []
             },
             {
                 title: " Green route optimization",
                 description: "AI-powered route planning to minimize environmental impact while maintaining efficiency.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Green route optimization",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: []
             },
             {
                 title: "ESG compliance reporting",
                 description: "Automated sustainability reporting for regulatory requirements and corporate sustainability goals.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "ESG compliance reporting",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 lists: []
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
     },
@@ -242,11 +242,11 @@ export const transportationLogisticsPageData = {
         description: "",
         cards: [
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 title: "Multi-Modal Integration",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Multi-Modal Integration",
                 lists: [
                     "Ocean freight tracking and documentation",
@@ -256,11 +256,11 @@ export const transportationLogisticsPageData = {
                 ]
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 title: "Digital Documentation",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Digital Documentation",
                 lists: [
                     "Electronic data interchange (EDI) integration",
@@ -270,11 +270,11 @@ export const transportationLogisticsPageData = {
                 ]
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 title: " Financial Automation",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Financial Automation",
                 lists: [
                     "Automated invoice generation and payment",
@@ -285,11 +285,11 @@ export const transportationLogisticsPageData = {
             },
             {
 
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 title: " Security & Verification",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Security & Verification",
                 lists: [
                     "Tamper-proof shipment records",
@@ -299,7 +299,7 @@ export const transportationLogisticsPageData = {
                 ]
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
     },
@@ -313,8 +313,8 @@ export const transportationLogisticsPageData = {
             {
                 title: "Performance",
                 description: "",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 imageAlt: "Performance",
                 lists: [
@@ -327,8 +327,8 @@ export const transportationLogisticsPageData = {
             {
                 title: "Security",
                 description: "",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 imageAlt: "Security",
                 lists: [
                     "Military-grade encryption",
@@ -340,9 +340,9 @@ export const transportationLogisticsPageData = {
             {
                 title: "Global Compliance",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Global Compliance",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 lists: [
                     "200+ country regulations coverage",
                     "45+ language support",
@@ -351,7 +351,7 @@ export const transportationLogisticsPageData = {
                 ]
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
     },
@@ -363,9 +363,9 @@ export const transportationLogisticsPageData = {
             {
                 title: "Freight Forwarders",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Freight Forwarders",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "Digital freight brokerage",
@@ -377,9 +377,9 @@ export const transportationLogisticsPageData = {
             {
                 title: "Shipping Lines & Airlines",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Shipping Lines & Airlines",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "Vessel and aircraft tracking",
@@ -391,9 +391,9 @@ export const transportationLogisticsPageData = {
             {
                 title: "Ports & Terminals",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Ports & Terminals",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "Vessel scheduling and management",
@@ -405,9 +405,9 @@ export const transportationLogisticsPageData = {
             {
                 title: "Retail & Manufacturing Logistics",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Retail & Manufacturing Logistics",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "End-to-end supply chain visibility",
@@ -417,7 +417,7 @@ export const transportationLogisticsPageData = {
                 ]
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
     },
@@ -429,9 +429,9 @@ export const transportationLogisticsPageData = {
             {
                 title: " Operational Efficiency",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Operational Efficiency",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "65% reduction in documentation time",
@@ -443,9 +443,9 @@ export const transportationLogisticsPageData = {
             {
                 title: "Financial Impact",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Financial Impact",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "45% faster payment processing",
@@ -457,9 +457,9 @@ export const transportationLogisticsPageData = {
             {
                 title: " Sustainability Benefits",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Sustainability Benefits",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "20% reduction in carbon emissions",
@@ -469,7 +469,7 @@ export const transportationLogisticsPageData = {
                 ]
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
     },
 
@@ -481,8 +481,8 @@ export const transportationLogisticsPageData = {
             {
                 title: "International Trade Regulations",
                 description: "",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 imageAlt: "International Trade Regulations",
                 lists: [
                     "Customs-Trade Partnership Against Terrorism (CTPAT)",
@@ -494,8 +494,8 @@ export const transportationLogisticsPageData = {
             {
                 title: "Regional Compliance",
                 description: "",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 imageAlt: "Regional Compliance",
                 lists: [
                     "EU Customs Code compliance",
@@ -507,8 +507,8 @@ export const transportationLogisticsPageData = {
             {
                 title: "Industry Standards",
                 description: "",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 imageAlt: "Industry Standards",
                 lists: [
                     "ISO 28000 supply chain security",
@@ -518,7 +518,7 @@ export const transportationLogisticsPageData = {
                 ]
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
     },
@@ -539,7 +539,7 @@ export const transportationLogisticsPageData = {
 
     bannerCTA: {
         title: "Get Started",
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         primaryButton: {
             text: "Request Demo",
             href: "/demo",

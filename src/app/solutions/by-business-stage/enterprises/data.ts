@@ -50,32 +50,32 @@ export const enterprisePageData = {
                 title: "Centralized payment orchestration",
                 description:
                     "Manage all fiat and digital asset payments through a unified dashboard with multi-signature approvals, custom workflows, and automated reconciliation.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Centralized payment orchestration",
             },
             {
                 title: "Cross-chain settlement engine",
                 description:
                     "Execute atomic settlements across multiple blockchains and traditional banking systems with guaranteed delivery and sub-second latency.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Cross-chain settlement engine",
             },
             {
                 title: "Regulatory compliance automation",
                 description:
                     "Built-in KYC/AML, travel rule compliance, and automated reporting across 100+ jurisdictions ensure global operations remain compliant.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Regulatory compliance automation",
             },
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
     },
 
     callAndConversation: {
         image:
-            "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
-        backgroundImage: "/assets/image30.webp",
+            "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         primaryButton: {
             text: "Contact Sales",
             href: "/contact/contact-sales",
@@ -90,22 +90,22 @@ export const enterprisePageData = {
                 title: "Multi-entity financial consolidation",
                 description:
                     "Aggregate balances, track exposures, and manage liquidity across subsidiaries, departments, and global entities in real-time.",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
             },
             {
                 title: "AI-driven liquidity optimization",
                 description:
                     "Automatically allocate capital across chains, protocols, and traditional instruments to maximize yield while maintaining risk parameters.",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
             },
             {
                 title: "Enterprise-grade security protocols",
                 description:
                     "MPC technology, hardware security module integration, and SOC 2 Type II compliance protect your organization's digital assets.",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
             },
         ]
@@ -121,51 +121,51 @@ export const enterprisePageData = {
                 title: "Advanced threat detection & response",
                 description:
                     "24/7 AI-powered monitoring detects and neutralizes sophisticated threats across all connected chains and systems.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
             {
                 title: "Comprehensive audit trail",
                 description:
                     "Maintain immutable records of all transactions, policy changes, and access attempts with enterprise-grade logging and reporting.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
             {
                 title: "Custom compliance workflows",
                 description:
                     "Implement bespoke approval hierarchies, transaction limits, and regulatory controls tailored to your organization's requirements.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
     },
 
     globalWhatsapp: {
         cards: [
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "ERP & accounting system integration",
                 description:
                     "Real-time synchronization with SAP, Oracle, NetSuite, and other enterprise resource planning systems.",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "Custom development & white-label solutions",
                 description:
                     "Dedicated engineering support for custom integrations, proprietary protocols, and white-labeled solutions.",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "24/7 enterprise support",
                 description:
                     "Priority technical support, dedicated account management, and SLAs tailored to enterprise requirements.",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
         ],
         title: "Seamlessly integrate with enterprise systems",
         tag: "Integration & Customization",
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         description:
             "Connect LayerX to your existing financial infrastructure with enterprise-grade APIs and dedicated support.",
     },
@@ -179,7 +179,7 @@ export const enterprisePageData = {
                 description:
                     "Fully managed infrastructure with dedicated instances",
                 imageSrc:
-                    "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01.webp?&q=90",
+                    "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891688/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01_agtevz.webp",
                 imageAlt: "Cloud Enterprise",
             },
             {
@@ -187,7 +187,7 @@ export const enterprisePageData = {
                 description:
                     "Combine cloud efficiency with on-premise security",
                 imageSrc:
-                    "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02.webp?&q=90",
+                    "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889040/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02_raaawc.webp",
                 imageAlt: "Hybrid Deployment",
             },
             {
@@ -195,7 +195,7 @@ export const enterprisePageData = {
                 description:
                     "Fully isolated deployment within your VPC or data center",
                 imageSrc:
-                    "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
+                    "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889040/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03_cede0g.webp",
                 imageAlt: "Private Infrastructure",
             },
         ],
@@ -211,7 +211,7 @@ export const enterprisePageData = {
 
     bannerCTA: {
         title: "Start Building Today",
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         primaryButton: {
             text: "Get Started",
             href: "/contact/request-access",

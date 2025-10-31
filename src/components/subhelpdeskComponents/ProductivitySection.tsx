@@ -202,7 +202,7 @@ export default function ProductivitySection({
                                 <div className="overflow-hidden bg-cover absolute inset-0 size-full">
                                     <img
                                         alt="Angelo Livanos"
-                                        src="/assets/lightspeed-headshot-min.png"
+                                        src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891745/lightspeed-headshot-min_qiohvg.png"
                                         className="transition-opacity duration-300 ease-out-quad size-full object-cover object-center opacity-100"
                                     />
                                 </div>

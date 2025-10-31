@@ -5,7 +5,7 @@ import AutoScrollLogos from "./AutoScroll";
 import DottedLine from "./DottedBg";
 import Tag from "./Tag";
 export function HeroSection({
-  backgroundImage = "/assets/image30.webp",
+  backgroundImage = "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
   backgroundAlt = "Abstract wave pattern background",
   tag,
   heading,
@@ -118,7 +118,10 @@ export function HeroSection({
         </div>
       </div>
       <div className="relative ">
-        <img src="/assets/product1.png" className="w-[80%] mx-auto" />
+        <img
+          src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891774/product1_tzhphb.png"
+          className="w-[80%] mx-auto"
+        />
         {/* <div className="flex items-center w-[80%] mx-auto py-16">
           <div className="flex items-center w-full  border-[rgba(255,255,255,.1)] border-solid border-t-[.3px] border-b-[.3px] ">
             <p className="font-grotesque text-xs lg:text-base  text-left text-white max-w-[12rem]">

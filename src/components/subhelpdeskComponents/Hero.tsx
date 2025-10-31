@@ -36,8 +36,8 @@ export default function Hero({
   description,
   span,
   subtitle,
-  backgroundImage = "/assets/hero.webp",
-  productImage = "/assets/product1.png",
+  backgroundImage = "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889004/hero_lxmhmb.webp",
+  productImage = "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891774/product1_tzhphb.png",
   featureLinks = [
     {
       name: "Inbox",

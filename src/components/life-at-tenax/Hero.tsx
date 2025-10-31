@@ -12,9 +12,9 @@ const LifeAtTenaxHero = () => {
             Life at Apollo{" "}
           </h1>
           <p className="font-grotesque text-base   text-center">
-            What&apos;s it like to work at a fast-paced, AI-first company? Here&apos;s a
-            peek at how we work, grow, and support our people every step of the
-            way.
+            What&apos;s it like to work at a fast-paced, AI-first company?
+            Here&apos;s a peek at how we work, grow, and support our people
+            every step of the way.
           </p>
           <div className="flex items-center justify-center mb-8 mt-2">
             <Button className="w-full sm:w-auto bg-black text-white hover:bg-gray-900  font-medium px-8 py-3.5 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl min-w-[200px] text-base sm:text-lg">
@@ -24,7 +24,7 @@ const LifeAtTenaxHero = () => {
         </div>
         <div className="">
           <img
-            src="/assets/image.webp"
+            src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891694/image_esruiq.webp"
             className="w-full h-auto rounded-2xl"
             alt=""
           />

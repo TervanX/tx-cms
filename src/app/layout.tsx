@@ -18,6 +18,11 @@ const grotesque = Bricolage_Grotesque({
   subsets: ["latin"],
 });
 
+// Optimized Cloudinary URLs
+const iconBaseUrl = "https://res.cloudinary.com/dx1etzf66/image/upload";
+const iconVersion = "v1761842277";
+const iconId = "LayerX_Logo_ffy6pb.png";
+
 export const metadata: Metadata = {
   title: "LayerX - Financial Infrastructure Platform",
   description:
@@ -63,6 +68,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="preload"
+          href={`${iconBaseUrl}/w_32,h_32,f_auto,q_80/${iconVersion}/${iconId}`}
+          as="image"
+          type="image/png"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased ${grotesque.variable}`}
       >

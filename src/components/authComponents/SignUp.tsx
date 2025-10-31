@@ -25,7 +25,6 @@ export default function SignUp() {
     }, 3000);
   };
 
-
   return (
     <div className="relative grid gap-3 mx-0 md:mx-6 lg:grid-cols-[2fr_1fr]">
       {/* Left Column - Sign Up Form */}
@@ -34,7 +33,7 @@ export default function SignUp() {
           <div className="mx-auto max-w-[436px] md:mx-0">
             {/* Heading */}
             <h1 className="text-3xl lg:text-4xl tracking-tight text-center antialiased">
-              Welcome back to Tervan X <br />
+              Welcome back to Layer X <br />
               Secure Login
             </h1>
 
@@ -125,7 +124,7 @@ export default function SignUp() {
       <div className="hidden lg:flex relative min-h-[300px] sm:min-h-[400px] lg:min-h-[688px] overflow-hidden rounded-lg bg-gray-200">
         <div className="relative h-full w-full">
           <img
-            src="/assets/signup.jpg"
+            src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/signup_urir3n.jpg"
             alt="Secure login illustration"
             className="absolute inset-0 h-full w-full rounded-xl object-cover"
           />
@@ -134,5 +133,3 @@ export default function SignUp() {
     </div>
   );
 }
-
-

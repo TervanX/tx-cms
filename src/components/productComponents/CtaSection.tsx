@@ -4,7 +4,8 @@ export default function CtaSection() {
   return (
     <div
       style={{
-        backgroundImage: "url(/assets/bottom.svg)",
+        backgroundImage:
+          "url(https://res.cloudinary.com/dx1etzf66/image/upload/v1761891500/bottom_siroug.svg)",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",

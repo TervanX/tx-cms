@@ -106,7 +106,7 @@ export default function TermsOfService() {
                             </h2>
                             <div className="space-y-4">
                                 <p className="text-gray-600">
-                                    By accessing and using Tervan X, you accept and agree to be bound by the terms and
+                                    By accessing and using Layer X, you accept and agree to be bound by the terms and
                                     conditions of this agreement. If you do not agree with these terms, you must not
                                     access or use our services.
                                 </p>
@@ -153,7 +153,7 @@ export default function TermsOfService() {
                             </h2>
                             <div className="space-y-4">
                                 <p className="text-gray-600">
-                                    Tervan X reserves the right to modify, suspend, or discontinue any part of our
+                                    Layer X reserves the right to modify, suspend, or discontinue any part of our
                                     services at any time. We will provide reasonable notice for any significant changes
                                     that may affect your use of our platform.
                                 </p>
@@ -171,12 +171,12 @@ export default function TermsOfService() {
                             <div className="space-y-6">
                                 <p className="text-gray-600">
                                     The Service and its original content, features, and functionality are and will remain
-                                    the exclusive property of Tervan X and its licensors.
+                                    the exclusive property of Layer X and its licensors.
                                 </p>
                                 <div>
                                     <h3 className="text-xl font-semibold text-gray-700 mb-3">Our Rights</h3>
                                     <ul className="list-disc list-inside text-gray-600 space-y-2 ml-4">
-                                        <li>All content, features, and functionality of Tervan X</li>
+                                        <li>All content, features, and functionality of Layer X</li>
                                         <li>Our trademarks, service marks, and logos</li>
                                         <li>The underlying source code and software</li>
                                         <li>Documentation and related materials</li>
@@ -196,7 +196,7 @@ export default function TermsOfService() {
                             </h2>
                             <div className="space-y-6">
                                 <p className="text-gray-600">
-                                    To the maximum extent permitted by law, Tervan X shall not be liable for any indirect,
+                                    To the maximum extent permitted by law, Layer X shall not be liable for any indirect,
                                     incidental, special, consequential, or punitive damages, including but not limited to
                                     loss of profits, data, or other intangible losses, resulting from:
                                 </p>
@@ -209,7 +209,7 @@ export default function TermsOfService() {
                                 <div>
                                     <h3 className="text-xl font-semibold text-gray-700 mb-3">Indemnification</h3>
                                     <p className="text-gray-600">
-                                        You agree to defend, indemnify, and hold harmless Tervan X from any claims,
+                                        You agree to defend, indemnify, and hold harmless Layer X from any claims,
                                         liabilities, damages, losses, and expenses arising from your use of our services
                                         or violation of these terms.
                                     </p>

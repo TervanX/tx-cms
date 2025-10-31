@@ -38,7 +38,7 @@ const defaultCompanies = [
 
 const defaultTestimonial = {
   quote:
-    "Scaling to meet customer demand has never been easier — TX Switch ensures seamless performance, uptime, and compliance at every transaction.",
+    "Scaling to meet customer demand has never been easier — Layer X Switch ensures seamless performance, uptime, and compliance at every transaction.",
   author: "Jeff Cardoso",
   position: "Vice President Operations, Azazie",
 };
@@ -49,7 +49,7 @@ export default function FormSidebar({
   testimonial = defaultTestimonial,
   trust = "The same world-class infrastructure that powers",
   showCompanies = true,
-  backgroundImage = "/assets/b117dbac815c7c71ea073f7a30999c33.jpeg?&q=90",
+  backgroundImage = "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889002/b117dbac815c7c71ea073f7a30999c33_uxhynu.jpg",
   customCompanies,
 }: FormSidebarProps) {
   const companiesToShow = customCompanies || defaultCompanies;

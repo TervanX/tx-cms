@@ -7,15 +7,15 @@ export const productivityProps = {
         "TX Exchange Engine automates the most complex aspects of digital asset trading—liquidity provisioning, route optimization, and risk management—delivering superior execution with minimal intervention.",
     images: {
         mobile: {
-            src: "/assets/solution1.jpg",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/solution1_avbfxx.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
-            src: "/assets/solution1.jpg",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/solution1_avbfxx.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         product: {
-            src: "/assets/productivity-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889043/productivity-1-desktop_sdzsp4.webp",
             alt: "Helpdesk product UI",
         },
     },
@@ -63,7 +63,7 @@ fill="none"
 </svg>`,
 
         image: {
-            src: "/assets/lightspeed-headshot-min.png",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891745/lightspeed-headshot-min_qiohvg.png",
             alt: "Angelo Livanos",
         },
     },
@@ -78,15 +78,15 @@ export const usabilityProps = {
         "From simple embedded swaps to sophisticated algorithmic strategies, our developer-first platform provides the tools and reliability needed to build competitive trading products at scale.",
     images: {
         mobile: {
-            src: "/assets/usability-hero-mobile.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891812/usability-hero-desktop_uirwq4.webp",
             alt: "Illustration of people walking down a flowery path",
         },
         desktop: {
-            src: "/assets/usability-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891812/usability-hero-desktop_uirwq4.webp",
             alt: "Illustration of people walking down a flowery path",
         },
         mainFeature: {
-            src: "/assets/usability-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891807/usability-1-desktop_sdggi4.webp",
             alt: "Helpdesk usability instant insight product visual",
         },
     },
@@ -101,7 +101,7 @@ export const usabilityProps = {
     ],
     additionalFeatures: [
         {
-            image: { src: "/assets/usability-2-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891808/usability-2-desktop_h3f0oo.webp" },
             title: 'Pre-Built Trading Modules',
             description: 'Accelerate development with our plug-and-play trading components.',
             list: {
@@ -113,7 +113,7 @@ export const usabilityProps = {
             }
         },
         {
-            image: { src: "/assets/usability-3-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891810/usability-3-desktop_ofrgcb.webp" },
             title: 'Cross-Chain Settlement Hub',
             description: 'Execute trades that originate on one chain and settle on another seamlessly. Our atomic swap technology and bridge aggregation ensure capital efficiency without manual intervention or wrapping assets.',
             list: {
@@ -172,15 +172,15 @@ export const outboundProps = {
     },
     images: {
         mobile: {
-            src: "/assets/outbound-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891763/outbound-hero-desktop_feua3q.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {
-            src: "/assets/outbound-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891763/outbound-hero-desktop_feua3q.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         mainFeature: {
-            src: "/assets/outbound-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891760/outbound-1-desktop_msubtn.webp",
             alt: "Helpdesk outbound product visual",
         },
     },
@@ -202,77 +202,77 @@ export const featuresProps = {
             name: 'Intelligent Order Routing',
             href: '/suite/helpdesk/inbox',
             description: "Automatically split and route orders across multiple liquidity sources for optimal execution.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'cross-chain-atomic-swaps',
             name: 'Cross-Chain Atomic Swaps',
             href: '/suite/helpdesk/copilot',
             description: "Execute trustless trades between different blockchain assets without intermediary wrapping.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'custom-amm-deployment',
             name: 'Custom AMM Deployment',
             href: '/suite/helpdesk/tickets',
             description: "Launch your own automated market maker with customizable fee structures and bonding curves.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'concentrated-liquidity-management',
             name: 'Concentrated Liquidity Management',
             href: '/suite/helpdesk/omnichannel',
             description: "Deploy capital within specific price ranges for enhanced capital efficiency.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'smart-order-types',
             name: 'Smart Order Types',
             href: '/suite/helpdesk/help-center',
             description: "Implement TWAP, VWAP, and limit orders that work across both CEX and DEX liquidity.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'liquidity-mining-incentives',
             name: "Liquidity Mining & Incentives",
             href: '/app-store',
             description: "Design and manage token distribution programs to bootstrap liquidity efficiently.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'real-time-price-feeds',
             name: 'Real-Time Price Feeds',
             href: '/suite/helpdesk/reporting',
             description: "Access resilient, manipulation-resistant price oracles with multi-source aggregation.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'advanced-charting-analytics',
             name: 'Advanced Charting & Analytics',
             href: '/suite/helpdesk/knowledge-hub',
             description: "Embed professional trading charts with technical indicators and volume analysis.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'portfolio-rebalancing-automation',
             name: 'Portfolio Rebalancing Automation',
             href: '/suite/helpdesk/outbound',
             description: "Set rules for automatic portfolio management and position sizing across assets.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'yield-optimization-strategies',
             name: 'Yield Optimization Strategies',
             href: '/suite/helpdesk/inbox',
             description: "Automatically deploy idle assets to earning opportunities across DeFi protocols.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'institutional-grade-security',
             name: 'Institutional-Grade Security',
             href: '/suite/helpdesk/copilot',
             description: "MPC-based settlement, smart contract audits, and real-time monitoring protect all assets.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         }
     ],
 };

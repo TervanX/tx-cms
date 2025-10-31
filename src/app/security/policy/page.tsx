@@ -145,7 +145,7 @@ export default function PrivacyPolicy() {
                             </h2>
                             <div className="space-y-6">
                                 <p className="text-gray-600 mb-3">
-                                    Tervan X uses the collected data for various purposes:
+                                    Layer X uses the collected data for various purposes:
                                 </p>
                                 <ul className="list-disc list-inside text-gray-600 space-y-2 ml-4">
                                     <li>To provide and maintain our Service</li>

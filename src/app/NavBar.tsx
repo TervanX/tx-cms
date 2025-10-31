@@ -70,9 +70,8 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-70 px-6 ${
-        isScrolled ? "bg-white" : ""
-      }`}
+      className={`fixed top-0 left-0 w-full z-70 px-6 ${isScrolled ? "bg-white" : ""
+        }`}
     >
       <DeskTopNavbar />
       <MobileNav
@@ -97,7 +96,7 @@ const DeskTopNavbar = () => {
       <div className="flex gap-10 items-center justify-start">
         <div className="flex items-center gap-2 font-bold text-lg">
           <Image
-            src="/assets/lxlogo.png"
+            src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761842277/LayerX_Logo_ffy6pb.png"
             className="h-6 w-6"
             width={24}
             height={24}
@@ -156,7 +155,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ toggle, isOpen }) => {
       <div className="flex gap-10 items-center justify-start">
         <div className="flex items-center gap-2 font-bold text-lg">
           <Image
-            src="/assets/lxlogo.png"
+            src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761842277/LayerX_Logo_ffy6pb.png"
             className="h-6 w-6"
             width={24}
             height={24}
@@ -233,7 +232,7 @@ const NavItem: React.FC<NavItemProps> = ({ navName }) => {
                     size="sm"
                     variant="outline"
                     type="button"
-                    onClick={() => {}}
+                    onClick={() => { }}
                   >
                     Learn more
                   </Button>
@@ -365,9 +364,8 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
       </button>
 
       <div
-        className={`overflow-y-scroll transition-all duration-300 ease-in-out px-6 ${
-          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-        }`}
+        className={`overflow-y-scroll transition-all duration-300 ease-in-out px-6 ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          }`}
       >
         <div className="pb-5 text-dark text-sm lg:text-base leading-relaxed border-gray-200 border-t-[1.5px] pt-4">
           <div className="flex flex-col lg:flex-row gap-6">

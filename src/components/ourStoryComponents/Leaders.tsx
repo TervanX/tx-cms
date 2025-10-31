@@ -37,19 +37,19 @@ interface CardProps {
 const cards: CardProps[] = [
   {
     id: "1",
-    logo: "/assets/leaders.webp",
+    logo: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891740/leaders_crydsu.webp",
     year: "2015",
     description: "Company is founded",
   },
   {
     id: "2",
-    logo: "/assets/leaders.webp",
+    logo: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891740/leaders_crydsu.webp",
     year: "2016",
     description: "Team expands globally",
   },
   {
     id: "3",
-    logo: "/assets/leaders.webp",
+    logo: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891740/leaders_crydsu.webp",
     year: "2018",
     description: "Launch of core product",
   },
@@ -61,7 +61,7 @@ const cards: CardProps[] = [
   },
   {
     id: "5",
-    logo: "/assets/leaders.webp",
+    logo: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891740/leaders_crydsu.webp",
     year: "2023",
     description: "Expanded into new markets",
   },
@@ -139,8 +139,9 @@ const CardShowcase: React.FC = () => {
               type="button"
               onClick={() => scrollByOne(-1)}
               disabled={!canLeft}
-              className={`w-10 ${!canLeft ? "opacity-50 cursor-not-allowed" : ""
-                }`}
+              className={`w-10 ${
+                !canLeft ? "opacity-50 cursor-not-allowed" : ""
+              }`}
             >
               <IoArrowBackSharp />
             </Button>
@@ -150,8 +151,9 @@ const CardShowcase: React.FC = () => {
               type="button"
               onClick={() => scrollByOne(1)}
               disabled={!canRight}
-              className={`w-10 ${!canRight ? "opacity-50 cursor-not-allowed" : ""
-                }`}
+              className={`w-10 ${
+                !canRight ? "opacity-50 cursor-not-allowed" : ""
+              }`}
             >
               <IoArrowForwardSharp />
             </Button>
@@ -200,7 +202,7 @@ const Card: React.FC<{ item: CardProps; index: number }> = ({ item }) => {
         className="absolute inset-0 z-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('/assets/hover-2.9fd5a57b.png')",
+            "url('https://res.cloudinary.com/dx1etzf66/image/upload/v1761891685/hover-2.9fd5a57b_pvmdo5.png')",
         }}
       />
 

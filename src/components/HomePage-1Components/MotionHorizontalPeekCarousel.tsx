@@ -201,7 +201,7 @@ const SectionCard: React.FC<{
       <div className=" flex flex-col items-center">
         <div className="w-full rounded">
           <video
-            src="/assets/stack-video.mp4"
+            src="https://res.cloudinary.com/dx1etzf66/video/upload/v1761889069/stack-video_jixzc7.mp4"
             className="absolute top-[90%] w-full rounded-xl object-cover"
           ></video>
         </div>
