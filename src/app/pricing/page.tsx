@@ -32,13 +32,13 @@ const PricingPage: React.FC = () => {
         >
           <div className={`flex flex-wrap items-center gap-8 justify-center`}>
             <img
-              src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/Stripe_ecrzh7.png.png"
+              src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/Stripe_ecrzh7.png"
               alt="Stripe"
               height="20"
               className="h-10 filter invert-0 brightness-0"
             />
             <img
-              src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761890451/https://res.cloudinary.com/dx1etzf66/image/upload/v1761890451/flutterwave-1_iivhor.svg-1_iivhor.svg"
+              src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761890451/flutterwave-1_iivhor.svg"
               alt="flutterwave"
               height="20"
               className="h-10 filter invert-0 brightness-0"

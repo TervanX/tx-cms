@@ -23,6 +23,14 @@ const iconBaseUrl = "https://res.cloudinary.com/dx1etzf66/image/upload";
 const iconVersion = "v1761842277";
 const iconId = "LayerX_Logo_ffy6pb.png";
 
+// Create the image URLs using template literals
+const openGraphImage = `${iconBaseUrl}/c_limit,w_1200,h_630,f_auto,q_80/${iconVersion}/${iconId}`;
+const twitterImage = `${iconBaseUrl}/c_limit,w_1200,h_600,f_auto,q_80/${iconVersion}/${iconId}`;
+const icon32 = `${iconBaseUrl}/w_32,h_32,f_auto,q_80/${iconVersion}/${iconId}`;
+const icon64 = `${iconBaseUrl}/w_64,h_64,f_auto,q_80/${iconVersion}/${iconId}`;
+const icon180 = `${iconBaseUrl}/w_180,h_180,f_auto,q_80/${iconVersion}/${iconId}`;
+const preloadIcon = `${iconBaseUrl}/w_32,h_32,f_auto,q_80/${iconVersion}/${iconId}`;
+
 export const metadata: Metadata = {
   title: "LayerX - Financial Infrastructure Platform",
   description:
@@ -36,7 +44,7 @@ export const metadata: Metadata = {
     siteName: "LayerX",
     locale: "en_US",
     type: "website",
-    images: ["/assets/lxlogo.png"],
+    images: [openGraphImage],
   },
   twitter: {
     card: "summary_large_image",
@@ -45,16 +53,28 @@ export const metadata: Metadata = {
     title: "LayerX - Financial Infrastructure Platform",
     description:
       "Scalable financial APIs and infrastructure for businesses, startups, and developers.",
-    images: ["/assets/lxlogo.png"],
+    images: [twitterImage],
   },
   icons: {
     icon: [
       {
-        url: "/assets/lxlogo.png",
+        url: icon32,
         type: "image/png",
+        sizes: "32x32",
+      },
+      {
+        url: icon64,
+        type: "image/png",
+        sizes: "64x64",
+      },
+      {
+        url: icon180,
+        type: "image/png",
+        sizes: "180x180",
       },
     ],
-    shortcut: "/assets/lxlogo.png",
+    shortcut: icon32,
+    apple: icon180,
   },
   alternates: {
     canonical: "https://layerx.com",
@@ -69,12 +89,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link
-          rel="preload"
-          href={`${iconBaseUrl}/w_32,h_32,f_auto,q_80/${iconVersion}/${iconId}`}
-          as="image"
-          type="image/png"
-        />
+        <link rel="preload" href={preloadIcon} as="image" type="image/png" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased ${grotesque.variable}`}

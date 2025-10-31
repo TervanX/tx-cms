@@ -25,16 +25,15 @@ const LogoGrid: React.FC<LogoGridProps> = ({
 }) => {
   const logosArray = [
     {
-      url: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/Stripe_ecrzh7.png.png",
+      url: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/Stripe_ecrzh7.png",
       imageAlt: "Stripe",
     },
     {
-      url: "assets/https://res.cloudinary.com/dx1etzf66/image/upload/v1761890451/flutterwave-1_iivhor.svg.svg",
-      imageAlt:
-        "https://res.cloudinary.com/dx1etzf66/image/upload/v1761890451/flutterwave-1_iivhor.svg",
+      url: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761890451/flutterwave-1_iivhor.svg",
+      imageAlt: "flutterwave",
     },
     {
-      url: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889000/Checkbox_y9pnxl.webpkbox.webp",
+      url: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889000/Checkbox_y9pnxl.webp",
       imageAlt: "Checkbox",
     },
     {
@@ -42,7 +41,7 @@ const LogoGrid: React.FC<LogoGridProps> = ({
       imageAlt: "Paystack_Logo",
     },
     {
-      url: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761890602/fireblocks-logo_aioa7u.svg-logo.svg",
+      url: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761890602/fireblocks-logo_aioa7u.svg",
       imageAlt: "fireblocks",
     },
   ];
