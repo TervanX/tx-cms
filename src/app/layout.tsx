@@ -18,21 +18,19 @@ const grotesque = Bricolage_Grotesque({
   subsets: ["latin"],
 });
 
-// Optimized Cloudinary URLs
 const iconBaseUrl = "https://res.cloudinary.com/dx1etzf66/image/upload";
 const iconVersion = "v1761842277";
 const iconId = "LayerX_Logo_ffy6pb.png";
 
 export const metadata: Metadata = {
   title: "LayerX - Financial Infrastructure Platform",
-  description:
-    "LayerX is the AWS for Finance – a powerful financial infrastructure platform supporting fiat, crypto, and digital assets with scalable APIs, dashboards, and developer-first tools.",
+  description: "LayerX is the AWS for Finance – a powerful financial infrastructure platform supporting fiat, crypto, and digital assets with scalable APIs, dashboards, and developer-first tools.",
+  keywords: ["financial infrastructure", "fintech", "APIs", "crypto", "digital assets", "fiat", "Africa fintech", "payment infrastructure", "LayerX", "build with layerX"],
   robots: { index: true, follow: true },
   openGraph: {
     title: "LayerX - Financial Infrastructure Platform",
-    description:
-      "Powerful financial infrastructure platform for Africa and beyond – supporting fiat, crypto, and digital assets.",
-    url: "https://layerx.com",
+    description: "Powerful financial infrastructure platform for Africa and beyond – supporting fiat, crypto, and digital assets.",
+    url: "https://buildwithlayerx.com",
     siteName: "LayerX",
     locale: "en_US",
     type: "website",
@@ -69,7 +67,7 @@ export const metadata: Metadata = {
     apple: `${iconBaseUrl}/w_180,h_180,f_auto,q_80/${iconVersion}/${iconId}`,
   },
   alternates: {
-    canonical: "https://layerx.com",
+    canonical: "https://buildwithlayerx.com",
   },
 };
 
