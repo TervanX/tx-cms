@@ -27,7 +27,7 @@ const Page = () => {
       <StackedAnimation />
       <CardShowcase />
       <ApolloTestimonials />
-      <div className="lg:px-12 -mt-20">
+      <div className="lg:px-12 lg:-mt-20 -mt-32">
         <Busineses />
       </div>
       <FooterCTA />

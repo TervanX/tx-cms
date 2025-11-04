@@ -109,7 +109,7 @@ export default function ApolloTestimonials() {
 
   return (
     <div className="overflow-hidden bg-white px-5 py-16 md:px-[calc(100%*1/26)] mb-10">
-      <div className="flex flex-col gap-4 md:flex-row md:justify-between mb-16">
+      <div className="flex flex-col gap-4 md:flex-row md:justify-between">
         <div className="md:w-[329px] lg:w-[411px] xl:w-[632px]">
           <h5 className="text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[56px] tracking-[-0.32px] sm:tracking-[-0.72px] md:tracking-[-0.8px] lg:tracking-[-0.96px] xl:tracking-[-1.12px] leading-none font-medium text-gray-900">
             Powered by the Most Advanced Blockchain Network

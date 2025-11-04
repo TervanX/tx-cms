@@ -362,7 +362,7 @@ const StackedAnimation: React.FC = () => {
             {/* Top overlay */}
             <div
               ref={topRef}
-              className="absolute inset-0 z-30 flex items-center justify-center "
+              className="absolute inset-0 lg:top-28 md:top-0 top-5 z-30 flex items-center justify-center "
               style={{ transformStyle: "flat" }}
             >
               <img
@@ -375,7 +375,7 @@ const StackedAnimation: React.FC = () => {
 
             {/* Middle stack (3D) */}
             <div
-              className="absolute top-20 inset-0 z-20 flex items-center justify-center scrollbar-hide"
+              className="absolute lg:top-32 top-20 md:top-28   inset-0 z-20 flex items-center justify-center scrollbar-hide"
               style={{ transformStyle: "preserve-3d" }}
             >
               {items.map((item, n) => (
