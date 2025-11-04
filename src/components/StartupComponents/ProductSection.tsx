@@ -35,9 +35,35 @@ const ProductSection: React.FC<ProductSectionProps> = ({
                   <h4 className="font-founders-grotesk text-[36px] leading-none tracking-[-0.72px] text-dark md:text-[48px] md:tracking-[-0.96px] lg:text-[48px] lg:tracking-[-0.96px] xl:text-[56px] xl:tracking-[-1.12px]">
                     {product.title}
                   </h4>
+                  {product.subtitle && (
+                    <p className="font-abc-diatype text-[18px] font-medium leading-[130%] tracking-[-0.18px] text-gray-800 md:text-[20px] md:tracking-[-0.2px]">
+                      {product.subtitle}
+                    </p>
+                  )}
                   <div className="space-y-6 font-abc-diatype text-[18px] leading-[130%] tracking-[-0.18px] text-gray-700 md:text-[20px] md:tracking-[-0.2px] lg:text-[20px] lg:tracking-[-0.2px] xl:text-[20px] xl:tracking-[-0.2px]">
                     {product.description}
                   </div>
+                  {product.features && product.features.length > 0 && (
+                    <ul className="space-y-3 font-abc-diatype text-[16px] leading-[150%] text-gray-600 md:text-[18px]">
+                      {product.features.map((feature, index) => (
+                        <li key={index} className="flex items-start gap-3">
+                          <span className="mt-1 text-gray-400">•</span>
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  {product.ctaText && product.ctaLink && (
+                    <div className="mt-2">
+                      <a
+                        href={product.ctaLink}
+                        className="inline-flex items-center gap-2 font-abc-diatype text-[16px] font-medium text-primary hover:text-primary/80 transition-colors md:text-[18px]"
+                      >
+                        {product.ctaText}
+                        <span>→</span>
+                      </a>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

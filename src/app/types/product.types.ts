@@ -109,7 +109,11 @@ export const ProductSchema = z.object({
   title: z.string().optional(),
   description: z.string().optional(),
   image: z.string().optional(),
-  imagePosition: z.enum(["left", "right"]).default("left").optional
+  imagePosition: z.string().optional(),
+  subtitle: z.string().optional(),
+  features: z.array(z.string()).optional(),
+  ctaText: z.string().optional(),
+  ctaLink: z.string().optional()
 });
 
 export const ProductSectionPropsSchema = z.object({

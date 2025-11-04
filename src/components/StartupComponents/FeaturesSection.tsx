@@ -1,18 +1,43 @@
 'use client'
+import { LucideIcon } from 'lucide-react';
 
 import { FeatureCardProps } from "@/app/types/product.types";
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) => {
+  const renderIcon = () => {
+    if (typeof icon === 'string') {
+      // Handle string icons (SVG/HTML)
+      return (
+        <>
+          <div
+            className="hidden lg:block"
+            dangerouslySetInnerHTML={{ __html: icon }}
+          />
+          <div
+            className="block lg:hidden"
+            dangerouslySetInnerHTML={{ __html: icon }}
+          />
+        </>
+      );
+    } else {
+      // Handle Lucide React icons
+      const IconComponent = icon as LucideIcon;
+      return (
+        <>
+          <div className="hidden lg:block">
+            <IconComponent size={48} className="text-dark" />
+          </div>
+          <div className="block lg:hidden">
+            <IconComponent size={40} className="text-dark" />
+          </div>
+        </>
+      );
+    }
+  };
+
   return (
     <div className="flex flex-col items-center gap-4 text-center text-dark">
-      <div
-        className="hidden lg:block"
-        dangerouslySetInnerHTML={{ __html: icon }}
-      />
-      <div
-        className="block lg:hidden"
-        dangerouslySetInnerHTML={{ __html: icon }}
-      />
+      {renderIcon()}
       <div className="flex flex-col items-center gap-2 text-center md:gap-4 lg:px-10">
         <p className="font-founders-grotesk text-2xl lg:text-3xl leading-none text-dark">
           {title}
