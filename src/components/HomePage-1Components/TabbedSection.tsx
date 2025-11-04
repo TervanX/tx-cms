@@ -69,7 +69,7 @@ const tabs: TabItem[] = [
                 icon: <CircuitBoard className="w-4 h-4" />
             },
         ],
-        image: "/assets/outbound2.webp",
+        image: "/assets/payment.png",
         bgColor: "bg-yellow-50",
         ctaPrimary: "Start Processing Payments",
         ctaSecondary: "Explore API Documentation"
@@ -101,7 +101,7 @@ const tabs: TabItem[] = [
                 icon: <Eye className="w-4 h-4" />
             },
         ],
-        image: "/assets/inbound2.webp",
+        image: "/assets/tm.png",
         bgColor: "bg-purple-50",
         ctaPrimary: " Get a Demo",
         ctaSecondary: "See How Treasury Works"
@@ -129,7 +129,7 @@ const tabs: TabItem[] = [
                 icon: <Lock className="w-4 h-4" />
             },
         ],
-        image: "/assets/data2.webp",
+        image: "/assets/embedded.png",
         bgColor: "bg-pink-50",
         ctaPrimary: "Build Your Wallet Now",
         ctaSecondary: " View Developer Tools"
@@ -157,7 +157,7 @@ const tabs: TabItem[] = [
                 icon: <Scale className="w-4 h-4" />
             },
         ],
-        image: "/assets/deal2.webp",
+        image: "/assets/wallet.png",
         bgColor: "bg-blue-50",
         ctaPrimary: "Launch with WaaS",
         ctaSecondary: "Book a Technical Session"

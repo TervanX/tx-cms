@@ -22,10 +22,10 @@ export default function CompaniesSection() {
                 </p> */}
 
                 {/* Company Logos Grid */}
-                <LogoGrid
+                {/* <LogoGrid
                   backgroundColor="#fffff"
                   className=" h-10 filter invert-0 brightness-0"
-                />
+                /> */}
               </div>
 
               {/* Testimonial Quote Section */}

@@ -69,7 +69,7 @@ const HeroSection = () => {
   const duplicatedCompanies = [...companies, ...companies];
 
   return (
-    <div className="mx-auto rounded-t-md overflow-clip rounded-b-md">
+    <div className="mx-auto overflow-clip rounded-b-md">
       <div className="-z-[1000]"></div>
 
       <div className="relative h-full w-full [body:has(.top-banner)_&]:pt-10">
