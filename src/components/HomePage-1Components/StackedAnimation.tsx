@@ -5,8 +5,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const TOP_URL = "/assets/top.svg";
-const BOTTOM_URL = "/assets/bottom.svg";
+const TOP_URL = "/assets/top_layer.svg";
+const BOTTOM_URL = "/assets/buttom_layer.svg";
 
 const items = [
   {
@@ -14,32 +14,32 @@ const items = [
     subTitle:
       "Access scalable APIs for wallets, settlements, on/off-ramps, KYC, and liquidity — everything needed to power modern financial ecosystems.",
     description: "Power every transaction — from payments to digital assets",
-    scrollUrl: "/assets/1.svg",
-    stackUrl: "/assets/1.svg",
+    scrollUrl: "/assets/security-icon.svg",
+    stackUrl: "/assets/security-icon.svg",
   },
   {
     title: "INTEGRATIONS",
     subTitle:
       "LayerX integrates with major blockchain networks, payment processors, and banking partners, letting you launch multi-asset products without switching platforms.",
     description: "Connect seamlessly with banks, chains, and protocols",
-    scrollUrl: "/assets/2.svg",
-    stackUrl: "/assets/3.svg",
+    scrollUrl: "/assets/integration.svg",
+    stackUrl: "/assets/integration.svg",
   },
   {
     title: "ACTIONS",
     subTitle:
       "Built with bank-grade encryption, AML/KYC automation, and regional compliance to help your products scale confidently across jurisdictions.",
     description: "Enterprise-grade security and regulatory coverage",
-    scrollUrl: "/assets/4.svg",
-    stackUrl: "/assets/5.svg",
+    scrollUrl: "/assets/payment.svg",
+    stackUrl: "/assets/payment.svg",
   },
   {
     title: "AI & AUTOMATION",
     subTitle:
       "LayerX AI engine automates reconciliation, fraud detection, and liquidity optimization — reducing manual workloads while improving trust and speed.",
     description: "The intelligent core for financial operations",
-    scrollUrl: "/assets/6.svg",
-    stackUrl: "/assets/7.svg",
+    scrollUrl: "/assets/ai_and_automation.svg",
+    stackUrl: "/assets/ai_and_automation.svg",
   },
 ];
 
@@ -129,8 +129,8 @@ const StackedAnimation: React.FC = () => {
               raw <= start
                 ? 0
                 : raw >= endStack
-                ? 1
-                : (raw - start) / (endStack - start);
+                  ? 1
+                  : (raw - start) / (endStack - start);
 
             const total = layers.length;
             const fadeFactor = 0.6;
@@ -314,17 +314,15 @@ const StackedAnimation: React.FC = () => {
                 {items.map((item, index) => (
                   <div
                     key={index}
-                    className={`flex flex-col gap-1 border-solid border-b py-2 transition-colors duration-300 ${
-                      activeItem === index ? "px-2" : ""
-                    }`}
+                    className={`flex flex-col gap-1 border-solid border-b py-2 transition-colors duration-300 ${activeItem === index ? "px-2" : ""
+                      }`}
                   >
                     <div className="flex justify-between items-center w-full">
                       <p
-                        className={`text-xs transition-colors duration-300 ${
-                          activeItem === index
-                            ? "text-black font-semibold"
-                            : "text-sand hover:text-black"
-                        }`}
+                        className={`text-xs transition-colors duration-300 ${activeItem === index
+                          ? "text-black font-semibold"
+                          : "text-sand hover:text-black"
+                          }`}
                       >
                         {item.title}
                       </p>

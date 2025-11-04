@@ -8,6 +8,7 @@ import ApolloTestimonials from "@/components/homeComponents/Testimonial";
 import FooterCTA from "@/components/homeComponents/FooterCta";
 import StackedAnimation from "@/components/HomePage-1Components/StackedAnimation";
 import CardShowcase from "@/components/HomePage-1Components/EveryThingYouNeed";
+import Busineses from "@/components/PricingComponents/Busineses";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -26,6 +27,9 @@ const Page = () => {
       <StackedAnimation />
       <CardShowcase />
       <ApolloTestimonials />
+      <div className="px-12 -mt-20">
+        <Busineses />
+      </div>
       <FooterCTA />
     </div>
   );
