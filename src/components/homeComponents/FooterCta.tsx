@@ -28,7 +28,7 @@ export default function FooterCTA() {
                     {/* Mobile Image */}
                     <div className="relative aspect-square w-full md:hidden">
                       <Image
-                        alt="Apollo CTA illustration"
+                        alt="LayerX CTA illustration"
                         src="/assets/box.svg"
                         fill
                         className="object-cover"
@@ -88,7 +88,7 @@ export default function FooterCTA() {
                 <div className="relative hidden aspect-square w-1/2 items-center justify-center md:max-xl:flex">
                   <div className="relative aspect-square w-full">
                     <Image
-                      alt="Apollo CTA illustration"
+                      alt="LayerX CTA illustration"
                       src="/assets/box.svg"
                       fill
                       className="object-cover"
@@ -101,7 +101,7 @@ export default function FooterCTA() {
               {/* Desktop Large Image (Absolutely Positioned) */}
               <div className="absolute top-1/2 hidden aspect-square overflow-hidden rounded-lg max-2xl:-translate-y-1/2 xl:right-[130px] xl:block xl:h-3/4 xl:right-[170px] 2xl:top-10 2xl:h-[calc(100%-80px)]">
                 <Image
-                  alt="Apollo CTA illustration"
+                  alt="LayerX CTA illustration"
                   src="/assets/box.svg"
                   fill
                   className="object-cover"

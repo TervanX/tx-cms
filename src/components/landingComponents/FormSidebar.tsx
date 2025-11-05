@@ -93,37 +93,33 @@ export default function FormSidebar({
                   {testimonial.quote}
                 </p>
               </div>
-              <footer className="text-left border-t p-4 ">
+              {/* <footer className="text-left border-t p-4 ">
                 <span className="font-semibold text-gray-900 block">
                   {testimonial.author}
                 </span>
                 <span className="text-sm text-gray-600">
                   {testimonial.position}
                 </span>
-              </footer>
+              </footer> */}
             </blockquote>
           </div>
+          <div className="flex flex-col gap-4 md:gap-6 w-full md:max-w-[80%] mx-auto">
+            <span className="text-black text-center">{trust}</span>
 
-          {/* Trusted Companies */}
-          {showCompanies && (
-            <div className="flex flex-col gap-4 md:gap-6 w-full md:max-w-[80%] mx-auto">
-              <span className="text-black text-center">{trust}</span>
-
-              {/* Marquee Section */}
-              <section className="overflow-hidden">
-                <div className="relative">
-                  <div className="flex animate-marquee whitespace-nowrap"></div>
-                </div>
-                <LogoGrid
-                  className="h-10 filter invert-0 brightness-0" // Black
-                />
-              </section>
-              <span className="text-black text-center">
-                Now powers the LayerX Network — delivering secure, scalable, and
-                intelligent financial systems built for Africa and beyond.
-              </span>
-            </div>
-          )}
+            {/* Marquee Section */}
+            <section className="overflow-hidden">
+              <div className="relative">
+                <div className="flex animate-marquee whitespace-nowrap"></div>
+              </div>
+              <LogoGrid
+                className="h-10 filter invert-0 brightness-0" // Black
+              />
+            </section>
+            <span className="text-black text-center">
+              Now powers the LayerX Network — delivering secure, scalable, and
+              intelligent financial systems built for Africa and beyond.
+            </span>
+          </div>
         </div>
       </div>
 

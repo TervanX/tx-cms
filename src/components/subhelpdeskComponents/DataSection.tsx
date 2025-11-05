@@ -163,7 +163,7 @@ export default function DataSection({
                                     </p>
                                     <a
                                         className="inline-flex items-center font-sans leading-none text-current relative cursor-pointer bg-gradient-to-r from-current to-current bg-no-repeat bg-[size:100%_0.05em] bg-[position:0%_100%] [transition:background-size_0.2s_ease-out] hover:bg-[size:0%_0.05em] hover:bg-[position:100%_100%] pb-1 font-semibold"
-                                        href="https://www.g2.com/compare_reports/intercom-zendesk-support-suite-and-salesforce-service-cloud"
+                                        href="#"
                                         target="_self"
                                     >
                                         <span className="external-link-inner inline-flex items-center">

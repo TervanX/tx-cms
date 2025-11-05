@@ -112,6 +112,7 @@ export default function FormSteps({
                                     value={option}
                                     checked={Array.isArray(formData[field.name]) && formData[field.name].includes(option)}
                                     onChange={onCheckboxChange}
+                                    className="accent-[#0d07ed]"
                                 />
                                 <span className="text-sm text-gray-700">{option}</span>
                             </label>
@@ -126,7 +127,7 @@ export default function FormSteps({
                             name={field.name}
                             checked={!!formData[field.name]}
                             onChange={onCheckboxChange}
-                            className="mt-1 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                            className="mt-1 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 accent-[#0d07ed]"
                         />
                         <span className="text-sm text-gray-700">
                             {field.label}
@@ -145,7 +146,7 @@ export default function FormSteps({
                                     value={option}
                                     checked={formData[field.name] === option}
                                     onChange={onRadioChange}
-                                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2"
+                                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2 accent-[#0d07ed]"
                                 />
                                 <span className="text-sm text-gray-700">{option}</span>
                             </label>
@@ -252,14 +253,14 @@ export default function FormSteps({
                                     </div>
                                 </form>
 
-                                {/* Progress Bar */}
-                                <div className="flex flex-col gap-3 text-center md:text-right my-8">
-                                    <div className="relative w-full bg-black/40 overflow-hidden rounded-full h-[1px]">
-                                    </div>
-                                    <span className="text-gray-600">
-                                        Step {currentStep}/{steps.length}
-                                    </span>
-                                </div>
+                                {/* Progress Bar */}{steps.length > 1 &&
+                                    <div className="flex flex-col gap-3 text-center md:text-right my-8">
+                                        <div className="relative w-full bg-black/40 overflow-hidden rounded-full h-[1px]">
+                                        </div>
+                                        <span className="text-gray-600">
+                                            Step {currentStep}/{steps.length}
+                                        </span>
+                                    </div>}
                             </div>
                         </div>
                     </div>

@@ -80,7 +80,7 @@ const contactSteps = [
                 type: "checkbox" as const,
                 label: "How can we help you?",
                 required: true,
-                options: ["Accept Crypto Payments", "Issue Crypto Cards", "Build on Digital Asset Infrastructure (API)", "Use AutoTrade or Plugin Systems", "Integrate TervanX Checkout", "Compliance / KYC Solutions", "Something else"]
+                options: ["Accept Crypto Payments", "Issue Crypto Cards", "Build on Digital Asset Infrastructure (API)", "Use AutoTrade or Plugin Systems", "Integrate LayerX Checkout", "Compliance / KYC Solutions", "Something else"]
             },
             {
                 name: "message",

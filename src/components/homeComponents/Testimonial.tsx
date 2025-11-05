@@ -91,7 +91,7 @@ const testimonials: Testimonial[] = [
   },
 ];
 
-export default function ApolloTestimonials() {
+export default function LayerXTestimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [hoveredId, setHoveredId] = useState<number | null>(null);
 

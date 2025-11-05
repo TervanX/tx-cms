@@ -5,15 +5,15 @@ import FeaturesSection from "@/components/StartupComponents/FeaturesSection";
 import ProductSection from "@/components/StartupComponents/ProductSection";
 import CtaBanner from "@/components/StartupComponents/Cta";
 
-import { tervanxData } from "./data";
+import { layerxData } from "./data";
 
 export default function FintechBuilders() {
   return (
     <div className="w-full">
-      <HeroSection {...tervanxData.herodata} />
-      <FeaturesSection {...tervanxData.featuredata} />
-      <ProductSection {...tervanxData.productdata} />
-      <CtaBanner {...tervanxData.ctaBanner} />
+      <HeroSection {...layerxData.herodata} />
+      <FeaturesSection {...layerxData.featuredata} />
+      <ProductSection {...layerxData.productdata} />
+      <CtaBanner {...layerxData.ctaBanner} />
     </div>
   );
 }

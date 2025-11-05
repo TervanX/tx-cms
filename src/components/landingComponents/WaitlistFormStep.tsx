@@ -122,7 +122,7 @@ const waitlistSteps = [
       },
       {
         name: "agreeToTerms",
-        type: "checkbox" as const,
+        type: "singleCheckbox" as const,
         label: "Accept Terms & Privacy Policy",
         required: true,
         options: ["I agree to the Terms & Conditions and Privacy Policy *"],
@@ -145,7 +145,7 @@ export default function JoinWaitlistForm(props: JoinWaitlistFormProps) {
       steps={waitlistSteps}
       mobileHeading={mobileHeading}
       submitButtonText="Join Waitlist"
-      isSubmitting
+      isSubmitting={props.isSubmitting}
     />
   );
 }

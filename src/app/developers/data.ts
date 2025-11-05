@@ -189,79 +189,66 @@ export const supportData = {
             {
                 id: '1',
                 alt: '2025 spring best relationship',
-                src: '/assets/2025-spring-best-relatnionship.e852da01.svg',
+                src: '/assets/AWS.png',
                 width: 105,
                 height: 120,
+                tag: "In Progress"
             },
             {
                 id: '2',
                 alt: '2025 spring best results',
-                src: '/assets/2025-spring-best-results.bd944908.svg',
+                src: '/assets/DDoS.png',
                 width: 105,
                 height: 120,
+                tag: "Concluded"
             },
             {
                 id: '3',
                 alt: '2025 spring best roi',
-                src: '/assets/2025-spring-best-roi.4e11006b.svg',
+                src: '/assets/gdpr.png',
                 width: 105,
                 height: 120,
+                tag: "In Progress"
             },
             {
                 id: '4',
                 alt: '2025 spring high performer',
-                src: '/assets/2025-spring-high-performer.ac61c4b0.svg',
+                src: '/assets/ISO.png',
                 width: 105,
                 height: 120,
+                tag: "Concluded"
             },
             {
                 id: '5',
                 alt: '2025 spring momentum leader',
-                src: '/assets/2025-spring-momentum-leader.1dedd1e8.svg',
+                src: '/assets/PCI.png',
                 width: 105,
                 height: 120,
+                tag: "In Progress"
             },
             {
                 id: '6',
                 alt: '2025 spring most implementable',
-                src: '/assets/2025-spring-most-implementable.357d0c18.svg',
+                src: '/assets/pen.png',
                 width: 105,
                 height: 120,
+                tag: "Concluded"
             },
             {
                 id: '7',
                 alt: '2025 spring top50 sales products',
-                src: '/assets/2025-spring-top50-sales-products.a56b5440.svg',
+                src: '/assets/SOC.png',
                 width: 105,
                 height: 120,
+                tag: "In Progress"
             },
             {
                 id: '8',
                 alt: '2025 spring top50 small business products',
-                src: '/assets/2025-spring-top50-small-business-products.39d1f8e7.svg',
+                src: '/assets/Zero.png',
                 width: 105,
                 height: 120,
-            },
-            {
-                id: '9',
-                alt: '2025 spring top100 best software products',
-                src: '/assets/2025-spring-top100-best-software-products.2ab8a2d3.svg',
-                width: 105,
-                height: 120,
-            },
-            {
-                id: '10',
-                alt: '2025 spring top100 global sellers',
-                src: '/assets/2025-spring-top100-global-sellers.8a1741b6.svg',
-                width: 105,
-                height: 120,
-            },
-            {
-                id: '11',
-                alt: '2025 spring top100 highest satisfation product',
-                src: '/assets/2025-spring-top100-highest-satisfation-product.2851ec87.svg',
-                width: 105,
-                height: 120,
+                tag: "Concluded"
             },
         ]
     }

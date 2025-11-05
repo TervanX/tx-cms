@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HeroSection from "@/components/homeComponents/HeroSection";
 import SalesPerform from "@/components/PricingComponents/SalesPerform";
 import CompaniesSection from "@/components/homeComponents/CompanySection";
-import ApolloTestimonials from "@/components/homeComponents/Testimonial";
+import LayerXTestimonials from "@/components/homeComponents/Testimonial";
 import FooterCTA from "@/components/homeComponents/FooterCta";
 import StackedAnimation from "@/components/HomePage-1Components/StackedAnimation";
 import CardShowcase from "@/components/HomePage-1Components/EveryThingYouNeed";
@@ -29,7 +29,7 @@ const Page = () => {
       </div>
       <StackedAnimation />
       <CardShowcase />
-      <ApolloTestimonials />
+      <LayerXTestimonials />
       <div className="lg:px-12 lg:-mt-20 -mt-32">
         <Busineses />
         <SalesPerform />

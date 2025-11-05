@@ -86,11 +86,10 @@ const PricingSection: React.FC<PricingSectionProps> = ({
           <button
             key={tab.id}
             onClick={() => handleTabClick(tab.id)}
-            className={`whitespace-nowrap px-6 py-3 text-xs uppercase tracking-wide bg-gray-100 transition-all w-full ${
-              activeTab === tab.id
+            className={`whitespace-nowrap px-6 py-3 text-xs uppercase tracking-wide bg-gray-100 transition-all w-full ${activeTab === tab.id
                 ? "bg-white text-black shadow-sm"
                 : " text-black hover:text-gray-800"
-            }`}
+              }`}
           >
             <span className="text-sm font-medium tracking-normal">
               {tab.label}
@@ -127,26 +126,23 @@ const PricingSection: React.FC<PricingSectionProps> = ({
                   <button
                     key={feature.id}
                     onClick={() => toggleFeature(feature.id)}
-                    className={`rounded-full p-1 text-xs font-bold transition-all border flex items-center justify-center gap-2 ${
-                      selectedFeatures.includes(feature.id)
+                    className={`rounded-full p-1 text-xs font-bold transition-all border flex items-center justify-center gap-2 ${selectedFeatures.includes(feature.id)
                         ? "border-blue-300 bg-blue-50 text-blue-700"
                         : "bg-white text-gray-700 border-none hover:border-blue-300 hover:bg-blue-50"
-                    }`}
+                      }`}
                   >
                     <div
-                      className={`w-4 h-4 rounded-full border flex items-center justify-center transition-all ${
-                        selectedFeatures.includes(feature.id)
+                      className={`w-4 h-4 rounded-full border flex items-center justify-center transition-all ${selectedFeatures.includes(feature.id)
                           ? "bg-blue-500 border-blue-500"
                           : "bg-white border-gray-400"
-                      }`}
+                        }`}
                     >
                       <Check
                         size={12}
-                        className={`text-white transition-all ${
-                          selectedFeatures.includes(feature.id)
+                        className={`text-white transition-all ${selectedFeatures.includes(feature.id)
                             ? "opacity-100"
                             : "opacity-0"
-                        }`}
+                          }`}
                       />
                     </div>
                     {feature.name}
@@ -350,7 +346,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isAnnualBilling, isPayg
         {/* Plan Header */}
         <div className="mb-0">
           <h3 className="text-xl font-medium">{plan.name}</h3>
-          <p className="text-sm text-dark mt-2 line-clamp-2">
+          <p className="text-sm text-dark mt-2 ">
             {plan.description}
           </p>
         </div>

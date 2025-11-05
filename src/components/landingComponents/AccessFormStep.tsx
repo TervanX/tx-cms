@@ -62,7 +62,7 @@ const accessSteps = [
                 type: "textarea" as const,
                 label: "What do you want to build?",
                 required: true,
-                placeholder: "Describe your use case and what you plan to do on TervanX..."
+                placeholder: "Describe your use case and what you plan to do on LayerX..."
             }
         ]
     },

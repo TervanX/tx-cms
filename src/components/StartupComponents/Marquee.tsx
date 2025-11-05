@@ -47,7 +47,7 @@ export const Marquee: React.FC<MarqueeProps> = ({
                         {duplicatedItems.map((item, index) => (
                             <div
                                 key={`${item.id}-${index}`}
-                                className="flex-shrink-0 px-4"
+                                className="flex-shrink-0 px-4 relative group"
                             >
                                 <img
                                     alt={item.alt}
@@ -55,10 +55,21 @@ export const Marquee: React.FC<MarqueeProps> = ({
                                     width={item.width}
                                     height={item.height}
                                     decoding="async"
-                                    className="lg:h-[144px] lg:w-[127px] h-[120px] w-[105px]"
                                     src={item.src}
                                     style={{ color: 'transparent' }}
+                                    className="transition-all duration-300 group-hover:brightness-90"
                                 />
+                                {item.tag && (
+                                    <div className="absolute top-2 left-1/2 transform -translate-x-1/2 
+                 bg-black/80 text-white 
+                  px-3 py-1 rounded-lg text-xs font-semibold 
+                  opacity-0 group-hover:opacity-100 
+                  transition-all duration-300 ease-out
+                  group-hover:translate-y-0 -translate-y-2
+                  shadow-lg whitespace-nowrap">
+                                        {item.tag}
+                                    </div>
+                                )}
                             </div>
                         ))}
                     </motion.div>

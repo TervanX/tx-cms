@@ -7,7 +7,7 @@ export default function StartupBanner() {
 
     if (!isVisible) return null;
     return (
-        <div className="relative w-full bg-primary px-4 py-3">
+        <div className="relative w-full bg-primary px-4 py-3 mt-4 md:mt-0">
             <div className="flex items-center justify-center w-full text-center gap-3">
                 <div className="flex items-center justify-center w-full text-center gap-2 text-white">
                     <Info className="h-5 w-5 flex-shrink-0" />
