@@ -110,7 +110,8 @@ const waitlistSteps = [
       {
         name: "interestReason",
         type: "textarea" as const,
-        label: "Why You're Interested in LayerX Switch (Optional)",
+        required: true,
+        label: "Why You're Interested in LayerX Switch",
         placeholder:
           "Tell us what you plan to build or any specific use cases...",
       },
@@ -122,7 +123,7 @@ const waitlistSteps = [
       },
       {
         name: "agreeToTerms",
-        type: "checkbox" as const,
+        type: "singleCheckbox" as const,
         label: "Accept Terms & Privacy Policy",
         required: true,
         options: ["I agree to the Terms & Conditions and Privacy Policy *"],
@@ -145,7 +146,7 @@ export default function JoinWaitlistForm(props: JoinWaitlistFormProps) {
       steps={waitlistSteps}
       mobileHeading={mobileHeading}
       submitButtonText="Join Waitlist"
-      isSubmitting
+      isSubmitting={props.isSubmitting}
     />
   );
 }

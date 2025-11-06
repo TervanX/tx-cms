@@ -5,10 +5,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const TOP_URL =
-  "https://res.cloudinary.com/dx1etzf66/image/upload/v1761890098/top_n54dx6.svg";
-const BOTTOM_URL =
-  "https://res.cloudinary.com/dx1etzf66/image/upload/v1761890158/bottom_iqgxtl.svg";
+const TOP_URL = "/assets/top_layer.svg";
+const BOTTOM_URL = "/assets/buttom_layer.svg";
 
 const items = [
   {
@@ -16,40 +14,32 @@ const items = [
     subTitle:
       "Access scalable APIs for wallets, settlements, on/off-ramps, KYC, and liquidity — everything needed to power modern financial ecosystems.",
     description: "Power every transaction — from payments to digital assets",
-    scrollUrl:
-      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889069/1_n60rey.svg",
-    stackUrl:
-      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889069/1_n60rey.svg",
+    scrollUrl: "/assets/security-icon.svg",
+    stackUrl: "/assets/security-icon.svg",
   },
   {
     title: "INTEGRATIONS",
     subTitle:
       "LayerX integrates with major blockchain networks, payment processors, and banking partners, letting you launch multi-asset products without switching platforms.",
     description: "Connect seamlessly with banks, chains, and protocols",
-    scrollUrl:
-      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889069/2_hn4h5m.svg",
-    stackUrl:
-      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889093/3_tybxci.svg",
+    scrollUrl: "/assets/integration.svg",
+    stackUrl: "/assets/integration.svg",
   },
   {
     title: "ACTIONS",
     subTitle:
       "Built with bank-grade encryption, AML/KYC automation, and regional compliance to help your products scale confidently across jurisdictions.",
     description: "Enterprise-grade security and regulatory coverage",
-    scrollUrl:
-      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761888993/4_a2weqt.svg",
-    stackUrl:
-      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761888995/5_ouxm1i.svg",
+    scrollUrl: "/assets/payment.svg",
+    stackUrl: "/assets/payment.svg",
   },
   {
     title: "AI & AUTOMATION",
     subTitle:
       "LayerX AI engine automates reconciliation, fraud detection, and liquidity optimization — reducing manual workloads while improving trust and speed.",
     description: "The intelligent core for financial operations",
-    scrollUrl:
-      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761888993/6_sinna7.svg",
-    stackUrl:
-      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761888993/7_ilmz9v.svg",
+    scrollUrl: "/assets/ai_and_automation.svg",
+    stackUrl: "/assets/ai_and_automation.svg",
   },
 ];
 
@@ -139,8 +129,8 @@ const StackedAnimation: React.FC = () => {
               raw <= start
                 ? 0
                 : raw >= endStack
-                ? 1
-                : (raw - start) / (endStack - start);
+                  ? 1
+                  : (raw - start) / (endStack - start);
 
             const total = layers.length;
             const fadeFactor = 0.6;
@@ -327,17 +317,15 @@ const StackedAnimation: React.FC = () => {
                 {items.map((item, index) => (
                   <div
                     key={index}
-                    className={`flex flex-col gap-1 border-solid border-b py-2 transition-colors duration-300 ${
-                      activeItem === index ? "px-2" : ""
-                    }`}
+                    className={`flex flex-col gap-1 border-solid border-b py-2 transition-colors duration-300 ${activeItem === index ? "px-2" : ""
+                      }`}
                   >
                     <div className="flex justify-between items-center w-full">
                       <p
-                        className={`text-xs transition-colors duration-300 ${
-                          activeItem === index
-                            ? "text-black font-semibold"
-                            : "text-sand hover:text-black"
-                        }`}
+                        className={`text-xs transition-colors duration-300 ${activeItem === index
+                          ? "text-black font-semibold"
+                          : "text-sand hover:text-black"
+                          }`}
                       >
                         {item.title}
                       </p>
@@ -377,7 +365,7 @@ const StackedAnimation: React.FC = () => {
             {/* Top overlay */}
             <div
               ref={topRef}
-              className="absolute inset-0 z-30 flex items-center justify-center "
+              className="absolute inset-0 lg:top-28 md:top-0 top-5 z-30 flex items-center justify-center "
               style={{ transformStyle: "flat" }}
             >
               <img
@@ -390,7 +378,7 @@ const StackedAnimation: React.FC = () => {
 
             {/* Middle stack (3D) */}
             <div
-              className="absolute top-20 inset-0 z-20 flex items-center justify-center scrollbar-hide"
+              className="absolute lg:top-32 top-20 md:top-28   inset-0 z-20 flex items-center justify-center scrollbar-hide"
               style={{ transformStyle: "preserve-3d" }}
             >
               {items.map((item, n) => (

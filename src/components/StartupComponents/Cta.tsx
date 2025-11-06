@@ -1,6 +1,7 @@
-import Image from "next/image";
-import Button from "../reusable/Button";
-import { CtaBannerProps } from "@/app/types/startups.types";
+import Image from 'next/image';
+import Button from '../reusable/Button';
+import { CtaBannerProps } from '@/app/types/startups.types';
+import Link from 'next/link';
 export default function CtaBanner({
   buttonHref,
   tagline = "Apollo for startups",
@@ -36,14 +37,16 @@ export default function CtaBanner({
               <div className="xl:text-[20px] xl:tracking-[-0.2px] xl:leading-[130%] lg:text-[20px] lg:tracking-[-0.2px] lg:leading-[130%] md:text-[20px] md:tracking-[-0.2px] md:leading-[130%] text-[18px] tracking-[-0.18px] leading-[130%] font-abc-diatype text-text-body max-w-4xl whitespace-pre-line pt-6 __variable_7121de">
                 {description}
               </div>
-              <Button
-                variant="primary"
-                size="lg"
-                href={buttonHref}
-                onClick={onButtonClick}
-              >
-                {buttonText}
-              </Button>
+              <Link href="/contact/startup">
+                <Button
+                  variant="primary"
+                  size="lg"
+                  href={buttonHref}
+                  onClick={onButtonClick}
+                >
+                  {buttonText}
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

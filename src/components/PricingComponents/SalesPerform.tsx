@@ -1,47 +1,24 @@
 import { FaStar } from "react-icons/fa6";
+import { Marquee } from "../StartupComponents/Marquee";
+import { supportData } from "@/app/developers/data";
 const SalesPerform = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-8 w-full justify-between my-12">
-      <div>
-        <p className="text-[24px] font-medium text-dark font-grotesk text-center lg:text-start">
-          The most loved sales platform on the planet
+    <div className="flex flex-col lg:flex-row lg:gap-8 w-full justify-between overflow-hidden items-center lg:mb-12">
+      <div className="lg:w-[70%] gap-2 flex flex-col px-4 lg:px-0">
+        <p className="text-2xl md:text-3xl font-medium text-dark font-grotesk text-center lg:text-start">
+          Compliance & Security at LayerX <br />
+          We take compliance seriously — because trust is our foundation
         </p>
+        <p className="md:text-lg font-medium text-dark font-grotesk text-center lg:text-start leading-relaxed lg:text-justify ">At LayerX, we build financial infrastructure with security and compliance at the core. Every transaction, integration, and API is protected by industry-grade standards and global regulatory frameworks.
+          We don’t just meet expectations — we exceed them to keep your business, customers, and data safe.</p>
         <Ratings />
-        <p className="text-xs text-dark font-grotesk mt-2  text-center lg:text-start">
-          4.7/5 based on 9,015 reviews | GDPR Compliant
+        <p className="text-xs italic text-dark font-grotesk mt-2  text-center lg:text-start">
+          Our systems undergo independent security audits quarterly
         </p>
       </div>
       <div>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4 px-3 lg:px-0 w-[80%] mx-auto lg:w-full">
-          <div className="flex items-center justify-center">
-            <img
-              src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891847/2025-spring-top50-small-business-products.39d1f8e7_uzigqr.svg"
-              className="max-h-[144px] max-w-[127px] object-contain"
-              alt="Award 1"
-            />
-          </div>
-          <div className="flex items-center justify-center">
-            <img
-              src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891847/2025-spring-top50-small-business-products.39d1f8e7_uzigqr.svg"
-              className="max-h-[144px] max-w-[127px] object-contain"
-              alt="Award 1"
-            />
-          </div>
-          <div className="flex items-center justify-center">
-            <img
-              src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891847/2025-spring-top50-small-business-products.39d1f8e7_uzigqr.svg"
-              className="max-h-[144px] max-w-[127px] object-contain"
-              alt="Award 1"
-            />
-          </div>
-          <div className="flex items-center justify-center">
-            <img
-              src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891847/2025-spring-top50-small-business-products.39d1f8e7_uzigqr.svg"
-              className="max-h-[144px] max-w-[127px] object-contain"
-              alt="Award 1"
-            />
-          </div>
-        </div>
+        <Marquee items={supportData.marqueedata.marqueeItems} />
+
       </div>
     </div>
   );

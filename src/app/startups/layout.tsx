@@ -1,6 +1,6 @@
 import React from "react";
 import BackgroundImages from "@/components/StartupComponents/BackgroundImage";
-import Header from "@/components/StartupComponents/Header";
+import Header from "@/components/reusable/NavBar";
 import Footer from "@/components/reusable/Footer";
 
 const layout = ({ children }: { children: React.ReactNode }) => {

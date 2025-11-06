@@ -1,4 +1,5 @@
 import Button from "../reusable/Button";
+import Link from "next/link";
 import { HeroSectionProps } from "@/app/types/startups.types";
 const HeroSection: React.FC<HeroSectionProps> = ({
   title,
@@ -18,9 +19,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               {description}
             </div>
             <div className="flex justify-start ">
-              <Button variant="primary" size="lg">
-                Apply now
-              </Button>
+              <Link href="/contact/startup">
+                <Button variant="primary" size="lg">Apply now</Button>
+              </Link>
             </div>
           </div>
           <div className="flex items-center justify-center">

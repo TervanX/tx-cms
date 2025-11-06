@@ -36,8 +36,8 @@ export default function Hero({
   description,
   span,
   subtitle,
-  backgroundImage = "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889004/hero_lxmhmb.webp",
-  productImage = "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891774/product1_tzhphb.png",
+  backgroundImage = "/assets/hero.webp",
+  productImage = "/assets/product2.png",
   featureLinks = [
     {
       name: "Inbox",
@@ -230,7 +230,7 @@ export default function Hero({
   ],
   primaryButton = {
     text: "Login",
-    href: "https://www.intercom.com/view-demos",
+    href: "#",
   },
   secondaryButton = {
     text: "Contact Sales",
@@ -251,7 +251,7 @@ export default function Hero({
       <div className="overflow-hidden bg-cover absolute inset-0 size-full">
         <img
           alt="Helpdesk illustration"
-          src={backgroundImage}
+          src='/assets/hero.webp'
           className="transition-opacity duration-300 ease-out-quad size-full object-cover object-center opacity-100"
           style={{
             position: "absolute",

@@ -208,7 +208,6 @@ export default function ContactSalesPage() {
 
       if (response.ok) {
         const responseData = await response.json();
-        console.log("Sales form successfully submitted", responseData);
         setIsSubmitted(true);
         setTimeout(() => {
           window.history.back();
@@ -217,7 +216,6 @@ export default function ContactSalesPage() {
         const errorData = await response.json();
         console.error("Server error:", errorData);
 
-        // Extract error message from API response
         const apiErrorMessage = errorData?.message || errorData?.title || "Failed to submit form";
         setErrorMessage(`${apiErrorMessage}. Please check your information and try again.`);
       }

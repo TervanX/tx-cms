@@ -1,5 +1,7 @@
-import Image from "next/image";
-import Button from "../reusable/Button";
+import Image from 'next/image';
+import Button from '../reusable/Button';
+import Link from 'next/link';
+
 
 interface BannerProps {
   title?: string;
@@ -528,14 +530,13 @@ export default function Banner({
                 </div>
               </div>
             </div>
-
-            <Button variant="primary" size="lg">
-              {buttonText}
-            </Button>
-          </div>
-        </div>
+            <Link href="/contact/startup">
+              <Button variant="primary" size="lg">{buttonText}</Button>
+            </Link>
+          </div >
+        </div >
         <div className="h-10"></div>
-      </div>
-    </div>
+      </div >
+    </div >
   );
 }

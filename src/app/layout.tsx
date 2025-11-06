@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import ClarityInit from "@/utils/ClarityInit";
-
+import ContactModal from "@/components/landingComponents/ContactModal";
+import AdvancedCookieConsent from "@/utils/CookieConsent";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -51,10 +52,11 @@ export const metadata: Metadata = {
     title: "LayerX - Financial Infrastructure Platform",
     description:
       "Scalable financial APIs and infrastructure for businesses, startups, and developers.",
-    images: [twitterImage],
+    images: ["/assets/layer.svg"],
   },
   icons: {
     icon: [
+      { url: '/assets/layer.svg', sizes: 'any' },
       {
         url: icon32,
         type: "image/png",
@@ -71,8 +73,8 @@ export const metadata: Metadata = {
         sizes: "180x180",
       },
     ],
-    shortcut: icon32,
-    apple: icon180,
+    shortcut: "/assets/layer.svg",
+    apple: `${iconBaseUrl}/w_180,h_180,f_auto,q_80/${iconVersion}/${iconId}`,
   },
   alternates: {
     canonical: "https://buildwithlayerx.com",
@@ -87,7 +89,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="preload" href={preloadIcon} as="image" type="image/png" />
+        <link rel="icon" href="/assets/layer.svg" type="image/svg" />
+        <link rel="shortcut icon" href="/assets/layer.svg" type="image/png" />
+        <link rel="apple-touch-icon" href="/assets/layer.svg" type="image/png" />
+        <link
+          rel="preload"
+          href={`${iconBaseUrl}/w_32,h_32,f_auto,q_80/${iconVersion}/${iconId}`}
+          as="image"
+          type="image/png"
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased ${grotesque.variable}`}
@@ -95,6 +105,8 @@ export default function RootLayout({
         <div className="w-full">
           {children}
           <ClarityInit />
+          <AdvancedCookieConsent />
+          <ContactModal />
         </div>
       </body>
     </html>

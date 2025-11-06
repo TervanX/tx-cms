@@ -16,16 +16,16 @@ export default function CompaniesSection() {
             {/* Companies Section */}
             <div className="flex flex-col gap-12 md:gap-16 ">
               <div className="flex flex-col items-center gap-4  lg:flex-row lg:justify-between">
-                <p className="text-xs font-mono uppercase tracking-wider text-gray-600">
+                {/* <p className="text-xs font-mono uppercase tracking-wider text-gray-600">
                   Join over 50,000 developers and financial teams building on
                   LayerX
-                </p>
+                </p> */}
 
                 {/* Company Logos Grid */}
-                <LogoGrid
+                {/* <LogoGrid
                   backgroundColor="#fffff"
                   className=" h-10 filter invert-0 brightness-0"
-                />
+                /> */}
               </div>
 
               {/* Testimonial Quote Section */}
@@ -37,7 +37,7 @@ export default function CompaniesSection() {
                     &quot;
                   </h3>
                 </div>
-                <div className="flex-1">
+                {/* <div className="flex-1">
                   <div className="max-w-64 pl-3">
                     <div className="flex flex-col items-start">
                       <p className="text-xs font-mono uppercase tracking-wider text-gray-600">
@@ -54,7 +54,7 @@ export default function CompaniesSection() {
                       />
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -66,12 +66,12 @@ export default function CompaniesSection() {
                   <p className="text-base text-gray-600 lg:max-w-32">
                     Trusted by modern finance builders
                   </p>
-                  <Image
-                    src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891789/smartling_cwlqk9.svg"
+                  {/* <Image
+                    src="/assets/smartling.svg"
                     width={50}
                     height={50}
                     alt="smart logo"
-                  />
+                  /> */}
                 </div>
                 <h1 className="text-5xl font-medium leading-none tracking-tight text-[#3F3653]0 md:text-6xl lg:text-7xl">
                   5x
@@ -84,12 +84,12 @@ export default function CompaniesSection() {
                   <p className="text-base text-gray-600 lg:max-w-32">
                     3x faster time-to-market with unified APIs
                   </p>
-                  <Image
-                    src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891789/smartling_cwlqk9.svg"
+                  {/* <Image
+                    src="/assets/smartling.svg"
                     width={50}
                     height={50}
                     alt="smart logo"
-                  />
+                  /> */}
                 </div>
                 <h1 className="text-5xl font-medium leading-none tracking-tight text-[#3F3653]0 md:text-6xl lg:text-7xl">
                   3x
@@ -102,12 +102,12 @@ export default function CompaniesSection() {
                   <p className="text-base text-gray-600 lg:max-w-32">
                     99.99% uptime across fiat and crypto infrastructure
                   </p>
-                  <Image
-                    src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891789/smartling_cwlqk9.svg"
+                  {/* <Image
+                    src="/assets/smartling.svg"
                     width={50}
                     height={50}
                     alt="smart logo"
-                  />
+                  /> */}
                 </div>
                 <h1 className="text-5xl font-medium leading-none tracking-tight text-[#3F3653]0 md:text-6xl lg:text-7xl">
                   99.99%{" "}
@@ -119,12 +119,12 @@ export default function CompaniesSection() {
                   <p className="text-base text-gray-600 lg:max-w-32">
                     60% reduction in compliance and operations cost{" "}
                   </p>
-                  <Image
-                    src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891789/smartling_cwlqk9.svg"
+                  {/* <Image
+                    src="/assets/smartling.svg"
                     width={50}
                     height={50}
                     alt="smart logo"
-                  />
+                  /> */}
                 </div>
                 <h1 className="text-5xl font-medium leading-none tracking-tight text-[#3F3653]0 md:text-6xl lg:text-7xl">
                   60%{" "}

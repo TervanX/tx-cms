@@ -26,7 +26,7 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({
     {
       company: "Mebit.com",
       quote:
-        "The biggest benefit of Intercom is that it has everything you need to create a great experience for your customers and your support team. Literally, anything you need, you can find in the platform. My advice to anyone considering Intercom is to just do it. You won't regret it.",
+        "The biggest benefit of layerx is that it has everything you need to create a great experience for your customers and your support team. Literally, anything you need, you can find in the platform. My advice to anyone considering layerx is to just do it. You won't regret it.",
       author: "Milan Jovancevic",
       title: "Director of Operations",
       bgColor: "bg-[#ff7ad5] ",
@@ -35,7 +35,7 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({
     {
       company: "Rebag",
       quote:
-        "Intercom has enhanced our communications tech stack and opened up more channels that we can use to communicate with our customers, like chat, SMS, and email. The benefit of using Intercom side by side with other point solutions is that it gives you both live insight, when customers are on our website, and offline insight, when they leave and we need to re-engage them at a later stage.",
+        "layerx has enhanced our communications tech stack and opened up more channels that we can use to communicate with our customers, like chat, SMS, and email. The benefit of using layerx side by side with other point solutions is that it gives you both live insight, when customers are on our website, and offline insight, when they leave and we need to re-engage them at a later stage.",
       author: "Geronimo Chala",
       title: "Chief Consumer Officer",
       bgColor: "bg-[#ffa77a]",
@@ -44,7 +44,7 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({
     {
       company: "Godtlevert",
       quote:
-        "To continue to win awards for our customer service, we need to have a system that helps us offer our customers the fastest possible response times. With Intercom, we have almost all of our support channels integrated into one system, making it easy for us to manage our support, as well as conduct analysis so we can take a data-driven approach to continuously improving our service.",
+        "To continue to win awards for our customer service, we need to have a system that helps us offer our customers the fastest possible response times. With layerx, we have almost all of our support channels integrated into one system, making it easy for us to manage our support, as well as conduct analysis so we can take a data-driven approach to continuously improving our service.",
       author: "Oda Wilhelmsen",
       title: "Nordic Customer Service Manager",
       bgColor: "bg-[#00edc8]",

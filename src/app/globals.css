@@ -95,3 +95,10 @@ body {
   pointer-events: none;
   opacity: 0.5;
 }
+
+input[type="checkbox"] {
+  accent-color: #0d07ed;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}

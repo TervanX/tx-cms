@@ -1241,8 +1241,8 @@ const NavItem: React.FC<navItemProps> = ({ nav }) => {
                     <div className="flex flex-col basis-[18%] flex-grow min-w-[135px] max-w-[400px]">
                       <div className="flex flex-col  items-start gap-3">
                         <div className="flex flex-col items-start gap-3">
-                          {solution.logo}
-                          <p className="font-grotesque font-medium text-lg lg:leading-[110%] leading-[110%]">
+                          {/* {solution.logo} */}
+                          <p className="font-grotesque font-medium text-lg lg:leading-[110%] leading-[110%] pt-8">
                             {solution.title}
                           </p>
                           <p className="text-xs text-sand font-grotesque ">

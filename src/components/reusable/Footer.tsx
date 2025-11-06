@@ -55,11 +55,8 @@ const footerData: FooterSection[] = [
     title: "Developers",
     links: [
       { label: "API Reference", href: "/contact/request-access" },
-      {
-        label: "System Status",
-        href: "/developers/developer-tools/system-status",
-      },
-      { label: "API Changelog", href: "/api-changelog" },
+      { label: "System Status", href: "/developers/developer-tools/system-status" },
+      { label: "API Sandbox", href: "/contact/request-access" },
       { label: "Tx Apps SDKs", href: "/contact/request-access" },
     ],
   },

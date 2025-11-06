@@ -97,7 +97,7 @@ const testimonials: Testimonial[] = [
   },
 ];
 
-export default function ApolloTestimonials() {
+export default function LayerXTestimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [hoveredId, setHoveredId] = useState<number | null>(null);
 
@@ -115,7 +115,7 @@ export default function ApolloTestimonials() {
 
   return (
     <div className="overflow-hidden bg-white px-5 py-16 md:px-[calc(100%*1/26)] mb-10">
-      <div className="flex flex-col gap-4 md:flex-row md:justify-between mb-16">
+      <div className="flex flex-col gap-4 md:flex-row md:justify-between">
         <div className="md:w-[329px] lg:w-[411px] xl:w-[632px]">
           <h5 className="text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[56px] tracking-[-0.32px] sm:tracking-[-0.72px] md:tracking-[-0.8px] lg:tracking-[-0.96px] xl:tracking-[-1.12px] leading-none font-medium text-gray-900">
             Powered by the Most Advanced Blockchain Network
@@ -137,7 +137,7 @@ export default function ApolloTestimonials() {
         </div>
       </div>
 
-      <div className="relative">
+      {/* <div className="relative">
         <motion.div
           className="flex gap-6 sm:gap-7 md:gap-[38px] lg:gap-14 xl:gap-18"
           animate={{ x: `-${currentIndex * (100 / visibleCards)}%` }}
@@ -151,7 +151,7 @@ export default function ApolloTestimonials() {
               onMouseLeave={() => setHoveredId(null)}
             >
               <div className="relative h-[361px] md:h-[390px] lg:h-[444px] xl:h-[462px] w-full overflow-hidden rounded-b-2xl rounded-br-2xl border-b border-r border-gray-300">
-                {/* Default Card */}
+          
                 <motion.div
                   className="flex h-full flex-col py-6 pl-[1px] relative"
                   animate={{ y: hoveredId === testimonial.id ? "-100%" : "0%" }}
@@ -163,13 +163,13 @@ export default function ApolloTestimonials() {
                     {testimonial.category}
                   </p>
 
-                  {/* <Image
+                  <Image
                     alt={testimonial.name}
                     src={testimonial.image}
                     className="mt-8 w-[140px] h-[140px] rounded-lg object-cover"
                     width={140}
                     height={140}
-                  /> */}
+                  />
 
                   <p className="text-[20px] md:text-[24px] xl:text-[28px] leading-[110%] font-medium text-gray-900 mt-4">
                     {testimonial.name}
@@ -197,7 +197,6 @@ export default function ApolloTestimonials() {
                   </div>
                 </motion.div>
 
-                {/* Hover Card */}
                 <motion.div
                   className="absolute left-0 top-0 z-10 flex h-full w-full flex-col rounded-2xl bg-gray-100 p-6"
                   initial={{ y: "100%" }}
@@ -228,7 +227,6 @@ export default function ApolloTestimonials() {
           ))}
         </motion.div>
 
-        {/* Navigation Buttons */}
         <div className="mt-8 desktop:mt-16 flex w-full justify-end">
           <div className="flex gap-4">
             <button
@@ -257,7 +255,7 @@ export default function ApolloTestimonials() {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

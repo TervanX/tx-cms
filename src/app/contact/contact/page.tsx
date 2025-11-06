@@ -3,12 +3,12 @@ import { useState } from "react";
 import ContactFormSteps from "@/components/landingComponents/ContactUsFormStep";
 import SuccessMessage from "@/components/landingComponents/SuccessMessage";
 import FormSidebar from "@/components/landingComponents/FormSidebar";
-
+import ErrorToast from "@/components/landingComponents/ErrorToastComponent";
 export default function ContactPage() {
   const [currentStep, setCurrentStep] = useState(1);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
-
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     // Step 1
     fullName: "",
@@ -79,6 +79,9 @@ export default function ContactPage() {
           newErrors.companyWebsite =
             "Website must start with http:// or https://";
         }
+        if (!formData.companyWebsite.trim()) {
+          newErrors.companyWebsite = "This field is required.";
+        }
       } catch {
         newErrors.companyWebsite =
           "Please enter a valid website URL (e.g., https://example.com).";
@@ -90,6 +93,9 @@ export default function ContactPage() {
 
   const validateStep2 = () => {
     const newErrors: Record<string, string> = {};
+    if (!formData.phoneNumber.trim()) {
+      newErrors.phoneNumber = "This field is required.";
+    }
     if (formData.phoneNumber.trim()) {
       const cleanedPhone = formData.phoneNumber.replace(/\s/g, "");
       if (!/^\+?[\d\s-()]{10,20}$/.test(cleanedPhone)) {
@@ -111,6 +117,9 @@ export default function ContactPage() {
     } else if (formData.message.trim().length > 2000) {
       newErrors.message = "Message must be less than 2000 characters.";
     }
+    if (!formData.contactMethod) {
+      newErrors.contactMethod = "This field is required.";
+    }
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -131,6 +140,7 @@ export default function ContactPage() {
     if (isValid) setCurrentStep((prev) => prev + 1);
   };
 
+
   const prevStep = () => {
     setCurrentStep((prev) => prev - 1);
   };
@@ -141,34 +151,50 @@ export default function ContactPage() {
     if (!validateStep3()) {
       return;
     }
+
     setIsSubmitting(true);
+    setErrorMessage(null); // Clear any previous errors
 
     try {
-      const netlifyForm = new FormData();
-      netlifyForm.append("form-name", "contact-form");
-      Object.entries(formData).forEach(([key, value]) => {
-        netlifyForm.append(key, value as string);
-      });
+      const submissionData = {
+        fullName: formData.fullName,
+        workEmail: formData.workEmail,
+        companyName: formData.companyName,
+        companyWebsite: formData.companyWebsite,
+        phoneNumber: formData.phoneNumber,
+        businessType: formData.businessType,
+        monthlyTransactionVolume: formData.monthlyVolume,
+        helpTopic: formData.subject,
+        message: formData.message,
+        preferredContactMethod: formData.contactMethod,
+      };
 
-      const response = await fetch("/", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/contact/contacts`, {
         method: "POST",
-        body: netlifyForm,
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(submissionData),
       });
 
       if (response.ok) {
-        console.log("Form successfully submitted to Netlify");
-        console.log(netlifyForm);
+        const responseData = await response.json();
         setIsSubmitted(true);
         setTimeout(() => {
           window.history.back();
         }, 3000);
       } else {
-        throw new Error("Network response was not ok");
+        const errorData = await response.json();
+        console.error("Server error:", errorData);
+
+        // Extract error message from API response
+        const apiErrorMessage = errorData?.message || errorData?.title || "Failed to submit form";
+        setErrorMessage(`${apiErrorMessage}. Please check your information and try again.`);
       }
     } catch (error) {
       console.error("Error submitting form:", error);
-      alert(
-        "There was an error submitting the form. Please try again or contact us directly."
+      setErrorMessage(
+        "Unable to submit the form at this time. Please check your internet connection and try again, or contact us directly."
       );
     } finally {
       setIsSubmitting(false);
@@ -191,6 +217,13 @@ export default function ContactPage() {
       className="bg-[#F0F0F2] min-h-screen"
       style={{ margin: "-1px auto 0 auto", padding: "1px 0 0 0" }}
     >
+      {/* Error Toast */}
+      {errorMessage && (
+        <ErrorToast
+          message={errorMessage}
+          onClose={() => setErrorMessage(null)}
+        />
+      )}
       <div className="px-4 py-12 md:px-0 md:py-0 max-w-[600px] mx-auto md:max-w-none grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-0 md:min-h-screen">
         <FormSidebar
           title="Get in Touch with LayerX"
