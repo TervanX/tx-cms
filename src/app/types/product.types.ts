@@ -108,7 +108,7 @@ export const FeatureCardPropsSchema = z.object({
 export const ProductSchema = z.object({
   title: z.string().optional(),
   description: z.string().optional(),
-  image: z.string().optional(),
+  image: z.string(),
   imagePosition: z.string().optional(),
   subtitle: z.string().optional(),
   features: z.array(z.string()).optional(),
