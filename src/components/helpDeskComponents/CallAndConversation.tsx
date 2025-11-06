@@ -9,8 +9,8 @@ import {
   tomorrowNight,
 } from "react-syntax-highlighter/dist/esm/styles/hljs";
 const CallAndConversation: React.FC<CallProps> = ({
-  backgroundImage = "/assets/image30.webp",
-  image = "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+  backgroundImage = "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
+  image = "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
   primaryButton = {
     text: "Contact Sales",
     href: "/auth/login",

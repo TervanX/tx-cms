@@ -14,7 +14,7 @@ const EngageCustomersSection = ({
       description:
         "Respond to Instagram DMs, story replies and mentions directly from layerx, and interact with customers using rich multi-media, from emojis to images.",
       imageSrc:
-        "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01.webp?&q=90",
+        "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891688/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01_agtevz.webp",
       imageAlt: "Instagram",
     },
     {
@@ -22,7 +22,7 @@ const EngageCustomersSection = ({
       description:
         "Route direct messages to the Inbox, so customers can reach out directly from Facebook for a seamless experience.",
       imageSrc:
-        "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02.webp?&q=90",
+        "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889040/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02_raaawc.webp",
       imageAlt: "Facebook",
     },
     {
@@ -30,7 +30,7 @@ const EngageCustomersSection = ({
       description:
         "Send and receive text messages from the Inbox in 45 languages, to enable real-time, conversational support with your customers.",
       imageSrc:
-        "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
+        "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889040/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03_cede0g.webp",
       imageAlt: "SMS",
     },
   ],
@@ -45,9 +45,8 @@ const EngageCustomersSection = ({
           {/* Header Section */}
           <div className="scroll-mt-6 text-center mb-8">
             <div className="flex justify-center mb-4">
-              <div className="  px-3 py-1 rounded-full text-sm font-medium">{
-                badgeText &&
-                <Tag tag={badgeText} />}
+              <div className="  px-3 py-1 rounded-full text-sm font-medium">
+                {badgeText && <Tag tag={badgeText} />}
               </div>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-gray-900 max-w-2xl w-full mx-auto">
@@ -56,11 +55,17 @@ const EngageCustomersSection = ({
           </div>
 
           {/* Columns Section */}
-          <div className={`grid grid-cols-1 gap-6 lg:gap-8 ${columns.length === 2 ? 'md:grid-cols-2' :
-            columns.length === 3 ? 'md:grid-cols-3' :
-              columns.length === 4 ? 'md:grid-cols-2 lg:grid-cols-4' :
-                'md:grid-cols-2 lg:grid-cols-3'
-            }`}>
+          <div
+            className={`grid grid-cols-1 gap-6 lg:gap-8 ${
+              columns.length === 2
+                ? "md:grid-cols-2"
+                : columns.length === 3
+                ? "md:grid-cols-3"
+                : columns.length === 4
+                ? "md:grid-cols-2 lg:grid-cols-4"
+                : "md:grid-cols-2 lg:grid-cols-3"
+            }`}
+          >
             {columns.map((column, index) => (
               <EngagementSestionCard column={column} key={index} />
             ))}

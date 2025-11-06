@@ -7,15 +7,15 @@ export const productivityProps = {
         "TX Health automates the most complex aspects of healthcare administration—from claims adjudication to cross-border medical payments—operating with precision and compliance 24/7.",
     images: {
         mobile: {
-            src: "/assets/solution1.jpg",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/solution1_avbfxx.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
-            src: "/assets/solution1.jpg",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/solution1_avbfxx.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         product: {
-            src: "/assets/productivity-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889043/productivity-1-desktop_sdzsp4.webp",
             alt: "Helpdesk product UI",
         },
     },
@@ -63,7 +63,7 @@ export const productivityProps = {
         </g>
       </svg>`,
         image: {
-            src: "/assets/lightspeed-headshot-min.png",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891745/lightspeed-headshot-min_qiohvg.png",
             alt: "Angelo Livanos",
         },
     },
@@ -78,15 +78,15 @@ export const usabilityProps = {
         "An intuitive platform for managing complex healthcare financial operations across insurance, patient payments, and provider settlements.",
     images: {
         mobile: {
-            src: "/assets/usability-hero-mobile.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891812/usability-hero-desktop_uirwq4.webp",
             alt: "Illustration of people walking down a flowery path",
         },
         desktop: {
-            src: "/assets/usability-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891812/usability-hero-desktop_uirwq4.webp",
             alt: "Illustration of people walking down a flowery path",
         },
         mainFeature: {
-            src: "/assets/usability-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891807/usability-1-desktop_sdggi4.webp",
             alt: "Helpdesk usability instant insight product visual",
         },
     },
@@ -98,12 +98,12 @@ export const usabilityProps = {
     ],
     additionalFeatures: [
         {
-            image: { src: "/assets/usability-2-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891808/usability-2-desktop_h3f0oo.webp" },
             title: 'Visual Workflow Builder',
             description: 'Create and modify healthcare financial processes without technical expertise. Use our drag-and-drop interface to define claims rules, payment parameters, and compliance workflows',
         },
         {
-            image: { src: "/assets/usability-2-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891808/usability-2-desktop_h3f0oo.webp" },
             title: 'Pre-Built Healthcare Templates',
             description: 'Accelerate deployment with healthcare-specific templates:',
             list: {
@@ -116,7 +116,7 @@ export const usabilityProps = {
             }
         },
         {
-            image: { src: "/assets/usability-2-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891808/usability-2-desktop_h3f0oo.webp" },
             title: 'Comprehensive Healthcare Integration',
             description: 'Connect TX Health to your entire medical ecosystem:',
             list: {
@@ -143,15 +143,15 @@ export const outboundProps = {
         "Move beyond basic financial metrics to predictive insights that optimize revenue cycle performance and patient financial experience.",
     images: {
         mobile: {
-            src: "/assets/outbound-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891763/outbound-hero-desktop_feua3q.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {
-            src: "/assets/outbound-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891763/outbound-hero-desktop_feua3q.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         mainFeature: {
-            src: "/assets/outbound-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891760/outbound-1-desktop_msubtn.webp",
             alt: "Helpdesk outbound product visual",
         },
     },
@@ -198,84 +198,84 @@ export const featuresProps = {
             name: 'AI Claims Adjudication',
             href: '/suite/health/claims-adjudication',
             description: 'Automatically process and validate medical claims across multiple payers.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'smart-eligibility-verification',
             name: 'Smart Eligibility Verification',
             href: '/suite/health/eligibility-verification',
             description: 'Real-time insurance coverage validation across all major providers.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'multi-payer-payment-posting',
             name: 'Multi-Payer Payment Posting',
             href: '/suite/health/payment-posting',
             description: 'Automate payment reconciliation across insurance and patient payments.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'patient-billing-automation',
             name: 'Patient Billing Automation',
             href: '/suite/health/patient-billing',
             description: 'Streamline patient statements, payment plans, and collection activities.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'denial-management-intelligence',
             name: 'Denial Management Intelligence',
             href: '/suite/health/denial-management',
             description: 'Automatically identify, appeal, and prevent claim denials.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'clinical-trial-payment-automation',
             name: 'Clinical Trial Payment Automation',
             href: '/suite/health/clinical-trial-payments',
             description: 'Smart contract execution for patient reimbursements and site payments.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'cross-border-medical-payments',
             name: 'Cross-Border Medical Payments',
             href: '/suite/health/cross-border-payments',
             description: 'Seamlessly handle international patient and provider settlements.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'revenue-cycle-analytics',
             name: 'Revenue Cycle Analytics',
             href: '/suite/health/revenue-analytics',
             description: 'Comprehensive reporting on A/R performance and collection effectiveness.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'compliance-management',
             name: 'Compliance Management',
             href: '/suite/health/compliance',
             description: 'Automated HIPAA and healthcare regulatory compliance monitoring.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'provider-network-management',
             name: 'Provider Network Management',
             href: '/suite/health/provider-management',
             description: 'Streamline credentialing and provider payment operations.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'patient-payment-portal',
             name: 'Patient Payment Portal',
             href: '/suite/health/patient-portal',
             description: 'Self-service payment management for patients across all payment types.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'api-first-integration',
             name: 'API-First Integration',
             href: '/suite/health/api-integration',
             description: 'Connect with existing EHR, PM, and healthcare financial systems.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         }
     ],
     defaultActiveFeature: "omnichannel",

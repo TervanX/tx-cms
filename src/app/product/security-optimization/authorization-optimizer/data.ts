@@ -7,15 +7,15 @@ export const productivityProps = {
         "TX Authorization Optimizer automates the most complex aspects of access governance—from role engineering to permission cleanup—operating with precision across your entire digital ecosystem.",
     images: {
         mobile: {
-            src: "/assets/solution1.jpg",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/solution1_avbfxx.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
-            src: "/assets/solution1.jpg",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/solution1_avbfxx.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         product: {
-            src: "/assets/productivity-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889043/productivity-1-desktop_sdzsp4.webp",
             alt: "Helpdesk product UI",
         },
     },
@@ -63,7 +63,7 @@ fill="none"
 </svg>`,
 
         image: {
-            src: "/assets/lightspeed-headshot-min.png",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891745/lightspeed-headshot-min_qiohvg.png",
             alt: "Angelo Livanos",
         },
     },
@@ -78,15 +78,15 @@ export const usabilityProps = {
         "An intuitive platform for managing complex permission structures across multiple systems, chains, and business units with full visibility and control.",
     images: {
         mobile: {
-            src: "/assets/usability-hero-mobile.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891812/usability-hero-desktop_uirwq4.webp",
             alt: "Illustration of people walking down a flowery path",
         },
         desktop: {
-            src: "/assets/usability-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891812/usability-hero-desktop_uirwq4.webp",
             alt: "Illustration of people walking down a flowery path",
         },
         mainFeature: {
-            src: "/assets/usability-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891807/usability-1-desktop_sdggi4.webp",
             alt: "Helpdesk usability instant insight product visual",
         },
     },
@@ -101,7 +101,7 @@ export const usabilityProps = {
     ],
     additionalFeatures: [
         {
-            image: { src: "/assets/usability-2-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891808/usability-2-desktop_h3f0oo.webp" },
             title: 'Visual Policy Builder',
             description: 'Create and modify authorization policies without technical expertise. Use our drag-and-drop interface to define access rules, role hierarchies, and compliance requirements through an intuitive visual workflow.',
             list: {
@@ -109,7 +109,7 @@ export const usabilityProps = {
             }
         },
         {
-            image: { src: "/assets/usability-3-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891810/usability-3-desktop_ofrgcb.webp" },
             title: 'Pre-Built Authorization Templates',
             description: 'Accelerate deployment with industry-specific frameworks:',
             list: {
@@ -122,7 +122,7 @@ export const usabilityProps = {
             }
         },
         {
-            image: { src: "/assets/usability-3-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891810/usability-3-desktop_ofrgcb.webp" },
             title: 'Comprehensive System Integration',
             description: 'Connect TX Authorization Optimizer to your entire technology stack:',
             list: {
@@ -181,15 +181,15 @@ export const outboundProps = {
     },
     images: {
         mobile: {
-            src: "/assets/outbound-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891763/outbound-hero-desktop_feua3q.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {
-            src: "/assets/outbound-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891763/outbound-hero-desktop_feua3q.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         mainFeature: {
-            src: "/assets/outbound-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891760/outbound-1-desktop_msubtn.webp",
             alt: "Helpdesk outbound product visual",
         },
     },
@@ -211,35 +211,35 @@ export const featuresProps = {
             name: 'AI Role Engineering',
             href: '/suite/helpdesk/inbox',
             description: "Automated analysis and optimization of permission structures and role designs.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'automated-access-certification',
             name: 'Automated Access Certification',
             href: '/suite/helpdesk/copilot',
             description: "AI-driven review campaigns with intelligent exception identification.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'smart-permission-analytics',
             name: 'Smart Permission Analytics',
             href: '/suite/helpdesk/tickets',
             description: "Real-time monitoring of permission usage and effectiveness across all systems.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'dynamic-access-control',
             name: 'Dynamic Access Control',
             href: '/suite/helpdesk/omnichannel',
             description: "Context-aware authorization based on user behavior, location, and risk factors.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'blockchain-multi-sig-optimization',
             name: 'Blockchain Multi-Sig Optimization',
             href: '/suite/helpdesk/help-center',
             description: "Intelligent management of blockchain authorization and signing authorities.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'segregation-duties-monitoring',
@@ -247,7 +247,7 @@ export const featuresProps = {
             href: '/app-store',
             description: "Automatic detection and prevention of conflicting permission assignments."
 
-            , image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            , image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
 
         },
         {
@@ -256,28 +256,28 @@ export const featuresProps = {
             href: '/suite/helpdesk/reporting',
             description: "Temporary, context-based permission grants with automatic expiration."
             ,
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'user-behavior-analytics',
             name: 'User Behavior Analytics',
             href: '/suite/helpdesk/knowledge-hub',
             description: "AI-powered analysis of normal access patterns and anomaly detection.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'compliance-automation',
             name: 'Compliance Automation',
             href: '/suite/helpdesk/outbound',
             description: "Continuous monitoring and enforcement of regulatory requirements.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'api-access-governance',
             name: 'API Access Governance',
             href: '/suite/helpdesk/inbox',
             description: "Comprehensive management and monitoring of API permissions and usage."
-            , image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            , image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
 
         },
         {
@@ -285,7 +285,7 @@ export const featuresProps = {
             name: 'Emergency Access Management',
             href: '/suite/helpdesk/copilot',
             description: "Controlled break-glass procedures with full audit and automatic cleanup."
-            , image: '/assets/photo-1552664730-d307ca884978.jpg'
+            , image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
             ,
         },
         {
@@ -293,7 +293,7 @@ export const featuresProps = {
             name: 'Unified Audit Reporting',
             href: '/suite/helpdesk/tickets',
             description: "Comprehensive, real-time reporting across all authorization activities.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
 
         },
     ],

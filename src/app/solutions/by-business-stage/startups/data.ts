@@ -50,32 +50,32 @@ export const startupPageData = {
                 title: "Ensure every email is on-brand",
                 description:
                     "Enable crypto payments with a few lines of code. No blockchain expertise required—just seamless integration and rapid go-to-market.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Ensure every email is on-brand",
             },
             {
                 title: " Automate settlements & reconciliation",
                 description:
                     "All payments automatically reconcile in your treasury dashboard. Track real-time balances, generate statements, and sync records across wallets and chains.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Continue the conversation",
             },
             {
                 title: "Reduce costs with smart fee routing",
                 description:
                     "Our AI dynamically routes transactions through the cheapest and fastest paths—saving your startup money as you scale.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Track email performance",
             },
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
     },
 
     callAndConversation: {
         image:
-            "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
-        backgroundImage: "/assets/image30.webp",
+            "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         primaryButton: {
             text: "Contact Sales",
             href: "/contact/contact-sales",
@@ -90,24 +90,24 @@ export const startupPageData = {
                 title: "Unified API for 300+ blockchains",
                 description:
                     "Integrate once and support every major blockchain and token—future-proofing your startup’s product roadmap.",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
             },
             {
                 title: "Pre-built & customizable UI kits",
                 description:
                     "Accelerate time-to-market with embeddable, brandable wallet components. Deliver a native wallet experience without building UI from scratch.",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
             },
             {
                 title: "AI-driven key management",
                 description:
                     "Leverage MPC technology and social recovery options to keep user assets secure—without the risk of a single point of failure.",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
             },
         ]
@@ -123,51 +123,51 @@ export const startupPageData = {
                 title: "AI cash forecasting & liquidity management",
                 description:
                     "Predict cash flow, automate sweeps, and optimize working capital—so you never miss a growth opportunity.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
             {
                 title: "Automated cross-chain settlements",
                 description:
                     "Move assets seamlessly between blockchains and traditional systems. LayerX handles bridging, wrapping, and routing behind the scenes.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
             {
                 title: "Smart yield optimization",
                 description:
                     "Automatically deploy idle cash into vetted yield opportunities—turning your treasury into a profit center.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
     },
 
     globalWhatsapp: {
         cards: [
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "Automated regulatory reporting",
                 description:
                     "Generate compliance reports for multiple jurisdictions with one click. Stay audit-ready as you expand into new markets.",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "Real-time threat detection",
                 description:
                     "AI-powered monitoring detects suspicious activity, phishing attempts, and anomalous transactions—before they become problems.",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "Role-based access controls",
                 description:
                     "Define permissions for team members and enforce financial controls—keeping your startup secure as you grow",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
         ],
         title: "Stay secure and compliant from day one",
         tag: "Compliance & Security",
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         description:
             "Built-in KYC, AML, and transaction monitoring ensure your startup meets global regulations—without slowing you down.",
     },
@@ -186,7 +186,7 @@ export const startupPageData = {
 
     bannerCTA: {
         title: "Start Building Today",
-        backgroundImage: "/assets/pilot.jpg",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891878/pilot_ht1hcp.jpg",
         primaryButton: {
             text: "Get Started",
             href: "/contact/request-access",

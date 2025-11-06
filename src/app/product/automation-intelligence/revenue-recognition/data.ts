@@ -7,15 +7,15 @@ export const productivityProps = {
         "Revenue Recognition automates the most complex aspects of financial compliance—from multi-jurisdiction reporting to real-time revenue categorization—saving thousands of hours in manual accounting work.",
     images: {
         mobile: {
-            src: "/assets/solution1.jpg",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/solution1_avbfxx.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
-            src: "/assets/solution1.jpg",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/solution1_avbfxx.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         product: {
-            src: "/assets/productivity-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889043/productivity-1-desktop_sdzsp4.webp",
             alt: "Helpdesk product UI",
         },
     },
@@ -63,7 +63,7 @@ export const productivityProps = {
         </g>
       </svg>`,
         image: {
-            src: "/assets/lightspeed-headshot-min.png",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891745/lightspeed-headshot-min_qiohvg.png",
             alt: "Angelo Livanos",
         },
     },
@@ -78,15 +78,15 @@ export const usabilityProps = {
         "An intuitive interface for managing complex revenue accounting across multiple currencies, business models, and regulatory requirements.",
     images: {
         mobile: {
-            src: "/assets/usability-hero-mobile.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891812/usability-hero-desktop_uirwq4.webp",
             alt: "Illustration of people walking down a flowery path",
         },
         desktop: {
-            src: "/assets/usability-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891812/usability-hero-desktop_uirwq4.webp",
             alt: "Illustration of people walking down a flowery path",
         },
         mainFeature: {
-            src: "/assets/usability-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891807/usability-1-desktop_sdggi4.webp",
             alt: "Helpdesk usability instant insight product visual",
         },
     },
@@ -98,12 +98,12 @@ export const usabilityProps = {
     ],
     additionalFeatures: [
         {
-            image: { src: "/assets/usability-2-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891808/usability-2-desktop_h3f0oo.webp" },
             title: 'Visual Rule Builder',
             description: 'Create and modify revenue recognition rules without accounting expertise. Use our drag-and-drop interface to define recognition schedules, revenue allocation methods, and compliance thresholds',
         },
         {
-            image: { src: "/assets/usability-2-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891808/usability-2-desktop_h3f0oo.webp" },
             title: 'Pre-Built Compliance Templates',
             description: 'Accelerate implementation with industry-specific templates:',
             list: {
@@ -116,7 +116,7 @@ export const usabilityProps = {
             }
         },
         {
-            image: { src: "/assets/usability-2-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891808/usability-2-desktop_h3f0oo.webp" },
             title: 'Seamless System Integration',
             description: 'Connect Revenue Recognition to your existing financial stack:',
             list: {
@@ -143,15 +143,15 @@ export const outboundProps = {
         "Move beyond basic accounting to predictive insights that drive revenue optimization and compliance confidence.",
     images: {
         mobile: {
-            src: "/assets/outbound-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891763/outbound-hero-desktop_feua3q.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {
-            src: "/assets/outbound-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891763/outbound-hero-desktop_feua3q.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         mainFeature: {
-            src: "/assets/outbound-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891760/outbound-1-desktop_msubtn.webp",
             alt: "Helpdesk outbound product visual",
         },
     },
@@ -198,84 +198,84 @@ export const featuresProps = {
             name: 'AI-Powered Revenue Classification',
             href: '/suite/revenue/classification',
             description: 'Automatically categorize revenue streams according to global accounting standards.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'automated-recognition-scheduling',
             name: 'Automated Recognition Scheduling',
             href: '/suite/revenue/scheduling',
             description: 'Intelligently apply recognition rules across contract terms and revenue types.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'multi-currency-revenue',
             name: 'Multi-Currency Revenue Management',
             href: '/suite/revenue/multi-currency',
             description: 'Handle crypto, fiat, and token-based revenue with automatic currency conversion.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'deferred-revenue-tracking',
             name: 'Deferred Revenue Tracking',
             href: '/suite/revenue/deferred',
             description: 'Automatically manage and recognize deferred revenue across multiple periods.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'tax-compliance-automation',
             name: 'Tax Compliance Automation',
             href: '/suite/revenue/tax',
             description: 'Apply correct tax treatments across jurisdictions and revenue types.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'real-time-reporting',
             name: 'Real-Time Reporting Dashboards',
             href: '/suite/revenue/reporting',
             description: 'Monitor revenue performance and compliance status with live updates.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'audit-trail-generation',
             name: 'Audit Trail Generation',
             href: '/suite/revenue/audit',
             description: 'Maintain comprehensive, immutable records of all recognition decisions.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'contract-modification-handling',
             name: 'Contract Modification Handling',
             href: '/suite/revenue/contracts',
             description: 'Automatically adjust recognition for contract changes and amendments.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'multi-element-arrangement',
             name: 'Multi-Element Arrangement Support',
             href: '/suite/revenue/multi-element',
             description: 'Allocate revenue across multiple performance obligations intelligently.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'regulatory-reporting',
             name: 'Regulatory Reporting Templates',
             href: '/suite/revenue/regulatory',
             description: 'Generate compliant reports for SEC, IFRS, and other regulatory bodies.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'revenue-forecasting',
             name: 'Revenue Forecasting Models',
             href: '/suite/revenue/forecasting',
             description: 'Predict future revenue recognition based on contracts and usage patterns.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'anomaly-detection',
             name: 'Anomaly Detection & Alerting',
             href: '/suite/revenue/anomaly-detection',
             description: 'Identify potential compliance issues and recognition errors proactively.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         }
     ],
     defaultActiveFeature: "omnichannel",

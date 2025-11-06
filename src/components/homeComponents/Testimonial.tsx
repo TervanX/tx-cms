@@ -22,7 +22,8 @@ const testimonials: Testimonial[] = [
     title: "Head of Sales Development",
     company: "Kinsta",
     logo: "KINSTA",
-    image: "/assets/image29.webp",
+    image:
+      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891726/image29_wrxmuc.webp",
     quote:
       "As Kinsta's first Head of Sales Development, Nicole Coetzer was tasked with building outbound sales from scratch. Using Apollo to find the right leads in less time, her growing team hit a consistent 36% connection rate, helping them exceed quota every single month.",
     stat: "36%",
@@ -35,7 +36,8 @@ const testimonials: Testimonial[] = [
     title: "Account Executive",
     company: "Arbolus",
     logo: "arbolus",
-    image: "/assets/image29.webp",
+    image:
+      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891726/image29_wrxmuc.webp",
     quote:
       "I use Apollo for everything — prospecting, messaging, even the dialer. It's where I spend most of my day, and it has made my workflow so much more efficient.",
   },
@@ -46,7 +48,8 @@ const testimonials: Testimonial[] = [
     title: "BDR Leader",
     company: "Cyera",
     logo: "CYERA",
-    image: "/assets/image29.webp",
+    image:
+      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891726/image29_wrxmuc.webp",
     quote:
       "Having Apollo be our all-in-one system was a game changer for the BDRs. The average number of meetings booked increased by 75% once we made the move over to Apollo.",
     stat: "75%",
@@ -59,7 +62,8 @@ const testimonials: Testimonial[] = [
     title: "VP of Revenue Operations",
     company: "Built In",
     logo: "built in",
-    image: "/assets/image29.webp",
+    image:
+      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891726/image29_wrxmuc.webp",
     quote:
       "Apollo enriches everything we have: contacts, leads, accounts. We don't really have to touch it, it just works",
   },
@@ -70,7 +74,8 @@ const testimonials: Testimonial[] = [
     title: "Head of Growth & Operations",
     company: "Census",
     logo: "Census",
-    image: "/assets/image29.webp",
+    image:
+      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891726/image29_wrxmuc.webp",
     quote:
       "When Census's data quality issues started to sabotage their sales team, Head of Growth Sylvain Giuliani made a bold move: replacing their entire tech stack with Apollo. This switch set their go-to-market team up for unprecedented growth, with 4x more contact data while cutting platform costs by 64%.",
     stat: "50%",
@@ -83,7 +88,8 @@ const testimonials: Testimonial[] = [
     title: "CEO",
     company: "Predictable Revenue",
     logo: "PR",
-    image: "/assets/image29.webp",
+    image:
+      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891726/image29_wrxmuc.webp",
     quote:
       "Predictable Revenue's CEO Collin Stewart was struggling with an expensive, complex tech stack. By switching to Apollo as their all-in-one platform, they cut costs by 50% while doubling email open rates and cutting time to meeting in half.",
     stat: "50%",

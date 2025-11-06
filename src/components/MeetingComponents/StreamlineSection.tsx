@@ -6,7 +6,7 @@ const StreamlineSection = () => {
       <div className="relative  overflow-hidden font-grotesque">
         <div className="absolute inset-0 z-0">
           <img
-            src="/assets/bg.8.svg"
+            src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891863/bg.8_gbuy65.svg"
             alt="Abstract wave pattern background with navy-blue gradient"
             className="absolute inset-0 h-full w-full object-cover text-transparent -z-10"
           />

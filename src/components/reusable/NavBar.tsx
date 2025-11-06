@@ -389,7 +389,7 @@ const navItems: NavItemInterface[] = [
     ],
     platforms: [
       {
-        logo: "/assets/just.webp",
+        logo: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891737/just_xx0mfx.webp",
         tag: "Apollo Platform",
         descriptions: "",
         links: [
@@ -575,7 +575,7 @@ const navItems: NavItemInterface[] = [
     ],
     platforms: [
       {
-        logo: "/assets/just.webp",
+        logo: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891737/just_xx0mfx.webp",
         tag: "By Industry ",
         descriptions: "",
         links: [
@@ -750,7 +750,7 @@ const navItems: NavItemInterface[] = [
     ],
     platforms: [
       {
-        logo: "/assets/just.webp",
+        logo: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891737/just_xx0mfx.webp",
         tag: "Apollo Platform",
         descriptions: "",
         links: [
@@ -762,7 +762,7 @@ const navItems: NavItemInterface[] = [
         ],
       },
       {
-        logo: "/assets/just.webp",
+        logo: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891737/just_xx0mfx.webp",
         tag: "Apollo Platform",
         descriptions: "",
         links: [
@@ -997,7 +997,7 @@ const navItems: NavItemInterface[] = [
     ],
     platforms: [
       {
-        logo: "/assets/just.webp",
+        logo: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891737/just_xx0mfx.webp",
         tag: "Guides",
         descriptions: "",
         links: [
@@ -1241,8 +1241,8 @@ const NavItem: React.FC<navItemProps> = ({ nav }) => {
                     <div className="flex flex-col basis-[18%] flex-grow min-w-[135px] max-w-[400px]">
                       <div className="flex flex-col  items-start gap-3">
                         <div className="flex flex-col items-start gap-3">
-                          {solution.logo}
-                          <p className="font-grotesque font-medium text-lg lg:leading-[110%] leading-[110%]">
+                          {/* {solution.logo} */}
+                          <p className="font-grotesque font-medium text-lg lg:leading-[110%] leading-[110%] pt-8">
                             {solution.title}
                           </p>
                           <p className="text-xs text-sand font-grotesque ">
@@ -1371,8 +1371,9 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
         )}
       </button>
       <div
-        className={`overflow-y-scroll transition-all duration-300 ease-in-out px-6 ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-          }`}
+        className={`overflow-y-scroll transition-all duration-300 ease-in-out px-6 ${
+          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        }`}
       >
         <div className="pb-5 text-dark text-sm lg:text-base leading-relaxed border-gray-200 border-t-[1.5px] pt-4">
           <div className="flex flex-col lg:flex-row gap-6">

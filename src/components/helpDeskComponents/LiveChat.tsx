@@ -13,22 +13,22 @@ const LiveChat: React.FC<LiveChatProps> = ({
       title: "Fully customizable",
       description:
         "Customize the Messenger to match your brand, wherever your customers are within your product, app, or website.",
-      img: "/assets/highlight.webp",
+      img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
     },
     {
       title: "Self-serve enabled",
       description:
         "Tailor the Messenger with self-serve apps that empower your customers to find help articles, read product updates, and more—without having to start a conversation.",
-      img: "/assets/highlight.webp",
+      img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
     },
     {
       title: "Multi-brand & multilingual",
       description:
         "Support multiple brands, resolve queries in 45 languages and deliver exceptional experiences within the Messenger—anytime, anywhere.",
-      img: "/assets/highlight.webp",
+      img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
     },
   ],
-  backgroundImage = "/assets/image30.webp",
+  backgroundImage = "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 }) => {
   const [active, setActive] = useState(0);
 

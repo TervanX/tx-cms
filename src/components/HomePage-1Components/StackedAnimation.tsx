@@ -274,7 +274,10 @@ const StackedAnimation: React.FC = () => {
               <div className="relative h-20">
                 <div className="flex items-center h-full mt-4">
                   <div className="">
-                    <img src="/assets/right-arrow.svg" alt="" />
+                    <img
+                      src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891782/right-arrow_awd3iv.svg"
+                      alt=""
+                    />
                   </div>
 
                   <div className="h-full w-32 overflow-hidden">

@@ -7,10 +7,22 @@ const footerData: FooterSection[] = [
   {
     title: "Products",
     links: [
-      { label: "Wallet As a Service", href: "/product/asset-infrastructure/wallet-api" },
-      { label: "Exchange Engine", href: "/product/asset-infrastructure/exchange-engine" },
-      { label: "Auto Trade Plugin", href: "product/plugins-extension/auto-trade-plugin" },
-      { label: "Treasury Plugin", href: "product/plugins-extension/treasury-plugin" },
+      {
+        label: "Wallet As a Service",
+        href: "/product/asset-infrastructure/wallet-api",
+      },
+      {
+        label: "Exchange Engine",
+        href: "/product/asset-infrastructure/exchange-engine",
+      },
+      {
+        label: "Auto Trade Plugin",
+        href: "product/plugins-extension/auto-trade-plugin",
+      },
+      {
+        label: "Treasury Plugin",
+        href: "product/plugins-extension/treasury-plugin",
+      },
       { label: "Tx Shield", href: "/product/security-optimization/tx-shield" },
       { label: "Tx Analytics", href: "/product/data-reporting/tx-analytics" },
     ],

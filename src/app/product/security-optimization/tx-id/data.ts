@@ -7,15 +7,15 @@ export const productivityProps = {
         "TX ID automates the most complex aspects of digital identity—from biometric verification to credential issuance—operating with precision across global jurisdictions.",
     images: {
         mobile: {
-            src: "/assets/solution1.jpg",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/solution1_avbfxx.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
-            src: "/assets/solution1.jpg",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/solution1_avbfxx.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         product: {
-            src: "/assets/productivity-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889043/productivity-1-desktop_sdzsp4.webp",
             alt: "Helpdesk product UI",
         },
     },
@@ -63,7 +63,7 @@ fill="none"
 </svg>`,
 
         image: {
-            src: "/assets/lightspeed-headshot-min.png",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891745/lightspeed-headshot-min_qiohvg.png",
             alt: "Angelo Livanos",
         },
     },
@@ -78,15 +78,15 @@ export const usabilityProps = {
         "An intuitive platform for managing digital identities across web2 and web3 environments with privacy-by-design architecture.",
     images: {
         mobile: {
-            src: "/assets/usability-hero-mobile.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891812/usability-hero-desktop_uirwq4.webp",
             alt: "Illustration of people walking down a flowery path",
         },
         desktop: {
-            src: "/assets/usability-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891812/usability-hero-desktop_uirwq4.webp",
             alt: "Illustration of people walking down a flowery path",
         },
         mainFeature: {
-            src: "/assets/usability-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891807/usability-1-desktop_sdggi4.webp",
             alt: "Helpdesk usability instant insight product visual",
         },
     },
@@ -101,7 +101,7 @@ export const usabilityProps = {
     ],
     additionalFeatures: [
         {
-            image: { src: "/assets/usability-2-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891808/usability-2-desktop_h3f0oo.webp" },
             title: 'Visual Policy Builder',
             description: 'Create and modify identity verification rules without technical expertise. Use our drag-and-drop interface to define verification workflows, compliance requirements, and access policies.',
             list: {
@@ -109,7 +109,7 @@ export const usabilityProps = {
             }
         },
         {
-            image: { src: "/assets/usability-3-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891810/usability-3-desktop_ofrgcb.webp" },
             title: 'Pre-Built Identity Templates',
             description: 'Accelerate deployment with industry-specific frameworks:',
             list: {
@@ -122,7 +122,7 @@ export const usabilityProps = {
             }
         },
         {
-            image: { src: "/assets/usability-3-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891810/usability-3-desktop_ofrgcb.webp" },
             title: 'Comprehensive Ecosystem Integration',
             description: 'Connect TX ID to your entire technology stack:',
             list: {
@@ -181,15 +181,15 @@ export const outboundProps = {
     },
     images: {
         mobile: {
-            src: "/assets/outbound-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891763/outbound-hero-desktop_feua3q.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {
-            src: "/assets/outbound-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891763/outbound-hero-desktop_feua3q.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         mainFeature: {
-            src: "/assets/outbound-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891760/outbound-1-desktop_msubtn.webp",
             alt: "Helpdesk outbound product visual",
         },
     },
@@ -211,77 +211,77 @@ export const featuresProps = {
             name: 'Biometric Verification',
             href: '/suite/helpdesk/inbox',
             description: "Advanced facial recognition, liveness detection, and behavioral biometrics.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'decentralized-identifiers',
             name: 'Decentralized Identifiers',
             href: '/suite/helpdesk/copilot',
             description: "Self-sovereign identity management with user-controlled data sharing.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'verifiable-credentials',
             name: 'Verifiable Credentials',
             href: '/suite/helpdesk/tickets',
             description: "Cryptographically secure digital credentials with selective disclosure.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'automated-kyc-aml',
             name: 'Automated KYC/AML',
             href: '/suite/helpdesk/omnichannel',
             description: "Global compliance orchestration with real-time watchlist screening.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'privacy-preserving-proofs',
             name: 'Privacy-Preserving Proofs',
             href: '/suite/helpdesk/help-center',
             description: "Zero-knowledge proofs for age verification and credential validation.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'cross-platform-portability',
             name: "Cross-Platform Portability",
             href: '/app-store',
             description: "Seamless identity transfer across web2 and web3 applications.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'smart-contract-integration',
             name: 'Smart Contract Integration',
             href: '/suite/helpdesk/reporting',
             description: "Programmable identity logic for DeFi, DAOs, and dApp access.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'consent-management',
             name: 'Consent Management',
             href: '/suite/helpdesk/knowledge-hub',
             description: "Granular user control over data sharing and permission revocation.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'risk-based-authentication',
             name: 'Risk-Based Authentication',
             href: '/suite/helpdesk/outbound',
             description: "Dynamic verification levels based on transaction risk and user behavior.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'compliance-reporting',
             name: 'Compliance Reporting',
             href: '/suite/helpdesk/inbox',
             description: "Automated regulatory reporting across multiple jurisdictions.",
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'api-first-integration',
             name: 'API-First Integration',
             href: '/suite/helpdesk/copilot',
             description: "Comprehensive developer tools for seamless platform integration.",
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
     ],
 };

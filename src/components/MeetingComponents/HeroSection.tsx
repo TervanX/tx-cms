@@ -10,7 +10,7 @@ const HeroSection = () => {
       <div className="relative min-h-screen overflow-hidden font-grotesque">
         <div className="absolute inset-0 z-0">
           <img
-            src="/assets/bg.8.svg"
+            src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891863/bg.8_gbuy65.svg"
             alt="Abstract wave pattern background with navy-blue gradient"
             className="absolute inset-0 h-full w-full object-cover text-transparent -z-10"
           />
@@ -76,7 +76,7 @@ const HeroSection = () => {
           </div>
         </div>
         <VideoHero
-          thumbnailSrc="/assets/videoimage.webp"
+          thumbnailSrc="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891815/videoimage_rjvqgt.webp"
           videoSrc="https://www.youtube.com/watch?v=zIfkgC7ZPiQ"
         />
         <LogoGrid

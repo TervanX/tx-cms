@@ -49,39 +49,39 @@ export const ecommercePageData = {
                 title: "Multi-currency checkout",
                 description:
                     "Accept BTC, ETH, USDC, and 100+ other cryptocurrencies with real-time exchange rates.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Multi-currency checkout",
             },
             {
                 title: "Instant settlement",
                 description:
                     "Receive funds in seconds instead of days with blockchain-powered payment rails.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Instant settlement",
             },
             {
                 title: "Automatic fiat conversion",
                 description:
                     "Optional instant conversion to USD, EUR, or 50+ other fiat currencies.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Automatic fiat conversion",
             },
             {
                 title: "Chargeback protection",
                 description:
                     "Blockchain finality eliminates fraudulent chargebacks and payment disputes.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Chargeback protection",
             },
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
     },
 
     callAndConversation: {
         image:
-            "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
-        backgroundImage: "/assets/image30.webp",
+            "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         primaryButton: {
             text: "Contact Sales",
             href: "/contact/contact-sales",
@@ -95,29 +95,29 @@ export const ecommercePageData = {
                 title: "Cross-border optimization",
                 description:
                     "Eliminate international payment fees and currency conversion costs.",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
             },
             {
                 title: "Emerging market access",
                 description:
                     "Tap into markets with high crypto adoption but limited traditional banking.",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
             },
             {
                 title: "Local payment methods",
                 description:
                     "Integrate regional crypto preferences and local digital currency support.",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
             },
             {
                 title: "Multi-language checkout",
                 description:
                     "Checkout experiences localized for 45+ languages and regional preferences.",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
             },
         ]
     },
@@ -131,64 +131,64 @@ export const ecommercePageData = {
                 title: "One-click crypto payments",
                 description:
                     "Saved payment methods and wallet connections for returning customers.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
             {
                 title: "Mobile-optimized checkout",
                 description:
                     "QR code scanning and mobile wallet integration for seamless mobile shopping.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
             {
                 title: "Guest checkout options",
                 description:
                     "No account required for one-time purchases with crypto payments.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
             {
                 title: "Real-time order status",
                 description:
                     "Blockchain verification provides instant payment confirmation and tracking.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
     },
 
     globalWhatsapp: {
         cards: [
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "Subscription billing",
                 description:
                     "Recurring crypto payments for subscription boxes and SaaS products.",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "Split payments",
                 description:
                     "Automatically distribute funds to multiple parties for marketplace and affiliate models.",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "Dynamic pricing",
                 description:
                     "Real-time cryptocurrency pricing with optional price stabilization mechanisms.",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "Inventory management",
                 description:
                     "Automated inventory tracking with blockchain-verified supply chain data.",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
         ],
         title: "Advanced e-commerce tools",
         tag: "Merchant Services",
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         description: "",
     },
 
@@ -200,42 +200,42 @@ export const ecommercePageData = {
         cards: [
             {
                 title: "Crypto reward programs",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 description: "Issue branded tokens or popular cryptocurrencies for customer loyalty.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Crypto reward programs",
                 lists: []
             },
             {
                 title: "NFT-based promotions",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 description: "Limited edition digital collectibles as purchase bonuses or promotional items.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "NFT-based promotions",
                 lists: []
             },
             {
                 title: "Cashback in crypto",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 description: "Automatic crypto rewards based on purchase volume or customer behavior.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Cashback in crypto",
                 lists: []
             },
             {
                 title: "Gamified shopping",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 description: "Achievement-based rewards and tiered benefits using blockchain verification.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Gamified shopping",
                 lists: []
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
 
@@ -247,42 +247,42 @@ export const ecommercePageData = {
         cards: [
             {
                 title: "E-commerce plugins",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 description: "Pre-built integrations for Shopify, WooCommerce, Magento, and other platforms.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "E-commerce plugins",
                 lists: []
             },
             {
                 title: "API-first architecture",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 description: "RESTful APIs for custom integrations and proprietary e-commerce systems.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "API-first architecture",
                 lists: []
             },
             {
                 title: "White-label solutions",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 description: "Fully branded payment experiences matching your e-commerce design.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "White-label solutions",
                 lists: []
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 title: "Developer tools",
                 description: "Comprehensive SDKs, documentation, and sandbox environments.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Developer tools",
                 lists: []
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
     },
@@ -294,9 +294,9 @@ export const ecommercePageData = {
             {
                 title: "Shopping Cart Integration",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Shopping Cart Integration",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "Add to cart with crypto pricing",
@@ -308,9 +308,9 @@ export const ecommercePageData = {
             {
                 title: "Payment Options",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Payment Options",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "Direct crypto payments",
@@ -322,8 +322,8 @@ export const ecommercePageData = {
             {
                 title: "Global Compliance",
                 description: "",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 imageAlt: "Global Compliance",
                 lists: [
@@ -336,8 +336,8 @@ export const ecommercePageData = {
             {
                 title: "Analytics & Reporting",
                 description: "",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 imageAlt: "Analytics & Reporting",
                 lists: [
@@ -348,7 +348,7 @@ export const ecommercePageData = {
                 ]
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
     },
@@ -361,9 +361,9 @@ export const ecommercePageData = {
             {
                 title: "Performance",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Performance",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "Payment processing: <5 seconds",
@@ -375,9 +375,9 @@ export const ecommercePageData = {
             {
                 title: "Security",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Security",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "PCI DSS compliant",
@@ -389,9 +389,9 @@ export const ecommercePageData = {
             {
                 title: "Integration",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Integration",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "30-minute plugin installation",
@@ -401,7 +401,7 @@ export const ecommercePageData = {
                 ]
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
 
@@ -415,10 +415,10 @@ export const ecommercePageData = {
         cards: [
             {
                 title: "Marketplaces",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Marketplaces",
                 lists: [
                     "Multi-vendor payment splitting",
@@ -429,10 +429,10 @@ export const ecommercePageData = {
             },
             {
                 title: "Subscription Businesses",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Subscription Businesses",
                 lists: [
                     "Recurring crypto billing",
@@ -443,15 +443,15 @@ export const ecommercePageData = {
             },
             {
                 title: "Digital Products",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Digital Products",
                 lists: []
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
 
@@ -466,9 +466,9 @@ export const ecommercePageData = {
             {
                 title: "Conversion Optimization",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Conversion Optimization",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "25-40% higher conversion rates",
@@ -480,9 +480,9 @@ export const ecommercePageData = {
             {
                 title: "Cost Reduction",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Cost Reduction",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "70-80% lower payment processing fees",
@@ -494,9 +494,9 @@ export const ecommercePageData = {
             {
                 title: "Market Expansion",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Market Expansion",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "200+ new countries accessible",
@@ -506,7 +506,7 @@ export const ecommercePageData = {
                 ]
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
 
@@ -520,8 +520,8 @@ export const ecommercePageData = {
             {
                 title: "Quick Start (24-48 hours)",
                 description: "",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 imageAlt: "Quick Start",
                 lists: [
@@ -533,9 +533,9 @@ export const ecommercePageData = {
             {
                 title: "Standard Integration (1-2 weeks)",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Standard Integration",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "Custom checkout integration",
@@ -547,9 +547,9 @@ export const ecommercePageData = {
             {
                 title: "Enterprise Deployment (3-4 weeks)",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Enterprise Deployment",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "White-label payment experience",
@@ -559,7 +559,7 @@ export const ecommercePageData = {
                 ]
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
 
@@ -574,9 +574,9 @@ export const ecommercePageData = {
             {
                 title: "Starter Plan",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Starter Plan",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "1.5% per transaction",
@@ -588,8 +588,8 @@ export const ecommercePageData = {
             {
                 title: "Growth Plan",
                 description: "",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 imageAlt: "Growth Plan",
                 lists: [
@@ -602,8 +602,8 @@ export const ecommercePageData = {
             {
                 title: "Enterprise Plan",
                 description: "",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 imageAlt: "Enterprise Plan",
                 lists: [
                     "0.5-0.8% per transaction",
@@ -613,7 +613,7 @@ export const ecommercePageData = {
                 ]
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
 
@@ -626,25 +626,25 @@ export const ecommercePageData = {
             {
                 title: "Crypto reward programs",
                 description: "Issue branded tokens or popular cryptocurrencies for customer loyalty.",
-                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01.webp?&q=90",
+                imageSrc: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891688/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01_agtevz.webp",
                 imageAlt: "Crypto reward programs",
             },
             {
                 title: "NFT-based promotions",
                 description: "Limited edition digital collectibles as purchase bonuses or promotional items.",
-                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02.webp?&q=90",
+                imageSrc: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889040/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02_raaawc.webp",
                 imageAlt: "NFT-based promotions",
             },
             {
                 title: "Cashback in crypto",
                 description: "Automatic crypto rewards based on purchase volume or customer behavior.",
-                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
+                imageSrc: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889040/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03_cede0g.webp",
                 imageAlt: "Cashback in crypto",
             },
             {
                 title: "Gamified shopping",
                 description: "Achievement-based rewards and tiered benefits using blockchain verification.",
-                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01.webp?&q=90",
+                imageSrc: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891688/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01_agtevz.webp",
                 imageAlt: "Gamified shopping",
             },
         ],
@@ -660,7 +660,7 @@ export const ecommercePageData = {
 
     bannerCTA: {
         title: "Get Started",
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         primaryButton: {
             text: "Get Started",
             href: "/contact/request-access",

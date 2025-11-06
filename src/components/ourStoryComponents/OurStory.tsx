@@ -21,31 +21,31 @@ export default OurStory;
 const cards: CardProps[] = [
   {
     id: "1",
-    logo: "/assets/c31.webp",
+    logo: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891502/c31_rtcmcr.webp",
     year: "2015",
     description: "Company is founded",
   },
   {
     id: "2",
-    logo: "/assets/c31.webp",
+    logo: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891502/c31_rtcmcr.webp",
     year: "2016",
     description: "Team expands globally",
   },
   {
     id: "3",
-    logo: "/assets/c31.webp",
+    logo: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891502/c31_rtcmcr.webp",
     year: "2018",
     description: "Launch of core product",
   },
   {
     id: "4",
-    logo: "/assets/c31.webp",
+    logo: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891502/c31_rtcmcr.webp",
     year: "2020",
     description: "Reached 1M users",
   },
   {
     id: "5",
-    logo: "/assets/c31.webp",
+    logo: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891502/c31_rtcmcr.webp",
     year: "2023",
     description: "Expanded into new markets",
   },
@@ -124,8 +124,9 @@ const CardShowcase: React.FC = () => {
               type="button"
               onClick={() => scrollByOne(-1)}
               disabled={!canLeft}
-              className={`w-10 ${!canLeft ? "opacity-50 cursor-not-allowed" : ""
-                }`}
+              className={`w-10 ${
+                !canLeft ? "opacity-50 cursor-not-allowed" : ""
+              }`}
             >
               <IoArrowBackSharp />
             </Button>
@@ -135,8 +136,9 @@ const CardShowcase: React.FC = () => {
               type="button"
               onClick={() => scrollByOne(1)}
               disabled={!canRight}
-              className={`w-10 ${!canRight ? "opacity-50 cursor-not-allowed" : ""
-                }`}
+              className={`w-10 ${
+                !canRight ? "opacity-50 cursor-not-allowed" : ""
+              }`}
             >
               <IoArrowForwardSharp />
             </Button>

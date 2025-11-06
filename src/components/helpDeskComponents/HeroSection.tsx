@@ -5,7 +5,7 @@ import AutoScrollLogos from "./AutoScroll";
 import DottedLine from "./DottedBg";
 import Tag from "./Tag";
 export function HeroSection({
-  backgroundImage = "/assets/image30.webp",
+  backgroundImage = "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
   backgroundAlt = "Abstract wave pattern background",
   tag,
   heading,

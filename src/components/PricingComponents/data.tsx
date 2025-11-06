@@ -106,7 +106,7 @@ export const pricingPlans: PricingPlan[] = [
         "Shareable URLs or QR codes for sub-wallets",
         "Accept payments in supported crypto or stablecoins",
         "Dynamic amount or fixed-amount mode",
-        "Payment Integration (Up to 2 Providers: M-Pesa, MTN Mobile Money, Flutterwave)",
+        "Payment Integration (Up to 2 Providers: M-Pesa, MTN Mobile Money, https://res.cloudinary.com/dx1etzf66/image/upload/v1761890451/flutterwave-1_iivhor.svg)",
         "Transaction routing to crypto or fiat wallets",
         "Auto-generate invoices linked to sub-wallets",
         "Webhook notifications for incoming payments",

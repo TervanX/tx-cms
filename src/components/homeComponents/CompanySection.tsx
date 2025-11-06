@@ -47,7 +47,7 @@ export default function CompaniesSection() {
                         Senior Manager of Sales Development & Operations
                       </p>
                       <Image
-                        src="/assets/smartling.svg"
+                        src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891789/smartling_cwlqk9.svg"
                         width={50}
                         height={50}
                         alt="smart logo"
@@ -147,7 +147,7 @@ export default function CompaniesSection() {
             height="112"
             decoding="async"
             className="w-full"
-            src="/assets/spacer-desktop.svg"
+            src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891793/spacer-desktop_fotmwo.svg"
           /> */}
         </picture>
       </div>

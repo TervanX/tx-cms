@@ -7,15 +7,15 @@ export const productivityProps = {
         "TX SmartFlow automates the most complex multi-chain financial operations—from treasury management to DeFi strategies—executing with precision and intelligence 24/7.",
     images: {
         mobile: {
-            src: "/assets/solution1.jpg",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/solution1_avbfxx.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         desktop: {
-            src: "/assets/solution1.jpg",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889068/solution1_avbfxx.jpg",
             alt: "Illustration of productive bees in a grassy meadow",
         },
         product: {
-            src: "/assets/productivity-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889043/productivity-1-desktop_sdzsp4.webp",
             alt: "Helpdesk product UI",
         },
     },
@@ -63,7 +63,7 @@ export const productivityProps = {
         </g>
       </svg>`,
         image: {
-            src: "/assets/lightspeed-headshot-min.png",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891745/lightspeed-headshot-min_qiohvg.png",
             alt: "Angelo Livanos",
         },
     },
@@ -78,15 +78,15 @@ export const usabilityProps = {
         "Build sophisticated cross-chain workflows through an intuitive visual interface or powerful API—no deep blockchain expertise required.",
     images: {
         mobile: {
-            src: "/assets/usability-hero-mobile.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891812/usability-hero-desktop_uirwq4.webp",
             alt: "Illustration of people walking down a flowery path",
         },
         desktop: {
-            src: "/assets/usability-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891812/usability-hero-desktop_uirwq4.webp",
             alt: "Illustration of people walking down a flowery path",
         },
         mainFeature: {
-            src: "/assets/usability-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891807/usability-1-desktop_sdggi4.webp",
             alt: "Helpdesk usability instant insight product visual",
         },
     },
@@ -98,7 +98,7 @@ export const usabilityProps = {
     ],
     additionalFeatures: [
         {
-            image: { src: "/assets/usability-2-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891808/usability-2-desktop_h3f0oo.webp" },
             title: 'Pre-Built Automation Templates',
             description: 'Accelerate deployment with customizable templates for common use cases:',
             list: {
@@ -111,12 +111,12 @@ export const usabilityProps = {
             }
         },
         {
-            image: { src: "/assets/usability-3-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891810/usability-3-desktop_ofrgcb.webp" },
             title: 'Unified Automation API',
             description: 'Programmatically create, manage, and monitor workflows through our comprehensive REST and WebSocket APIs. Integrate TX SmartFlow directly into your existing applications and systems.',
         },
         {
-            image: { src: "/assets/usability-2-desktop.webp" },
+            image: { src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891808/usability-2-desktop_h3f0oo.webp" },
             title: 'Real-Time Workflow Monitoring',
             description: 'Accelerate deployment with Monitor all active automations through a unified dashboard with:',
             list: {
@@ -143,15 +143,15 @@ export const outboundProps = {
         "Transform automation from simple task execution to strategic financial optimization with AI-driven insights and predictive capabilities.",
     images: {
         mobile: {
-            src: "/assets/outbound-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891763/outbound-hero-desktop_feua3q.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         desktop: {
-            src: "/assets/outbound-hero-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891763/outbound-hero-desktop_feua3q.webp",
             alt: "Illustration of a futuristic satellite receiver in a rural setting",
         },
         mainFeature: {
-            src: "/assets/outbound-1-desktop.webp",
+            src: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891760/outbound-1-desktop_msubtn.webp",
             alt: "Helpdesk outbound product visual",
         },
     },
@@ -198,84 +198,84 @@ export const featuresProps = {
             name: 'Visual Workflow Builder',
             href: '/suite/automation/workflows',
             description: 'Drag-and-drop interface for creating complex multi-chain automations without coding.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'ai-trigger-system',
             name: 'AI-Powered Trigger System',
             href: '/suite/automation/triggers',
             description: 'Set conditions based on market data, portfolio metrics, or custom AI signals.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'cross-chain-workflows',
             name: 'Cross-Chain Atomic Workflows',
             href: '/suite/automation/workflows',
             description: 'Execute coordinated actions across multiple blockchains with guaranteed consistency.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'smart-gas-optimization',
             name: 'Smart Gas Optimization',
             href: '/suite/automation/optimization',
             description: 'Automatically schedule and batch operations for maximum cost efficiency.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'connector-library',
             name: 'Pre-Built Connector Library',
             href: '/app-store',
             description: 'Access 200+ pre-integrated DeFi protocols, CEXs, and financial platforms.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'custom-modules',
             name: 'Custom JavaScript Modules',
             href: '/suite/automation/developers',
             description: 'Extend functionality with custom code for unique business logic and integrations.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'workflow-monitoring',
             name: 'Real-Time Monitoring Dashboard',
             href: '/suite/automation/monitoring',
             description: 'Track all active workflows with live execution status and performance analytics.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'error-recovery-workflows',
             name: 'Error Recovery & Fallback Logic',
             href: '/suite/automation/recovery',
             description: 'Automatically retry failed operations or execute contingency plans.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'multi-sig-workflows',
             name: 'Multi-Signature Approval Workflows',
             href: '/suite/automation/approvals',
             description: 'Integrate human approval gates for critical financial operations.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'audit-logging',
             name: 'Comprehensive Audit Logging',
             href: '/suite/automation/audit',
             description: 'Maintain immutable records of every workflow execution and decision.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         },
         {
             id: 'role-based-automation',
             name: 'Role-Based Access Controls',
             href: '/suite/automation/access',
             description: 'Manage team permissions for creating, modifying, and monitoring automations.',
-            image: '/assets/photo-1552664730-d307ca884978.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761889042/photo-1552664730-d307ca884978_e37ajb.jpg'
         },
         {
             id: 'api-architecture',
             name: 'API-First Architecture',
             href: '/suite/automation/api',
             description: 'Programmatically manage everything through REST and WebSocket APIs.',
-            image: '/assets/photo-1677442136019-21780ecad995.jpg'
+            image: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891767/photo-1677442136019-21780ecad995_kvenjq.jpg'
         }
     ],
     defaultActiveFeature: "omnichannel",

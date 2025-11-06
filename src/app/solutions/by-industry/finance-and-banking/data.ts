@@ -49,39 +49,39 @@ export const financeBankingPageData = {
                 title: "Digital asset custody",
                 description:
                     "Institutional-grade custody with MPC technology, $500M insurance, and regulatory compliance.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Digital asset custody",
             },
             {
                 title: "Tokenized asset management",
                 description:
                     "Issue, manage, and trade tokenized securities, commodities, and real-world assets on blockchain.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Tokenized asset management",
             },
             {
                 title: "Cross-border payments",
                 description:
                     "Process international transfers in minutes instead of days with 80% lower costs using blockchain rails.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Cross-border payments",
             },
             {
                 title: "Liquidity management",
                 description:
                     "Optimize capital allocation across traditional and digital assets with AI-driven treasury management.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Liquidity management",
             },
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
     },
 
     callAndConversation: {
         image:
-            "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
-        backgroundImage: "/assets/image30.webp",
+            "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         primaryButton: {
             text: "Contact Sales",
             href: "/contact/contact-sales",
@@ -95,29 +95,29 @@ export const financeBankingPageData = {
                 title: "Corporate treasury services",
                 description:
                     "Multi-currency accounts, automated cash management, and yield optimization for corporate funds.",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
             },
             {
                 title: "Trade finance digitization",
                 description:
                     "Blockchain-based letters of credit, trade documentation, and supply chain financing.",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
             },
             {
                 title: "Commercial lending",
                 description:
                     "Tokenized loan origination, syndicated lending platforms, and automated credit assessment.",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
             },
             {
                 title: "Merchant services",
                 description:
                     "Crypto payment acceptance, instant settlement, and fiat conversion for business clients.",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
             },
         ]
     },
@@ -131,64 +131,64 @@ export const financeBankingPageData = {
                 title: "Security token offerings",
                 description:
                     "End-to-end platform for issuing, distributing, and trading digital securities.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
             {
                 title: "Digital asset trading",
                 description:
                     "Institutional trading desk infrastructure with best execution and compliance monitoring.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
             {
                 title: "Prime brokerage",
                 description:
                     "Custody, lending, and trading services for hedge funds and institutional clients.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
             {
                 title: "Asset management",
                 description:
                     "Portfolio management, fund administration, and performance reporting for digital assets.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
             },
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
     },
 
     globalWhatsapp: {
         cards: [
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "Consumer crypto accounts",
                 description:
                     "Integrated cryptocurrency trading and custody within existing banking apps.",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "Digital identity solutions",
                 description:
                     "Self-sovereign identity with KYC portability across financial institutions.",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "Loyalty tokenization",
                 description:
                     "Blockchain-based reward programs with transferable points and partner redemption.",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 title: "Mortgage and lending",
                 description:
                     "Tokenized mortgages, automated underwriting, and secondary market trading.",
-                img: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01.webp?&q=90&w=2560",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
             },
         ],
         title: "Next-generation consumer banking",
         tag: "Retail Banking",
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         description: "",
     },
 
@@ -199,42 +199,42 @@ export const financeBankingPageData = {
         cards: [
             {
                 title: "Digital asset allocation",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 description: "Portfolio construction and rebalancing across traditional and digital assets.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Digital asset allocation",
                 lists: []
             },
             {
                 title: " Tokenized alternative assets",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 description: "Access to private equity, real estate, and other alternatives through tokenization.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Tokenized alternative assets",
                 lists: []
             },
             {
                 title: "Automated tax optimization",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 description: "Tax-loss harvesting and reporting for complex digital asset portfolios.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Automated tax optimization",
                 lists: []
             },
             {
                 title: "Family office services",
                 description: "Multi-generational wealth transfer and estate planning using blockchain technology.",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 imageAlt: "Family office services",
                 lists: []
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
 
@@ -245,43 +245,43 @@ export const financeBankingPageData = {
         description: "",
         cards: [
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 title: "Automated regulatory reporting",
                 description: "Generate reports for Basel III, Dodd-Frank, MiFID II, and other global regulations.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Automated regulatory reporting",
                 lists: []
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 title: "Real-time risk monitoring",
                 description: "AI-powered surveillance for market manipulation, fraud detection, and compliance breaches.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Real-time risk monitoring",
                 lists: []
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 title: "Audit trail management",
                 description: "Immutable record-keeping with complete transaction history and compliance documentation.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Audit trail management",
                 lists: []
             },
             {
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 title: "Sanctions screening",
                 description: "Real-time monitoring against global watchlists and sanctions databases.",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Sanctions screening",
                 lists: []
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
     },
@@ -294,9 +294,9 @@ export const financeBankingPageData = {
             {
                 title: "API connectivity to core banking systems",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "API connectivity to core banking systems",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 lists: [
                     "Real-time synchronization with general ledger",
                     "Integration with payment processing networks",
@@ -306,7 +306,7 @@ export const financeBankingPageData = {
             {
                 title: "Security & Insurance",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Security & Insurance",
                 lists: [
                     "SOC 2 Type II certification",
@@ -318,9 +318,9 @@ export const financeBankingPageData = {
             {
                 title: "Global Compliance",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Global Compliance",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 lists: [
                     "Support for 100+ regulatory jurisdictions",
                     "Automated travel rule compliance",
@@ -331,9 +331,9 @@ export const financeBankingPageData = {
             {
                 title: " Reporting & Analytics",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Reporting & Analytics",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 lists: [
                     "Real-time balance sheet monitoring",
                     "Liquidity coverage ratio calculations",
@@ -342,7 +342,7 @@ export const financeBankingPageData = {
                 ]
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
     },
@@ -356,9 +356,9 @@ export const financeBankingPageData = {
             {
                 title: "Phase 1: Foundation (4-6 weeks)",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Regulatory compliance setup",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 lists: [
                     "Regulatory compliance setup",
                     "Core system integration",
@@ -369,8 +369,8 @@ export const financeBankingPageData = {
             {
                 title: "Phase 2: Product Launch (6-8 weeks)",
                 description: "",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 imageAlt: "Product Launch",
                 lists: [
                     "Digital asset custody services",
@@ -382,8 +382,8 @@ export const financeBankingPageData = {
             {
                 title: "Phase 3: Expansion (8-12 weeks)",
                 description: "",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 imageAlt: "Expansion",
                 lists: [
@@ -394,7 +394,7 @@ export const financeBankingPageData = {
                 ]
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
 
@@ -408,9 +408,9 @@ export const financeBankingPageData = {
             {
                 title: "United States",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "FinCEN MSB registration",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "FinCEN MSB registration",
@@ -422,9 +422,9 @@ export const financeBankingPageData = {
             {
                 title: "European Union",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "European Union",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 lists: [
                     "MiCA compliance readiness",
                     "AMLD6 implementation",
@@ -435,8 +435,8 @@ export const financeBankingPageData = {
             {
                 title: "Asia Pacific",
                 description: "",
-                img: "/assets/highlight.webp",
-                backgroundImage: "/assets/image30.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 imageAlt: "Asia Pacific",
                 lists: [
                     "HKMA virtual asset framework",
@@ -446,7 +446,7 @@ export const financeBankingPageData = {
                 ]
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
 
@@ -460,9 +460,9 @@ export const financeBankingPageData = {
             {
                 title: "Technical Security",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Technical Security",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "Multi-party computation (MPC) technology",
@@ -474,9 +474,9 @@ export const financeBankingPageData = {
             {
                 title: "Operational Security",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Operational Security",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
 
                 lists: [
                     "24/7 security operations center",
@@ -488,9 +488,9 @@ export const financeBankingPageData = {
             {
                 title: "Compliance Security",
                 description: "",
-                img: "/assets/highlight.webp",
+                img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 imageAlt: "Compliance Security",
-                backgroundImage: "/assets/image30.webp",
+                backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
                 lists: [
                     "Regular regulatory examinations",
                     "Third-party security audits",
@@ -499,7 +499,7 @@ export const financeBankingPageData = {
                 ]
             }
         ],
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         backgroundAlt: "DataSectionProps",
 
     },
@@ -512,25 +512,25 @@ export const financeBankingPageData = {
             {
                 title: "Digital asset allocation",
                 description: "Portfolio construction and rebalancing across traditional and digital assets.",
-                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01.webp?&q=90",
+                imageSrc: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891688/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01_agtevz.webp",
                 imageAlt: "Digital asset allocation",
             },
             {
                 title: "Tokenized alternative assets",
                 description: "Access to private equity, real estate, and other alternatives through tokenization.",
-                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02.webp?&q=90",
+                imageSrc: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889040/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_02_raaawc.webp",
                 imageAlt: "Tokenized alternative assets",
             },
             {
                 title: "Automated tax optimization",
                 description: "Tax-loss harvesting and reporting for complex digital asset portfolios.",
-                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
+                imageSrc: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889040/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03_cede0g.webp",
                 imageAlt: "Automated tax optimization",
             },
             {
                 title: "Family office services",
                 description: "Multi-generational wealth transfer and estate planning using blockchain technology.",
-                imageSrc: "/assets/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03.webp?&q=90",
+                imageSrc: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889040/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_03_cede0g.webp",
                 imageAlt: "Family office services",
             },
         ],
@@ -546,7 +546,7 @@ export const financeBankingPageData = {
 
     bannerCTA: {
         title: "Get Started",
-        backgroundImage: "/assets/image30.webp",
+        backgroundImage: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
         primaryButton: {
             text: "Contact Sales",
             href: "/contact/contact-sales",
