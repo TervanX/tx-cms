@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Button from '../reusable/Button';
+import Link from 'next/link';
 
 
 interface BannerProps {
@@ -81,8 +82,9 @@ export default function Banner({ title = "Join over 3,000 startups propelling th
                 </div>
               </div>
             </div>
-
-            <Button variant="primary" size="lg">{buttonText}</Button>
+            <Link href="/contact/startup">
+              <Button variant="primary" size="lg">{buttonText}</Button>
+            </Link>
           </div>
         </div>
         <div className="h-10"></div>

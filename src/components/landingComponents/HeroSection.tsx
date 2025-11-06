@@ -248,7 +248,7 @@ It enables businesses, developers, and financial institutions to build crypto ap
           description="TX helps people use, send, and receive digital assets effortlessly.
 It’s like having a Stripe + Wallet + Exchange in one, giving users access to crypto payments, wallets, and real-time asset management."
           buttonText="Explore TX Switch"
-          imageSrc="/assets/mobile-Individual.png"
+          imageSrc="/assets/txswitch.png"
           bgImageSrc="/assets/fin-card-bg.webp"
           videoSrc="/videos/fin-prototype.mp4"
         />
