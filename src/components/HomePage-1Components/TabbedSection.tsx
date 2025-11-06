@@ -164,11 +164,11 @@ const tabs: TabItem[] = [
     },
 ];
 
-const ApolloScrollTabs: React.FC = () => {
-  const [activeTab, setActiveTab] = useState(0);
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const scrollTriggerRef = useRef<ScrollTrigger | null>(null);
-  const isMobileRef = useRef(false);
+const LayerXScrollTabs: React.FC = () => {
+    const [activeTab, setActiveTab] = useState(0);
+    const sectionRef = useRef<HTMLDivElement>(null);
+    const scrollTriggerRef = useRef<ScrollTrigger | null>(null);
+    const isMobileRef = useRef(false);
 
   const [showMobileNav, setShowMobileNav] = useState(false);
   const mobileContainerRef = useRef<HTMLDivElement>(null);
@@ -582,4 +582,4 @@ const ApolloScrollTabs: React.FC = () => {
   );
 };
 
-export default ApolloScrollTabs;
+export default LayerXScrollTabs;

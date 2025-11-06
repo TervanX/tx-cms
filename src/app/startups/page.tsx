@@ -1,32 +1,19 @@
+"use client"
 import React from "react";
 import HeroSection from "@/components/StartupComponents/HeroSection";
 import FeaturesSection from "@/components/StartupComponents/FeaturesSection";
 import ProductSection from "@/components/StartupComponents/ProductSection";
-import Banner from "@/components/StartupComponents/CtaBanner";
-import Testimonial from "@/components/StartupComponents/Testimonial";
 import CtaBanner from "@/components/StartupComponents/Cta";
-import FAQAccordion from "@/components/StartupComponents/Faq";
-import { Marquee } from "@/components/StartupComponents/Marquee";
-import Resources from "@/components/StartupComponents/Resources";
-import { supportData } from "../developers/data";
 
-export default function Startups() {
-  console.log("Called");
+import { layerxData } from "./data";
+
+export default function FintechBuilders() {
   return (
-    <div>
-      <HeroSection
-        title="Power up your startup with Apollo"
-        description="Unlock world-class go-to-market resources and exclusive perks when you join the Apollo for Startups community."
-      />
-      <FeaturesSection />
-      <FeaturesSection {...supportData.featuredata} />
-      <ProductSection {...supportData.productdata} />
-      <Banner {...supportData.bannerdata} />
-      <Testimonial {...supportData.testimonialdata} />
-      <Marquee items={supportData.marqueedata.marqueeItems} />
-      <Resources {...(supportData.resourcesdata as any)} />
-      <CtaBanner {...supportData.ctaBanner} />
-      <FAQAccordion faqData={supportData.faqData} />
+    <div className="w-full">
+      <HeroSection {...layerxData.herodata} />
+      <FeaturesSection {...layerxData.featuredata} />
+      <ProductSection {...layerxData.productdata} />
+      <CtaBanner {...layerxData.ctaBanner} />
     </div>
   );
 }

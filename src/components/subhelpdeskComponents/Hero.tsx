@@ -36,8 +36,8 @@ export default function Hero({
   description,
   span,
   subtitle,
-  backgroundImage = "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889004/hero_lxmhmb.webp",
-  productImage = "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891774/product1_tzhphb.png",
+  backgroundImage = "/assets/hero.webp",
+  productImage = "/assets/product1.png",
   featureLinks = [
     {
       name: "Inbox",
@@ -230,7 +230,7 @@ export default function Hero({
   ],
   primaryButton = {
     text: "Login",
-    href: "https://www.intercom.com/view-demos",
+    href: "#",
   },
   secondaryButton = {
     text: "Contact Sales",

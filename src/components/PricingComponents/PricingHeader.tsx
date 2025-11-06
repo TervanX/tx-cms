@@ -12,11 +12,10 @@ const PricingPageHeader: React.FC<PricingPageHeaderProps> = ({
   return (
     <div className="flex flex-col lg:flex-row items-start justify-between lg:gap-22 gap-6">
       <h1 className="text-3xl lg:text-6xl font-medium text-center lg:text-start">
-        The all-in-one platform to grow your business
-      </h1>
+        The all-in-one crypto and finance infrastructure for modern businesses      </h1>
       <div>
         <h4 className="text-lg text-xl font-medium text-center lg:text-start">
-          Build pipeline smarter, close deals faster, and unify your tech stack with an AI-powered platform.
+          Smarter. Faster. Unified — with AI at the core.
         </h4>
         <div className="flex justify-center lg:justify-start">
           <SubcriptionSwitch

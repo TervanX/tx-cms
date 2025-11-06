@@ -1,5 +1,5 @@
 "use client";
-import ApolloScrollTabs from "./TabbedSection";
+import LayerXScrollTabs from "./TabbedSection";
 
 interface CardProps {
   id: string;
@@ -80,7 +80,7 @@ const CardShowcase: React.FC = () => {
           ))}
         </div>
       </div>
-      <ApolloScrollTabs />
+      <LayerXScrollTabs />
     </div>
   );
 };

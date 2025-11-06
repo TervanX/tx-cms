@@ -12,7 +12,7 @@ const EngageCustomersSection = ({
     {
       title: "Instagram",
       description:
-        "Respond to Instagram DMs, story replies and mentions directly from Intercom, and interact with customers using rich multi-media, from emojis to images.",
+        "Respond to Instagram DMs, story replies and mentions directly from layerx, and interact with customers using rich multi-media, from emojis to images.",
       imageSrc:
         "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891688/I2Y2_-_Product_page_asset_-_Omnichannel_-_Columned_media_-_01_agtevz.webp",
       imageAlt: "Instagram",

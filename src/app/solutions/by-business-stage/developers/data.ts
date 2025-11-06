@@ -92,7 +92,7 @@ export const developerPageData = {
                 description: "Accept and send payments in any cryptocurrency with a few lines of code.",
                 language: "javascript",
                 code: `// Accept payment in any token
-const payment = await tervanx.payments.create({
+const payment = await layerx.payments.create({
   amount: "100.00",
   currency: "USDC",
   chain: "ethereum"
@@ -104,7 +104,7 @@ const payment = await tervanx.payments.create({
                 description: "Embed secure, non-custodial wallets into your application in days, not months.",
                 language: "python",
                 code: `# Create user wallet
-wallet = tervanx.wallets.create(
+wallet = layerx.wallets.create(
   user_id="user_123",
   chains=["ethereum", "polygon", "solana"]
 )`, img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
@@ -114,7 +114,7 @@ wallet = tervanx.wallets.create(
                 description: "Execute smart contract calls across multiple chains with unified interfaces.",
                 language: "solidity",
                 code: `// Cross-chain contract call
-await tervanx.contracts.execute({
+await layerx.contracts.execute({
   contract: "0x...",
   method: "transfer",
   args: [to, amount],
@@ -144,7 +144,7 @@ await tervanx.contracts.execute({
                 img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889041/highlight_zh2jku.webp",
                 language: "java",
                 code: `// Get best swap route across all DEXs
-const route = await tervanx.defi.getBestRoute({
+const route = await layerx.defi.getBestRoute({
   fromToken: "ETH",
   toToken: "USDC",
   amount: "1.0"
@@ -159,7 +159,7 @@ const route = await tervanx.defi.getBestRoute({
                 language: "python",
 
                 code: `# List NFT for sale
-listing = await tervanx.nfts.list({
+listing = await layerx.nfts.list({
   nft_id: "0x123...456/1",
   price: "0.1",
   currency: "ETH"
@@ -174,7 +174,7 @@ listing = await tervanx.nfts.list({
                 language: "java",
                 code: `
 // Sync with accounting system
-TervanxClient.syncToERP(
+LayerxClient.syncToERP(
   transactionHistory,
   AccountingSystem.NETSUITE
 );

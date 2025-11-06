@@ -55,6 +55,7 @@ export const MarqueeItemSchema = z.object({
   src: z.string(),
   width: z.number(),
   height: z.number(),
+  tag: z.string().optional()
 });
 
 export const MarqueePropsSchema = z.object({

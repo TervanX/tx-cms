@@ -189,55 +189,91 @@ export const supportData = {
             {
                 id: '1',
                 alt: '2025 spring best relationship',
+<<<<<<< HEAD
                 src: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891836/2025-spring-best-relatnionship.e852da01_vtdqly.svg',
+=======
+                src: '/assets/AWS.png',
+>>>>>>> 6b97570b4f1fb7ab670e89f4896ff3f769aaa121
                 width: 105,
                 height: 120,
+                tag: "In Progress"
             },
             {
                 id: '2',
                 alt: '2025 spring best results',
+<<<<<<< HEAD
                 src: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891837/2025-spring-best-results.bd944908_nmigwk.svg',
+=======
+                src: '/assets/DDoS.png',
+>>>>>>> 6b97570b4f1fb7ab670e89f4896ff3f769aaa121
                 width: 105,
                 height: 120,
+                tag: "Concluded"
             },
             {
                 id: '3',
                 alt: '2025 spring best roi',
+<<<<<<< HEAD
                 src: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761888995/2025-spring-best-roi.4e11006b_f3vu2m.svg',
+=======
+                src: '/assets/gdpr.png',
+>>>>>>> 6b97570b4f1fb7ab670e89f4896ff3f769aaa121
                 width: 105,
                 height: 120,
+                tag: "In Progress"
             },
             {
                 id: '4',
                 alt: '2025 spring high performer',
+<<<<<<< HEAD
                 src: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761888994/2025-spring-high-performer.ac61c4b0_zxxtk4.svg',
+=======
+                src: '/assets/ISO.png',
+>>>>>>> 6b97570b4f1fb7ab670e89f4896ff3f769aaa121
                 width: 105,
                 height: 120,
+                tag: "Concluded"
             },
             {
                 id: '5',
                 alt: '2025 spring momentum leader',
+<<<<<<< HEAD
                 src: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761888994/2025-spring-high-performer.ac61c4b0_zxxtk4.svg',
+=======
+                src: '/assets/PCI.png',
+>>>>>>> 6b97570b4f1fb7ab670e89f4896ff3f769aaa121
                 width: 105,
                 height: 120,
+                tag: "In Progress"
             },
             {
                 id: '6',
                 alt: '2025 spring most implementable',
+<<<<<<< HEAD
                 src: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891844/2025-spring-most-implementable.357d0c18_lcmb6m.svg',
+=======
+                src: '/assets/pen.png',
+>>>>>>> 6b97570b4f1fb7ab670e89f4896ff3f769aaa121
                 width: 105,
                 height: 120,
+                tag: "Concluded"
             },
             {
                 id: '7',
                 alt: '2025 spring top50 sales products',
+<<<<<<< HEAD
                 src: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891845/2025-spring-top50-sales-products.a56b5440_zmmo9y.svg',
+=======
+                src: '/assets/SOC.png',
+>>>>>>> 6b97570b4f1fb7ab670e89f4896ff3f769aaa121
                 width: 105,
                 height: 120,
+                tag: "In Progress"
             },
             {
                 id: '8',
                 alt: '2025 spring top50 small business products',
+<<<<<<< HEAD
                 src: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891847/2025-spring-top50-small-business-products.39d1f8e7_uzigqr.svg',
                 width: 105,
                 height: 120,
@@ -260,8 +296,12 @@ export const supportData = {
                 id: '11',
                 alt: '2025 spring top100 highest satisfation product',
                 src: 'https://res.cloudinary.com/dx1etzf66/image/upload/v1761891852/2025-spring-top100-highest-satisfation-product.2851ec87_namqil.svg',
+=======
+                src: '/assets/Zero.png',
+>>>>>>> 6b97570b4f1fb7ab670e89f4896ff3f769aaa121
                 width: 105,
                 height: 120,
+                tag: "Concluded"
             },
         ]
     }
