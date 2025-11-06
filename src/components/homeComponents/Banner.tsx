@@ -18,7 +18,7 @@ export interface BannerProps {
 }
 
 const BannerCTA: React.FC<BannerProps> = ({
-  backgroundImage = "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891878/pilot_ht1hcp.jpg",
+  backgroundImage = "/assets/pilot.jpg",
   backgroundImageLQIP,
   altText = "background",
   primaryButton = {
@@ -40,7 +40,7 @@ const BannerCTA: React.FC<BannerProps> = ({
           <div className="relative w-full h-full overflow-hidden transform translate-z-0 backface-hidden">
             <Image
               alt={altText}
-              src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761891878/pilot_ht1hcp.jpg"
+              src="/assets/pilot.jpg"
               fill
               sizes="(min-width: 1920px) 1920px, 100vw"
               className="object-cover object-center opacity-100 transition-opacity duration-[800ms]"
