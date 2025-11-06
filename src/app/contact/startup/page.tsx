@@ -45,6 +45,7 @@ export default function ContactStartupsPage() {
     };
 
 
+
     const validateStep1 = () => {
         const newErrors: Record<string, string> = {};
 
@@ -85,6 +86,8 @@ export default function ContactStartupsPage() {
             case 1:
                 isValid = validateStep1();
                 break;
+            default:
+                isValid = true;
         }
         if (isValid) setCurrentStep((prev) => prev + 1);
     };
@@ -95,7 +98,6 @@ export default function ContactStartupsPage() {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-
         if (!validateStep1()) {
             return;
         }
@@ -105,14 +107,19 @@ export default function ContactStartupsPage() {
 
         try {
             const submissionData = {
-                name: formData.fullName,
-                position: formData.position,
-                email: formData.workEmail,
+                fullName: formData.fullName,
+                workEmail: formData.workEmail,
                 companyName: formData.companyName,
-                projectDescription: formData.project,
+                companyWebsite: "https://example.com",
+                phoneNumber: "+1234567890",
+                businessType: "Anonymous",
+                monthlyTransactionVolume: "Anonymous",
+                helpTopic: "Startup Enquiry",
+                message: formData.project,
+                preferredContactMethod: "Email",
             };
 
-            const response = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/contact/startups`, {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/contact/contacts`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -122,7 +129,6 @@ export default function ContactStartupsPage() {
 
             if (response.ok) {
                 const responseData = await response.json();
-                console.log("Startup form successfully submitted", responseData);
                 setIsSubmitted(true);
                 setTimeout(() => {
                     window.history.back();
@@ -182,7 +188,7 @@ export default function ContactStartupsPage() {
                 <FormSidebar
                     title="Contact Us for Startups"
                     description="Tell us about your startup and how we can help you grow."
-                    showCompanies={false}
+                    showCompanies={true}
                 />
                 <StartupContactFormSteps
                     currentStep={currentStep}

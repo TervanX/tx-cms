@@ -118,7 +118,7 @@ export function HeroSection({
         </div>
       </div>
       <div className="relative ">
-        <img src="/assets/product1.png" className="w-[80%] mx-auto" />
+        <img src="/assets/product2.png" className="w-[80%] mx-auto" />
         {/* <div className="flex items-center w-[80%] mx-auto py-16">
           <div className="flex items-center w-full  border-[rgba(255,255,255,.1)] border-solid border-t-[.3px] border-b-[.3px] ">
             <p className="font-grotesque text-xs lg:text-base  text-left text-white max-w-[12rem]">

@@ -19,7 +19,7 @@ const startupContactSteps = [
     {
         fields: [
             {
-                name: "name",
+                name: "fullName",
                 type: "text" as const,
                 label: "Full Name",
                 required: true,
@@ -33,7 +33,7 @@ const startupContactSteps = [
                 placeholder: "e.g., Founder, CEO, CTO"
             },
             {
-                name: "email",
+                name: "workEmail",
                 type: "email" as const,
                 label: "Email Address",
                 required: true,

@@ -49,13 +49,15 @@ const contactSteps = [
                 name: "companyName",
                 type: "text" as const,
                 label: "Company Name",
-                placeholder: "Your company name"
+                placeholder: "Your company name",
+                required: true,
             },
             {
                 name: "companyWebsite",
                 type: "url" as const,
                 label: "Company Website",
-                placeholder: "https://example.com"
+                placeholder: "https://example.com",
+                required: true,
             }
         ]
     },
@@ -65,25 +67,29 @@ const contactSteps = [
                 name: "country",
                 type: "select" as const,
                 label: "Country / Region",
-                options: ["Nigeria", "Ghana", "Kenya", "United Kingdom", "United States", "South Africa", "Canada", "Other"]
+                options: ["Nigeria", "Ghana", "Kenya", "United Kingdom", "United States", "South Africa", "Canada", "Other"],
+                required: true,
             },
             {
                 name: "phoneNumber",
                 type: "tel" as const,
                 label: "Phone Number",
-                placeholder: "+234 810 000 0000"
+                placeholder: "+234 810 000 0000",
+                required: true,
             },
             {
                 name: "businessType",
                 type: "select" as const,
                 label: "Business Type",
-                options: ["Fintech or Bank", "Crypto Exchange or Wallet", "Payment Gateway / Processor", "eCommerce or Marketplace", "SaaS / Platform", "NGO / Enterprise / Government", "Other"]
+                options: ["Fintech or Bank", "Crypto Exchange or Wallet", "Payment Gateway / Processor", "eCommerce or Marketplace", "SaaS / Platform", "NGO / Enterprise / Government", "Other"],
+                required: true,
             },
             {
                 name: "monthlyVolume",
                 type: "select" as const,
                 label: "Monthly Transaction Volume",
-                options: ["Less than $10k", "$10k – $50k", "$50k – $250k", "$250k – $1M", "Above $1M"]
+                options: ["Less than $10k", "$10k – $50k", "$50k – $250k", "$250k – $1M", "Above $1M"],
+                required: true,
             }
         ]
     },
@@ -100,16 +106,17 @@ const contactSteps = [
                 name: "contactMethod",
                 type: "radio" as const,
                 label: "Preferred Contact Method",
-                options: ["Email", "WhatsApp", "Phone Call"]
+                options: ["Email", "WhatsApp", "Phone Call"],
+                required: true,
             }
         ]
     }
 ];
 
 const mobileHeading = {
-  title: "Get in Touch with LayerX",
-  description:
-    "Have questions about our digital asset infrastructure? Our team is here to help you find the right solution for your business needs.",
+    title: "Get in Touch with LayerX",
+    description:
+        "Have questions about our digital asset infrastructure? Our team is here to help you find the right solution for your business needs.",
 };
 
 export default function ContactFormSteps(props: ContactFormStepsProps) {

@@ -149,7 +149,7 @@ function HeroCard({
       </div>
 
       <div
-        className="inset-0 z-10 hidden h-full !w-full !opacity-100 lg:block relative aspect-[10/12] w-full opacity-100 md:aspect-[12/10.5] lg:aspect-[10/10.5] lg:w-1/2 lg:transition-opacity lg:duration-[1500ms] lg:ease-out lg:group-has-[:hover]:opacity-50 lg:hover:!opacity-100 xl:aspect-[11.5/10.5] mt-8"
+        className="inset-0 z-10 hidden h-full !w-full !opacity-100 lg:block relative aspect-[10/12] w-full opacity-100 md:aspect-[12/10.5] lg:aspect-[10/10.5] lg:w-1/2 lg:transition-opacity lg:duration-[1500ms] lg:ease-out lg:group-has-[:hover]:opacity-50 lg:hover:!opacity-100 xl:aspect-[11.5/10.5] mt-12"
         style={{
           maskImage:
             "linear-gradient(to bottom, transparent, transparent 10%, black 35%)",
@@ -236,7 +236,7 @@ export default function HeroSection() {
           description="TX offers institutional-grade digital asset custody and wallet infrastructure.
 It enables businesses, developers, and financial institutions to build crypto apps, manage millions of wallets, and automate operations securely."
           buttonText="Explore TX Business"
-          imageSrc="/assets/desktop-business.png"
+          imageSrc="/assets/main2.png"
           bgImageSrc="/assets/suite-card-bg.webp"
           videoSrc="/videos/suite-prototype.mp4"
         />

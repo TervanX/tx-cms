@@ -2,13 +2,14 @@
 import { useState } from "react";
 import JoinWaitlistForm from "@/components/landingComponents/WaitlistFormStep";
 import SuccessMessage from "@/components/landingComponents/SuccessMessage";
-import FormSidebar from "@/components/landingComponents/FormSidebar";
+import FormSidebar from "@/components/landingComponents/FormSidebar"
+import ErrorToast from "@/components/landingComponents/ErrorToastComponent";
 
 export default function JoinWaitlistPage() {
     const [currentStep, setCurrentStep] = useState(1);
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [isSubmitting, setIsSubmitting] = useState(false);
-
+    const [errorMessage, setErrorMessage] = useState<string | null>(null);
     const [formData, setFormData] = useState({
         // Step 1
         fullName: "",
@@ -94,9 +95,11 @@ export default function JoinWaitlistPage() {
             newErrors.agreeToTerms = "You must accept the Terms & Conditions and Privacy Policy to continue.";
         }
 
-        // Optional field validation for interest reason length
         if (formData.interestReason.trim() && formData.interestReason.trim().length > 1000) {
             newErrors.interestReason = "Please keep your response under 1000 characters.";
+        }
+        if (!formData.interestReason) {
+            newErrors.interestReason = "This field is required.";
         }
 
         setErrors(newErrors);
@@ -125,38 +128,57 @@ export default function JoinWaitlistPage() {
         }
 
         setIsSubmitting(true);
+        setErrorMessage(null); // Clear any previous errors
 
         try {
-            const netlifyForm = new FormData();
-            netlifyForm.append('form-name', 'join-waitlist-form');
-            Object.entries(formData).forEach(([key, value]) => {
-                if (typeof value === 'boolean') {
-                    netlifyForm.append(key, value ? "Yes" : "No");
-                } else {
-                    netlifyForm.append(key, value as string);
-                }
+            const submissionData = {
+                fullName: formData.fullName,
+                businessEmail: formData.email,
+                companyOrOrganization: formData.companyName,
+                businessType: formData.role,
+                CompanyWebsite: "https://example.com",
+                phoneNumber: "+1234567890",
+                whatDoYouWantToBuild: formData.useCase,
+                countryOfOperation: formData.country,
+                teamSize: "Anonymous",
+                estimatedMonthlyVolumeUSD: formData.monthlyVolume,
+                preferredContactMethod: "Anonymous",
+                additionalDetails: formData.interestReason,
+                agreeToTerms: formData.agreeToTerms,
+            };
+
+            const response = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/contact/request-access`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(submissionData),
             });
 
-            const response = await fetch('/', {
-                method: 'POST',
-                body: netlifyForm,
-            });
             if (response.ok) {
-                console.log("Waitlist form successfully submitted to Netlify");
+                console.log("Access request form successfully submitted");
                 setIsSubmitted(true);
                 setTimeout(() => {
                     window.history.back();
                 }, 3000);
             } else {
-                throw new Error("Network response was not ok");
+                const errorData = await response.json();
+                console.error("Server error:", errorData);
+
+                // Extract error message from API response
+                const apiErrorMessage = errorData?.message || errorData?.title || "Failed to submit form";
+                setErrorMessage(`${apiErrorMessage}. Please check your information and try again.`);
             }
         } catch (error) {
             console.error("Error submitting form:", error);
-            alert("There was an error joining the waitlist. Please try again or contact us directly.");
+            setErrorMessage(
+                "Unable to submit your request at this time. Please check your internet connection and try again, or contact us directly."
+            );
         } finally {
             setIsSubmitting(false);
         }
     };
+
 
     if (isSubmitted) {
         return (

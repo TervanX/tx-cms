@@ -110,7 +110,8 @@ const waitlistSteps = [
       {
         name: "interestReason",
         type: "textarea" as const,
-        label: "Why You're Interested in LayerX Switch (Optional)",
+        required: true,
+        label: "Why You're Interested in LayerX Switch",
         placeholder:
           "Tell us what you plan to build or any specific use cases...",
       },
