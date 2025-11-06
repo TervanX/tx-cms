@@ -64,7 +64,7 @@ export const layerxData = {
                 ],
                 ctaText: "Get the Compliance Guide",
                 ctaLink: "/contact/startup",
-                image: "/assets/1.jpeg",
+                image: "/assets/1.jpg",
                 imagePosition: "left" as const
             },
             {
@@ -137,7 +137,7 @@ export const layerxData = {
                 ],
                 ctaText: "Access the Cross-Border Playbook",
                 ctaLink: "/contact/startup",
-                image: "/assets/7.jpeg",
+                image: "/assets/7.jpg",
                 imagePosition: "left" as const
             },
             {
@@ -191,7 +191,7 @@ export const layerxData = {
                 ],
                 ctaText: "Download the UI Kit",
                 ctaLink: "/contact/startup",
-                image: "/assets/2.jpeg",
+                image: "/assets/2.jpg",
                 imagePosition: "right" as const
             }
         ],

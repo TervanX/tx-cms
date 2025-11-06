@@ -8,9 +8,24 @@ export default function SignUp() {
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
+
+  interface EmailValidator {
+    (email: string): boolean;
+  }
+
+  const validateEmail: EmailValidator = (email: string): boolean => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+
+
   const handleEmailSubmit = () => {
     if (!email || loading) return;
-
+    if (!validateEmail(email)) {
+      setMessage("Please enter a valid email address");
+      return;
+    }
     console.log("Email submitted:", email);
     setLoading(true);
     setMessage("");
