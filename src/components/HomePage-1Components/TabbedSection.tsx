@@ -46,126 +46,122 @@ type TabItem = {
 };
 
 const tabs: TabItem[] = [
-  {
-    id: "payment",
-    label: "Payment Infrastructure",
-    title: "Enable fast and safer stable coin payment",
-    description: "",
-    bullets: [
-      {
-        text: "Accept and send USDT, USDC, and other stablecoins globally",
-        icon: <Globe className="w-4 h-4" />,
-      },
-      {
-        text: "Real-time settlement with programmable workflows",
-        icon: <Zap className="w-4 h-4" />,
-      },
-      {
-        text: "Bank-grade compliance, KYT, and AML protection",
-        icon: <Shield className="w-4 h-4" />,
-      },
-      {
-        text: "Multi-chain support for seamless cross-border operations",
-        icon: <CircuitBoard className="w-4 h-4" />,
-      },
-    ],
-    image:
-      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891761/outbound2_wrn4nr.webp",
-    bgColor: "bg-yellow-50",
-    ctaPrimary: "Start Processing Payments",
-    ctaSecondary: "Explore API Documentation",
-  },
-  {
-    id: "treasury",
-    label: "Treasury Management",
-    title: "Secure Control and automate Operations for digital assets",
-    description: "",
-    bullets: [
-      {
-        text: "Unified dashboard for multi-wallet and multi-asset management",
-        icon: <BarChart3 className="w-4 h-4" />,
-      },
-      {
-        text: "Real-time form enrichment",
-        icon: <ScanEye className="w-4 h-4" />,
-      },
-      {
-        text: "Multi-Party Computation (MPC) protection for high-value assets",
-        icon: <Key className="w-4 h-4" />,
-      },
-      {
-        text: "Automated rebalancing and smart policy enforcement",
-        icon: <RefreshCw className="w-4 h-4" />,
-      },
-      {
-        text: "Real-time analytics, risk monitoring, and transaction visibility",
-        icon: <Eye className="w-4 h-4" />,
-      },
-    ],
-    image:
-      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891731/inbound2_voae6r.webp",
-    bgColor: "bg-purple-50",
-    ctaPrimary: " Get a Demo",
-    ctaSecondary: "See How Treasury Works",
-  },
-  {
-    id: "embedded",
-    label: "Embedded Wallets",
-    title: "Create white label wallet for consumers and retails",
-    description: "",
-    bullets: [
-      {
-        text: "Fully white-labeled wallet SDK and APIs",
-        icon: <Settings className="w-4 h-4" />,
-      },
-      {
-        text: "Support for stablecoins, crypto, and fiat balances",
-        icon: <Coins className="w-4 h-4" />,
-      },
-      {
-        text: "Easy integration with existing apps and ecosystems",
-        icon: <Puzzle className="w-4 h-4" />,
-      },
-      {
-        text: "Enterprise security and fraud prevention built-in",
-        icon: <Lock className="w-4 h-4" />,
-      },
-    ],
-    image:
-      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891606/data2_kbflfd.webp",
-    bgColor: "bg-pink-50",
-    ctaPrimary: "Build Your Wallet Now",
-    ctaSecondary: " View Developer Tools",
-  },
-  {
-    id: "wallet",
-    label: "Wallet-as-a-Service",
-    title: "Protect scale and Optimise Crypto wallets",
-    description: "",
-    bullets: [
-      {
-        text: "Modular wallet architecture for crypto and stablecoins",
-        icon: <Cpu className="w-4 h-4" />,
-      },
-      {
-        text: "Advanced MPC and key management",
-        icon: <FileKey className="w-4 h-4" />,
-      },
-      {
-        text: "Auto-scaling infrastructure for global performance",
-        icon: <Server className="w-4 h-4" />,
-      },
-      {
-        text: "Policy controls, KYT, and transaction automation",
-        icon: <Scale className="w-4 h-4" />,
-      },
-    ],
-    image:
-      "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891611/deal2_ru3mlb.webp",
-    bgColor: "bg-blue-50",
-    ctaPrimary: "Launch with WaaS",
-    ctaSecondary: "Book a Technical Session",
-  },
+    {
+        id: "payment",
+        label: "Payment Infrastructure",
+        title: "Enable fast and safer stable coin payment",
+        description: "",
+        bullets: [
+            {
+                text: "Accept and send USDT, USDC, and other stablecoins globally",
+                icon: <Globe className="w-4 h-4" />
+            },
+            {
+                text: "Real-time settlement with programmable workflows",
+                icon: <Zap className="w-4 h-4" />
+            },
+            {
+                text: "Bank-grade compliance, KYT, and AML protection",
+                icon: <Shield className="w-4 h-4" />
+            },
+            {
+                text: "Multi-chain support for seamless cross-border operations",
+                icon: <CircuitBoard className="w-4 h-4" />
+            },
+        ],
+        image: "/assets/payment.png",
+        bgColor: "bg-yellow-50",
+        ctaPrimary: "Start Processing Payments",
+        ctaSecondary: "Explore API Documentation"
+    },
+    {
+        id: "treasury",
+        label: "Treasury Management",
+        title: "Secure Control and automate Operations for digital assets",
+        description: "",
+        bullets: [
+            {
+                text: "Unified dashboard for multi-wallet and multi-asset management",
+                icon: <BarChart3 className="w-4 h-4" />
+            },
+            {
+                text: "Real-time form enrichment",
+                icon: <ScanEye className="w-4 h-4" />
+            },
+            {
+                text: "Multi-Party Computation (MPC) protection for high-value assets",
+                icon: <Key className="w-4 h-4" />
+            },
+            {
+                text: "Automated rebalancing and smart policy enforcement",
+                icon: <RefreshCw className="w-4 h-4" />
+            },
+            {
+                text: "Real-time analytics, risk monitoring, and transaction visibility",
+                icon: <Eye className="w-4 h-4" />
+            },
+        ],
+        image: "/assets/tm.png",
+        bgColor: "bg-purple-50",
+        ctaPrimary: " Get a Demo",
+        ctaSecondary: "See How Treasury Works"
+    },
+    {
+        id: "embedded",
+        label: "Embedded Wallets",
+        title: "Create white label wallet for consumers and retails",
+        description: "",
+        bullets: [
+            {
+                text: "Fully white-labeled wallet SDK and APIs",
+                icon: <Settings className="w-4 h-4" />
+            },
+            {
+                text: "Support for stablecoins, crypto, and fiat balances",
+                icon: <Coins className="w-4 h-4" />
+            },
+            {
+                text: "Easy integration with existing apps and ecosystems",
+                icon: <Puzzle className="w-4 h-4" />
+            },
+            {
+                text: "Enterprise security and fraud prevention built-in",
+                icon: <Lock className="w-4 h-4" />
+            },
+        ],
+        image: "/assets/embedded.png",
+        bgColor: "bg-pink-50",
+        ctaPrimary: "Build Your Wallet Now",
+        ctaSecondary: " View Developer Tools"
+    },
+    {
+        id: "wallet",
+        label: "Wallet-as-a-Service",
+        title: "Protect scale and Optimise Crypto wallets",
+        description: "",
+        bullets: [
+            {
+                text: "Modular wallet architecture for crypto and stablecoins",
+                icon: <Cpu className="w-4 h-4" />
+            },
+            {
+                text: "Advanced MPC and key management",
+                icon: <FileKey className="w-4 h-4" />
+            },
+            {
+                text: "Auto-scaling infrastructure for global performance",
+                icon: <Server className="w-4 h-4" />
+            },
+            {
+                text: "Policy controls, KYT, and transaction automation",
+                icon: <Scale className="w-4 h-4" />
+            },
+        ],
+        image: "/assets/wallet.png",
+        bgColor: "bg-blue-50",
+        ctaPrimary: "Launch with WaaS",
+        ctaSecondary: "Book a Technical Session"
+    },
 ];
 
 const ApolloScrollTabs: React.FC = () => {
