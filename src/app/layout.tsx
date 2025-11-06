@@ -4,6 +4,7 @@ import "./globals.css";
 import ClarityInit from "@/utils/ClarityInit";
 import ContactModal from "@/components/landingComponents/ContactModal";
 import AdvancedCookieConsent from "@/utils/CookieConsent";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -19,22 +20,10 @@ const grotesque = Bricolage_Grotesque({
   subsets: ["latin"],
 });
 
-const iconBaseUrl = "https://res.cloudinary.com/dx1etzf66/image/upload";
-const iconVersion = "v1761842277";
-const iconId = "LayerX_Logo_ffy6pb.png";
-
-// Create the image URLs using template literals
-const openGraphImage = `${iconBaseUrl}/c_limit,w_1200,h_630,f_auto,q_80/${iconVersion}/${iconId}`;
-const twitterImage = `${iconBaseUrl}/c_limit,w_1200,h_600,f_auto,q_80/${iconVersion}/${iconId}`;
-const icon32 = `${iconBaseUrl}/w_32,h_32,f_auto,q_80/${iconVersion}/${iconId}`;
-const icon64 = `${iconBaseUrl}/w_64,h_64,f_auto,q_80/${iconVersion}/${iconId}`;
-const icon180 = `${iconBaseUrl}/w_180,h_180,f_auto,q_80/${iconVersion}/${iconId}`;
-const preloadIcon = `${iconBaseUrl}/w_32,h_32,f_auto,q_80/${iconVersion}/${iconId}`;
-
 export const metadata: Metadata = {
   title: "LayerX - Financial Infrastructure Platform",
   description: "LayerX is the AWS for Finance – a powerful financial infrastructure platform supporting fiat, crypto, and digital assets with scalable APIs, dashboards, and developer-first tools.",
-  keywords: ["financial infrastructure", "fintech", "APIs", "crypto", "digital assets", "fiat", "Africa fintech", "payment infrastructure", "LayerX", "build with layerX"],
+  keywords: ["financial infrastructure", "fintech", "APIs", "crypto", "digital assets", "fiat", "Africa fintech", "payment infrastructure", "LayerX", "build with layerX", "build with layer"],
   robots: { index: true, follow: true },
   openGraph: {
     title: "LayerX - Financial Infrastructure Platform",
@@ -43,38 +32,37 @@ export const metadata: Metadata = {
     siteName: "LayerX",
     locale: "en_US",
     type: "website",
-    images: [openGraphImage],
+    images: ["/assets/layer.svg"],
   },
   twitter: {
     card: "summary_large_image",
     site: "@layerx",
     creator: "@layerx",
     title: "LayerX - Financial Infrastructure Platform",
-    description:
-      "Scalable financial APIs and infrastructure for businesses, startups, and developers.",
+    description: "Scalable financial APIs and infrastructure for businesses, startups, and developers.",
     images: ["/assets/layer.svg"],
   },
   icons: {
     icon: [
       { url: '/assets/layer.svg', sizes: 'any' },
       {
-        url: icon32,
-        type: "image/png",
+        url: '/assets/layer.svg',
+        type: "image/svg+xml",
         sizes: "32x32",
       },
       {
-        url: icon64,
-        type: "image/png",
+        url: '/assets/layer.svg',
+        type: "image/svg+xml",
         sizes: "64x64",
       },
       {
-        url: icon180,
-        type: "image/png",
+        url: '/assets/layer.svg',
+        type: "image/svg+xml",
         sizes: "180x180",
       },
     ],
     shortcut: "/assets/layer.svg",
-    apple: `${iconBaseUrl}/w_180,h_180,f_auto,q_80/${iconVersion}/${iconId}`,
+    apple: "/assets/layer.svg",
   },
   alternates: {
     canonical: "https://buildwithlayerx.com",
@@ -89,14 +77,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/assets/layer.svg" type="image/svg" />
-        <link rel="shortcut icon" href="/assets/layer.svg" type="image/png" />
-        <link rel="apple-touch-icon" href="/assets/layer.svg" type="image/png" />
+        <link rel="icon" href="/assets/layer.svg" type="image/svg+xml" />
+        <link rel="shortcut icon" href="/assets/layer.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/assets/layer.svg" type="image/svg+xml" />
         <link
           rel="preload"
-          href={`${iconBaseUrl}/w_32,h_32,f_auto,q_80/${iconVersion}/${iconId}`}
+          href="/assets/layer.svg"
           as="image"
-          type="image/png"
+          type="image/svg+xml"
         />
       </head>
       <body

@@ -49,7 +49,7 @@ export default function FormSidebar({
   testimonial = defaultTestimonial,
   trust = "The same world-class infrastructure that powers",
   showCompanies = true,
-  backgroundImage = "https://res.cloudinary.com/dx1etzf66/image/upload/v1761889002/b117dbac815c7c71ea073f7a30999c33_uxhynu.jpg",
+  backgroundImage = "/assets/b.jpg",
   customCompanies,
 }: FormSidebarProps) {
   const companiesToShow = customCompanies || defaultCompanies;

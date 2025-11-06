@@ -81,7 +81,7 @@ export default function Banner({
               alt={altText}
               fill
               className="transition-opacity duration-300 ease-out-quad size-full object-cover object-center opacity-100"
-              src="https://res.cloudinary.com/dx1etzf66/image/upload/v1761889043/product-banner_pxyojv.jpg"
+              src="/assets/product-banner.jpg"
               sizes="100vw"
               placeholder="empty"
               priority={false}

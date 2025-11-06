@@ -36,7 +36,7 @@ export default function Hero({
   description,
   span,
   subtitle,
-  backgroundImage = "/assets/hero.webp",
+  backgroundImage = "/assets/hero.png",
   productImage = "/assets/product2.png",
   featureLinks = [
     {
@@ -251,7 +251,7 @@ export default function Hero({
       <div className="overflow-hidden bg-cover absolute inset-0 size-full">
         <img
           alt="Helpdesk illustration"
-          src='/assets/hero.webp'
+          src='/assets/hero.png'
           className="transition-opacity duration-300 ease-out-quad size-full object-cover object-center opacity-100"
           style={{
             position: "absolute",

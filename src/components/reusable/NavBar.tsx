@@ -1371,9 +1371,8 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
         )}
       </button>
       <div
-        className={`overflow-y-scroll transition-all duration-300 ease-in-out px-6 ${
-          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-        }`}
+        className={`overflow-y-scroll transition-all duration-300 ease-in-out px-6 ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          }`}
       >
         <div className="pb-5 text-dark text-sm lg:text-base leading-relaxed border-gray-200 border-t-[1.5px] pt-4">
           <div className="flex flex-col lg:flex-row gap-6">
@@ -1386,7 +1385,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
                   <div className="flex justify-between items-start gap-3">
                     <div className="flex flex-col w-[60%] items-start justify-between">
                       <div className="flex items-center gap-3">
-                        {solution.logo}
+                        {/* {solution.logo} */}
                         <p className="font-grotesque font-medium text-lg lg:leading-[110%] leading-[110%]">
                           {solution.title}
                         </p>

@@ -237,7 +237,7 @@ export default function HeroSection() {
 It enables businesses, developers, and financial institutions to build crypto apps, manage millions of wallets, and automate operations securely."
           buttonText="Explore TX Business"
           imageSrc="/assets/main2.png"
-          bgImageSrc="/assets/suite-card-bg.webp"
+          bgImageSrc="/assets/suite-card-bg.jpg"
           videoSrc="/videos/suite-prototype.mp4"
         />
         <HeroCard
