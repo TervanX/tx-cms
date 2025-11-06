@@ -158,8 +158,8 @@ function HeroCard({
         <div className="absolute inset-0 z-10 flex size-full items-end overflow-hidden">
           <div
             className={`pointer-events-none absolute inset-0 z-10 items-end transition-opacity duration-500 ${isHovering && videoSrc
-                ? "opacity-0 lg:flex"
-                : "opacity-100 lg:flex"
+              ? "opacity-0 lg:flex"
+              : "opacity-100 lg:flex"
               }`}
           >
             <div className="mx-auto !aspect-auto w-full pr-10 pl-10 lg:pr-0 lg:pl-0">
