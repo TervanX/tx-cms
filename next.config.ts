@@ -1,4 +1,4 @@
-import {withSentryConfig} from '@sentry/nextjs';
+import { withSentryConfig } from '@sentry/nextjs';
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import type { NextConfig } from "next";
 
@@ -15,6 +15,24 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'www.apollo.io',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.sanity.io',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'backend.blog.nubank.com.br',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.ytimg.com',
         port: '',
         pathname: '/**',
       },

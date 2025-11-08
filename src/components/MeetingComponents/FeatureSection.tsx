@@ -5,15 +5,13 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({ data, index }) => {
   const isEven = index % 2 === 0;
   return (
     <div
-      className={`scroll-mt-20 font-grotesque lg:h-screen ${
-        isEven ? "bg-white" : "bg-bg-blue"
-      }`}
+      className={`scroll-mt-20 font-grotesque lg:h-screen ${isEven ? "bg-white" : "bg-bg-blue"
+        }`}
     >
       <div className="container">
         <div
-          className={`flex flex-col-reverse w-full ${
-            isEven ? " lg:flex-row-reverse" : "lg:flex-row"
-          } items-stretch`}
+          className={`flex flex-col-reverse w-full ${isEven ? " lg:flex-row-reverse" : "lg:flex-row"
+            } items-stretch`}
         >
           {/* Text Content */}
           <div className="lg:w-1/2 pl-4 pr-4 lg:pl-20 lg:gap-12 py-6 lg:py-18 px-4 lg:pr-32   lg:h-screen">
@@ -22,7 +20,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({ data, index }) => {
                 {/* Tag */}
                 <div className="mb-4">
                   <div className="inline-block">
-                    <p className="text-base lg:text-lg font-medium text-purple uppercase tracking-wide">
+                    <p className="text-base lg:text-lg font-medium text-primary uppercase tracking-wide">
                       {data.tag}
                     </p>
                   </div>
@@ -53,9 +51,8 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({ data, index }) => {
               width={data.image.width}
               height={data.image.height}
               decoding="async"
-              className={`w-full ${
-                data.image.height ? data.image.height : "h-auto lg:h-screen"
-              } `}
+              className={`w-full ${data.image.height ? data.image.height : "h-auto lg:h-screen"
+                } `}
               srcSet={`
                 ${data.image.src}?w=1200&q=75 1x,
                 ${data.image.src}?w=3840&q=75 2x
