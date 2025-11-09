@@ -1,20 +1,9 @@
-// components/BlogComponents/CommentComponent.tsx
+
 'use client';
 
 import { useState } from 'react';
+import { Comment } from '@/utils/sanity';
 
-interface Comment {
-    _id: string;
-    name: string;
-    email: string;
-    comment: string;
-    createdAt: string;
-    approved: boolean;
-    post: {
-        _id: string;
-        title: string;
-    };
-}
 
 interface CommentsSectionProps {
     postId: string;
@@ -29,17 +18,16 @@ export function CommentsSection({ postId, comments: initialComments }: CommentsS
         setIsSubmitting(true);
 
         try {
-            // Create optimistic comment with all required fields
+
             const optimisticComment: Comment = {
                 _id: `temp-${Date.now()}`,
                 name: formData.get('name') as string,
                 email: formData.get('email') as string,
                 comment: formData.get('comment') as string,
                 createdAt: new Date().toISOString(),
-                approved: false, // Comments typically need approval
                 post: {
                     _id: postId,
-                    title: '' // You can leave this empty or fetch it
+                    title: ''
                 }
             };
 
@@ -135,11 +123,6 @@ export function CommentsSection({ postId, comments: initialComments }: CommentsS
                             </span>
                         </div>
                         <p className="text-gray-700">{comment.comment}</p>
-                        {!comment.approved && (
-                            <p className="text-sm text-yellow-600 mt-2">
-                                (Waiting for approval)
-                            </p>
-                        )}
                     </div>
                 ))}
 

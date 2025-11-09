@@ -140,7 +140,7 @@ const WeekNews: React.FC<WeekNewsProps> = ({
                                 : null;
 
                             return (
-                                <article key={article._id} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+                                <article key={article._id} className="bg-white shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
                                     <Link href={`/blog/${article.slug.current}`} className="group">
                                         <h3 className="font-bold text-gray-900 mb-3 group-hover:text-[#0d07ed]/60 transition-colors">
                                             {article.title}

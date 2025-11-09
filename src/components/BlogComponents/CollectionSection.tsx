@@ -46,7 +46,7 @@ const CollectionSection: React.FC<CollectionSectionProps> = ({ posts }) => {
     };
 
     return (
-        <section className="py-16 bg-gray-50">
+        <section className="py-16 ">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-12">
                     <h2 className="text-2xl lg:text-4xl font-bold text-gray-900">
@@ -170,7 +170,7 @@ const CollectionSection: React.FC<CollectionSectionProps> = ({ posts }) => {
                         {rightColumnArticles.map((article) => (
                             <article
                                 key={article._id}
-                                className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
+                                className="bg-white p-6 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
                             >
                                 <Link href={`/blog/${article.slug.current}`} className="group block">
                                     <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-[#0d07ed]-600 transition-colors">
