@@ -48,12 +48,14 @@ export interface Post {
 
 export interface Comment {
     _id: string
+    _type: string;
     name: string
     email: string
     comment: string
     createdAt: string
     post: {
-        _id: string;
-        title: string;
+        _ref: string;
+        _type: string;
     };
 }
+

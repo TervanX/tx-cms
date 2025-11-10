@@ -78,7 +78,7 @@ const WeekNews: React.FC<WeekNewsProps> = ({
                                 <article className="overflow-hidden transition-shadow duration-300 border-r-2 border-gray-200 p-4 h-full">
                                     {!isFeatured && article.mainImage && (
                                         <div className="relative">
-                                            <Link href={`/blog/${article.slug.current}`}>
+                                            <Link href={`/resources/learn/blog/${article.slug.current}`}>
                                                 <Image
                                                     src={article.mainImage.asset.url}
                                                     alt={article.mainImage.alt || article.title}
@@ -91,7 +91,7 @@ const WeekNews: React.FC<WeekNewsProps> = ({
                                     )}
 
                                     <div className="p-6">
-                                        <Link href={`/blog/${article.slug.current}`} className="group">
+                                        <Link href={`/resources/learn/blog/${article.slug.current}`} className="group">
                                             <h3 className={`font-bold text-gray-900 mb-3 group-hover:text-[#0d07ed]/60 transition-colors ${isFeatured ? 'text-xl lg:text-2xl' : 'text-lg'
                                                 }`}>
                                                 {article.title}
@@ -141,7 +141,7 @@ const WeekNews: React.FC<WeekNewsProps> = ({
 
                             return (
                                 <article key={article._id} className="bg-white shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
-                                    <Link href={`/blog/${article.slug.current}`} className="group">
+                                    <Link href={`/resources/learn/blog/${article.slug.current}`} className="group">
                                         <h3 className="font-bold text-gray-900 mb-3 group-hover:text-[#0d07ed]/60 transition-colors">
                                             {article.title}
                                         </h3>

@@ -81,7 +81,7 @@ const FeaturedCard: React.FC<FeaturedCardProps> = ({ posts }) => {
                                     </div>
                                 )}
 
-                                <Link className="block group" href={`/blog/${article.slug.current}`}>
+                                <Link className="block group" href={`/resources/learn/blog/${article.slug.current}`}>
                                     <div className="mb-4">
                                         <h2 className="text-2xl lg:text-3xl font-bold text-white group-hover:text-[#0d07ed]-200 transition-colors">
                                             {article.title}
@@ -95,7 +95,7 @@ const FeaturedCard: React.FC<FeaturedCardProps> = ({ posts }) => {
                                     </div>
                                 </Link>
 
-                                <Link href={`/blog/${article.slug.current}`} className="inline-block group">
+                                <Link href={`/resources/learn/blog/${article.slug.current}`} className="inline-block group">
                                     <div className="flex items-center gap-2 text-white hover:text-[#0d07ed]-200 transition-colors">
                                         <span className="font-medium group-hover:underline">Read more</span>
                                         <svg

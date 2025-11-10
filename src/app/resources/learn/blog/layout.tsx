@@ -1,4 +1,3 @@
-// app/blog/layout.tsx
 import React from "react";
 import Footer from "@/components/reusable/Footer";
 import Header from "@/components/reusable/NavBar";

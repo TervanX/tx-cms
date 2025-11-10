@@ -85,7 +85,7 @@ const CollectionSection: React.FC<CollectionSectionProps> = ({ posts }) => {
                                             <div className="relative z-10 h-full flex flex-col justify-end p-8 lg:p-12">
                                                 <div className="max-w-2xl">
                                                     <div className="mb-6">
-                                                        <Link href={`/blog/${article.slug.current}`}>
+                                                        <Link href={`/resources/learn/blog/${article.slug.current}`}>
                                                             <h3 className="text-2xl lg:text-4xl font-bold text-white leading-tight hover:text-[#0d07ed]-200 transition-colors">
                                                                 {article.title}
                                                             </h3>
@@ -116,7 +116,7 @@ const CollectionSection: React.FC<CollectionSectionProps> = ({ posts }) => {
                                                         </div>
 
                                                         <Link
-                                                            href={`/blog/${article.slug.current}`}
+                                                            href={`/resources/learn/blog/${article.slug.current}`}
                                                             className="flex items-center gap-2 text-white font-medium hover:gap-3 transition-all group"
                                                         >
                                                             <span className="group-hover:underline">Learn more</span>
@@ -172,7 +172,7 @@ const CollectionSection: React.FC<CollectionSectionProps> = ({ posts }) => {
                                 key={article._id}
                                 className="bg-white p-6 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
                             >
-                                <Link href={`/blog/${article.slug.current}`} className="group block">
+                                <Link href={`/resources/learn/blog/${article.slug.current}`} className="group block">
                                     <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-[#0d07ed]-600 transition-colors">
                                         {article.title}
                                     </h3>

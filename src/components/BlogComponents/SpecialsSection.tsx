@@ -120,7 +120,7 @@ const SpecialsSection: React.FC<SpecialsSectionProps> = ({ posts }) => {
                                                     )}
                                                 </div>
 
-                                                <Link className="block group" href={`/blog/${special.slug.current}`}>
+                                                <Link className="block group" href={`/resources/learn/blog/${special.slug.current}`}>
                                                     <div className="mb-6">
                                                         <h3 className="text-xl lg:text-2xl font-bold text-white group-hover:text-white/90 transition-colors leading-tight line-clamp-3">
                                                             {special.title}
@@ -130,7 +130,7 @@ const SpecialsSection: React.FC<SpecialsSectionProps> = ({ posts }) => {
                                             </div>
 
                                             <Link
-                                                href={`/blog/${special.slug.current}`}
+                                                href={`/resources/learn/blog/${special.slug.current}`}
                                                 className="inline-flex items-center gap-2 text-white hover:text-white/80 transition-colors group mt-auto"
                                             >
                                                 <span className="font-medium group-hover:underline">Learn more</span>

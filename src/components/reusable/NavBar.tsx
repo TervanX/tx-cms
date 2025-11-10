@@ -16,7 +16,10 @@ interface NavItemInterface {
     title: string;
     description: string;
     linkTitle?: string;
-    links?: { href: string; text: string }[];
+    links?: {
+      href: string; text: string, target?: string,
+      rel?: string
+    }[];
   }[];
   platforms?: {
     logo: string;
@@ -647,53 +650,56 @@ const navItems: NavItemInterface[] = [
           { href: "/contact/contact", text: "Contact sales" },
         ],
       },
-      // {
-      //   logo: (
-      //     <svg
-      //       width="20"
-      //       height="20"
-      //       viewBox="0 0 18 16"
-      //       fill="none"
-      //       xmlns="http://www.w3.org/2000/svg"
-      //     >
-      //       <g id="Vector">
-      //         <path
-      //           d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
-      //           fill="black"
-      //         ></path>
-      //         <path
-      //           d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
-      //           fill="black"
-      //         ></path>
-      //         <path
-      //           d="M11.8502 3.02548C13.0375 3.02548 13.996 3.98391 13.996 5.17121V16H17.0143V6.44434C17.0143 2.88958 14.1319 0 10.57 0H0.985687V3.01833H11.8431L11.8502 3.02548Z"
-      //           fill="black"
-      //         ></path>
-      //         <path
-      //           d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
-      //           fill="black"
-      //         ></path>
-      //         <path
-      //           d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
-      //           fill="black"
-      //         ></path>
-      //       </g>
-      //     </svg>
-      //   ),
-      //   title: "Learn",
-      //   description: "",
-      //   linkTitle: "",
-      //   links: [
-      //     { href: "/resources/learn/blog", text: "Blog " },
-      //     { href: "/resources/learn/case-studies", text: "Case Studies " },
-      //     { href: "/resources/learn/documentation", text: "Documentation " },
-      //     { href: "/resources/learn/guides", text: "Guides " },
-      //     {
-      //       href: "/resources/learn/tervanx-sessions",
-      //       text: "LayerX Sessions (Annual Dev Summit) ",
-      //     },
-      //   ],
-      // },
+      {
+        logo: (
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 18 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="Vector">
+              <path
+                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+                fill="black"
+              ></path>
+              <path
+                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+                fill="black"
+              ></path>
+              <path
+                d="M11.8502 3.02548C13.0375 3.02548 13.996 3.98391 13.996 5.17121V16H17.0143V6.44434C17.0143 2.88958 14.1319 0 10.57 0H0.985687V3.01833H11.8431L11.8502 3.02548Z"
+                fill="black"
+              ></path>
+              <path
+                d="M5.84219 4.73487H0.992841V7.7532H7.11533C8.30263 7.7532 9.26106 8.71163 9.26106 9.89893V15.9928H12.2794V11.1721C12.2794 7.6173 9.39695 4.72772 5.83504 4.72772L5.84219 4.73487Z"
+                fill="black"
+              ></path>
+              <path
+                d="M1.05006 9.52691H0.992841V12.5452H2.32319C3.5105 12.5452 4.46892 13.5037 4.46892 14.691V15.9927H7.48725V15.9641C7.48725 12.4093 4.60482 9.51976 1.04291 9.51976L1.05006 9.52691Z"
+                fill="black"
+              ></path>
+            </g>
+          </svg>
+        ),
+        title: "Learn",
+        description: "",
+        linkTitle: "",
+        links: [
+          {
+            href: "/resources/learn/blog", text: "Blog ", target: "_blank",
+            rel: "noopener noreferrer"
+          },
+          // { href: "/resources/learn/case-studies", text: "Case Studies " },
+          // { href: "/resources/learn/documentation", text: "Documentation " },
+          // { href: "/resources/learn/guides", text: "Guides " },
+          // {
+          //   href: "/resources/learn/tervanx-sessions",
+          //   text: "LayerX Sessions (Annual Dev Summit) ",
+          // },
+        ],
+      },
       {
         logo: (
           <svg
@@ -1260,6 +1266,8 @@ const NavItem: React.FC<navItemProps> = ({ nav }) => {
                             <a
                               href={link.href}
                               className="text-xs text-black  font-grotesque cursor-pointer font-semibold"
+                              target={link.target}
+                              rel={link.rel}
                             >
                               {link.text}
                             </a>
@@ -1405,6 +1413,8 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
                           key={index}
                           className="text-xs text-black font-grotesque font-semibold"
                           href={link.href}
+                          target={link.target}
+                          rel={link.rel}
                           onClick={onToggle} // Close sidebar when link is clicked
                         >
                           {link.text}

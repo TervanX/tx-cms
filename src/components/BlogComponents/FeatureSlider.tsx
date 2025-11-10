@@ -57,7 +57,7 @@ const FeaturedArticles: React.FC<FeaturedArticlesProps> = ({ posts }) => {
                             <div className="bg-gray-200 border-t-4 border-gray-300 backdrop-blur-[100px] p-6 lg:p-8">
                                 {/* Article Content */}
                                 <div className="mb-6">
-                                    <Link className="block group" href={`/blog/${articles[activeIndex].slug.current}`}>
+                                    <Link className="block group" href={`/resources/learn/blog/${articles[activeIndex].slug.current}`}>
                                         <div className="mb-4">
                                             <h2 className="text-2xl lg:text-3xl font-bold text-dark group-hover:text-[#0d07ed] transition-colors">
                                                 {articles[activeIndex].title}
@@ -83,7 +83,7 @@ const FeaturedArticles: React.FC<FeaturedArticlesProps> = ({ posts }) => {
                                         )}
                                     </div>
                                     <div className="flex items-center">
-                                        <Link href={`/blog/${articles[activeIndex].slug.current}`} className="group">
+                                        <Link href={`/resources/learn/blog/${articles[activeIndex].slug.current}`} className="group">
                                             <div className="flex items-center gap-2 text-[#0d07ed] hover:text-[#0d07ed]/70 transition-colors">
                                                 <span className="font-medium group-hover:underline">Learn more</span>
                                                 <svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg" className="group-hover:translate-x-1 transition-transform">

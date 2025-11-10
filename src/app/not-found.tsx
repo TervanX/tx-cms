@@ -120,7 +120,7 @@ export default function NotFound() {
                         <p className="text-sm text-gray-500 font-grotesk">
                             Still lost?{' '}
                             <Link
-                                href="/contact"
+                                href="/contact/contact"
                                 className="text-dark hover:text-gray-700 underline transition-colors font-medium"
                             >
                                 Contact our support team

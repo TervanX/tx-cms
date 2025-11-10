@@ -66,7 +66,7 @@ const MainNews: React.FC<MainNewsProps> = ({
                         <article key={item._id} className={`${index === 0 ? 'lg:col-span-2' : ''}`}>
                             <div className="bg-white border-r-2 border-gray-200 p-4 overflow-hidden transition-shadow duration-300 h-full">
                                 <div className="relative">
-                                    <Link href={`/blog/${item.slug.current}`}>
+                                    <Link href={`/resources/learn/blog/${item.slug.current}`}>
                                         {item.mainImage ? (
                                             <Image
                                                 src={item.mainImage.asset.url}
@@ -84,7 +84,7 @@ const MainNews: React.FC<MainNewsProps> = ({
                                 </div>
 
                                 <div className="p-6">
-                                    <Link href={`/blog/${item.slug.current}`} className="group">
+                                    <Link href={`/resources/learn/blog/${item.slug.current}`} className="group">
                                         <h3 className={`font-bold text-gray-900 mb-3 group-hover:text-[#0d07ed] transition-colors ${index === 0 ? 'text-xl lg:text-2xl' : 'text-lg lg:text-xl'
                                             }`}>
                                             {item.title}

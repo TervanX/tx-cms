@@ -72,7 +72,7 @@ const ArticlesGrid: React.FC<ArticlesGridProps> = ({
                             <div key={article._id}>
                                 <article className="bg-white border-r-2 p-4 h-full border-gray-200 overflow-hidden transition-shadow duration-300">
                                     <div className="relative">
-                                        <Link href={`/blog/${article.slug.current}`}>
+                                        <Link href={`/resources/learn/blog/${article.slug.current}`}>
                                             <Image
                                                 src={article.mainImage?.asset.url || '/placeholder-image.jpg'}
                                                 alt={article.mainImage?.alt || article.title}
@@ -84,7 +84,7 @@ const ArticlesGrid: React.FC<ArticlesGridProps> = ({
                                     </div>
 
                                     <div>
-                                        <Link href={`/blog/${article.slug.current}`} className="group">
+                                        <Link href={`/resources/learn/blog/${article.slug.current}`} className="group">
                                             <h3 className="font-bold text-lg text-gray-900 mb-3 line-clamp-2 group-hover:text-[#0d07ed]/60 transition-colors">
                                                 {article.title}
                                             </h3>

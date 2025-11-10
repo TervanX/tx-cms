@@ -63,6 +63,10 @@ const footerData: FooterSection[] = [
   {
     title: "Company",
     links: [
+      {
+        label: "Blog",
+        href: "/resources/learn/blog"
+      },
       { label: "Become a Partner", href: "/contact/contact" },
       { label: "Professional Services", href: "/contact/contact" },
     ],

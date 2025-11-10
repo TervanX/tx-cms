@@ -1,4 +1,3 @@
-// app/page.tsx
 import React from 'react';
 import FeaturedArticles from '@/components/BlogComponents/FeatureSlider';
 import MainNews from '@/components/BlogComponents/MainSection';

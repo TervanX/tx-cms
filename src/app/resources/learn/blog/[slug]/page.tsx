@@ -151,7 +151,7 @@ const getTagUrl = (tag: Tag): string => {
 
 const getPostUrl = (post: { slug: { current: string } }): string => {
     if (!post?.slug?.current) return '#';
-    return `/blog/${post.slug.current}`;
+    return `/resources/learn/blog/${post.slug.current}`;
 };
 async function fetchSanityData(query: string, params: any = {}) {
     try {

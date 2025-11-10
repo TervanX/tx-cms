@@ -1,9 +1,7 @@
-
 'use client';
 
 import { useState } from 'react';
-import { Comment } from '@/utils/sanity';
-
+import { writeclient, Comment } from '@/utils/sanity';
 
 interface CommentsSectionProps {
     postId: string;
@@ -13,62 +11,89 @@ interface CommentsSectionProps {
 export function CommentsSection({ postId, comments: initialComments }: CommentsSectionProps) {
     const [comments, setComments] = useState<Comment[]>(initialComments);
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        comment: ''
+    });
 
-    const handleSubmit = async (formData: FormData) => {
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+
+        if (!formData.name.trim() || !formData.email.trim() || !formData.comment.trim()) {
+            alert('Please fill in all fields');
+            return;
+        }
+
         setIsSubmitting(true);
 
         try {
-
             const optimisticComment: Comment = {
                 _id: `temp-${Date.now()}`,
-                name: formData.get('name') as string,
-                email: formData.get('email') as string,
-                comment: formData.get('comment') as string,
+                _type: 'comment',
+                name: formData.name,
+                email: formData.email,
+                comment: formData.comment,
                 createdAt: new Date().toISOString(),
                 post: {
-                    _id: postId,
-                    title: ''
+                    _ref: postId,
+                    _type: 'reference'
                 }
             };
-
-            // Optimistically add to UI
             setComments(prev => [optimisticComment, ...prev]);
-
-            // Send to API
-            const response = await fetch('/api/comments', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
+            const sanityComment = {
+                _type: 'comment',
+                name: formData.name,
+                email: formData.email,
+                comment: formData.comment,
+                post: {
+                    _type: 'reference',
+                    _ref: postId
                 },
-                body: JSON.stringify({
-                    postId,
-                    name: formData.get('name'),
-                    email: formData.get('email'),
-                    comment: formData.get('comment'),
-                }),
-            });
-
-            if (!response.ok) {
-                throw new Error('Failed to submit comment');
-            }
-
-            const newComment = await response.json();
-
-            // Replace optimistic comment with real one
+                approved: false
+            };
+            const result = await writeclient.create(sanityComment);
+            const newComment: Comment = {
+                _id: result._id,
+                _type: 'comment',
+                name: result.name,
+                email: result.email,
+                comment: result.comment,
+                createdAt: result._createdAt,
+                post: {
+                    _ref: postId,
+                    _type: 'reference'
+                },
+            };
             setComments(prev =>
                 prev.map(comment =>
                     comment._id === optimisticComment._id
-                        ? { ...newComment, approved: true }
+                        ? newComment
                         : comment
                 )
-            );
+            )
+
+            setFormData({
+                name: '',
+                email: '',
+                comment: ''
+            });
 
         } catch (error) {
             console.error('Error submitting comment:', error);
-            // Remove optimistic comment on error
             setComments(prev =>
                 prev.filter(comment => !comment._id.startsWith('temp-'))
             );
+
+            alert('Failed to submit comment. Please try again.');
         } finally {
             setIsSubmitting(false);
         }
@@ -78,13 +103,14 @@ export function CommentsSection({ postId, comments: initialComments }: CommentsS
         <div className="comments-section mt-12">
             <h3 className="text-2xl font-bold mb-6">Comments ({comments.length})</h3>
 
-            {/* Comment form */}
-            <form action={handleSubmit} className="mb-8">
+            <form onSubmit={handleSubmit} className="mb-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                     <input
                         type="text"
                         name="name"
                         placeholder="Your Name"
+                        value={formData.name}
+                        onChange={handleInputChange}
                         required
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0d07ed]"
                     />
@@ -92,6 +118,8 @@ export function CommentsSection({ postId, comments: initialComments }: CommentsS
                         type="email"
                         name="email"
                         placeholder="Your Email"
+                        value={formData.email}
+                        onChange={handleInputChange}
                         required
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0d07ed]"
                     />
@@ -99,6 +127,8 @@ export function CommentsSection({ postId, comments: initialComments }: CommentsS
                 <textarea
                     name="comment"
                     placeholder="Your Comment"
+                    value={formData.comment}
+                    onChange={handleInputChange}
                     required
                     rows={4}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0d07ed] mb-4"
@@ -111,8 +141,6 @@ export function CommentsSection({ postId, comments: initialComments }: CommentsS
                     {isSubmitting ? 'Submitting...' : 'Submit Comment'}
                 </button>
             </form>
-
-            {/* Comments list */}
             <div className="space-y-6">
                 {comments.map((comment) => (
                     <div key={comment._id} className="border-b border-gray-200 pb-6">
@@ -123,6 +151,9 @@ export function CommentsSection({ postId, comments: initialComments }: CommentsS
                             </span>
                         </div>
                         <p className="text-gray-700">{comment.comment}</p>
+                        {comment._id.startsWith('temp-') && (
+                            <p className="text-sm text-gray-500 mt-2">Submitting...</p>
+                        )}
                     </div>
                 ))}
 
