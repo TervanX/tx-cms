@@ -1,0 +1,81 @@
+import { useState } from "react";
+import BorderTopCard from "./BorderTopCard";
+import SubSection from "./Subsection";
+import { GlobalWhatsappProps } from "@/app/types/solution.type";
+import DottedLine from "@/components/helpDeskComponents/DottedBg";
+
+const GlobalWhatsapp: React.FC<GlobalWhatsappProps> = ({
+  cards = [
+    {
+      backgroundImage:
+        "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
+      title: "Integrate all your accounts",
+      description:
+        "Connect and manage all of your WhatsApp business accounts in a single workspace, to ensure you never miss a message.",
+      img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
+    },
+    {
+      backgroundImage:
+        "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
+      title: "Deliver context-rich support",
+      description:
+        "Send and receive images, attachments and more directly from the Inbox, so your support agents have all the context they need to resolve issues faster.",
+      img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
+    },
+
+    {
+      backgroundImage:
+        "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891728/image30_g3iorz.webp",
+      title: "Capture CSAT on WhatsApp",
+      description:
+        "Monitor how satisfied customers are with the support provided, and how it compares to your other channels.",
+      img: "https://res.cloudinary.com/dx1etzf66/image/upload/v1761891693/I2Y2_-_Product_page_asset_-_Omnichannel_-_Media-image_-_01_hsa8ey.webp",
+    },
+  ],
+  title = "Global support is just a WhatsApp away",
+  tag = "WhatsApp",
+  description = "Modernise your support and expand your reach on the world’s most popular messaging app.",
+}) => {
+  const [active, setActive] = useState(0);
+
+  return (
+    <div className="mt-8 lg:mt-14">
+      <div className="py-12">
+        <DottedLine fill="gray" />
+      </div>{" "}
+      <div className="relative  w-[80%] mx-auto ">
+        <div className="">
+          <SubSection title={title} tag={tag} description={description} />
+        </div>
+        <div className="flex flex-col lg:flex-row lg:gap-14">
+          <div className="flex-1 flex flex-col gap-4">
+            {cards.map((item, index) => (
+              <BorderTopCard
+                active={index === active ? true : false}
+                {...item}
+                onClick={() => {
+                  setActive(index);
+                }}
+              />
+            ))}
+          </div>
+          {/* <div className="flex flex-col lg:flex-row gap-6   flex-1 ">
+            <div className="w-full mx-auto relative bg-white-transparent  min-h-125  max-h-130">
+
+              <div className="absolute inset-0 z-0">
+                <img
+                  src={cards[active]?.backgroundImage}
+                  alt={"Brand support"}
+                  className="absolute inset-0 w-full h-full object-cover z-0"
+                />
+              </div>
+              <img src={cards[active]?.img} className="relative z-10" />
+            </div>
+          </div> */}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default GlobalWhatsapp;

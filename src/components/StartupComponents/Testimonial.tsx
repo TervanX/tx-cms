@@ -1,0 +1,76 @@
+import Image from "next/image";
+import Button from "../reusable/Button";
+import { TestimonialProps, TestimonialSectionProps } from "@/app/types/startups.types";
+
+const TestimonialCard: React.FC<TestimonialProps> = ({
+    logo,
+    title,
+    quote,
+    author,
+    authorRole,
+    authorImage,
+    buttonText = "Read customer story"
+}) => {
+
+    return (
+
+        <div className="flex flex-col gap-4">
+            <div className="flex h-16 items-center gap-4">
+                <Image src={logo} className="relative flex h-14 items-center rounded w-14" width={52} height={52} alt="logo" />
+            </div>
+            <div className="flex h-full flex-col gap-4">
+                <p className="font-founders-grotesk text-[24px] leading-none text-dark md:text-[24px] lg:text-[24px] xl:text-[32px]">
+                    {title}
+                </p>
+                <p className="font-abc-diatype text-[16px] leading-[130%] text-gray-700">
+                    "{quote}"
+                </p>
+            </div>
+            <div className="mt-5 flex flex-col justify-start gap-5 md:flex-row md:items-center md:justify-between lg:flex-col lg:items-start lg:justify-start">
+                <div className="flex-grow-0">
+                    <div className="flex items-center gap-4">
+                        <Image src={authorImage} className="h-14 w-14 rounded-lg bg-gray-200" width={52} height={52} alt="author image" />
+                        <div className="flex flex-col gap-0.5">
+                            <p className="font-abc-diatype text-[14px] font-bold leading-[130%] text-gray-700">
+                                {author}
+                            </p>
+                            <p className="font-abc-diatype text-[14px] leading-[130%] text-gray-700">
+                                {authorRole}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex  flex-col lg:items-center gap-5 items-start">
+                    <Button variant="outline" size="md"  >
+                        {buttonText}
+                    </Button>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+const Testimonial: React.FC<TestimonialSectionProps> = (
+    { testimonials = [], title = "See why startups love Apollo", description = "Check out how other teams save time & money with the easiest all-in-one sales platform." }) => {
+    return (<section className="px-6 md:px-12 lg:px-16 xl:px-20 2xl:px-24 my-28">
+        <div className="container mx-auto px-4">
+            <div className="flex flex-col items-center gap-4 text-center md:gap-6">
+                <h4 className="max-w-6xl text-balance font-founders-grotesk text-[36px] leading-none tracking-[-0.72px] text-dark md:text-[48px] md:tracking-[-0.96px]">
+                    {title}
+                </h4>
+                <div className="max-w-2xl text-balance font-abc-diatype text-[16px] leading-[130%] text-gray-700">
+                    {description}
+                </div>
+            </div>
+            <div className="h-10" />
+            <div className="grid gap-x-22 gap-y-10 lg:grid-cols-3">
+                {testimonials.map((testimonial, index) => (
+                    <TestimonialCard key={index} {...testimonial} />
+                ))}
+            </div>
+        </div>
+    </section>
+    )
+}
+
+export default Testimonial;
