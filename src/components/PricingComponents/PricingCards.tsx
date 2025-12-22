@@ -356,7 +356,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isAnnualBilling, isPayg
           <div className="text-2xl lg:text-3xl font-grotesque font-medium my-4">
             {currentPrice === 0 ? (isPayg ? "Flexible" : "Free") : `$${currentPrice}`}
             {currentPrice !== 0 && !isPayg && (
-              <span className="text-sm ml-1">{isAnnualBilling ? "/yr" : "/mo"}</span>
+              <span className="text-sm ml-1">{isAnnualBilling ? "/mo" : "/mo"}</span>
             )}
           </div>
           <p className="text-sm text-gray-600 line-clamp-2">
