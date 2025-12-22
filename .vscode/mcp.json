@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "Sentry": {
+      "url": "https://mcp.sentry.dev/mcp/tx-trust-llc/layer-x-cms",
+      "type": "http"
+    }
+  }
+}
