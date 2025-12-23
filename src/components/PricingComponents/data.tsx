@@ -778,6 +778,14 @@ export const payAsYouGoPlan: PayAsYouGoPlan = {
     "Fiat Transaction: 1.5% fee/tx",
     "Webhook Event: $0.01/event",
     "Starter Bundle: $99/month available",
+    "Unlimited API calls (post-vetting)",
+    "Comprehensive AML/KYT/KYC: Global compliance",
+    "Smart Contract Templates: Escrow, staking",
+    "Cross-Border Settlement Engine: T+0 crypto-fiat trades",
+    "Raw Signing",
+    "Cold wallet",
+    "DRS (CoinCover)",
+    "Transaction Simulation",
     "No upfront commitment",
     "Scale as you grow",
   ],
@@ -933,6 +941,48 @@ export const payAsYouGoPlan: PayAsYouGoPlan = {
       "Projects with unpredictable or sporadic usage patterns.",
       "Teams wanting to validate product-market fit before committing to fixed plans.",
     ],
+    advancedFeatures: [
+      {
+        feature: "Unlimited API calls (post-vetting)",
+        description: "After business verification, enjoy unlimited API calls for scalable operations.",
+        available: "Post-business verification",
+      },
+      {
+        feature: "Comprehensive AML/KYT/KYC",
+        description: "Global compliance coverage with automated screening and risk scoring.",
+        cost: "Available as add-on",
+      },
+      {
+        feature: "Smart Contract Templates",
+        description: "Pre-built templates for escrow, staking, and other DeFi applications.",
+        available: "Available in PAYG",
+      },
+      {
+        feature: "Cross-Border Settlement Engine",
+        description: "T+0 crypto-fiat trades with real-time settlement capabilities.",
+        cost: "Available as add-on",
+      },
+      {
+        feature: "Raw Signing",
+        description: "Direct cryptographic signing capabilities for advanced use cases.",
+        available: "Available in PAYG",
+      },
+      {
+        feature: "Cold Wallet",
+        description: "Offline storage solutions for maximum security of digital assets.",
+        available: "Available as add-on",
+      },
+      {
+        feature: "DRS (CoinCover)",
+        description: "Digital Recovery Service for wallet recovery and inheritance solutions.",
+        cost: "Available as add-on",
+      },
+      {
+        feature: "Transaction Simulation",
+        description: "Test and simulate transactions before execution to prevent errors.",
+        available: "Available in PAYG",
+      },
+    ],
     pricingComparison: {
       title: "When to Choose Pay-As-You-Go vs Fixed Plans",
       payg: {
@@ -1051,6 +1101,36 @@ export const payAsYouGoPlan: PayAsYouGoPlan = {
         price: "$99/month",
         description:
           "Dedicated staging environment mirroring production for safe testing and deployment workflows.",
+      },
+      {
+        name: "Cold Wallet Storage",
+        price: "$199/month",
+        description:
+          "Offline storage solutions with multi-signature protection and institutional-grade security.",
+      },
+      {
+        name: "DRS (CoinCover) Integration",
+        price: "$149/month",
+        description:
+          "Digital Recovery Service for wallet recovery, inheritance planning, and disaster recovery.",
+      },
+      {
+        name: "Transaction Simulation Engine",
+        price: "$79/month",
+        description:
+          "Advanced simulation capabilities for testing complex transaction scenarios before execution.",
+      },
+      {
+        name: "Cross-Border Settlement Engine",
+        price: "$299/month",
+        description:
+          "Real-time T+0 settlement engine for international crypto-fiat transactions with FX optimization.",
+      },
+      {
+        name: "Smart Contract Templates Library",
+        price: "$129/month",
+        description:
+          "Access to comprehensive library of pre-audited smart contracts for various DeFi use cases.",
       },
     ],
     costExamples: {

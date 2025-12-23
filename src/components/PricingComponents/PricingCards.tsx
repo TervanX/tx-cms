@@ -87,8 +87,8 @@ const PricingSection: React.FC<PricingSectionProps> = ({
             key={tab.id}
             onClick={() => handleTabClick(tab.id)}
             className={`whitespace-nowrap px-6 py-3 text-xs uppercase tracking-wide bg-gray-100 transition-all w-full ${activeTab === tab.id
-                ? "bg-white text-black shadow-sm"
-                : " text-black hover:text-gray-800"
+              ? "bg-white text-black shadow-sm"
+              : " text-black hover:text-gray-800"
               }`}
           >
             <span className="text-sm font-medium tracking-normal">
@@ -111,37 +111,36 @@ const PricingSection: React.FC<PricingSectionProps> = ({
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="flex justify-center gap-8 w-full mx-auto">
             {/* Feature Selection */}
-            <div className="py-6 px-2 bg-white">
+            {/* <div className="py-6 px-2 bg-white">
               <div className="flex items-center gap-3 mb-6">
                 <h3 className="text-xl font-medium text-gray-900">
                   What are you looking for?
                 </h3>
               </div>
 
-              {/* Feature Tags Grid */}
               <div className="flex flex-wrap gap-2">
                 {featurePricing.map((feature) => (
                   <button
                     key={feature.id}
                     onClick={() => toggleFeature(feature.id)}
                     className={`rounded-full p-1 text-xs font-bold transition-all border flex items-center justify-center gap-2 ${selectedFeatures.includes(feature.id)
-                        ? "border-blue-300 bg-blue-50 text-blue-700"
-                        : "bg-white text-gray-700 border-none hover:border-blue-300 hover:bg-blue-50"
+                      ? "border-blue-300 bg-blue-50 text-blue-700"
+                      : "bg-white text-gray-700 border-none hover:border-blue-300 hover:bg-blue-50"
                       }`}
                   >
                     <div
                       className={`w-4 h-4 rounded-full border flex items-center justify-center transition-all ${selectedFeatures.includes(feature.id)
-                          ? "bg-blue-500 border-blue-500"
-                          : "bg-white border-gray-400"
+                        ? "bg-blue-500 border-blue-500"
+                        : "bg-white border-gray-400"
                         }`}
                     >
                       <Check
                         size={12}
                         className={`text-white transition-all ${selectedFeatures.includes(feature.id)
-                            ? "opacity-100"
-                            : "opacity-0"
+                          ? "opacity-100"
+                          : "opacity-0"
                           }`}
                       />
                     </div>
@@ -149,10 +148,10 @@ const PricingSection: React.FC<PricingSectionProps> = ({
                   </button>
                 ))}
               </div>
-            </div>
+            </div> */}
 
             {/* Pay As You Go Summary */}
-            <div className="border border-gray-200 rounded-xl p-6 bg-white overflow-hidden h-full flex flex-col">
+            {/* <div className="border border-gray-200 rounded-xl p-6 bg-white overflow-hidden h-full flex flex-col">
               <div className="flex items-center gap-3 mb-6">
                 <h3 className="text-xl font-medium text-gray-900">
                   Pay As You Go
@@ -196,25 +195,24 @@ const PricingSection: React.FC<PricingSectionProps> = ({
                   </div>
                 )}
 
-                {/* CTA Buttons */}
+              
                 <Link href="/contact/contact-sales">
                   <Button size="md" variant="primary" className="w-full py-3">
                     Get Started
                   </Button>
                 </Link>
               </div>
-            </div>
+            </div> */}
             {/* Enterprise Plan Card */}
             <div className="border-2 border-blue-500 rounded-xl bg-gradient-to-br from-blue-50 to-white overflow-hidden h-full flex flex-col">
               <div className="flex flex-col flex-1 p-6">
                 {/* Plan Header */}
                 <div className="mb-6">
                   <h3 className="text-xl font-medium text-gray-900">
-                    Enterprise
+                    Pay As You Go
                   </h3>
                   <p className="text-sm text-gray-600 mt-2">
-                    High-volume Pay As You Go? Get custom volume discounts and
-                    dedicated support.
+                    Flexible — pay only for what you use.
                   </p>
                 </div>
 

@@ -16,7 +16,7 @@ export default function PayAsYouGoPage() {
                     onBillingChange={() => { }}
                     forceActiveTab="payg"
                 />
-                <PayAsYouGoDetails plan={payAsYouGoPlan} />
+                {/* <PayAsYouGoDetails plan={payAsYouGoPlan} /> */}
             </div>
         </div>
     )
