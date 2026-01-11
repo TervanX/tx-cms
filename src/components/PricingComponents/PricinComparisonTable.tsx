@@ -74,7 +74,7 @@ const PricingComparisonTable: React.FC<PricingComparisonTableProps> = ({
                                             type="button"
                                             className="w-full mt-4"
                                         >
-                                            {plan.buttonText}
+                                            {plan.CtaButton}
                                         </Button>
                                     </Link>
                                 </div>

@@ -430,7 +430,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isAnnualBilling, isPayg
             <Link href="/contact/contact-sales">
               <Button
                 size="md"
-                variant="outline"
+                variant="primary"
                 type="button"
                 className="w-full py-3"
               >

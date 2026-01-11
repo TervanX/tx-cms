@@ -66,6 +66,8 @@ export const pricingPlans: PricingPlan[] = [
       "Advanced automation (Auto-Trade, batch transactions)",
     ],
     CtaText: "Start 14-day trial",
+
+    CtaButton: "Buy now",
     buttonText: "Buy now",
     buttonVariant: "blue",
     detailInfo: {
