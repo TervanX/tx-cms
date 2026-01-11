@@ -22,7 +22,7 @@ const PricingSection: React.FC<PricingSectionProps> = ({
 
   const tabs = [
     { id: "fixed", label: "Subscription", plans: pricingPlans },
-    { id: "payg", label: "Pay As You Go", plans: [payAsYouGoPlan] }
+    // { id: "payg", label: "Pay As You Go", plans: [payAsYouGoPlan] }
   ];
 
   useEffect(() => {
@@ -268,7 +268,7 @@ const PricingSection: React.FC<PricingSectionProps> = ({
 
       {/* Subscription Plans (including Enterprise) */}
       {activeTab === "fixed" && (
-        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-8 w-full">
+        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 mt-8 w-full md:w-[70%] mx-auto">
           {pricingPlans.map((plan) => (
             <PricingCard
               key={plan.id}
@@ -340,7 +340,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isAnnualBilling, isPayg
         <span className="text-white text-xs font-mono py-1 px-2 rounded-lg">
         </span>
       </div>}
-      <div className={`flex flex-col flex-1 px-4 py-2 ${plan.mostPopular ? '' : ''} grid grid-rows-[80px_80px_100px_100px_1fr_60px] gap-6`}>
+      <div className={`flex flex-col flex-1 px-4 py-2 ${plan.mostPopular ? '' : ''} grid grid-rows-[80px_80px_100px_100px_1fr_60px] `}>
         {/* Plan Header */}
         <div className="mb-0">
           <h3 className="text-xl font-medium">{plan.name}</h3>
@@ -352,7 +352,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isAnnualBilling, isPayg
         {/* Pricing */}
         <div className="mb-0">
           <div className="text-2xl lg:text-3xl font-grotesque font-medium my-4">
-            {currentPrice === 0 ? (isPayg ? "Flexible" : "Free") : `$${currentPrice}`}
+            {currentPrice === 0 ? (isPayg ? "Flexible" : "Free") : `${currentPrice}`}
             {currentPrice !== 0 && !isPayg && (
               <span className="text-sm ml-1">{isAnnualBilling ? "/mo" : "/mo"}</span>
             )}
@@ -365,20 +365,20 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isAnnualBilling, isPayg
 
         {/* Credits/Usage */}
         {!isPayg && (
-          <div className="mb-6 py-2 flex items-start gap-2">
-            <CoinsIcon className="w-5 h-5 text-gray-600 mt-0.5 flex-shrink-0" />
+          <div className="mb-2 py-2 flex items-start gap-2">
+            {/* <CoinsIcon className="w-5 h-5 text-gray-600 mt-0.5 flex-shrink-0" /> */}
             <div className="flex flex-col">
-              {plan.credits > 0 && (
+              {/* {plan.credits > 0 && (
                 <span className="text-sm text-gray-600">
                   {isAnnualBilling
                     ? `${plan.credits.toLocaleString()} credits`
                     : `${Math.round(plan.credits / 12).toLocaleString()} credits`
                   }
                 </span>
-              )}
-              <span className="text-xs text-gray-600">
+              )} */}
+              {/* <span className="text-xs text-gray-600">
                 {creditsNote}
-              </span>
+              </span> */}
               {plan.detailInfo &&
                 <Link href={`/pricing/${plan.id}`} className="text-xs underline mt-1">
                   Learn more
@@ -415,8 +415,8 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isAnnualBilling, isPayg
         )}
 
         {/* CTA Button */}
-        <div className="flex flex-col gap-4 w-full mb-6">
-          <Link href="/contact/contact-sales">
+        <div className="flex flex-col w-full mb-6">
+          <Link href="/contact/contact-sales">{plan.buttonText &&
             <Button
               size="md"
               variant={plan.buttonVariant}
@@ -424,7 +424,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isAnnualBilling, isPayg
               className="w-full py-3"
             >
               {plan.buttonText}
-            </Button>
+            </Button>}
           </Link>
           {plan.CtaButton && (
             <Link href="/contact/contact-sales">

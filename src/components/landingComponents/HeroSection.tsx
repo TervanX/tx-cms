@@ -221,10 +221,38 @@ function HeroCard({
 export default function HeroSection() {
   return (
     <section className="my-auto overflow-hidden md:flex-col pt-[70px] mx-auto w-full max-w-[1920px] px-3 md:px-4">
-      <header className="relative flex items-center justify-center text-center py-12 xl:py-16 xl:min-[1360px]:py-24">
-        <h1 className="font-sans text-current text-[42px] leading-[1.025] tracking-[-0.8px] font-semibold text-balance md:text-[35px] lg:text-[45px] xl:text-5xl">
+      <header className="relative flex flex-col items-center justify-center text-center py-12 xl:py-16 xl:min-[1360px]:py-24">
+        <h1 className="font-sans text-current text-[42px] leading-[1.025] tracking-[-0.8px] font-semibold text-balance md:text-[35px] lg:text-[45px] xl:text-5xl mb-8">
           Layer X is a digital assets payment and infrastructure company
         </h1>
+        {/* <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8 w-full max-w-4xl">
+          <div className="bg-black/70 rounded-xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700">
+            <div className="text-3xl md:text-5xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-3">
+              2400
+            </div>
+            <div className="text-lg md:text-xl font-semibold text-gray-700 dark:text-gray-300">
+              enterprises
+            </div>
+          </div>
+
+          <div className="bg-black/70  rounded-xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700">
+            <div className="text-3xl md:text-5xl lg:text-5xll font-bold text-gray-900 dark:text-white mb-3">
+              $10T
+            </div>
+            <div className="text-lg md:text-xl font-semibold text-gray-700 dark:text-gray-300">
+              transactions
+            </div>
+          </div>
+
+          <div className="bg-black/70  rounded-xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700">
+            <div className="text-3xl md:text-5xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-3">
+              550M
+            </div>
+            <div className="text-lg md:text-xl font-semibold text-gray-700 dark:text-gray-300">
+              wallets secured
+            </div>
+          </div>
+        </div> */}
       </header>
 
       <main className="group relative flex flex-wrap gap-4 lg:flex-1 lg:flex-nowrap">
