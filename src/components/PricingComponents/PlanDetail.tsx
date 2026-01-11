@@ -68,7 +68,7 @@ const PlanDetailPage: React.FC<PlanDetailPageProps> = ({ planId, isAnnualBilling
                                 )}
                                 <div className="flex items-center gap-4">
                                     <div className="text-3xl font-medium text-gray-900">
-                                        {currentPrice === 0 ? 'Free' : `$${currentPrice}`}
+                                        {currentPrice === 0 ? 'Free' : `${currentPrice}`}
                                         {currentPrice !== 0 && <span className="text-lg font-normal text-gray-600">{isAnnualBilling ? "/year" : "/month"}</span>}
                                     </div>
                                     {plan.detailInfo.quota && (
@@ -86,7 +86,7 @@ const PlanDetailPage: React.FC<PlanDetailPageProps> = ({ planId, isAnnualBilling
                                         className="px-8 py-3"
                                         onClick={() => console.log(`Selected ${plan.name}`)}
                                     >
-                                        {plan.buttonText}
+                                        {plan.CtaButton}
                                     </Button>
                                 </Link>
                             </div>
