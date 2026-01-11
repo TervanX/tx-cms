@@ -32,7 +32,7 @@ const PricingComparisonTable: React.FC<PricingComparisonTableProps> = ({
             <div className="overflow-x-auto ">
                 <div className="min-w-[800px]  p-4 border-b border-gray-200">
                     {/* Plans Row */}
-                    <div className="grid grid-cols-5 border-b border-gray-200">
+                    <div className="grid grid-cols-3 border-b border-gray-200">
                         <div className="p-4 border-r border-gray-200">
                             {/* Empty header cell */}
                         </div>
@@ -58,14 +58,14 @@ const PricingComparisonTable: React.FC<PricingComparisonTableProps> = ({
                                     </div>
 
                                     <div className="text-2xl font-grotesque my-2">
-                                        ${currentPrice}
+                                        {currentPrice}
                                     </div>
 
                                     <div className="text-sm text-gray-600 min-h-[60px] flex flex-col">
                                         {priceNote}
-                                        <span>
+                                        {/* <span>
                                             {creditsNote}
-                                        </span>
+                                        </span> */}
                                     </div>
                                     <Link href="/contact/contact-sales">
                                         <Button
@@ -74,7 +74,7 @@ const PricingComparisonTable: React.FC<PricingComparisonTableProps> = ({
                                             type="button"
                                             className="w-full mt-4"
                                         >
-                                            {plan.buttonText}
+                                            {plan.CtaButton}
                                         </Button>
                                     </Link>
                                 </div>
@@ -86,7 +86,7 @@ const PricingComparisonTable: React.FC<PricingComparisonTableProps> = ({
                     {comparisonData.map((section, sectionIndex) => (
                         <div key={sectionIndex}>
                             {section.items.map((item, itemIndex) => (
-                                <div key={itemIndex} className="grid text-sm  text-black/80 grid-cols-5 border-b border-gray-200 last:border-b-0">
+                                <div key={itemIndex} className="grid text-sm  text-black/80 grid-cols-3 border-b border-gray-200 last:border-b-0">
                                     <div className="border-r p-2 border-gray-200 font-medium">
                                         {item.name}
                                     </div>
