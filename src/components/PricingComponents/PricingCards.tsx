@@ -416,21 +416,12 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isAnnualBilling, isPayg
 
         {/* CTA Button */}
         <div className="flex flex-col w-full mb-6">
-          <Link href="/contact/contact-sales">{plan.buttonText &&
-            <Button
-              size="md"
-              variant={plan.buttonVariant}
-              type="button"
-              className="w-full py-3"
-            >
-              {plan.buttonText}
-            </Button>}
-          </Link>
+
           {plan.CtaButton && (
             <Link href="/contact/contact-sales">
               <Button
                 size="md"
-                variant="primary"
+                variant={plan.buttonVariant}
                 type="button"
                 className="w-full py-3"
               >
