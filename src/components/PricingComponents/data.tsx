@@ -409,7 +409,7 @@ export const pricingPlans: PricingPlan[] = [
     ],
     // buttonText: "Buy now",
     CtaButton: "Talk to Sales",
-    buttonVariant: "blue",
+    buttonVariant: "primary",
     detailInfo: {
       quota: "Unlimited API Calls (Post-Vetting)",
       idealForDescription: "Global exchanges, digital banks, custodians, infrastructure providers, and large-scale financial institutions requiring full-stack control, compliance assurance, and custom deployment.",
