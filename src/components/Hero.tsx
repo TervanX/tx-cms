@@ -7,7 +7,7 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ hasTopBanner = false }) => {
     return (
         <section
-            className={`relative flex items-center overflow-hidden pt-4 md:pt-4 lg:pt-6 ${hasTopBanner ? 'pt-24 md:pt-40 lg:pt-22' : ''
+            className={`relative w-full flex items-center overflow-hidden pt-4 md:pt-4 lg:pt-6 ${hasTopBanner ? 'pt-24 md:pt-40 lg:pt-22' : ''
                 }`}
             data-sentry-component="SectionHero"
             data-sentry-source-file="index.tsx"
@@ -17,7 +17,7 @@ const Hero: React.FC<HeroProps> = ({ hasTopBanner = false }) => {
 
             {/* Main container */}
             <div
-                className="relative z-10 mx-auto w-full max-w-[1600px] px-3 md:px-4 lg:px-6"
+                className="relative z-10 mx-auto w-full px-3 md:px-4 lg:px-6"
                 data-sentry-element="Container"
                 data-sentry-source-file="index.tsx"
             >
@@ -27,12 +27,12 @@ const Hero: React.FC<HeroProps> = ({ hasTopBanner = false }) => {
                     data-sentry-source-file="index.tsx"
                 >
                     {/* Hero content container */}
-                    <div className="flex h-[calc(100vh-25rem)] flex-col justify-center md:h-[calc(100vh-16rem)] lg:h-[calc(100vh-18rem)] lg:max-h-[720px]">
+                    <div className="flex h-[calc(100vh-25rem)] flex-col justify-center w-full lg:max-h-[720px]">
 
                         {/* Main heading */}
                         <h1
                             data-i2-child="text"
-                            className="enable-ligatures font-serif font-light text-balance text-white text-[2.75rem] leading-[1] tracking-[-0.125rem] mx-auto mb-4 text-center md:text-[4.5rem] md:leading-[1] md:tracking-[-0.219rem] lg:mb-6 xl:text-[6rem] xl:leading-[1] xl:tracking-[-0.188rem] [&_span]:drop-shadow-[0_0_8px_#ffffff]"
+                            className="enable-ligatures font-serif font-light text-balance text-white text-[2.75rem] leading-[1] tracking-[-0.125rem] mx-auto mb-4 text-center md:text-[3.5rem] md:leading-[1] md:tracking-[-0.219rem] lg:mb-6 xl:leading-[1] xl:tracking-[-0.188rem] [&_span]:drop-shadow-[0_0_8px_#ffffff]"
                             data-sentry-element="Text"
                             data-sentry-source-file="index.tsx"
                         >
@@ -128,7 +128,7 @@ const CTAButton: React.FC<CTAButtonProps> = ({
 const BackgroundElements: React.FC = () => {
     return (
         <div className="pointer-events-none absolute inset-0 isolate z-0">
-            <div className="absolute inset-0 z-0 mx-auto h-full w-full max-w-screen-2xl overflow-hidden">
+            <div className="absolute inset-0 z-0 mx-auto h-full w-full  overflow-hidden">
 
                 {/* Side gradients */}
                 <div className="pointer-events-none absolute inset-y-0 left-0 z-10 hidden w-[230px] bg-gradient-to-r from-dark-blue to-transparent xl:block" />
