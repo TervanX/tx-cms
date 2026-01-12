@@ -2,6 +2,9 @@
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Hero from "../Hero";
+import LayerXFeatures from "./FeatureCard";
+
 function HeroCard({
   href,
   id,
@@ -28,6 +31,52 @@ function HeroCard({
   const [isHovering, setIsHovering] = useState(false);
   const [videoLoaded, setVideoLoaded] = useState(false);
   const animationFrameRef = useRef<number>(null);
+
+  // Process description to extract bullet points
+  const processDescription = (desc: string) => {
+    const lines = desc.split('\n').filter(line => line.trim() !== '');
+
+    // Find where bullet points start
+    const bulletStartIndex = lines.findIndex(line =>
+      line.includes('users can:') ||
+      line.includes('enables') ||
+      line.includes('With TX')
+    );
+
+    if (bulletStartIndex === -1) {
+      return {
+        intro: lines.join(' '),
+        bullets: []
+      };
+    }
+
+    const intro = lines.slice(0, bulletStartIndex + 1).join(' ');
+    const bulletLines = lines.slice(bulletStartIndex + 1);
+
+    // Extract bullet points (lines that are not empty and not the conclusion)
+    const bullets = bulletLines
+      .filter(line => {
+        const trimmed = line.trim();
+        const isBullet = !trimmed.startsWith('TX ') && !trimmed.startsWith('TX Business') && !trimmed.startsWith('TX Switch');
+        return isBullet && trimmed.length > 0;
+      })
+      .map(line => {
+        // Remove any leading dash or bullet character
+        return line.replace(/^[-\•\*]\s*/, '').trim();
+      });
+
+    const conclusion = bulletLines
+      .filter(line => line.trim().startsWith('TX ') || line.trim().startsWith('TX Business') || line.trim().startsWith('TX Switch'))
+      .join(' ');
+
+    return {
+      intro,
+      bullets,
+      conclusion
+    };
+  };
+
+  const processedDesc = processDescription(description);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -124,22 +173,46 @@ function HeroCard({
 
       <div className="pointer-events-none absolute inset-0 z-20 block bg-gradient-to-b from-black/75 via-black/25 to-transparent opacity-100 transition-opacity duration-[350ms] ease-out group-hover/card:opacity-100 lg:block lg:h-[275px] lg:from-black lg:via-black/50 lg:opacity-75" />
 
-      <div className="pointer-events-none bottom-auto z-30 p-4 lg:absolute lg:inset-4 lg:p-0 lg:flex flex-col items-start gap-4">
+      <div className="pointer-events-none bottom-auto z-30 p-4 lg:absolute lg:inset-4 lg:p-0 lg:flex flex-col items-start gap-2">
         <div className="mb-1.5">
-          <h2 className="font-sans leading-none text-current mb-1.5 text-[28px] leading-[1.025] tracking-[-0.64px] font-semibold md:text-[30px] md:leading-[1.025] lg:text-[34px] lg:leading-[1.025]">
+          <h2 className="font-serif leading-none text-current mb-1.5 text-[28px] leading-[1.025] tracking-[-0.64px] font-semibold md:text-[30px] md:leading-[1.025] lg:text-[34px] lg:leading-[1.025]">
             {title}
           </h2>
-          <div className="mb-3 flex items-center gap-1.5 text-white/80">
-            <span className="font-sans leading-none text-current font-semibold">
+          <div className="mb-1 flex items-center gap-1.5 text-white/80">
+            <span className="font-mono leading-none text-current font-semibold">
               {subtitle}
             </span>
           </div>
         </div>
 
         <div className="w-full pb-6 lg:pb-0">
-          <p className="font-sans leading-none text-current relative z-[3] max-w-[400px] leading-tight text-white/80">
-            {description}
-          </p>
+          {/* Intro paragraph */}
+          {/* {processedDesc.intro && (
+            <p className="font-sans leading-none text-current relative z-[3] leading-tight text-white/80 mb-3">
+              {processedDesc.intro}
+            </p>
+          )} */}
+
+          {/* Bullet points */}
+          {processedDesc.bullets.length > 0 && (
+            <div className="mb-3">
+              <ul className="font-sans space-y-2 text-white/80 pl-4">
+                {processedDesc.bullets.map((bullet, index) => (
+                  <li key={index} className="flex items-center gap-2">
+                    <span className="text-white  flex-shrink-0 text-xs">•</span>
+                    <span className="leading-tight text-sm">{bullet}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {/* Conclusion paragraph */}
+          {/* {processedDesc.conclusion && (
+            <p className="font-sans leading-none text-current relative z-[3] leading-tight text-white/80 text-sm">
+              {processedDesc.conclusion}
+            </p>
+          )} */}
         </div>
 
         <span className="btn group relative isolate cursor-pointer rounded-md transition-[background,color] ease-out whitespace-nowrap z-[1] lg:text-base focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 disabled:pointer-events-none disabled:opacity-50 bg-transparent px-3 py-2.5 text-base lg:px-4 top-0 right-0 inline-block border border-white text-white duration-[1500ms] ease-out lg:absolute lg:group-hover/card:bg-white lg:group-hover/card:text-black lg:hover:bg-transparent lg:hover:text-white">
@@ -149,7 +222,7 @@ function HeroCard({
       </div>
 
       <div
-        className="inset-0 z-10 hidden h-full !w-full !opacity-100 lg:block relative aspect-[10/12] w-full opacity-100 md:aspect-[12/10.5] lg:aspect-[10/10.5] lg:w-1/2 lg:transition-opacity lg:duration-[1500ms] lg:ease-out lg:group-has-[:hover]:opacity-50 lg:hover:!opacity-100 xl:aspect-[11.5/10.5] mt-12"
+        className="inset-0 z-10 hidden h-full !w-full !opacity-100 lg:block relative aspect-[10/12] w-full opacity-100 md:aspect-[12/10.5] lg:aspect-[10/10.5] lg:w-1/2 lg:transition-opacity lg:duration-[1500ms] lg:ease-out lg:group-has-[:hover]:opacity-50 lg:hover:!opacity-100 xl:aspect-[11.5/10.5] mt-16"
         style={{
           maskImage:
             "linear-gradient(to bottom, transparent, transparent 10%, black 35%)",
@@ -219,41 +292,34 @@ function HeroCard({
 }
 
 export default function HeroSection() {
+  const businessDescription = `TX Business delivers institutional-grade digital asset infrastructure for companies building at scale.
+
+It enables businesses, developers, and financial institutions to:
+
+Build secure crypto and fintech applications
+Manage millions of wallets programmatically
+Custody digital assets with enterprise-level security
+Automate transactions, settlements, and treasury operations
+Integrate compliance, controls, and monitoring by design
+
+TX Business provides APIs, dashboards, and infrastructure that remove complexity from digital asset operations.`;
+
+  const switchDescription = `TX Switch makes using digital assets simple, fast, and reliable.
+
+It combines payments, wallets, and exchange capabilities into a single seamless experience — similar to Stripe + Wallet + Exchange in one platform.
+
+With TX Switch, users can:
+
+Send and receive digital assets effortlessly
+Pay merchants and accept crypto payments
+Hold and manage assets in real time
+Convert and move value instantly across supported assets
+
+TX Switch is built for everyday usage, commerce, and real-world transactions.`;
+
   return (
     <section className="my-auto overflow-hidden md:flex-col pt-[70px] mx-auto w-full max-w-[1920px] px-3 md:px-4">
-      <header className="relative flex flex-col items-center justify-center text-center py-12 xl:py-16 xl:min-[1360px]:py-24">
-        <h1 className="font-sans text-current text-[42px] leading-[1.025] tracking-[-0.8px] font-semibold text-balance md:text-[35px] lg:text-[45px] xl:text-5xl mb-8">
-          Layer X is a digital assets payment and infrastructure company
-        </h1>
-        {/* <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8 w-full max-w-4xl">
-          <div className="bg-black/70 rounded-xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700">
-            <div className="text-3xl md:text-5xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-3">
-              2400
-            </div>
-            <div className="text-lg md:text-xl font-semibold text-gray-700 dark:text-gray-300">
-              enterprises
-            </div>
-          </div>
-
-          <div className="bg-black/70  rounded-xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700">
-            <div className="text-3xl md:text-5xl lg:text-5xll font-bold text-gray-900 dark:text-white mb-3">
-              $10T
-            </div>
-            <div className="text-lg md:text-xl font-semibold text-gray-700 dark:text-gray-300">
-              transactions
-            </div>
-          </div>
-
-          <div className="bg-black/70  rounded-xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700">
-            <div className="text-3xl md:text-5xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-3">
-              550M
-            </div>
-            <div className="text-lg md:text-xl font-semibold text-gray-700 dark:text-gray-300">
-              wallets secured
-            </div>
-          </div>
-        </div> */}
-      </header>
+      <Hero />
 
       <main className="group relative flex flex-wrap gap-4 lg:flex-1 lg:flex-nowrap">
         <HeroCard
@@ -261,8 +327,7 @@ export default function HeroSection() {
           id="hero-card-suite"
           title="For Businesses & Institutions"
           subtitle="Digital Assets Infrastructure Company"
-          description="TX offers institutional-grade digital asset custody and wallet infrastructure.
-It enables businesses, developers, and financial institutions to build crypto apps, manage millions of wallets, and automate operations securely."
+          description={businessDescription}
           buttonText="Explore TX Business"
           imageSrc="/assets/main2.png"
           bgImageSrc="/assets/suite-card-bg.jpg"
@@ -271,10 +336,9 @@ It enables businesses, developers, and financial institutions to build crypto ap
         <HeroCard
           href="/contact/waitlist"
           id="hero-card-fin"
-          title="TX Switch"
+          title="For Consumers & Merchants"
           subtitle="Digital Assets Payment Company"
-          description="TX helps people use, send, and receive digital assets effortlessly.
-It’s like having a Stripe + Wallet + Exchange in one, giving users access to crypto payments, wallets, and real-time asset management."
+          description={switchDescription}
           buttonText="Explore TX Switch"
           imageSrc="/assets/txswitch.png"
           bgImageSrc="/assets/fin-card-bg.webp"
