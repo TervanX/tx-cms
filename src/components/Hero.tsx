@@ -19,6 +19,7 @@ const Hero: React.FC<HeroProps> = ({ hasTopBanner = false }) => {
             <div
                 className="relative z-10 mx-auto w-full max-w-[1600px] px-3 md:px-4 lg:px-6"
                 data-sentry-element="Container"
+                data-sentry-source-file="index.tsx"
             >
                 <div
                     className="opacity-100 blur-0"
@@ -138,7 +139,7 @@ const BackgroundElements: React.FC = () => {
                 <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-45 bg-gradient-to-b from-dark-blue via-dark-blue/60 to-transparent" />
 
                 {/* Background scene */}
-                <div className="absolute inset-0 z-0 h-[97%]">
+                <div className="absolute inset-0 z-0 h-[97%] opacity-60 hover:opacity-80">
                     <div className="absolute left-0 top-0 size-full bg-dark-blue">
                         {/* Canvas element */}
                         <canvas
@@ -149,14 +150,14 @@ const BackgroundElements: React.FC = () => {
                         />
 
                         {/* Video background */}
-                        {/* <video
+                        <video
                             autoPlay
                             loop
                             playsInline
                             muted
                             className="absolute left-0 top-0 size-full object-cover "
                             src="/assets/hero_loop_nonoise_1920.webm"
-                        /> */}
+                        />
 
                         {/* Image fallback */}
                         {/* <ImageFallback /> */}
