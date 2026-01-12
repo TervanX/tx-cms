@@ -19,7 +19,6 @@ const Hero: React.FC<HeroProps> = ({ hasTopBanner = false }) => {
             <div
                 className="relative z-10 mx-auto w-full max-w-[1600px] px-3 md:px-4 lg:px-6"
                 data-sentry-element="Container"
-                data-sentry-source-file="index.tsx"
             >
                 <div
                     className="opacity-100 blur-0"
