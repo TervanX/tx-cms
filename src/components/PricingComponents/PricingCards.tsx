@@ -415,7 +415,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ plan, isAnnualBilling, isPayg
         )}
 
         {/* CTA Button */}
-        <div className="flex flex-col w-full mb-6">
+        <div className="flex flex-col w-full mb-4">
 
           {plan.CtaButton && (
             <Link href="/contact/contact-sales">

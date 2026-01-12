@@ -102,3 +102,72 @@ input[type="checkbox"] {
   height: 16px;
   cursor: pointer;
 }
+
+.has-periwinkle-color {
+  color: #8A85FF;
+}
+
+.has-network-navy-color {
+  color: #1A365D;
+}
+
+.has-dark-blue-color {
+  color: #0F172A;
+}
+
+.has-black-color {
+  color: #000000;
+}
+
+.kb-row-layout-wrap {
+  width: 100%;
+}
+
+.fb-product-ui-grid {
+  display: grid;
+}
+
+.fb-product-ui-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.fb-product-ui-card-portrait {
+  grid-row: span 2;
+}
+
+.fb-product-ui-card-landscape-small {
+  grid-column: span 1;
+}
+
+.fb-product-ui-card-landscape-large {
+  grid-column: span 2;
+}
+
+.fb-product-ui-card-square {
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+.fb-product-ui-card-mask {
+  backdrop-filter: blur(10px);
+}
+
+.kb-section-link-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.arrow-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.group:hover .arrow-box {
+  transform: translateX(4px);
+}
